@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "llm-inference-batching-scheduler",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 208.4,
+    "peak_memory_raw": "208.4MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.437,
+    "agent_setup_sec": 2.412,
+    "agent_execution_sec": 575.771,
+    "verifier_sec": 8.635,
+    "total_sec": 602.916
+  },
+  "llm_cost_usd": 0.0417766888,
+  "agent_input_tokens": 2583067,
+  "agent_output_tokens": 67036,
+  "image_cache": {
+    "image": "benchmark-cache/llm-inference-batching-scheduler-gold:c835608261b94b37",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "llm-inference-batching-scheduler__LGAvwj9",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

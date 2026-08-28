@@ -1,0 +1,128 @@
+Task: exceltable-in-ppt
+Source type: used
+Task run: 7
+Source run: 3
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\exceltable-in-ppt
+
+========== Repeated Run 3/4 ==========
+
+========== Run solve.sh ==========
+[1/5] Resolving isolated Apache POI 5.5.1 dependencies...
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< local:pptx-rate-solution >----------------------
+[INFO] Building pptx-rate-solution 1.0.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default-cli) @ pptx-rate-solution ---
+[INFO] Copying commons-math3-3.6.1.jar to /tmp/poi_pptx_rate_solution/lib/commons-math3-3.6.1.jar
+[INFO] Copying commons-codec-1.20.0.jar to /tmp/poi_pptx_rate_solution/lib/commons-codec-1.20.0.jar
+[INFO] Copying SparseBitSet-1.3.jar to /tmp/poi_pptx_rate_solution/lib/SparseBitSet-1.3.jar
+[INFO] Copying commons-lang3-3.18.0.jar to /tmp/poi_pptx_rate_solution/lib/commons-lang3-3.18.0.jar
+[INFO] Copying commons-io-2.21.0.jar to /tmp/poi_pptx_rate_solution/lib/commons-io-2.21.0.jar
+[INFO] Copying log4j-core-2.24.3.jar to /tmp/poi_pptx_rate_solution/lib/log4j-core-2.24.3.jar
+[INFO] Copying poi-ooxml-5.5.1.jar to /tmp/poi_pptx_rate_solution/lib/poi-ooxml-5.5.1.jar
+[INFO] Copying curvesapi-1.08.jar to /tmp/poi_pptx_rate_solution/lib/curvesapi-1.08.jar
+[INFO] Copying commons-collections4-4.5.0.jar to /tmp/poi_pptx_rate_solution/lib/commons-collections4-4.5.0.jar
+[INFO] Copying xmlbeans-5.3.0.jar to /tmp/poi_pptx_rate_solution/lib/xmlbeans-5.3.0.jar
+[INFO] Copying log4j-api-2.24.3.jar to /tmp/poi_pptx_rate_solution/lib/log4j-api-2.24.3.jar
+[INFO] Copying poi-ooxml-full-5.5.1.jar to /tmp/poi_pptx_rate_solution/lib/poi-ooxml-full-5.5.1.jar
+[INFO] Copying commons-compress-1.28.0.jar to /tmp/poi_pptx_rate_solution/lib/commons-compress-1.28.0.jar
+[INFO] Copying poi-5.5.1.jar to /tmp/poi_pptx_rate_solution/lib/poi-5.5.1.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.904 s
+[INFO] Finished at: 2026-08-13T15:43:10Z
+[INFO] ------------------------------------------------------------------------
+Resolved POI/XMLBeans runtime:
+  log4j-core-2.24.3.jar
+  poi-5.5.1.jar
+  poi-ooxml-5.5.1.jar
+  poi-ooxml-full-5.5.1.jar
+  xmlbeans-5.3.0.jar
+[2/5] Compiling Apache POI implementation...
+[3/5] Inspecting PPTX and updating embedded workbook...
+Apache POI XSLF loaded from: /tmp/poi_pptx_rate_solution/lib/poi-ooxml-5.5.1.jar
+Apache POI Workbook loaded from: /tmp/poi_pptx_rate_solution/lib/poi-5.5.1.jar
+XMLBeans loaded from: /tmp/poi_pptx_rate_solution/lib/xmlbeans-5.3.0.jar
+PresentationML schemas loaded from: /tmp/poi_pptx_rate_solution/lib/poi-ooxml-full-5.5.1.jar
+SpreadsheetML schemas loaded from: /tmp/poi_pptx_rate_solution/lib/poi-ooxml-full-5.5.1.jar
+Apache POI/XMLBeans runtime validation passed.
+PPTX opened successfully; slides: 1
+Inspecting slide 1; shapes=2
+Failed to inspect OLE object on slide 1: java.lang.ClassCastException: class org.apache.poi.ooxml.POIXMLDocumentPart cannot be cast to class org.apache.poi.xslf.usermodel.XSLFObjectData (org.apache.poi.ooxml.POIXMLDocumentPart and org.apache.poi.xslf.usermodel.XSLFObjectData are in unnamed module of loader 'app')
+java.lang.ClassCastException: class org.apache.poi.ooxml.POIXMLDocumentPart cannot be cast to class org.apache.poi.xslf.usermodel.XSLFObjectData (org.apache.poi.ooxml.POIXMLDocumentPart and org.apache.poi.xslf.usermodel.XSLFObjectData are in unnamed module of loader 'app')
+	at org.apache.poi.xslf.usermodel.XSLFObjectShape.getObjectData(XSLFObjectShape.java:95)
+	at SolvePptxRates.inspectShape(SolvePptxRates.java:404)
+	at SolvePptxRates.main(SolvePptxRates.java:870)
+Package-level embedding: /ppt/embeddings/Microsoft_Excel_Worksheet.xlsx, raw=10206 bytes, payload=10206 bytes, detected matrices=1
+  Accepted package-level Excel workbook: /ppt/embeddings/Microsoft_Excel_Worksheet.xlsx
+Candidate rate updates found: 1
+Candidate embedded exchange workbooks found: 1
+Selected update text: Updated rate: 
+USD to CNY=7.02
+Selected pair: USD -> CNY = 7.02
+Selected embedding: /ppt/embeddings/Microsoft_Excel_Worksheet.xlsx
+Updating constant cell USD -> CNY to 7.02
+Updated XLSX written to: /tmp/poi_pptx_rate_solution/updated_embedding.xlsx
+Raw replacement object written to: /tmp/poi_pptx_rate_solution/updated_embedding_object.bin (7678 bytes, signature=50 4B 03 04 14 00 08 08)
+[4/5] Surgically replacing the embedded object...
+Replacement object format: OOXML ZIP
+Replaced package part: ppt/embeddings/Microsoft_Excel_Worksheet.xlsx
+[5/5] Performing package-level integrity verification...
+Outer PPTX package validated.
+All non-target package entries are content-identical.
+Replacement embedding matches the Java-produced bytes.
+
+Solution complete: /root/results.pptx
+
+========== Run test.sh ==========
+Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.5.0-2ubuntu10.11).
+0 upgraded, 0 newly installed, 0 to remove and 35 not upgraded.
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+Exporting results.pptx to verifier folder for debugging...
+Export complete.
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 8 items
+
+../tests/test_outputs.py ........                                        [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_output_file_exists
+PASSED ../tests/test_outputs.py::test_output_is_valid_pptx
+PASSED ../tests/test_outputs.py::test_embedded_excel_preserved
+PASSED ../tests/test_outputs.py::test_exchange_rate_updated
+PASSED ../tests/test_outputs.py::test_inverse_rate_updated
+PASSED ../tests/test_outputs.py::test_other_cells_unchanged
+PASSED ../tests/test_outputs.py::test_formulas_preserved
+PASSED ../tests/test_outputs.py::test_slide_structure_preserved
+============================== 8 passed in 0.55s ===============================
+
+========== Result ==========
+Task: exceltable-in-ppt
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 4.7s (exit 0)
+Test: 15.4s (exit 0)
+Solve Memory Peak: 281.4 MiB
+Test Memory Peak: 219.6 MiB

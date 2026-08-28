@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "portfolio-optimization",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1879.04,
+    "peak_memory_raw": "1.835GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.556,
+    "agent_setup_sec": 0.482,
+    "agent_execution_sec": 114.3,
+    "verifier_sec": 83.615,
+    "total_sec": 205.297
+  },
+  "llm_cost_usd": 0.013040184,
+  "agent_input_tokens": 202239,
+  "agent_output_tokens": 3686,
+  "image_cache": {
+    "image": "benchmark-cache/portfolio-optimization-gold:8362bcbb069434ab",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "c-portfolio-risk-return-kernel",
+      "numpy-contiguous-c-extension-wrapper"
+    ],
+    "available_skills": [
+      "c-portfolio-risk-return-kernel",
+      "numpy-contiguous-c-extension-wrapper"
+    ],
+    "loaded_skills": [
+      "c-portfolio-risk-return-kernel",
+      "numpy-contiguous-c-extension-wrapper"
+    ],
+    "trials": [
+      {
+        "trial_id": "portfolio-optimization__2im7RnC",
+        "passed": true,
+        "provided_skills": [
+          "c-portfolio-risk-return-kernel",
+          "numpy-contiguous-c-extension-wrapper"
+        ],
+        "available_skills": [
+          "c-portfolio-risk-return-kernel",
+          "numpy-contiguous-c-extension-wrapper"
+        ],
+        "loaded_skills": [
+          "c-portfolio-risk-return-kernel",
+          "numpy-contiguous-c-extension-wrapper"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "c-portfolio-risk-return-kernel": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_97b50b157188455cbf70dcc5",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/c-portfolio-risk-return-kernel/SKILL.md"
+            }
+          ],
+          "numpy-contiguous-c-extension-wrapper": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_4a943660c0704d7cb5535eb2",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/numpy-contiguous-c-extension-wrapper/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

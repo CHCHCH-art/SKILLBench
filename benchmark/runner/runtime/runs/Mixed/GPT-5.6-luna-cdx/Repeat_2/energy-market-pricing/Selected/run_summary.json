@@ -1,0 +1,101 @@
+{
+  "schema_version": 6,
+  "task_id": "energy-market-pricing",
+  "condition": "selected",
+  "batch": "single_Selected_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOptimality::test_costs_near_optimal: AssertionError: base_case cost 3150451.34 exceeds optimal 2965637.909677724 by more than 0.0100% (tol=296.5637909677724)",
+  "peak_memory": {
+    "peak_memory_mib": 888.4,
+    "peak_memory_raw": "888.4MiB",
+    "error": null,
+    "container_name_hint": "energy-market-pricin"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.605,
+    "agent_setup_sec": 1.085,
+    "agent_execution_sec": 267.115,
+    "verifier_sec": 160.517,
+    "total_sec": 435.973
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 405391,
+  "agent_output_tokens": 12518,
+  "image_cache": {
+    "image": "benchmark-cache/energy-market-pricing-gold:5e086fb9e6601b54",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "89jobrien--golang-testing",
+      "dcopf-counterfactual-impact-analysis",
+      "dcopf-reserve-lmp-solve",
+      "duyet--engineering-discipline",
+      "highs-dual-market-pricing-report",
+      "lobbi-docs--aws",
+      "openclaudia--content-calendar",
+      "skillcreatorai--best-practices",
+      "sparse-dcopf-reserve-lp-formulation",
+      "transmission-limit-counterfactual-impact"
+    ],
+    "available_skills": [
+      "89jobrien--golang-testing",
+      "dcopf-counterfactual-impact-analysis",
+      "dcopf-reserve-lmp-solve",
+      "duyet--engineering-discipline",
+      "highs-dual-market-pricing-report",
+      "lobbi-docs--aws",
+      "openclaudia--content-calendar",
+      "skillcreatorai--best-practices",
+      "sparse-dcopf-reserve-lp-formulation",
+      "transmission-limit-counterfactual-impact"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "energy-market-pricing__VdF5Y8j",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "89jobrien--golang-testing",
+          "dcopf-counterfactual-impact-analysis",
+          "dcopf-reserve-lmp-solve",
+          "duyet--engineering-discipline",
+          "highs-dual-market-pricing-report",
+          "lobbi-docs--aws",
+          "openclaudia--content-calendar",
+          "skillcreatorai--best-practices",
+          "sparse-dcopf-reserve-lp-formulation",
+          "transmission-limit-counterfactual-impact"
+        ],
+        "available_skills": [
+          "89jobrien--golang-testing",
+          "dcopf-counterfactual-impact-analysis",
+          "dcopf-reserve-lmp-solve",
+          "duyet--engineering-discipline",
+          "highs-dual-market-pricing-report",
+          "lobbi-docs--aws",
+          "openclaudia--content-calendar",
+          "skillcreatorai--best-practices",
+          "sparse-dcopf-reserve-lp-formulation",
+          "transmission-limit-counterfactual-impact"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

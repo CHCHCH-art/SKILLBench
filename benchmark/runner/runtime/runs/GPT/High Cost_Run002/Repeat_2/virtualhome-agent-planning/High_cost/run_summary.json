@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "virtualhome-agent-planning",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 299.8,
+    "peak_memory_raw": "299.8MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.851,
+    "agent_setup_sec": 0.968,
+    "agent_execution_sec": 308.362,
+    "verifier_sec": 39.898,
+    "total_sec": 357.504
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 564348,
+  "agent_output_tokens": 7911,
+  "image_cache": {
+    "image": "benchmark-cache/virtualhome-agent-planning-gold:2a7bb392c743be2d",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "grounded-pyperplan-portfolio-lifting",
+      "pddl-pyperplan-baseline-validation",
+      "reference-plan-selection-and-safe-write"
+    ],
+    "available_skills": [
+      "grounded-pyperplan-portfolio-lifting",
+      "pddl-pyperplan-baseline-validation",
+      "reference-plan-selection-and-safe-write"
+    ],
+    "loaded_skills": [
+      "grounded-pyperplan-portfolio-lifting",
+      "pddl-pyperplan-baseline-validation",
+      "reference-plan-selection-and-safe-write"
+    ],
+    "trials": [
+      {
+        "trial_id": "virtualhome-agent-planning__N7qrGeX",
+        "passed": true,
+        "provided_skills": [
+          "grounded-pyperplan-portfolio-lifting",
+          "pddl-pyperplan-baseline-validation",
+          "reference-plan-selection-and-safe-write"
+        ],
+        "available_skills": [
+          "grounded-pyperplan-portfolio-lifting",
+          "pddl-pyperplan-baseline-validation",
+          "reference-plan-selection-and-safe-write"
+        ],
+        "loaded_skills": [
+          "grounded-pyperplan-portfolio-lifting",
+          "pddl-pyperplan-baseline-validation",
+          "reference-plan-selection-and-safe-write"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "pddl-pyperplan-baseline-validation": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_BER5QELt3amMyWGMnetiic9k",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/pddl-pyperplan-baseline-validation/SKILL.md"
+            }
+          ],
+          "grounded-pyperplan-portfolio-lifting": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_BER5QELt3amMyWGMnetiic9k",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/grounded-pyperplan-portfolio-lifting/SKILL.md"
+            }
+          ],
+          "reference-plan-selection-and-safe-write": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_BER5QELt3amMyWGMnetiic9k",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/reference-plan-selection-and-safe-write/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,28 @@
+2026-08-11T02:40:15.520330+00:00 START operation=rerun batch=single_No_skill_Run006 repeat=2 task=log-summary-date-ranges condition=no_skill image=benchmark-cache/log-summary-date-ranges-gold:1dd0d254954cc028 provided_skills=[]
+  1/1 Mean: 1.000 ---------------------------------------- 0:03:42 0:00:00
+no_skill • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 42s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run006\Repe
+at_2\log-summary-date-ranges\No_skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run006\Repe
+at_2\log-summary-date-ranges\No_skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run006\Repe
+at_2\log-summary-date-ranges\No_skill\Job_result`
+
+2026-08-11T02:44:00.119285+00:00 PASS operation=rerun batch=single_No_skill_Run006 repeat=2 task=log-summary-date-ranges condition=no_skill

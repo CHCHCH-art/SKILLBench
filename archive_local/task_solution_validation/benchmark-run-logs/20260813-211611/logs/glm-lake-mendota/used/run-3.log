@@ -1,0 +1,228 @@
+Task: glm-lake-mendota
+Source type: used
+Task run: 7
+Source run: 3
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\glm-lake-mendota
+
+========== Repeated Run 3/4 ==========
+
+========== Run solve.sh ==========
+==============================================================================
+GLM staged calibration: profile interpolation + global search + multi-start refinement
+==============================================================================
+Observations: 2822
+Initial parameters: {'Kw': 0.2666332, 'coef_mix_hyp': 0.132258, 'wind_factor': 0.8558195, 'lw_factor': 0.9301974, 'ch': 0.00077818786}
+Bounds: {'Kw': (0.1, 1.2), 'coef_mix_hyp': (0.05, 2.0), 'wind_factor': (0.5990736499999999, 1.4), 'lw_factor': (0.6511381799999999, 1.3022763599999998), 'ch': (0.000544731502, 0.0025)}
+[001] baseline     RMSE= 1.247 cov=100.0% shallow= 1.177 deep= 1.046 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.00077819
+[002] sensitivity  RMSE= 3.182 cov=100.0% shallow= 2.111 deep= 3.349 | Kw=0.1 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.00077819
+[003] sensitivity  RMSE= 2.327 cov=99.9% shallow= 2.188 deep= 2.026 | Kw=1.2 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.00077819
+[004] sensitivity  RMSE= 1.385 cov=100.0% shallow= 1.294 deep= 1.149 | Kw=0.2666 hyp=0.05 wind=0.8558 lw=0.9302 ch=0.00077819
+[005] sensitivity  RMSE= 1.610 cov=100.0% shallow= 1.161 deep= 1.717 | Kw=0.2666 hyp=2 wind=0.8558 lw=0.9302 ch=0.00077819
+[006] sensitivity  RMSE= 2.509 cov=100.0% shallow= 1.955 deep= 2.597 | Kw=0.2666 hyp=0.1323 wind=0.5991 lw=0.9302 ch=0.00077819
+[007] sensitivity  RMSE= 4.438 cov=100.0% shallow= 1.804 deep= 5.821 | Kw=0.2666 hyp=0.1323 wind=1.4 lw=0.9302 ch=0.00077819
+[008] sensitivity  RMSE= 3.434 cov=100.0% shallow= 4.465 deep= 2.351 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=0.6511 ch=0.00077819
+[009] sensitivity  RMSE= 4.401 cov=100.0% shallow= 5.142 deep= 3.435 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=1.302 ch=0.00077819
+[010] sensitivity  RMSE= 1.421 cov=100.0% shallow= 1.329 deep= 1.335 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.00054473
+[011] sensitivity  RMSE= 1.635 cov=100.0% shallow= 1.404 deep= 1.592 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.0025
+[012] thermal      RMSE= 2.198 cov=100.0% shallow= 2.261 deep= 1.869 | Kw=0.7155 hyp=0.1323 wind=0.8558 lw=0.964 ch=0.00067118
+[013] thermal      RMSE= 2.771 cov=100.0% shallow= 3.185 deep= 2.162 | Kw=0.9163 hyp=0.1323 wind=0.8558 lw=1.074 ch=0.00057638
+[014] thermal      RMSE= 3.064 cov=100.0% shallow= 3.828 deep= 2.255 | Kw=0.4663 hyp=0.1323 wind=0.8558 lw=1.237 ch=0.0017477
+[015] thermal      RMSE= 2.354 cov=100.0% shallow= 2.440 deep= 1.868 | Kw=1.034 hyp=0.1323 wind=0.8558 lw=0.8131 ch=0.00058746
+[016] thermal      RMSE= 2.322 cov=100.0% shallow= 2.336 deep= 1.843 | Kw=1.123 hyp=0.1323 wind=0.8558 lw=0.9832 ch=0.0014085
+[017] thermal      RMSE= 2.631 cov=100.0% shallow= 2.791 deep= 2.389 | Kw=0.4808 hyp=0.1323 wind=0.8558 lw=1.127 ch=0.0019513
+[018] thermal      RMSE= 2.073 cov=100.0% shallow= 2.127 deep= 1.441 | Kw=0.7638 hyp=0.1323 wind=0.8558 lw=0.8777 ch=0.0016729
+[019] thermal      RMSE= 2.661 cov=100.0% shallow= 2.878 deep= 1.885 | Kw=1.076 hyp=0.1323 wind=0.8558 lw=0.7226 ch=0.0011769
+[020] thermal      RMSE= 2.922 cov=100.0% shallow= 3.549 deep= 2.136 | Kw=0.5522 hyp=0.1323 wind=0.8558 lw=1.149 ch=0.00079911
+[021] thermal      RMSE= 2.483 cov=100.0% shallow= 2.808 deep= 1.997 | Kw=0.9826 hyp=0.1323 wind=0.8558 lw=1.057 ch=0.0010261
+[022] thermal      RMSE= 3.900 cov=100.0% shallow= 4.654 deep= 3.408 | Kw=0.9343 hyp=0.1323 wind=0.8558 lw=1.286 ch=0.0012774
+[023] thermal      RMSE= 1.958 cov=100.0% shallow= 1.697 deep= 2.041 | Kw=0.2438 hyp=0.1323 wind=0.8558 lw=1.017 ch=0.0022668
+[024] thermal      RMSE= 2.137 cov=100.0% shallow= 2.159 deep= 1.599 | Kw=0.6674 hyp=0.1323 wind=0.8558 lw=0.9101 ch=0.0010546
+[025] thermal      RMSE= 1.650 cov=100.0% shallow= 1.352 deep= 1.326 | Kw=0.1896 hyp=0.1323 wind=0.8558 lw=0.948 ch=0.00078065
+[026] thermal      RMSE= 4.225 cov=100.0% shallow= 3.189 deep= 3.762 | Kw=0.1237 hyp=0.1323 wind=0.8558 lw=1.194 ch=0.0011301
+[027] thermal      RMSE= 2.525 cov=100.0% shallow= 2.923 deep= 1.824 | Kw=0.3539 hyp=0.1323 wind=0.8558 lw=0.6991 ch=0.0018646
+[028] thermal      RMSE= 1.788 cov=100.0% shallow= 1.710 deep= 1.249 | Kw=0.3986 hyp=0.1323 wind=0.8558 lw=0.8653 ch=0.00071906
+[029] thermal      RMSE= 2.907 cov=100.0% shallow= 3.359 deep= 1.995 | Kw=0.5971 hyp=0.1323 wind=0.8558 lw=0.6673 ch=0.0014823
+[030] thermal      RMSE= 2.850 cov=100.0% shallow= 3.178 deep= 2.320 | Kw=0.8666 hyp=0.1323 wind=0.8558 lw=1.109 ch=0.00094721
+[031] thermal      RMSE= 3.330 cov=100.0% shallow= 4.039 deep= 2.629 | Kw=0.811 hyp=0.1323 wind=0.8558 lw=1.216 ch=0.0015093
+[032] thermal      RMSE= 2.647 cov=100.0% shallow= 2.951 deep= 1.842 | Kw=1.162 hyp=0.1323 wind=0.8558 lw=0.7641 ch=0.00062349
+[033] thermal      RMSE= 3.583 cov=100.0% shallow= 4.527 deep= 2.630 | Kw=0.2872 hyp=0.1323 wind=0.8558 lw=1.267 ch=0.0008806
+[034] thermal      RMSE= 2.295 cov=100.0% shallow= 2.331 deep= 1.822 | Kw=0.6219 hyp=0.1323 wind=0.8558 lw=0.8339 ch=0.0020931
+[035] thermal      RMSE= 1.967 cov=100.0% shallow= 2.268 deep= 1.570 | Kw=0.2134 hyp=0.1323 wind=0.8558 lw=0.7565 ch=0.0023892
+[036] mixing       RMSE= 1.731 cov=100.0% shallow= 1.287 deep= 1.703 | Kw=0.1896 hyp=1.384 wind=0.8288 lw=0.948 ch=0.00078065
+[037] mixing       RMSE= 1.677 cov=100.0% shallow= 1.259 deep= 1.881 | Kw=0.1896 hyp=0.8522 wind=0.7033 lw=0.948 ch=0.00078065
+[038] mixing       RMSE= 3.056 cov=100.0% shallow= 1.447 deep= 3.845 | Kw=0.1896 hyp=1.53 wind=0.9692 lw=0.948 ch=0.00078065
+[039] mixing       RMSE= 3.595 cov=100.0% shallow= 1.573 deep= 4.381 | Kw=0.1896 hyp=1.141 wind=1.074 lw=0.948 ch=0.00078065
+[040] mixing       RMSE= 4.698 cov=100.0% shallow= 1.849 deep= 6.319 | Kw=0.1896 hyp=0.2894 wind=1.389 lw=0.948 ch=0.00078065
+[041] mixing       RMSE= 2.539 cov=100.0% shallow= 1.450 deep= 2.841 | Kw=0.1896 hyp=0.9418 wind=0.944 lw=0.948 ch=0.00078065
+[042] mixing       RMSE= 4.797 cov=100.0% shallow= 1.802 deep= 6.529 | Kw=0.1896 hyp=0.7377 wind=1.347 lw=0.948 ch=0.00078065
+[043] mixing       RMSE= 3.972 cov=100.0% shallow= 1.653 deep= 5.039 | Kw=0.1896 hyp=0.05346 wind=1.194 lw=0.948 ch=0.00078065
+[044] mixing       RMSE= 1.852 cov=100.0% shallow= 1.430 deep= 2.075 | Kw=0.1896 hyp=0.5561 wind=0.6099 lw=0.948 ch=0.00078065
+[045] mixing       RMSE= 1.692 cov=100.0% shallow= 1.338 deep= 1.794 | Kw=0.1896 hyp=0.4833 wind=0.8552 lw=0.948 ch=0.00078065
+[046] mixing       RMSE= 4.491 cov=100.0% shallow= 1.704 deep= 5.987 | Kw=0.1896 hyp=1.725 wind=1.241 lw=0.948 ch=0.00078065
+[047] mixing       RMSE= 4.871 cov=100.0% shallow= 1.779 deep= 6.647 | Kw=0.1896 hyp=1.964 wind=1.319 lw=0.948 ch=0.00078065
+[048] mixing       RMSE= 3.164 cov=100.0% shallow= 1.507 deep= 3.777 | Kw=0.1896 hyp=1.424 wind=1.002 lw=0.948 ch=0.00078065
+[049] mixing       RMSE= 1.672 cov=100.0% shallow= 1.209 deep= 1.865 | Kw=0.1896 hyp=1.297 wind=0.7221 lw=0.948 ch=0.00078065
+[050] mixing       RMSE= 1.607 cov=100.0% shallow= 1.209 deep= 1.664 | Kw=0.1896 hyp=1.12 wind=0.7962 lw=0.948 ch=0.00078065
+[051] mixing       RMSE= 4.249 cov=100.0% shallow= 1.667 deep= 5.536 | Kw=0.1896 hyp=1.893 wind=1.205 lw=0.948 ch=0.00078065
+[052] mixing       RMSE= 1.707 cov=100.0% shallow= 1.325 deep= 1.996 | Kw=0.1896 hyp=0.3923 wind=0.6749 lw=0.948 ch=0.00078065
+[053] mixing       RMSE= 3.879 cov=100.0% shallow= 1.622 deep= 4.767 | Kw=0.1896 hyp=0.1529 wind=1.147 lw=0.948 ch=0.00078065
+[054] mixing       RMSE= 1.986 cov=99.9% shallow= 1.367 deep= 2.085 | Kw=0.1896 hyp=0.7062 wind=0.8829 lw=0.948 ch=0.00078065
+[055] mixing       RMSE= 3.376 cov=100.0% shallow= 1.562 deep= 4.068 | Kw=0.1896 hyp=1.706 wind=1.083 lw=0.948 ch=0.00078065
+[056] joint-global RMSE= 4.145 cov=100.0% shallow= 1.541 deep= 5.352 | Kw=0.8885 hyp=0.3791 wind=1.216 lw=0.9783 ch=0.00079883
+[057] joint-global RMSE= 1.993 cov=100.0% shallow= 1.763 deep= 2.199 | Kw=0.7529 hyp=1.758 wind=0.9401 lw=0.7919 ch=0.002269
+[058] joint-global RMSE= 5.571 cov=100.0% shallow= 1.763 deep= 7.553 | Kw=1.184 hyp=1.817 wind=1.371 lw=1.02 ch=0.0021314
+[059] joint-global RMSE= 1.669 cov=100.0% shallow= 1.654 deep= 1.364 | Kw=0.548 hyp=0.6222 wind=0.9037 lw=0.9086 ch=0.0011448
+[060] joint-global RMSE= 3.941 cov=100.0% shallow= 4.067 deep= 3.981 | Kw=1.103 hyp=1.422 wind=0.7619 lw=1.195 ch=0.0012008
+[061] joint-global RMSE= 3.154 cov=99.9% shallow= 3.088 deep= 2.561 | Kw=0.3454 hyp=1.36 wind=0.6504 lw=0.7384 ch=0.0014001
+[062] joint-global RMSE= 5.268 cov=100.0% shallow= 2.546 deep= 6.585 | Kw=0.9352 hyp=1.308 wind=1.14 lw=1.151 ch=0.0021946
+[063] joint-global RMSE= 4.093 cov=100.0% shallow= 2.147 deep= 5.216 | Kw=1.051 hyp=1.665 wind=1.05 lw=1.062 ch=0.00076342
+[064] joint-global RMSE= 1.689 cov=100.0% shallow= 1.244 deep= 1.882 | Kw=0.1976 hyp=0.7393 wind=0.8293 lw=0.9121 ch=0.0012889
+[065] joint-global RMSE= 3.571 cov=100.0% shallow= 1.798 deep= 4.655 | Kw=0.9119 hyp=1.507 wind=1.199 lw=0.8434 ch=0.00072579
+[066] joint-global RMSE= 4.548 cov=100.0% shallow= 2.521 deep= 6.014 | Kw=1.026 hyp=1.315 wind=1.364 lw=0.7232 ch=0.0019933
+[067] joint-global RMSE= 3.107 cov=99.9% shallow= 3.914 deep= 2.084 | Kw=0.357 hyp=1.936 wind=0.8458 lw=0.678 ch=0.000653
+[068] joint-global RMSE= 5.985 cov=100.0% shallow= 2.077 deep= 7.845 | Kw=0.1553 hyp=1.026 wind=1.315 lw=1.18 ch=0.00077513
+[069] joint-global RMSE= 4.161 cov=100.0% shallow= 1.829 deep= 5.456 | Kw=0.7741 hyp=1.886 wind=1.265 lw=0.8351 ch=0.0015883
+[070] joint-global RMSE= 3.830 cov=100.0% shallow= 2.649 deep= 4.536 | Kw=0.4125 hyp=0.6092 wind=1.067 lw=1.135 ch=0.0012098
+[071] joint-global RMSE= 5.666 cov=100.0% shallow= 2.156 deep= 7.138 | Kw=0.1281 hyp=0.348 wind=1.153 lw=1.163 ch=0.00063386
+[072] joint-global RMSE= 4.722 cov=100.0% shallow= 1.460 deep= 6.317 | Kw=0.9963 hyp=0.2173 wind=1.333 lw=0.9485 ch=0.00060934
+[073] joint-global RMSE= 2.721 cov=100.0% shallow= 2.341 deep= 2.574 | Kw=0.3139 hyp=0.4542 wind=0.6059 lw=0.9629 ch=0.0023908
+[074] joint-global RMSE= 4.412 cov=100.0% shallow= 1.941 deep= 5.286 | Kw=0.172 hyp=0.2633 wind=1.092 lw=1.095 ch=0.0010414
+[075] joint-global RMSE= 6.352 cov=100.0% shallow= 2.554 deep= 8.403 | Kw=0.5126 hyp=0.5616 wind=1.394 lw=1.175 ch=0.0006921
+[076] joint-global RMSE= 5.445 cov=100.0% shallow= 1.791 deep= 7.262 | Kw=0.8203 hyp=0.9224 wind=1.347 lw=1.049 ch=0.0016939
+[077] joint-global RMSE= 3.979 cov=100.0% shallow= 3.877 deep= 4.060 | Kw=0.4786 hyp=0.5359 wind=0.9922 lw=1.281 ch=0.0016405
+[078] joint-global RMSE= 3.310 cov=100.0% shallow= 2.601 deep= 3.791 | Kw=0.5767 hyp=0.867 wind=1.227 lw=0.7798 ch=0.00070224
+[079] joint-global RMSE= 3.100 cov=100.0% shallow= 3.647 deep= 2.127 | Kw=0.5035 hyp=0.1841 wind=0.6879 lw=1.073 ch=0.0011171
+[080] joint-global RMSE= 2.793 cov=100.0% shallow= 1.520 deep= 3.507 | Kw=0.6754 hyp=0.3181 wind=1.105 lw=0.8652 ch=0.0020154
+[081] joint-global RMSE= 2.836 cov=99.9% shallow= 3.054 deep= 1.957 | Kw=0.6427 hyp=1.878 wind=0.7676 lw=0.7636 ch=0.0014376
+[082] joint-global RMSE= 1.905 cov=100.0% shallow= 1.633 deep= 1.823 | Kw=0.388 hyp=1.689 wind=0.7832 lw=0.9273 ch=0.00099214
+[083] joint-global RMSE= 2.777 cov=100.0% shallow= 2.737 deep= 2.596 | Kw=0.8659 hyp=1.454 wind=0.8124 lw=1.005 ch=0.00058317
+[084] joint-global RMSE= 1.964 cov=100.0% shallow= 2.246 deep= 1.694 | Kw=0.257 hyp=0.794 wind=0.9507 lw=0.8034 ch=0.00095085
+[085] joint-global RMSE= 2.985 cov=100.0% shallow= 2.857 deep= 3.148 | Kw=1.071 hyp=1.157 wind=1.001 lw=0.688 ch=0.0013587
+[086] joint-global RMSE= 3.587 cov=99.9% shallow= 3.938 deep= 2.566 | Kw=0.845 hyp=0.06865 wind=0.7354 lw=0.7019 ch=0.0010144
+[087] joint-global RMSE= 3.765 cov=100.0% shallow= 3.121 deep= 4.339 | Kw=0.2312 hyp=1.229 wind=1.176 lw=0.7114 ch=0.0018661
+[088] joint-global RMSE= 4.752 cov=100.0% shallow= 3.373 deep= 5.700 | Kw=0.9702 hyp=1.612 wind=1.042 lw=1.231 ch=0.0018969
+[089] joint-global RMSE= 4.299 cov=100.0% shallow= 1.773 deep= 5.524 | Kw=0.2908 hyp=1.119 wind=1.119 lw=1.041 ch=0.00055954
+[090] joint-global RMSE= 3.230 cov=100.0% shallow= 3.407 deep= 2.094 | Kw=0.5993 hyp=0.0928 wind=0.7024 lw=0.9738 ch=0.0010769
+[091] joint-global RMSE= 3.897 cov=100.0% shallow= 1.973 deep= 5.030 | Kw=0.6095 hyp=0.4919 wind=1.29 lw=0.8153 ch=0.0017863
+[092] joint-global RMSE= 2.318 cov=100.0% shallow= 1.643 deep= 2.723 | Kw=0.7928 hyp=1.104 wind=0.971 lw=0.9928 ch=0.00091325
+[093] joint-global RMSE= 3.266 cov=100.0% shallow= 3.787 deep= 2.815 | Kw=0.726 hyp=0.6739 wind=0.7224 lw=1.126 ch=0.0017303
+[094] joint-global RMSE= 4.313 cov=100.0% shallow= 3.889 deep= 4.726 | Kw=0.4216 hyp=1.017 wind=0.9251 lw=1.299 ch=0.0022845
+[095] joint-global RMSE= 4.781 cov=100.0% shallow= 5.170 deep= 4.568 | Kw=1.163 hyp=1.538 wind=0.624 lw=1.271 ch=0.0014735
+[096] joint-global RMSE= 3.835 cov=100.0% shallow= 3.988 deep= 2.809 | Kw=1.153 hyp=0.163 wind=0.6458 lw=0.8757 ch=0.00057823
+[097] joint-global RMSE= 4.434 cov=100.0% shallow= 1.555 deep= 5.993 | Kw=0.9811 hyp=1.208 wind=1.28 lw=0.8899 ch=0.00087334
+[098] joint-global RMSE= 3.214 cov=100.0% shallow= 4.002 deep= 2.106 | Kw=0.4616 hyp=1.982 wind=0.8615 lw=0.6521 ch=0.00084667
+[099] joint-global RMSE= 3.606 cov=100.0% shallow= 3.808 deep= 3.475 | Kw=0.7051 hyp=0.7587 wind=0.8757 lw=1.211 ch=0.0012594
+[100] joint-global RMSE= 5.708 cov=100.0% shallow= 1.571 deep= 7.734 | Kw=0.1201 hyp=0.8526 wind=1.25 lw=1.108 ch=0.0015507
+[101] joint-global RMSE= 2.601 cov=99.9% shallow= 2.674 deep= 2.192 | Kw=0.2717 hyp=1.567 wind=0.6747 lw=0.755 ch=0.00087897
+[102] joint-global RMSE= 3.997 cov=100.0% shallow= 3.417 deep= 4.585 | Kw=0.6614 hyp=1.734 wind=0.8913 lw=1.239 ch=0.0024591
+[103] joint-global RMSE= 5.103 cov=100.0% shallow= 4.180 deep= 5.809 | Kw=1.126 hyp=0.9453 wind=1.03 lw=1.249 ch=0.00066337
+[104] local1       RMSE= 2.446 cov=100.0% shallow= 1.664 deep= 2.274 | Kw=0.1346 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.00077819
+[105] local1       RMSE= 1.985 cov=100.0% shallow= 1.744 deep= 1.792 | Kw=0.3986 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.00077819
+[106] local1       RMSE= 1.429 cov=100.0% shallow= 1.314 deep= 1.370 | Kw=0.2666 hyp=0.3663 wind=0.8558 lw=0.9302 ch=0.00077819
+[107] local1       RMSE= 1.720 cov=100.0% shallow= 1.358 deep= 1.940 | Kw=0.2666 hyp=0.1323 wind=0.7597 lw=0.9302 ch=0.00077819
+[108] local1       RMSE= 1.720 cov=100.0% shallow= 1.313 deep= 1.844 | Kw=0.2666 hyp=0.1323 wind=0.9519 lw=0.9302 ch=0.00077819
+[109] local1       RMSE= 1.548 cov=99.9% shallow= 1.605 deep= 1.219 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=0.8521 ch=0.00077819
+[110] local1       RMSE= 1.707 cov=100.0% shallow= 1.723 deep= 1.514 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=1.008 ch=0.00077819
+[111] local1       RMSE= 1.512 cov=100.0% shallow= 1.272 deep= 1.547 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.00064815
+[112] local1       RMSE= 1.486 cov=100.0% shallow= 1.247 deep= 1.385 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.00093432
+[113] local1       RMSE= 1.494 cov=100.0% shallow= 1.290 deep= 1.259 | Kw=0.2006 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.00077819
+[114] local1       RMSE= 1.507 cov=100.0% shallow= 1.443 deep= 1.304 | Kw=0.3326 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.00077819
+[115] local1       RMSE= 1.349 cov=100.0% shallow= 1.245 deep= 1.143 | Kw=0.2666 hyp=0.2493 wind=0.8558 lw=0.9302 ch=0.00077819
+[116] local1       RMSE= 1.466 cov=100.0% shallow= 1.297 deep= 1.357 | Kw=0.2666 hyp=0.1323 wind=0.8078 lw=0.9302 ch=0.00077819
+[117] local1       RMSE= 1.395 cov=100.0% shallow= 1.219 deep= 1.475 | Kw=0.2666 hyp=0.1323 wind=0.9039 lw=0.9302 ch=0.00077819
+[118] local1       RMSE= 1.407 cov=100.0% shallow= 1.251 deep= 1.317 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=0.8911 ch=0.00077819
+[119] local1       RMSE= 1.525 cov=100.0% shallow= 1.401 deep= 1.427 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=0.9693 ch=0.00077819
+[120] local1       RMSE= 1.423 cov=100.0% shallow= 1.269 deep= 1.208 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.0007102
+[121] local1       RMSE= 1.267 cov=100.0% shallow= 1.192 deep= 1.086 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.00085269
+[122] local1       RMSE= 1.400 cov=100.0% shallow= 1.238 deep= 1.196 | Kw=0.2336 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.00077819
+[123] local1       RMSE= 1.434 cov=100.0% shallow= 1.238 deep= 1.334 | Kw=0.2996 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.00077819
+[124] local1       RMSE= 1.377 cov=100.0% shallow= 1.231 deep= 1.265 | Kw=0.2666 hyp=0.07376 wind=0.8558 lw=0.9302 ch=0.00077819
+[125] local1       RMSE= 1.380 cov=100.0% shallow= 1.205 deep= 1.362 | Kw=0.2666 hyp=0.1908 wind=0.8558 lw=0.9302 ch=0.00077819
+[126] local1       RMSE= 1.389 cov=100.0% shallow= 1.266 deep= 1.328 | Kw=0.2666 hyp=0.1323 wind=0.8318 lw=0.9302 ch=0.00077819
+[127] local1       RMSE= 1.524 cov=100.0% shallow= 1.186 deep= 1.654 | Kw=0.2666 hyp=0.1323 wind=0.8798 lw=0.9302 ch=0.00077819
+[128] local1       RMSE= 1.393 cov=100.0% shallow= 1.214 deep= 1.322 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=0.9107 ch=0.00077819
+[129] local1       RMSE= 1.582 cov=100.0% shallow= 1.371 deep= 1.551 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=0.9497 ch=0.00077819
+[130] local1       RMSE= 1.382 cov=99.9% shallow= 1.228 deep= 1.185 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.00074342
+[131] local1       RMSE= 1.319 cov=100.0% shallow= 1.254 deep= 1.073 | Kw=0.2666 hyp=0.1323 wind=0.8558 lw=0.9302 ch=0.00081459
+[132] local3       RMSE= 3.112 cov=100.0% shallow= 1.882 deep= 3.258 | Kw=0.1 hyp=1.12 wind=0.7962 lw=0.948 ch=0.00078065
+[133] local3       RMSE= 1.756 cov=100.0% shallow= 1.395 deep= 1.796 | Kw=0.3216 hyp=1.12 wind=0.7962 lw=0.948 ch=0.00078065
+[134] local3       RMSE= 1.675 cov=100.0% shallow= 1.334 deep= 1.552 | Kw=0.1896 hyp=0.8861 wind=0.7962 lw=0.948 ch=0.00078065
+[135] local3       RMSE= 1.620 cov=100.0% shallow= 1.218 deep= 1.720 | Kw=0.1896 hyp=1.354 wind=0.7962 lw=0.948 ch=0.00078065
+[136] local3       RMSE= 1.688 cov=100.0% shallow= 1.281 deep= 1.960 | Kw=0.1896 hyp=1.12 wind=0.7001 lw=0.948 ch=0.00078065
+[137] local3       RMSE= 2.084 cov=99.9% shallow= 1.401 deep= 2.004 | Kw=0.1896 hyp=1.12 wind=0.8923 lw=0.948 ch=0.00078065
+[138] local3       RMSE= 1.594 cov=100.0% shallow= 1.608 deep= 1.458 | Kw=0.1896 hyp=1.12 wind=0.7962 lw=0.8699 ch=0.00078065
+[139] local3       RMSE= 2.461 cov=100.0% shallow= 1.800 deep= 2.595 | Kw=0.1896 hyp=1.12 wind=0.7962 lw=1.026 ch=0.00078065
+[140] local3       RMSE= 1.782 cov=100.0% shallow= 1.373 deep= 1.714 | Kw=0.1896 hyp=1.12 wind=0.7962 lw=0.948 ch=0.0006502
+[141] local3       RMSE= 1.678 cov=100.0% shallow= 1.242 deep= 1.700 | Kw=0.1896 hyp=1.12 wind=0.7962 lw=0.948 ch=0.00093728
+[142] local3       RMSE= 3.112 cov=99.9% shallow= 2.763 deep= 3.134 | Kw=0.1 hyp=1.12 wind=0.7962 lw=0.8699 ch=0.00078065
+[143] local3       RMSE= 1.571 cov=100.0% shallow= 1.366 deep= 1.258 | Kw=0.3216 hyp=1.12 wind=0.7962 lw=0.8699 ch=0.00078065
+[144] local3       RMSE= 1.626 cov=100.0% shallow= 1.584 deep= 1.454 | Kw=0.1896 hyp=0.8861 wind=0.7962 lw=0.8699 ch=0.00078065
+[145] local3       RMSE= 1.669 cov=100.0% shallow= 1.642 deep= 1.516 | Kw=0.1896 hyp=1.354 wind=0.7962 lw=0.8699 ch=0.00078065
+[146] local3       RMSE= 1.506 cov=100.0% shallow= 1.488 deep= 1.441 | Kw=0.1896 hyp=1.12 wind=0.7001 lw=0.8699 ch=0.00078065
+[147] local3       RMSE= 2.085 cov=100.0% shallow= 1.817 deep= 1.901 | Kw=0.1896 hyp=1.12 wind=0.8923 lw=0.8699 ch=0.00078065
+[148] local3       RMSE= 2.101 cov=99.9% shallow= 2.615 deep= 1.500 | Kw=0.1896 hyp=1.12 wind=0.7962 lw=0.7917 ch=0.00078065
+[149] local3       RMSE= 1.601 cov=100.0% shallow= 1.650 deep= 1.422 | Kw=0.1896 hyp=1.12 wind=0.7962 lw=0.8699 ch=0.0006502
+[150] local3       RMSE= 1.721 cov=100.0% shallow= 1.581 deep= 1.702 | Kw=0.1896 hyp=1.12 wind=0.7962 lw=0.8699 ch=0.00093728
+[151] local3       RMSE= 2.311 cov=100.0% shallow= 2.209 deep= 1.924 | Kw=0.1236 hyp=1.12 wind=0.7001 lw=0.8699 ch=0.00078065
+[152] local3       RMSE= 1.992 cov=100.0% shallow= 1.397 deep= 2.209 | Kw=0.2556 hyp=1.12 wind=0.7001 lw=0.8699 ch=0.00078065
+[153] local3       RMSE= 1.640 cov=100.0% shallow= 1.494 deep= 1.732 | Kw=0.1896 hyp=1.003 wind=0.7001 lw=0.8699 ch=0.00078065
+[154] local3       RMSE= 1.619 cov=100.0% shallow= 1.487 deep= 1.732 | Kw=0.1896 hyp=1.237 wind=0.7001 lw=0.8699 ch=0.00078065
+[155] local3       RMSE= 1.755 cov=100.0% shallow= 1.384 deep= 2.117 | Kw=0.1896 hyp=1.12 wind=0.6521 lw=0.8699 ch=0.00078065
+[156] local3       RMSE= 1.499 cov=100.0% shallow= 1.520 deep= 1.362 | Kw=0.1896 hyp=1.12 wind=0.7482 lw=0.8699 ch=0.00078065
+[157] local3       RMSE= 1.619 cov=100.0% shallow= 1.876 deep= 1.346 | Kw=0.1896 hyp=1.12 wind=0.7001 lw=0.8308 ch=0.00078065
+[158] local3       RMSE= 1.576 cov=100.0% shallow= 1.244 deep= 1.833 | Kw=0.1896 hyp=1.12 wind=0.7001 lw=0.9089 ch=0.00078065
+[159] local3       RMSE= 1.553 cov=100.0% shallow= 1.525 deep= 1.544 | Kw=0.1896 hyp=1.12 wind=0.7001 lw=0.8699 ch=0.00071245
+[160] local3       RMSE= 1.689 cov=100.0% shallow= 1.478 deep= 1.796 | Kw=0.1896 hyp=1.12 wind=0.7001 lw=0.8699 ch=0.00085539
+[161] local3       RMSE= 2.514 cov=99.9% shallow= 2.250 deep= 2.291 | Kw=0.1236 hyp=1.12 wind=0.7482 lw=0.8699 ch=0.00078065
+[162] local3       RMSE= 1.528 cov=100.0% shallow= 1.390 deep= 1.603 | Kw=0.2556 hyp=1.12 wind=0.7482 lw=0.8699 ch=0.00078065
+[163] local3       RMSE= 1.576 cov=100.0% shallow= 1.558 deep= 1.432 | Kw=0.1896 hyp=1.003 wind=0.7482 lw=0.8699 ch=0.00078065
+[164] local3       RMSE= 1.529 cov=100.0% shallow= 1.545 deep= 1.304 | Kw=0.1896 hyp=1.237 wind=0.7482 lw=0.8699 ch=0.00078065
+[165] local3       RMSE= 1.712 cov=100.0% shallow= 1.969 deep= 1.296 | Kw=0.1896 hyp=1.12 wind=0.7482 lw=0.8308 ch=0.00078065
+[166] local3       RMSE= 1.592 cov=100.0% shallow= 1.279 deep= 1.519 | Kw=0.1896 hyp=1.12 wind=0.7482 lw=0.9089 ch=0.00078065
+[167] local3       RMSE= 1.534 cov=100.0% shallow= 1.548 deep= 1.308 | Kw=0.1896 hyp=1.12 wind=0.7482 lw=0.8699 ch=0.00071245
+[168] local3       RMSE= 1.543 cov=100.0% shallow= 1.529 deep= 1.409 | Kw=0.1896 hyp=1.12 wind=0.7482 lw=0.8699 ch=0.00085539
+[169] local3       RMSE= 1.824 cov=100.0% shallow= 1.784 deep= 1.496 | Kw=0.1566 hyp=1.12 wind=0.7482 lw=0.8699 ch=0.00078065
+[170] local3       RMSE= 1.465 cov=100.0% shallow= 1.391 deep= 1.421 | Kw=0.2226 hyp=1.12 wind=0.7482 lw=0.8699 ch=0.00078065
+[171] local3       RMSE= 1.531 cov=100.0% shallow= 1.536 deep= 1.412 | Kw=0.1896 hyp=1.062 wind=0.7482 lw=0.8699 ch=0.00078065
+[172] local3       RMSE= 1.522 cov=100.0% shallow= 1.536 deep= 1.349 | Kw=0.1896 hyp=1.179 wind=0.7482 lw=0.8699 ch=0.00078065
+[173] local3       RMSE= 1.540 cov=100.0% shallow= 1.529 deep= 1.425 | Kw=0.1896 hyp=1.12 wind=0.7241 lw=0.8699 ch=0.00078065
+[174] local3       RMSE= 1.615 cov=100.0% shallow= 1.605 deep= 1.497 | Kw=0.1896 hyp=1.12 wind=0.7722 lw=0.8699 ch=0.00078065
+[175] local3       RMSE= 1.585 cov=100.0% shallow= 1.756 deep= 1.298 | Kw=0.1896 hyp=1.12 wind=0.7482 lw=0.8503 ch=0.00078065
+[176] local3       RMSE= 1.532 cov=100.0% shallow= 1.393 deep= 1.606 | Kw=0.1896 hyp=1.12 wind=0.7482 lw=0.8894 ch=0.00078065
+[177] local3       RMSE= 1.445 cov=100.0% shallow= 1.529 deep= 1.229 | Kw=0.1896 hyp=1.12 wind=0.7482 lw=0.8699 ch=0.00074577
+[178] local3       RMSE= 1.595 cov=100.0% shallow= 1.562 deep= 1.523 | Kw=0.1896 hyp=1.12 wind=0.7482 lw=0.8699 ch=0.00081717
+[179] local3       RMSE= 1.872 cov=100.0% shallow= 1.818 deep= 1.639 | Kw=0.1566 hyp=1.12 wind=0.7482 lw=0.8699 ch=0.00074577
+[180] local3       RMSE= 1.451 cov=100.0% shallow= 1.402 deep= 1.318 | Kw=0.2226 hyp=1.12 wind=0.7482 lw=0.8699 ch=0.00074577
+[181] local3       RMSE= 1.584 cov=100.0% shallow= 1.557 deep= 1.338 | Kw=0.1896 hyp=1.062 wind=0.7482 lw=0.8699 ch=0.00074577
+[182] local3       RMSE= 1.527 cov=100.0% shallow= 1.560 deep= 1.338 | Kw=0.1896 hyp=1.179 wind=0.7482 lw=0.8699 ch=0.00074577
+[183] local3       RMSE= 1.582 cov=100.0% shallow= 1.582 deep= 1.534 | Kw=0.1896 hyp=1.12 wind=0.7241 lw=0.8699 ch=0.00074577
+[184] local3       RMSE= 1.675 cov=100.0% shallow= 1.613 deep= 1.457 | Kw=0.1896 hyp=1.12 wind=0.7722 lw=0.8699 ch=0.00074577
+[185] local3       RMSE= 1.566 cov=100.0% shallow= 1.761 deep= 1.290 | Kw=0.1896 hyp=1.12 wind=0.7482 lw=0.8503 ch=0.00074577
+[186] local3       RMSE= 1.531 cov=100.0% shallow= 1.404 deep= 1.499 | Kw=0.1896 hyp=1.12 wind=0.7482 lw=0.8894 ch=0.00074577
+==============================================================================
+Calibration complete
+Best parameters:
+  Kw             = 0.2666332
+  coef_mix_hyp   = 0.132258
+  wind_factor    = 0.8558195
+  lw_factor      = 0.9301974
+  ch             = 0.00077818786
+Final interpolated RMSE = 1.2471 degC
+Output NetCDF           = /root/output/output.nc
+Final namelist          = /root/glm3.nml
+Calibration history     = /root/output/calibration_history.csv
+Observation match       = /root/output/final_match.csv
+==============================================================================
+
+========== Run test.sh ==========
+
+========== Result ==========
+Task: glm-lake-mendota
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 383.1s (exit 0)
+Test: 5.6s (exit 0)
+Solve Memory Peak: 130.0 MiB
+Test Memory Peak: 240.4 MiB

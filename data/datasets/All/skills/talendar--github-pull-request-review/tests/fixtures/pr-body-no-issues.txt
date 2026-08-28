@@ -1,0 +1,7 @@
+## Summary
+Refactored the utility functions for better readability.
+
+## Changes
+- Extracted common logic into shared helpers
+- Updated imports across modules
+- No functional changes

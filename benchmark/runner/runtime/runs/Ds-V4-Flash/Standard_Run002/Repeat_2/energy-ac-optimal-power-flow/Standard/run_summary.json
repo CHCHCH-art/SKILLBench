@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "energy-ac-optimal-power-flow",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestSchema::test_generator_count: AssertionError: Expected 69 generators, got 57; test_outputs.py::TestFeasibility::test_generator_p_bounds: AssertionError: Generator P violations:; test_outputs.py::TestFeasibility::test_generator_q_bounds: AssertionError: Generator Q violations:; test_outputs.py::TestFeasibility::test_power_balance_acopf: AssertionError: Max P mismatch 1499.000017 MW; test_outputs.py::TestOptimality::test_cost_matches_gencost: ValueError: operands could not be broadcast together with shapes (69,) (57,); test_outputs.py::TestOptimality::test_cost_within_10pct_of_solved_acopf: AssertionError: Objective gap too large: reported=743601.690000, benchmark=565219.971833, allowed=[508697.974650, 621741.969016]",
+  "peak_memory": {
+    "peak_memory_mib": 1916.928,
+    "peak_memory_raw": "1.872GiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.514,
+    "agent_setup_sec": 0.939,
+    "agent_execution_sec": 1692.623,
+    "verifier_sec": 240.869,
+    "total_sec": 1943.329
+  },
+  "llm_cost_usd": 0.059816456000000004,
+  "agent_input_tokens": 5415046,
+  "agent_output_tokens": 67592,
+  "image_cache": {
+    "image": "benchmark-cache/energy-ac-optimal-power-flow-gold:131fccb5858c984c",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "acopf-feasibility-loading-report",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve"
+    ],
+    "available_skills": [
+      "acopf-feasibility-loading-report",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve"
+    ],
+    "loaded_skills": [
+      "acopf-feasibility-loading-report",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-ac-optimal-power-flow__jKbHDko",
+        "passed": true,
+        "provided_skills": [
+          "acopf-feasibility-loading-report",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve"
+        ],
+        "available_skills": [
+          "acopf-feasibility-loading-report",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve"
+        ],
+        "loaded_skills": [
+          "acopf-feasibility-loading-report",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "casadi-acopf-pi-network-formulation": [
+            {
+              "step_id": 7,
+              "tool_call_id": "call_7482d62dfc294b949b992865",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/casadi-acopf-pi-network-formulation/SKILL.md"
+            }
+          ],
+          "ipopt-acopf-reference-solve": [
+            {
+              "step_id": 7,
+              "tool_call_id": "call_903e8d0f6a1b488e83f8c083",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/ipopt-acopf-reference-solve/SKILL.md"
+            }
+          ],
+          "acopf-feasibility-loading-report": [
+            {
+              "step_id": 7,
+              "tool_call_id": "call_0e9c2d696da8497f99a2adad",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/acopf-feasibility-loading-report/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

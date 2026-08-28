@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "llm-inference-batching-scheduler",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_performance_thresholds: AssertionError: bucket2 sequential_timecost 32177375.869599994 > 3.2e7",
+  "peak_memory": {
+    "peak_memory_mib": 101.4,
+    "peak_memory_raw": "101.4MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.729,
+    "agent_setup_sec": 0.91,
+    "agent_execution_sec": 607.586,
+    "verifier_sec": 79.238,
+    "total_sec": 695.547
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1615252,
+  "agent_output_tokens": 22547,
+  "image_cache": {
+    "image": "benchmark-cache/llm-inference-batching-scheduler-gold:c835608261b94b37",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "constrained-agglomerative-request-batching",
+      "shape-aware-batch-cost-model",
+      "shared-shape-dp-budget-closure"
+    ],
+    "available_skills": [
+      "constrained-agglomerative-request-batching",
+      "shape-aware-batch-cost-model",
+      "shared-shape-dp-budget-closure"
+    ],
+    "loaded_skills": [
+      "constrained-agglomerative-request-batching",
+      "shape-aware-batch-cost-model",
+      "shared-shape-dp-budget-closure"
+    ],
+    "trials": [
+      {
+        "trial_id": "llm-inference-batching-scheduler__DQDYw5S",
+        "passed": true,
+        "provided_skills": [
+          "constrained-agglomerative-request-batching",
+          "shape-aware-batch-cost-model",
+          "shared-shape-dp-budget-closure"
+        ],
+        "available_skills": [
+          "constrained-agglomerative-request-batching",
+          "shape-aware-batch-cost-model",
+          "shared-shape-dp-budget-closure"
+        ],
+        "loaded_skills": [
+          "constrained-agglomerative-request-batching",
+          "shape-aware-batch-cost-model",
+          "shared-shape-dp-budget-closure"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "constrained-agglomerative-request-batching": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_eXCbgft7jeq6RUCt5hjoO6R0",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/constrained-agglomerative-request-batching/SKILL.md"
+            }
+          ],
+          "shared-shape-dp-budget-closure": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_eXCbgft7jeq6RUCt5hjoO6R0",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/shared-shape-dp-budget-closure/SKILL.md"
+            }
+          ],
+          "shape-aware-batch-cost-model": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_eXCbgft7jeq6RUCt5hjoO6R0",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/shape-aware-batch-cost-model/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

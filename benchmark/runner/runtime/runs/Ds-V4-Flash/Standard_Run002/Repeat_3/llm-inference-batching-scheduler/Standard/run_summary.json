@@ -1,0 +1,71 @@
+{
+  "schema_version": 6,
+  "task_id": "llm-inference-batching-scheduler",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_output_files_exist: AssertionError: Missing required output file: /app/task_file/output_data/plan_b1.jsonl; test_outputs.py::test_generate_and_schema: FileNotFoundError: [Errno 2] No such file or directory: '/app/task_file/output_data/plan_b1.jsonl'; test_outputs.py::test_solution_shape_feasibility_and_batch_consistency: FileNotFoundError: [Errno 2] No such file or directory: '/app/task_file/output_data/plan_b1.jsonl'; test_outputs.py::test_solution_coverage_no_duplicates: FileNotFoundError: [Errno 2] No such file or directory: '/app/task_file/output_data/plan_b1.jsonl'; test_outputs.py::test_performance_thresholds: FileNotFoundError: [Errno 2] No such file or directory: '/app/task_file/output_data/plan_b1.jsonl'",
+  "peak_memory": {
+    "peak_memory_mib": 85.45,
+    "peak_memory_raw": "85.45MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.471,
+    "agent_setup_sec": 0.695,
+    "agent_execution_sec": 418.258,
+    "verifier_sec": 10.052,
+    "total_sec": 437.693
+  },
+  "llm_cost_usd": 0.0185879792,
+  "agent_input_tokens": 778034,
+  "agent_output_tokens": 34120,
+  "image_cache": {
+    "image": "benchmark-cache/llm-inference-batching-scheduler-gold:c835608261b94b37",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "generation-aware-dp-batch-splitting",
+      "paired-plan-cost-threshold-selection",
+      "shared-sequence-shape-selection"
+    ],
+    "available_skills": [
+      "generation-aware-dp-batch-splitting",
+      "paired-plan-cost-threshold-selection",
+      "shared-sequence-shape-selection"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "llm-inference-batching-scheduler__4ZrD9av",
+        "passed": true,
+        "provided_skills": [
+          "generation-aware-dp-batch-splitting",
+          "paired-plan-cost-threshold-selection",
+          "shared-sequence-shape-selection"
+        ],
+        "available_skills": [
+          "generation-aware-dp-batch-splitting",
+          "paired-plan-cost-threshold-selection",
+          "shared-sequence-shape-selection"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

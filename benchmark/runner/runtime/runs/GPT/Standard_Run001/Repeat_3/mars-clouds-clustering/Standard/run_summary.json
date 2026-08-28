@@ -1,0 +1,80 @@
+{
+  "schema_version": 6,
+  "task_id": "mars-clouds-clustering",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 397.9,
+    "peak_memory_raw": "397.9MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.772,
+    "agent_setup_sec": 1.054,
+    "agent_execution_sec": 133.182,
+    "verifier_sec": 1.451,
+    "total_sec": 143.505
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 135107,
+  "agent_output_tokens": 3327,
+  "image_cache": {
+    "image": "benchmark-cache/mars-clouds-clustering-gold:b70cf811266787f2",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "parallel-dbscan-grid-pareto-frontier",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "available_skills": [
+      "parallel-dbscan-grid-pareto-frontier",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "loaded_skills": [
+      "parallel-dbscan-grid-pareto-frontier"
+    ],
+    "trials": [
+      {
+        "trial_id": "mars-clouds-clustering__TgF44o7",
+        "passed": true,
+        "provided_skills": [
+          "parallel-dbscan-grid-pareto-frontier",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "available_skills": [
+          "parallel-dbscan-grid-pareto-frontier",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "loaded_skills": [
+          "parallel-dbscan-grid-pareto-frontier"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "parallel-dbscan-grid-pareto-frontier": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_A8Z4IqbdrZ8d35lvWv9Qal7V",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/parallel-dbscan-grid-pareto-frontier/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

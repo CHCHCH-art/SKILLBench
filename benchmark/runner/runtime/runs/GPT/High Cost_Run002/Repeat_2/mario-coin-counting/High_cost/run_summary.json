@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "mario-coin-counting",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 199.8,
+    "peak_memory_raw": "199.8MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.914,
+    "agent_setup_sec": 1.162,
+    "agent_execution_sec": 111.5,
+    "verifier_sec": 77.86,
+    "total_sec": 198.647
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 131446,
+  "agent_output_tokens": 3256,
+  "image_cache": {
+    "image": "benchmark-cache/mario-coin-counting-gold:989a4c6bcaeff277",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "template-match-spatial-counting",
+      "video-iframe-grayscale-keyframes"
+    ],
+    "available_skills": [
+      "template-match-spatial-counting",
+      "video-iframe-grayscale-keyframes"
+    ],
+    "loaded_skills": [
+      "template-match-spatial-counting",
+      "video-iframe-grayscale-keyframes"
+    ],
+    "trials": [
+      {
+        "trial_id": "mario-coin-counting__SNsWNXj",
+        "passed": true,
+        "provided_skills": [
+          "template-match-spatial-counting",
+          "video-iframe-grayscale-keyframes"
+        ],
+        "available_skills": [
+          "template-match-spatial-counting",
+          "video-iframe-grayscale-keyframes"
+        ],
+        "loaded_skills": [
+          "template-match-spatial-counting",
+          "video-iframe-grayscale-keyframes"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "video-iframe-grayscale-keyframes": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_b0lEgwSP8jju3V9uCuYtSaeJ",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/video-iframe-grayscale-keyframes/SKILL.md"
+            }
+          ],
+          "template-match-spatial-counting": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_b0lEgwSP8jju3V9uCuYtSaeJ",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/template-match-spatial-counting/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

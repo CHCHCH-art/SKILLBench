@@ -1,0 +1,28 @@
+2026-08-25T14:41:20.415826+00:00 START operation=run batch=single_Selected_Run002 repeat=3 task=log-summary-date-ranges condition=selected image=benchmark-cache/log-summary-date-ranges-gold:e28534907986406f provided_skills=["ancoleman--optimizing-sql", "autonity--afp-product-builder", "clawdbot--sonoscli", "date-range-severity-summary-emission", "dated-log-severity-summary", "github--update-specification", "hookdeck--vercel-webhooks", "lightdash--debug-local", "plurigrid--oapply-colimit", "streaming-dated-log-sqlite-aggregation"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:06:59 0:00:00
+selected • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 6m 59s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_3\log-summary-date-ranges\Selected\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_3\log-summary-date-ranges\Selected`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_3\log-summary-date-ranges\Selected\Job_result`
+
+2026-08-25T14:48:22.642721+00:00 PASS operation=run batch=single_Selected_Run002 repeat=3 task=log-summary-date-ranges condition=selected

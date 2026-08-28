@@ -1,0 +1,154 @@
+{
+  "schema_version": 6,
+  "task_id": "find-topk-similiar-chemicals",
+  "condition": "selected",
+  "batch": "single_Selected_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 217.7,
+    "peak_memory_raw": "217.7MiB",
+    "error": "EOF",
+    "container_name_hint": "find-topk-similiar-c"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.639,
+    "agent_setup_sec": 0.754,
+    "agent_execution_sec": 246.27,
+    "verifier_sec": 97.949,
+    "total_sec": 352.351
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 290047,
+  "agent_output_tokens": 6472,
+  "image_cache": {
+    "image": "benchmark-cache/find-topk-similiar-chemicals-gold:bd06707e8ac4a427",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "aidotnet--sharp",
+      "austintgriffith--ship",
+      "benchflow-ai--qutip",
+      "chemical-pdf-pubchem-structure-resolution",
+      "googleworkspace--recipe-create-gmail-filter",
+      "laurigates--infrastructure-terraform",
+      "morgan-count-tanimoto-ranking",
+      "pdf-molecule-name-pool-extraction",
+      "pubchem-morgan-fingerprint-resolution",
+      "tanimoto-topk-molecule-ranking"
+    ],
+    "available_skills": [
+      "aidotnet--sharp",
+      "austintgriffith--ship",
+      "benchflow-ai--qutip",
+      "chemical-pdf-pubchem-structure-resolution",
+      "googleworkspace--recipe-create-gmail-filter",
+      "laurigates--infrastructure-terraform",
+      "morgan-count-tanimoto-ranking",
+      "pdf-molecule-name-pool-extraction",
+      "pubchem-morgan-fingerprint-resolution",
+      "tanimoto-topk-molecule-ranking"
+    ],
+    "loaded_skills": [
+      "chemical-pdf-pubchem-structure-resolution",
+      "morgan-count-tanimoto-ranking",
+      "pdf-molecule-name-pool-extraction",
+      "pubchem-morgan-fingerprint-resolution",
+      "tanimoto-topk-molecule-ranking"
+    ],
+    "trials": [
+      {
+        "trial_id": "find-topk-similiar-chemicals__yZ6Lpme",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "aidotnet--sharp",
+          "austintgriffith--ship",
+          "benchflow-ai--qutip",
+          "chemical-pdf-pubchem-structure-resolution",
+          "googleworkspace--recipe-create-gmail-filter",
+          "laurigates--infrastructure-terraform",
+          "morgan-count-tanimoto-ranking",
+          "pdf-molecule-name-pool-extraction",
+          "pubchem-morgan-fingerprint-resolution",
+          "tanimoto-topk-molecule-ranking"
+        ],
+        "available_skills": [
+          "aidotnet--sharp",
+          "austintgriffith--ship",
+          "benchflow-ai--qutip",
+          "chemical-pdf-pubchem-structure-resolution",
+          "googleworkspace--recipe-create-gmail-filter",
+          "laurigates--infrastructure-terraform",
+          "morgan-count-tanimoto-ranking",
+          "pdf-molecule-name-pool-extraction",
+          "pubchem-morgan-fingerprint-resolution",
+          "tanimoto-topk-molecule-ranking"
+        ],
+        "loaded_skills": [
+          "chemical-pdf-pubchem-structure-resolution",
+          "morgan-count-tanimoto-ranking",
+          "pdf-molecule-name-pool-extraction",
+          "pubchem-morgan-fingerprint-resolution",
+          "tanimoto-topk-molecule-ranking"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "chemical-pdf-pubchem-structure-resolution": [
+            {
+              "step_id": 41,
+              "tool_call_id": "call_cc1e41ac71734526b045f482",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/chemical-pdf-pubchem-structure-resolution/SKILL.md"
+            }
+          ],
+          "pdf-molecule-name-pool-extraction": [
+            {
+              "step_id": 42,
+              "tool_call_id": "call_4a47e7a86dac4f1185738a95",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/pdf-molecule-name-pool-extraction/SKILL.md"
+            }
+          ],
+          "pubchem-morgan-fingerprint-resolution": [
+            {
+              "step_id": 49,
+              "tool_call_id": "call_7b1228b891ca4048a63522cb",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/pubchem-morgan-fingerprint-resolution/SKILL.md"
+            }
+          ],
+          "morgan-count-tanimoto-ranking": [
+            {
+              "step_id": 50,
+              "tool_call_id": "call_a3f984e09f024369b34403d2",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/morgan-count-tanimoto-ranking/SKILL.md"
+            }
+          ],
+          "tanimoto-topk-molecule-ranking": [
+            {
+              "step_id": 51,
+              "tool_call_id": "call_c3986ce241d44b5386585bd6",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/tanimoto-topk-molecule-ranking/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

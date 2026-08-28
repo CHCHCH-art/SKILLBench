@@ -1,0 +1,150 @@
+{
+  "schema_version": 6,
+  "task_id": "train-fasttext",
+  "condition": "selected",
+  "batch": "single_Selected_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 3432.448,
+    "peak_memory_raw": "3.352GiB",
+    "error": "EOF",
+    "container_name_hint": "train-fasttext"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.701,
+    "agent_setup_sec": 0.857,
+    "agent_execution_sec": 1480.333,
+    "verifier_sec": 72.526,
+    "total_sec": 1562.64
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 612965,
+  "agent_output_tokens": 4306,
+  "image_cache": {
+    "image": "benchmark-cache/train-fasttext-gold:61266fd7d3d7eaea",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "alexandru--cats-effect-io",
+      "astral-sh--ruff",
+      "baseline-fasttext-small-supervised-training",
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection",
+      "letta-ai--linear",
+      "parquet-to-fasttext-supervised-text",
+      "petekp--design-motion-principles",
+      "piqs-open-dicke-superoperator-construction",
+      "trpc-group--plan-route"
+    ],
+    "available_skills": [
+      "alexandru--cats-effect-io",
+      "astral-sh--ruff",
+      "baseline-fasttext-small-supervised-training",
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection",
+      "letta-ai--linear",
+      "parquet-to-fasttext-supervised-text",
+      "petekp--design-motion-principles",
+      "piqs-open-dicke-superoperator-construction",
+      "trpc-group--plan-route"
+    ],
+    "loaded_skills": [
+      "baseline-fasttext-small-supervised-training",
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection",
+      "parquet-to-fasttext-supervised-text"
+    ],
+    "trials": [
+      {
+        "trial_id": "train-fasttext__B583aC7",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "alexandru--cats-effect-io",
+          "astral-sh--ruff",
+          "baseline-fasttext-small-supervised-training",
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection",
+          "letta-ai--linear",
+          "parquet-to-fasttext-supervised-text",
+          "petekp--design-motion-principles",
+          "piqs-open-dicke-superoperator-construction",
+          "trpc-group--plan-route"
+        ],
+        "available_skills": [
+          "alexandru--cats-effect-io",
+          "astral-sh--ruff",
+          "baseline-fasttext-small-supervised-training",
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection",
+          "letta-ai--linear",
+          "parquet-to-fasttext-supervised-text",
+          "petekp--design-motion-principles",
+          "piqs-open-dicke-superoperator-construction",
+          "trpc-group--plan-route"
+        ],
+        "loaded_skills": [
+          "baseline-fasttext-small-supervised-training",
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection",
+          "parquet-to-fasttext-supervised-text"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "parquet-to-fasttext-supervised-text": [
+            {
+              "step_id": 18,
+              "tool_call_id": "call_3fdc068bbcf64425bd0e0060",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/parquet-to-fasttext-supervised-text/SKILL.md"
+            },
+            {
+              "step_id": 19,
+              "tool_call_id": "call_bceaa2d28dd74c4ca7926b65",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/parquet-to-fasttext-supervised-text/SKILL.md"
+            }
+          ],
+          "baseline-fasttext-small-supervised-training": [
+            {
+              "step_id": 23,
+              "tool_call_id": "call_fbfe5c20ca1e4ae6a7d1a57a",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/baseline-fasttext-small-supervised-training/SKILL.md"
+            }
+          ],
+          "deterministic-fasttext-search-split": [
+            {
+              "step_id": 26,
+              "tool_call_id": "call_fdfc515f6659469294c7c6a8",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/deterministic-fasttext-search-split/SKILL.md"
+            }
+          ],
+          "fasttext-constrained-autotune-selection": [
+            {
+              "step_id": 27,
+              "tool_call_id": "call_1a36ea084f9545f78c36c3f0",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/fasttext-constrained-autotune-selection/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 5,
+  "task_id": "dynamic-object-aware-egomotion",
+  "condition": "no_skill",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestMotionAccuracy::test_motion_macro_f1: assert np.float64(0.4473493100944081) >= 0.5; test_outputs.py::TestMaskAccuracy::test_mask_comprehensive: AssertionError: Mean IoU is below acceptable threshold.",
+  "peak_memory": {
+    "peak_memory_mib": 514.7,
+    "peak_memory_raw": "514.7MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.384,
+    "agent_setup_sec": 141.519,
+    "agent_execution_sec": 516.689,
+    "verifier_sec": 23.128,
+    "total_sec": 687.239
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/dynamic-object-aware-egomotion-gold:5a35ecfe04747b05",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "dynamic-object-aware-egomotion__en8w62U",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0,
+  "batch": "No_skill_Run001",
+  "repeat": 3,
+  "operation": "run"
+}

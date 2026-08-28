@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "dialogue-parser",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 123.9,
+    "peak_memory_raw": "123.9MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.979,
+    "agent_setup_sec": 2.251,
+    "agent_execution_sec": 117.298,
+    "verifier_sec": 4.52,
+    "total_sec": 132.838
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 158451,
+  "agent_output_tokens": 4397,
+  "image_cache": {
+    "image": "benchmark-cache/dialogue-parser-gold:c0353fb4817c6884",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dialogue-graph-validation-serialization",
+      "dialogue-section-choice-parser"
+    ],
+    "available_skills": [
+      "dialogue-graph-validation-serialization",
+      "dialogue-section-choice-parser"
+    ],
+    "loaded_skills": [
+      "dialogue-graph-validation-serialization",
+      "dialogue-section-choice-parser"
+    ],
+    "trials": [
+      {
+        "trial_id": "dialogue-parser__KG53wFc",
+        "passed": true,
+        "provided_skills": [
+          "dialogue-graph-validation-serialization",
+          "dialogue-section-choice-parser"
+        ],
+        "available_skills": [
+          "dialogue-graph-validation-serialization",
+          "dialogue-section-choice-parser"
+        ],
+        "loaded_skills": [
+          "dialogue-graph-validation-serialization",
+          "dialogue-section-choice-parser"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "dialogue-graph-validation-serialization": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_6oUHVREG5fI0prDUt136eBcV",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/dialogue-graph-validation-serialization/SKILL.md"
+            }
+          ],
+          "dialogue-section-choice-parser": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_6oUHVREG5fI0prDUt136eBcV",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/dialogue-section-choice-parser/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

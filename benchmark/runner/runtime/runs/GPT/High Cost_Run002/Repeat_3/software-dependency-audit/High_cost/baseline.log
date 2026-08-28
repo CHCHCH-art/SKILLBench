@@ -1,0 +1,28 @@
+2026-08-17T21:06:42.613987+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=software-dependency-audit condition=high_cost image=benchmark-cache/software-dependency-audit-gold:65439dede9bf4280 provided_skills=["deterministic-offline-package-tree-reconstruction", "npm-lock-dual-sbom-dependency-graph", "trivy-dual-scan-csv-reconciliation"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:04:22 0:00:00
+high_cost • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 22s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\software-dependency-audit\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\software-dependency-audit\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\software-dependency-audit\High_cost\Job_result`
+
+2026-08-17T21:11:06.238430+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=software-dependency-audit condition=high_cost

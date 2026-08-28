@@ -1,0 +1,28 @@
+2026-08-17T05:37:26.249103+00:00 START operation=run batch=single_Standard_Run001 repeat=1 task=exceltable-in-ppt condition=standard image=benchmark-cache/exceltable-in-ppt-gold:76ac1a2bd4e98536 provided_skills=["inverse-rate-workbook-cell-update", "pptx-embedded-workbook-orchestration"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:02:56 0:00:00
+standard • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 56s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\exceltable-in-ppt\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\exceltable-in-ppt\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\exceltable-in-ppt\Standard\Job_result`
+
+2026-08-17T05:40:24.969989+00:00 FAIL operation=run batch=single_Standard_Run001 repeat=1 task=exceltable-in-ppt condition=standard

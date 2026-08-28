@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "financial-modeling-qa",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 132.8,
+    "peak_memory_raw": "132.8MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.93,
+    "agent_setup_sec": 1.275,
+    "agent_execution_sec": 102.797,
+    "verifier_sec": 71.177,
+    "total_sec": 185.054
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 124446,
+  "agent_output_tokens": 3432,
+  "image_cache": {
+    "image": "benchmark-cache/financial-modeling-qa-gold:0fdb74de33d4be91",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "pdf-game-rule-object-extraction",
+      "sparse-ooxml-turn-record-recovery",
+      "unique-category-game-assignment"
+    ],
+    "available_skills": [
+      "pdf-game-rule-object-extraction",
+      "sparse-ooxml-turn-record-recovery",
+      "unique-category-game-assignment"
+    ],
+    "loaded_skills": [
+      "pdf-game-rule-object-extraction",
+      "sparse-ooxml-turn-record-recovery",
+      "unique-category-game-assignment"
+    ],
+    "trials": [
+      {
+        "trial_id": "financial-modeling-qa__waBgYWd",
+        "passed": true,
+        "provided_skills": [
+          "pdf-game-rule-object-extraction",
+          "sparse-ooxml-turn-record-recovery",
+          "unique-category-game-assignment"
+        ],
+        "available_skills": [
+          "pdf-game-rule-object-extraction",
+          "sparse-ooxml-turn-record-recovery",
+          "unique-category-game-assignment"
+        ],
+        "loaded_skills": [
+          "pdf-game-rule-object-extraction",
+          "sparse-ooxml-turn-record-recovery",
+          "unique-category-game-assignment"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "pdf-game-rule-object-extraction": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_LlfsW7COaLPbca4uY1izqZ53",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/pdf-game-rule-object-extraction/SKILL.md"
+            }
+          ],
+          "unique-category-game-assignment": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_LlfsW7COaLPbca4uY1izqZ53",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/unique-category-game-assignment/SKILL.md"
+            }
+          ],
+          "sparse-ooxml-turn-record-recovery": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_LlfsW7COaLPbca4uY1izqZ53",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/sparse-ooxml-turn-record-recovery/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

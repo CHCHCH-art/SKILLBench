@@ -1,0 +1,124 @@
+{
+  "schema_version": 6,
+  "task_id": "video-silence-remover",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_segment_detection_recall: AssertionError: Segment detection recall 22.2% is below 60% (2/9 segments matched); test_outputs.py::test_segment_detection_precision: AssertionError: Segment detection precision 28.6% is below 60% (2/7 detections correct); test_outputs.py::test_total_removed_duration: AssertionError: Removed duration 69.00462600000003s not within 20% of ground truth 254s (range [203, 305]); test_outputs.py::test_compressed_duration: AssertionError: Compressed duration 531.0s not within 20% of expected 346s",
+  "peak_memory": {
+    "peak_memory_mib": 482.4,
+    "peak_memory_raw": "482.4MiB",
+    "error": null,
+    "container_name_hint": "video-silence-remove"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.398,
+    "agent_setup_sec": 0.903,
+    "agent_execution_sec": 531.158,
+    "verifier_sec": 14.172,
+    "total_sec": 556.738
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 3163575,
+  "agent_output_tokens": 20125,
+  "image_cache": {
+    "image": "benchmark-cache/video-silence-remover-gold:274332f35d40c56d",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "BrownFineSecurity--nmap",
+      "audio-energy-removal-window-detection",
+      "powerlifting-workbook-formula-population",
+      "probed-duration-removal-report",
+      "rendered-media-compression-report",
+      "rms-opening-pause-interval-detection",
+      "segmented-video-continuous-audio-reassembly",
+      "sickn33--tdd-workflows-tdd-refactor",
+      "single-filtergraph-av-trim-concat",
+      "vfarcic--dot-ai-prd-start"
+    ],
+    "available_skills": [
+      "BrownFineSecurity--nmap",
+      "audio-energy-removal-window-detection",
+      "powerlifting-workbook-formula-population",
+      "probed-duration-removal-report",
+      "rendered-media-compression-report",
+      "rms-opening-pause-interval-detection",
+      "segmented-video-continuous-audio-reassembly",
+      "sickn33--tdd-workflows-tdd-refactor",
+      "single-filtergraph-av-trim-concat",
+      "vfarcic--dot-ai-prd-start"
+    ],
+    "loaded_skills": [
+      "rms-opening-pause-interval-detection",
+      "single-filtergraph-av-trim-concat"
+    ],
+    "trials": [
+      {
+        "trial_id": "video-silence-remover__Ub8tdn6",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "BrownFineSecurity--nmap",
+          "audio-energy-removal-window-detection",
+          "powerlifting-workbook-formula-population",
+          "probed-duration-removal-report",
+          "rendered-media-compression-report",
+          "rms-opening-pause-interval-detection",
+          "segmented-video-continuous-audio-reassembly",
+          "sickn33--tdd-workflows-tdd-refactor",
+          "single-filtergraph-av-trim-concat",
+          "vfarcic--dot-ai-prd-start"
+        ],
+        "available_skills": [
+          "BrownFineSecurity--nmap",
+          "audio-energy-removal-window-detection",
+          "powerlifting-workbook-formula-population",
+          "probed-duration-removal-report",
+          "rendered-media-compression-report",
+          "rms-opening-pause-interval-detection",
+          "segmented-video-continuous-audio-reassembly",
+          "sickn33--tdd-workflows-tdd-refactor",
+          "single-filtergraph-av-trim-concat",
+          "vfarcic--dot-ai-prd-start"
+        ],
+        "loaded_skills": [
+          "rms-opening-pause-interval-detection",
+          "single-filtergraph-av-trim-concat"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "rms-opening-pause-interval-detection": [
+            {
+              "step_id": 145,
+              "tool_call_id": "call_d4152c916b9e40ed8abac56b",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/rms-opening-pause-interval-detection/SKILL.md"
+            }
+          ],
+          "single-filtergraph-av-trim-concat": [
+            {
+              "step_id": 233,
+              "tool_call_id": "call_57684ddfb74348beb60a144a",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/single-filtergraph-av-trim-concat/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

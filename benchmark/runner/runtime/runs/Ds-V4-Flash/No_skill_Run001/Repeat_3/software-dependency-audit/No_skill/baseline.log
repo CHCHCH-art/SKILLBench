@@ -1,0 +1,28 @@
+2026-08-20T03:33:26.007922+00:00 START operation=run batch=single_No_skill_Run001 repeat=3 task=software-dependency-audit condition=no_skill image=benchmark-cache/software-dependency-audit-gold:65439dede9bf4280 provided_skills=[]
+  1/1 Mean: 0.000 ---------------------------------------- 0:04:50 0:00:00
+no_skill • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 50s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run001\Repe
+at_3\software-dependency-audit\No_skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run001\Repe
+at_3\software-dependency-audit\No_skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run001\Repe
+at_3\software-dependency-audit\No_skill\Job_result`
+
+2026-08-20T03:38:18.185119+00:00 FAIL operation=run batch=single_No_skill_Run001 repeat=3 task=software-dependency-audit condition=no_skill

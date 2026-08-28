@@ -1,0 +1,48 @@
+# CARD.yml — Visualizer (condensed)
+
+card:
+  id: visualizer
+  name: "Visualizer"
+  type: [skill, image-generation, promptcraft]
+  emoji: "🖼️"
+  rarity: uncommon
+  tagline: "Turn descriptions into images"
+  description: |
+    Generate images from prompts. Focus on clarity, composition, and
+    style consistency across sets.
+
+invoke_when:
+  - "Need a concrete visual from a description"
+  - "Generating a consistent image set"
+  - "Exploring prompt variants"
+
+inputs:
+  required: [prompt]
+  optional: [style, camera, lighting, palette, aspect_ratio]
+
+methods:
+  RENDER:
+    signature: "RENDER [prompt] (STYLE [style])"
+    output: "Image + prompt metadata"
+  VARIANTS:
+    signature: "VARIANTS [prompt] (N [count])"
+    output: "Set of variations"
+  CONSISTENT_SET:
+    signature: "CONSISTENT SET [prompts] USING [style_anchor]"
+    output: "Cohesive series"
+
+principles:
+  specificity: "Concrete nouns beat vague adjectives"
+  composition: "Describe framing, subject placement, and focal point"
+  continuity: "Reuse anchors for series consistency"
+
+examples:
+  portrait: "RENDER 'Silver-haired professor in a book-lined study' STYLE documentary"
+  set: "CONSISTENT SET [room1, room2, room3] USING 'warm tungsten, 35mm'"
+
+references:
+  details: "skills/visualizer/SKILL.md"
+
+advertisements:
+  render_prompt: "Turn descriptions into images"
+  consistent_set: "Keep a series visually coherent"

@@ -1,0 +1,51 @@
+{
+  "schema_version": 5,
+  "task_id": "glm-lake-mendota",
+  "condition": "no_skill",
+  "batch": "No_skill_Run001",
+  "repeat": 2,
+  "operation": "rerun",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 409.4,
+    "peak_memory_raw": "409.4MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.495,
+    "agent_setup_sec": 89.935,
+    "agent_execution_sec": 478.124,
+    "verifier_sec": 8.996,
+    "total_sec": 583.556
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/glm-lake-mendota-gold:ee594ed8f85acded",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "glm-lake-mendota__YBapBx8",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

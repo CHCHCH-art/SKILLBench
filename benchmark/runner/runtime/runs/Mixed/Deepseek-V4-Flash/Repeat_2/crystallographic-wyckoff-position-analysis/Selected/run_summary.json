@@ -1,0 +1,144 @@
+{
+  "schema_version": 6,
+  "task_id": "crystallographic-wyckoff-position-analysis",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 128.1,
+    "peak_memory_raw": "128.1MiB",
+    "error": "EOF",
+    "container_name_hint": "crystallographic-wyc"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.542,
+    "agent_setup_sec": 1.003,
+    "agent_execution_sec": 76.953,
+    "verifier_sec": 5.81,
+    "total_sec": 90.768
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 189157,
+  "agent_output_tokens": 2715,
+  "image_cache": {
+    "image": "benchmark-cache/crystallographic-wyckoff-position-analysis-gold:0f59e77451a3b6af",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "boshu2--converter",
+      "cif-explicit-site-normalization",
+      "cif-wyckoff-letter-reference-summary",
+      "davila7--launch-strategy",
+      "fractional-coordinate-rational-formatting",
+      "jeremylongshore--stub-creator",
+      "ooxml-two-key-lookup-formula-population",
+      "vasilyu1983--ai-mlops",
+      "wyckoff-spglib-stability-analysis",
+      "yannickyamo--product-delivery"
+    ],
+    "available_skills": [
+      "boshu2--converter",
+      "cif-explicit-site-normalization",
+      "cif-wyckoff-letter-reference-summary",
+      "davila7--launch-strategy",
+      "fractional-coordinate-rational-formatting",
+      "jeremylongshore--stub-creator",
+      "ooxml-two-key-lookup-formula-population",
+      "vasilyu1983--ai-mlops",
+      "wyckoff-spglib-stability-analysis",
+      "yannickyamo--product-delivery"
+    ],
+    "loaded_skills": [
+      "cif-explicit-site-normalization",
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting",
+      "wyckoff-spglib-stability-analysis"
+    ],
+    "trials": [
+      {
+        "trial_id": "crystallographic-wyckoff-positio__6FW5DGp",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "boshu2--converter",
+          "cif-explicit-site-normalization",
+          "cif-wyckoff-letter-reference-summary",
+          "davila7--launch-strategy",
+          "fractional-coordinate-rational-formatting",
+          "jeremylongshore--stub-creator",
+          "ooxml-two-key-lookup-formula-population",
+          "vasilyu1983--ai-mlops",
+          "wyckoff-spglib-stability-analysis",
+          "yannickyamo--product-delivery"
+        ],
+        "available_skills": [
+          "boshu2--converter",
+          "cif-explicit-site-normalization",
+          "cif-wyckoff-letter-reference-summary",
+          "davila7--launch-strategy",
+          "fractional-coordinate-rational-formatting",
+          "jeremylongshore--stub-creator",
+          "ooxml-two-key-lookup-formula-population",
+          "vasilyu1983--ai-mlops",
+          "wyckoff-spglib-stability-analysis",
+          "yannickyamo--product-delivery"
+        ],
+        "loaded_skills": [
+          "cif-explicit-site-normalization",
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting",
+          "wyckoff-spglib-stability-analysis"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "wyckoff-spglib-stability-analysis": [
+            {
+              "step_id": 30,
+              "tool_call_id": "call_031aedde37144b78a4f9ba8a",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/wyckoff-spglib-stability-analysis/SKILL.md"
+            }
+          ],
+          "cif-explicit-site-normalization": [
+            {
+              "step_id": 31,
+              "tool_call_id": "call_270639e78ea849b78109d3a1",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/cif-explicit-site-normalization/SKILL.md"
+            }
+          ],
+          "cif-wyckoff-letter-reference-summary": [
+            {
+              "step_id": 32,
+              "tool_call_id": "call_d8653688483942159eef0120",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/cif-wyckoff-letter-reference-summary/SKILL.md"
+            }
+          ],
+          "fractional-coordinate-rational-formatting": [
+            {
+              "step_id": 39,
+              "tool_call_id": "call_22a39d78c6f04a8abd122b5b",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/fractional-coordinate-rational-formatting/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

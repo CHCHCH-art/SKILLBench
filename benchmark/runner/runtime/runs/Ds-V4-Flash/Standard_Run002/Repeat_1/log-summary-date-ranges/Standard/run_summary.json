@@ -1,0 +1,67 @@
+{
+  "schema_version": 6,
+  "task_id": "log-summary-date-ranges",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 130.3,
+    "peak_memory_raw": "130.3MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.488,
+    "agent_setup_sec": 0.813,
+    "agent_execution_sec": 21.664,
+    "verifier_sec": 16.216,
+    "total_sec": 46.074
+  },
+  "llm_cost_usd": 0.001280104,
+  "agent_input_tokens": 39462,
+  "agent_output_tokens": 1148,
+  "image_cache": {
+    "image": "benchmark-cache/log-summary-date-ranges-gold:e28534907986406f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "date-range-severity-summary-emission",
+      "streaming-dated-log-sqlite-aggregation"
+    ],
+    "available_skills": [
+      "date-range-severity-summary-emission",
+      "streaming-dated-log-sqlite-aggregation"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "log-summary-date-ranges__p8aLc3j",
+        "passed": true,
+        "provided_skills": [
+          "date-range-severity-summary-emission",
+          "streaming-dated-log-sqlite-aggregation"
+        ],
+        "available_skills": [
+          "date-range-severity-summary-emission",
+          "streaming-dated-log-sqlite-aggregation"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

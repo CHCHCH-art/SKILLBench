@@ -1,0 +1,51 @@
+{
+  "schema_version": 5,
+  "task_id": "dapt-intrusion-detection",
+  "condition": "no_skill",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestProtocolDistribution::test_protocol_count: AssertionError: protocol_ip_total: expected 58474, got 58727; test_outputs.py::TestTimeSeries::test_time_series_metric: AssertionError: packets_per_minute_min: expected 186, got 123; test_outputs.py::TestEntropyMetrics::test_entropy_metric: AssertionError: unique_src_ports: expected 1713, got 1714; test_outputs.py::TestGraphMetrics::test_graph_metric: AssertionError: network_density: expected 0.041252, got 0.031818181818181815; test_outputs.py::TestTemporalMetrics::test_temporal_metric: AssertionError: num_consumers: expected 13, got 16; test_outputs.py::TestFlowMetrics::test_flow_metric: AssertionError: udp_flows: expected 214, got 218; test_outputs.py::TestAnalysisQuestions::test_is_traffic_benign: AssertionError: is_traffic_benign: expected 'true', got 'false'; test_outputs.py::TestAnalysisQuestions::test_has_port_scan: AssertionError: has_port_scan: expected 'false', got 'true'; test_outputs.py::TestAnalysisQuestions::test_has_dos_pattern: AssertionError: has_dos_pattern: expected 'false', got 'true'",
+  "peak_memory": {
+    "peak_memory_mib": 460.2,
+    "peak_memory_raw": "460.2MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.456,
+    "agent_setup_sec": 160.433,
+    "agent_execution_sec": 391.18,
+    "verifier_sec": 16.75,
+    "total_sec": 574.0
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/dapt-intrusion-detection-gold:d683a6252cf07436",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "dapt-intrusion-detection__dy54mRd",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0,
+  "batch": "No_skill_Run001",
+  "repeat": 2,
+  "operation": "run"
+}

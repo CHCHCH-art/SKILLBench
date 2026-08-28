@@ -1,0 +1,206 @@
+<overview>
+本文件定義 Markdown 格式的輸出報告模板。
+</overview>
+
+<template>
+
+```markdown
+# 高失業高GDP情境下的財政赤字分析報告
+
+**分析日期**：{{as_of}}
+**數據截至**：{{data_end_date}}
+**分析模型**：{{model_name}}
+
+---
+
+## 執行摘要
+
+{{macro_story}}
+
+| 關鍵指標              | 數值                          | 狀態               |
+|-----------------------|-------------------------------|--------------------|
+| 勞動鬆緊分位數        | {{current_slack_percentile}}  | {{slack_status}}   |
+| 高 GDP 條件           | {{high_gdp_condition}}        | {{gdp_status}}     |
+| 勞動轉弱觸發          | {{triggered_labor_softening}} | {{trigger_status}} |
+| 當前赤字/GDP          | {{baseline_deficit_gdp}}      | -                  |
+| 預估赤字/GDP (中位數) | {{deficit_p50}}               | {{deficit_change}} |
+
+---
+
+## 1. 當前勞動市場狀態
+
+### 1.1 核心指標
+
+| 指標               | 數值                      | 歷史分位數         | 說明                        |
+|--------------------|---------------------------|--------------------|-----------------------------|
+| 失業率             | {{unemployment_rate}}%    | {{ur_percentile}}  | {{ur_interpretation}}       |
+| 失業人數           | {{unemployed_level}} 萬人 | -                  | -                           |
+| JOLTS 職缺         | {{job_openings}} 萬人     | -                  | -                           |
+| UJO（失業/職缺比） | {{ujo_ratio}}             | {{ujo_percentile}} | {{ujo_interpretation}}      |
+| 薩姆規則           | {{sahm_rule}}             | -                  | {{sahm_interpretation}}     |
+| ΔUR (6M 變化)      | {{delta_ur_6m}}%          | -                  | {{delta_ur_interpretation}} |
+
+### 1.2 勞動轉弱判定
+
+**觸發條件**：
+{{#each trigger_reasons}}
+- {{this}}
+{{/each}}
+
+**結論**：{{labor_conclusion}}
+
+---
+
+## 2. GDP 狀態判定
+
+| 指標          | 數值                 | 說明                              |
+|---------------|----------------------|-----------------------------------|
+| 名目 GDP      | {{gdp_level}} 兆美元 | -                                 |
+| GDP 分位數    | {{gdp_percentile}}   | {{gdp_percentile_interpretation}} |
+| 實質 GDP 成長 | {{gdp_growth}}% YoY  | {{gdp_growth_interpretation}}     |
+
+**高 GDP 條件**：{{high_gdp_conclusion}}
+
+---
+
+## 3. 財政赤字/GDP 投影
+
+### 3.1 條件分布區間（未來 {{horizon_quarters}} 季）
+
+| 統計量     | 赤字/GDP                            | 說明         |
+|------------|-------------------------------------|--------------|
+| 當前基線   | {{baseline_deficit_gdp}}%           | -            |
+| 25 分位    | {{deficit_p25}}%                    | 樂觀情境     |
+| **中位數** | **{{deficit_p50}}%**                | **基準情境** |
+| 75 分位    | {{deficit_p75}}%                    | 悲觀情境     |
+| 歷史極端   | {{deficit_min}}% - {{deficit_max}}% | 尾部風險     |
+
+### 3.2 歷史樣本事件（共 {{n_episodes}} 次）
+
+| 期間 | 持續 | 起始 UJO | 起始 Sahm | 赤字峰值 | 背景 |
+|------|------|----------|-----------|----------|------|
+{{#each historical_episodes}}
+| {{start_date}} - {{end_date}} | {{duration_quarters}} 季 | {{ujo_at_start}} | {{sahm_at_start}} | {{deficit_gdp_peak}}% | {{context}} |
+{{/each}}
+
+---
+
+## 4. 長天期美債（UST）風險解讀
+
+### 4.1 供給壓力通道
+
+**評估等級**：{{supply_pressure_level}}
+
+{{supply_pressure_description}}
+
+- **發債估算**：以當前 GDP 規模 {{gdp_level}} 兆美元計算，赤字 {{deficit_p50}}% 對應約 {{estimated_issuance}} 兆美元的年度淨發行
+- **較當前變化**：{{issuance_change_description}}
+- **期限溢酬影響**：{{term_premium_impact}}
+
+### 4.2 避險買盤通道
+
+**評估等級**：{{risk_aversion_level}}
+
+{{risk_aversion_description}}
+
+**當前避險指標**：
+| 指標        | 數值                | 訊號            |
+|-------------|---------------------|-----------------|
+| VIX         | {{vix_level}}       | {{vix_signal}}  |
+| IG 信用利差 | {{ig_spread}} bps   | {{ig_signal}}   |
+| 股債相關性  | {{stock_bond_corr}} | {{corr_signal}} |
+
+### 4.3 主導力量判斷
+
+**當前判斷**：{{dominant_force}}
+
+{{dominant_force_reasoning}}
+
+### 4.4 監控指標清單
+
+持續追蹤以下指標判斷力量切換：
+
+{{#each watchlist_switch_indicators}}
+- {{this}}
+{{/each}}
+
+---
+
+## 5. 情境風險矩陣
+
+| 情境     | 觸發條件     | 赤字/GDP          | UST 影響                     |
+|----------|--------------|-------------------|------------------------------|
+| **基準** | 失業溫和上升 | {{deficit_p50}}%  | 殖利率溫和上行               |
+| **悲觀** | 失業快速惡化 | {{deficit_p75}}%+ | 供給壓力主導，殖利率顯著上行 |
+| **危機** | 金融風險蔓延 | {{deficit_max}}%  | 避險主導，殖利率可能下行     |
+
+---
+
+## 6. 結論與建議
+
+### 6.1 核心結論
+
+{{core_conclusion}}
+
+### 6.2 監控建議
+
+1. **短期（1-3 個月）**：
+   - 追蹤每月就業報告與 JOLTS
+   - 觀察 薩姆規則 是否突破 0.5
+
+2. **中期（3-6 個月）**：
+   - 觀察財政預算與支出動態
+   - 追蹤國債拍賣表現
+
+3. **觸發性行動**：
+   - 若 VIX 突破 30 且信用利差急升 → 重新評估避險主導情境
+   - 若拍賣持續疲軟且通膨預期上升 → 確認供給壓力主導
+
+---
+
+**報告生成時間**：{{generated_at}}
+**使用模型**：{{model_used}}
+**數據來源**：FRED (無需 API key)
+
+---
+
+*免責聲明：本報告基於歷史數據的統計分析，不構成投資建議。實際財政與市場走勢受多重因素影響，可能與歷史模式顯著偏離。*
+```
+
+</template>
+
+<placeholders>
+**模板佔位符說明**
+
+| 佔位符                         | 來源                   | 說明                                   |
+|--------------------------------|------------------------|----------------------------------------|
+| `{{as_of}}`                    | metadata               | 分析基準日期                           |
+| `{{current_slack_percentile}}` | diagnostics            | 勞動鬆緊分位數 (格式化為 "84 分位")    |
+| `{{deficit_p50}}`              | deficit_gdp_projection | 中位數赤字/GDP (格式化為 "13.5%")      |
+| `{{historical_episodes}}`      | historical_episodes    | 歷史事件陣列，使用 Handlebars 風格迭代 |
+| ...                            | ...                    | ...                                    |
+
+**條件顯示**：使用 `{{#if condition}}...{{/if}}` 語法控制區塊顯示。
+
+**陣列迭代**：使用 `{{#each array}}...{{/each}}` 語法遍歷歷史事件。
+</placeholders>
+
+<example_output>
+**範例報告片段**
+
+```markdown
+## 執行摘要
+
+在歷史上勞動市場明顯轉弱且 GDP 仍處高位的樣本中，赤字/GDP 常出現階躍式上移，
+區間落在約 11%–16%（中位數約 13.5%）。當前勞動市場鬆緊度處於 84 分位（UJO 基準），
+已觸發轉弱條件，而 GDP 仍處於 95 分位高位。
+
+| 關鍵指標              | 數值    | 狀態             |
+|-----------------------|---------|------------------|
+| 勞動鬆緊分位數        | 84 分位 | ⚠️ 偏高（轉弱中） |
+| 高 GDP 條件           | 是      | ✅ GDP 仍處高位   |
+| 勞動轉弱觸發          | 是      | ⚠️ 已觸發         |
+| 當前赤字/GDP          | 6.5%    | -                |
+| 預估赤字/GDP (中位數) | 13.5%   | 📈 +7.0%         |
+```
+</example_output>

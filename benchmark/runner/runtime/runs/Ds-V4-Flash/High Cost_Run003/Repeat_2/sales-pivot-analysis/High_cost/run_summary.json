@@ -1,0 +1,71 @@
+{
+  "schema_version": 6,
+  "task_id": "sales-pivot-analysis",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestPivotTableConfiguration::test_pivot_row_is_state: IndexError: list index out of range; test_outputs.py::TestPivotTableConfiguration::test_pivot_uses_correct_aggregation: IndexError: list index out of range; test_outputs.py::TestDataTransformationCorrectness::test_pivot_cache_has_fields: IndexError: list index out of range",
+  "peak_memory": {
+    "peak_memory_mib": 276.6,
+    "peak_memory_raw": "276.6MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.564,
+    "agent_setup_sec": 0.601,
+    "agent_execution_sec": 215.558,
+    "verifier_sec": 5.224,
+    "total_sec": 228.628
+  },
+  "llm_cost_usd": 0.048349224,
+  "agent_input_tokens": 538287,
+  "agent_output_tokens": 17148,
+  "image_cache": {
+    "image": "benchmark-cache/sales-pivot-analysis-gold:0de7e366d80d6ca8",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "apache-poi-native-pivot-workbook",
+      "demographic-quantile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join"
+    ],
+    "available_skills": [
+      "apache-poi-native-pivot-workbook",
+      "demographic-quantile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "sales-pivot-analysis__gVnqUUy",
+        "passed": true,
+        "provided_skills": [
+          "apache-poi-native-pivot-workbook",
+          "demographic-quantile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join"
+        ],
+        "available_skills": [
+          "apache-poi-native-pivot-workbook",
+          "demographic-quantile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 6,
+  "task_id": "earthquake-plate-calculation",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestEarthquakeTask::test_distance_within_tolerance: AssertionError: 3551.98 != 3878.27 within 0.01 delta (326.28999999999996 difference) : Expected 3878.27 ± 0.01 km, got 3551.98 km",
+  "peak_memory": {
+    "peak_memory_mib": 226.3,
+    "peak_memory_raw": "226.3MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.584,
+    "agent_setup_sec": 0.646,
+    "agent_execution_sec": 122.109,
+    "verifier_sec": 8.428,
+    "total_sec": 139.851
+  },
+  "llm_cost_usd": 0.0079835056,
+  "agent_input_tokens": 330390,
+  "agent_output_tokens": 9706,
+  "image_cache": {
+    "image": "benchmark-cache/earthquake-plate-calculation-gold:9daffd7dc0823601",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "geospatial-plate-membership-filter",
+      "projected-boundary-distance-selection"
+    ],
+    "available_skills": [
+      "geospatial-plate-membership-filter",
+      "projected-boundary-distance-selection"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "earthquake-plate-calculation__4q4EhRw",
+        "passed": true,
+        "provided_skills": [
+          "geospatial-plate-membership-filter",
+          "projected-boundary-distance-selection"
+        ],
+        "available_skills": [
+          "geospatial-plate-membership-filter",
+          "projected-boundary-distance-selection"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

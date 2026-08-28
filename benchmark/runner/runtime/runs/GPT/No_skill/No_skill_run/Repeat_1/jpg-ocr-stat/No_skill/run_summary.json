@@ -1,0 +1,53 @@
+{
+  "schema_version": 5,
+  "task_id": "jpg-ocr-stat",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run006",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_outputs: AssertionError: Mismatch in sheet 'results', row 7.",
+  "peak_memory": {
+    "peak_memory_mib": 547.0,
+    "peak_memory_raw": "547MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.567,
+    "agent_setup_sec": 251.045,
+    "agent_execution_sec": 257.381,
+    "verifier_sec": 30.717,
+    "total_sec": 546.192
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/jpg-ocr-stat-gold:7eeb5a8d01127bee",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "jpg-ocr-stat__b62fypW",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

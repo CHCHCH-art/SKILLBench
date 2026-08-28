@@ -1,0 +1,28 @@
+2026-08-25T10:13:48.569077+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=financial-modeling-qa condition=selected image=benchmark-cache/financial-modeling-qa-gold:0fdb74de33d4be91 provided_skills=["1mangesh1--curl-http", "bitmask-game-score-pairing", "dice-turn-category-scoring", "djankies--managing-local-vs-global-state", "pdf-game-rule-object-extraction", "pdf-rule-value-extraction", "sparse-ooxml-turn-record-recovery", "spreadsheet-turn-record-recovery", "tech-leads-club--react-best-practices", "unique-category-game-assignment"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:05:36 0:00:00
+selected • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 5m 36s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run001\Repe
+at_2\financial-modeling-qa\Selected\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run001\Repe
+at_2\financial-modeling-qa\Selected`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run001\Repe
+at_2\financial-modeling-qa\Selected\Job_result`
+
+2026-08-25T10:19:28.139979+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=financial-modeling-qa condition=selected

@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "energy-market-pricing",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 746.9,
+    "peak_memory_raw": "746.9MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.477,
+    "agent_setup_sec": 0.725,
+    "agent_execution_sec": 396.735,
+    "verifier_sec": 26.422,
+    "total_sec": 431.244
+  },
+  "llm_cost_usd": 0.073205752,
+  "agent_input_tokens": 956492,
+  "agent_output_tokens": 27279,
+  "image_cache": {
+    "image": "benchmark-cache/energy-market-pricing-gold:5e086fb9e6601b54",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dcopf-counterfactual-impact-analysis",
+      "dcopf-reserve-lmp-solve"
+    ],
+    "available_skills": [
+      "dcopf-counterfactual-impact-analysis",
+      "dcopf-reserve-lmp-solve"
+    ],
+    "loaded_skills": [
+      "dcopf-counterfactual-impact-analysis",
+      "dcopf-reserve-lmp-solve"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-market-pricing__PjF9zUe",
+        "passed": true,
+        "provided_skills": [
+          "dcopf-counterfactual-impact-analysis",
+          "dcopf-reserve-lmp-solve"
+        ],
+        "available_skills": [
+          "dcopf-counterfactual-impact-analysis",
+          "dcopf-reserve-lmp-solve"
+        ],
+        "loaded_skills": [
+          "dcopf-counterfactual-impact-analysis",
+          "dcopf-reserve-lmp-solve"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "dcopf-reserve-lmp-solve": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_a2db01b57cf2405180210cfd",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/dcopf-reserve-lmp-solve/SKILL.md"
+            }
+          ],
+          "dcopf-counterfactual-impact-analysis": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_1a67cffc66f64e679f3578fb",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/dcopf-counterfactual-impact-analysis/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

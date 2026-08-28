@@ -1,0 +1,67 @@
+{
+  "schema_version": 6,
+  "task_id": "protein-expression-analysis",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 78.42,
+    "peak_memory_raw": "78.42MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.515,
+    "agent_setup_sec": 0.69,
+    "agent_execution_sec": 58.526,
+    "verifier_sec": 7.86,
+    "total_sec": 73.611
+  },
+  "llm_cost_usd": 0.01725508,
+  "agent_input_tokens": 172265,
+  "agent_output_tokens": 3982,
+  "image_cache": {
+    "image": "benchmark-cache/protein-expression-analysis-gold:a52e2bc643b8e023",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "expression-group-statistics-foldchange",
+      "spreadsheet-two-way-expression-lookup"
+    ],
+    "available_skills": [
+      "expression-group-statistics-foldchange",
+      "spreadsheet-two-way-expression-lookup"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "protein-expression-analysis__GDzM3t9",
+        "passed": true,
+        "provided_skills": [
+          "expression-group-statistics-foldchange",
+          "spreadsheet-two-way-expression-lookup"
+        ],
+        "available_skills": [
+          "expression-group-statistics-foldchange",
+          "spreadsheet-two-way-expression-lookup"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

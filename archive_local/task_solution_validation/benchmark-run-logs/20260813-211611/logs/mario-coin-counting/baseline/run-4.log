@@ -1,0 +1,88 @@
+Task: mario-coin-counting
+Source type: baseline
+Task run: 4
+Source run: 4
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\mario-coin-counting
+
+========== Repeated Run 4/4 ==========
+
+========== Run solve.sh ==========
+Extracting I-frames
+Converting keyframes to grayscale
+coins HOG threshold 0.8538
+enemies HOG threshold 0.8196
+turtles HOG threshold 0.833
+keyframes_001.png coins 0
+keyframes_001.png enemies 0
+keyframes_001.png turtles 0
+keyframes_002.png coins 2
+keyframes_002.png enemies 2
+keyframes_002.png turtles 0
+keyframes_003.png coins 0
+keyframes_003.png enemies 0
+keyframes_003.png turtles 0
+keyframes_004.png coins 0
+keyframes_004.png enemies 0
+keyframes_004.png turtles 0
+keyframes_005.png coins 4
+keyframes_005.png enemies 0
+keyframes_005.png turtles 1
+keyframes_006.png coins 1
+keyframes_006.png enemies 0
+keyframes_006.png turtles 0
+keyframes_007.png coins 0
+keyframes_007.png enemies 0
+keyframes_007.png turtles 1
+keyframes_008.png coins 0
+keyframes_008.png enemies 0
+keyframes_008.png turtles 1
+
+========== Run test.sh ==========
+Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.5.0-2ubuntu10.11).
+0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+error: No virtual environment found; run `uv venv` to create an environment, or pass `--system` to install into a non-virtual environment
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0 -- /root/.cache/uv/archive-v0/4EpzEn0WRTfN_Y_8o89Zn/bin/python
+cachedir: .pytest_cache
+rootdir: /
+plugins: json-ctrf-0.3.5
+collecting ... collected 3 items
+
+../tests/test_outputs.py::TestFileExists::test_key_frames_exists PASSED  [ 33%]
+../tests/test_outputs.py::TestFileExists::test_grayscale_applied PASSED  [ 66%]
+../tests/test_outputs.py::TestFileExists::test_counting_results PASSED   [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestFileExists::test_key_frames_exists
+PASSED ../tests/test_outputs.py::TestFileExists::test_grayscale_applied
+PASSED ../tests/test_outputs.py::TestFileExists::test_counting_results
+============================== 3 passed in 0.89s ===============================
+
+========== Result ==========
+Task: mario-coin-counting
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 8.0s (exit 0)
+Test: 18.0s (exit 0)
+Solve Memory Peak: 333.7 MiB
+Test Memory Peak: 235.8 MiB
+
+========== Cleanup ==========
+Removing container: test-solution-mario-coin-counting-1786642243346217400-13018fce

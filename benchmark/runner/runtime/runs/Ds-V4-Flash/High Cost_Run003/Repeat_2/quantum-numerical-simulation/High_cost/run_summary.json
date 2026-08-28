@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "quantum-numerical-simulation",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_wigner_diagonal_sum_matches_reference: AssertionError: Diagonal sum mismatch for case 1; test_outputs.py::test_wigner_values_match_reference: AssertionError: Wigner data mismatch for case 1",
+  "peak_memory": {
+    "peak_memory_mib": 450.4,
+    "peak_memory_raw": "450.4MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.54,
+    "agent_setup_sec": 0.39,
+    "agent_execution_sec": 351.425,
+    "verifier_sec": 49.255,
+    "total_sec": 412.663
+  },
+  "llm_cost_usd": 0.008663564,
+  "agent_input_tokens": 592511,
+  "agent_output_tokens": 11281,
+  "image_cache": {
+    "image": "benchmark-cache/quantum-numerical-simulation-gold:8597d1a23d4799e3",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "arpack-liouvillian-steady-state",
+      "cavity-wigner-grid-export",
+      "piqs-open-dicke-liouvillian"
+    ],
+    "available_skills": [
+      "arpack-liouvillian-steady-state",
+      "cavity-wigner-grid-export",
+      "piqs-open-dicke-liouvillian"
+    ],
+    "loaded_skills": [
+      "arpack-liouvillian-steady-state",
+      "cavity-wigner-grid-export",
+      "piqs-open-dicke-liouvillian"
+    ],
+    "trials": [
+      {
+        "trial_id": "quantum-numerical-simulation__QU3AeSe",
+        "passed": true,
+        "provided_skills": [
+          "arpack-liouvillian-steady-state",
+          "cavity-wigner-grid-export",
+          "piqs-open-dicke-liouvillian"
+        ],
+        "available_skills": [
+          "arpack-liouvillian-steady-state",
+          "cavity-wigner-grid-export",
+          "piqs-open-dicke-liouvillian"
+        ],
+        "loaded_skills": [
+          "arpack-liouvillian-steady-state",
+          "cavity-wigner-grid-export",
+          "piqs-open-dicke-liouvillian"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "piqs-open-dicke-liouvillian": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_359f922d899a47b7bfd86a78",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/piqs-open-dicke-liouvillian/SKILL.md"
+            }
+          ],
+          "arpack-liouvillian-steady-state": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_8e829ccfff5b43b393eed556",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/arpack-liouvillian-steady-state/SKILL.md"
+            }
+          ],
+          "cavity-wigner-grid-export": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_2e9aaa0e3d9f42a0b58b030a",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/cavity-wigner-grid-export/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

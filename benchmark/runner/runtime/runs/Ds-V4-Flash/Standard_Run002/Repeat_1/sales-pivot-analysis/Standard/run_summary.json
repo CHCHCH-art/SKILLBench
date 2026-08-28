@@ -1,0 +1,71 @@
+{
+  "schema_version": 6,
+  "task_id": "sales-pivot-analysis",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 397.9,
+    "peak_memory_raw": "397.9MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.539,
+    "agent_setup_sec": 1.268,
+    "agent_execution_sec": 620.513,
+    "verifier_sec": 5.78,
+    "total_sec": 635.583
+  },
+  "llm_cost_usd": 0.0392466368,
+  "agent_input_tokens": 3371922,
+  "agent_output_tokens": 50555,
+  "image_cache": {
+    "image": "benchmark-cache/sales-pivot-analysis-gold:0de7e366d80d6ca8",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quartile-derived-enrichment",
+      "openpyxl-native-pivot-workbook"
+    ],
+    "available_skills": [
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quartile-derived-enrichment",
+      "openpyxl-native-pivot-workbook"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "sales-pivot-analysis__bX43rmx",
+        "passed": true,
+        "provided_skills": [
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quartile-derived-enrichment",
+          "openpyxl-native-pivot-workbook"
+        ],
+        "available_skills": [
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quartile-derived-enrichment",
+          "openpyxl-native-pivot-workbook"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

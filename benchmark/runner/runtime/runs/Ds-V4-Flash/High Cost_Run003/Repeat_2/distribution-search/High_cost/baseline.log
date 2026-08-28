@@ -1,0 +1,29 @@
+2026-08-22T23:38:39.449498+00:00 START operation=rerun batch=single_High Cost_Run003 repeat=2 task=distribution-search condition=high_cost image=benchmark-cache/distribution-search-gold:430ae95bb5beb0fc provided_skills=["logit-distribution-kl-optimization"]
+[92m07:40:37 - LiteLLM:WARNING[0m: get_model_cost_map.py:264 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: _ssl.c:993: The handshake operation timed out. Falling back to local backup.
+  1/1 Mean: 1.000 ---------------------------------------- 0:03:02 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 2s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\distribution-search\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\distribution-search\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\distribution-search\High_cost\Job_result`
+
+2026-08-22T23:41:44.018353+00:00 PASS operation=rerun batch=single_High Cost_Run003 repeat=2 task=distribution-search condition=high_cost

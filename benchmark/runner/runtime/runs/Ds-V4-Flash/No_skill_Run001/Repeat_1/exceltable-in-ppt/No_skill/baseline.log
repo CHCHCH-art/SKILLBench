@@ -1,0 +1,28 @@
+2026-08-19T17:49:59.623266+00:00 START operation=run batch=single_No_skill_Run001 repeat=1 task=exceltable-in-ppt condition=no_skill image=benchmark-cache/exceltable-in-ppt-gold:76ac1a2bd4e98536 provided_skills=[]
+  1/1 Mean: 0.000 ---------------------------------------- 0:02:14 0:00:00
+no_skill • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 14s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run001\Repe
+at_1\exceltable-in-ppt\No_skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run001\Repe
+at_1\exceltable-in-ppt\No_skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run001\Repe
+at_1\exceltable-in-ppt\No_skill\Job_result`
+
+2026-08-19T17:52:15.260624+00:00 FAIL operation=run batch=single_No_skill_Run001 repeat=1 task=exceltable-in-ppt condition=no_skill

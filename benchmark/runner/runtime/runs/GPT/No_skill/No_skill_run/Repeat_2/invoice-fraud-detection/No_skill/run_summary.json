@@ -1,0 +1,51 @@
+{
+  "schema_version": 5,
+  "task_id": "invoice-fraud-detection",
+  "condition": "no_skill",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOutputs::test_content: AssertionError: PO Number mismatch for page 4: Expected 'None', Got 'PO-INVALID'",
+  "peak_memory": {
+    "peak_memory_mib": 366.8,
+    "peak_memory_raw": "366.8MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.413,
+    "agent_setup_sec": 101.758,
+    "agent_execution_sec": 192.996,
+    "verifier_sec": 5.195,
+    "total_sec": 306.93
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/invoice-fraud-detection-gold:ac1daf4b2cd15d47",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "invoice-fraud-detection__FZDggoJ",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0,
+  "batch": "No_skill_Run001",
+  "repeat": 2,
+  "operation": "run"
+}

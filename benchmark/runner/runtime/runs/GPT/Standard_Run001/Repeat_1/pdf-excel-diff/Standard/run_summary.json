@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "pdf-excel-diff",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1225.728,
+    "peak_memory_raw": "1.197GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.041,
+    "agent_setup_sec": 1.22,
+    "agent_execution_sec": 122.896,
+    "verifier_sec": 35.07,
+    "total_sec": 167.299
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 107859,
+  "agent_output_tokens": 3528,
+  "image_cache": {
+    "image": "benchmark-cache/pdf-excel-diff-gold:d574cd2f86bbbcb0",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "keyed-record-diff-normalization",
+      "pdf-record-table-extraction"
+    ],
+    "available_skills": [
+      "keyed-record-diff-normalization",
+      "pdf-record-table-extraction"
+    ],
+    "loaded_skills": [
+      "keyed-record-diff-normalization",
+      "pdf-record-table-extraction"
+    ],
+    "trials": [
+      {
+        "trial_id": "pdf-excel-diff__9XQEk9f",
+        "passed": true,
+        "provided_skills": [
+          "keyed-record-diff-normalization",
+          "pdf-record-table-extraction"
+        ],
+        "available_skills": [
+          "keyed-record-diff-normalization",
+          "pdf-record-table-extraction"
+        ],
+        "loaded_skills": [
+          "keyed-record-diff-normalization",
+          "pdf-record-table-extraction"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "pdf-record-table-extraction": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_n2vluE7ZOrEh3wOXglgxpRDE",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/pdf-record-table-extraction/SKILL.md"
+            }
+          ],
+          "keyed-record-diff-normalization": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_n2vluE7ZOrEh3wOXglgxpRDE",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/keyed-record-diff-normalization/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

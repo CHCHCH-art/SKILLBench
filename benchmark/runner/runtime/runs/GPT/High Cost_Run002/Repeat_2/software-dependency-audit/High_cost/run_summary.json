@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "software-dependency-audit",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestSecurityAuditTask::test_csv_matches_ground_truth: AssertionError: Generated CSV content does not match expected vulnerabilities",
+  "peak_memory": {
+    "peak_memory_mib": 121.8,
+    "peak_memory_raw": "121.8MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.86,
+    "agent_setup_sec": 0.998,
+    "agent_execution_sec": 200.141,
+    "verifier_sec": 9.657,
+    "total_sec": 218.79
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 293294,
+  "agent_output_tokens": 6472,
+  "image_cache": {
+    "image": "benchmark-cache/software-dependency-audit-gold:65439dede9bf4280",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "deterministic-offline-package-tree-reconstruction",
+      "npm-lock-dual-sbom-dependency-graph",
+      "trivy-dual-scan-csv-reconciliation"
+    ],
+    "available_skills": [
+      "deterministic-offline-package-tree-reconstruction",
+      "npm-lock-dual-sbom-dependency-graph",
+      "trivy-dual-scan-csv-reconciliation"
+    ],
+    "loaded_skills": [
+      "deterministic-offline-package-tree-reconstruction",
+      "npm-lock-dual-sbom-dependency-graph",
+      "trivy-dual-scan-csv-reconciliation"
+    ],
+    "trials": [
+      {
+        "trial_id": "software-dependency-audit__Ahp3KuS",
+        "passed": true,
+        "provided_skills": [
+          "deterministic-offline-package-tree-reconstruction",
+          "npm-lock-dual-sbom-dependency-graph",
+          "trivy-dual-scan-csv-reconciliation"
+        ],
+        "available_skills": [
+          "deterministic-offline-package-tree-reconstruction",
+          "npm-lock-dual-sbom-dependency-graph",
+          "trivy-dual-scan-csv-reconciliation"
+        ],
+        "loaded_skills": [
+          "deterministic-offline-package-tree-reconstruction",
+          "npm-lock-dual-sbom-dependency-graph",
+          "trivy-dual-scan-csv-reconciliation"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "trivy-dual-scan-csv-reconciliation": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_lX0NTV44JmEkhxfImZnIEzSq",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/trivy-dual-scan-csv-reconciliation/SKILL.md"
+            }
+          ],
+          "npm-lock-dual-sbom-dependency-graph": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_lX0NTV44JmEkhxfImZnIEzSq",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/npm-lock-dual-sbom-dependency-graph/SKILL.md"
+            }
+          ],
+          "deterministic-offline-package-tree-reconstruction": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_lX0NTV44JmEkhxfImZnIEzSq",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/deterministic-offline-package-tree-reconstruction/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "invoice-fraud-detection",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOutputs::test_content: AssertionError: PO Number mismatch for page 3: Expected 'PO-1181', Got 'None'",
+  "peak_memory": {
+    "peak_memory_mib": 210.5,
+    "peak_memory_raw": "210.5MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.467,
+    "agent_setup_sec": 0.513,
+    "agent_execution_sec": 72.915,
+    "verifier_sec": 5.069,
+    "total_sec": 94.626
+  },
+  "llm_cost_usd": 0.0048410152,
+  "agent_input_tokens": 247565,
+  "agent_output_tokens": 5023,
+  "image_cache": {
+    "image": "benchmark-cache/invoice-fraud-detection-gold:a8a463d9f523584f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "invoice-fraud-detection__aYy5UKY",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

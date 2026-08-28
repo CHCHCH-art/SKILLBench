@@ -1,0 +1,28 @@
+2026-08-23T03:51:05.083298+00:00 START operation=rerun batch=single_Standard_Run002 repeat=1 task=train-fasttext condition=standard image=benchmark-cache/train-fasttext-gold:61266fd7d3d7eaea provided_skills=["baseline-fasttext-small-supervised-training", "parquet-to-fasttext-supervised-text"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:10:26 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 10m 26s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_1\train-fasttext\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_1\train-fasttext\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_1\train-fasttext\Standard\Job_result`
+
+2026-08-23T04:01:33.006800+00:00 FAIL operation=rerun batch=single_Standard_Run002 repeat=1 task=train-fasttext condition=standard

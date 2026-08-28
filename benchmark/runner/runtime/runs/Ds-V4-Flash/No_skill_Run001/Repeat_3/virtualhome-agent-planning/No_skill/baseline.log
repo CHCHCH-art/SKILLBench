@@ -1,0 +1,28 @@
+2026-08-20T07:46:05.772114+00:00 START operation=run batch=single_No_skill_Run001 repeat=3 task=virtualhome-agent-planning condition=no_skill image=benchmark-cache/virtualhome-agent-planning-gold:2a7bb392c743be2d provided_skills=[]
+  1/1 Mean: 0.000 ---------------------------------------- 0:03:27 0:00:00
+no_skill • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 28s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run001\Repe
+at_3\virtualhome-agent-planning\No_skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run001\Repe
+at_3\virtualhome-agent-planning\No_skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run001\Repe
+at_3\virtualhome-agent-planning\No_skill\Job_result`
+
+2026-08-20T07:49:35.489921+00:00 FAIL operation=run batch=single_No_skill_Run001 repeat=3 task=virtualhome-agent-planning condition=no_skill

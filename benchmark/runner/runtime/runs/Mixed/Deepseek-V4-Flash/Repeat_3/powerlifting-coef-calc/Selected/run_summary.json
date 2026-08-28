@@ -1,0 +1,124 @@
+{
+  "schema_version": 6,
+  "task_id": "powerlifting-coef-calc",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 78.14,
+    "peak_memory_raw": "78.14MiB",
+    "error": null,
+    "container_name_hint": "powerlifting-coef-ca"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.776,
+    "agent_setup_sec": 0.976,
+    "agent_execution_sec": 75.03,
+    "verifier_sec": 110.351,
+    "total_sec": 194.233
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 213906,
+  "agent_output_tokens": 4420,
+  "image_cache": {
+    "image": "benchmark-cache/powerlifting-coef-calc-gold:0fef2731a5e5d6d2",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "affaan-m--ai-first-engineering",
+      "alsk1992--trading-kalshi",
+      "basedhardware--docs-automation",
+      "dirnbauer--enterprise-readiness",
+      "dots-coefficient-excel-formula",
+      "dots-powerlifting-formula-generator",
+      "melodic-software--dynamic-schema-design",
+      "octagonai--earnings-product-pipeline",
+      "powerlifting-workbook-column-formula-population",
+      "powerlifting-workbook-formula-population"
+    ],
+    "available_skills": [
+      "affaan-m--ai-first-engineering",
+      "alsk1992--trading-kalshi",
+      "basedhardware--docs-automation",
+      "dirnbauer--enterprise-readiness",
+      "dots-coefficient-excel-formula",
+      "dots-powerlifting-formula-generator",
+      "melodic-software--dynamic-schema-design",
+      "octagonai--earnings-product-pipeline",
+      "powerlifting-workbook-column-formula-population",
+      "powerlifting-workbook-formula-population"
+    ],
+    "loaded_skills": [
+      "dots-coefficient-excel-formula",
+      "dots-powerlifting-formula-generator"
+    ],
+    "trials": [
+      {
+        "trial_id": "powerlifting-coef-calc__LnkTVdm",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "affaan-m--ai-first-engineering",
+          "alsk1992--trading-kalshi",
+          "basedhardware--docs-automation",
+          "dirnbauer--enterprise-readiness",
+          "dots-coefficient-excel-formula",
+          "dots-powerlifting-formula-generator",
+          "melodic-software--dynamic-schema-design",
+          "octagonai--earnings-product-pipeline",
+          "powerlifting-workbook-column-formula-population",
+          "powerlifting-workbook-formula-population"
+        ],
+        "available_skills": [
+          "affaan-m--ai-first-engineering",
+          "alsk1992--trading-kalshi",
+          "basedhardware--docs-automation",
+          "dirnbauer--enterprise-readiness",
+          "dots-coefficient-excel-formula",
+          "dots-powerlifting-formula-generator",
+          "melodic-software--dynamic-schema-design",
+          "octagonai--earnings-product-pipeline",
+          "powerlifting-workbook-column-formula-population",
+          "powerlifting-workbook-formula-population"
+        ],
+        "loaded_skills": [
+          "dots-coefficient-excel-formula",
+          "dots-powerlifting-formula-generator"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "dots-coefficient-excel-formula": [
+            {
+              "step_id": 18,
+              "tool_call_id": "call_c36516981f7c44c989911ab2",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/dots-coefficient-excel-formula/SKILL.md"
+            }
+          ],
+          "dots-powerlifting-formula-generator": [
+            {
+              "step_id": 23,
+              "tool_call_id": "call_ac5467aebb1c4d8e9c2b1dff",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/dots-powerlifting-formula-generator/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

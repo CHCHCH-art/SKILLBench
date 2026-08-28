@@ -1,0 +1,118 @@
+{
+  "schema_version": 6,
+  "task_id": "financial-modeling-qa",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 212.2,
+    "peak_memory_raw": "212.2MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.854,
+    "agent_setup_sec": 2.639,
+    "agent_execution_sec": 246.34,
+    "verifier_sec": 87.283,
+    "total_sec": 344.963
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 298828,
+  "agent_output_tokens": 7664,
+  "image_cache": {
+    "image": "benchmark-cache/financial-modeling-qa-gold:0fdb74de33d4be91",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dice-turn-category-scoring",
+      "pdf-rule-value-extraction",
+      "spreadsheet-turn-record-recovery",
+      "unique-category-game-assignment"
+    ],
+    "available_skills": [
+      "dice-turn-category-scoring",
+      "pdf-rule-value-extraction",
+      "spreadsheet-turn-record-recovery",
+      "unique-category-game-assignment"
+    ],
+    "loaded_skills": [
+      "dice-turn-category-scoring",
+      "pdf-rule-value-extraction",
+      "spreadsheet-turn-record-recovery",
+      "unique-category-game-assignment"
+    ],
+    "trials": [
+      {
+        "trial_id": "financial-modeling-qa__S9hNrHL",
+        "passed": true,
+        "provided_skills": [
+          "dice-turn-category-scoring",
+          "pdf-rule-value-extraction",
+          "spreadsheet-turn-record-recovery",
+          "unique-category-game-assignment"
+        ],
+        "available_skills": [
+          "dice-turn-category-scoring",
+          "pdf-rule-value-extraction",
+          "spreadsheet-turn-record-recovery",
+          "unique-category-game-assignment"
+        ],
+        "loaded_skills": [
+          "dice-turn-category-scoring",
+          "pdf-rule-value-extraction",
+          "spreadsheet-turn-record-recovery",
+          "unique-category-game-assignment"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "unique-category-game-assignment": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_7xb8cpav6ZolpnfqwIchxsQf",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/unique-category-game-assignment/SKILL.md"
+            }
+          ],
+          "dice-turn-category-scoring": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_7xb8cpav6ZolpnfqwIchxsQf",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/dice-turn-category-scoring/SKILL.md"
+            }
+          ],
+          "spreadsheet-turn-record-recovery": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_7xb8cpav6ZolpnfqwIchxsQf",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/spreadsheet-turn-record-recovery/SKILL.md"
+            }
+          ],
+          "pdf-rule-value-extraction": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_7xb8cpav6ZolpnfqwIchxsQf",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/pdf-rule-value-extraction/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,28 @@
+2026-08-25T17:02:00.457442+00:00 START operation=run batch=single_Selected_Run002 repeat=3 task=mteb-retrieve condition=selected image=benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb provided_skills=["cif-explicit-site-normalization", "khw1031--financial-tax-guide", "levino--create-collection", "mteb-streaming-topk-cosine-retrieval", "rmyndharis--reverse-engineer", "scifact-prompt-bound-mteb-topk-retrieval", "shared-shape-dp-budget-closure", "thebushidocollective--oop-encapsulation", "typefully--typefully", "yelban--cine-shot"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:24:00 0:00:00
+selected • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 24m 0s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_3\mteb-retrieve\Selected\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_3\mteb-retrieve\Selected`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_3\mteb-retrieve\Selected\Job_result`
+
+2026-08-25T17:26:04.497930+00:00 FAIL operation=run batch=single_Selected_Run002 repeat=3 task=mteb-retrieve condition=selected

@@ -1,0 +1,28 @@
+2026-08-18T00:32:05.523645+00:00 START operation=rerun batch=single_High Cost_Run002 repeat=2 task=pdf-excel-diff condition=high_cost image=benchmark-cache/pdf-excel-diff-gold:d574cd2f86bbbcb0 provided_skills=["pdf-table-structural-guard-and-extraction", "typed-record-diff-json"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:03:42 0:00:00
+high_cost • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 42s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_2\pdf-excel-diff\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_2\pdf-excel-diff\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_2\pdf-excel-diff\High_cost\Job_result`
+
+2026-08-18T00:35:50.049362+00:00 PASS operation=rerun batch=single_High Cost_Run002 repeat=2 task=pdf-excel-diff condition=high_cost

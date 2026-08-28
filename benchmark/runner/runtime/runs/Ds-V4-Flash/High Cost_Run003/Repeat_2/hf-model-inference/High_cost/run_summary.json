@@ -1,0 +1,67 @@
+{
+  "schema_version": 6,
+  "task_id": "hf-model-inference",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1202.176,
+    "peak_memory_raw": "1.174GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.517,
+    "agent_setup_sec": 0.678,
+    "agent_execution_sec": 355.49,
+    "verifier_sec": 31.182,
+    "total_sec": 394.12
+  },
+  "llm_cost_usd": 0.025111256,
+  "agent_input_tokens": 482104,
+  "agent_output_tokens": 4887,
+  "image_cache": {
+    "image": "benchmark-cache/hf-model-inference-gold:5e2a59f453e212fb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization"
+    ],
+    "available_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "hf-model-inference__mFZqn2a",
+        "passed": true,
+        "provided_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization"
+        ],
+        "available_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

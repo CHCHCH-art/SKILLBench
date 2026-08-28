@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "train-fasttext",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 3573.76,
+    "peak_memory_raw": "3.49GiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.791,
+    "agent_setup_sec": 2.5,
+    "agent_execution_sec": 1674.641,
+    "verifier_sec": 46.135,
+    "total_sec": 1731.548
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 3789734,
+  "agent_output_tokens": 14727,
+  "image_cache": {
+    "image": "benchmark-cache/train-fasttext-gold:61266fd7d3d7eaea",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "baseline-fasttext-small-supervised-training",
+      "parquet-to-fasttext-supervised-text"
+    ],
+    "available_skills": [
+      "baseline-fasttext-small-supervised-training",
+      "parquet-to-fasttext-supervised-text"
+    ],
+    "loaded_skills": [
+      "baseline-fasttext-small-supervised-training",
+      "parquet-to-fasttext-supervised-text"
+    ],
+    "trials": [
+      {
+        "trial_id": "train-fasttext__Tgx8xb7",
+        "passed": true,
+        "provided_skills": [
+          "baseline-fasttext-small-supervised-training",
+          "parquet-to-fasttext-supervised-text"
+        ],
+        "available_skills": [
+          "baseline-fasttext-small-supervised-training",
+          "parquet-to-fasttext-supervised-text"
+        ],
+        "loaded_skills": [
+          "baseline-fasttext-small-supervised-training",
+          "parquet-to-fasttext-supervised-text"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "baseline-fasttext-small-supervised-training": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_PpSUXGjxxWA1joKBy49wz8qc",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/baseline-fasttext-small-supervised-training/SKILL.md"
+            }
+          ],
+          "parquet-to-fasttext-supervised-text": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_PpSUXGjxxWA1joKBy49wz8qc",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/parquet-to-fasttext-supervised-text/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

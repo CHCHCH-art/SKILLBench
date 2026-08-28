@@ -1,0 +1,101 @@
+{
+  "schema_version": 6,
+  "task_id": "sales-pivot-analysis",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestPivotTableConfiguration::test_pivot_row_is_state: IndexError: list index out of range; test_outputs.py::TestPivotTableConfiguration::test_pivot_uses_correct_aggregation: IndexError: list index out of range; test_outputs.py::TestSourceDataContent::test_quarter_values_are_valid: AssertionError: Invalid quarter values: {'np'}; test_outputs.py::TestDataTransformationCorrectness::test_pivot_cache_has_fields: IndexError: list index out of range",
+  "peak_memory": {
+    "peak_memory_mib": 276.6,
+    "peak_memory_raw": "276.6MiB",
+    "error": null,
+    "container_name_hint": "sales-pivot-analysis"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.357,
+    "agent_setup_sec": 1.0,
+    "agent_execution_sec": 185.571,
+    "verifier_sec": 6.134,
+    "total_sec": 203.063
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 371794,
+  "agent_output_tokens": 11172,
+  "image_cache": {
+    "image": "benchmark-cache/sales-pivot-analysis-gold:0de7e366d80d6ca8",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "apache-poi-native-pivot-workbook",
+      "cinience--alicloud-media-vod",
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quantile-derived-enrichment",
+      "demographic-quartile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join",
+      "iliaal--react-frontend",
+      "openpyxl-native-pivot-workbook",
+      "personamanagmentlayer--media-expert",
+      "solatis--incoherence"
+    ],
+    "available_skills": [
+      "apache-poi-native-pivot-workbook",
+      "cinience--alicloud-media-vod",
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quantile-derived-enrichment",
+      "demographic-quartile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join",
+      "iliaal--react-frontend",
+      "openpyxl-native-pivot-workbook",
+      "personamanagmentlayer--media-expert",
+      "solatis--incoherence"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "sales-pivot-analysis__x8MUWbu",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "apache-poi-native-pivot-workbook",
+          "cinience--alicloud-media-vod",
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quantile-derived-enrichment",
+          "demographic-quartile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join",
+          "iliaal--react-frontend",
+          "openpyxl-native-pivot-workbook",
+          "personamanagmentlayer--media-expert",
+          "solatis--incoherence"
+        ],
+        "available_skills": [
+          "apache-poi-native-pivot-workbook",
+          "cinience--alicloud-media-vod",
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quantile-derived-enrichment",
+          "demographic-quartile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join",
+          "iliaal--react-frontend",
+          "openpyxl-native-pivot-workbook",
+          "personamanagmentlayer--media-expert",
+          "solatis--incoherence"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "quantum-numerical-simulation",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_wigner_diagonal_sum_matches_reference: AssertionError: Diagonal sum mismatch for case 1; test_outputs.py::test_wigner_values_match_reference: AssertionError: Wigner data mismatch for case 1",
+  "peak_memory": {
+    "peak_memory_mib": 2991.104,
+    "peak_memory_raw": "2.921GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.485,
+    "agent_setup_sec": 0.394,
+    "agent_execution_sec": 1261.926,
+    "verifier_sec": 63.048,
+    "total_sec": 1333.971
+  },
+  "llm_cost_usd": 0.0083049344,
+  "agent_input_tokens": 461214,
+  "agent_output_tokens": 13305,
+  "image_cache": {
+    "image": "benchmark-cache/quantum-numerical-simulation-gold:8597d1a23d4799e3",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "quantum-numerical-simulation__kgWKLUK",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

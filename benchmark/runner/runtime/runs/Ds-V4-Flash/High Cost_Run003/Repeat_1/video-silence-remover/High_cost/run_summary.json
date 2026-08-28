@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "video-silence-remover",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 348.8,
+    "peak_memory_raw": "348.8MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.557,
+    "agent_setup_sec": 1.212,
+    "agent_execution_sec": 470.745,
+    "verifier_sec": 98.291,
+    "total_sec": 579.018
+  },
+  "llm_cost_usd": 0.129013976,
+  "agent_input_tokens": 3413863,
+  "agent_output_tokens": 23410,
+  "image_cache": {
+    "image": "benchmark-cache/video-silence-remover-gold:274332f35d40c56d",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "audio-energy-removal-window-detection",
+      "rendered-media-compression-report",
+      "single-filtergraph-av-trim-concat"
+    ],
+    "available_skills": [
+      "audio-energy-removal-window-detection",
+      "rendered-media-compression-report",
+      "single-filtergraph-av-trim-concat"
+    ],
+    "loaded_skills": [
+      "audio-energy-removal-window-detection",
+      "rendered-media-compression-report",
+      "single-filtergraph-av-trim-concat"
+    ],
+    "trials": [
+      {
+        "trial_id": "video-silence-remover__NJcWC9p",
+        "passed": true,
+        "provided_skills": [
+          "audio-energy-removal-window-detection",
+          "rendered-media-compression-report",
+          "single-filtergraph-av-trim-concat"
+        ],
+        "available_skills": [
+          "audio-energy-removal-window-detection",
+          "rendered-media-compression-report",
+          "single-filtergraph-av-trim-concat"
+        ],
+        "loaded_skills": [
+          "audio-energy-removal-window-detection",
+          "rendered-media-compression-report",
+          "single-filtergraph-av-trim-concat"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "audio-energy-removal-window-detection": [
+            {
+              "step_id": 27,
+              "tool_call_id": "call_d3b4622348734ef9a5354901",
+              "function_name": "exec_command",
+              "reference": ".agents/skills/audio-energy-removal-window-detection/SKILL.md"
+            }
+          ],
+          "rendered-media-compression-report": [
+            {
+              "step_id": 50,
+              "tool_call_id": "call_21209cffdaf74704ab345980",
+              "function_name": "exec_command",
+              "reference": ".agents/skills/rendered-media-compression-report/SKILL.md"
+            }
+          ],
+          "single-filtergraph-av-trim-concat": [
+            {
+              "step_id": 51,
+              "tool_call_id": "call_d454202574cd475dbd16674b",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/single-filtergraph-av-trim-concat/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

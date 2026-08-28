@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "gravitational-wave-detection",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 610.3,
+    "peak_memory_raw": "610.3MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.494,
+    "agent_setup_sec": 0.569,
+    "agent_execution_sec": 975.292,
+    "verifier_sec": 1.575,
+    "total_sec": 993.636
+  },
+  "llm_cost_usd": 0.00669844,
+  "agent_input_tokens": 428920,
+  "agent_output_tokens": 7031,
+  "image_cache": {
+    "image": "benchmark-cache/gravitational-wave-detection-gold:453ceaaaf619c520",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "gravitational-wave-detection__guFHmMd",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "exoplanet-detection-period",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestExoplanetPeriod::test_period_value_correct: AssertionError: Period 8.02520 does not match expected 5.35699 (tolerance: ±0.01)",
+  "peak_memory": {
+    "peak_memory_mib": 1491.968,
+    "peak_memory_raw": "1.457GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.52,
+    "agent_setup_sec": 0.839,
+    "agent_execution_sec": 2358.119,
+    "verifier_sec": 24.529,
+    "total_sec": 2390.541
+  },
+  "llm_cost_usd": 0.302768448,
+  "agent_input_tokens": 7370265,
+  "agent_output_tokens": 75349,
+  "image_cache": {
+    "image": "benchmark-cache/exoplanet-detection-period-gold:8bdb5ea239d635d6",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "bls-transit-period-refinement",
+      "lightcurve-robust-conditioning",
+      "quasiperiodic-gp-activity-removal"
+    ],
+    "available_skills": [
+      "bls-transit-period-refinement",
+      "lightcurve-robust-conditioning",
+      "quasiperiodic-gp-activity-removal"
+    ],
+    "loaded_skills": [
+      "bls-transit-period-refinement",
+      "lightcurve-robust-conditioning",
+      "quasiperiodic-gp-activity-removal"
+    ],
+    "trials": [
+      {
+        "trial_id": "exoplanet-detection-period__7y3HRje",
+        "passed": true,
+        "provided_skills": [
+          "bls-transit-period-refinement",
+          "lightcurve-robust-conditioning",
+          "quasiperiodic-gp-activity-removal"
+        ],
+        "available_skills": [
+          "bls-transit-period-refinement",
+          "lightcurve-robust-conditioning",
+          "quasiperiodic-gp-activity-removal"
+        ],
+        "loaded_skills": [
+          "bls-transit-period-refinement",
+          "lightcurve-robust-conditioning",
+          "quasiperiodic-gp-activity-removal"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "lightcurve-robust-conditioning": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_0af890c23c014fa38c3482ce",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/lightcurve-robust-conditioning/SKILL.md"
+            }
+          ],
+          "quasiperiodic-gp-activity-removal": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_7239b64fe21d40f3a6e017f0",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/quasiperiodic-gp-activity-removal/SKILL.md"
+            }
+          ],
+          "bls-transit-period-refinement": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_e628d66f32864350bfb4f8ac",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/bls-transit-period-refinement/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

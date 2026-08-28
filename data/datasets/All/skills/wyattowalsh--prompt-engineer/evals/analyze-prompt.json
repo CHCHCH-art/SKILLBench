@@ -1,0 +1,15 @@
+{
+  "skills": ["prompt-engineer"],
+  "query": "/prompt-engineer analyze You are a helpful coding assistant. Always write clean code. Think step by step before answering. Use best practices.",
+  "files": [],
+  "expected_behavior": [
+    "Agent dispatches to Mode B (Analyze) based on 'analyze' keyword in arguments",
+    "Agent runs Model-Class Detection as mandatory first step",
+    "Agent performs diagnostic scoring on 5 dimensions: Clarity, Completeness, Efficiency, Robustness, Model Fit (each scored 1-5)",
+    "Agent runs four-lens analysis: ambiguity lens, security lens, robustness lens, efficiency lens",
+    "Agent detects anti-patterns from references/anti-patterns.md (likely: vague instructions, lack of structure, potential over-specification of CoT for reasoning models)",
+    "Agent flags 'Think step by step' as potentially harmful if the target model is a reasoning model (Prompting Inversion)",
+    "Agent proposes targeted fixes for each dimension scoring below 4 with before/after examples",
+    "Agent recommends Mode D (Evaluate) to build a test suite"
+  ]
+}

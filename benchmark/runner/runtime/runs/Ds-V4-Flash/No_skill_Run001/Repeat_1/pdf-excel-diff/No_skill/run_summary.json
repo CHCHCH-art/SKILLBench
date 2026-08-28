@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "pdf-excel-diff",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 242.0,
+    "peak_memory_raw": "242MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.584,
+    "agent_setup_sec": 2.637,
+    "agent_execution_sec": 34.356,
+    "verifier_sec": 23.749,
+    "total_sec": 68.987
+  },
+  "llm_cost_usd": 0.0021519064,
+  "agent_input_tokens": 48749,
+  "agent_output_tokens": 1876,
+  "image_cache": {
+    "image": "benchmark-cache/pdf-excel-diff-gold:d574cd2f86bbbcb0",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "pdf-excel-diff__wyNaZBN",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

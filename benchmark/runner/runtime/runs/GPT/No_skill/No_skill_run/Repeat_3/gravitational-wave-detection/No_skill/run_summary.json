@@ -1,0 +1,51 @@
+{
+  "schema_version": 5,
+  "task_id": "gravitational-wave-detection",
+  "condition": "no_skill",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestGravitationalWaveDetection::test_matches_expected_result: Failed: Result mismatches found:",
+  "peak_memory": {
+    "peak_memory_mib": 924.2,
+    "peak_memory_raw": "924.2MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.475,
+    "agent_setup_sec": 111.274,
+    "agent_execution_sec": 805.97,
+    "verifier_sec": 1.411,
+    "total_sec": 924.37
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/gravitational-wave-detection-gold:7c990e8ac7610b16",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "gravitational-wave-detection__FDRtvZS",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0,
+  "batch": "No_skill_Run001",
+  "repeat": 3,
+  "operation": "run"
+}

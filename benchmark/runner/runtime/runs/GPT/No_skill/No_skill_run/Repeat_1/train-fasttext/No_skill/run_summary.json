@@ -1,0 +1,53 @@
+{
+  "schema_version": 5,
+  "task_id": "train-fasttext",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run006",
+  "repeat": 1,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_accuracy: assert 0.617025 > 0.62",
+  "peak_memory": {
+    "peak_memory_mib": 1430.528,
+    "peak_memory_raw": "1.397GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.634,
+    "agent_setup_sec": 118.436,
+    "agent_execution_sec": 2224.691,
+    "verifier_sec": 159.218,
+    "total_sec": 2508.758
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/train-fasttext-gold:ed4dd0e2fa2dcf5c",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "train-fasttext__w6Ym9uV",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,12 @@
+{
+  "skills": ["prompt-engineer"],
+  "query": "/prompt-engineer <system>You are a code review assistant. Review the following code for bugs and security issues.</system><instructions>Be thorough but concise. Flag severity levels.</instructions>",
+  "files": [],
+  "expected_behavior": [
+    "Agent auto-detects Mode B (Analyze, report only) based on XML tags in input",
+    "Agent does NOT ask for mode selection since heuristic is unambiguous",
+    "Agent identifies XML tags (<system>, <instructions>) as existing prompt markers",
+    "Agent produces diagnostic scorecard and four-lens analysis in report-only mode",
+    "Agent does NOT modify the prompt (auto-detected as audit, not analyze)"
+  ]
+}

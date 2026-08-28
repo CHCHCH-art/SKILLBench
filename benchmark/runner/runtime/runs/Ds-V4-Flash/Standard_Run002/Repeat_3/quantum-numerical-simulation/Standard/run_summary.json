@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "quantum-numerical-simulation",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_wigner_diagonal_sum_matches_reference: AssertionError: Diagonal sum mismatch for case 1; test_outputs.py::test_wigner_values_match_reference: AssertionError: Wigner data mismatch for case 1",
+  "peak_memory": {
+    "peak_memory_mib": 955.6,
+    "peak_memory_raw": "955.6MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.541,
+    "agent_setup_sec": 0.388,
+    "agent_execution_sec": 153.731,
+    "verifier_sec": 48.665,
+    "total_sec": 210.125
+  },
+  "llm_cost_usd": 0.0060097408,
+  "agent_input_tokens": 406126,
+  "agent_output_tokens": 7313,
+  "image_cache": {
+    "image": "benchmark-cache/quantum-numerical-simulation-gold:8597d1a23d4799e3",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "direct-steady-state-cavity-wigner-export",
+      "piqs-open-dicke-superoperator-construction"
+    ],
+    "available_skills": [
+      "direct-steady-state-cavity-wigner-export",
+      "piqs-open-dicke-superoperator-construction"
+    ],
+    "loaded_skills": [
+      "direct-steady-state-cavity-wigner-export",
+      "piqs-open-dicke-superoperator-construction"
+    ],
+    "trials": [
+      {
+        "trial_id": "quantum-numerical-simulation__ruxDon2",
+        "passed": true,
+        "provided_skills": [
+          "direct-steady-state-cavity-wigner-export",
+          "piqs-open-dicke-superoperator-construction"
+        ],
+        "available_skills": [
+          "direct-steady-state-cavity-wigner-export",
+          "piqs-open-dicke-superoperator-construction"
+        ],
+        "loaded_skills": [
+          "direct-steady-state-cavity-wigner-export",
+          "piqs-open-dicke-superoperator-construction"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "piqs-open-dicke-superoperator-construction": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_71a014a6603a43ccadedd100",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/piqs-open-dicke-superoperator-construction/SKILL.md"
+            }
+          ],
+          "direct-steady-state-cavity-wigner-export": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_696d65577bb646daa4edeb73",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/direct-steady-state-cavity-wigner-export/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

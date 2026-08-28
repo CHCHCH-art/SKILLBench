@@ -1,0 +1,28 @@
+2026-08-23T11:37:04.080935+00:00 START operation=rerun batch=single_High Cost_Run003 repeat=1 task=train-fasttext condition=high_cost image=benchmark-cache/train-fasttext-gold:61266fd7d3d7eaea provided_skills=["deterministic-fasttext-search-split", "fasttext-constrained-autotune-selection"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:58:50 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 58m 50s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_1\train-fasttext\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_1\train-fasttext\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_1\train-fasttext\High_cost\Job_result`
+
+2026-08-23T12:35:55.866144+00:00 ERROR operation=rerun batch=single_High Cost_Run003 repeat=1 task=train-fasttext condition=high_cost {"message":"Skill audit failed","skill_audit":{"passed":false,"provided_skills":["deterministic-fasttext-search-split","fasttext-constrained-autotune-selection"],"available_skills":[],"loaded_skills":[],"trials":[],"error":"No trajectory.json found under E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\runs\\single_High Cost_Run003\\Repeat_1\\train-fasttext\\High_cost\\Job_result"}}

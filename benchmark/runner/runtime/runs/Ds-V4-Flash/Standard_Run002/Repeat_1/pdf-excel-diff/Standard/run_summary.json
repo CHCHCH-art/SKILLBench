@@ -1,0 +1,67 @@
+{
+  "schema_version": 6,
+  "task_id": "pdf-excel-diff",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1553.408,
+    "peak_memory_raw": "1.517GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.568,
+    "agent_setup_sec": 1.123,
+    "agent_execution_sec": 77.099,
+    "verifier_sec": 22.048,
+    "total_sec": 107.662
+  },
+  "llm_cost_usd": 0.0025078032000000004,
+  "agent_input_tokens": 82578,
+  "agent_output_tokens": 2038,
+  "image_cache": {
+    "image": "benchmark-cache/pdf-excel-diff-gold:d574cd2f86bbbcb0",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "keyed-record-diff-normalization",
+      "pdf-record-table-extraction"
+    ],
+    "available_skills": [
+      "keyed-record-diff-normalization",
+      "pdf-record-table-extraction"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "pdf-excel-diff__jqaAfTu",
+        "passed": true,
+        "provided_skills": [
+          "keyed-record-diff-normalization",
+          "pdf-record-table-extraction"
+        ],
+        "available_skills": [
+          "keyed-record-diff-normalization",
+          "pdf-record-table-extraction"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

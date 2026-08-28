@@ -1,0 +1,164 @@
+{
+  "schema_version": 6,
+  "task_id": "energy-ac-optimal-power-flow",
+  "condition": "selected",
+  "batch": "single_Selected_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestSchema::test_top_level_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_summary_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_generator_count: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_generator_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_bus_count: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_bus_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_most_loaded_branches: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_feasibility_check_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_solver_status: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_voltage_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_generator_p_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_generator_q_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_reference_angle: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_power_balance_acopf: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_branch_limits_and_angle_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_branch_current_limits: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_internal_consistency_generation: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_internal_consistency_losses: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_losses_reasonable: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_no_voltage_violations: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_no_branch_overloads: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestOptimality::test_cost_is_positive: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestOptimality::test_cost_matches_gencost: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestOptimality::test_cost_within_10pct_of_solved_acopf: AssertionError: Output file /root/report.json does not exist",
+  "peak_memory": {
+    "peak_memory_mib": 1883.136,
+    "peak_memory_raw": "1.839GiB",
+    "error": "EOF",
+    "container_name_hint": "energy-ac-optimal-po"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.602,
+    "agent_setup_sec": 0.925,
+    "agent_execution_sec": 747.425,
+    "verifier_sec": 99.257,
+    "total_sec": 855.293
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 2014667,
+  "agent_output_tokens": 43441,
+  "image_cache": {
+    "image": "benchmark-cache/energy-ac-optimal-power-flow-gold:131fccb5858c984c",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "aj-geddes--integration-testing",
+      "casadi-acopf-pi-network-formulation",
+      "greptileai--greploop",
+      "ipopt-acopf-reference-solve",
+      "mblode--design-ui",
+      "rectangular-acopf-network-model",
+      "simota--director"
+    ],
+    "available_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "aj-geddes--integration-testing",
+      "casadi-acopf-pi-network-formulation",
+      "greptileai--greploop",
+      "ipopt-acopf-reference-solve",
+      "mblode--design-ui",
+      "rectangular-acopf-network-model",
+      "simota--director"
+    ],
+    "loaded_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve",
+      "rectangular-acopf-network-model"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-ac-optimal-power-flow__eoqHM9H",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "aj-geddes--integration-testing",
+          "casadi-acopf-pi-network-formulation",
+          "greptileai--greploop",
+          "ipopt-acopf-reference-solve",
+          "mblode--design-ui",
+          "rectangular-acopf-network-model",
+          "simota--director"
+        ],
+        "available_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "aj-geddes--integration-testing",
+          "casadi-acopf-pi-network-formulation",
+          "greptileai--greploop",
+          "ipopt-acopf-reference-solve",
+          "mblode--design-ui",
+          "rectangular-acopf-network-model",
+          "simota--director"
+        ],
+        "loaded_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve",
+          "rectangular-acopf-network-model"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "rectangular-acopf-network-model": [
+            {
+              "step_id": 33,
+              "tool_call_id": "call_74c841fe9fe6479f9bc8b789",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/rectangular-acopf-network-model/SKILL.md"
+            }
+          ],
+          "acopf-ipopt-reference-initialization": [
+            {
+              "step_id": 34,
+              "tool_call_id": "call_5e79e42ba80f4a8694f69a50",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/acopf-ipopt-reference-initialization/SKILL.md"
+            }
+          ],
+          "ipopt-acopf-reference-solve": [
+            {
+              "step_id": 35,
+              "tool_call_id": "call_607fd1c5a6a34347822e38f6",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/ipopt-acopf-reference-solve/SKILL.md"
+            }
+          ],
+          "acopf-solution-reporting": [
+            {
+              "step_id": 36,
+              "tool_call_id": "call_72affac494b3486e9bb5357a",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/acopf-solution-reporting/SKILL.md"
+            }
+          ],
+          "acopf-feasibility-loading-report": [
+            {
+              "step_id": 37,
+              "tool_call_id": "call_e43110a5fdb646b496a08f03",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/acopf-feasibility-loading-report/SKILL.md"
+            }
+          ],
+          "casadi-acopf-pi-network-formulation": [
+            {
+              "step_id": 193,
+              "tool_call_id": "call_c8a9cb80e49e43a8a4acff2c",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/casadi-acopf-pi-network-formulation/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

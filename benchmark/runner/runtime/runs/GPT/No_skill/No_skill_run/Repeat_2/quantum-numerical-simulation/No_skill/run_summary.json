@@ -1,0 +1,53 @@
+{
+  "schema_version": 5,
+  "task_id": "quantum-numerical-simulation",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run006",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_all_files_exist: Failed: Missing CSV for case 1. Searched: /root, /root, /app; test_outputs.py::test_grid_dimensions: Failed: Missing CSV for case 1. Searched: /root, /root, /app; test_outputs.py::test_values_are_real_and_finite: Failed: Missing CSV for case 1. Searched: /root, /root, /app; test_outputs.py::test_csv_sums_to_one: Failed: Missing CSV for case 1. Searched: /root, /root, /app; test_outputs.py::test_cases_are_distinct: Failed: Missing CSV for case 1. Searched: /root, /root, /app; test_outputs.py::test_wigner_diagonal_sum_matches_reference: Failed: Missing CSV for case 1. Searched: /root, /root, /app; test_outputs.py::test_wigner_values_match_reference: Failed: Missing CSV for case 1. Searched: /root, /root, /app",
+  "peak_memory": {
+    "peak_memory_mib": 1016.0,
+    "peak_memory_raw": "1016MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.612,
+    "agent_setup_sec": 86.702,
+    "agent_execution_sec": 504.442,
+    "verifier_sec": 28.166,
+    "total_sec": 626.174
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/quantum-numerical-simulation-gold:86fad49914ce5ee2",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "quantum-numerical-simulation__8mvDBmv",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

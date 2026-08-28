@@ -1,0 +1,51 @@
+{
+  "schema_version": 5,
+  "task_id": "find-topk-similiar-chemicals",
+  "condition": "no_skill",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 360.7,
+    "peak_memory_raw": "360.7MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.506,
+    "agent_setup_sec": 87.969,
+    "agent_execution_sec": 403.687,
+    "verifier_sec": 113.677,
+    "total_sec": 611.702
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/find-topk-similiar-chemicals-gold:92de3bcdefb1178e",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "find-topk-similiar-chemicals__NJ79TvP",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0,
+  "batch": "No_skill_Run001",
+  "repeat": 1,
+  "operation": "run"
+}

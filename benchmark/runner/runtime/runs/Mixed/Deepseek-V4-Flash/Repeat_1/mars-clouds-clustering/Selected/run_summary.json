@@ -1,0 +1,101 @@
+{
+  "schema_version": 6,
+  "task_id": "mars-clouds-clustering",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 536.9,
+    "peak_memory_raw": "536.9MiB",
+    "error": "EOF",
+    "container_name_hint": "mars-clouds-clusteri"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.573,
+    "agent_setup_sec": 0.849,
+    "agent_execution_sec": 769.968,
+    "verifier_sec": 1.538,
+    "total_sec": 779.504
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 348786,
+  "agent_output_tokens": 3938,
+  "image_cache": {
+    "image": "benchmark-cache/mars-clouds-clustering-gold:b70cf811266787f2",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "Zeliper--spawn-coder",
+      "alirezarezvani--fix",
+      "ancoleman--creating-dashboards",
+      "archive-dot-com--brand-context",
+      "flask-local-classification-service",
+      "manual-weighted-dbscan-image-evaluation",
+      "parallel-dbscan-grid-pareto-frontier",
+      "pareto-grid-search-selection",
+      "popup-studio-ai--phase-2-convention",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "available_skills": [
+      "Zeliper--spawn-coder",
+      "alirezarezvani--fix",
+      "ancoleman--creating-dashboards",
+      "archive-dot-com--brand-context",
+      "flask-local-classification-service",
+      "manual-weighted-dbscan-image-evaluation",
+      "parallel-dbscan-grid-pareto-frontier",
+      "pareto-grid-search-selection",
+      "popup-studio-ai--phase-2-convention",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "mars-clouds-clustering__RsNRGy3",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "Zeliper--spawn-coder",
+          "alirezarezvani--fix",
+          "ancoleman--creating-dashboards",
+          "archive-dot-com--brand-context",
+          "flask-local-classification-service",
+          "manual-weighted-dbscan-image-evaluation",
+          "parallel-dbscan-grid-pareto-frontier",
+          "pareto-grid-search-selection",
+          "popup-studio-ai--phase-2-convention",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "available_skills": [
+          "Zeliper--spawn-coder",
+          "alirezarezvani--fix",
+          "ancoleman--creating-dashboards",
+          "archive-dot-com--brand-context",
+          "flask-local-classification-service",
+          "manual-weighted-dbscan-image-evaluation",
+          "parallel-dbscan-grid-pareto-frontier",
+          "pareto-grid-search-selection",
+          "popup-studio-ai--phase-2-convention",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

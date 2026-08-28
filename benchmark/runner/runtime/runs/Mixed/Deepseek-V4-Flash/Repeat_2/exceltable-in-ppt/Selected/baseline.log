@@ -1,0 +1,28 @@
+2026-08-25T09:57:46.078848+00:00 START operation=run batch=single_Selected_Run002 repeat=2 task=exceltable-in-ppt condition=selected image=benchmark-cache/exceltable-in-ppt-gold:76ac1a2bd4e98536 provided_skills=["affaan-m--autonomous-loops", "affaan-m--eval-harness", "aniketpanjwani--newsletter-events-write", "github--legacy-circuit-mockups", "inverse-rate-workbook-cell-update", "jeremylongshore--analyzing-system-throughput", "manastalukdar--lighthouse", "pptx-embedded-workbook-orchestration", "pptx-embedded-workbook-rate-update", "pptx-zip-preserving-embedding-replacement"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:49 0:00:00
+selected • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 49s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_2\exceltable-in-ppt\Selected\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_2\exceltable-in-ppt\Selected`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_2\exceltable-in-ppt\Selected\Job_result`
+
+2026-08-25T10:00:39.079848+00:00 PASS operation=run batch=single_Selected_Run002 repeat=2 task=exceltable-in-ppt condition=selected

@@ -1,0 +1,4 @@
+version: 1
+display_name: "Typescript"
+short_description: "TypeScript strict mode patterns, naming conventions, and type safety rules. Use when writing TypeScript code, defining types, or reviewin..."
+default_prompt: "Use this skill when: TypeScript strict mode patterns, naming conventions, and type safety rules. Use when writing TypeScript code, defining types, or reviewing TypeScript projects. Includes generics, utility types, and best practices."

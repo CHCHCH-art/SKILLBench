@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "software-dependency-audit",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 207.9,
+    "peak_memory_raw": "207.9MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.893,
+    "agent_setup_sec": 1.136,
+    "agent_execution_sec": 82.448,
+    "verifier_sec": 98.744,
+    "total_sec": 190.276
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 139823,
+  "agent_output_tokens": 2349,
+  "image_cache": {
+    "image": "benchmark-cache/software-dependency-audit-gold:65439dede9bf4280",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "trivy-offline-filesystem-vulnerability-scan",
+      "trivy-severity-cvss-csv-normalization"
+    ],
+    "available_skills": [
+      "trivy-offline-filesystem-vulnerability-scan",
+      "trivy-severity-cvss-csv-normalization"
+    ],
+    "loaded_skills": [
+      "trivy-offline-filesystem-vulnerability-scan",
+      "trivy-severity-cvss-csv-normalization"
+    ],
+    "trials": [
+      {
+        "trial_id": "software-dependency-audit__yCC53VD",
+        "passed": true,
+        "provided_skills": [
+          "trivy-offline-filesystem-vulnerability-scan",
+          "trivy-severity-cvss-csv-normalization"
+        ],
+        "available_skills": [
+          "trivy-offline-filesystem-vulnerability-scan",
+          "trivy-severity-cvss-csv-normalization"
+        ],
+        "loaded_skills": [
+          "trivy-offline-filesystem-vulnerability-scan",
+          "trivy-severity-cvss-csv-normalization"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "trivy-offline-filesystem-vulnerability-scan": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_4Rg9am4KeUUodtTkm1UwK6gm",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/trivy-offline-filesystem-vulnerability-scan/SKILL.md"
+            }
+          ],
+          "trivy-severity-cvss-csv-normalization": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_4Rg9am4KeUUodtTkm1UwK6gm",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/trivy-severity-cvss-csv-normalization/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

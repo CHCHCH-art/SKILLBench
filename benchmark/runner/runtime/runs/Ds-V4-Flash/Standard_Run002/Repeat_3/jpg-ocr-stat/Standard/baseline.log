@@ -1,0 +1,28 @@
+2026-08-20T19:02:07.823311+00:00 START operation=run batch=single_Standard_Run002 repeat=3 task=jpg-ocr-stat condition=standard image=benchmark-cache/jpg-ocr-stat-gold:2312eeab86c89737 provided_skills=["receipt-date-candidate-resolution", "receipt-image-ocr-line-extraction", "receipt-total-candidate-resolution-export"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:07:52 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 7m 52s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_3\jpg-ocr-stat\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_3\jpg-ocr-stat\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_3\jpg-ocr-stat\Standard\Job_result`
+
+2026-08-20T19:10:02.116914+00:00 FAIL operation=run batch=single_Standard_Run002 repeat=3 task=jpg-ocr-stat condition=standard

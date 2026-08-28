@@ -1,0 +1,56 @@
+ARG BASE_IMAGE
+FROM ${BASE_IMAGE}
+
+ARG FINAL_USER=root
+
+USER root
+
+ENV PATH="/opt/dmx-codex/bin:/opt/dmx-node/bin:/opt/dmx-uv/bin:${PATH}"
+
+RUN --mount=type=bind,source=packages/linux-x64,target=/mnt/dmx-packages,readonly \
+    set -eu; \
+    command -v tar >/dev/null 2>&1 || { \
+        echo "The task image needs tar to unpack the offline tools." >&2; \
+        exit 1; \
+    }; \
+    if ! command -v node >/dev/null 2>&1 || ! command -v npm >/dev/null 2>&1; then \
+        mkdir -p /opt/dmx-node; \
+        tar -xzf /mnt/dmx-packages/node-v22.16.0-linux-x64.tar.gz \
+            -C /opt/dmx-node --strip-components=1; \
+    fi; \
+    if ! command -v codex >/dev/null 2>&1; then \
+        tar -xzf /mnt/dmx-packages/dmx-codex-0.145.0.tar.gz -C /opt; \
+    fi; \
+    if ! command -v uv >/dev/null 2>&1 || ! command -v uvx >/dev/null 2>&1; then \
+        mkdir -p /opt/dmx-uv/bin; \
+        tar -xzf /mnt/dmx-packages/uv-0.9.7-x86_64-unknown-linux-gnu.tar.gz \
+            -C /opt/dmx-uv/bin; \
+        chmod 0755 /opt/dmx-uv/bin/uv /opt/dmx-uv/bin/uvx; \
+    fi; \
+    if ! command -v rg >/dev/null 2>&1; then \
+        tar -xzf /mnt/dmx-packages/ripgrep-14.1.1.tar.gz -C /usr/local/bin; \
+        chmod 0755 /usr/local/bin/rg; \
+    fi; \
+    if command -v suricata >/dev/null 2>&1 \
+        && ! claude --version >/dev/null 2>&1 \
+        && test -x /opt/claude-code/bin/claude \
+        && /opt/claude-code/bin/claude --version >/dev/null 2>&1; then \
+        ln -sf /opt/claude-code/bin/claude /usr/local/bin/claude; \
+    fi; \
+    node --version; \
+    npm --version; \
+    codex --version; \
+    uv --version; \
+    uvx --version; \
+    rg --version; \
+    if command -v suricata >/dev/null 2>&1; then \
+        claude --version; \
+    fi
+
+LABEL benchmark.agent-tools="true" \
+      benchmark.node-package-version="22.16.0" \
+      benchmark.codex-package-version="0.145.0" \
+      benchmark.uv-package-version="0.9.7" \
+      benchmark.ripgrep-package-version="14.1.1"
+
+USER ${FINAL_USER}

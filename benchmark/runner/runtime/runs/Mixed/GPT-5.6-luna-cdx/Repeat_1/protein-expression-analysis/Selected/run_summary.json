@@ -1,0 +1,101 @@
+{
+  "schema_version": 6,
+  "task_id": "protein-expression-analysis",
+  "condition": "selected",
+  "batch": "single_Selected_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 82.03,
+    "peak_memory_raw": "82.03MiB",
+    "error": null,
+    "container_name_hint": "protein-expression-a"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.37,
+    "agent_setup_sec": 1.045,
+    "agent_execution_sec": 66.074,
+    "verifier_sec": 9.45,
+    "total_sec": 86.816
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 168714,
+  "agent_output_tokens": 4072,
+  "image_cache": {
+    "image": "benchmark-cache/protein-expression-analysis-gold:a52e2bc643b8e023",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "89jobrien--code-context-finder",
+      "davepoon--klaviyo-automation",
+      "expression-group-statistics-foldchange",
+      "laurigates--test-focus",
+      "protein-group-statistics-foldchange-formulas",
+      "protein-sample-direct-reference-lookup",
+      "romiluz13--frontend-patterns",
+      "spreadsheet-two-way-expression-lookup",
+      "xlsx-formula-cache-preserving-recalc",
+      "zechenzhangagi--instructor"
+    ],
+    "available_skills": [
+      "89jobrien--code-context-finder",
+      "davepoon--klaviyo-automation",
+      "expression-group-statistics-foldchange",
+      "laurigates--test-focus",
+      "protein-group-statistics-foldchange-formulas",
+      "protein-sample-direct-reference-lookup",
+      "romiluz13--frontend-patterns",
+      "spreadsheet-two-way-expression-lookup",
+      "xlsx-formula-cache-preserving-recalc",
+      "zechenzhangagi--instructor"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "protein-expression-analysis__K9V3CxM",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "89jobrien--code-context-finder",
+          "davepoon--klaviyo-automation",
+          "expression-group-statistics-foldchange",
+          "laurigates--test-focus",
+          "protein-group-statistics-foldchange-formulas",
+          "protein-sample-direct-reference-lookup",
+          "romiluz13--frontend-patterns",
+          "spreadsheet-two-way-expression-lookup",
+          "xlsx-formula-cache-preserving-recalc",
+          "zechenzhangagi--instructor"
+        ],
+        "available_skills": [
+          "89jobrien--code-context-finder",
+          "davepoon--klaviyo-automation",
+          "expression-group-statistics-foldchange",
+          "laurigates--test-focus",
+          "protein-group-statistics-foldchange-formulas",
+          "protein-sample-direct-reference-lookup",
+          "romiluz13--frontend-patterns",
+          "spreadsheet-two-way-expression-lookup",
+          "xlsx-formula-cache-preserving-recalc",
+          "zechenzhangagi--instructor"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

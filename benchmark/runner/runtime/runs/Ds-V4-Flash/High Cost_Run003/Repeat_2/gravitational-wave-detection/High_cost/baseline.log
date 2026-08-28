@@ -1,0 +1,29 @@
+2026-08-22T02:28:03.109452+00:00 START operation=run batch=single_High Cost_Run003 repeat=2 task=gravitational-wave-detection condition=high_cost image=benchmark-cache/gravitational-wave-detection-gold:453ceaaaf619c520 provided_skills=["matched-filter-winner-confirmation-audit", "pycbc-reference-matched-filter-search"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:13:07 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 13m 7s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\gravitational-wave-detection\High_cost\Job_result\result.j
+son
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\gravitational-wave-detection\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\gravitational-wave-detection\High_cost\Job_result`
+
+2026-08-22T02:41:11.566953+00:00 PASS operation=run batch=single_High Cost_Run003 repeat=2 task=gravitational-wave-detection condition=high_cost

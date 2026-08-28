@@ -1,0 +1,43 @@
+{
+  "name": "yellow-best-practices",
+  "version": "1.0.0",
+  "description": "Yellow Network and Nitrolite (ERC-7824) development best practices for building state channel applications",
+  "author": "Yellow Network Community",
+  "license": "MIT",
+  "keywords": [
+    "yellow-network",
+    "nitrolite",
+    "erc-7824",
+    "state-channels",
+    "blockchain",
+    "web3",
+    "defi",
+    "off-chain",
+    "payments"
+  ],
+  "categories": [
+    "connection",
+    "authentication",
+    "app-sessions",
+    "state-management",
+    "security",
+    "error-handling"
+  ],
+  "documentation": {
+    "yellow-network": "https://docs.yellow.org/",
+    "erc7824": "https://erc7824.org/",
+    "nitrolite-sdk": "https://www.npmjs.com/package/@erc7824/nitrolite",
+    "github": "https://github.com/erc7824/nitrolite"
+  },
+  "triggers": [
+    "yellow network",
+    "nitrolite",
+    "erc-7824",
+    "erc7824",
+    "state channel",
+    "clearnode",
+    "off-chain",
+    "chain abstraction",
+    "yellow sdk"
+  ]
+}

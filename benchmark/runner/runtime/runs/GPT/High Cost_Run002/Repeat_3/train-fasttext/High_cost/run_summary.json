@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "train-fasttext",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 3208.192,
+    "peak_memory_raw": "3.133GiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.867,
+    "agent_setup_sec": 0.716,
+    "agent_execution_sec": 768.464,
+    "verifier_sec": 38.773,
+    "total_sec": 816.795
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 2531994,
+  "agent_output_tokens": 6080,
+  "image_cache": {
+    "image": "benchmark-cache/train-fasttext-gold:61266fd7d3d7eaea",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection"
+    ],
+    "available_skills": [
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection"
+    ],
+    "loaded_skills": [
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection"
+    ],
+    "trials": [
+      {
+        "trial_id": "train-fasttext__jphWgH6",
+        "passed": true,
+        "provided_skills": [
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection"
+        ],
+        "available_skills": [
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection"
+        ],
+        "loaded_skills": [
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "deterministic-fasttext-search-split": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_JwPSi2Yw4WqR5ABE7ABqEd1n",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/deterministic-fasttext-search-split/SKILL.md"
+            }
+          ],
+          "fasttext-constrained-autotune-selection": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_JwPSi2Yw4WqR5ABE7ABqEd1n",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/fasttext-constrained-autotune-selection/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

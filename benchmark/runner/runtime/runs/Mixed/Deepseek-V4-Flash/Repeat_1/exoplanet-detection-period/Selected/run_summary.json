@@ -1,0 +1,144 @@
+{
+  "schema_version": 6,
+  "task_id": "exoplanet-detection-period",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestExoplanetPeriod::test_period_value_correct: AssertionError: Period 2.79759 does not match expected 5.35699 (tolerance: ±0.01)",
+  "peak_memory": {
+    "peak_memory_mib": 2046.976,
+    "peak_memory_raw": "1.999GiB",
+    "error": "EOF",
+    "container_name_hint": "exoplanet-detection-"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.606,
+    "agent_setup_sec": 0.741,
+    "agent_execution_sec": 1615.388,
+    "verifier_sec": 19.15,
+    "total_sec": 1642.511
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1660697,
+  "agent_output_tokens": 20222,
+  "image_cache": {
+    "image": "benchmark-cache/exoplanet-detection-period-gold:8bdb5ea239d635d6",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "Gentleman-Programming--django-drf",
+      "antvis--infographic-item-creator",
+      "bls-transit-period-refinement",
+      "davila7--autonomous-agent-patterns",
+      "jeremylongshore--fireflies-local-dev-loop",
+      "lightcurve-quality-outlier-flatten",
+      "lightcurve-robust-conditioning",
+      "quasiperiodic-gp-activity-removal",
+      "tls-coarse-refined-period-search",
+      "yoloshii--multi-tool-pipeline"
+    ],
+    "available_skills": [
+      "Gentleman-Programming--django-drf",
+      "antvis--infographic-item-creator",
+      "bls-transit-period-refinement",
+      "davila7--autonomous-agent-patterns",
+      "jeremylongshore--fireflies-local-dev-loop",
+      "lightcurve-quality-outlier-flatten",
+      "lightcurve-robust-conditioning",
+      "quasiperiodic-gp-activity-removal",
+      "tls-coarse-refined-period-search",
+      "yoloshii--multi-tool-pipeline"
+    ],
+    "loaded_skills": [
+      "bls-transit-period-refinement",
+      "lightcurve-robust-conditioning",
+      "quasiperiodic-gp-activity-removal",
+      "tls-coarse-refined-period-search"
+    ],
+    "trials": [
+      {
+        "trial_id": "exoplanet-detection-period__McQcPL2",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "Gentleman-Programming--django-drf",
+          "antvis--infographic-item-creator",
+          "bls-transit-period-refinement",
+          "davila7--autonomous-agent-patterns",
+          "jeremylongshore--fireflies-local-dev-loop",
+          "lightcurve-quality-outlier-flatten",
+          "lightcurve-robust-conditioning",
+          "quasiperiodic-gp-activity-removal",
+          "tls-coarse-refined-period-search",
+          "yoloshii--multi-tool-pipeline"
+        ],
+        "available_skills": [
+          "Gentleman-Programming--django-drf",
+          "antvis--infographic-item-creator",
+          "bls-transit-period-refinement",
+          "davila7--autonomous-agent-patterns",
+          "jeremylongshore--fireflies-local-dev-loop",
+          "lightcurve-quality-outlier-flatten",
+          "lightcurve-robust-conditioning",
+          "quasiperiodic-gp-activity-removal",
+          "tls-coarse-refined-period-search",
+          "yoloshii--multi-tool-pipeline"
+        ],
+        "loaded_skills": [
+          "bls-transit-period-refinement",
+          "lightcurve-robust-conditioning",
+          "quasiperiodic-gp-activity-removal",
+          "tls-coarse-refined-period-search"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "quasiperiodic-gp-activity-removal": [
+            {
+              "step_id": 32,
+              "tool_call_id": "call_e917ad859151453d9d1875da",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/quasiperiodic-gp-activity-removal/SKILL.md"
+            }
+          ],
+          "tls-coarse-refined-period-search": [
+            {
+              "step_id": 37,
+              "tool_call_id": "call_fac2d45670334f288aa7e01b",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/tls-coarse-refined-period-search/SKILL.md"
+            }
+          ],
+          "bls-transit-period-refinement": [
+            {
+              "step_id": 42,
+              "tool_call_id": "call_302881e0361c41cab445edc2",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/bls-transit-period-refinement/SKILL.md"
+            }
+          ],
+          "lightcurve-robust-conditioning": [
+            {
+              "step_id": 45,
+              "tool_call_id": "call_ce1a42c4bf1b4282bdb85385",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/lightcurve-robust-conditioning/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

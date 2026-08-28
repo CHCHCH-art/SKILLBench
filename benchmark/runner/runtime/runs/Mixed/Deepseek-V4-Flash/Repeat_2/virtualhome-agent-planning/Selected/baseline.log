@@ -1,0 +1,28 @@
+2026-08-25T18:05:10.706474+00:00 START operation=run batch=single_Selected_Run002 repeat=2 task=virtualhome-agent-planning condition=selected image=benchmark-cache/virtualhome-agent-planning-gold:2a7bb392c743be2d provided_skills=["grounded-pyperplan-portfolio-lifting", "leegonzales--research-to-essay", "pddl-pyperplan-baseline-validation", "pddl-task-manifest-plan-orchestration", "pddl-unified-planning-load", "pyperplan-oneshot-plan-generation", "reference-plan-selection-and-safe-write", "shareAI-lab--pdf", "starwreckntx--cognitive-baseline-eval", "unified-planning-plan-file-writing"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:03:31 0:00:00
+selected • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 32s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_2\virtualhome-agent-planning\Selected\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_2\virtualhome-agent-planning\Selected`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_2\virtualhome-agent-planning\Selected\Job_result`
+
+2026-08-25T18:08:44.806113+00:00 FAIL operation=run batch=single_Selected_Run002 repeat=2 task=virtualhome-agent-planning condition=selected

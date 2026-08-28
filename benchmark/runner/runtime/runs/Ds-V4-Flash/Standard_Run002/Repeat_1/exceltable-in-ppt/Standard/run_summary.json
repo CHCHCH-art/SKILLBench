@@ -1,0 +1,67 @@
+{
+  "schema_version": 6,
+  "task_id": "exceltable-in-ppt",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_inverse_rate_updated: AssertionError: Inverse rate CNY -> USD was not updated correctly. Expected: 0.142, Got: nan; test_outputs.py::test_other_cells_unchanged: AssertionError: Cell (CNY, EUR) was unexpectedly modified. Original: 0.127, New: nan",
+  "peak_memory": {
+    "peak_memory_mib": 146.1,
+    "peak_memory_raw": "146.1MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.485,
+    "agent_setup_sec": 1.101,
+    "agent_execution_sec": 57.499,
+    "verifier_sec": 211.283,
+    "total_sec": 278.109
+  },
+  "llm_cost_usd": 0.0026485312,
+  "agent_input_tokens": 142094,
+  "agent_output_tokens": 2261,
+  "image_cache": {
+    "image": "benchmark-cache/exceltable-in-ppt-gold:76ac1a2bd4e98536",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration"
+    ],
+    "available_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "exceltable-in-ppt__9deQsiy",
+        "passed": true,
+        "provided_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration"
+        ],
+        "available_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 6,
+  "task_id": "log-summary-date-ranges",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 97.07,
+    "peak_memory_raw": "97.07MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.522,
+    "agent_setup_sec": 1.009,
+    "agent_execution_sec": 25.584,
+    "verifier_sec": 15.911,
+    "total_sec": 48.833
+  },
+  "llm_cost_usd": 0.0050920240000000005,
+  "agent_input_tokens": 40898,
+  "agent_output_tokens": 1461,
+  "image_cache": {
+    "image": "benchmark-cache/log-summary-date-ranges-gold:e28534907986406f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dated-log-severity-summary"
+    ],
+    "available_skills": [
+      "dated-log-severity-summary"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "log-summary-date-ranges__D28Prcs",
+        "passed": true,
+        "provided_skills": [
+          "dated-log-severity-summary"
+        ],
+        "available_skills": [
+          "dated-log-severity-summary"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

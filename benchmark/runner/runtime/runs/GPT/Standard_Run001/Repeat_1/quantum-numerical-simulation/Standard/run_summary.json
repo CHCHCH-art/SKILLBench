@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "quantum-numerical-simulation",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_all_files_exist: Failed: Missing CSV for case 1. Searched: /root, /root, /app; test_outputs.py::test_grid_dimensions: Failed: Missing CSV for case 1. Searched: /root, /root, /app; test_outputs.py::test_values_are_real_and_finite: Failed: Missing CSV for case 1. Searched: /root, /root, /app; test_outputs.py::test_csv_sums_to_one: Failed: Missing CSV for case 1. Searched: /root, /root, /app; test_outputs.py::test_cases_are_distinct: Failed: Missing CSV for case 1. Searched: /root, /root, /app; test_outputs.py::test_wigner_diagonal_sum_matches_reference: Failed: Missing CSV for case 1. Searched: /root, /root, /app; test_outputs.py::test_wigner_values_match_reference: Failed: Missing CSV for case 1. Searched: /root, /root, /app",
+  "peak_memory": {
+    "peak_memory_mib": 700.2,
+    "peak_memory_raw": "700.2MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.947,
+    "agent_setup_sec": 0.824,
+    "agent_execution_sec": 155.619,
+    "verifier_sec": 49.28,
+    "total_sec": 216.026
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 164025,
+  "agent_output_tokens": 3329,
+  "image_cache": {
+    "image": "benchmark-cache/quantum-numerical-simulation-gold:8597d1a23d4799e3",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "direct-steady-state-cavity-wigner-export",
+      "piqs-open-dicke-superoperator-construction"
+    ],
+    "available_skills": [
+      "direct-steady-state-cavity-wigner-export",
+      "piqs-open-dicke-superoperator-construction"
+    ],
+    "loaded_skills": [
+      "direct-steady-state-cavity-wigner-export",
+      "piqs-open-dicke-superoperator-construction"
+    ],
+    "trials": [
+      {
+        "trial_id": "quantum-numerical-simulation__EeC2vui",
+        "passed": true,
+        "provided_skills": [
+          "direct-steady-state-cavity-wigner-export",
+          "piqs-open-dicke-superoperator-construction"
+        ],
+        "available_skills": [
+          "direct-steady-state-cavity-wigner-export",
+          "piqs-open-dicke-superoperator-construction"
+        ],
+        "loaded_skills": [
+          "direct-steady-state-cavity-wigner-export",
+          "piqs-open-dicke-superoperator-construction"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "direct-steady-state-cavity-wigner-export": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_AUwDzfLsXNRrFhaKBMkFodq4",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/direct-steady-state-cavity-wigner-export/SKILL.md"
+            }
+          ],
+          "piqs-open-dicke-superoperator-construction": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_AUwDzfLsXNRrFhaKBMkFodq4",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/piqs-open-dicke-superoperator-construction/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

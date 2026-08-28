@@ -1,0 +1,12 @@
+{
+  "skills": ["agent-conventions"],
+  "query": "Update the description of the explorer agent to mention it can also search for configuration files",
+  "files": [],
+  "expected_behavior": [
+    "Agent auto-invokes agent-conventions skill when modifying an existing agent definition",
+    "Agent updates the description field in the agent's YAML frontmatter",
+    "Agent updates the corresponding README.md index table entry to match the new description",
+    "Agent keeps the index table sorted alphabetically by agent name",
+    "Agent runs 'wagents validate' after the frontmatter change to verify compliance"
+  ]
+}

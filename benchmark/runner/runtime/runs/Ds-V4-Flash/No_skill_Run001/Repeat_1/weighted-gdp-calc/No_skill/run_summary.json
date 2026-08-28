@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "weighted-gdp-calc",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestStep1DataValues::test_exports_values: AssertionError: Exports value mismatches:; test_outputs.py::TestStep1DataValues::test_imports_values: AssertionError: Imports value mismatches:; test_outputs.py::TestStep1DataValues::test_gdp_values: AssertionError: GDP value mismatches:; test_outputs.py::TestStep2NetExportsCalculation::test_net_exports_pct_values: AssertionError: Net exports % mismatches:; test_outputs.py::TestStep2Statistics::test_min_values: AssertionError: MIN value mismatches:; test_outputs.py::TestStep2Statistics::test_max_values: AssertionError: MAX value mismatches:; test_outputs.py::TestStep2Statistics::test_median_values: AssertionError: MEDIAN value mismatches:; test_outputs.py::TestStep2Statistics::test_mean_values: AssertionError: MEAN value mismatches:; test_outputs.py::TestStep2Statistics::test_percentile_values: AssertionError: PERCENTILE value mismatches:; test_outputs.py::TestStep3WeightedMean::test_weighted_mean_values_reasonable: AssertionError: Weighted mean issues:; test_outputs.py::TestStep3WeightedMean::test_weighted_mean_values: AssertionError: Weighted mean value mismatches:; test_outputs.py::TestNoExcelErrors::test_no_formula_errors: AssertionError: Excel errors found:",
+  "peak_memory": {
+    "peak_memory_mib": 478.8,
+    "peak_memory_raw": "478.8MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.517,
+    "agent_setup_sec": 1.496,
+    "agent_execution_sec": 91.388,
+    "verifier_sec": 72.309,
+    "total_sec": 173.784
+  },
+  "llm_cost_usd": 0.0087952312,
+  "agent_input_tokens": 474455,
+  "agent_output_tokens": 5425,
+  "image_cache": {
+    "image": "benchmark-cache/weighted-gdp-calc-gold:9ffa98d58509b229",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "weighted-gdp-calc__jEgSeVh",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

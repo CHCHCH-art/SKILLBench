@@ -1,0 +1,76 @@
+{
+  "schema_version": 6,
+  "task_id": "log-summary-date-ranges",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_summary_structure_and_counts: AssertionError: Expected row ['today', 'ERROR', '370'], got ['today', 'ERROR', '414']",
+  "peak_memory": {
+    "peak_memory_mib": 157.6,
+    "peak_memory_raw": "157.6MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.766,
+    "agent_setup_sec": 1.118,
+    "agent_execution_sec": 61.487,
+    "verifier_sec": 22.846,
+    "total_sec": 92.77
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 71883,
+  "agent_output_tokens": 1347,
+  "image_cache": {
+    "image": "benchmark-cache/log-summary-date-ranges-gold:e28534907986406f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dated-log-severity-summary"
+    ],
+    "available_skills": [
+      "dated-log-severity-summary"
+    ],
+    "loaded_skills": [
+      "dated-log-severity-summary"
+    ],
+    "trials": [
+      {
+        "trial_id": "log-summary-date-ranges__Tg4wwxQ",
+        "passed": true,
+        "provided_skills": [
+          "dated-log-severity-summary"
+        ],
+        "available_skills": [
+          "dated-log-severity-summary"
+        ],
+        "loaded_skills": [
+          "dated-log-severity-summary"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "dated-log-severity-summary": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_UpU04WThvMGZIMSNgpHMfZX9",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/dated-log-severity-summary/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

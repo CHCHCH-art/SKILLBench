@@ -1,0 +1,71 @@
+{
+  "schema_version": 6,
+  "task_id": "weighted-gdp-calc",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestStep2Statistics::test_percentile_values: AssertionError: PERCENTILE value mismatches:; test_outputs.py::TestNoExcelErrors::test_no_formula_errors: AssertionError: Excel errors found:",
+  "peak_memory": {
+    "peak_memory_mib": 399.0,
+    "peak_memory_raw": "399MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.543,
+    "agent_setup_sec": 1.19,
+    "agent_execution_sec": 169.754,
+    "verifier_sec": 27.41,
+    "total_sec": 206.724
+  },
+  "llm_cost_usd": 0.045738056,
+  "agent_input_tokens": 746269,
+  "agent_output_tokens": 12598,
+  "image_cache": {
+    "image": "benchmark-cache/weighted-gdp-calc-gold:9ffa98d58509b229",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "net-export-statistics-sumproduct-formulas",
+      "uno-formula-recalc-validation",
+      "uno-two-key-index-match-population"
+    ],
+    "available_skills": [
+      "net-export-statistics-sumproduct-formulas",
+      "uno-formula-recalc-validation",
+      "uno-two-key-index-match-population"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "weighted-gdp-calc__yUgmouj",
+        "passed": true,
+        "provided_skills": [
+          "net-export-statistics-sumproduct-formulas",
+          "uno-formula-recalc-validation",
+          "uno-two-key-index-match-population"
+        ],
+        "available_skills": [
+          "net-export-statistics-sumproduct-formulas",
+          "uno-formula-recalc-validation",
+          "uno-two-key-index-match-population"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

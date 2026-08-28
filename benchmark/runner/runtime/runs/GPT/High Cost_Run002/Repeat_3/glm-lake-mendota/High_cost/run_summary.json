@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "glm-lake-mendota",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 214.4,
+    "peak_memory_raw": "214.4MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.863,
+    "agent_setup_sec": 0.719,
+    "agent_execution_sec": 1120.015,
+    "verifier_sec": 9.173,
+    "total_sec": 1142.509
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 2418208,
+  "agent_output_tokens": 14524,
+  "image_cache": {
+    "image": "benchmark-cache/glm-lake-mendota-gold:cfbcca189cbdcde0",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "glm-observation-profile-evaluation",
+      "lake-temperature-glm-staged-calibration"
+    ],
+    "available_skills": [
+      "glm-observation-profile-evaluation",
+      "lake-temperature-glm-staged-calibration"
+    ],
+    "loaded_skills": [
+      "glm-observation-profile-evaluation",
+      "lake-temperature-glm-staged-calibration"
+    ],
+    "trials": [
+      {
+        "trial_id": "glm-lake-mendota__swNdSp7",
+        "passed": true,
+        "provided_skills": [
+          "glm-observation-profile-evaluation",
+          "lake-temperature-glm-staged-calibration"
+        ],
+        "available_skills": [
+          "glm-observation-profile-evaluation",
+          "lake-temperature-glm-staged-calibration"
+        ],
+        "loaded_skills": [
+          "glm-observation-profile-evaluation",
+          "lake-temperature-glm-staged-calibration"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "glm-observation-profile-evaluation": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_mgmvIrMFwiVZrE0fzgQlkTXS",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/glm-observation-profile-evaluation/SKILL.md"
+            }
+          ],
+          "lake-temperature-glm-staged-calibration": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_mgmvIrMFwiVZrE0fzgQlkTXS",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/lake-temperature-glm-staged-calibration/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

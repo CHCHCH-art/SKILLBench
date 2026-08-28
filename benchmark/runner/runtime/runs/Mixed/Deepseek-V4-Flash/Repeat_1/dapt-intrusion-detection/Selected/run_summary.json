@@ -1,0 +1,101 @@
+{
+  "schema_version": 6,
+  "task_id": "dapt-intrusion-detection",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestProtocolDistribution::test_protocol_count: AssertionError: protocol_ip_total: expected 58474, got 58727; test_outputs.py::TestEntropyMetrics::test_entropy_metric: AssertionError: unique_src_ports: expected 1713, got 1714; test_outputs.py::TestGraphMetrics::test_graph_metric: AssertionError: network_density: expected 0.041252, got 0.026395; test_outputs.py::TestTemporalMetrics::test_temporal_metric: AssertionError: num_consumers: expected 13, got 18; test_outputs.py::TestFlowMetrics::test_flow_metric: AssertionError: udp_flows: expected 214, got 218; test_outputs.py::TestFlowMetrics::test_bidirectional_flows: AssertionError: bidirectional_flows: expected 1758, got 1759; test_outputs.py::TestAnalysisQuestions::test_is_traffic_benign: AssertionError: is_traffic_benign: expected 'true', got 'false'; test_outputs.py::TestAnalysisQuestions::test_has_port_scan: AssertionError: has_port_scan: expected 'false', got 'true'; test_outputs.py::TestAnalysisQuestions::test_has_dos_pattern: AssertionError: has_dos_pattern: expected 'false', got 'true'",
+  "peak_memory": {
+    "peak_memory_mib": 716.3,
+    "peak_memory_raw": "716.3MiB",
+    "error": "EOF",
+    "container_name_hint": "dapt-intrusion-detec"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.841,
+    "agent_setup_sec": 0.42,
+    "agent_execution_sec": 149.633,
+    "verifier_sec": 45.053,
+    "total_sec": 202.969
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 228401,
+  "agent_output_tokens": 5514,
+  "image_cache": {
+    "image": "benchmark-cache/dapt-intrusion-detection-gold:7867f125ad78de68",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "JordanGunn--sniff-preventers",
+      "classic-pcap-streaming-network-metrics",
+      "madsnorgaard--docker-local",
+      "metric-csv-first-field-update",
+      "metric-csv-template-update",
+      "mnkyarts--hytale-ui-windows",
+      "network-behavior-reference-heuristics",
+      "network-traffic-reference-behavior-flags",
+      "network-traffic-reference-metrics",
+      "pcap-pdml-stream-normalization"
+    ],
+    "available_skills": [
+      "JordanGunn--sniff-preventers",
+      "classic-pcap-streaming-network-metrics",
+      "madsnorgaard--docker-local",
+      "metric-csv-first-field-update",
+      "metric-csv-template-update",
+      "mnkyarts--hytale-ui-windows",
+      "network-behavior-reference-heuristics",
+      "network-traffic-reference-behavior-flags",
+      "network-traffic-reference-metrics",
+      "pcap-pdml-stream-normalization"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "dapt-intrusion-detection__EiEBCae",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "JordanGunn--sniff-preventers",
+          "classic-pcap-streaming-network-metrics",
+          "madsnorgaard--docker-local",
+          "metric-csv-first-field-update",
+          "metric-csv-template-update",
+          "mnkyarts--hytale-ui-windows",
+          "network-behavior-reference-heuristics",
+          "network-traffic-reference-behavior-flags",
+          "network-traffic-reference-metrics",
+          "pcap-pdml-stream-normalization"
+        ],
+        "available_skills": [
+          "JordanGunn--sniff-preventers",
+          "classic-pcap-streaming-network-metrics",
+          "madsnorgaard--docker-local",
+          "metric-csv-first-field-update",
+          "metric-csv-template-update",
+          "mnkyarts--hytale-ui-windows",
+          "network-behavior-reference-heuristics",
+          "network-traffic-reference-behavior-flags",
+          "network-traffic-reference-metrics",
+          "pcap-pdml-stream-normalization"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

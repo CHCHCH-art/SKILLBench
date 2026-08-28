@@ -1,0 +1,28 @@
+2026-08-17T10:58:26.667482+00:00 START operation=run batch=single_Standard_Run001 repeat=1 task=portfolio-optimization condition=standard image=benchmark-cache/portfolio-optimization-gold:8362bcbb069434ab provided_skills=["cpython-symmetric-quadratic-risk-kernel", "cpython-vector-return-build-wrapper"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:03:59 0:00:00
+standard • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 59s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\portfolio-optimization\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\portfolio-optimization\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\portfolio-optimization\Standard\Job_result`
+
+2026-08-17T11:02:29.426051+00:00 PASS operation=run batch=single_Standard_Run001 repeat=1 task=portfolio-optimization condition=standard

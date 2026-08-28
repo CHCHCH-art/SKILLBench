@@ -1,0 +1,28 @@
+2026-08-25T14:17:18.006668+00:00 START operation=run batch=single_Selected_Run002 repeat=3 task=jpg-ocr-stat condition=selected image=benchmark-cache/jpg-ocr-stat-gold:2312eeab86c89737 provided_skills=["anthropics--contract-review", "arash77--galaxy-db-migration", "melodic-software--dynamic-schema-design", "receipt-date-candidate-resolution", "receipt-date-total-excel-serialization", "receipt-image-ocr-line-extraction", "receipt-multivariant-ocr-extraction", "receipt-total-candidate-resolution-export", "starwreckntx--enforce-no-duplication-policy", "yoanbernabeu--grepai-trace-callers"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:14:42 0:00:00
+selected • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 14m 42s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_3\jpg-ocr-stat\Selected\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_3\jpg-ocr-stat\Selected`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_3\jpg-ocr-stat\Selected\Job_result`
+
+2026-08-25T14:32:01.586634+00:00 FAIL operation=run batch=single_Selected_Run002 repeat=3 task=jpg-ocr-stat condition=selected

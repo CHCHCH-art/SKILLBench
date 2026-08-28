@@ -1,0 +1,139 @@
+{
+  "schema_version": 6,
+  "task_id": "gravitational-wave-detection",
+  "condition": "selected",
+  "batch": "single_Selected_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "trial_error",
+  "passed": false,
+  "error": [
+    {
+      "exception_type": "AgentTimeoutError",
+      "exception_message": "Agent execution timed out after 2700.0 seconds"
+    }
+  ],
+  "failure_reason": "{\"exception_type\":\"AgentTimeoutError\",\"exception_message\":\"Agent execution timed out after 2700.0 seconds\"}",
+  "peak_memory": {
+    "peak_memory_mib": 1375.232,
+    "peak_memory_raw": "1.343GiB",
+    "error": "EOF",
+    "container_name_hint": "gravitational-wave-d"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.8,
+    "agent_setup_sec": 0.6,
+    "agent_execution_sec": 2701.819,
+    "verifier_sec": 2.725,
+    "total_sec": 2712.864
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1995584,
+  "agent_output_tokens": 28896,
+  "image_cache": {
+    "image": "benchmark-cache/gravitational-wave-detection-gold:453ceaaaf619c520",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "jau123--setup",
+      "jeremylongshore--exa-core-workflow-a",
+      "matched-filter-winner-confirmation-audit",
+      "mindrally--azure",
+      "mindrally--devops",
+      "pycbc-reference-matched-filter-search",
+      "pycbc-strain-conditioning-psd",
+      "pycbc-waveform-grid-matched-filter-search",
+      "shinpr--coding-principles",
+      "typefully--typefully"
+    ],
+    "available_skills": [
+      "jau123--setup",
+      "jeremylongshore--exa-core-workflow-a",
+      "matched-filter-winner-confirmation-audit",
+      "mindrally--azure",
+      "mindrally--devops",
+      "pycbc-reference-matched-filter-search",
+      "pycbc-strain-conditioning-psd",
+      "pycbc-waveform-grid-matched-filter-search",
+      "shinpr--coding-principles",
+      "typefully--typefully"
+    ],
+    "loaded_skills": [
+      "pycbc-reference-matched-filter-search",
+      "pycbc-strain-conditioning-psd",
+      "pycbc-waveform-grid-matched-filter-search"
+    ],
+    "trials": [
+      {
+        "trial_id": "gravitational-wave-detection__smgjoFh",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "jau123--setup",
+          "jeremylongshore--exa-core-workflow-a",
+          "matched-filter-winner-confirmation-audit",
+          "mindrally--azure",
+          "mindrally--devops",
+          "pycbc-reference-matched-filter-search",
+          "pycbc-strain-conditioning-psd",
+          "pycbc-waveform-grid-matched-filter-search",
+          "shinpr--coding-principles",
+          "typefully--typefully"
+        ],
+        "available_skills": [
+          "jau123--setup",
+          "jeremylongshore--exa-core-workflow-a",
+          "matched-filter-winner-confirmation-audit",
+          "mindrally--azure",
+          "mindrally--devops",
+          "pycbc-reference-matched-filter-search",
+          "pycbc-strain-conditioning-psd",
+          "pycbc-waveform-grid-matched-filter-search",
+          "shinpr--coding-principles",
+          "typefully--typefully"
+        ],
+        "loaded_skills": [
+          "pycbc-reference-matched-filter-search",
+          "pycbc-strain-conditioning-psd",
+          "pycbc-waveform-grid-matched-filter-search"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "pycbc-strain-conditioning-psd": [
+            {
+              "step_id": 24,
+              "tool_call_id": "call_2827061c1e624dccb396cef2",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/pycbc-strain-conditioning-psd/SKILL.md"
+            }
+          ],
+          "pycbc-waveform-grid-matched-filter-search": [
+            {
+              "step_id": 27,
+              "tool_call_id": "call_74cd1957ac4f4fc9b42c58d4",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/pycbc-waveform-grid-matched-filter-search/SKILL.md"
+            }
+          ],
+          "pycbc-reference-matched-filter-search": [
+            {
+              "step_id": 32,
+              "tool_call_id": "call_6d5756542b724514ab5f587e",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/pycbc-reference-matched-filter-search/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

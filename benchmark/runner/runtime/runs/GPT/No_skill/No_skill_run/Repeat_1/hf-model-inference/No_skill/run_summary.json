@@ -1,0 +1,53 @@
+{
+  "schema_version": 5,
+  "task_id": "hf-model-inference",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run006",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_flask_api_running: ConnectionRefusedError: [Errno 111] Connection refused; test_outputs.py::test_sentiment_endpoint: ConnectionRefusedError: [Errno 111] Connection refused; test_outputs.py::test_api_error_handling: ConnectionRefusedError: [Errno 111] Connection refused",
+  "peak_memory": {
+    "peak_memory_mib": 1559.552,
+    "peak_memory_raw": "1.523GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.515,
+    "agent_setup_sec": 98.984,
+    "agent_execution_sec": 249.241,
+    "verifier_sec": 8.649,
+    "total_sec": 364.374
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/hf-model-inference-gold:27e4b57ceee4ef14",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "hf-model-inference__s7QnoE5",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

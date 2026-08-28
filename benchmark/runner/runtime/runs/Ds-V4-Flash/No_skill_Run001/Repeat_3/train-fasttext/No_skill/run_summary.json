@@ -1,0 +1,60 @@
+{
+  "schema_version": 6,
+  "task_id": "train-fasttext",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 3,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "trial_error",
+  "passed": false,
+  "error": [
+    {
+      "exception_type": "AgentTimeoutError",
+      "exception_message": "Agent execution timed out after 3600.0 seconds"
+    }
+  ],
+  "failure_reason": "{\"exception_type\":\"AgentTimeoutError\",\"exception_message\":\"Agent execution timed out after 3600.0 seconds\"}",
+  "peak_memory": {
+    "peak_memory_mib": 1619.968,
+    "peak_memory_raw": "1.582GiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.737,
+    "agent_setup_sec": 0.875,
+    "agent_execution_sec": 3604.092,
+    "verifier_sec": 1127.144,
+    "total_sec": 4738.506
+  },
+  "llm_cost_usd": 0.071937368,
+  "agent_input_tokens": 1731958,
+  "agent_output_tokens": 4861,
+  "image_cache": {
+    "image": "benchmark-cache/train-fasttext-gold:61266fd7d3d7eaea",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "train-fasttext__xdForxr",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "powerlifting-coef-calc",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestDotsSheetFormulas::test_dots_column_is_formula: AssertionError: Dots formula should use ROUND",
+  "peak_memory": {
+    "peak_memory_mib": 172.4,
+    "peak_memory_raw": "172.4MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.606,
+    "agent_setup_sec": 1.107,
+    "agent_execution_sec": 51.653,
+    "verifier_sec": 27.438,
+    "total_sec": 90.156
+  },
+  "llm_cost_usd": 0.0035304192000000004,
+  "agent_input_tokens": 130256,
+  "agent_output_tokens": 3176,
+  "image_cache": {
+    "image": "benchmark-cache/powerlifting-coef-calc-gold:0fef2731a5e5d6d2",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "powerlifting-coef-calc__RYo9eTW",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

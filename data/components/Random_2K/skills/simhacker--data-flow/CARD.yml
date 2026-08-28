@@ -1,0 +1,114 @@
+# CARD.yml — Data Flow
+#
+# Rooms as processing nodes, exits as edges, objects as messages.
+# "Kilroy-style data flow programming in the filesystem."
+
+card:
+  id: data-flow
+  name: "Data Flow"
+  type: [skill, programming, pipeline]
+  
+  emoji: 🔀
+  
+  rarity: rare
+  
+  description: |
+    Treat rooms as processing nodes in a data flow network.
+    Exits are edges. Objects THROWN through exits are messages.
+    Rooms have INBOXes for receiving. Build Factorio-like pipelines.
+
+# TOOLS REQUIRED
+
+tools:
+  required:
+    - read_file
+    - write_file
+    - list_dir
+  optional: []
+
+tier: 1
+
+# METHODS
+
+methods:
+  
+  THROW:
+    description: "Send an object through an exit"
+    parameters:
+      object: "What to send"
+      exit: "Which exit to throw through"
+    output: chat + state-change
+    effect: "Object appears in destination room's inbox"
+    invoked-by: [player, room, card]
+    
+  RECEIVE:
+    description: "Process incoming objects from inbox"
+    parameters:
+      room: "Room to check"
+    output: chat + state-change
+    effect: "Process each object in inbox according to room rules"
+    invoked-by: [room, coherence-engine]
+    
+  CONNECT:
+    description: "Create a data flow edge between rooms"
+    parameters:
+      from: "Source room"
+      exit: "Exit to use"
+      to: "Destination room"
+    output: state-change
+    effect: "Add exit to source, add inbox to destination"
+    invoked-by: [player, designer]
+    
+  PIPELINE:
+    description: "Define a multi-stage processing pipeline"
+    parameters:
+      stages: "List of rooms in order"
+    output: file (PIPELINE.yml) + chat
+    effect: "Create connected room sequence"
+    invoked-by: [player, designer]
+
+# STATE
+
+state:
+  room-inbox:
+    type: array
+    description: "Objects waiting to be processed"
+  room-outbox:
+    type: array  
+    description: "Objects ready to be sent"
+
+# THE PATTERN
+
+pattern:
+  rooms-are: "Processing nodes"
+  exits-are: "Edges in the graph"
+  objects-are: "Messages flowing through"
+  inbox: "Where incoming objects land"
+  processing: "Room's rules transform objects"
+  outbox: "Where processed objects wait for THROW"
+
+# ADVERTISEMENTS
+
+advertisements:
+  BUILD-PIPELINE:
+    score: 90
+    condition: "Need to process data through multiple stages"
+    
+  ROUTE-OBJECTS:
+    score: 85
+    condition: "Objects need to flow between rooms"
+
+# RELATED
+
+see-also:
+  - skills/room        # Rooms as nodes
+  - skills/card        # Cards can be data flow ensembles
+  - skills/debate      # Uses data flow for deliberation
+
+# CREDITS
+
+credits:
+  inspiration:
+    - "Kilroy — Room-based data flow"
+    - "Factorio — Factory automation"
+    - "Unix pipes — Data transformation"

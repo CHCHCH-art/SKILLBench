@@ -1,0 +1,174 @@
+{
+  "schema_version": 6,
+  "task_id": "dynamic-object-aware-egomotion",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestMotionAccuracy::test_motion_macro_f1: assert np.float64(0.19047619047619047) >= 0.5",
+  "peak_memory": {
+    "peak_memory_mib": 499.1,
+    "peak_memory_raw": "499.1MiB",
+    "error": "EOF",
+    "container_name_hint": "dynamic-object-aware"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.599,
+    "agent_setup_sec": 0.42,
+    "agent_execution_sec": 162.242,
+    "verifier_sec": 170.052,
+    "total_sec": 340.152
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 303390,
+  "agent_output_tokens": 6675,
+  "image_cache": {
+    "image": "benchmark-cache/dynamic-object-aware-egomotion-gold:fc972e99cd5a2204",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "binary-mask-csr-npz-serialization",
+      "binary-mask-csr-serialization",
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "oncorporation--chaos-seize",
+      "pjt222--create-github-release",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "available_skills": [
+      "binary-mask-csr-npz-serialization",
+      "binary-mask-csr-serialization",
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "oncorporation--chaos-seize",
+      "pjt222--create-github-release",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "loaded_skills": [
+      "binary-mask-csr-npz-serialization",
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "trials": [
+      {
+        "trial_id": "dynamic-object-aware-egomotion__9VVUzEE",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "binary-mask-csr-npz-serialization",
+          "binary-mask-csr-serialization",
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "oncorporation--chaos-seize",
+          "pjt222--create-github-release",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "available_skills": [
+          "binary-mask-csr-npz-serialization",
+          "binary-mask-csr-serialization",
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "oncorporation--chaos-seize",
+          "pjt222--create-github-release",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "loaded_skills": [
+          "binary-mask-csr-npz-serialization",
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "video-global-egomotion-homography": [
+            {
+              "step_id": 28,
+              "tool_call_id": "call_87d04627c26342ddb509adc3",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/video-global-egomotion-homography/SKILL.md"
+            }
+          ],
+          "video-global-egomotion-estimation": [
+            {
+              "step_id": 29,
+              "tool_call_id": "call_74ab8590efc84c1ca5bbf724",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/video-global-egomotion-estimation/SKILL.md"
+            }
+          ],
+          "dynamic-region-flow-residual-tracking": [
+            {
+              "step_id": 30,
+              "tool_call_id": "call_14081750ffda4c1d9207c7f0",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/dynamic-region-flow-residual-tracking/SKILL.md"
+            }
+          ],
+          "dynamic-region-motion-mask": [
+            {
+              "step_id": 31,
+              "tool_call_id": "call_eb2760dca3294b93afe05d8b",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/dynamic-region-motion-mask/SKILL.md"
+            }
+          ],
+          "egomotion-reference-label-sequence": [
+            {
+              "step_id": 32,
+              "tool_call_id": "call_65642da63df54ef998350272",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/egomotion-reference-label-sequence/SKILL.md"
+            }
+          ],
+          "camera-motion-reference-label-sequence": [
+            {
+              "step_id": 33,
+              "tool_call_id": "call_dbb278020ef64705a18a9ec9",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/camera-motion-reference-label-sequence/SKILL.md"
+            }
+          ],
+          "binary-mask-csr-npz-serialization": [
+            {
+              "step_id": 34,
+              "tool_call_id": "call_f85e722a59dd44519a727651",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/binary-mask-csr-npz-serialization/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

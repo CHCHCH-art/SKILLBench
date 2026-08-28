@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "gravitational-wave-detection",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 445.9,
+    "peak_memory_raw": "445.9MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.531,
+    "agent_setup_sec": 0.641,
+    "agent_execution_sec": 1049.429,
+    "verifier_sec": 1.465,
+    "total_sec": 1058.392
+  },
+  "llm_cost_usd": 0.036753848000000006,
+  "agent_input_tokens": 569455,
+  "agent_output_tokens": 12102,
+  "image_cache": {
+    "image": "benchmark-cache/gravitational-wave-detection-gold:453ceaaaf619c520",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "matched-filter-winner-confirmation-audit",
+      "pycbc-reference-matched-filter-search"
+    ],
+    "available_skills": [
+      "matched-filter-winner-confirmation-audit",
+      "pycbc-reference-matched-filter-search"
+    ],
+    "loaded_skills": [
+      "matched-filter-winner-confirmation-audit",
+      "pycbc-reference-matched-filter-search"
+    ],
+    "trials": [
+      {
+        "trial_id": "gravitational-wave-detection__xp7vBf8",
+        "passed": true,
+        "provided_skills": [
+          "matched-filter-winner-confirmation-audit",
+          "pycbc-reference-matched-filter-search"
+        ],
+        "available_skills": [
+          "matched-filter-winner-confirmation-audit",
+          "pycbc-reference-matched-filter-search"
+        ],
+        "loaded_skills": [
+          "matched-filter-winner-confirmation-audit",
+          "pycbc-reference-matched-filter-search"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "pycbc-reference-matched-filter-search": [
+            {
+              "step_id": 8,
+              "tool_call_id": "call_2cbe1316ee064366a7c1fbad",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/pycbc-reference-matched-filter-search/SKILL.md"
+            }
+          ],
+          "matched-filter-winner-confirmation-audit": [
+            {
+              "step_id": 9,
+              "tool_call_id": "call_6c2066ff54cd47e9b21ee8d8",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/matched-filter-winner-confirmation-audit/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

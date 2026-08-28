@@ -1,0 +1,30 @@
+2026-08-23T00:21:43.573712+00:00 START operation=rerun batch=single_High Cost_Run003 repeat=2 task=virtualhome-agent-planning condition=high_cost image=benchmark-cache/virtualhome-agent-planning-gold:2a7bb392c743be2d provided_skills=["grounded-pyperplan-portfolio-lifting", "pddl-pyperplan-baseline-validation", "reference-plan-selection-and-safe-write"]
+[92m08:23:32 - LiteLLM:WARNING[0m: get_model_cost_map.py:264 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: _ssl.c:993: The handshake operation timed out. Falling back to local backup.
+  1/1 Mean: 0.000 ---------------------------------------- 0:03:03 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 4s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\virtualhome-agent-planning\High_cost\Job_result\result.jso
+n
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\virtualhome-agent-planning\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\virtualhome-agent-planning\High_cost\Job_result`
+
+2026-08-23T00:24:49.114543+00:00 FAIL operation=rerun batch=single_High Cost_Run003 repeat=2 task=virtualhome-agent-planning condition=high_cost

@@ -1,0 +1,77 @@
+Task: powerlifting-coef-calc
+Source type: used
+Task run: 6
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\powerlifting-coef-calc
+
+========== Repeated Run 2/4 ==========
+
+========== Run solve.sh ==========
+convert /root/data/openipf.xlsx as a Calc document -> /tmp/powerlifting_coef_calc_heavy/openipf.fods using filter : OpenDocument Spreadsheet Flat XML
+Overwriting: /tmp/powerlifting_coef_calc_heavy/openipf.fods
+convert /root/data/openipf_filled.xlsx as a Calc document -> /tmp/powerlifting_coef_calc_heavy/roundtrip/openipf_filled.ods using filter : calc8
+Overwriting: /tmp/powerlifting_coef_calc_heavy/roundtrip/openipf_filled.ods
+convert /tmp/powerlifting_coef_calc_heavy/roundtrip/openipf_filled.ods as a Calc document -> /tmp/powerlifting_coef_calc_heavy/roundtrip/openipf_filled.xlsx using filter : Calc Office Open XML
+Overwriting: /tmp/powerlifting_coef_calc_heavy/roundtrip/openipf_filled.xlsx
+
+========== Run test.sh ==========
+error: Project is already initialized in `/root` (`pyproject.toml` file exists)
+Resolved 13 packages in 0.44ms
+Audited 11 packages in 0.08ms
+Resolved 13 packages in 0.45ms
+Audited 11 packages in 0.07ms
+Resolved 13 packages in 0.38ms
+Audited 11 packages in 0.09ms
+Resolved 13 packages in 0.37ms
+Audited 11 packages in 0.12ms
+Resolved 13 packages in 0.37ms
+Audited 11 packages in 0.07ms
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 11 items
+
+../tests/test_outputs.py ...........                                     [100%]
+
+==================================== PASSES ====================================
+__________________ TestSheetStructure.test_dots_sheet_exists ___________________
+------------------------------ Captured log setup ------------------------------
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 6, falling back to string
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 7, falling back to string
+____________ TestSheetStructure.test_dots_sheet_has_correct_columns ____________
+------------------------------ Captured log setup ------------------------------
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 6, falling back to string
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 7, falling back to string
+__________________ TestSheetStructure.test_row_count_matches ___________________
+------------------------------ Captured log setup ------------------------------
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 6, falling back to string
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 7, falling back to string
+_______________ TestDotsSheetFormulas.test_dots_sheet_not_empty ________________
+------------------------------ Captured log setup ------------------------------
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 6, falling back to string
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 7, falling back to string
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_data_sheet_exists
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_dots_sheet_exists
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_dots_sheet_has_correct_columns
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_row_count_matches
+PASSED ../tests/test_outputs.py::TestDotsSheetFormulas::test_dots_sheet_not_empty
+PASSED ../tests/test_outputs.py::TestDotsSheetFormulas::test_total_column_is_formula
+PASSED ../tests/test_outputs.py::TestDotsSheetFormulas::test_dots_column_is_formula
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_dots_values_match_ground_truth
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_all_lifters_have_ground_truth
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_dots_formula_handles_male_lifters
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_dots_formula_handles_female_lifters
+============================== 11 passed in 0.21s ==============================
+
+========== Result ==========
+Task: powerlifting-coef-calc
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 2.2s (exit 0)
+Test: 0.5s (exit 0)
+Solve Memory Peak: 238.9 MiB
+Test Memory Peak: 239.2 MiB

@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "mteb-retrieve",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_data_matches: AssertionError: result.txt contains unexpected value",
+  "peak_memory": {
+    "peak_memory_mib": 1441.792,
+    "peak_memory_raw": "1.408GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.514,
+    "agent_setup_sec": 2.592,
+    "agent_execution_sec": 79.883,
+    "verifier_sec": 1438.314,
+    "total_sec": 1528.358
+  },
+  "llm_cost_usd": 0.001113,
+  "agent_input_tokens": 68766,
+  "agent_output_tokens": 952,
+  "image_cache": {
+    "image": "benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "mteb-retrieve__Gnfawmn",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

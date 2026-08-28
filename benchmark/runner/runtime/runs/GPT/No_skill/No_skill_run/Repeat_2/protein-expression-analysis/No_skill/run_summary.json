@@ -1,0 +1,51 @@
+{
+  "schema_version": 5,
+  "task_id": "protein-expression-analysis",
+  "condition": "no_skill",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 418.1,
+    "peak_memory_raw": "418.1MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.416,
+    "agent_setup_sec": 115.718,
+    "agent_execution_sec": 149.775,
+    "verifier_sec": 4.861,
+    "total_sec": 276.043
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/protein-expression-analysis-gold:a8e79dc030653f5a",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "protein-expression-analysis__4qCQJxR",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0,
+  "batch": "No_skill_Run001",
+  "repeat": 2,
+  "operation": "run"
+}

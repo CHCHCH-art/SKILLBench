@@ -1,0 +1,28 @@
+2026-08-05T19:05:06.413477+00:00 START operation=run batch=No_skill_Run001 repeat=3 task=invoice-fraud-detection condition=no_skill image=benchmark-cache/invoice-fraud-detection-gold:ac1daf4b2cd15d47 provided_skills=[]
+  1/1 Mean: 1.000 ---------------------------------------- 0:03:59 0:00:00
+no_skill • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 59s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\No_skill_Run001\Repeat_3\invoice-fra
+ud-detection\No_skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\No_skill_Run001\Repeat_3\invoice-fra
+ud-detection\No_skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\No_skill_Run001\Repeat_3\invoice-fra
+ud-detection\No_skill\Job_result`
+
+2026-08-05T19:09:06.931845+00:00 PASS operation=run batch=No_skill_Run001 repeat=3 task=invoice-fraud-detection condition=no_skill

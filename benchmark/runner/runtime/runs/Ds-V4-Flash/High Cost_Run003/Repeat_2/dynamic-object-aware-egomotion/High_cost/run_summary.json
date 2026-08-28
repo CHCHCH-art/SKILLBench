@@ -1,0 +1,75 @@
+{
+  "schema_version": 6,
+  "task_id": "dynamic-object-aware-egomotion",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestMotionAccuracy::test_motion_macro_f1: assert np.float64(0.2828282828282828) >= 0.5; test_outputs.py::TestMaskAccuracy::test_mask_comprehensive: AssertionError: Mean IoU is below acceptable threshold.",
+  "peak_memory": {
+    "peak_memory_mib": 368.5,
+    "peak_memory_raw": "368.5MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.534,
+    "agent_setup_sec": 0.386,
+    "agent_execution_sec": 241.571,
+    "verifier_sec": 94.037,
+    "total_sec": 343.54
+  },
+  "llm_cost_usd": 0.132495616,
+  "agent_input_tokens": 1140680,
+  "agent_output_tokens": 14600,
+  "image_cache": {
+    "image": "benchmark-cache/dynamic-object-aware-egomotion-gold:fc972e99cd5a2204",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "binary-mask-csr-serialization",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "video-global-egomotion-estimation"
+    ],
+    "available_skills": [
+      "binary-mask-csr-serialization",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "video-global-egomotion-estimation"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "dynamic-object-aware-egomotion__8xLfVxX",
+        "passed": true,
+        "provided_skills": [
+          "binary-mask-csr-serialization",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "video-global-egomotion-estimation"
+        ],
+        "available_skills": [
+          "binary-mask-csr-serialization",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "video-global-egomotion-estimation"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

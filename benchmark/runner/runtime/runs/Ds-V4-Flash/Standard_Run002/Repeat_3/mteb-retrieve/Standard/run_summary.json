@@ -1,0 +1,63 @@
+{
+  "schema_version": 6,
+  "task_id": "mteb-retrieve",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_data_matches: AssertionError: result.txt contains unexpected value",
+  "peak_memory": {
+    "peak_memory_mib": 1581.056,
+    "peak_memory_raw": "1.544GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.575,
+    "agent_setup_sec": 1.053,
+    "agent_execution_sec": 84.772,
+    "verifier_sec": 969.672,
+    "total_sec": 1064.023
+  },
+  "llm_cost_usd": 0.0013172936,
+  "agent_input_tokens": 83017,
+  "agent_output_tokens": 1079,
+  "image_cache": {
+    "image": "benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "scifact-prompt-bound-mteb-topk-retrieval"
+    ],
+    "available_skills": [
+      "scifact-prompt-bound-mteb-topk-retrieval"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "mteb-retrieve__qHKDFuc",
+        "passed": true,
+        "provided_skills": [
+          "scifact-prompt-bound-mteb-topk-retrieval"
+        ],
+        "available_skills": [
+          "scifact-prompt-bound-mteb-topk-retrieval"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

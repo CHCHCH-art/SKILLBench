@@ -1,0 +1,164 @@
+{
+  "schema_version": 6,
+  "task_id": "energy-ac-optimal-power-flow",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 2019.328,
+    "peak_memory_raw": "1.972GiB",
+    "error": "EOF",
+    "container_name_hint": "energy-ac-optimal-po"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.701,
+    "agent_setup_sec": 0.965,
+    "agent_execution_sec": 680.815,
+    "verifier_sec": 228.239,
+    "total_sec": 917.608
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1280824,
+  "agent_output_tokens": 35849,
+  "image_cache": {
+    "image": "benchmark-cache/energy-ac-optimal-power-flow-gold:131fccb5858c984c",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "aj-geddes--integration-testing",
+      "casadi-acopf-pi-network-formulation",
+      "greptileai--greploop",
+      "ipopt-acopf-reference-solve",
+      "mblode--design-ui",
+      "rectangular-acopf-network-model",
+      "simota--director"
+    ],
+    "available_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "aj-geddes--integration-testing",
+      "casadi-acopf-pi-network-formulation",
+      "greptileai--greploop",
+      "ipopt-acopf-reference-solve",
+      "mblode--design-ui",
+      "rectangular-acopf-network-model",
+      "simota--director"
+    ],
+    "loaded_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve",
+      "rectangular-acopf-network-model"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-ac-optimal-power-flow__f3SBwS4",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "aj-geddes--integration-testing",
+          "casadi-acopf-pi-network-formulation",
+          "greptileai--greploop",
+          "ipopt-acopf-reference-solve",
+          "mblode--design-ui",
+          "rectangular-acopf-network-model",
+          "simota--director"
+        ],
+        "available_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "aj-geddes--integration-testing",
+          "casadi-acopf-pi-network-formulation",
+          "greptileai--greploop",
+          "ipopt-acopf-reference-solve",
+          "mblode--design-ui",
+          "rectangular-acopf-network-model",
+          "simota--director"
+        ],
+        "loaded_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve",
+          "rectangular-acopf-network-model"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "rectangular-acopf-network-model": [
+            {
+              "step_id": 31,
+              "tool_call_id": "call_6a4ee3a24d8944ed8e689558",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/rectangular-acopf-network-model/SKILL.md"
+            }
+          ],
+          "casadi-acopf-pi-network-formulation": [
+            {
+              "step_id": 32,
+              "tool_call_id": "call_3b3bf6a82173407c9350498b",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/casadi-acopf-pi-network-formulation/SKILL.md"
+            }
+          ],
+          "acopf-ipopt-reference-initialization": [
+            {
+              "step_id": 33,
+              "tool_call_id": "call_75b2baa2d2204e65a3ea2eda",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/acopf-ipopt-reference-initialization/SKILL.md"
+            }
+          ],
+          "ipopt-acopf-reference-solve": [
+            {
+              "step_id": 34,
+              "tool_call_id": "call_938bcb84741e4aa2bbcbe05d",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/ipopt-acopf-reference-solve/SKILL.md"
+            }
+          ],
+          "acopf-solution-reporting": [
+            {
+              "step_id": 35,
+              "tool_call_id": "call_45d81a665c654e27b6d4e49f",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/acopf-solution-reporting/SKILL.md"
+            }
+          ],
+          "acopf-feasibility-loading-report": [
+            {
+              "step_id": 36,
+              "tool_call_id": "call_8771283ef25c4802a0ea79bd",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/acopf-feasibility-loading-report/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

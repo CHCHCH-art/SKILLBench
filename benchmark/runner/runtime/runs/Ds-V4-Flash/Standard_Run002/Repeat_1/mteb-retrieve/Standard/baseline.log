@@ -1,0 +1,28 @@
+2026-08-20T20:39:52.914087+00:00 START operation=run batch=single_Standard_Run002 repeat=1 task=mteb-retrieve condition=standard image=benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb provided_skills=["scifact-prompt-bound-mteb-topk-retrieval"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:18:00 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 18m 0s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_1\mteb-retrieve\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_1\mteb-retrieve\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_1\mteb-retrieve\Standard\Job_result`
+
+2026-08-20T20:57:54.822898+00:00 PASS operation=run batch=single_Standard_Run002 repeat=1 task=mteb-retrieve condition=standard

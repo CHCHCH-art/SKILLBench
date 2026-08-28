@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "jpg-ocr-stat",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_outputs: AssertionError: Requirement failed: null/blank-cell handling differs from oracle.",
+  "peak_memory": {
+    "peak_memory_mib": 180.2,
+    "peak_memory_raw": "180.2MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.804,
+    "agent_setup_sec": 0.949,
+    "agent_execution_sec": 438.131,
+    "verifier_sec": 40.039,
+    "total_sec": 488.902
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 423303,
+  "agent_output_tokens": 10370,
+  "image_cache": {
+    "image": "benchmark-cache/jpg-ocr-stat-gold:2312eeab86c89737",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "receipt-date-candidate-resolution",
+      "receipt-image-ocr-line-extraction",
+      "receipt-total-candidate-resolution-export"
+    ],
+    "available_skills": [
+      "receipt-date-candidate-resolution",
+      "receipt-image-ocr-line-extraction",
+      "receipt-total-candidate-resolution-export"
+    ],
+    "loaded_skills": [
+      "receipt-date-candidate-resolution",
+      "receipt-image-ocr-line-extraction",
+      "receipt-total-candidate-resolution-export"
+    ],
+    "trials": [
+      {
+        "trial_id": "jpg-ocr-stat__wrx98zV",
+        "passed": true,
+        "provided_skills": [
+          "receipt-date-candidate-resolution",
+          "receipt-image-ocr-line-extraction",
+          "receipt-total-candidate-resolution-export"
+        ],
+        "available_skills": [
+          "receipt-date-candidate-resolution",
+          "receipt-image-ocr-line-extraction",
+          "receipt-total-candidate-resolution-export"
+        ],
+        "loaded_skills": [
+          "receipt-date-candidate-resolution",
+          "receipt-image-ocr-line-extraction",
+          "receipt-total-candidate-resolution-export"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "receipt-image-ocr-line-extraction": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_UrApyBvbGTowoktb0wmG6YW4",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/receipt-image-ocr-line-extraction/SKILL.md"
+            }
+          ],
+          "receipt-date-candidate-resolution": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_UrApyBvbGTowoktb0wmG6YW4",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/receipt-date-candidate-resolution/SKILL.md"
+            }
+          ],
+          "receipt-total-candidate-resolution-export": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_UrApyBvbGTowoktb0wmG6YW4",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/receipt-total-candidate-resolution-export/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

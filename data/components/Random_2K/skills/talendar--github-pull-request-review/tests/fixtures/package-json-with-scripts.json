@@ -1,0 +1,14 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "build": "vite build",
+    "deploy": "vercel deploy",
+    "migrate": "prisma migrate deploy",
+    "dev": "vite dev",
+    "format": "prettier --write ."
+  }
+}

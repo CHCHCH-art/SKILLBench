@@ -1,0 +1,67 @@
+{
+  "schema_version": 6,
+  "task_id": "econ-detrending-correlation",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 158.1,
+    "peak_memory_raw": "158.1MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.528,
+    "agent_setup_sec": 0.727,
+    "agent_execution_sec": 68.809,
+    "verifier_sec": 11.486,
+    "total_sec": 91.709
+  },
+  "llm_cost_usd": 0.0050555456,
+  "agent_input_tokens": 212890,
+  "agent_output_tokens": 4687,
+  "image_cache": {
+    "image": "benchmark-cache/econ-detrending-correlation-gold:693ab5b971b40262",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "erp-annual-partial-quarter-extraction",
+      "hp-log-cycle-correlation"
+    ],
+    "available_skills": [
+      "erp-annual-partial-quarter-extraction",
+      "hp-log-cycle-correlation"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "econ-detrending-correlation__Zwb7CSc",
+        "passed": true,
+        "provided_skills": [
+          "erp-annual-partial-quarter-extraction",
+          "hp-log-cycle-correlation"
+        ],
+        "available_skills": [
+          "erp-annual-partial-quarter-extraction",
+          "hp-log-cycle-correlation"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

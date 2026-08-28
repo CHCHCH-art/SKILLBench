@@ -1,0 +1,71 @@
+{
+  "schema_version": 6,
+  "task_id": "dialogue-parser",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 1,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_graph_logic: AssertionError: Unreachable nodes found: ['End']...; test_outputs.py::test_visualization_validity: AssertionError: Choice nodes should be visualized as diamonds",
+  "peak_memory": {
+    "peak_memory_mib": 113.8,
+    "peak_memory_raw": "113.8MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.564,
+    "agent_setup_sec": 1.059,
+    "agent_execution_sec": 148.594,
+    "verifier_sec": 6.476,
+    "total_sec": 168.034
+  },
+  "llm_cost_usd": 0.008000748,
+  "agent_input_tokens": 516269,
+  "agent_output_tokens": 10030,
+  "image_cache": {
+    "image": "benchmark-cache/dialogue-parser-gold:c0353fb4817c6884",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-reference-parser"
+    ],
+    "available_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-reference-parser"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "dialogue-parser__SvXMdKB",
+        "passed": true,
+        "provided_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-reference-parser"
+        ],
+        "available_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-reference-parser"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

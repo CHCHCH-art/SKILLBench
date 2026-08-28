@@ -1,0 +1,76 @@
+{
+  "schema_version": 6,
+  "task_id": "distribution-search",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 86.29,
+    "peak_memory_raw": "86.29MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.47,
+    "agent_setup_sec": 0.994,
+    "agent_execution_sec": 114.191,
+    "verifier_sec": 19.209,
+    "total_sec": 140.729
+  },
+  "llm_cost_usd": 0.012404944000000001,
+  "agent_input_tokens": 134579,
+  "agent_output_tokens": 2625,
+  "image_cache": {
+    "image": "benchmark-cache/distribution-search-gold:430ae95bb5beb0fc",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "logit-distribution-kl-optimization"
+    ],
+    "available_skills": [
+      "logit-distribution-kl-optimization"
+    ],
+    "loaded_skills": [
+      "logit-distribution-kl-optimization"
+    ],
+    "trials": [
+      {
+        "trial_id": "distribution-search__PXpiq7m",
+        "passed": true,
+        "provided_skills": [
+          "logit-distribution-kl-optimization"
+        ],
+        "available_skills": [
+          "logit-distribution-kl-optimization"
+        ],
+        "loaded_skills": [
+          "logit-distribution-kl-optimization"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "logit-distribution-kl-optimization": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_23d24f741bc34a99b5536be3",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/logit-distribution-kl-optimization/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": 6,
+  "task_id": "dynamic-object-aware-egomotion",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestMotionAccuracy::test_motion_macro_f1: assert np.float64(0.050724637681159424) >= 0.5",
+  "peak_memory": {
+    "peak_memory_mib": 744.5,
+    "peak_memory_raw": "744.5MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.533,
+    "agent_setup_sec": 0.425,
+    "agent_execution_sec": 133.158,
+    "verifier_sec": 83.349,
+    "total_sec": 225.883
+  },
+  "llm_cost_usd": 0.005491208799999999,
+  "agent_input_tokens": 284963,
+  "agent_output_tokens": 7713,
+  "image_cache": {
+    "image": "benchmark-cache/dynamic-object-aware-egomotion-gold:fc972e99cd5a2204",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "binary-mask-csr-npz-serialization",
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "video-global-egomotion-homography"
+    ],
+    "available_skills": [
+      "binary-mask-csr-npz-serialization",
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "video-global-egomotion-homography"
+    ],
+    "loaded_skills": [
+      "binary-mask-csr-npz-serialization",
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "video-global-egomotion-homography"
+    ],
+    "trials": [
+      {
+        "trial_id": "dynamic-object-aware-egomotion__PTaa9RU",
+        "passed": true,
+        "provided_skills": [
+          "binary-mask-csr-npz-serialization",
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "video-global-egomotion-homography"
+        ],
+        "available_skills": [
+          "binary-mask-csr-npz-serialization",
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "video-global-egomotion-homography"
+        ],
+        "loaded_skills": [
+          "binary-mask-csr-npz-serialization",
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "video-global-egomotion-homography"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "video-global-egomotion-homography": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_84d6b5bc66fc42a190f52a24",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/video-global-egomotion-homography/SKILL.md"
+            }
+          ],
+          "camera-motion-reference-label-sequence": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_3366b776b5d243a7aca09af1",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/camera-motion-reference-label-sequence/SKILL.md"
+            }
+          ],
+          "dynamic-region-flow-residual-tracking": [
+            {
+              "step_id": 7,
+              "tool_call_id": "call_de6b0a021d43472282f0419e",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/dynamic-region-flow-residual-tracking/SKILL.md"
+            }
+          ],
+          "binary-mask-csr-npz-serialization": [
+            {
+              "step_id": 9,
+              "tool_call_id": "call_69430b45e89c40e1ae53312d",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/binary-mask-csr-npz-serialization/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

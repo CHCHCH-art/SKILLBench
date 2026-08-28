@@ -1,0 +1,72 @@
+Task: gravitational-wave-detection
+Source type: used
+Task run: 6
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\gravitational-wave-detection
+
+========== Repeated Run 2/4 ==========
+
+========== Run solve.sh ==========
+[discovery SEOBNRv4_opt] 100/496 best SNR=17.304 at (22, 22)
+[discovery SEOBNRv4_opt] 200/496 best SNR=17.673 at (24, 20)
+[discovery SEOBNRv4_opt] 300/496 best SNR=17.673 at (24, 20)
+[discovery SEOBNRv4_opt] 400/496 best SNR=17.673 at (24, 20)
+[discovery IMRPhenomD] 100/496 best SNR=17.768 at (22, 22)
+[discovery IMRPhenomD] 200/496 best SNR=17.792 at (23, 21)
+[discovery IMRPhenomD] 300/496 best SNR=17.792 at (23, 21)
+[discovery IMRPhenomD] 400/496 best SNR=17.792 at (23, 21)
+[discovery TaylorT4] 100/496 best SNR=16.908 at (22, 22)
+[discovery TaylorT4] 200/496 best SNR=16.908 at (22, 22)
+[discovery TaylorT4] 300/496 best SNR=16.908 at (22, 22)
+[discovery TaylorT4] 400/496 best SNR=16.908 at (22, 22)
+Completed discovery stage: 1488 templates in 493.3s
+[confirmation SEOBNRv4_opt] 100/496 best SNR=17.667 at (22, 22)
+[confirmation SEOBNRv4_opt] 200/496 best SNR=17.904 at (24, 20)
+[confirmation SEOBNRv4_opt] 300/496 best SNR=17.904 at (24, 20)
+[confirmation SEOBNRv4_opt] 400/496 best SNR=17.904 at (24, 20)
+[confirmation IMRPhenomD] 100/496 best SNR=18.048 at (22, 22)
+[confirmation IMRPhenomD] 200/496 best SNR=18.070 at (23, 21)
+[confirmation IMRPhenomD] 300/496 best SNR=18.070 at (23, 21)
+[confirmation IMRPhenomD] 400/496 best SNR=18.070 at (23, 21)
+[confirmation TaylorT4] 100/496 best SNR=17.266 at (22, 22)
+[confirmation TaylorT4] 200/496 best SNR=17.269 at (23, 21)
+[confirmation TaylorT4] 300/496 best SNR=17.269 at (23, 21)
+[confirmation TaylorT4] 400/496 best SNR=17.269 at (23, 21)
+Completed confirmation stage: 1488 templates in 537.9s
+ approximant       snr  total_mass
+SEOBNRv4_opt 17.903967        44.0
+  IMRPhenomD 18.069819        44.0
+    TaylorT4 17.269271        44.0
+
+========== Run test.sh ==========
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 9 items
+
+../tests/test_outputs.py .........                                       [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_output_file_exists
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_output_format
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_output_types
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_row_count
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_snr_range
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_total_mass_values
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_all_approximants_tested
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_result_satisfies_grid_search_constraints
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_matches_expected_result
+============================== 9 passed in 0.42s ===============================
+
+========== Result ==========
+Task: gravitational-wave-detection
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 1034.6s (exit 0)
+Test: 0.7s (exit 0)
+Solve Memory Peak: 314.3 MiB
+Test Memory Peak: 84.6 MiB

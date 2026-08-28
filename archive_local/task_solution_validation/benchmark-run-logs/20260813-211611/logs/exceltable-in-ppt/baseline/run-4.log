@@ -1,0 +1,115 @@
+Task: exceltable-in-ppt
+Source type: baseline
+Task run: 4
+Source run: 4
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\exceltable-in-ppt
+
+========== Repeated Run 4/4 ==========
+
+========== Run solve.sh ==========
+============================================================
+ExcelTable-in-PPT Solution (Using recalc.py)
+============================================================
+
+[1/7] Unpacking PPTX using unpack.py skill...
+Unpacked PPTX to /tmp/pptx_work
+
+[2/7] Extracting text inventory using inventory.py skill...
+Extracted text inventory from /root/input.pptx
+
+[3/7] Finding embedded Excel file...
+Found embedded Excel: ppt/embeddings/Microsoft_Excel_Worksheet.xlsx
+
+[4/7] Reading table from embedded Excel...
+Read the table from embedded excel:
+  Exchange Rate   CNY    USD    EUR    GBP
+0           CNY  1.00  0.138  0.127  0.109
+1           USD  7.25  1.000  0.926  0.794
+2           EUR  7.85  1.080  1.000  0.855
+3           GBP  9.17  1.260  1.170  1.000
+
+[5/7] Finding update information from text box...
+Currencies found in table: {'EUR', 'GBP', 'USD', 'CNY'}
+Found update info: 'USD to CNY=7.02'
+Update: USD -> CNY = 7.02
+
+[6/7] Updating Excel table (value cell only, formulas will recalculate)...
+Updated cell (USD, CNY): 7.25 -> 7.02
+Saved Excel to /tmp/pptx_work/ppt/embeddings/Microsoft_Excel_Worksheet.xlsx
+Recalculating formulas with LibreOffice...
+Recalc output: {
+  "status": "success",
+  "total_errors": 0,
+  "error_summary": {},
+  "total_formulas": 6
+}
+
+Formula recalculation successful
+Table after update and recalc:
+  Exchange Rate   CNY    USD    EUR    GBP
+0           CNY  1.00  0.142  0.127  0.109
+1           USD  7.02  1.000  0.926  0.794
+2           EUR  7.85  1.080  1.000  0.855
+3           GBP  9.17  1.260  1.170  1.000
+
+[7/7] Repacking PPTX using pack.py skill...
+Packed PPTX to /root/results.pptx
+
+============================================================
+Solution complete!
+Output file: /root/results.pptx
+============================================================
+Solution complete.
+
+========== Run test.sh ==========
+Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.5.0-2ubuntu10.11).
+0 upgraded, 0 newly installed, 0 to remove and 35 not upgraded.
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+Exporting results.pptx to verifier folder for debugging...
+Export complete.
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 8 items
+
+../tests/test_outputs.py ........                                        [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_output_file_exists
+PASSED ../tests/test_outputs.py::test_output_is_valid_pptx
+PASSED ../tests/test_outputs.py::test_embedded_excel_preserved
+PASSED ../tests/test_outputs.py::test_exchange_rate_updated
+PASSED ../tests/test_outputs.py::test_inverse_rate_updated
+PASSED ../tests/test_outputs.py::test_other_cells_unchanged
+PASSED ../tests/test_outputs.py::test_formulas_preserved
+PASSED ../tests/test_outputs.py::test_slide_structure_preserved
+============================== 8 passed in 0.55s ===============================
+
+========== Result ==========
+Task: exceltable-in-ppt
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 2.1s (exit 0)
+Test: 31.2s (exit 0)
+Solve Memory Peak: 381.5 MiB
+Test Memory Peak: 386.3 MiB
+
+========== Cleanup ==========
+Removing container: test-solution-exceltable-in-ppt-1786635348002276600-17578dd3

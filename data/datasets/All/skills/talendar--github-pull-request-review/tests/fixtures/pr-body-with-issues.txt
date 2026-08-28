@@ -1,0 +1,14 @@
+## Summary
+Adds JWT-based authentication middleware for API routes.
+
+Fixes #42
+Closes #99
+Resolves #101
+Related to #55
+
+This PR also touches on the discussion in #200 about future RBAC improvements.
+
+## Changes
+- New `authMiddleware.ts` with JWT verification
+- Updated route handlers to use middleware
+- Added tests for auth flows

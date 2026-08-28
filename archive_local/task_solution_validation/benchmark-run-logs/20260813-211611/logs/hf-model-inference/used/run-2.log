@@ -1,0 +1,66 @@
+Task: hf-model-inference
+Source type: used
+Task run: 6
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\hf-model-inference
+
+========== Repeated Run 2/4 ==========
+
+========== Run solve.sh ==========
+Model and tokenizer downloaded and saved successfully
+
+Test 1: "I really enjoyed this movie, it was amazing!"
+Sentiment: positive
+Confidence: Positive: 0.9999, Negative: 0.0001
+
+Test 2: "The service at this restaurant was terrible and the food was cold."
+Sentiment: negative
+Confidence: Positive: 0.0003, Negative: 0.9997
+
+Test 3: "The weather today is quite pleasant, not too hot or cold."
+Sentiment: positive
+Confidence: Positive: 0.9998, Negative: 0.0002
+
+========== Run test.sh ==========
+Requirement already satisfied: pytest==8.4.1 in /usr/local/lib/python3.13/site-packages (8.4.1)
+Requirement already satisfied: psutil==7.0.0 in /usr/local/lib/python3.13/site-packages (7.0.0)
+Requirement already satisfied: requests==2.32.4 in /usr/local/lib/python3.13/site-packages (2.32.4)
+Requirement already satisfied: pytest-json-ctrf==0.3.5 in /usr/local/lib/python3.13/site-packages (0.3.5)
+Requirement already satisfied: iniconfig>=1 in /usr/local/lib/python3.13/site-packages (from pytest==8.4.1) (2.3.0)
+Requirement already satisfied: packaging>=20 in /usr/local/lib/python3.13/site-packages (from pytest==8.4.1) (25.0)
+Requirement already satisfied: pluggy<2,>=1.5 in /usr/local/lib/python3.13/site-packages (from pytest==8.4.1) (1.6.0)
+Requirement already satisfied: pygments>=2.7.2 in /usr/local/lib/python3.13/site-packages (from pytest==8.4.1) (2.20.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.13/site-packages (from requests==2.32.4) (3.4.3)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.13/site-packages (from requests==2.32.4) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.13/site-packages (from requests==2.32.4) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.13/site-packages (from requests==2.32.4) (2025.8.3)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 25.2 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+============================= test session starts ==============================
+platform linux -- Python 3.13.7, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 4 items
+
+../tests/test_outputs.py ....                                            [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_model_downloaded
+PASSED ../tests/test_outputs.py::test_flask_api_running
+PASSED ../tests/test_outputs.py::test_sentiment_endpoint
+PASSED ../tests/test_outputs.py::test_api_error_handling
+============================== 4 passed in 5.44s ===============================
+
+========== Result ==========
+Task: hf-model-inference
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 13.0s (exit 0)
+Test: 7.0s (exit 0)
+Solve Memory Peak: 1.5 GiB
+Test Memory Peak: 1.5 GiB

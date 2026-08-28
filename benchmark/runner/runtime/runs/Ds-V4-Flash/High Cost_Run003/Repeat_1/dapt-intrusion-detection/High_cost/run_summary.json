@@ -1,0 +1,75 @@
+{
+  "schema_version": 6,
+  "task_id": "dapt-intrusion-detection",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestProtocolDistribution::test_protocol_udp: AssertionError: protocol_udp: expected 26092, got 25846; test_outputs.py::TestAnalysisQuestions::test_is_traffic_benign: AssertionError: is_traffic_benign: expected 'true', got 'false'; test_outputs.py::TestAnalysisQuestions::test_has_port_scan: AssertionError: has_port_scan: expected 'false', got 'true'; test_outputs.py::TestAnalysisQuestions::test_has_dos_pattern: AssertionError: has_dos_pattern: expected 'false', got 'true'",
+  "peak_memory": {
+    "peak_memory_mib": 871.6,
+    "peak_memory_raw": "871.6MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.54,
+    "agent_setup_sec": 0.531,
+    "agent_execution_sec": 253.561,
+    "verifier_sec": 30.664,
+    "total_sec": 292.652
+  },
+  "llm_cost_usd": 0.024666320000000002,
+  "agent_input_tokens": 371428,
+  "agent_output_tokens": 7238,
+  "image_cache": {
+    "image": "benchmark-cache/dapt-intrusion-detection-gold:7867f125ad78de68",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "metric-csv-first-field-update",
+      "network-behavior-reference-heuristics",
+      "network-traffic-reference-metrics",
+      "pcap-pdml-stream-normalization"
+    ],
+    "available_skills": [
+      "metric-csv-first-field-update",
+      "network-behavior-reference-heuristics",
+      "network-traffic-reference-metrics",
+      "pcap-pdml-stream-normalization"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "dapt-intrusion-detection__8YUkV5p",
+        "passed": true,
+        "provided_skills": [
+          "metric-csv-first-field-update",
+          "network-behavior-reference-heuristics",
+          "network-traffic-reference-metrics",
+          "pcap-pdml-stream-normalization"
+        ],
+        "available_skills": [
+          "metric-csv-first-field-update",
+          "network-behavior-reference-heuristics",
+          "network-traffic-reference-metrics",
+          "pcap-pdml-stream-normalization"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

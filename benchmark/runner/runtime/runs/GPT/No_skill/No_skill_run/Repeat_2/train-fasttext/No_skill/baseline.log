@@ -1,0 +1,28 @@
+2026-08-11T03:08:24.869553+00:00 START operation=rerun batch=single_No_skill_Run006 repeat=2 task=train-fasttext condition=no_skill image=benchmark-cache/train-fasttext-gold:ed4dd0e2fa2dcf5c provided_skills=[]
+  1/1 Mean: 0.000 ---------------------------------------- 0:17:05 0:00:00
+no_skill • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 17m 6s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run006\Repe
+at_2\train-fasttext\No_skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run006\Repe
+at_2\train-fasttext\No_skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run006\Repe
+at_2\train-fasttext\No_skill\Job_result`
+
+2026-08-11T03:25:32.494168+00:00 FAIL operation=rerun batch=single_No_skill_Run006 repeat=2 task=train-fasttext condition=no_skill

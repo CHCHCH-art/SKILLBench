@@ -1,0 +1,75 @@
+{
+  "name": "analyze-platinum-to-brazil-equities-transmission",
+  "version": "0.1.0",
+  "displayName": "鉑價對巴西股市傳導分析",
+  "description": "使用公開市場資料量化驗證鉑/白金對巴西股市（EWZ）的長週期傳導/連動關係，輸出雙軸圖、領先落後分析、關聯強度分數與監控訊號。",
+  "author": "Ricky Wang",
+  "license": "MIT",
+  "category": "indicator-monitoring",
+  "tags": [
+    "白金",
+    "巴西",
+    "EWZ",
+    "鉑",
+    "原物料",
+    "股市",
+    "商品",
+    "新興市場"
+  ],
+  "dataLevel": "free-nolimit",
+  "dependencies": {
+    "python": ">=3.8",
+    "packages": [
+      "pandas>=1.5.0",
+      "numpy>=1.20.0",
+      "yfinance>=0.2.0"
+    ],
+    "optional": [
+      "matplotlib>=3.5.0",
+      "scipy>=1.9.0",
+      "statsmodels>=0.14.0"
+    ]
+  },
+  "entryPoints": {
+    "skill": "SKILL.md",
+    "mainScript": "scripts/analyze.py"
+  },
+  "workflows": [
+    {
+      "id": "analyze",
+      "name": "完整傳導分析",
+      "description": "執行完整的白金→巴西股市傳導檢驗",
+      "file": "workflows/analyze.md"
+    },
+    {
+      "id": "visualize",
+      "name": "視覺化圖表",
+      "description": "生成 Bloomberg 風格雙軸圖與相關分析圖表",
+      "file": "workflows/visualize.md"
+    }
+  ],
+  "references": [
+    "references/data-sources.md",
+    "references/methodology.md",
+    "references/input-schema.md"
+  ],
+  "templates": [
+    "templates/output-json.md",
+    "templates/output-markdown.md"
+  ],
+  "examples": [
+    "examples/sample_output.json"
+  ],
+  "dataSources": [
+    {
+      "name": "Yahoo Finance",
+      "type": "primary",
+      "url": "https://finance.yahoo.com",
+      "api": "yfinance package (free, no API key)",
+      "tickers": [
+        "PL=F",
+        "EWZ"
+      ]
+    }
+  ]
+}

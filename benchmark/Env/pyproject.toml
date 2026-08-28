@@ -1,0 +1,13 @@
+[project]
+name = "harbor-dmx-agents"
+version = "0.1.0"
+description = "Custom Harbor agents for DMXAPI"
+requires-python = ">=3.12"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["my_agents*"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

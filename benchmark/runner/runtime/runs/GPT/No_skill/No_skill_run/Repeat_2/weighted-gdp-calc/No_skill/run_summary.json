@@ -1,0 +1,51 @@
+{
+  "schema_version": 5,
+  "task_id": "weighted-gdp-calc",
+  "condition": "no_skill",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 418.2,
+    "peak_memory_raw": "418.2MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.404,
+    "agent_setup_sec": 116.133,
+    "agent_execution_sec": 129.528,
+    "verifier_sec": 14.67,
+    "total_sec": 266.134
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/weighted-gdp-calc-gold:6b05499f9864865c",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "weighted-gdp-calc__4PHyLGD",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0,
+  "batch": "No_skill_Run001",
+  "repeat": 2,
+  "operation": "run"
+}

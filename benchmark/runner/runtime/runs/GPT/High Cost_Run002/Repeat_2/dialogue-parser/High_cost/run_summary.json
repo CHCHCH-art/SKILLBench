@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "dialogue-parser",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 72.18,
+    "peak_memory_raw": "72.18MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.812,
+    "agent_setup_sec": 0.917,
+    "agent_execution_sec": 234.302,
+    "verifier_sec": 4.416,
+    "total_sec": 247.663
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 325500,
+  "agent_output_tokens": 5739,
+  "image_cache": {
+    "image": "benchmark-cache/dialogue-parser-gold:c0353fb4817c6884",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-reference-parser"
+    ],
+    "available_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-reference-parser"
+    ],
+    "loaded_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-reference-parser"
+    ],
+    "trials": [
+      {
+        "trial_id": "dialogue-parser__TGvwoNT",
+        "passed": true,
+        "provided_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-reference-parser"
+        ],
+        "available_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-reference-parser"
+        ],
+        "loaded_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-reference-parser"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "dialogue-dot-rendering": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_aWfX7B04lTfgDGtDRkysU6Ec",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/dialogue-dot-rendering/SKILL.md"
+            }
+          ],
+          "dialogue-reference-parser": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_aWfX7B04lTfgDGtDRkysU6Ec",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/dialogue-reference-parser/SKILL.md"
+            }
+          ],
+          "dialogue-graph-construction": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_aWfX7B04lTfgDGtDRkysU6Ec",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/dialogue-graph-construction/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

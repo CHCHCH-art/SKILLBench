@@ -1,0 +1,28 @@
+2026-08-20T20:13:56.121533+00:00 START operation=run batch=single_Standard_Run002 repeat=3 task=mario-coin-counting condition=standard image=benchmark-cache/mario-coin-counting-gold:989a4c6bcaeff277 provided_skills=["edge-component-hog-spatial-counting", "edge-hog-template-calibration", "video-iframe-grayscale-keyframes"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:14:16 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 14m 16s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_3\mario-coin-counting\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_3\mario-coin-counting\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_3\mario-coin-counting\Standard\Job_result`
+
+2026-08-20T20:28:14.288664+00:00 FAIL operation=run batch=single_Standard_Run002 repeat=3 task=mario-coin-counting condition=standard

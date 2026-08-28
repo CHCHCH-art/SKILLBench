@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "exoplanet-detection-period",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 2048.0,
+    "peak_memory_raw": "2GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.01,
+    "agent_setup_sec": 1.199,
+    "agent_execution_sec": 162.36,
+    "verifier_sec": 48.789,
+    "total_sec": 220.993
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 167349,
+  "agent_output_tokens": 1932,
+  "image_cache": {
+    "image": "benchmark-cache/exoplanet-detection-period-gold:8bdb5ea239d635d6",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "lightcurve-quality-outlier-flatten",
+      "tls-coarse-refined-period-search"
+    ],
+    "available_skills": [
+      "lightcurve-quality-outlier-flatten",
+      "tls-coarse-refined-period-search"
+    ],
+    "loaded_skills": [
+      "lightcurve-quality-outlier-flatten",
+      "tls-coarse-refined-period-search"
+    ],
+    "trials": [
+      {
+        "trial_id": "exoplanet-detection-period__woDTLzz",
+        "passed": true,
+        "provided_skills": [
+          "lightcurve-quality-outlier-flatten",
+          "tls-coarse-refined-period-search"
+        ],
+        "available_skills": [
+          "lightcurve-quality-outlier-flatten",
+          "tls-coarse-refined-period-search"
+        ],
+        "loaded_skills": [
+          "lightcurve-quality-outlier-flatten",
+          "tls-coarse-refined-period-search"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "tls-coarse-refined-period-search": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_SUmjikbqj1yq6ByHQ4zFGCDC",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/tls-coarse-refined-period-search/SKILL.md"
+            }
+          ],
+          "lightcurve-quality-outlier-flatten": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_SUmjikbqj1yq6ByHQ4zFGCDC",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/lightcurve-quality-outlier-flatten/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

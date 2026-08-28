@@ -1,0 +1,30 @@
+{
+  "schema_version": 3,
+  "platform": "linux-x64",
+  "node_version": "22.16.0",
+  "codex_version": "0.145.0",
+  "uv_version": "0.9.7",
+  "ripgrep_version": "14.1.1",
+  "files": {
+    "node": {
+      "name": "node-v22.16.0-linux-x64.tar.gz",
+      "size": 54799832,
+      "sha256": "fb870226119d47378fa9c92c4535389c72dae14fcc7b47e6fdcc82c43de5a547"
+    },
+    "codex": {
+      "name": "dmx-codex-0.145.0.tar.gz",
+      "size": 133314376,
+      "sha256": "d92839444797cadfe1e047bfe885f60af103aae96bb2778f988ffd51c372b625"
+    },
+    "uv": {
+      "name": "uv-0.9.7-x86_64-unknown-linux-gnu.tar.gz",
+      "size": 21378513,
+      "sha256": "285e34b88c5b6133938ca6f1f7d12f540aaf88096d7a5bef36d82d0bc074ea31"
+    },
+    "ripgrep": {
+      "name": "ripgrep-14.1.1.tar.gz",
+      "size": 2462547,
+      "sha256": "c0f095b0e111ad364e05aa5ff365b021aeb2c7636967c7b7303679bb1c3ebf89"
+    }
+  }
+}

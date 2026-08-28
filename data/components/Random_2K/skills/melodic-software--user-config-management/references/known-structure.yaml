@@ -1,0 +1,235 @@
+# Known Structure Manifest for Drift Detection
+# This file documents the expected ~/.claude/ structure
+# Used by /user-config audit to detect changes after Claude Code updates
+
+version: "1.0"
+claude_code_version: "2.0.76"  # Last verified version
+last_updated: "2025-12-30"
+
+# ~/.claude/ directory structure
+directories:
+  debug:
+    purpose: "Debug transcripts for troubleshooting Claude Code"
+    files: "*.txt"
+    cleanup_safe: true
+    cleanup_command: "/user-config cleanup-debug"
+    default_retention_days: 7
+    documented: partial
+    source: "https://code.claude.com/docs/en/troubleshooting.md"
+
+  file-history:
+    purpose: "File rewind checkpoints (edit undo history)"
+    structure: "{session-uuid}/{content-hash}@v{version}"
+    cleanup_safe: false  # WARNING: Losing this = losing undo capability
+    notes: "Never auto-clean - user loses ability to rewind edits"
+    documented: false  # Internal implementation
+
+  ide:
+    purpose: "IDE integration lock files"
+    files: "*.lock"
+    cleanup_safe: true  # Stale locks can be removed
+    notes: "Lock files from IDE integrations (VS Code, JetBrains)"
+    documented: partial
+    source: "https://code.claude.com/docs/en/vs-code.md"
+
+  plans:
+    purpose: "Saved execution plans from plan mode"
+    files: "*.md"
+    cleanup_safe: true
+    cleanup_command: "/user-config plans --cleanup"
+    default_retention_days: 30
+    documented: false  # Internal implementation
+
+  plugins:
+    purpose: "Installed plugin cache and metadata"
+    subdirs:
+      - cache/
+      - marketplaces/
+    files:
+      - installed_plugins.json
+      - known_marketplaces.json
+      - install-counts-cache.json
+    cleanup_safe: false  # Use /plugin uninstall
+    notes: "Don't manually delete - use /plugin commands"
+    documented: true
+    source: "https://code.claude.com/docs/en/plugins.md"
+
+  projects:
+    purpose: "Per-project session and agent transcript files"
+    structure: "{path-encoded-project}/*.jsonl"
+    subdirs_contain:
+      - "*.jsonl (session files)"
+      - "agent-*.jsonl (agent transcripts)"
+    cleanup_safe: true
+    cleanup_command: "/user-config cleanup-sessions"
+    default_retention_days: 7
+    documented: false  # Internal implementation
+
+  session-env:
+    purpose: "Session environment captures (persisted env vars from hooks)"
+    structure: "{session-uuid}/"
+    cleanup_safe: true
+    cleanup_command: "/user-config prune"
+    documented: true
+    source: "https://code.claude.com/docs/en/hooks.md"
+    notes: "Used by SessionStart hooks for persisting environment variables"
+
+  shell-snapshots:
+    purpose: "Bash/shell environment state snapshots"
+    files: "snapshot-bash-*.sh"
+    cleanup_safe: true
+    cleanup_command: "/user-config prune"
+    documented: false  # Internal implementation
+
+  statsig:
+    purpose: "Feature flag cache (Statsig telemetry)"
+    files:
+      - "statsig.*"
+      - "*.json"
+    cleanup_safe: true  # Always safe - just analytics cache
+    cleanup_command: "/user-config prune"
+    notes: "Safe to delete anytime - will be recreated"
+    documented: partial
+    source: "https://code.claude.com/docs/en/data-usage.md"
+
+  todos:
+    purpose: "Todo list state per session"
+    files: "*.json"
+    cleanup_safe: true
+    cleanup_command: "/user-config prune"
+    default_retention_days: 7
+    documented: false  # Internal implementation
+
+  agents:
+    purpose: "User-level subagents (available across all projects)"
+    files: "*.md"
+    cleanup_safe: false
+    optional: true  # Only exists if user creates user-level agents
+    created_by: "/agents command or manual creation"
+    notes: "Lower priority than project-level agents (.claude/agents/)"
+    documented: true
+    source: "https://code.claude.com/docs/en/sub-agents.md"
+
+# Root files in ~/.claude/
+root_files:
+  settings.json:
+    purpose: "User-level settings and permissions"
+    required: false
+    cleanup_safe: false  # NEVER auto-clean
+    backup_priority: high
+    documented: true
+    source: "https://code.claude.com/docs/en/settings.md"
+
+  settings.local.json:
+    purpose: "Machine-local settings (not committed)"
+    required: false
+    cleanup_safe: false
+    backup_priority: medium
+    documented: true
+    source: "https://code.claude.com/docs/en/settings.md"
+
+  history.jsonl:
+    purpose: "Command history (slash commands, prompts)"
+    required: false
+    cleanup_safe: false  # Usually keep
+    backup_priority: medium
+    notes: "Can be exported/searched with /user-config history"
+    documented: partial
+    source: "https://code.claude.com/docs/en/memory.md"
+
+  .credentials.json:
+    purpose: "OAuth tokens and authentication"
+    required: true
+    cleanup_safe: false
+    backup_priority: never  # SENSITIVE - never backup
+    notes: "Contains auth tokens - do not copy or backup"
+    documented: partial
+    source: "https://code.claude.com/docs/en/iam.md"
+
+  CLAUDE.md:
+    purpose: "User-level instructions and memory"
+    required: false
+    cleanup_safe: false
+    backup_priority: high
+    documented: true
+    source: "https://code.claude.com/docs/en/memory.md"
+
+# Files in ~/ (home directory)
+home_files:
+  .claude.json:
+    purpose: "Global config - MCP servers, OAuth, feature flags"
+    location: "~/.claude.json"
+    sections:
+      - mcpServers  # CRITICAL to backup
+      - oauthAccount
+      - statsigFeatureFlags
+      - growthBookFeatureFlags
+    cleanup_safe: false
+    backup_priority: critical
+    notes: "mcpServers section MUST be preserved during reset"
+    documented: true
+    source: "https://code.claude.com/docs/en/settings.md"
+
+  CLAUDE.md:
+    purpose: "User-level instructions (alternative location)"
+    location: "~/CLAUDE.md"
+    required: false
+    cleanup_safe: false
+    backup_priority: high
+    documented: true
+    source: "https://code.claude.com/docs/en/memory.md"
+
+  .claudeignore:
+    purpose: "User-level ignore patterns"
+    location: "~/.claudeignore"
+    required: false
+    cleanup_safe: false
+    backup_priority: medium
+    documented: true
+    source: "https://code.claude.com/docs/en/memory.md"
+
+# What does NOT exist (common misconceptions)
+nonexistent:
+  - path: "~/.mcp.json"
+    misconception: "Some users expect MCP servers here"
+    reality: "User-scope MCP servers go in ~/.claude.json under mcpServers field"
+    source: "https://code.claude.com/docs/en/mcp.md"
+
+# Drift detection rules
+drift_detection:
+  # Report if these directories appear unexpectedly
+  unexpected_directories:
+    action: "warn"
+    message: "Unknown directory found in ~/.claude/: {name}"
+
+  # Report if these directories are missing
+  missing_expected:
+    directories:
+      - projects  # Should exist after first use
+      - plugins   # Should exist after plugin install
+    action: "info"
+    message: "Expected directory not found: {name}"
+
+  # Report if root files have unexpected content
+  content_validation:
+    settings.json:
+      must_be: "valid JSON"
+    .credentials.json:
+      must_be: "valid JSON"
+    history.jsonl:
+      must_be: "valid JSONL (one JSON object per line)"
+
+# Backup priorities for /user-config backup
+backup_priorities:
+  critical:
+    - "~/.claude.json (mcpServers section only)"
+  high:
+    - "~/.claude/settings.json"
+    - "~/.claude/CLAUDE.md"
+    - "~/CLAUDE.md"
+  medium:
+    - "~/.claude/settings.local.json"
+    - "~/.claude/history.jsonl"
+    - "~/.claudeignore"
+  never:
+    - "~/.claude/.credentials.json"  # Contains auth tokens

@@ -1,0 +1,67 @@
+{
+  "schema_version": 6,
+  "task_id": "crystallographic-wyckoff-position-analysis",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 185.1,
+    "peak_memory_raw": "185.1MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.593,
+    "agent_setup_sec": 1.305,
+    "agent_execution_sec": 63.741,
+    "verifier_sec": 8.181,
+    "total_sec": 80.289
+  },
+  "llm_cost_usd": 0.014106024,
+  "agent_input_tokens": 131694,
+  "agent_output_tokens": 3223,
+  "image_cache": {
+    "image": "benchmark-cache/crystallographic-wyckoff-position-analysis-gold:0f59e77451a3b6af",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "cif-explicit-site-normalization",
+      "wyckoff-spglib-stability-analysis"
+    ],
+    "available_skills": [
+      "cif-explicit-site-normalization",
+      "wyckoff-spglib-stability-analysis"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "crystallographic-wyckoff-positio__EQPKF9M",
+        "passed": true,
+        "provided_skills": [
+          "cif-explicit-site-normalization",
+          "wyckoff-spglib-stability-analysis"
+        ],
+        "available_skills": [
+          "cif-explicit-site-normalization",
+          "wyckoff-spglib-stability-analysis"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

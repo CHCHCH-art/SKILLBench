@@ -1,0 +1,96 @@
+{
+  "schema_version": 6,
+  "task_id": "crystallographic-wyckoff-position-analysis",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 101.1,
+    "peak_memory_raw": "101.1MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.563,
+    "agent_setup_sec": 0.749,
+    "agent_execution_sec": 124.014,
+    "verifier_sec": 5.259,
+    "total_sec": 140.179
+  },
+  "llm_cost_usd": 0.0058625224,
+  "agent_input_tokens": 349017,
+  "agent_output_tokens": 5487,
+  "image_cache": {
+    "image": "benchmark-cache/crystallographic-wyckoff-position-analysis-gold:0f59e77451a3b6af",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting"
+    ],
+    "available_skills": [
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting"
+    ],
+    "loaded_skills": [
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting"
+    ],
+    "trials": [
+      {
+        "trial_id": "crystallographic-wyckoff-positio__VkjQWUH",
+        "passed": true,
+        "provided_skills": [
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting"
+        ],
+        "available_skills": [
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting"
+        ],
+        "loaded_skills": [
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "cif-wyckoff-letter-reference-summary": [
+            {
+              "step_id": 13,
+              "tool_call_id": "call_cac7195faedf4ca7bba73319",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/cif-wyckoff-letter-reference-summary/SKILL.md"
+            }
+          ],
+          "fractional-coordinate-rational-formatting": [
+            {
+              "step_id": 13,
+              "tool_call_id": "call_ce52927c7e0746828dd497bb",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/fractional-coordinate-rational-formatting/SKILL.md"
+            },
+            {
+              "step_id": 14,
+              "tool_call_id": "call_b230ecae5ac24df8b5a28e1f",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/fractional-coordinate-rational-formatting/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

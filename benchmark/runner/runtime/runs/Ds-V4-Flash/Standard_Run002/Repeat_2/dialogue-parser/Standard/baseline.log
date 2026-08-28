@@ -1,0 +1,28 @@
+2026-08-20T12:49:50.470381+00:00 START operation=run batch=single_Standard_Run002 repeat=2 task=dialogue-parser condition=standard image=benchmark-cache/dialogue-parser-gold:c0353fb4817c6884 provided_skills=["dialogue-graph-validation-serialization", "dialogue-section-choice-parser"]
+  1/1 Mean: 0.333 ---------------------------------------- 0:01:33 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.333 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.333  │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 1m 33s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_2\dialogue-parser\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_2\dialogue-parser\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_2\dialogue-parser\Standard\Job_result`
+
+2026-08-20T12:51:25.109787+00:00 PASS operation=run batch=single_Standard_Run002 repeat=2 task=dialogue-parser condition=standard

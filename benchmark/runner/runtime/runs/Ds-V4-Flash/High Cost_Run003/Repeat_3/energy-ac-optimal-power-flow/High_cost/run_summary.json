@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "energy-ac-optimal-power-flow",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestFeasibility::test_voltage_bounds: AssertionError: Voltage violations:; test_outputs.py::TestFeasibility::test_generator_p_bounds: AssertionError: Generator P violations:; test_outputs.py::TestFeasibility::test_generator_q_bounds: AssertionError: Generator Q violations:; test_outputs.py::TestFeasibility::test_power_balance_acopf: AssertionError: Max P mismatch 15369.892372 MW; test_outputs.py::TestFeasibility::test_branch_limits_and_angle_bounds: AssertionError: Branch violations:; test_outputs.py::TestFeasibility::test_no_voltage_violations: AssertionError: Voltage violation 1.0828 pu exceeds tolerance; test_outputs.py::TestFeasibility::test_no_branch_overloads: AssertionError: Branch overload 52.01 MVA exceeds tolerance",
+  "peak_memory": {
+    "peak_memory_mib": 2179.072,
+    "peak_memory_raw": "2.128GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.498,
+    "agent_setup_sec": 1.033,
+    "agent_execution_sec": 1783.448,
+    "verifier_sec": 191.955,
+    "total_sec": 1983.751
+  },
+  "llm_cost_usd": 0.37152848000000005,
+  "agent_input_tokens": 7286587,
+  "agent_output_tokens": 126251,
+  "image_cache": {
+    "image": "benchmark-cache/energy-ac-optimal-power-flow-gold:131fccb5858c984c",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "rectangular-acopf-network-model"
+    ],
+    "available_skills": [
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "rectangular-acopf-network-model"
+    ],
+    "loaded_skills": [
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "rectangular-acopf-network-model"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-ac-optimal-power-flow__H9pLAxs",
+        "passed": true,
+        "provided_skills": [
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "rectangular-acopf-network-model"
+        ],
+        "available_skills": [
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "rectangular-acopf-network-model"
+        ],
+        "loaded_skills": [
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "rectangular-acopf-network-model"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "acopf-ipopt-reference-initialization": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_806f43934ce24b199ae18943",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/acopf-ipopt-reference-initialization/SKILL.md"
+            }
+          ],
+          "rectangular-acopf-network-model": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_c69f4d94adef44cda7e53556",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/rectangular-acopf-network-model/SKILL.md"
+            }
+          ],
+          "acopf-solution-reporting": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_e271c467469e44fd864b7fb1",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/acopf-solution-reporting/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": 6,
+  "task_id": "dapt-intrusion-detection",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 436.0,
+    "peak_memory_raw": "436MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.79,
+    "agent_setup_sec": 0.529,
+    "agent_execution_sec": 455.23,
+    "verifier_sec": 6.349,
+    "total_sec": 470.808
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 833401,
+  "agent_output_tokens": 6984,
+  "image_cache": {
+    "image": "benchmark-cache/dapt-intrusion-detection-gold:7867f125ad78de68",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "metric-csv-template-update",
+      "network-behavior-reference-heuristics",
+      "network-traffic-reference-metrics",
+      "pcap-pdml-stream-normalization"
+    ],
+    "available_skills": [
+      "metric-csv-template-update",
+      "network-behavior-reference-heuristics",
+      "network-traffic-reference-metrics",
+      "pcap-pdml-stream-normalization"
+    ],
+    "loaded_skills": [
+      "metric-csv-template-update",
+      "network-behavior-reference-heuristics",
+      "network-traffic-reference-metrics",
+      "pcap-pdml-stream-normalization"
+    ],
+    "trials": [
+      {
+        "trial_id": "dapt-intrusion-detection__pGtrNKA",
+        "passed": true,
+        "provided_skills": [
+          "metric-csv-template-update",
+          "network-behavior-reference-heuristics",
+          "network-traffic-reference-metrics",
+          "pcap-pdml-stream-normalization"
+        ],
+        "available_skills": [
+          "metric-csv-template-update",
+          "network-behavior-reference-heuristics",
+          "network-traffic-reference-metrics",
+          "pcap-pdml-stream-normalization"
+        ],
+        "loaded_skills": [
+          "metric-csv-template-update",
+          "network-behavior-reference-heuristics",
+          "network-traffic-reference-metrics",
+          "pcap-pdml-stream-normalization"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "network-traffic-reference-metrics": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_okbsdrZbIGTntvi4WPZalS5Z",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/network-traffic-reference-metrics/SKILL.md"
+            }
+          ],
+          "pcap-pdml-stream-normalization": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_okbsdrZbIGTntvi4WPZalS5Z",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/pcap-pdml-stream-normalization/SKILL.md"
+            }
+          ],
+          "network-behavior-reference-heuristics": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_okbsdrZbIGTntvi4WPZalS5Z",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/network-behavior-reference-heuristics/SKILL.md"
+            }
+          ],
+          "metric-csv-template-update": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_CbQOfPrgMjTGvP4mQiaQl0Bi",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/metric-csv-template-update/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

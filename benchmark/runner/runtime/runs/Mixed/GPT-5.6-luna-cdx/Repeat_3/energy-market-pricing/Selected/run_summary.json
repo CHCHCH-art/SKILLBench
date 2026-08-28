@@ -1,0 +1,140 @@
+{
+  "schema_version": 6,
+  "task_id": "energy-market-pricing",
+  "condition": "selected",
+  "batch": "single_Selected_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOptimality::test_costs_near_optimal: AssertionError: base_case cost 3073355.64 exceeds optimal 2965637.909677724 by more than 0.0100% (tol=296.5637909677724)",
+  "peak_memory": {
+    "peak_memory_mib": 724.5,
+    "peak_memory_raw": "724.5MiB",
+    "error": "EOF",
+    "container_name_hint": "energy-market-pricin"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.662,
+    "agent_setup_sec": 0.71,
+    "agent_execution_sec": 805.492,
+    "verifier_sec": 287.904,
+    "total_sec": 1101.495
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 825510,
+  "agent_output_tokens": 18809,
+  "image_cache": {
+    "image": "benchmark-cache/energy-market-pricing-gold:5e086fb9e6601b54",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "89jobrien--golang-testing",
+      "dcopf-counterfactual-impact-analysis",
+      "dcopf-reserve-lmp-solve",
+      "duyet--engineering-discipline",
+      "highs-dual-market-pricing-report",
+      "lobbi-docs--aws",
+      "openclaudia--content-calendar",
+      "skillcreatorai--best-practices",
+      "sparse-dcopf-reserve-lp-formulation",
+      "transmission-limit-counterfactual-impact"
+    ],
+    "available_skills": [
+      "89jobrien--golang-testing",
+      "dcopf-counterfactual-impact-analysis",
+      "dcopf-reserve-lmp-solve",
+      "duyet--engineering-discipline",
+      "highs-dual-market-pricing-report",
+      "lobbi-docs--aws",
+      "openclaudia--content-calendar",
+      "skillcreatorai--best-practices",
+      "sparse-dcopf-reserve-lp-formulation",
+      "transmission-limit-counterfactual-impact"
+    ],
+    "loaded_skills": [
+      "highs-dual-market-pricing-report",
+      "sparse-dcopf-reserve-lp-formulation",
+      "transmission-limit-counterfactual-impact"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-market-pricing__uG7HnZ8",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "89jobrien--golang-testing",
+          "dcopf-counterfactual-impact-analysis",
+          "dcopf-reserve-lmp-solve",
+          "duyet--engineering-discipline",
+          "highs-dual-market-pricing-report",
+          "lobbi-docs--aws",
+          "openclaudia--content-calendar",
+          "skillcreatorai--best-practices",
+          "sparse-dcopf-reserve-lp-formulation",
+          "transmission-limit-counterfactual-impact"
+        ],
+        "available_skills": [
+          "89jobrien--golang-testing",
+          "dcopf-counterfactual-impact-analysis",
+          "dcopf-reserve-lmp-solve",
+          "duyet--engineering-discipline",
+          "highs-dual-market-pricing-report",
+          "lobbi-docs--aws",
+          "openclaudia--content-calendar",
+          "skillcreatorai--best-practices",
+          "sparse-dcopf-reserve-lp-formulation",
+          "transmission-limit-counterfactual-impact"
+        ],
+        "loaded_skills": [
+          "highs-dual-market-pricing-report",
+          "sparse-dcopf-reserve-lp-formulation",
+          "transmission-limit-counterfactual-impact"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "sparse-dcopf-reserve-lp-formulation": [
+            {
+              "step_id": 39,
+              "tool_call_id": "call_d329eebe9def4808828db71b",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/sparse-dcopf-reserve-lp-formulation/SKILL.md"
+            },
+            {
+              "step_id": 50,
+              "tool_call_id": "call_c5e0f9881afe4b0494eb8337",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/sparse-dcopf-reserve-lp-formulation/SKILL.md"
+            }
+          ],
+          "highs-dual-market-pricing-report": [
+            {
+              "step_id": 42,
+              "tool_call_id": "call_110e730148f7407cb8d77aa4",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/highs-dual-market-pricing-report/SKILL.md"
+            }
+          ],
+          "transmission-limit-counterfactual-impact": [
+            {
+              "step_id": 45,
+              "tool_call_id": "call_b07206f9abbb44cca13f8aa6",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/transmission-limit-counterfactual-impact/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

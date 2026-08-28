@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "hf-model-inference",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1162.24,
+    "peak_memory_raw": "1.135GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.418,
+    "agent_setup_sec": 2.435,
+    "agent_execution_sec": 433.66,
+    "verifier_sec": 28.006,
+    "total_sec": 480.151
+  },
+  "llm_cost_usd": 0.0104901944,
+  "agent_input_tokens": 934069,
+  "agent_output_tokens": 10474,
+  "image_cache": {
+    "image": "benchmark-cache/hf-model-inference-gold:5e2a59f453e212fb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "hf-model-inference__R6cRayN",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

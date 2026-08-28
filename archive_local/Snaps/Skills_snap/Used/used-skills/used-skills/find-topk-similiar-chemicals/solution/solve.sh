@@ -1,0 +1,562 @@
+#!/bin/bash
+set -euo pipefail
+
+export DEBIAN_FRONTEND=noninteractive
+
+if [[ ! -x /usr/bin/pdftotext ]]; then
+    apt-get update
+    apt-get install -y --no-install-recommends poppler-utils
+    rm -rf /var/lib/apt/lists/*
+fi
+
+mkdir -p /root/workspace
+
+cat > /root/workspace/solution.py <<'PY'
+#!/usr/bin/env python3
+"""Top-k molecular similarity using a staged PDF -> CID -> SDF pipeline."""
+
+from __future__ import annotations
+
+import hashlib
+import io
+import json
+import os
+import sqlite3
+import subprocess
+import tempfile
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
+import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Iterable
+
+from rdkit import Chem, RDLogger
+from rdkit.Chem import rdFingerprintGenerator
+
+RDLogger.DisableLog("rdApp.*")
+
+FINGERPRINT_RADIUS = 2
+INCLUDE_CHIRALITY = True
+MAX_WORKERS = 4
+MAX_RETRIES = 5
+HTTP_TIMEOUT_SECONDS = 40
+
+WORKSPACE = Path("/root/workspace")
+REGISTRY_PATH = WORKSPACE / "molecule_registry.sqlite3"
+RAW_SDF_DIRECTORY = WORKSPACE / "pubchem_sdf_records"
+PDF_XHTML_DIRECTORY = WORKSPACE / "pdf_bbox_cache"
+PDFTOTEXT_PATH = "/usr/bin/pdftotext"
+
+PUBCHEM_BASE = "https://pubchem.ncbi.nlm.nih.gov/rest/pug"
+USER_AGENT = "benchmark-molecule-similarity/2.0"
+
+_FINGERPRINT_GENERATOR = rdFingerprintGenerator.GetMorganGenerator(
+    radius=FINGERPRINT_RADIUS,
+    includeChirality=INCLUDE_CHIRALITY,
+)
+
+
+@dataclass(frozen=True)
+class StructureRecord:
+    cid: int
+    molecule: Chem.Mol
+    canonical_smiles: str
+    inchikey: str
+    sdf_sha256: str
+
+
+@dataclass(frozen=True)
+class SparseCountFingerprint:
+    feature_ids: tuple[int, ...]
+    counts: tuple[int, ...]
+
+
+def _normalise_name(value: str) -> str:
+    return " ".join(value.split())
+
+
+def _name_key(value: str) -> str:
+    return _normalise_name(value).casefold()
+
+
+def _sha256_bytes(payload: bytes) -> str:
+    return hashlib.sha256(payload).hexdigest()
+
+
+def _sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as source:
+        while True:
+            chunk = source.read(1024 * 1024)
+            if not chunk:
+                break
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _initialise_storage() -> None:
+    WORKSPACE.mkdir(parents=True, exist_ok=True)
+    RAW_SDF_DIRECTORY.mkdir(parents=True, exist_ok=True)
+    PDF_XHTML_DIRECTORY.mkdir(parents=True, exist_ok=True)
+
+    with sqlite3.connect(REGISTRY_PATH) as connection:
+        connection.execute("PRAGMA journal_mode=WAL")
+        connection.execute("PRAGMA synchronous=NORMAL")
+        connection.executescript(
+            """
+            CREATE TABLE IF NOT EXISTS structures (
+                cid INTEGER PRIMARY KEY,
+                canonical_smiles TEXT NOT NULL,
+                inchikey TEXT NOT NULL,
+                sdf_sha256 TEXT NOT NULL,
+                updated_unix INTEGER NOT NULL
+            );
+
+            CREATE TABLE IF NOT EXISTS aliases (
+                normalised_name TEXT PRIMARY KEY,
+                display_name TEXT NOT NULL,
+                cid INTEGER NOT NULL,
+                updated_unix INTEGER NOT NULL,
+                FOREIGN KEY (cid) REFERENCES structures(cid)
+            );
+
+            CREATE INDEX IF NOT EXISTS aliases_cid_idx ON aliases(cid);
+            """
+        )
+
+
+def _local_name(tag: str) -> str:
+    return tag.rsplit("}", 1)[-1]
+
+
+def _extract_lines_from_bbox_xhtml(xhtml_path: Path) -> list[str]:
+    try:
+        root = ET.parse(xhtml_path).getroot()
+    except ET.ParseError as error:
+        raise ValueError(f"Poppler produced invalid XHTML: {xhtml_path}") from error
+
+    names: list[str] = []
+    seen: set[str] = set()
+    for element in root.iter():
+        if _local_name(element.tag) != "line":
+            continue
+        words = [
+            child.text or ""
+            for child in element.iter()
+            if _local_name(child.tag) == "word"
+        ]
+        name = _normalise_name(" ".join(words))
+        if not name or name.isdigit() or name in seen:
+            continue
+        names.append(name)
+        seen.add(name)
+    return names
+
+
+def extract_molecules_from_pdf(filepath: os.PathLike[str] | str) -> list[str]:
+    """Extract one molecule name per visual PDF text line."""
+    _initialise_storage()
+    pdf_path = Path(os.fspath(filepath)).resolve()
+    if not pdf_path.is_file():
+        raise FileNotFoundError(str(pdf_path))
+    if not os.access(pdf_path, os.R_OK):
+        raise PermissionError(str(pdf_path))
+
+    cache_key = _sha256_file(pdf_path)
+    xhtml_path = PDF_XHTML_DIRECTORY / f"{cache_key}.xhtml"
+
+    if not xhtml_path.is_file():
+        file_descriptor, temporary_name = tempfile.mkstemp(
+            prefix="bbox-", suffix=".xhtml", dir=PDF_XHTML_DIRECTORY
+        )
+        os.close(file_descriptor)
+        temporary_path = Path(temporary_name)
+        try:
+            completed = subprocess.run(
+                [
+                    PDFTOTEXT_PATH,
+                    "-enc",
+                    "UTF-8",
+                    "-bbox-layout",
+                    str(pdf_path),
+                    str(temporary_path),
+                ],
+                check=False,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.PIPE,
+                text=True,
+            )
+            if completed.returncode != 0:
+                raise RuntimeError(
+                    "pdftotext failed for "
+                    f"{pdf_path}: {completed.stderr.strip() or completed.returncode}"
+                )
+            os.replace(temporary_path, xhtml_path)
+        finally:
+            temporary_path.unlink(missing_ok=True)
+
+    names = _extract_lines_from_bbox_xhtml(xhtml_path)
+    if not names:
+        raise ValueError(f"No molecule names were extracted from {pdf_path}")
+    return names
+
+
+def _retry_delay(error: urllib.error.HTTPError, attempt: int) -> float:
+    retry_after = error.headers.get("Retry-After") if error.headers else None
+    if retry_after:
+        try:
+            return min(15.0, max(0.0, float(retry_after)))
+        except ValueError:
+            pass
+    return min(8.0, 0.4 * (2**attempt))
+
+
+def _http_get(url: str, accept: str) -> bytes:
+    request = urllib.request.Request(
+        url,
+        headers={"Accept": accept, "User-Agent": USER_AGENT},
+        method="GET",
+    )
+    last_error: Exception | None = None
+
+    for attempt in range(MAX_RETRIES):
+        try:
+            with urllib.request.urlopen(
+                request, timeout=HTTP_TIMEOUT_SECONDS
+            ) as response:
+                payload = response.read()
+                if not payload:
+                    raise RuntimeError(f"Empty response from {url}")
+                return payload
+        except urllib.error.HTTPError as error:
+            last_error = error
+            if error.code == 404:
+                raise LookupError(f"PubChem has no matching record for {url}") from error
+            if error.code not in {408, 425, 429, 500, 502, 503, 504}:
+                raise RuntimeError(
+                    f"PubChem request failed with HTTP {error.code}: {url}"
+                ) from error
+            if attempt + 1 < MAX_RETRIES:
+                time.sleep(_retry_delay(error, attempt))
+        except (urllib.error.URLError, TimeoutError, OSError, RuntimeError) as error:
+            last_error = error
+            if attempt + 1 < MAX_RETRIES:
+                time.sleep(min(8.0, 0.4 * (2**attempt)))
+
+    raise RuntimeError(
+        f"PubChem request failed after {MAX_RETRIES} attempts: {url}: {last_error}"
+    ) from last_error
+
+
+def _lookup_first_cid(name: str) -> int:
+    encoded_name = urllib.parse.quote(name, safe="")
+    payload = _http_get(
+        f"{PUBCHEM_BASE}/compound/name/{encoded_name}/cids/JSON",
+        "application/json",
+    )
+    try:
+        document = json.loads(payload.decode("utf-8"))
+        cids = document["IdentifierList"]["CID"]
+        cid = int(cids[0])
+    except (UnicodeDecodeError, json.JSONDecodeError, KeyError, IndexError, TypeError, ValueError) as error:
+        raise LookupError(f"PubChem returned no CID for {name!r}") from error
+    if cid <= 0:
+        raise LookupError(f"PubChem returned an invalid CID for {name!r}: {cid}")
+    return cid
+
+
+def _sdf_path(cid: int) -> Path:
+    return RAW_SDF_DIRECTORY / f"{cid}.sdf"
+
+
+def _download_sdf(cid: int) -> bytes:
+    return _http_get(
+        f"{PUBCHEM_BASE}/compound/cid/{cid}/SDF?record_type=2d",
+        "chemical/x-mdl-sdfile",
+    )
+
+
+def _parse_sdf_record(cid: int, payload: bytes) -> StructureRecord:
+    supplier = Chem.ForwardSDMolSupplier(
+        io.BytesIO(payload), sanitize=True, removeHs=True, strictParsing=True
+    )
+    molecule = next((item for item in supplier if item is not None), None)
+    if molecule is None:
+        raise ValueError(f"RDKit could not parse PubChem SDF for CID {cid}")
+
+    if molecule.HasProp("PUBCHEM_COMPOUND_CID"):
+        try:
+            embedded_cid = int(molecule.GetProp("PUBCHEM_COMPOUND_CID"))
+        except ValueError as error:
+            raise ValueError(f"Invalid CID property in SDF for CID {cid}") from error
+        if embedded_cid != cid:
+            raise ValueError(
+                f"SDF identity mismatch: requested CID {cid}, received CID {embedded_cid}"
+            )
+
+    Chem.AssignStereochemistry(molecule, cleanIt=True, force=True)
+    canonical_smiles = Chem.MolToSmiles(
+        molecule, canonical=True, isomericSmiles=True
+    )
+    if not canonical_smiles:
+        raise ValueError(f"RDKit could not canonicalise PubChem SDF for CID {cid}")
+
+    inchikey = Chem.MolToInchiKey(molecule)
+    if not inchikey:
+        raise ValueError(f"RDKit could not calculate an InChIKey for CID {cid}")
+
+    return StructureRecord(
+        cid=cid,
+        molecule=molecule,
+        canonical_smiles=canonical_smiles,
+        inchikey=inchikey,
+        sdf_sha256=_sha256_bytes(payload),
+    )
+
+
+def _load_or_fetch_structure(cid: int) -> StructureRecord:
+    path = _sdf_path(cid)
+    payload: bytes | None = None
+
+    if path.is_file():
+        try:
+            payload = path.read_bytes()
+            return _parse_sdf_record(cid, payload)
+        except (OSError, ValueError):
+            payload = None
+
+    payload = _download_sdf(cid)
+    record = _parse_sdf_record(cid, payload)
+
+    file_descriptor, temporary_name = tempfile.mkstemp(
+        prefix=f"{cid}-", suffix=".sdf", dir=RAW_SDF_DIRECTORY
+    )
+    temporary_path = Path(temporary_name)
+    try:
+        with os.fdopen(file_descriptor, "wb") as destination:
+            destination.write(payload)
+            destination.flush()
+            os.fsync(destination.fileno())
+        os.replace(temporary_path, path)
+    finally:
+        temporary_path.unlink(missing_ok=True)
+    return record
+
+
+def _read_cached_aliases(keys: Iterable[str]) -> dict[str, int]:
+    key_list = list(dict.fromkeys(keys))
+    if not key_list:
+        return {}
+
+    result: dict[str, int] = {}
+    with sqlite3.connect(REGISTRY_PATH) as connection:
+        for start in range(0, len(key_list), 500):
+            chunk = key_list[start : start + 500]
+            placeholders = ",".join("?" for _ in chunk)
+            rows = connection.execute(
+                f"SELECT normalised_name, cid FROM aliases "
+                f"WHERE normalised_name IN ({placeholders})",
+                chunk,
+            )
+            result.update((str(key), int(cid)) for key, cid in rows)
+    return result
+
+
+def _write_registry(
+    aliases: dict[str, tuple[str, int]], structures: dict[int, StructureRecord]
+) -> None:
+    timestamp = int(time.time())
+    with sqlite3.connect(REGISTRY_PATH) as connection:
+        connection.execute("PRAGMA foreign_keys=ON")
+        connection.execute("BEGIN IMMEDIATE")
+        for record in structures.values():
+            connection.execute(
+                """
+                INSERT INTO structures(
+                    cid, canonical_smiles, inchikey, sdf_sha256, updated_unix
+                ) VALUES (?, ?, ?, ?, ?)
+                ON CONFLICT(cid) DO UPDATE SET
+                    canonical_smiles=excluded.canonical_smiles,
+                    inchikey=excluded.inchikey,
+                    sdf_sha256=excluded.sdf_sha256,
+                    updated_unix=excluded.updated_unix
+                """,
+                (
+                    record.cid,
+                    record.canonical_smiles,
+                    record.inchikey,
+                    record.sdf_sha256,
+                    timestamp,
+                ),
+            )
+        for key, (display_name, cid) in aliases.items():
+            connection.execute(
+                """
+                INSERT INTO aliases(normalised_name, display_name, cid, updated_unix)
+                VALUES (?, ?, ?, ?)
+                ON CONFLICT(normalised_name) DO UPDATE SET
+                    display_name=excluded.display_name,
+                    cid=excluded.cid,
+                    updated_unix=excluded.updated_unix
+                """,
+                (key, display_name, cid, timestamp),
+            )
+        connection.commit()
+
+
+def _resolve_many(names: Iterable[str]) -> dict[str, StructureRecord]:
+    _initialise_storage()
+
+    display_by_key: dict[str, str] = {}
+    ordered_names: list[str] = []
+    for raw_name in names:
+        display_name = _normalise_name(raw_name)
+        if not display_name:
+            continue
+        ordered_names.append(display_name)
+        display_by_key.setdefault(_name_key(display_name), display_name)
+
+    cached_cids = _read_cached_aliases(display_by_key)
+    cid_by_key = dict(cached_cids)
+    missing_keys = [key for key in display_by_key if key not in cid_by_key]
+    failures: list[str] = []
+
+    if missing_keys:
+        with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(missing_keys))) as executor:
+            futures = {
+                executor.submit(_lookup_first_cid, display_by_key[key]): key
+                for key in missing_keys
+            }
+            for future in as_completed(futures):
+                key = futures[future]
+                try:
+                    cid_by_key[key] = future.result()
+                except Exception as error:
+                    failures.append(f"{display_by_key[key]}: {error}")
+
+    if failures:
+        raise RuntimeError(
+            "PubChem name-to-CID resolution failed:\n" + "\n".join(sorted(failures))
+        )
+
+    unique_cids = sorted(set(cid_by_key.values()))
+    structures: dict[int, StructureRecord] = {}
+    structure_failures: list[str] = []
+    if unique_cids:
+        with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(unique_cids))) as executor:
+            futures = {
+                executor.submit(_load_or_fetch_structure, cid): cid
+                for cid in unique_cids
+            }
+            for future in as_completed(futures):
+                cid = futures[future]
+                try:
+                    structures[cid] = future.result()
+                except Exception as error:
+                    structure_failures.append(f"CID {cid}: {error}")
+
+    if structure_failures:
+        raise RuntimeError(
+            "PubChem SDF retrieval failed:\n" + "\n".join(sorted(structure_failures))
+        )
+
+    alias_rows = {
+        key: (display_by_key[key], cid_by_key[key]) for key in display_by_key
+    }
+    _write_registry(alias_rows, structures)
+
+    return {
+        name: structures[cid_by_key[_name_key(name)]] for name in ordered_names
+    }
+
+
+def _fingerprint(molecule: Chem.Mol) -> SparseCountFingerprint:
+    sparse_vector = _FINGERPRINT_GENERATOR.GetSparseCountFingerprint(molecule)
+    items = sorted(
+        (int(feature_id), int(count))
+        for feature_id, count in sparse_vector.GetNonzeroElements().items()
+    )
+    return SparseCountFingerprint(
+        feature_ids=tuple(feature_id for feature_id, _ in items),
+        counts=tuple(count for _, count in items),
+    )
+
+
+def _count_tanimoto(
+    left: SparseCountFingerprint, right: SparseCountFingerprint
+) -> float:
+    left_index = 0
+    right_index = 0
+    intersection = 0
+    union = 0
+
+    while left_index < len(left.feature_ids) and right_index < len(right.feature_ids):
+        left_feature = left.feature_ids[left_index]
+        right_feature = right.feature_ids[right_index]
+        if left_feature == right_feature:
+            left_count = left.counts[left_index]
+            right_count = right.counts[right_index]
+            intersection += min(left_count, right_count)
+            union += max(left_count, right_count)
+            left_index += 1
+            right_index += 1
+        elif left_feature < right_feature:
+            union += left.counts[left_index]
+            left_index += 1
+        else:
+            union += right.counts[right_index]
+            right_index += 1
+
+    union += sum(left.counts[left_index:])
+    union += sum(right.counts[right_index:])
+    return 1.0 if union == 0 else intersection / union
+
+
+def topk_tanimoto_similarity_molecules(
+    target_molecule_name, molecule_pool_filepath, top_k
+) -> list:
+    if not isinstance(target_molecule_name, str) or not target_molecule_name.strip():
+        raise ValueError("target_molecule_name must be a non-empty string")
+    if isinstance(top_k, bool) or not isinstance(top_k, int) or top_k < 0:
+        raise ValueError("top_k must be a non-negative integer")
+    if top_k == 0:
+        return []
+
+    pool_names = extract_molecules_from_pdf(molecule_pool_filepath)
+    target_name = _normalise_name(target_molecule_name)
+    records = _resolve_many([*pool_names, target_name])
+
+    target_fingerprint = _fingerprint(records[target_name].molecule)
+    ranked: list[tuple[str, float]] = []
+    for name in pool_names:
+        candidate_fingerprint = _fingerprint(records[name].molecule)
+        score = _count_tanimoto(target_fingerprint, candidate_fingerprint)
+        ranked.append((name, float(score)))
+
+    ranked.sort(key=lambda item: (-item[1], item[0]))
+    return [name for name, _ in ranked[:top_k]]
+PY
+
+chmod +x /root/workspace/solution.py
+
+python3 - <<'PY'
+import importlib.util
+import sys
+
+module_path = "/root/workspace/solution.py"
+spec = importlib.util.spec_from_file_location("benchmark_solution", module_path)
+if spec is None or spec.loader is None:
+    raise RuntimeError(f"Cannot import {module_path}")
+module = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = module
+spec.loader.exec_module(module)
+module._initialise_storage()
+assert module.FINGERPRINT_RADIUS == 2
+assert module.INCLUDE_CHIRALITY is True
+PY
+
+python3 -m py_compile /root/workspace/solution.py

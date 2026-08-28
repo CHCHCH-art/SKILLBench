@@ -1,0 +1,220 @@
+2026-08-25T08:49:33.349999+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=crystallographic-wyckoff-position-analysis condition=selected
+2026-08-25T08:49:33.350529+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=dapt-intrusion-detection condition=selected
+2026-08-25T08:51:37.523539+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=crystallographic-wyckoff-position-analysis condition=selected status=completed
+2026-08-25T08:51:37.528487+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=crystallographic-wyckoff-position-analysis condition=selected
+2026-08-25T08:53:57.289469+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=1 task=dapt-intrusion-detection condition=selected status=completed
+2026-08-25T08:53:57.298368+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=dapt-intrusion-detection condition=selected
+2026-08-25T08:54:14.357162+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=crystallographic-wyckoff-position-analysis condition=selected status=completed
+2026-08-25T08:54:14.363791+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=crystallographic-wyckoff-position-analysis condition=selected
+2026-08-25T08:56:14.936360+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=crystallographic-wyckoff-position-analysis condition=selected status=completed
+2026-08-25T08:56:14.942299+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=dialogue-parser condition=selected
+2026-08-25T08:57:14.232459+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=dapt-intrusion-detection condition=selected status=completed
+2026-08-25T08:57:14.240335+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=dapt-intrusion-detection condition=selected
+2026-08-25T08:57:35.335947+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=dialogue-parser condition=selected status=completed
+2026-08-25T08:57:35.341126+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=dialogue-parser condition=selected
+2026-08-25T08:59:47.990303+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=dialogue-parser condition=selected status=completed
+2026-08-25T08:59:47.994669+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=dialogue-parser condition=selected
+2026-08-25T09:01:42.549641+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=dialogue-parser condition=selected status=completed
+2026-08-25T09:01:42.555110+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=distribution-search condition=selected
+2026-08-25T09:01:43.567601+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=3 task=dapt-intrusion-detection condition=selected status=completed
+2026-08-25T09:01:43.575183+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=dynamic-object-aware-egomotion condition=selected
+2026-08-25T09:05:19.729317+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=distribution-search condition=selected status=completed
+2026-08-25T09:05:19.733768+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=distribution-search condition=selected
+2026-08-25T09:06:50.177383+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=1 task=dynamic-object-aware-egomotion condition=selected status=completed
+2026-08-25T09:06:50.181427+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=dynamic-object-aware-egomotion condition=selected
+2026-08-25T09:10:05.525482+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=distribution-search condition=selected status=completed
+2026-08-25T09:10:05.532032+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=distribution-search condition=selected
+2026-08-25T09:18:51.325969+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=distribution-search condition=selected status=completed
+2026-08-25T09:18:51.333204+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=earthquake-plate-calculation condition=selected
+2026-08-25T09:19:18.657597+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=dynamic-object-aware-egomotion condition=selected status=completed
+2026-08-25T09:19:18.662889+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=dynamic-object-aware-egomotion condition=selected
+2026-08-25T09:20:38.048804+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=1 task=earthquake-plate-calculation condition=selected status=completed
+2026-08-25T09:20:38.054143+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=earthquake-plate-calculation condition=selected
+2026-08-25T09:22:36.671528+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=earthquake-plate-calculation condition=selected status=completed
+2026-08-25T09:22:36.675963+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=earthquake-plate-calculation condition=selected
+2026-08-25T09:24:06.442743+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=3 task=dynamic-object-aware-egomotion condition=selected status=completed
+2026-08-25T09:24:06.448405+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=econ-detrending-correlation condition=selected
+2026-08-25T09:24:31.603571+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=3 task=earthquake-plate-calculation condition=selected status=completed
+2026-08-25T09:24:31.608696+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=energy-ac-optimal-power-flow condition=selected
+2026-08-25T09:25:26.850175+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=econ-detrending-correlation condition=selected status=completed
+2026-08-25T09:25:26.852005+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=econ-detrending-correlation condition=selected
+2026-08-25T09:27:43.790844+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=econ-detrending-correlation condition=selected status=completed
+2026-08-25T09:27:43.796359+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=econ-detrending-correlation condition=selected
+2026-08-25T09:29:41.120278+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=econ-detrending-correlation condition=selected status=completed
+2026-08-25T09:29:41.125006+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=energy-market-pricing condition=selected
+2026-08-25T09:34:04.725177+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=1 task=energy-ac-optimal-power-flow condition=selected status=completed
+2026-08-25T09:34:04.730301+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=energy-ac-optimal-power-flow condition=selected
+2026-08-25T09:39:15.273697+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=1 task=energy-market-pricing condition=selected status=completed
+2026-08-25T09:39:15.279187+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=energy-market-pricing condition=selected
+2026-08-25T09:46:33.558028+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=energy-market-pricing condition=selected status=completed
+2026-08-25T09:46:33.562601+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=energy-market-pricing condition=selected
+2026-08-25T09:48:23.149736+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=energy-ac-optimal-power-flow condition=selected status=completed
+2026-08-25T09:48:23.150330+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=energy-ac-optimal-power-flow condition=selected
+2026-08-25T09:59:36.723645+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=energy-ac-optimal-power-flow condition=selected status=completed
+2026-08-25T09:59:36.723645+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=exceltable-in-ppt condition=selected
+2026-08-25T10:03:09.874751+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=exceltable-in-ppt condition=selected status=completed
+2026-08-25T10:03:09.878864+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=exceltable-in-ppt condition=selected
+2026-08-25T10:04:57.378791+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=3 task=energy-market-pricing condition=selected status=completed
+2026-08-25T10:04:57.385349+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=exoplanet-detection-period condition=selected
+2026-08-25T10:06:18.796030+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=exceltable-in-ppt condition=selected status=completed
+2026-08-25T10:06:18.802061+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=exceltable-in-ppt condition=selected
+2026-08-25T10:09:21.838695+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=exceltable-in-ppt condition=selected status=completed
+2026-08-25T10:09:21.845352+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=financial-modeling-qa condition=selected
+2026-08-25T10:13:48.556733+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=1 task=financial-modeling-qa condition=selected status=completed
+2026-08-25T10:13:48.561122+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=financial-modeling-qa condition=selected
+2026-08-25T10:14:02.438502+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=exoplanet-detection-period condition=selected status=completed
+2026-08-25T10:14:02.443125+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=exoplanet-detection-period condition=selected
+2026-08-25T10:19:28.139979+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=financial-modeling-qa condition=selected status=completed
+2026-08-25T10:19:28.143404+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=financial-modeling-qa condition=selected
+2026-08-25T10:23:41.527036+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=exoplanet-detection-period condition=selected status=completed
+2026-08-25T10:23:41.532454+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=exoplanet-detection-period condition=selected
+2026-08-25T10:25:24.078913+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=3 task=financial-modeling-qa condition=selected status=completed
+2026-08-25T10:25:24.082955+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=find-topk-similiar-chemicals condition=selected
+2026-08-25T10:34:01.060159+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=1 task=find-topk-similiar-chemicals condition=selected status=completed
+2026-08-25T10:34:01.065313+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=find-topk-similiar-chemicals condition=selected
+2026-08-25T10:40:17.257274+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=find-topk-similiar-chemicals condition=selected status=completed
+2026-08-25T10:40:17.267454+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=find-topk-similiar-chemicals condition=selected
+2026-08-25T10:46:11.495372+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=3 task=find-topk-similiar-chemicals condition=selected status=completed
+2026-08-25T10:46:11.500410+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=glm-lake-mendota condition=selected
+2026-08-25T11:03:15.156020+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=glm-lake-mendota condition=selected status=completed
+2026-08-25T11:03:15.163291+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=glm-lake-mendota condition=selected
+2026-08-25T11:08:53.172292+00:00 ERROR operation=run batch=single_Selected_Run001 repeat=3 task=exoplanet-detection-period condition=selected status=trial_error
+2026-08-25T11:08:53.178049+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=gravitational-wave-detection condition=selected
+2026-08-25T11:27:13.686364+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=glm-lake-mendota condition=selected status=completed
+2026-08-25T11:27:13.693622+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=glm-lake-mendota condition=selected
+2026-08-25T11:54:08.025542+00:00 ERROR operation=run batch=single_Selected_Run001 repeat=1 task=gravitational-wave-detection condition=selected status=trial_error
+2026-08-25T11:54:08.034810+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=gravitational-wave-detection condition=selected
+2026-08-25T12:25:55.243504+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=gravitational-wave-detection condition=selected status=completed
+2026-08-25T12:25:55.255875+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=gravitational-wave-detection condition=selected
+2026-08-25T12:29:22.377640+00:00 ERROR operation=run batch=single_Selected_Run001 repeat=3 task=glm-lake-mendota condition=selected status=trial_error
+2026-08-25T12:29:22.389049+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=grid-dispatch-operator condition=selected
+2026-08-25T12:52:52.813352+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=gravitational-wave-detection condition=selected status=completed
+2026-08-25T12:52:52.825120+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=hf-model-inference condition=selected
+2026-08-25T12:55:27.775697+00:00 ERROR operation=run batch=single_Selected_Run001 repeat=1 task=grid-dispatch-operator condition=selected status=trial_error
+2026-08-25T12:55:27.785786+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=grid-dispatch-operator condition=selected
+2026-08-25T12:59:47.383898+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=hf-model-inference condition=selected status=completed
+2026-08-25T12:59:47.408631+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=hf-model-inference condition=selected
+2026-08-25T13:04:31.037334+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=grid-dispatch-operator condition=selected status=completed
+2026-08-25T13:04:31.047575+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=grid-dispatch-operator condition=selected
+2026-08-25T13:12:21.392906+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=hf-model-inference condition=selected status=completed
+2026-08-25T13:12:21.398997+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=hf-model-inference condition=selected
+2026-08-25T13:41:24.719380+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=hf-model-inference condition=selected status=completed
+2026-08-25T13:41:24.724951+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=invoice-fraud-detection condition=selected
+2026-08-25T13:45:57.856529+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=invoice-fraud-detection condition=selected status=completed
+2026-08-25T13:45:57.862641+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=invoice-fraud-detection condition=selected
+2026-08-25T13:48:00.715376+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=invoice-fraud-detection condition=selected status=completed
+2026-08-25T13:48:00.720280+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=invoice-fraud-detection condition=selected
+2026-08-25T13:49:40.604483+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=invoice-fraud-detection condition=selected status=completed
+2026-08-25T13:49:40.610746+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=jpg-ocr-stat condition=selected
+2026-08-25T14:02:39.308962+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=1 task=jpg-ocr-stat condition=selected status=completed
+2026-08-25T14:02:39.315150+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=jpg-ocr-stat condition=selected
+2026-08-25T14:07:28.857193+00:00 ERROR operation=run batch=single_Selected_Run001 repeat=3 task=grid-dispatch-operator condition=selected status=trial_error
+2026-08-25T14:07:28.863291+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=llm-inference-batching-scheduler condition=selected
+2026-08-25T14:32:05.618104+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=jpg-ocr-stat condition=selected status=completed
+2026-08-25T14:32:05.632319+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=jpg-ocr-stat condition=selected
+2026-08-25T14:33:28.013727+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=llm-inference-batching-scheduler condition=selected status=completed
+2026-08-25T14:33:28.019164+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=llm-inference-batching-scheduler condition=selected
+2026-08-25T14:40:14.057058+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=llm-inference-batching-scheduler condition=selected status=completed
+2026-08-25T14:40:14.062469+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=llm-inference-batching-scheduler condition=selected
+2026-08-25T14:50:26.504311+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=3 task=jpg-ocr-stat condition=selected status=completed
+2026-08-25T14:50:26.518824+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=log-summary-date-ranges condition=selected
+2026-08-25T14:54:29.049789+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=llm-inference-batching-scheduler condition=selected status=completed
+2026-08-25T14:54:29.055459+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=mario-coin-counting condition=selected
+2026-08-25T14:57:56.406450+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=log-summary-date-ranges condition=selected status=completed
+2026-08-25T14:57:56.412296+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=log-summary-date-ranges condition=selected
+2026-08-25T14:58:15.611619+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=mario-coin-counting condition=selected status=completed
+2026-08-25T14:58:15.617757+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=mario-coin-counting condition=selected
+2026-08-25T15:02:05.996884+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=mario-coin-counting condition=selected status=completed
+2026-08-25T15:02:06.002201+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=mario-coin-counting condition=selected
+2026-08-25T15:03:03.488041+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=log-summary-date-ranges condition=selected status=completed
+2026-08-25T15:03:03.492930+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=log-summary-date-ranges condition=selected
+2026-08-25T15:08:16.678384+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=mario-coin-counting condition=selected status=completed
+2026-08-25T15:08:16.686660+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=mars-clouds-clustering condition=selected
+2026-08-25T15:11:05.960800+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=log-summary-date-ranges condition=selected status=completed
+2026-08-25T15:11:05.968086+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=mteb-retrieve condition=selected
+2026-08-25T15:24:03.374928+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=mars-clouds-clustering condition=selected status=completed
+2026-08-25T15:24:03.384887+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=mars-clouds-clustering condition=selected
+2026-08-25T15:37:44.972761+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=mars-clouds-clustering condition=selected status=completed
+2026-08-25T15:37:44.985060+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=mars-clouds-clustering condition=selected
+2026-08-25T15:53:33.947518+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=mars-clouds-clustering condition=selected status=completed
+2026-08-25T15:53:33.959491+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=pdf-excel-diff condition=selected
+2026-08-25T15:56:59.455084+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=pdf-excel-diff condition=selected status=completed
+2026-08-25T15:56:59.459993+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=pdf-excel-diff condition=selected
+2026-08-25T16:01:04.505126+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=pdf-excel-diff condition=selected status=completed
+2026-08-25T16:01:04.509716+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=pdf-excel-diff condition=selected
+2026-08-25T16:06:46.287034+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=pdf-excel-diff condition=selected status=completed
+2026-08-25T16:06:46.291589+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=portfolio-optimization condition=selected
+2026-08-25T16:13:23.291259+00:00 ERROR operation=run batch=single_Selected_Run001 repeat=1 task=mteb-retrieve condition=selected status=trial_error
+2026-08-25T16:13:23.296424+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=mteb-retrieve condition=selected
+2026-08-25T16:14:40.711829+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=portfolio-optimization condition=selected status=completed
+2026-08-25T16:14:40.717650+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=portfolio-optimization condition=selected
+2026-08-25T16:23:59.765129+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=portfolio-optimization condition=selected status=completed
+2026-08-25T16:23:59.771353+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=portfolio-optimization condition=selected
+2026-08-25T16:32:20.534039+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=portfolio-optimization condition=selected status=completed
+2026-08-25T16:32:20.546147+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=powerlifting-coef-calc condition=selected
+2026-08-25T16:36:15.896541+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=1 task=powerlifting-coef-calc condition=selected status=completed
+2026-08-25T16:36:15.900514+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=powerlifting-coef-calc condition=selected
+2026-08-25T16:40:09.301436+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=powerlifting-coef-calc condition=selected status=completed
+2026-08-25T16:40:09.307033+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=powerlifting-coef-calc condition=selected
+2026-08-25T16:44:08.014713+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=powerlifting-coef-calc condition=selected status=completed
+2026-08-25T16:44:08.021129+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=protein-expression-analysis condition=selected
+2026-08-25T16:45:36.544370+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=1 task=protein-expression-analysis condition=selected status=completed
+2026-08-25T16:45:36.553084+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=protein-expression-analysis condition=selected
+2026-08-25T16:47:42.357381+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=protein-expression-analysis condition=selected status=completed
+2026-08-25T16:47:42.362168+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=protein-expression-analysis condition=selected
+2026-08-25T16:54:16.578086+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=protein-expression-analysis condition=selected status=completed
+2026-08-25T16:54:16.585710+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=quantum-numerical-simulation condition=selected
+2026-08-25T16:59:22.500916+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=1 task=quantum-numerical-simulation condition=selected status=completed
+2026-08-25T16:59:22.506237+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=quantum-numerical-simulation condition=selected
+2026-08-25T17:16:30.172482+00:00 ERROR operation=run batch=single_Selected_Run001 repeat=2 task=mteb-retrieve condition=selected status=trial_error
+2026-08-25T17:16:30.179651+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=mteb-retrieve condition=selected
+2026-08-25T18:08:53.674489+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=mteb-retrieve condition=selected status=completed
+2026-08-25T18:08:53.681000+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=sales-pivot-analysis condition=selected
+2026-08-25T18:11:37.929324+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=1 task=sales-pivot-analysis condition=selected status=completed
+2026-08-25T18:11:37.941870+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=sales-pivot-analysis condition=selected
+2026-08-25T18:14:20.597938+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=sales-pivot-analysis condition=selected status=completed
+2026-08-25T18:14:20.603719+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=sales-pivot-analysis condition=selected
+2026-08-25T18:17:25.628104+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=3 task=sales-pivot-analysis condition=selected status=completed
+2026-08-25T18:17:25.638001+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=software-dependency-audit condition=selected
+2026-08-25T18:19:21.487471+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=1 task=software-dependency-audit condition=selected status=completed
+2026-08-25T18:19:21.505619+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=software-dependency-audit condition=selected
+2026-08-25T18:21:05.294225+00:00 ERROR operation=run batch=single_Selected_Run001 repeat=2 task=quantum-numerical-simulation condition=selected status=trial_error
+2026-08-25T18:21:05.298736+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=quantum-numerical-simulation condition=selected
+2026-08-25T18:26:22.898733+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=3 task=quantum-numerical-simulation condition=selected status=completed
+2026-08-25T18:26:22.903457+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=train-fasttext condition=selected
+2026-08-25T18:33:43.011891+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=software-dependency-audit condition=selected status=completed
+2026-08-25T18:33:43.018942+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=software-dependency-audit condition=selected
+2026-08-25T18:45:51.005801+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=3 task=software-dependency-audit condition=selected status=completed
+2026-08-25T18:45:51.012019+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=video-silence-remover condition=selected
+2026-08-25T18:50:53.113268+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=1 task=video-silence-remover condition=selected status=completed
+2026-08-25T18:50:53.120922+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=video-silence-remover condition=selected
+2026-08-25T18:52:28.668600+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=train-fasttext condition=selected status=completed
+2026-08-25T18:52:28.673434+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=train-fasttext condition=selected
+2026-08-25T18:59:17.499268+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=video-silence-remover condition=selected status=completed
+2026-08-25T18:59:17.506935+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=video-silence-remover condition=selected
+2026-08-25T19:08:21.980906+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=3 task=video-silence-remover condition=selected status=completed
+2026-08-25T19:08:21.988984+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=virtualhome-agent-planning condition=selected
+2026-08-25T19:11:02.784180+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=virtualhome-agent-planning condition=selected status=completed
+2026-08-25T19:11:02.804008+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=virtualhome-agent-planning condition=selected
+2026-08-25T19:13:11.462200+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=virtualhome-agent-planning condition=selected status=completed
+2026-08-25T19:13:11.476159+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=virtualhome-agent-planning condition=selected
+2026-08-25T19:15:52.559141+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=3 task=virtualhome-agent-planning condition=selected status=completed
+2026-08-25T19:15:52.575998+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=weighted-gdp-calc condition=selected
+2026-08-25T19:20:56.368384+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=weighted-gdp-calc condition=selected status=completed
+2026-08-25T19:20:56.373359+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=weighted-gdp-calc condition=selected
+2026-08-25T19:27:04.242856+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=weighted-gdp-calc condition=selected status=completed
+2026-08-25T19:27:04.248751+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=weighted-gdp-calc condition=selected
+2026-08-25T19:31:54.755061+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=weighted-gdp-calc condition=selected status=completed
+2026-08-25T20:13:51.856309+00:00 ERROR operation=run batch=single_Selected_Run001 repeat=2 task=train-fasttext condition=selected status=trial_error
+2026-08-25T20:13:51.861727+00:00 START operation=run batch=single_Selected_Run001 repeat=3 task=train-fasttext condition=selected
+2026-08-25T20:30:18.955691+00:00 PASS operation=run batch=single_Selected_Run001 repeat=3 task=train-fasttext condition=selected status=completed
+2026-08-26T01:07:00.121584+00:00 START operation=rerun batch=single_Selected_Run001 repeat=1 task=grid-dispatch-operator condition=selected
+2026-08-26T01:17:21.247264+00:00 PASS operation=rerun batch=single_Selected_Run001 repeat=1 task=grid-dispatch-operator condition=selected status=completed
+2026-08-26T05:42:35.836036+00:00 START operation=rerun batch=single_Selected_Run001 repeat=2 task=mteb-retrieve condition=selected
+2026-08-26T05:50:50.750282+00:00 FAIL operation=rerun batch=single_Selected_Run001 repeat=2 task=mteb-retrieve condition=selected status=completed
+2026-08-26T05:55:22.094725+00:00 START operation=rerun batch=single_Selected_Run001 repeat=3 task=mteb-retrieve condition=selected
+2026-08-26T06:25:52.082804+00:00 FAIL operation=rerun batch=single_Selected_Run001 repeat=3 task=mteb-retrieve condition=selected status=completed
+2026-08-26T07:27:02.918358+00:00 START operation=rerun batch=single_Selected_Run001 repeat=1 task=mteb-retrieve condition=selected
+2026-08-26T08:30:37.963306+00:00 ERROR operation=rerun batch=single_Selected_Run001 repeat=1 task=mteb-retrieve condition=selected status=trial_error
+2026-08-26T08:40:52.162187+00:00 START operation=rerun batch=single_Selected_Run001 repeat=1 task=mteb-retrieve condition=selected
+2026-08-26T08:56:59.606137+00:00 FAIL operation=rerun batch=single_Selected_Run001 repeat=1 task=mteb-retrieve condition=selected status=completed

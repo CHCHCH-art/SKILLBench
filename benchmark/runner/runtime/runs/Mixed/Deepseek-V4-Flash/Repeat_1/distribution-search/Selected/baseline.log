@@ -1,0 +1,28 @@
+2026-08-25T09:02:33.815442+00:00 START operation=run batch=single_Selected_Run002 repeat=1 task=distribution-search condition=selected image=benchmark-cache/distribution-search-gold:430ae95bb5beb0fc provided_skills=["affaan-m--article-writing", "chaterm--rsync", "Dicklesworthstone--dcg", "jeremylongshore--typeorm-entity-generator", "jk-0001--goal-setting-okrs", "logit-distribution-kl-optimization", "petekp--agent-changelog", "protein-group-statistics-foldchange-formulas", "three-level-count-search-materialization", "three-level-kl-distribution-solver"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:04:07 0:00:00
+selected • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 7s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_1\distribution-search\Selected\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_1\distribution-search\Selected`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_1\distribution-search\Selected\Job_result`
+
+2026-08-25T09:06:43.137886+00:00 PASS operation=run batch=single_Selected_Run002 repeat=1 task=distribution-search condition=selected

@@ -1,0 +1,67 @@
+{
+  "schema_version": 6,
+  "task_id": "mars-clouds-clustering",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 395.1,
+    "peak_memory_raw": "395.1MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.604,
+    "agent_setup_sec": 1.265,
+    "agent_execution_sec": 827.434,
+    "verifier_sec": 1.289,
+    "total_sec": 837.629
+  },
+  "llm_cost_usd": 0.013529384,
+  "agent_input_tokens": 214606,
+  "agent_output_tokens": 3239,
+  "image_cache": {
+    "image": "benchmark-cache/mars-clouds-clustering-gold:b70cf811266787f2",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "manual-weighted-dbscan-image-evaluation",
+      "pareto-grid-search-selection"
+    ],
+    "available_skills": [
+      "manual-weighted-dbscan-image-evaluation",
+      "pareto-grid-search-selection"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "mars-clouds-clustering__Cf6wg6y",
+        "passed": true,
+        "provided_skills": [
+          "manual-weighted-dbscan-image-evaluation",
+          "pareto-grid-search-selection"
+        ],
+        "available_skills": [
+          "manual-weighted-dbscan-image-evaluation",
+          "pareto-grid-search-selection"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

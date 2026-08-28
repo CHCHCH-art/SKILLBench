@@ -1,0 +1,101 @@
+{
+  "schema_version": 6,
+  "task_id": "distribution-search",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 99.41,
+    "peak_memory_raw": "99.41MiB",
+    "error": "EOF",
+    "container_name_hint": "distribution-search"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.528,
+    "agent_setup_sec": 0.75,
+    "agent_execution_sec": 181.505,
+    "verifier_sec": 58.18,
+    "total_sec": 247.548
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 269287,
+  "agent_output_tokens": 11906,
+  "image_cache": {
+    "image": "benchmark-cache/distribution-search-gold:430ae95bb5beb0fc",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "Dicklesworthstone--dcg",
+      "affaan-m--article-writing",
+      "chaterm--rsync",
+      "jeremylongshore--typeorm-entity-generator",
+      "jk-0001--goal-setting-okrs",
+      "logit-distribution-kl-optimization",
+      "petekp--agent-changelog",
+      "protein-group-statistics-foldchange-formulas",
+      "three-level-count-search-materialization",
+      "three-level-kl-distribution-solver"
+    ],
+    "available_skills": [
+      "Dicklesworthstone--dcg",
+      "affaan-m--article-writing",
+      "chaterm--rsync",
+      "jeremylongshore--typeorm-entity-generator",
+      "jk-0001--goal-setting-okrs",
+      "logit-distribution-kl-optimization",
+      "petekp--agent-changelog",
+      "protein-group-statistics-foldchange-formulas",
+      "three-level-count-search-materialization",
+      "three-level-kl-distribution-solver"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "distribution-search__dDGNJUt",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "Dicklesworthstone--dcg",
+          "affaan-m--article-writing",
+          "chaterm--rsync",
+          "jeremylongshore--typeorm-entity-generator",
+          "jk-0001--goal-setting-okrs",
+          "logit-distribution-kl-optimization",
+          "petekp--agent-changelog",
+          "protein-group-statistics-foldchange-formulas",
+          "three-level-count-search-materialization",
+          "three-level-kl-distribution-solver"
+        ],
+        "available_skills": [
+          "Dicklesworthstone--dcg",
+          "affaan-m--article-writing",
+          "chaterm--rsync",
+          "jeremylongshore--typeorm-entity-generator",
+          "jk-0001--goal-setting-okrs",
+          "logit-distribution-kl-optimization",
+          "petekp--agent-changelog",
+          "protein-group-statistics-foldchange-formulas",
+          "three-level-count-search-materialization",
+          "three-level-kl-distribution-solver"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

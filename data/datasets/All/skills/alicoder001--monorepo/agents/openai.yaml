@@ -1,0 +1,4 @@
+version: 1
+display_name: "Monorepo"
+short_description: "Monorepo architecture patterns with Turborepo, pnpm workspaces, and shared packages. Use when setting up multi-package repositories, shar..."
+default_prompt: "Use this skill when: Monorepo architecture patterns with Turborepo, pnpm workspaces, and shared packages. Use when setting up multi-package repositories, shared libraries, or micro-frontend architectures."

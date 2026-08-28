@@ -1,0 +1,60 @@
+{
+  "schema_version": 6,
+  "task_id": "train-fasttext",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 1,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "error",
+  "passed": false,
+  "error": {
+    "message": "Skill audit failed",
+    "skill_audit": {
+      "passed": false,
+      "provided_skills": [
+        "deterministic-fasttext-search-split",
+        "fasttext-constrained-autotune-selection"
+      ],
+      "available_skills": [],
+      "loaded_skills": [],
+      "trials": [],
+      "error": "No trajectory.json found under E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\runs\\single_High Cost_Run003\\Repeat_1\\train-fasttext\\High_cost\\Job_result"
+    }
+  },
+  "failure_reason": "test_outputs.py::test_accuracy: assert 0.599675 > 0.62",
+  "peak_memory": {
+    "peak_memory_mib": 3694.592,
+    "peak_memory_raw": "3.608GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.636,
+    "agent_setup_sec": 0.681,
+    "agent_execution_sec": 3366.15,
+    "verifier_sec": 157.523,
+    "total_sec": 3530.707
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 4817578,
+  "agent_output_tokens": 10460,
+  "image_cache": {
+    "image": "benchmark-cache/train-fasttext-gold:61266fd7d3d7eaea",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": false,
+    "provided_skills": [
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection"
+    ],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [],
+    "error": "No trajectory.json found under E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\runs\\single_High Cost_Run003\\Repeat_1\\train-fasttext\\High_cost\\Job_result"
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

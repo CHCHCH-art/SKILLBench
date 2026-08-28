@@ -1,0 +1,28 @@
+2026-08-20T21:49:03.189147+00:00 START operation=run batch=single_Standard_Run002 repeat=1 task=powerlifting-coef-calc condition=standard image=benchmark-cache/powerlifting-coef-calc-gold:0fef2731a5e5d6d2 provided_skills=["dots-coefficient-excel-formula", "powerlifting-workbook-formula-population"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:01:47 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 1m 47s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_1\powerlifting-coef-calc\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_1\powerlifting-coef-calc\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_1\powerlifting-coef-calc\Standard\Job_result`
+
+2026-08-20T21:50:52.047184+00:00 PASS operation=run batch=single_Standard_Run002 repeat=1 task=powerlifting-coef-calc condition=standard

@@ -1,0 +1,67 @@
+{
+  "schema_version": 6,
+  "task_id": "glm-lake-mendota",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 1,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 250.2,
+    "peak_memory_raw": "250.2MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.636,
+    "agent_setup_sec": 0.707,
+    "agent_execution_sec": 354.878,
+    "verifier_sec": 9.461,
+    "total_sec": 372.012
+  },
+  "llm_cost_usd": 0.046982128,
+  "agent_input_tokens": 684524,
+  "agent_output_tokens": 16194,
+  "image_cache": {
+    "image": "benchmark-cache/glm-lake-mendota-gold:cfbcca189cbdcde0",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "glm-observation-profile-evaluation",
+      "lake-temperature-glm-staged-calibration"
+    ],
+    "available_skills": [
+      "glm-observation-profile-evaluation",
+      "lake-temperature-glm-staged-calibration"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "glm-lake-mendota__rGiffXT",
+        "passed": true,
+        "provided_skills": [
+          "glm-observation-profile-evaluation",
+          "lake-temperature-glm-staged-calibration"
+        ],
+        "available_skills": [
+          "glm-observation-profile-evaluation",
+          "lake-temperature-glm-staged-calibration"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

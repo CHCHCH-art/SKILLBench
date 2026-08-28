@@ -1,0 +1,28 @@
+2026-08-17T17:05:08.063627+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=log-summary-date-ranges condition=high_cost image=benchmark-cache/log-summary-date-ranges-gold:e28534907986406f provided_skills=["dated-log-severity-summary"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:11 0:00:00
+high_cost • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 11s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\log-summary-date-ranges\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\log-summary-date-ranges\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\log-summary-date-ranges\High_cost\Job_result`
+
+2026-08-17T17:07:20.564539+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=log-summary-date-ranges condition=high_cost

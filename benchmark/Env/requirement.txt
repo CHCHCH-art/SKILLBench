@@ -1,0 +1,11 @@
+docker build -t skillservebench:latest -f src\base_service\docker\Dockerfile .
+conda create -n qwen python=3.12 -y
+conda create -n qwen python=3.12 -y
+pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu118
+pip install harbor
+pip install transformers=5.12.1
+pip install sentence_transformers==5.6.0
+pip install openpyxl
+## Exe ###
+python -m pip install -e .
+Git Version: 2.53.0

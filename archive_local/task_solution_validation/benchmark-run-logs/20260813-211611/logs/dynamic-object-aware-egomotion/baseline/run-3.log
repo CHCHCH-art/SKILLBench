@@ -1,0 +1,107 @@
+Task: dynamic-object-aware-egomotion
+Source type: baseline
+Task run: 3
+Source run: 3
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\dynamic-object-aware-egomotion
+
+========== Repeated Run 3/4 ==========
+
+========== Run solve.sh ==========
+Sampling frames...
+Sampled 18 frames
+Computing motion analysis with improved mask detection...
+
+Final instructions:
+  0->6: ['Dolly In']
+  6->18: ['Dolly In', 'Pan Right']
+
+Saving outputs...
+
+Done!
+
+========== Run test.sh ==========
+Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.5.0-2ubuntu10.11).
+0 upgraded, 0 newly installed, 0 to remove and 22 not upgraded.
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0 -- /root/.cache/uv/archive-v0/uZnaQ3C37TD1cfr35RTeB/bin/python
+cachedir: .pytest_cache
+rootdir: /
+plugins: json-ctrf-0.3.5
+collecting ... collected 10 items
+
+../tests/test_outputs.py::TestOutputFilesExist::test_pred_instructions_exists PASSED [ 10%]
+../tests/test_outputs.py::TestOutputFilesExist::test_dyn_masks_exists PASSED [ 20%]
+../tests/test_outputs.py::TestInstructionsFormat::test_is_dict PASSED    [ 30%]
+../tests/test_outputs.py::TestInstructionsFormat::test_keys_format PASSED [ 40%]
+../tests/test_outputs.py::TestInstructionsFormat::test_valid_labels PASSED [ 50%]
+../tests/test_outputs.py::TestDynMasksFormat::test_has_shape PASSED      [ 60%]
+../tests/test_outputs.py::TestDynMasksFormat::test_shape_valid PASSED    [ 70%]
+../tests/test_outputs.py::TestDynMasksFormat::test_frame_components PASSED [ 80%]
+../tests/test_outputs.py::TestMotionAccuracy::test_motion_macro_f1 PASSED [ 90%]
+../tests/test_outputs.py::TestMaskAccuracy::test_mask_comprehensive PASSED [100%]
+
+==================================== PASSES ====================================
+___________________ TestMotionAccuracy.test_motion_macro_f1 ____________________
+----------------------------- Captured stdout call -----------------------------
+
+[MOTION] Macro-F1: 0.5373
+___________________ TestMaskAccuracy.test_mask_comprehensive ___________________
+----------------------------- Captured stdout call -----------------------------
+
+[MASK] Mean IoU: 0.1508 | P10 IoU: 0.0190
+[MASK] Boundary IoU: 0.0069 | Flicker: 0.093598
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestOutputFilesExist::test_pred_instructions_exists
+PASSED ../tests/test_outputs.py::TestOutputFilesExist::test_dyn_masks_exists
+PASSED ../tests/test_outputs.py::TestInstructionsFormat::test_is_dict
+PASSED ../tests/test_outputs.py::TestInstructionsFormat::test_keys_format
+PASSED ../tests/test_outputs.py::TestInstructionsFormat::test_valid_labels
+PASSED ../tests/test_outputs.py::TestDynMasksFormat::test_has_shape
+PASSED ../tests/test_outputs.py::TestDynMasksFormat::test_shape_valid
+PASSED ../tests/test_outputs.py::TestDynMasksFormat::test_frame_components
+PASSED ../tests/test_outputs.py::TestMotionAccuracy::test_motion_macro_f1
+PASSED ../tests/test_outputs.py::TestMaskAccuracy::test_mask_comprehensive
+============================== 10 passed in 0.78s ==============================
+Generating score.json...
+Error: Could not write score.json: Object of type int64 is not JSON serializable
+Traceback (most recent call last):
+  File "<stdin>", line 156, in <module>
+  File "/usr/lib/python3.12/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable
+
+========== Result ==========
+Task: dynamic-object-aware-egomotion
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 11.6s (exit 0)
+Test: 16.7s (exit 0)
+Solve Memory Peak: 349.9 MiB
+Test Memory Peak: 200.7 MiB

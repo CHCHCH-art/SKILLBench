@@ -1,0 +1,28 @@
+2026-08-20T19:10:02.167044+00:00 START operation=run batch=single_Standard_Run002 repeat=1 task=llm-inference-batching-scheduler condition=standard image=benchmark-cache/llm-inference-batching-scheduler-gold:c835608261b94b37 provided_skills=["generation-aware-dp-batch-splitting", "paired-plan-cost-threshold-selection", "shared-sequence-shape-selection"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:14:49 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 14m 49s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_1\llm-inference-batching-scheduler\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_1\llm-inference-batching-scheduler\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_1\llm-inference-batching-scheduler\Standard\Job_result`
+
+2026-08-20T19:24:53.458245+00:00 FAIL operation=run batch=single_Standard_Run002 repeat=1 task=llm-inference-batching-scheduler condition=standard

@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "dialogue-parser",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_graph_logic: AssertionError: Unreachable nodes found: ['End']...; test_outputs.py::test_visualization_validity: AssertionError: Choice nodes should be visualized as diamonds; test_outputs.py::test_content_integrity: AssertionError: Node 'KiraWarning' text mismatch. Expected fragment 'She's never failed a contract'; test_outputs.py::test_structural_integrity: AssertionError: Expected connection CrimsonQuestStart -> CrimsonWarning missing",
+  "peak_memory": {
+    "peak_memory_mib": 116.8,
+    "peak_memory_raw": "116.8MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.501,
+    "agent_setup_sec": 1.05,
+    "agent_execution_sec": 53.554,
+    "verifier_sec": 5.813,
+    "total_sec": 66.103
+  },
+  "llm_cost_usd": 0.0028743456,
+  "agent_input_tokens": 118216,
+  "agent_output_tokens": 3466,
+  "image_cache": {
+    "image": "benchmark-cache/dialogue-parser-gold:c0353fb4817c6884",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "dialogue-parser__BGKwAUU",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

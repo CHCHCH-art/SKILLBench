@@ -1,0 +1,71 @@
+{
+  "schema_version": 6,
+  "task_id": "llm-inference-batching-scheduler",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_solution_shape_feasibility_and_batch_consistency: assert 1920 >= 1984",
+  "peak_memory": {
+    "peak_memory_mib": 146.9,
+    "peak_memory_raw": "146.9MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.531,
+    "agent_setup_sec": 1.182,
+    "agent_execution_sec": 640.784,
+    "verifier_sec": 15.624,
+    "total_sec": 666.389
+  },
+  "llm_cost_usd": 0.18465689600000001,
+  "agent_input_tokens": 2737858,
+  "agent_output_tokens": 69482,
+  "image_cache": {
+    "image": "benchmark-cache/llm-inference-batching-scheduler-gold:c835608261b94b37",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "constrained-agglomerative-request-batching",
+      "shape-aware-batch-cost-model",
+      "shared-shape-dp-budget-closure"
+    ],
+    "available_skills": [
+      "constrained-agglomerative-request-batching",
+      "shape-aware-batch-cost-model",
+      "shared-shape-dp-budget-closure"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "llm-inference-batching-scheduler__xGfhVTD",
+        "passed": true,
+        "provided_skills": [
+          "constrained-agglomerative-request-batching",
+          "shape-aware-batch-cost-model",
+          "shared-shape-dp-budget-closure"
+        ],
+        "available_skills": [
+          "constrained-agglomerative-request-batching",
+          "shape-aware-batch-cost-model",
+          "shared-shape-dp-budget-closure"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

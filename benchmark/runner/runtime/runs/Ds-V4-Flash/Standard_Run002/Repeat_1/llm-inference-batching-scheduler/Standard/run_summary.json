@@ -1,0 +1,71 @@
+{
+  "schema_version": 6,
+  "task_id": "llm-inference-batching-scheduler",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_performance_thresholds: AssertionError: combined unique shapes 12 exceed cap 8",
+  "peak_memory": {
+    "peak_memory_mib": 146.4,
+    "peak_memory_raw": "146.4MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.48,
+    "agent_setup_sec": 0.946,
+    "agent_execution_sec": 870.02,
+    "verifier_sec": 9.378,
+    "total_sec": 889.692
+  },
+  "llm_cost_usd": 0.0683626272,
+  "agent_input_tokens": 5994404,
+  "agent_output_tokens": 98076,
+  "image_cache": {
+    "image": "benchmark-cache/llm-inference-batching-scheduler-gold:c835608261b94b37",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "generation-aware-dp-batch-splitting",
+      "paired-plan-cost-threshold-selection",
+      "shared-sequence-shape-selection"
+    ],
+    "available_skills": [
+      "generation-aware-dp-batch-splitting",
+      "paired-plan-cost-threshold-selection",
+      "shared-sequence-shape-selection"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "llm-inference-batching-scheduler__7oJyFGJ",
+        "passed": true,
+        "provided_skills": [
+          "generation-aware-dp-batch-splitting",
+          "paired-plan-cost-threshold-selection",
+          "shared-sequence-shape-selection"
+        ],
+        "available_skills": [
+          "generation-aware-dp-batch-splitting",
+          "paired-plan-cost-threshold-selection",
+          "shared-sequence-shape-selection"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

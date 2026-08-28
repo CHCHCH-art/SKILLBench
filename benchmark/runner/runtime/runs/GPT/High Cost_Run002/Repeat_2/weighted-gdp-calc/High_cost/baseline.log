@@ -1,0 +1,28 @@
+2026-08-18T04:40:17.531940+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=weighted-gdp-calc condition=high_cost image=benchmark-cache/weighted-gdp-calc-gold:9ffa98d58509b229 provided_skills=["formula-cache-ooxml-roundtrip-verification", "net-export-statistics-weighted-formulas", "ooxml-two-key-lookup-formula-population"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:06:55 0:00:00
+high_cost • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 6m 55s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run004\Repeat_2\weighted-gdp-calc\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run004\Repeat_2\weighted-gdp-calc\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run004\Repeat_2\weighted-gdp-calc\High_cost\Job_result`
+
+2026-08-18T04:47:14.501550+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=weighted-gdp-calc condition=high_cost

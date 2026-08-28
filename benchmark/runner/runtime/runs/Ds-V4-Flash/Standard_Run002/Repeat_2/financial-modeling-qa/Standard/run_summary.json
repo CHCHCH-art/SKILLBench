@@ -1,0 +1,71 @@
+{
+  "schema_version": 6,
+  "task_id": "financial-modeling-qa",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOutputs::test_answer_value_correct: AssertionError: Incorrect answer. Expected 23.0, got 24.0",
+  "peak_memory": {
+    "peak_memory_mib": 169.1,
+    "peak_memory_raw": "169.1MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.593,
+    "agent_setup_sec": 0.74,
+    "agent_execution_sec": 117.709,
+    "verifier_sec": 57.082,
+    "total_sec": 184.726
+  },
+  "llm_cost_usd": 0.0056458472,
+  "agent_input_tokens": 295977,
+  "agent_output_tokens": 7525,
+  "image_cache": {
+    "image": "benchmark-cache/financial-modeling-qa-gold:0fdb74de33d4be91",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "pdf-game-rule-object-extraction",
+      "sparse-ooxml-turn-record-recovery",
+      "unique-category-game-assignment"
+    ],
+    "available_skills": [
+      "pdf-game-rule-object-extraction",
+      "sparse-ooxml-turn-record-recovery",
+      "unique-category-game-assignment"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "financial-modeling-qa__c7zbura",
+        "passed": true,
+        "provided_skills": [
+          "pdf-game-rule-object-extraction",
+          "sparse-ooxml-turn-record-recovery",
+          "unique-category-game-assignment"
+        ],
+        "available_skills": [
+          "pdf-game-rule-object-extraction",
+          "sparse-ooxml-turn-record-recovery",
+          "unique-category-game-assignment"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

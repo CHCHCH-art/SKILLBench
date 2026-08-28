@@ -1,0 +1,28 @@
+2026-08-11T02:44:00.173756+00:00 START operation=rerun batch=single_No_skill_Run006 repeat=2 task=mteb-retrieve condition=no_skill image=benchmark-cache/mteb-retrieve-gold:d536211e5dc76ed5 provided_skills=[]
+  1/1 Mean: 0.000 ---------------------------------------- 0:24:21 0:00:00
+no_skill • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 24m 21s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run006\Repe
+at_2\mteb-retrieve\No_skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run006\Repe
+at_2\mteb-retrieve\No_skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run006\Repe
+at_2\mteb-retrieve\No_skill\Job_result`
+
+2026-08-11T03:08:24.807643+00:00 FAIL operation=rerun batch=single_No_skill_Run006 repeat=2 task=mteb-retrieve condition=no_skill

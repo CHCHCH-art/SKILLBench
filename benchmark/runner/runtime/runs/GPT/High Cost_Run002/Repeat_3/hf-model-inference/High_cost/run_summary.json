@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "hf-model-inference",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1080.32,
+    "peak_memory_raw": "1.055GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.803,
+    "agent_setup_sec": 1.145,
+    "agent_execution_sec": 276.013,
+    "verifier_sec": 60.853,
+    "total_sec": 350.46
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 329599,
+  "agent_output_tokens": 3851,
+  "image_cache": {
+    "image": "benchmark-cache/hf-model-inference-gold:5e2a59f453e212fb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization"
+    ],
+    "available_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization"
+    ],
+    "loaded_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization"
+    ],
+    "trials": [
+      {
+        "trial_id": "hf-model-inference__UBrQvrS",
+        "passed": true,
+        "provided_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization"
+        ],
+        "available_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization"
+        ],
+        "loaded_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "huggingface-local-model-materialization": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_LmXFRciJdkInYDNalrE3K0TV",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/huggingface-local-model-materialization/SKILL.md"
+            }
+          ],
+          "flask-sequence-classification-api": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_LmXFRciJdkInYDNalrE3K0TV",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/flask-sequence-classification-api/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

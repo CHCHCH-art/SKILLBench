@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "sales-pivot-analysis",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestPivotTableConfiguration::test_pivot_row_is_state: TypeError: RowColField.__init__() got an unexpected keyword argument 'axis'; test_outputs.py::TestPivotTableConfiguration::test_pivot_uses_correct_aggregation: TypeError: RowColField.__init__() got an unexpected keyword argument 'axis'; test_outputs.py::TestPivotTableConfiguration::test_pivot_col_field: TypeError: RowColField.__init__() got an unexpected keyword argument 'axis'; test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column: TypeError: RowColField.__init__() got an unexpected keyword argument 'axis'; test_outputs.py::TestSourceDataContent::test_source_data_has_reasonable_row_count: TypeError: RowColField.__init__() got an unexpected keyword argument 'axis'; test_outputs.py::TestSourceDataContent::test_quarter_values_are_valid: TypeError: RowColField.__init__() got an unexpected keyword argument 'axis'; test_outputs.py::TestSourceDataContent::test_state_values_are_valid: TypeError: RowColField.__init__() got an unexpected keyword argument 'axis'; test_outputs.py::TestDataTransformationCorrectness::test_pivot_cache_has_fields: TypeError: RowColField.__init__() got an unexpected keyword argument 'axis'; test_outputs.py::TestDataTransformationCorrectness::test_total_equals_earners_times_median_income: TypeError: RowColField.__init__() got an unexpected keyword argument 'axis'; test_outputs.py::TestDataTransformationCorrectness::test_sa2_codes_from_income_file_present: TypeError: RowColField.__init__() got an unexpected keyword argument 'axis'",
+  "peak_memory": {
+    "peak_memory_mib": 361.1,
+    "peak_memory_raw": "361.1MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.515,
+    "agent_setup_sec": 0.742,
+    "agent_execution_sec": 567.891,
+    "verifier_sec": 4.859,
+    "total_sec": 580.94
+  },
+  "llm_cost_usd": 0.0357030688,
+  "agent_input_tokens": 3392904,
+  "agent_output_tokens": 44970,
+  "image_cache": {
+    "image": "benchmark-cache/sales-pivot-analysis-gold:0de7e366d80d6ca8",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quartile-derived-enrichment",
+      "openpyxl-native-pivot-workbook"
+    ],
+    "available_skills": [
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quartile-derived-enrichment",
+      "openpyxl-native-pivot-workbook"
+    ],
+    "loaded_skills": [
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quartile-derived-enrichment",
+      "openpyxl-native-pivot-workbook"
+    ],
+    "trials": [
+      {
+        "trial_id": "sales-pivot-analysis__ygKrznT",
+        "passed": true,
+        "provided_skills": [
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quartile-derived-enrichment",
+          "openpyxl-native-pivot-workbook"
+        ],
+        "available_skills": [
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quartile-derived-enrichment",
+          "openpyxl-native-pivot-workbook"
+        ],
+        "loaded_skills": [
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quartile-derived-enrichment",
+          "openpyxl-native-pivot-workbook"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "openpyxl-native-pivot-workbook": [
+            {
+              "step_id": 14,
+              "tool_call_id": "call_712ee8e24da843a79e010e56",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/openpyxl-native-pivot-workbook/SKILL.md"
+            }
+          ],
+          "demographic-pdf-excel-normalization-join": [
+            {
+              "step_id": 14,
+              "tool_call_id": "call_712ee8e24da843a79e010e56",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/demographic-pdf-excel-normalization-join/SKILL.md"
+            }
+          ],
+          "demographic-quartile-derived-enrichment": [
+            {
+              "step_id": 14,
+              "tool_call_id": "call_712ee8e24da843a79e010e56",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/demographic-quartile-derived-enrichment/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

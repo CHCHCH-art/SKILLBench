@@ -1,0 +1,101 @@
+{
+  "schema_version": 6,
+  "task_id": "financial-modeling-qa",
+  "condition": "selected",
+  "batch": "single_Selected_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOutputs::test_answer_value_correct: AssertionError: Incorrect answer. Expected 23.0, got 24.0",
+  "peak_memory": {
+    "peak_memory_mib": 243.7,
+    "peak_memory_raw": "243.7MiB",
+    "error": "EOF",
+    "container_name_hint": "financial-modeling-q"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.673,
+    "agent_setup_sec": 1.144,
+    "agent_execution_sec": 167.95,
+    "verifier_sec": 88.281,
+    "total_sec": 264.998
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 361211,
+  "agent_output_tokens": 7843,
+  "image_cache": {
+    "image": "benchmark-cache/financial-modeling-qa-gold:0fdb74de33d4be91",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "1mangesh1--curl-http",
+      "bitmask-game-score-pairing",
+      "dice-turn-category-scoring",
+      "djankies--managing-local-vs-global-state",
+      "pdf-game-rule-object-extraction",
+      "pdf-rule-value-extraction",
+      "sparse-ooxml-turn-record-recovery",
+      "spreadsheet-turn-record-recovery",
+      "tech-leads-club--react-best-practices",
+      "unique-category-game-assignment"
+    ],
+    "available_skills": [
+      "1mangesh1--curl-http",
+      "bitmask-game-score-pairing",
+      "dice-turn-category-scoring",
+      "djankies--managing-local-vs-global-state",
+      "pdf-game-rule-object-extraction",
+      "pdf-rule-value-extraction",
+      "sparse-ooxml-turn-record-recovery",
+      "spreadsheet-turn-record-recovery",
+      "tech-leads-club--react-best-practices",
+      "unique-category-game-assignment"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "financial-modeling-qa__hzdPX9a",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "1mangesh1--curl-http",
+          "bitmask-game-score-pairing",
+          "dice-turn-category-scoring",
+          "djankies--managing-local-vs-global-state",
+          "pdf-game-rule-object-extraction",
+          "pdf-rule-value-extraction",
+          "sparse-ooxml-turn-record-recovery",
+          "spreadsheet-turn-record-recovery",
+          "tech-leads-club--react-best-practices",
+          "unique-category-game-assignment"
+        ],
+        "available_skills": [
+          "1mangesh1--curl-http",
+          "bitmask-game-score-pairing",
+          "dice-turn-category-scoring",
+          "djankies--managing-local-vs-global-state",
+          "pdf-game-rule-object-extraction",
+          "pdf-rule-value-extraction",
+          "sparse-ooxml-turn-record-recovery",
+          "spreadsheet-turn-record-recovery",
+          "tech-leads-club--react-best-practices",
+          "unique-category-game-assignment"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

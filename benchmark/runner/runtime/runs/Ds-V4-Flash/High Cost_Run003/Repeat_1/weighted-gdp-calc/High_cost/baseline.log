@@ -1,0 +1,29 @@
+2026-08-22T13:58:08.832512+00:00 START operation=rerun batch=single_High Cost_Run003 repeat=1 task=weighted-gdp-calc condition=high_cost image=benchmark-cache/weighted-gdp-calc-gold:9ffa98d58509b229 provided_skills=["formula-cache-ooxml-roundtrip-verification", "net-export-statistics-weighted-formulas", "ooxml-two-key-lookup-formula-population"]
+[92m22:01:30 - LiteLLM:WARNING[0m: get_model_cost_map.py:264 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: _ssl.c:993: The handshake operation timed out. Falling back to local backup.
+  1/1 Mean: 0.000 ---------------------------------------- 0:16:36 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 16m 36s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_1\weighted-gdp-calc\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_1\weighted-gdp-calc\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_1\weighted-gdp-calc\High_cost\Job_result`
+
+2026-08-22T14:14:46.728318+00:00 FAIL operation=rerun batch=single_High Cost_Run003 repeat=1 task=weighted-gdp-calc condition=high_cost

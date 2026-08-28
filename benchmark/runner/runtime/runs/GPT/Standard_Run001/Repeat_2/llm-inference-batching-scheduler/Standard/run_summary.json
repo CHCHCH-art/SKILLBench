@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "llm-inference-batching-scheduler",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 77.07,
+    "peak_memory_raw": "77.07MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.777,
+    "agent_setup_sec": 0.903,
+    "agent_execution_sec": 113.632,
+    "verifier_sec": 29.628,
+    "total_sec": 155.098
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 126975,
+  "agent_output_tokens": 4162,
+  "image_cache": {
+    "image": "benchmark-cache/llm-inference-batching-scheduler-gold:c835608261b94b37",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "generation-aware-dp-batch-splitting",
+      "paired-plan-cost-threshold-selection",
+      "shared-sequence-shape-selection"
+    ],
+    "available_skills": [
+      "generation-aware-dp-batch-splitting",
+      "paired-plan-cost-threshold-selection",
+      "shared-sequence-shape-selection"
+    ],
+    "loaded_skills": [
+      "generation-aware-dp-batch-splitting",
+      "paired-plan-cost-threshold-selection",
+      "shared-sequence-shape-selection"
+    ],
+    "trials": [
+      {
+        "trial_id": "llm-inference-batching-scheduler__dTMcycJ",
+        "passed": true,
+        "provided_skills": [
+          "generation-aware-dp-batch-splitting",
+          "paired-plan-cost-threshold-selection",
+          "shared-sequence-shape-selection"
+        ],
+        "available_skills": [
+          "generation-aware-dp-batch-splitting",
+          "paired-plan-cost-threshold-selection",
+          "shared-sequence-shape-selection"
+        ],
+        "loaded_skills": [
+          "generation-aware-dp-batch-splitting",
+          "paired-plan-cost-threshold-selection",
+          "shared-sequence-shape-selection"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "generation-aware-dp-batch-splitting": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_xawRlXUBiMmmNbFSW98W6qzN",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/generation-aware-dp-batch-splitting/SKILL.md"
+            }
+          ],
+          "paired-plan-cost-threshold-selection": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_xawRlXUBiMmmNbFSW98W6qzN",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/paired-plan-cost-threshold-selection/SKILL.md"
+            }
+          ],
+          "shared-sequence-shape-selection": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_xawRlXUBiMmmNbFSW98W6qzN",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/shared-sequence-shape-selection/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

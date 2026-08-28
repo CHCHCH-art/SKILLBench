@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "energy-ac-optimal-power-flow",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestSchema::test_top_level_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_summary_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_generator_count: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_generator_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_bus_count: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_bus_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_most_loaded_branches: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_feasibility_check_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_solver_status: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_voltage_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_generator_p_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_generator_q_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_reference_angle: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_power_balance_acopf: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_branch_limits_and_angle_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_branch_current_limits: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_internal_consistency_generation: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_internal_consistency_losses: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_losses_reasonable: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_no_voltage_violations: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_no_branch_overloads: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestOptimality::test_cost_is_positive: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestOptimality::test_cost_matches_gencost: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestOptimality::test_cost_within_10pct_of_solved_acopf: AssertionError: Output file /root/report.json does not exist",
+  "peak_memory": {
+    "peak_memory_mib": 1951.744,
+    "peak_memory_raw": "1.906GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.547,
+    "agent_setup_sec": 1.297,
+    "agent_execution_sec": 642.126,
+    "verifier_sec": 107.711,
+    "total_sec": 760.264
+  },
+  "llm_cost_usd": 0.0364949872,
+  "agent_input_tokens": 1813094,
+  "agent_output_tokens": 52198,
+  "image_cache": {
+    "image": "benchmark-cache/energy-ac-optimal-power-flow-gold:131fccb5858c984c",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "acopf-feasibility-loading-report",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve"
+    ],
+    "available_skills": [
+      "acopf-feasibility-loading-report",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve"
+    ],
+    "loaded_skills": [
+      "acopf-feasibility-loading-report",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-ac-optimal-power-flow__Zi8KQ48",
+        "passed": true,
+        "provided_skills": [
+          "acopf-feasibility-loading-report",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve"
+        ],
+        "available_skills": [
+          "acopf-feasibility-loading-report",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve"
+        ],
+        "loaded_skills": [
+          "acopf-feasibility-loading-report",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "casadi-acopf-pi-network-formulation": [
+            {
+              "step_id": 8,
+              "tool_call_id": "call_9cea2091599341e199f34e73",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/casadi-acopf-pi-network-formulation/SKILL.md"
+            }
+          ],
+          "ipopt-acopf-reference-solve": [
+            {
+              "step_id": 9,
+              "tool_call_id": "call_e8cb6b77001842a182767abf",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/ipopt-acopf-reference-solve/SKILL.md"
+            }
+          ],
+          "acopf-feasibility-loading-report": [
+            {
+              "step_id": 10,
+              "tool_call_id": "call_80a1895933f243d4a84bb195",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/acopf-feasibility-loading-report/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

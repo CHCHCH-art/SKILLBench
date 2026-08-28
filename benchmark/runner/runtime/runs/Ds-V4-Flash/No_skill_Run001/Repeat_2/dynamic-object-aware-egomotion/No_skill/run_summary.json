@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "dynamic-object-aware-egomotion",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestMotionAccuracy::test_motion_macro_f1: assert np.float64(0.2745098039215686) >= 0.5",
+  "peak_memory": {
+    "peak_memory_mib": 460.9,
+    "peak_memory_raw": "460.9MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.412,
+    "agent_setup_sec": 0.558,
+    "agent_execution_sec": 738.267,
+    "verifier_sec": 180.504,
+    "total_sec": 925.217
+  },
+  "llm_cost_usd": 0.03769584,
+  "agent_input_tokens": 2850374,
+  "agent_output_tokens": 54785,
+  "image_cache": {
+    "image": "benchmark-cache/dynamic-object-aware-egomotion-gold:fc972e99cd5a2204",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "dynamic-object-aware-egomotion__UjPr43V",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

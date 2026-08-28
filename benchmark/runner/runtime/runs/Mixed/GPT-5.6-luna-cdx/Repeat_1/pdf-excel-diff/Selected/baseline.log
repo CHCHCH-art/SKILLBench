@@ -1,0 +1,28 @@
+2026-08-25T15:53:33.967841+00:00 START operation=run batch=single_Selected_Run001 repeat=1 task=pdf-excel-diff condition=selected image=benchmark-cache/pdf-excel-diff-gold:d574cd2f86bbbcb0 provided_skills=["giuseppe-trisciuoglio--unit-test-parameterized", "googleworkspace--recipe-create-gmail-filter", "keyed-record-diff-normalization", "pdf-record-table-extraction", "pdf-table-structural-guard-and-extraction", "pjt222--draft-project-charter", "rileyhilliard--visualizing-with-mermaid", "team-attention--session-analyzer", "typed-record-diff-json", "zenobi-us--api-documenter"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:03:24 0:00:00
+selected • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 24s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run001\Repe
+at_1\pdf-excel-diff\Selected\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run001\Repe
+at_1\pdf-excel-diff\Selected`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run001\Repe
+at_1\pdf-excel-diff\Selected\Job_result`
+
+2026-08-25T15:56:59.455084+00:00 PASS operation=run batch=single_Selected_Run001 repeat=1 task=pdf-excel-diff condition=selected

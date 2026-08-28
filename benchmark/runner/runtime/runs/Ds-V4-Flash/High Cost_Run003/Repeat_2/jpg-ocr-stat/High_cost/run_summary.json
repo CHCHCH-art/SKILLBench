@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "jpg-ocr-stat",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 134.4,
+    "peak_memory_raw": "134.4MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.566,
+    "agent_setup_sec": 1.281,
+    "agent_execution_sec": 595.14,
+    "verifier_sec": 44.664,
+    "total_sec": 648.097
+  },
+  "llm_cost_usd": 0.101344192,
+  "agent_input_tokens": 1692620,
+  "agent_output_tokens": 34964,
+  "image_cache": {
+    "image": "benchmark-cache/jpg-ocr-stat-gold:2312eeab86c89737",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "receipt-date-total-excel-serialization",
+      "receipt-multivariant-ocr-extraction"
+    ],
+    "available_skills": [
+      "receipt-date-total-excel-serialization",
+      "receipt-multivariant-ocr-extraction"
+    ],
+    "loaded_skills": [
+      "receipt-date-total-excel-serialization",
+      "receipt-multivariant-ocr-extraction"
+    ],
+    "trials": [
+      {
+        "trial_id": "jpg-ocr-stat__LbBAsc6",
+        "passed": true,
+        "provided_skills": [
+          "receipt-date-total-excel-serialization",
+          "receipt-multivariant-ocr-extraction"
+        ],
+        "available_skills": [
+          "receipt-date-total-excel-serialization",
+          "receipt-multivariant-ocr-extraction"
+        ],
+        "loaded_skills": [
+          "receipt-date-total-excel-serialization",
+          "receipt-multivariant-ocr-extraction"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "receipt-multivariant-ocr-extraction": [
+            {
+              "step_id": 21,
+              "tool_call_id": "call_1026b80654e5431290c55e3f",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/receipt-multivariant-ocr-extraction/SKILL.md"
+            }
+          ],
+          "receipt-date-total-excel-serialization": [
+            {
+              "step_id": 22,
+              "tool_call_id": "call_af2906e854b84f71a8353c76",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/receipt-date-total-excel-serialization/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

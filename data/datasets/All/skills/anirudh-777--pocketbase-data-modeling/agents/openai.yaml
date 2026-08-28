@@ -1,0 +1,4 @@
+interface:
+  display_name: "PocketBase Data Modeling"
+  short_description: "Design collections, relations, indexes, and migration plans"
+  default_prompt: "Design a PocketBase schema for this feature, including relation strategy, indexes, and a safe migration sequence."

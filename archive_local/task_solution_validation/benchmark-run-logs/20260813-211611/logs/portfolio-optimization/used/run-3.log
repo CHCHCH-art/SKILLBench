@@ -1,0 +1,86 @@
+Task: portfolio-optimization
+Source type: used
+Task run: 7
+Source run: 3
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\portfolio-optimization
+
+========== Repeated Run 3/4 ==========
+
+========== Run solve.sh ==========
+running build_ext
+building 'portfolio_optimized_c' extension
+gcc -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall -fPIC -I/usr/local/lib/python3.13/site-packages/numpy/_core/include -I/usr/local/include/python3.13 -c portfolio_optimized.c -o build/temp.linux-x86_64-cpython-313/portfolio_optimized.o -O3 -ffast-math -funroll-loops
+gcc -shared build/temp.linux-x86_64-cpython-313/portfolio_optimized.o -L/usr/local/lib -o build/lib.linux-x86_64-cpython-313/portfolio_optimized_c.cpython-313-x86_64-linux-gnu.so
+copying build/lib.linux-x86_64-cpython-313/portfolio_optimized_c.cpython-313-x86_64-linux-gnu.so -> 
+Portfolio Optimization Benchmark
+========================================
+
+Testing portfolio size: 5000 assets
+------------------------------
+Python baseline time: 1087.2 ms
+Risk - Python: 0.022532625110, C: 0.022532625110, diff: 1.39e-17
+Return - Python: 0.100448895074, C: 0.100448895074, diff: 5.55e-17
+Correctness test PASSED
+C optimized time: 630.4 ms
+Speedup: 1.7x
+Performance requirement met! (1.7x >= 1.2x)
+
+Testing portfolio size: 8000 assets
+------------------------------
+Python baseline time: 3481.5 ms
+Risk - Python: 0.022465880336, C: 0.022465880336, diff: 1.39e-17
+Return - Python: 0.099218237386, C: 0.099218237386, diff: 3.33e-16
+Correctness test PASSED
+C optimized time: 1816.6 ms
+Speedup: 1.9x
+Performance requirement met! (1.9x >= 1.2x)
+
+========================================
+BENCHMARK SUMMARY
+========================================
+ALL TESTS PASSED!
+
+========== Run test.sh ==========
+Hit:1 http://deb.debian.org/debian bookworm InRelease
+Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
+Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.88.1-10+deb12u15).
+0 upgraded, 0 newly installed, 0 to remove and 55 not upgraded.
+downloading uv 0.9.5 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+============================= test session starts ==============================
+platform linux -- Python 3.13.7, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 6 items
+
+../tests/test_outputs.py ......                                          [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_c_extension_exists
+PASSED ../tests/test_outputs.py::test_baseline_functionality
+PASSED ../tests/test_outputs.py::test_correctness_small
+PASSED ../tests/test_outputs.py::test_performance_and_scalability[5000]
+PASSED ../tests/test_outputs.py::test_performance_and_scalability[6000]
+PASSED ../tests/test_outputs.py::test_performance_and_scalability[8000]
+============================== 6 passed in 47.61s ==============================
+
+========== Result ==========
+Task: portfolio-optimization
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 35.7s (exit 0)
+Test: 60.2s (exit 0)
+Solve Memory Peak: 2.1 GiB
+Test Memory Peak: 1.7 GiB

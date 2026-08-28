@@ -1,0 +1,114 @@
+{
+  "schema_version": 6,
+  "task_id": "weighted-gdp-calc",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 327.6,
+    "peak_memory_raw": "327.6MiB",
+    "error": "EOF",
+    "container_name_hint": "weighted-gdp-calc"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.268,
+    "agent_setup_sec": 1.107,
+    "agent_execution_sec": 222.715,
+    "verifier_sec": 47.393,
+    "total_sec": 281.547
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1055234,
+  "agent_output_tokens": 14886,
+  "image_cache": {
+    "image": "benchmark-cache/weighted-gdp-calc-gold:9ffa98d58509b229",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "formula-cache-ooxml-roundtrip-verification",
+      "kivo360--moai-lang-scala",
+      "net-export-statistics-sumproduct-formulas",
+      "net-export-statistics-weighted-formulas",
+      "obra--developing-claude-code-plugins",
+      "ooxml-two-key-lookup-formula-population",
+      "rysweet--markitdown",
+      "template-match-spatial-counting",
+      "uno-formula-recalc-validation",
+      "uno-two-key-index-match-population"
+    ],
+    "available_skills": [
+      "formula-cache-ooxml-roundtrip-verification",
+      "kivo360--moai-lang-scala",
+      "net-export-statistics-sumproduct-formulas",
+      "net-export-statistics-weighted-formulas",
+      "obra--developing-claude-code-plugins",
+      "ooxml-two-key-lookup-formula-population",
+      "rysweet--markitdown",
+      "template-match-spatial-counting",
+      "uno-formula-recalc-validation",
+      "uno-two-key-index-match-population"
+    ],
+    "loaded_skills": [
+      "formula-cache-ooxml-roundtrip-verification"
+    ],
+    "trials": [
+      {
+        "trial_id": "weighted-gdp-calc__yf2qxmi",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "formula-cache-ooxml-roundtrip-verification",
+          "kivo360--moai-lang-scala",
+          "net-export-statistics-sumproduct-formulas",
+          "net-export-statistics-weighted-formulas",
+          "obra--developing-claude-code-plugins",
+          "ooxml-two-key-lookup-formula-population",
+          "rysweet--markitdown",
+          "template-match-spatial-counting",
+          "uno-formula-recalc-validation",
+          "uno-two-key-index-match-population"
+        ],
+        "available_skills": [
+          "formula-cache-ooxml-roundtrip-verification",
+          "kivo360--moai-lang-scala",
+          "net-export-statistics-sumproduct-formulas",
+          "net-export-statistics-weighted-formulas",
+          "obra--developing-claude-code-plugins",
+          "ooxml-two-key-lookup-formula-population",
+          "rysweet--markitdown",
+          "template-match-spatial-counting",
+          "uno-formula-recalc-validation",
+          "uno-two-key-index-match-population"
+        ],
+        "loaded_skills": [
+          "formula-cache-ooxml-roundtrip-verification"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "formula-cache-ooxml-roundtrip-verification": [
+            {
+              "step_id": 97,
+              "tool_call_id": "call_0c30e3a59c734eb78fcfb26e",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/formula-cache-ooxml-roundtrip-verification/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

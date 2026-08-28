@@ -1,0 +1,118 @@
+Task: mteb-leaderboard
+Source type: used
+Task run: 8
+Source run: 4
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\mteb-leaderboard
+
+========== Repeated Run 4/4 ==========
+
+========== Run solve.sh ==========
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing splits {'validation'}
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x706977ae5a20> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x706977ae5a20> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x706977ae5a20> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing splits {'validation'}
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x706977ae5a20> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x706977ae5a20> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x706977ae5a20> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x706977ae5a20> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+MassiveScenarioClassification: Missing subsets {'sv', 'da', ...} for split test
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing subsets {'sv', 'da', ...} for split test
+MassiveIntentClassification: Missing splits {'validation'}
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x706977ae5a20> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing splits {'validation'}
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x706977ae5a20> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x706977ae5a20> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing splits {'validation'}
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x706977ae5a20> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing splits {'validation'}
+MassiveScenarioClassification: Missing subsets {'sv', 'da', ...} for split validation
+MassiveScenarioClassification: Missing subsets {'sv', 'da', ...} for split test
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x706977ae5a20> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+Best: GritLM/GritLM-7B 0.640838394367255
+
+========== Run test.sh ==========
+Hit:1 http://deb.debian.org/debian bookworm InRelease
+Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
+Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.88.1-10+deb12u15).
+0 upgraded, 0 newly installed, 0 to remove and 42 not upgraded.
+downloading uv 0.9.5 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+============================= test session starts ==============================
+platform linux -- Python 3.13.9, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 2 items
+
+../tests/test_outputs.py ..                                              [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_result_exists
+PASSED ../tests/test_outputs.py::test_data_matches
+============================== 2 passed in 0.03s ===============================
+
+========== Result ==========
+Task: mteb-leaderboard
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 153.5s (exit 0)
+Test: 12.7s (exit 0)
+Solve Memory Peak: 2.7 GiB
+Test Memory Peak: 2.2 GiB
+
+========== Cleanup ==========
+Removing container: test-solution-mteb-leaderboard-1786642875373316400-9c9619b8

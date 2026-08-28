@@ -1,0 +1,51 @@
+{
+  "schema_version": 5,
+  "task_id": "virtualhome-agent-planning",
+  "condition": "no_skill",
+  "batch": "No_skill_Run001",
+  "repeat": 1,
+  "operation": "rerun",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 405.7,
+    "peak_memory_raw": "405.7MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.543,
+    "agent_setup_sec": 87.283,
+    "agent_execution_sec": 121.605,
+    "verifier_sec": 23.888,
+    "total_sec": 239.617
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/virtualhome-agent-planning-gold:511047b2bd819ffb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "virtualhome-agent-planning__y87oMkS",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

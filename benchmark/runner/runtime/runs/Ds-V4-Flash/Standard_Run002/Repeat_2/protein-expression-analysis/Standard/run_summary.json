@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "protein-expression-analysis",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 365.0,
+    "peak_memory_raw": "365MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.548,
+    "agent_setup_sec": 0.861,
+    "agent_execution_sec": 179.024,
+    "verifier_sec": 5.122,
+    "total_sec": 193.242
+  },
+  "llm_cost_usd": 0.0128518712,
+  "agent_input_tokens": 810241,
+  "agent_output_tokens": 15092,
+  "image_cache": {
+    "image": "benchmark-cache/protein-expression-analysis-gold:a52e2bc643b8e023",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "protein-group-statistics-foldchange-formulas",
+      "protein-sample-direct-reference-lookup",
+      "xlsx-formula-cache-preserving-recalc"
+    ],
+    "available_skills": [
+      "protein-group-statistics-foldchange-formulas",
+      "protein-sample-direct-reference-lookup",
+      "xlsx-formula-cache-preserving-recalc"
+    ],
+    "loaded_skills": [
+      "protein-group-statistics-foldchange-formulas",
+      "protein-sample-direct-reference-lookup",
+      "xlsx-formula-cache-preserving-recalc"
+    ],
+    "trials": [
+      {
+        "trial_id": "protein-expression-analysis__FcgvnGj",
+        "passed": true,
+        "provided_skills": [
+          "protein-group-statistics-foldchange-formulas",
+          "protein-sample-direct-reference-lookup",
+          "xlsx-formula-cache-preserving-recalc"
+        ],
+        "available_skills": [
+          "protein-group-statistics-foldchange-formulas",
+          "protein-sample-direct-reference-lookup",
+          "xlsx-formula-cache-preserving-recalc"
+        ],
+        "loaded_skills": [
+          "protein-group-statistics-foldchange-formulas",
+          "protein-sample-direct-reference-lookup",
+          "xlsx-formula-cache-preserving-recalc"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "protein-sample-direct-reference-lookup": [
+            {
+              "step_id": 8,
+              "tool_call_id": "call_9aef8340af4d49f49a7ad438",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/protein-sample-direct-reference-lookup/SKILL.md"
+            }
+          ],
+          "protein-group-statistics-foldchange-formulas": [
+            {
+              "step_id": 9,
+              "tool_call_id": "call_c73baa58b54f4b1cb96fb9f8",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/protein-group-statistics-foldchange-formulas/SKILL.md"
+            }
+          ],
+          "xlsx-formula-cache-preserving-recalc": [
+            {
+              "step_id": 10,
+              "tool_call_id": "call_ba018334845649b19d5b133b",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/xlsx-formula-cache-preserving-recalc/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 6,
+  "task_id": "dapt-intrusion-detection",
+  "condition": "selected",
+  "batch": "single_Selected_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestFlowMetrics::test_flow_metric: AssertionError: unique_flows: expected 3567, got 3569; test_outputs.py::TestFlowMetrics::test_bidirectional_flows: AssertionError: bidirectional_flows: expected 1758, got 1759; test_outputs.py::TestAnalysisQuestions::test_is_traffic_benign: AssertionError: is_traffic_benign: expected 'true', got 'false'; test_outputs.py::TestAnalysisQuestions::test_has_port_scan: AssertionError: has_port_scan: expected 'false', got 'true'",
+  "peak_memory": {
+    "peak_memory_mib": 695.3,
+    "peak_memory_raw": "695.3MiB",
+    "error": "EOF",
+    "container_name_hint": "dapt-intrusion-detec"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.569,
+    "agent_setup_sec": 0.435,
+    "agent_execution_sec": 120.401,
+    "verifier_sec": 67.63,
+    "total_sec": 195.624
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 134148,
+  "agent_output_tokens": 8528,
+  "image_cache": {
+    "image": "benchmark-cache/dapt-intrusion-detection-gold:7867f125ad78de68",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "JordanGunn--sniff-preventers",
+      "classic-pcap-streaming-network-metrics",
+      "madsnorgaard--docker-local",
+      "metric-csv-first-field-update",
+      "metric-csv-template-update",
+      "mnkyarts--hytale-ui-windows",
+      "network-behavior-reference-heuristics",
+      "network-traffic-reference-behavior-flags",
+      "network-traffic-reference-metrics",
+      "pcap-pdml-stream-normalization"
+    ],
+    "available_skills": [
+      "JordanGunn--sniff-preventers",
+      "classic-pcap-streaming-network-metrics",
+      "madsnorgaard--docker-local",
+      "metric-csv-first-field-update",
+      "metric-csv-template-update",
+      "mnkyarts--hytale-ui-windows",
+      "network-behavior-reference-heuristics",
+      "network-traffic-reference-behavior-flags",
+      "network-traffic-reference-metrics",
+      "pcap-pdml-stream-normalization"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "dapt-intrusion-detection__gKz3vwx",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "JordanGunn--sniff-preventers",
+          "classic-pcap-streaming-network-metrics",
+          "madsnorgaard--docker-local",
+          "metric-csv-first-field-update",
+          "metric-csv-template-update",
+          "mnkyarts--hytale-ui-windows",
+          "network-behavior-reference-heuristics",
+          "network-traffic-reference-behavior-flags",
+          "network-traffic-reference-metrics",
+          "pcap-pdml-stream-normalization"
+        ],
+        "available_skills": [
+          "JordanGunn--sniff-preventers",
+          "classic-pcap-streaming-network-metrics",
+          "madsnorgaard--docker-local",
+          "metric-csv-first-field-update",
+          "metric-csv-template-update",
+          "mnkyarts--hytale-ui-windows",
+          "network-behavior-reference-heuristics",
+          "network-traffic-reference-behavior-flags",
+          "network-traffic-reference-metrics",
+          "pcap-pdml-stream-normalization"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

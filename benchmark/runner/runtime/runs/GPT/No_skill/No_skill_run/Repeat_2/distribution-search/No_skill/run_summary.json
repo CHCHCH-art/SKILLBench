@@ -1,0 +1,53 @@
+{
+  "schema_version": 5,
+  "task_id": "distribution-search",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run006",
+  "repeat": 2,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 297.3,
+    "peak_memory_raw": "297.3MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.625,
+    "agent_setup_sec": 117.325,
+    "agent_execution_sec": 160.389,
+    "verifier_sec": 50.582,
+    "total_sec": 334.524
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/distribution-search-gold:8fff952b6a53dab3",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "distribution-search__cDssuVC",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

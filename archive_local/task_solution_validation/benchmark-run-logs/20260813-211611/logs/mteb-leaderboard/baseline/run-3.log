@@ -1,0 +1,94 @@
+Task: mteb-leaderboard
+Source type: baseline
+Task run: 3
+Source run: 3
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\mteb-leaderboard
+
+========== Repeated Run 3/4 ==========
+
+========== Run solve.sh ==========
+fatal: destination path 'results' already exists and is not an empty directory.
+HEAD is now at c0fd32714 Add resuls from vie-vn models for the VN-MTEB benchmark (#257)
+CONTRIBUTING
+README.md
+leaderboard.py
+makefile
+paths.json
+pyproject.toml
+reduce_large_json_files.py
+results
+results.py
+scripts
+tests
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing splits {'validation'}
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing splits {'validation'}
+MassiveScenarioClassification: Missing subsets {'nb', 'sv', ...} for split test
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing subsets {'nb', 'sv', ...} for split test
+MassiveIntentClassification: Missing splits {'validation'}
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing splits {'validation'}
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing splits {'validation'}
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing splits {'validation'}
+MassiveScenarioClassification: Missing subsets {'nb', 'sv', ...} for split validation
+MassiveScenarioClassification: Missing subsets {'nb', 'sv', ...} for split test
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x7ef1649f5a20> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+Found 12 models with all tasks: ['intfloat/multilingual-e5-small', 'sentence-transformers/LaBSE', 'NbAiLab/nb-sbert-base', 'intfloat/multilingual-e5-base', 'GritLM/GritLM-7B', 'sentence-transformers/all-MiniLM-L6-v2', 'sentence-transformers/paraphrase-multilingual-mpnet-base-v2', 'mixedbread-ai/mxbai-embed-large-v1', 'intfloat/e5-mistral-7b-instruct', 'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2', 'intfloat/multilingual-e5-large-instruct', 'intfloat/multilingual-e5-large']
+Found 8 models with scores across all tasks.
+model_name  GritLM/GritLM-7B  ...  sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+0                   0.653486  ...                                           0.548424          
+1                   0.611733  ...                                           0.181829          
+2                   0.730395  ...                                           0.637690          
+3                   0.506306  ...                                           0.499887          
+4                   0.404850  ...                                           0.375590          
+
+[5 rows x 8 columns]
+Best model: GritLM/GritLM-7B with score 0.640838394367255
+
+========== Run test.sh ==========
+Hit:1 http://deb.debian.org/debian bookworm InRelease
+Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
+Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.88.1-10+deb12u15).
+0 upgraded, 0 newly installed, 0 to remove and 42 not upgraded.
+downloading uv 0.9.5 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+============================= test session starts ==============================
+platform linux -- Python 3.13.9, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 2 items
+
+../tests/test_outputs.py ..                                              [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_result_exists
+PASSED ../tests/test_outputs.py::test_data_matches
+============================== 2 passed in 0.03s ===============================
+
+========== Result ==========
+Task: mteb-leaderboard
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 10.9s (exit 0)
+Test: 21.4s (exit 0)
+Solve Memory Peak: 2.3 GiB
+Test Memory Peak: 1.8 GiB

@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "weighted-gdp-calc",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 223.7,
+    "peak_memory_raw": "223.7MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.832,
+    "agent_setup_sec": 1.262,
+    "agent_execution_sec": 197.673,
+    "verifier_sec": 32.719,
+    "total_sec": 240.054
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 501723,
+  "agent_output_tokens": 7600,
+  "image_cache": {
+    "image": "benchmark-cache/weighted-gdp-calc-gold:9ffa98d58509b229",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "formula-cache-ooxml-roundtrip-verification",
+      "net-export-statistics-weighted-formulas",
+      "ooxml-two-key-lookup-formula-population"
+    ],
+    "available_skills": [
+      "formula-cache-ooxml-roundtrip-verification",
+      "net-export-statistics-weighted-formulas",
+      "ooxml-two-key-lookup-formula-population"
+    ],
+    "loaded_skills": [
+      "formula-cache-ooxml-roundtrip-verification",
+      "net-export-statistics-weighted-formulas",
+      "ooxml-two-key-lookup-formula-population"
+    ],
+    "trials": [
+      {
+        "trial_id": "weighted-gdp-calc__cadbipH",
+        "passed": true,
+        "provided_skills": [
+          "formula-cache-ooxml-roundtrip-verification",
+          "net-export-statistics-weighted-formulas",
+          "ooxml-two-key-lookup-formula-population"
+        ],
+        "available_skills": [
+          "formula-cache-ooxml-roundtrip-verification",
+          "net-export-statistics-weighted-formulas",
+          "ooxml-two-key-lookup-formula-population"
+        ],
+        "loaded_skills": [
+          "formula-cache-ooxml-roundtrip-verification",
+          "net-export-statistics-weighted-formulas",
+          "ooxml-two-key-lookup-formula-population"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "formula-cache-ooxml-roundtrip-verification": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_xBAMAr7qEUZO4J4G7TGqc2mi",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/formula-cache-ooxml-roundtrip-verification/SKILL.md"
+            }
+          ],
+          "net-export-statistics-weighted-formulas": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_xBAMAr7qEUZO4J4G7TGqc2mi",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/net-export-statistics-weighted-formulas/SKILL.md"
+            }
+          ],
+          "ooxml-two-key-lookup-formula-population": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_xBAMAr7qEUZO4J4G7TGqc2mi",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/ooxml-two-key-lookup-formula-population/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

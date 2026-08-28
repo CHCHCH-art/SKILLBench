@@ -1,0 +1,28 @@
+2026-08-25T08:53:57.312670+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=dapt-intrusion-detection condition=selected image=benchmark-cache/dapt-intrusion-detection-gold:7867f125ad78de68 provided_skills=["classic-pcap-streaming-network-metrics", "JordanGunn--sniff-preventers", "madsnorgaard--docker-local", "metric-csv-first-field-update", "metric-csv-template-update", "mnkyarts--hytale-ui-windows", "network-behavior-reference-heuristics", "network-traffic-reference-behavior-flags", "network-traffic-reference-metrics", "pcap-pdml-stream-normalization"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:03:15 0:00:00
+selected • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 15s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run001\Repe
+at_2\dapt-intrusion-detection\Selected\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run001\Repe
+at_2\dapt-intrusion-detection\Selected`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run001\Repe
+at_2\dapt-intrusion-detection\Selected\Job_result`
+
+2026-08-25T08:57:14.232459+00:00 FAIL operation=run batch=single_Selected_Run001 repeat=2 task=dapt-intrusion-detection condition=selected

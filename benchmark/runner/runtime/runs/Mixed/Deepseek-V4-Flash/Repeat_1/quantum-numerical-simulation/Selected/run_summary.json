@@ -1,0 +1,144 @@
+{
+  "schema_version": 6,
+  "task_id": "quantum-numerical-simulation",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_wigner_diagonal_sum_matches_reference: AssertionError: Diagonal sum mismatch for case 1; test_outputs.py::test_wigner_values_match_reference: AssertionError: Wigner data mismatch for case 1",
+  "peak_memory": {
+    "peak_memory_mib": 547.4,
+    "peak_memory_raw": "547.4MiB",
+    "error": "EOF",
+    "container_name_hint": "quantum-numerical-si"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.78,
+    "agent_setup_sec": 0.768,
+    "agent_execution_sec": 427.846,
+    "verifier_sec": 160.782,
+    "total_sec": 597.235
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 358344,
+  "agent_output_tokens": 10902,
+  "image_cache": {
+    "image": "benchmark-cache/quantum-numerical-simulation-gold:8597d1a23d4799e3",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "arpack-liouvillian-steady-state",
+      "cavity-wigner-grid-export",
+      "cpython-symmetric-quadratic-risk-kernel",
+      "direct-steady-state-cavity-wigner-export",
+      "leaderiop--documentation-docusaurus",
+      "ninehills--todo",
+      "piqs-open-dicke-liouvillian",
+      "piqs-open-dicke-superoperator-construction",
+      "uno-two-key-index-match-population",
+      "yelban--cine-shot"
+    ],
+    "available_skills": [
+      "arpack-liouvillian-steady-state",
+      "cavity-wigner-grid-export",
+      "cpython-symmetric-quadratic-risk-kernel",
+      "direct-steady-state-cavity-wigner-export",
+      "leaderiop--documentation-docusaurus",
+      "ninehills--todo",
+      "piqs-open-dicke-liouvillian",
+      "piqs-open-dicke-superoperator-construction",
+      "uno-two-key-index-match-population",
+      "yelban--cine-shot"
+    ],
+    "loaded_skills": [
+      "arpack-liouvillian-steady-state",
+      "direct-steady-state-cavity-wigner-export",
+      "piqs-open-dicke-liouvillian",
+      "piqs-open-dicke-superoperator-construction"
+    ],
+    "trials": [
+      {
+        "trial_id": "quantum-numerical-simulation__3MpJ6ax",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "arpack-liouvillian-steady-state",
+          "cavity-wigner-grid-export",
+          "cpython-symmetric-quadratic-risk-kernel",
+          "direct-steady-state-cavity-wigner-export",
+          "leaderiop--documentation-docusaurus",
+          "ninehills--todo",
+          "piqs-open-dicke-liouvillian",
+          "piqs-open-dicke-superoperator-construction",
+          "uno-two-key-index-match-population",
+          "yelban--cine-shot"
+        ],
+        "available_skills": [
+          "arpack-liouvillian-steady-state",
+          "cavity-wigner-grid-export",
+          "cpython-symmetric-quadratic-risk-kernel",
+          "direct-steady-state-cavity-wigner-export",
+          "leaderiop--documentation-docusaurus",
+          "ninehills--todo",
+          "piqs-open-dicke-liouvillian",
+          "piqs-open-dicke-superoperator-construction",
+          "uno-two-key-index-match-population",
+          "yelban--cine-shot"
+        ],
+        "loaded_skills": [
+          "arpack-liouvillian-steady-state",
+          "direct-steady-state-cavity-wigner-export",
+          "piqs-open-dicke-liouvillian",
+          "piqs-open-dicke-superoperator-construction"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "piqs-open-dicke-liouvillian": [
+            {
+              "step_id": 10,
+              "tool_call_id": "call_ad883765706c4cf995429ee8",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/piqs-open-dicke-liouvillian/SKILL.md"
+            }
+          ],
+          "piqs-open-dicke-superoperator-construction": [
+            {
+              "step_id": 10,
+              "tool_call_id": "call_ad883765706c4cf995429ee8",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/piqs-open-dicke-superoperator-construction/SKILL.md"
+            }
+          ],
+          "direct-steady-state-cavity-wigner-export": [
+            {
+              "step_id": 10,
+              "tool_call_id": "call_ad883765706c4cf995429ee8",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/direct-steady-state-cavity-wigner-export/SKILL.md"
+            }
+          ],
+          "arpack-liouvillian-steady-state": [
+            {
+              "step_id": 10,
+              "tool_call_id": "call_ad883765706c4cf995429ee8",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/arpack-liouvillian-steady-state/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

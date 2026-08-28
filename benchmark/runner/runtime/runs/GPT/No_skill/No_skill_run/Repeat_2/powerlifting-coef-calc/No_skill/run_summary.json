@@ -1,0 +1,51 @@
+{
+  "schema_version": 5,
+  "task_id": "powerlifting-coef-calc",
+  "condition": "no_skill",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 471.6,
+    "peak_memory_raw": "471.6MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.454,
+    "agent_setup_sec": 99.944,
+    "agent_execution_sec": 161.147,
+    "verifier_sec": 18.107,
+    "total_sec": 285.211
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/powerlifting-coef-calc-gold:0fef2731a5e5d6d2",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "powerlifting-coef-calc__kqfwqti",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0,
+  "batch": "No_skill_Run001",
+  "repeat": 2,
+  "operation": "run"
+}

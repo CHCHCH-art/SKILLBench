@@ -1,0 +1,53 @@
+{
+  "schema_version": 5,
+  "task_id": "video-silence-remover",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run007",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\archive_local\\Snaps\\Task_snap\\baseline_task",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_segment_detection_recall: AssertionError: Segment detection recall 0.0% is below 60% (0/9 segments matched); test_outputs.py::test_segment_detection_precision: AssertionError: Segment detection precision 0.0% is below 60% (0/8 detections correct); test_outputs.py::test_total_removed_duration: AssertionError: Removed duration 73.920635s not within 20% of ground truth 254s (range [203, 305]); test_outputs.py::test_compressed_duration: AssertionError: Compressed duration 526.083991s not within 20% of expected 346s; test_outputs.py::test_audio_matches_json_segments: AssertionError: Compressed audio doesn't match JSON segments: correlation=0.043 (expected > 0.95)",
+  "peak_memory": {
+    "peak_memory_mib": 413.6,
+    "peak_memory_raw": "413.6MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.948,
+    "agent_setup_sec": 98.116,
+    "agent_execution_sec": 741.337,
+    "verifier_sec": 11.961,
+    "total_sec": 858.078
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/video-silence-remover-gold:76fd227d231b72bf",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "video-silence-remover__cZdkZwy",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

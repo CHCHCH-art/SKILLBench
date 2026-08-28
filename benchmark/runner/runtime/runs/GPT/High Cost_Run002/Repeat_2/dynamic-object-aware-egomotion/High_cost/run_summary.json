@@ -1,0 +1,118 @@
+{
+  "schema_version": 6,
+  "task_id": "dynamic-object-aware-egomotion",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestMotionAccuracy::test_motion_macro_f1: assert np.float64(0.16666666666666666) >= 0.5",
+  "peak_memory": {
+    "peak_memory_mib": 326.4,
+    "peak_memory_raw": "326.4MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.91,
+    "agent_setup_sec": 0.612,
+    "agent_execution_sec": 259.107,
+    "verifier_sec": 44.102,
+    "total_sec": 313.401
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 239030,
+  "agent_output_tokens": 6352,
+  "image_cache": {
+    "image": "benchmark-cache/dynamic-object-aware-egomotion-gold:fc972e99cd5a2204",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "binary-mask-csr-serialization",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "video-global-egomotion-estimation"
+    ],
+    "available_skills": [
+      "binary-mask-csr-serialization",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "video-global-egomotion-estimation"
+    ],
+    "loaded_skills": [
+      "binary-mask-csr-serialization",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "video-global-egomotion-estimation"
+    ],
+    "trials": [
+      {
+        "trial_id": "dynamic-object-aware-egomotion__9eEk2nb",
+        "passed": true,
+        "provided_skills": [
+          "binary-mask-csr-serialization",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "video-global-egomotion-estimation"
+        ],
+        "available_skills": [
+          "binary-mask-csr-serialization",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "video-global-egomotion-estimation"
+        ],
+        "loaded_skills": [
+          "binary-mask-csr-serialization",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "video-global-egomotion-estimation"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "egomotion-reference-label-sequence": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_DMK3KyBrRTLStzxBcjipmbVb",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/egomotion-reference-label-sequence/SKILL.md"
+            }
+          ],
+          "video-global-egomotion-estimation": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_DMK3KyBrRTLStzxBcjipmbVb",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/video-global-egomotion-estimation/SKILL.md"
+            }
+          ],
+          "binary-mask-csr-serialization": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_DMK3KyBrRTLStzxBcjipmbVb",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/binary-mask-csr-serialization/SKILL.md"
+            }
+          ],
+          "dynamic-region-motion-mask": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_DMK3KyBrRTLStzxBcjipmbVb",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/dynamic-region-motion-mask/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

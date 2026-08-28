@@ -1,0 +1,76 @@
+{
+  "schema_version": 6,
+  "task_id": "log-summary-date-ranges",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 159.3,
+    "peak_memory_raw": "159.3MiB",
+    "error": "Error response from daemon: No such container: c9132c0fb619"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.871,
+    "agent_setup_sec": 1.114,
+    "agent_execution_sec": 97.497,
+    "verifier_sec": 25.175,
+    "total_sec": 130.996
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 126800,
+  "agent_output_tokens": 2586,
+  "image_cache": {
+    "image": "benchmark-cache/log-summary-date-ranges-gold:e28534907986406f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dated-log-severity-summary"
+    ],
+    "available_skills": [
+      "dated-log-severity-summary"
+    ],
+    "loaded_skills": [
+      "dated-log-severity-summary"
+    ],
+    "trials": [
+      {
+        "trial_id": "log-summary-date-ranges__bv4kkiq",
+        "passed": true,
+        "provided_skills": [
+          "dated-log-severity-summary"
+        ],
+        "available_skills": [
+          "dated-log-severity-summary"
+        ],
+        "loaded_skills": [
+          "dated-log-severity-summary"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "dated-log-severity-summary": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_rOv4JbZQU1VN5DXdFYopHI4R",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/dated-log-severity-summary/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

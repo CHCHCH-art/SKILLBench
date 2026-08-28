@@ -1,0 +1,28 @@
+/.idea/
+/.venv/
+
+# Local cold archive. Keep a separate external backup for important snapshots.
+/archive_local/Heavy_SCORING
+/archive_local/Danger_Inject_Part
+/archive_local/ALL-34K-SKILLS
+
+# Local credentials.
+**/API.jsonl
+/benchmark/Env/local/
+
+# Editable-install and Python outputs.
+**/*.egg-info/
+**/__pycache__/
+**/*.py[cod]
+/benchmark/Env/images/packages/**/*.part
+
+# Benchmark runtime output.
+/benchmark/runner/sink_network
+/benchmark/runner/runtime/probes
+# Keep compact summaries and logs under runtime/runs, but exclude Harbor's
+# nested job workspace (raw sessions, copied agent state, and duplicate files).
+/benchmark/runner/runtime/runs/**/Job_result/
+
+# Scoring output.
+**/L1_Fail/
+**/report/

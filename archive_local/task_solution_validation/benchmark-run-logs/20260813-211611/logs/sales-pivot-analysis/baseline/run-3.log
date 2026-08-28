@@ -1,0 +1,91 @@
+Task: sales-pivot-analysis
+Source type: baseline
+Task run: 3
+Source run: 3
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\sales-pivot-analysis
+
+========== Repeated Run 3/4 ==========
+
+========== Run solve.sh ==========
+Done!
+
+========== Run test.sh ==========
+Requirement already satisfied: pytest==8.3.4 in /opt/venv/lib/python3.12/site-packages (8.3.4)
+Requirement already satisfied: pytest-json-ctrf==0.3.6 in /opt/venv/lib/python3.12/site-packages (0.3.6)
+Requirement already satisfied: iniconfig in /opt/venv/lib/python3.12/site-packages (from pytest==8.3.4) (2.3.0)
+Requirement already satisfied: packaging in /opt/venv/lib/python3.12/site-packages (from pytest==8.3.4) (26.3)
+Requirement already satisfied: pluggy<2,>=1.5 in /opt/venv/lib/python3.12/site-packages (from pytest==8.3.4) (1.6.0)
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.4, pluggy-1.6.0 -- /opt/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /
+plugins: json-ctrf-0.3.6
+collecting ... collected 26 items
+
+../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_row_is_state[Population by State-sum-None] PASSED [  3%]
+../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_row_is_state[Earners by State-sum-None] PASSED [  7%]
+../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_row_is_state[Regions by State-count-None] PASSED [ 11%]
+../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_row_is_state[State Income Quartile-sum-quarter] PASSED [ 15%]
+../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_uses_correct_aggregation[Population by State-sum-None] PASSED [ 19%]
+../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_uses_correct_aggregation[Earners by State-sum-None] PASSED [ 23%]
+../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_uses_correct_aggregation[Regions by State-count-None] PASSED [ 26%]
+../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_uses_correct_aggregation[State Income Quartile-sum-quarter] PASSED [ 30%]
+../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_col_field[Population by State-sum-None] SKIPPED [ 34%]
+../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_col_field[Earners by State-sum-None] SKIPPED [ 38%]
+../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_col_field[Regions by State-count-None] SKIPPED [ 42%]
+../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_col_field[State Income Quartile-sum-quarter] PASSED [ 46%]
+../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[SA2_CODE-<lambda>] PASSED [ 50%]
+../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[SA2_NAME-<lambda>] PASSED [ 53%]
+../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[STATE-<lambda>] PASSED [ 57%]
+../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[POPULATION_2023-<lambda>] PASSED [ 61%]
+../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[EARNERS-<lambda>] PASSED [ 65%]
+../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[MEDIAN_INCOME-<lambda>] PASSED [ 69%]
+../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[Quarter-<lambda>] PASSED [ 73%]
+../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[Total-<lambda>] PASSED [ 76%]
+../tests/test_outputs.py::TestSourceDataContent::test_source_data_has_reasonable_row_count PASSED [ 80%]
+../tests/test_outputs.py::TestSourceDataContent::test_quarter_values_are_valid PASSED [ 84%]
+../tests/test_outputs.py::TestSourceDataContent::test_state_values_are_valid PASSED [ 88%]
+../tests/test_outputs.py::TestDataTransformationCorrectness::test_pivot_cache_has_fields PASSED [ 92%]
+../tests/test_outputs.py::TestDataTransformationCorrectness::test_total_equals_earners_times_median_income PASSED [ 96%]
+../tests/test_outputs.py::TestDataTransformationCorrectness::test_sa2_codes_from_income_file_present PASSED [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_row_is_state[Population by State-sum-None]
+PASSED ../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_row_is_state[Earners by State-sum-None]
+PASSED ../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_row_is_state[Regions by State-count-None]
+PASSED ../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_row_is_state[State Income Quartile-sum-quarter]
+PASSED ../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_uses_correct_aggregation[Population by State-sum-None]
+PASSED ../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_uses_correct_aggregation[Earners by State-sum-None]
+PASSED ../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_uses_correct_aggregation[Regions by State-count-None]
+PASSED ../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_uses_correct_aggregation[State Income Quartile-sum-quarter]
+PASSED ../tests/test_outputs.py::TestPivotTableConfiguration::test_pivot_col_field[State Income Quartile-sum-quarter]
+PASSED ../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[SA2_CODE-<lambda>]
+PASSED ../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[SA2_NAME-<lambda>]
+PASSED ../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[STATE-<lambda>]
+PASSED ../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[POPULATION_2023-<lambda>]
+PASSED ../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[EARNERS-<lambda>]
+PASSED ../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[MEDIAN_INCOME-<lambda>]
+PASSED ../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[Quarter-<lambda>]
+PASSED ../tests/test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column[Total-<lambda>]
+PASSED ../tests/test_outputs.py::TestSourceDataContent::test_source_data_has_reasonable_row_count
+PASSED ../tests/test_outputs.py::TestSourceDataContent::test_quarter_values_are_valid
+PASSED ../tests/test_outputs.py::TestSourceDataContent::test_state_values_are_valid
+PASSED ../tests/test_outputs.py::TestDataTransformationCorrectness::test_pivot_cache_has_fields
+PASSED ../tests/test_outputs.py::TestDataTransformationCorrectness::test_total_equals_earners_times_median_income
+PASSED ../tests/test_outputs.py::TestDataTransformationCorrectness::test_sa2_codes_from_income_file_present
+SKIPPED [1] ../tests/test_outputs.py:81: 'Population by State' is not a matrix pivot
+SKIPPED [1] ../tests/test_outputs.py:81: 'Earners by State' is not a matrix pivot
+SKIPPED [1] ../tests/test_outputs.py:81: 'Regions by State' is not a matrix pivot
+======================== 23 passed, 3 skipped in 0.82s =========================
+
+========== Result ==========
+Task: sales-pivot-analysis
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 4.0s (exit 0)
+Test: 1.4s (exit 0)
+Solve Memory Peak: 276.1 MiB
+Test Memory Peak: 90.0 MiB

@@ -1,0 +1,78 @@
+Task: earthquake-plate-calculation
+Source type: baseline
+Task run: 2
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\earthquake-plate-calculation
+
+========== Repeated Run 2/4 ==========
+
+========== Run solve.sh ==========
+<stdin>:61: DeprecationWarning: The 'unary_union' attribute is deprecated, use the 'union_all()' method instead.
+<stdin>:86: DeprecationWarning: The 'unary_union' attribute is deprecated, use the 'union_all()' method instead.
+Loading data...
+Loading earthquake data from /root/earthquakes_2024.json...
+Successfully loaded 1504 earthquake records
+Filtering Pacific Plate region...
+Filtering earthquakes within the Pacific Plate...
+ -> Total of 1504 earthquakes globally in 2024, 107 occurred within the Pacific Plate.
+Calculating distances...
+
+==============================
+The most isolated earthquake in the Pacific Plate (furthest from boundaries)
+==============================
+Earthquake ID: hv74103036
+Location: 2 km SW of Pāhala, Hawaii
+Time: 2024-02-09T20:06:31Z
+Magnitude: 5.88
+Latitude: 19.1868333333333
+Longitude: -155.493166666667
+Distance to nearest boundary: 3878.27 km
+
+Result saved to /root/answer.json
+
+========== Run test.sh ==========
+Hit:1 http://deb.debian.org/debian trixie InRelease
+Hit:2 http://deb.debian.org/debian trixie-updates InRelease
+Hit:3 http://deb.debian.org/debian-security trixie-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.14.1-2+deb13u4).
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+============================= test session starts ==============================
+platform linux -- Python 3.10.20, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 8 items
+
+../tests/test_outputs.py ........                                        [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestEarthquakeTask::test_distance_within_tolerance
+PASSED ../tests/test_outputs.py::TestEarthquakeTask::test_earthquake_id_correct
+PASSED ../tests/test_outputs.py::TestEarthquakeTask::test_latitude_within_tolerance
+PASSED ../tests/test_outputs.py::TestEarthquakeTask::test_longitude_within_tolerance
+PASSED ../tests/test_outputs.py::TestEarthquakeTask::test_magnitude_within_tolerance
+PASSED ../tests/test_outputs.py::TestEarthquakeTask::test_output_file_and_structure
+PASSED ../tests/test_outputs.py::TestEarthquakeTask::test_place_correct
+PASSED ../tests/test_outputs.py::TestEarthquakeTask::test_time_correct
+============================== 8 passed in 0.04s ===============================
+
+========== Result ==========
+Task: earthquake-plate-calculation
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 0.7s (exit 0)
+Test: 15.4s (exit 0)
+Solve Memory Peak: 104.0 MiB
+Test Memory Peak: 169.0 MiB

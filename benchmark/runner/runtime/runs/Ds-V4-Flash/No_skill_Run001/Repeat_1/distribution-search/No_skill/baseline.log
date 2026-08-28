@@ -1,0 +1,28 @@
+2026-08-19T14:20:24.146597+00:00 START operation=run batch=single_No_skill_Run001 repeat=1 task=distribution-search condition=no_skill image=benchmark-cache/distribution-search-gold:430ae95bb5beb0fc provided_skills=[]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:23 0:00:00
+no_skill • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 23s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run001\Repe
+at_1\distribution-search\No_skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run001\Repe
+at_1\distribution-search\No_skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run001\Repe
+at_1\distribution-search\No_skill\Job_result`
+
+2026-08-19T14:22:48.351710+00:00 PASS operation=run batch=single_No_skill_Run001 repeat=1 task=distribution-search condition=no_skill

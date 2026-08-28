@@ -1,0 +1,124 @@
+{
+  "schema_version": 6,
+  "task_id": "dapt-intrusion-detection",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestEntropyMetrics::test_entropy_metric: AssertionError: unique_src_ports: expected 1713, got 1714; test_outputs.py::TestGraphMetrics::test_graph_metric: AssertionError: network_density: expected 0.041252, got 0.026395; test_outputs.py::TestTemporalMetrics::test_temporal_metric: AssertionError: num_consumers: expected 13, got 18; test_outputs.py::TestFlowMetrics::test_flow_metric: AssertionError: udp_flows: expected 214, got 218",
+  "peak_memory": {
+    "peak_memory_mib": 696.9,
+    "peak_memory_raw": "696.9MiB",
+    "error": "EOF",
+    "container_name_hint": "dapt-intrusion-detec"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.648,
+    "agent_setup_sec": 0.422,
+    "agent_execution_sec": 202.398,
+    "verifier_sec": 136.048,
+    "total_sec": 346.037
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 500041,
+  "agent_output_tokens": 15060,
+  "image_cache": {
+    "image": "benchmark-cache/dapt-intrusion-detection-gold:7867f125ad78de68",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "JordanGunn--sniff-preventers",
+      "classic-pcap-streaming-network-metrics",
+      "madsnorgaard--docker-local",
+      "metric-csv-first-field-update",
+      "metric-csv-template-update",
+      "mnkyarts--hytale-ui-windows",
+      "network-behavior-reference-heuristics",
+      "network-traffic-reference-behavior-flags",
+      "network-traffic-reference-metrics",
+      "pcap-pdml-stream-normalization"
+    ],
+    "available_skills": [
+      "JordanGunn--sniff-preventers",
+      "classic-pcap-streaming-network-metrics",
+      "madsnorgaard--docker-local",
+      "metric-csv-first-field-update",
+      "metric-csv-template-update",
+      "mnkyarts--hytale-ui-windows",
+      "network-behavior-reference-heuristics",
+      "network-traffic-reference-behavior-flags",
+      "network-traffic-reference-metrics",
+      "pcap-pdml-stream-normalization"
+    ],
+    "loaded_skills": [
+      "classic-pcap-streaming-network-metrics",
+      "metric-csv-first-field-update"
+    ],
+    "trials": [
+      {
+        "trial_id": "dapt-intrusion-detection__TzYdc37",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "JordanGunn--sniff-preventers",
+          "classic-pcap-streaming-network-metrics",
+          "madsnorgaard--docker-local",
+          "metric-csv-first-field-update",
+          "metric-csv-template-update",
+          "mnkyarts--hytale-ui-windows",
+          "network-behavior-reference-heuristics",
+          "network-traffic-reference-behavior-flags",
+          "network-traffic-reference-metrics",
+          "pcap-pdml-stream-normalization"
+        ],
+        "available_skills": [
+          "JordanGunn--sniff-preventers",
+          "classic-pcap-streaming-network-metrics",
+          "madsnorgaard--docker-local",
+          "metric-csv-first-field-update",
+          "metric-csv-template-update",
+          "mnkyarts--hytale-ui-windows",
+          "network-behavior-reference-heuristics",
+          "network-traffic-reference-behavior-flags",
+          "network-traffic-reference-metrics",
+          "pcap-pdml-stream-normalization"
+        ],
+        "loaded_skills": [
+          "classic-pcap-streaming-network-metrics",
+          "metric-csv-first-field-update"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "classic-pcap-streaming-network-metrics": [
+            {
+              "step_id": 29,
+              "tool_call_id": "call_d89aac20ba80478fb7d379f0",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/classic-pcap-streaming-network-metrics/SKILL.md"
+            }
+          ],
+          "metric-csv-first-field-update": [
+            {
+              "step_id": 68,
+              "tool_call_id": "call_ba30bffea5ae479f9c9633ab",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/metric-csv-first-field-update/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

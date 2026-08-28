@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "sales-pivot-analysis",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 462.6,
+    "peak_memory_raw": "462.6MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.853,
+    "agent_setup_sec": 1.083,
+    "agent_execution_sec": 706.613,
+    "verifier_sec": 5.243,
+    "total_sec": 721.24
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1654024,
+  "agent_output_tokens": 12867,
+  "image_cache": {
+    "image": "benchmark-cache/sales-pivot-analysis-gold:0de7e366d80d6ca8",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "apache-poi-native-pivot-workbook",
+      "demographic-quantile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join"
+    ],
+    "available_skills": [
+      "apache-poi-native-pivot-workbook",
+      "demographic-quantile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join"
+    ],
+    "loaded_skills": [
+      "apache-poi-native-pivot-workbook",
+      "demographic-quantile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join"
+    ],
+    "trials": [
+      {
+        "trial_id": "sales-pivot-analysis__VgnZhdY",
+        "passed": true,
+        "provided_skills": [
+          "apache-poi-native-pivot-workbook",
+          "demographic-quantile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join"
+        ],
+        "available_skills": [
+          "apache-poi-native-pivot-workbook",
+          "demographic-quantile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join"
+        ],
+        "loaded_skills": [
+          "apache-poi-native-pivot-workbook",
+          "demographic-quantile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "demographic-quantile-derived-enrichment": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_PW1gKsRU3y4nLehCQUi1xps8",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/demographic-quantile-derived-enrichment/SKILL.md"
+            }
+          ],
+          "heterogeneous-demographic-source-normalization-join": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_PW1gKsRU3y4nLehCQUi1xps8",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/heterogeneous-demographic-source-normalization-join/SKILL.md"
+            }
+          ],
+          "apache-poi-native-pivot-workbook": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_PW1gKsRU3y4nLehCQUi1xps8",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/apache-poi-native-pivot-workbook/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

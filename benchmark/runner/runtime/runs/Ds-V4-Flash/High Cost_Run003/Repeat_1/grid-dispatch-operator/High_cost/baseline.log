@@ -1,0 +1,29 @@
+2026-08-23T00:12:18.982899+00:00 START operation=rerun batch=single_High Cost_Run003 repeat=1 task=grid-dispatch-operator condition=high_cost image=benchmark-cache/grid-dispatch-operator-gold:4acd0bce1add524f provided_skills=["dc-dispatch-piecewise-master", "dispatch-reserve-and-ptdf-audit", "quadratic-dispatch-outer-approximation-report"]
+[92m08:16:33 - LiteLLM:WARNING[0m: get_model_cost_map.py:264 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: _ssl.c:993: The handshake operation timed out. Falling back to local backup.
+  1/1 Mean: 1.000 ---------------------------------------- 0:06:28 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 6m 28s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_1\grid-dispatch-operator\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_1\grid-dispatch-operator\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_1\grid-dispatch-operator\High_cost\Job_result`
+
+2026-08-23T00:18:49.138085+00:00 PASS operation=rerun batch=single_High Cost_Run003 repeat=1 task=grid-dispatch-operator condition=high_cost

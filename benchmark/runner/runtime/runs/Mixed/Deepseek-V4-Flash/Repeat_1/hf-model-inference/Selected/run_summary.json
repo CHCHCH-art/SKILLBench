@@ -1,0 +1,106 @@
+{
+  "schema_version": 6,
+  "task_id": "hf-model-inference",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "trial_error",
+  "passed": false,
+  "error": [
+    {
+      "exception_type": "AgentTimeoutError",
+      "exception_message": "Agent execution timed out after 1500.0 seconds"
+    }
+  ],
+  "failure_reason": "{\"exception_type\":\"AgentTimeoutError\",\"exception_message\":\"Agent execution timed out after 1500.0 seconds\"}",
+  "peak_memory": {
+    "peak_memory_mib": 1372.16,
+    "peak_memory_raw": "1.34GiB",
+    "error": "EOF",
+    "container_name_hint": "hf-model-inference"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.569,
+    "agent_setup_sec": 1.536,
+    "agent_execution_sec": 1503.02,
+    "verifier_sec": 32.469,
+    "total_sec": 1544.55
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 346745,
+  "agent_output_tokens": 2792,
+  "image_cache": {
+    "image": "benchmark-cache/hf-model-inference-gold:5e2a59f453e212fb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "bagelhole--terraform-azure",
+      "fairchild--youtube-content",
+      "flask-local-classification-service",
+      "flask-sequence-classification-api",
+      "gtmagents--messaging-frameworks",
+      "huggingface-local-model-materialization",
+      "huggingface-snapshot-int8-runtime-materialization",
+      "numpy-distilbert-int8-inference",
+      "plurigrid--hoot",
+      "receipt-date-candidate-resolution"
+    ],
+    "available_skills": [
+      "bagelhole--terraform-azure",
+      "fairchild--youtube-content",
+      "flask-local-classification-service",
+      "flask-sequence-classification-api",
+      "gtmagents--messaging-frameworks",
+      "huggingface-local-model-materialization",
+      "huggingface-snapshot-int8-runtime-materialization",
+      "numpy-distilbert-int8-inference",
+      "plurigrid--hoot",
+      "receipt-date-candidate-resolution"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "hf-model-inference__xZB3TWH",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "bagelhole--terraform-azure",
+          "fairchild--youtube-content",
+          "flask-local-classification-service",
+          "flask-sequence-classification-api",
+          "gtmagents--messaging-frameworks",
+          "huggingface-local-model-materialization",
+          "huggingface-snapshot-int8-runtime-materialization",
+          "numpy-distilbert-int8-inference",
+          "plurigrid--hoot",
+          "receipt-date-candidate-resolution"
+        ],
+        "available_skills": [
+          "bagelhole--terraform-azure",
+          "fairchild--youtube-content",
+          "flask-local-classification-service",
+          "flask-sequence-classification-api",
+          "gtmagents--messaging-frameworks",
+          "huggingface-local-model-materialization",
+          "huggingface-snapshot-int8-runtime-materialization",
+          "numpy-distilbert-int8-inference",
+          "plurigrid--hoot",
+          "receipt-date-candidate-resolution"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

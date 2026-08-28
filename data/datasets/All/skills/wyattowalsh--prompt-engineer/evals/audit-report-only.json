@@ -1,0 +1,15 @@
+{
+  "skills": ["prompt-engineer"],
+  "query": "/prompt-engineer audit You are a helpful assistant that answers questions about our product. Be concise and accurate. If you don't know, say so.",
+  "files": [],
+  "expected_behavior": [
+    "Agent dispatches to Mode B: Analyze in report-only mode based on 'audit' keyword",
+    "Agent auto-detects the pasted text as an existing prompt (contains 'You are...' role definition)",
+    "Agent performs model-class detection and asks user for target model since prompt is generic",
+    "Agent produces diagnostic scorecard with total score out of 25",
+    "Agent applies four-lens analysis without modifying the prompt",
+    "Agent identifies anti-patterns (likely: vague instructions, missing output format, no injection hardening)",
+    "Agent does NOT propose or apply changes (report-only mode)",
+    "Agent recommends full Analyze if fixes needed, and Mode D (Evaluate)"
+  ]
+}

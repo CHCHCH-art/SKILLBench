@@ -1,0 +1,164 @@
+# CARD.yml — Debugging
+#
+# Systematic bug investigation with hypothesis tracking.
+# "Debugging is an adventure. The bug is the treasure."
+
+card:
+  id: debugging
+  name: "Debugging"
+  type: [skill, development, investigation]
+  
+  emoji: 🐛
+  
+  rarity: common  # Everyone needs to debug
+  
+  description: |
+    Hypothesis-driven bug hunting. Form theories, test them,
+    narrow down. Treat it as an adventure where the bug
+    is the treasure to find.
+    
+    Play this card when something isn't working and you
+    need systematic investigation.
+
+# TOOLS REQUIRED
+
+tools:
+  required:
+    - read_file   # Read code and logs
+    - grep        # Search for patterns
+  optional:
+    - run_terminal_cmd  # Run tests, check behavior
+
+tier: 2  # Read + execute
+
+# METHODS
+
+methods:
+  
+  START:
+    description: "Begin a debugging investigation"
+    parameters:
+      symptom: "What's wrong"
+      reproduction: "How to trigger it"
+    output: file (DEBUG.yml) + chat
+    effect: "Create debug session, document symptom"
+    invoked-by: [player]
+    
+  HYPOTHESIZE:
+    description: "Form a theory about the cause"
+    parameters:
+      theory: "What might be wrong"
+      evidence: "Why you think this"
+    output: chat + state-change
+    effect: "Add hypothesis to list"
+    invoked-by: [player]
+    
+  TEST:
+    description: "Test a hypothesis"
+    parameters:
+      hypothesis: "Which theory to test"
+      method: "How to test it"
+    output: chat (results) + state-change
+    effect: "Run test, record outcome"
+    invoked-by: [player]
+    
+  NARROW:
+    description: "Eliminate possibilities based on test results"
+    parameters: {}
+    output: chat (analysis) + state-change
+    effect: "Update hypothesis probabilities"
+    invoked-by: [player]
+    
+  TRACE:
+    description: "Follow execution path"
+    parameters:
+      from: "Starting point"
+      following: "What to trace (data, control, state)"
+    output: chat (trace)
+    effect: "Document execution flow"
+    invoked-by: [player]
+    
+  BISECT:
+    description: "Binary search for when bug was introduced"
+    parameters:
+      good: "Known good state/commit"
+      bad: "Known bad state/commit"
+    output: chat (bisection steps)
+    effect: "Guide binary search"
+    invoked-by: [player]
+    
+  FIX:
+    description: "Apply a fix"
+    parameters:
+      fix: "What to change"
+      rationale: "Why this should work"
+    output: file changes + chat
+    effect: "Make changes, verify fix"
+    invoked-by: [player]
+    
+  DOCUMENT:
+    description: "Record findings for future reference"
+    parameters: {}
+    output: file (DEBUG-REPORT.md)
+    effect: "Generate debugging report"
+    invoked-by: [player]
+
+# STATE
+
+state:
+  debug-session:
+    symptom:
+      type: string
+    reproduction:
+      type: string
+    hypotheses:
+      type: array
+      description: "List of theories with status"
+    tests:
+      type: array
+      description: "Tests performed and results"
+    findings:
+      type: array
+    status:
+      type: enum
+      values: [investigating, narrowing, fixing, verifying, resolved, abandoned]
+
+# DEBUGGING STRATEGIES
+
+strategies:
+  wolf-fence: "Divide and conquer — bisect the search space"
+  rubber-duck: "Explain the problem out loud"
+  simplify: "Remove complexity until bug disappears"
+  fresh-eyes: "Step away, return with new perspective"
+  assumptions: "Question everything you 'know'"
+
+# ADVERTISEMENTS
+
+advertisements:
+  FIX-BUG:
+    score: 95
+    condition: "Something is broken and needs fixing"
+    
+  INVESTIGATE-MYSTERY:
+    score: 85
+    condition: "Unexpected behavior needs explanation"
+    
+  SYSTEMATIC-SEARCH:
+    score: 80
+    condition: "Need structured approach to finding cause"
+
+# RELATED
+
+see-also:
+  - skills/adventure     # Debugging as exploration
+  - skills/research-notebook  # Investigation patterns
+  - skills/hypothesis-tracking  # (could be a skill!)
+  - skills/self-repair   # Automatic recovery
+
+# CREDITS
+
+credits:
+  inspiration:
+    - "Wolf fence algorithm"
+    - "Git bisect"
+    - "Scientific method"

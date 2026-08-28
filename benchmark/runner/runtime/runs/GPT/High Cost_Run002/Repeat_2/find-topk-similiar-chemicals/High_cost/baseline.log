@@ -1,0 +1,29 @@
+2026-08-17T12:31:12.142437+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=find-topk-similiar-chemicals condition=high_cost image=benchmark-cache/find-topk-similiar-chemicals-gold:bd06707e8ac4a427 provided_skills=["chemical-pdf-pubchem-structure-resolution", "morgan-count-tanimoto-ranking"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:04:36 0:00:00
+high_cost • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 36s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_2\find-topk-similiar-chemicals\High_cost\Job_result\result.j
+son
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_2\find-topk-similiar-chemicals\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_2\find-topk-similiar-chemicals\High_cost\Job_result`
+
+2026-08-17T12:35:50.146048+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=find-topk-similiar-chemicals condition=high_cost

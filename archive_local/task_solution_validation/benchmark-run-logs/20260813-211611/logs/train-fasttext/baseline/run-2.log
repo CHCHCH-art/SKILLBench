@@ -1,0 +1,642 @@
+Task: train-fasttext
+Source type: baseline
+Task run: 2
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\train-fasttext
+
+========== Repeated Run 2/4 ==========
+
+========== Run solve.sh ==========
+convert_data.py
+data
+fastText
+model.bin
+model.vec
+Hit:1 http://deb.debian.org/debian bookworm InRelease
+Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
+Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+git is already the newest version (1:2.39.5-0+deb12u3).
+0 upgraded, 0 newly installed, 0 to remove and 23 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+build-essential is already the newest version (12.9).
+0 upgraded, 0 newly installed, 0 to remove and 23 not upgraded.
+fatal: destination path 'fastText' already exists and is not an empty directory.
+make: Nothing to be done for 'opt'.
+
+Read 1M words
+Read 2M words
+Read 3M words
+Read 4M words
+Read 5M words
+Read 6M words
+Read 7M words
+Read 8M words
+Read 9M words
+Read 10M words
+Read 11M words
+Read 12M words
+Read 13M words
+Read 14M words
+Read 15M words
+Read 16M words
+Read 17M words
+Read 18M words
+Read 19M words
+Read 20M words
+Read 21M words
+Read 22M words
+Read 23M words
+Read 24M words
+Read 25M words
+Read 26M words
+Read 27M words
+Read 28M words
+Read 29M words
+Read 30M words
+Read 31M words
+Read 32M words
+Read 33M words
+Read 34M words
+Read 35M words
+Read 36M words
+Read 37M words
+Read 38M words
+Read 39M words
+Read 40M words
+Read 41M words
+Read 42M words
+Read 43M words
+Read 44M words
+Read 45M words
+Read 46M words
+Read 47M words
+Read 48M words
+Read 49M words
+Read 50M words
+Read 51M words
+Read 52M words
+Read 53M words
+Read 54M words
+Read 55M words
+Read 56M words
+Read 57M words
+Read 58M words
+Read 59M words
+Read 60M words
+Read 61M words
+Read 62M words
+Read 63M words
+Read 64M words
+Read 65M words
+Read 66M words
+Read 67M words
+Read 68M words
+Read 69M words
+Read 70M words
+Read 71M words
+Read 72M words
+Read 73M words
+Read 74M words
+Read 75M words
+Read 76M words
+Read 77M words
+Read 78M words
+Read 79M words
+Read 80M words
+Read 81M words
+Read 82M words
+Read 83M words
+Read 84M words
+Read 85M words
+Read 86M words
+Read 87M words
+Read 88M words
+Read 88M words
+Number of words:  1622077
+Number of labels: 5
+
+Progress:   0.4% words/sec/thread: 1602795 lr:  0.099556 avg.loss:  1.612385 ETA:   0h 0m22s
+Progress:   0.6% words/sec/thread: 1177865 lr:  0.099351 avg.loss:  1.606801 ETA:   0h 0m31s
+Progress:   0.9% words/sec/thread: 1055368 lr:  0.099131 avg.loss:  1.583504 ETA:   0h 0m34s
+Progress:   1.1% words/sec/thread:  974331 lr:  0.098933 avg.loss:  1.581355 ETA:   0h 0m37s
+Progress:   1.3% words/sec/thread:  934998 lr:  0.098721 avg.loss:  1.536199 ETA:   0h 0m38s
+Progress:   1.5% words/sec/thread:  906186 lr:  0.098510 avg.loss:  1.500149 ETA:   0h 0m40s
+Progress:   1.7% words/sec/thread:  891736 lr:  0.098291 avg.loss:  1.495931 ETA:   0h 0m40s
+Progress:   1.9% words/sec/thread:  877199 lr:  0.098080 avg.loss:  1.453399 ETA:   0h 0m41s
+Progress:   2.1% words/sec/thread:  867507 lr:  0.097864 avg.loss:  1.446844 ETA:   0h 0m41s
+Progress:   2.3% words/sec/thread:  858937 lr:  0.097651 avg.loss:  1.412572 ETA:   0h 0m41s
+Progress:   2.6% words/sec/thread:  854634 lr:  0.097431 avg.loss:  1.408699 ETA:   0h 0m42s
+Progress:   2.8% words/sec/thread:  846623 lr:  0.097225 avg.loss:  1.384230 ETA:   0h 0m42s
+Progress:   3.0% words/sec/thread:  804744 lr:  0.096960 avg.loss:  1.371757 ETA:   0h 0m44s
+Progress:   3.3% words/sec/thread:  804282 lr:  0.096744 avg.loss:  1.352657 ETA:   0h 0m44s
+Progress:   3.5% words/sec/thread:  800706 lr:  0.096540 avg.loss:  1.349920 ETA:   0h 0m44s
+Progress:   3.7% words/sec/thread:  799822 lr:  0.096327 avg.loss:  1.323888 ETA:   0h 0m44s
+Progress:   3.9% words/sec/thread:  801509 lr:  0.096101 avg.loss:  1.310571 ETA:   0h 0m44s
+Progress:   4.1% words/sec/thread:  799325 lr:  0.095894 avg.loss:  1.308420 ETA:   0h 0m44s
+Progress:   4.3% words/sec/thread:  799530 lr:  0.095676 avg.loss:  1.300037 ETA:   0h 0m44s
+Progress:   4.5% words/sec/thread:  797253 lr:  0.095471 avg.loss:  1.289083 ETA:   0h 0m44s
+Progress:   4.7% words/sec/thread:  795709 lr:  0.095263 avg.loss:  1.283077 ETA:   0h 0m44s
+Progress:   5.0% words/sec/thread:  796241 lr:  0.095043 avg.loss:  1.280433 ETA:   0h 0m44s
+Progress:   5.2% words/sec/thread:  797109 lr:  0.094821 avg.loss:  1.278127 ETA:   0h 0m43s
+Progress:   5.4% words/sec/thread:  796813 lr:  0.094606 avg.loss:  1.269247 ETA:   0h 0m43s
+Progress:   5.6% words/sec/thread:  795871 lr:  0.094396 avg.loss:  1.268539 ETA:   0h 0m43s
+Progress:   5.8% words/sec/thread:  796630 lr:  0.094174 avg.loss:  1.264243 ETA:   0h 0m43s
+Progress:   6.0% words/sec/thread:  796592 lr:  0.093958 avg.loss:  1.250874 ETA:   0h 0m43s
+Progress:   6.3% words/sec/thread:  795941 lr:  0.093746 avg.loss:  1.245419 ETA:   0h 0m43s
+Progress:   6.5% words/sec/thread:  795675 lr:  0.093532 avg.loss:  1.238124 ETA:   0h 0m43s
+Progress:   6.7% words/sec/thread:  793439 lr:  0.093334 avg.loss:  1.234208 ETA:   0h 0m43s
+Progress:   6.9% words/sec/thread:  793910 lr:  0.093114 avg.loss:  1.230766 ETA:   0h 0m43s
+Progress:   7.1% words/sec/thread:  793578 lr:  0.092901 avg.loss:  1.225065 ETA:   0h 0m43s
+Progress:   7.3% words/sec/thread:  792995 lr:  0.092691 avg.loss:  1.223156 ETA:   0h 0m43s
+Progress:   7.5% words/sec/thread:  792388 lr:  0.092481 avg.loss:  1.214437 ETA:   0h 0m43s
+Progress:   7.7% words/sec/thread:  791259 lr:  0.092276 avg.loss:  1.212658 ETA:   0h 0m42s
+Progress:   7.9% words/sec/thread:  790926 lr:  0.092064 avg.loss:  1.207509 ETA:   0h 0m42s
+Progress:   8.2% words/sec/thread:  791333 lr:  0.091845 avg.loss:  1.203665 ETA:   0h 0m42s
+Progress:   8.4% words/sec/thread:  790699 lr:  0.091636 avg.loss:  1.195803 ETA:   0h 0m42s
+Progress:   8.6% words/sec/thread:  789270 lr:  0.091437 avg.loss:  1.194121 ETA:   0h 0m42s
+Progress:   8.8% words/sec/thread:  789869 lr:  0.091216 avg.loss:  1.189248 ETA:   0h 0m42s
+Progress:   9.0% words/sec/thread:  789207 lr:  0.091009 avg.loss:  1.184481 ETA:   0h 0m42s
+Progress:   9.2% words/sec/thread:  789885 lr:  0.090786 avg.loss:  1.179453 ETA:   0h 0m42s
+Progress:   9.4% words/sec/thread:  788880 lr:  0.090582 avg.loss:  1.178540 ETA:   0h 0m42s
+Progress:   9.6% words/sec/thread:  787778 lr:  0.090381 avg.loss:  1.174802 ETA:   0h 0m42s
+Progress:   9.8% words/sec/thread:  786893 lr:  0.090178 avg.loss:  1.170890 ETA:   0h 0m42s
+Progress:  10.0% words/sec/thread:  786233 lr:  0.089972 avg.loss:  1.170108 ETA:   0h 0m42s
+Progress:  10.2% words/sec/thread:  786402 lr:  0.089754 avg.loss:  1.163221 ETA:   0h 0m42s
+Progress:  10.4% words/sec/thread:  785262 lr:  0.089555 avg.loss:  1.158201 ETA:   0h 0m42s
+Progress:  10.6% words/sec/thread:  784526 lr:  0.089350 avg.loss:  1.153465 ETA:   0h 0m41s
+Progress:  10.9% words/sec/thread:  784484 lr:  0.089138 avg.loss:  1.152393 ETA:   0h 0m41s
+Progress:  11.1% words/sec/thread:  784175 lr:  0.088928 avg.loss:  1.146345 ETA:   0h 0m41s
+Progress:  11.3% words/sec/thread:  783608 lr:  0.088722 avg.loss:  1.143759 ETA:   0h 0m41s
+Progress:  11.5% words/sec/thread:  783238 lr:  0.088515 avg.loss:  1.138982 ETA:   0h 0m41s
+Progress:  11.7% words/sec/thread:  782883 lr:  0.088307 avg.loss:  1.138696 ETA:   0h 0m41s
+Progress:  11.9% words/sec/thread:  783168 lr:  0.088089 avg.loss:  1.136553 ETA:   0h 0m41s
+Progress:  12.1% words/sec/thread:  783065 lr:  0.087877 avg.loss:  1.135618 ETA:   0h 0m41s
+Progress:  12.3% words/sec/thread:  783265 lr:  0.087661 avg.loss:  1.130129 ETA:   0h 0m41s
+Progress:  12.6% words/sec/thread:  783428 lr:  0.087444 avg.loss:  1.129526 ETA:   0h 0m41s
+Progress:  12.8% words/sec/thread:  773133 lr:  0.087226 avg.loss:  1.124928 ETA:   0h 0m41s
+Progress:  13.0% words/sec/thread:  775759 lr:  0.086968 avg.loss:  1.124221 ETA:   0h 0m41s
+Progress:  13.2% words/sec/thread:  774854 lr:  0.086772 avg.loss:  1.121840 ETA:   0h 0m41s
+Progress:  13.4% words/sec/thread:  775217 lr:  0.086555 avg.loss:  1.120356 ETA:   0h 0m41s
+Progress:  13.6% words/sec/thread:  774463 lr:  0.086358 avg.loss:  1.119141 ETA:   0h 0m41s
+Progress:  13.9% words/sec/thread:  775170 lr:  0.086134 avg.loss:  1.118051 ETA:   0h 0m40s
+Progress:  14.1% words/sec/thread:  774944 lr:  0.085926 avg.loss:  1.117829 ETA:   0h 0m40s
+Progress:  14.3% words/sec/thread:  775923 lr:  0.085697 avg.loss:  1.113915 ETA:   0h 0m40s
+Progress:  14.5% words/sec/thread:  776278 lr:  0.085478 avg.loss:  1.111089 ETA:   0h 0m40s
+Progress:  14.7% words/sec/thread:  776723 lr:  0.085258 avg.loss:  1.109301 ETA:   0h 0m40s
+Progress:  14.9% words/sec/thread:  769844 lr:  0.085070 avg.loss:  1.107960 ETA:   0h 0m40s
+Progress:  15.2% words/sec/thread:  768337 lr:  0.084805 avg.loss:  1.104473 ETA:   0h 0m40s
+Progress:  15.4% words/sec/thread:  768443 lr:  0.084593 avg.loss:  1.103121 ETA:   0h 0m40s
+Progress:  15.7% words/sec/thread:  771101 lr:  0.084324 avg.loss:  1.101259 ETA:   0h 0m40s
+Progress:  15.9% words/sec/thread:  770934 lr:  0.084118 avg.loss:  1.099562 ETA:   0h 0m40s
+Progress:  16.1% words/sec/thread:  770941 lr:  0.083908 avg.loss:  1.099719 ETA:   0h 0m40s
+Progress:  16.3% words/sec/thread:  771384 lr:  0.083689 avg.loss:  1.098716 ETA:   0h 0m39s
+Progress:  16.5% words/sec/thread:  771693 lr:  0.083472 avg.loss:  1.097112 ETA:   0h 0m39s
+Progress:  16.7% words/sec/thread:  771430 lr:  0.083268 avg.loss:  1.094933 ETA:   0h 0m39s
+Progress:  16.9% words/sec/thread:  771633 lr:  0.083053 avg.loss:  1.091824 ETA:   0h 0m39s
+Progress:  17.2% words/sec/thread:  771608 lr:  0.082844 avg.loss:  1.091171 ETA:   0h 0m39s
+Progress:  17.4% words/sec/thread:  771531 lr:  0.082636 avg.loss:  1.089646 ETA:   0h 0m39s
+Progress:  17.6% words/sec/thread:  771608 lr:  0.082424 avg.loss:  1.088544 ETA:   0h 0m39s
+Progress:  17.8% words/sec/thread:  771743 lr:  0.082211 avg.loss:  1.087842 ETA:   0h 0m39s
+Progress:  18.0% words/sec/thread:  771640 lr:  0.082004 avg.loss:  1.085565 ETA:   0h 0m39s
+Progress:  18.2% words/sec/thread:  771495 lr:  0.081798 avg.loss:  1.084837 ETA:   0h 0m39s
+Progress:  18.4% words/sec/thread:  771934 lr:  0.081577 avg.loss:  1.084750 ETA:   0h 0m38s
+Progress:  18.6% words/sec/thread:  772158 lr:  0.081363 avg.loss:  1.083488 ETA:   0h 0m38s
+Progress:  18.8% words/sec/thread:  772239 lr:  0.081150 avg.loss:  1.080916 ETA:   0h 0m38s
+Progress:  19.1% words/sec/thread:  772143 lr:  0.080943 avg.loss:  1.080954 ETA:   0h 0m38s
+Progress:  19.3% words/sec/thread:  772270 lr:  0.080729 avg.loss:  1.080085 ETA:   0h 0m38s
+Progress:  19.5% words/sec/thread:  772540 lr:  0.080513 avg.loss:  1.078644 ETA:   0h 0m38s
+Progress:  19.7% words/sec/thread:  772561 lr:  0.080302 avg.loss:  1.076669 ETA:   0h 0m38s
+Progress:  19.9% words/sec/thread:  772148 lr:  0.080103 avg.loss:  1.074422 ETA:   0h 0m38s
+Progress:  20.1% words/sec/thread:  772470 lr:  0.079884 avg.loss:  1.074301 ETA:   0h 0m38s
+Progress:  20.3% words/sec/thread:  772617 lr:  0.079670 avg.loss:  1.074546 ETA:   0h 0m38s
+Progress:  20.5% words/sec/thread:  772773 lr:  0.079456 avg.loss:  1.073255 ETA:   0h 0m37s
+Progress:  20.8% words/sec/thread:  772840 lr:  0.079244 avg.loss:  1.072447 ETA:   0h 0m37s
+Progress:  21.0% words/sec/thread:  772731 lr:  0.079036 avg.loss:  1.071466 ETA:   0h 0m37s
+Progress:  21.2% words/sec/thread:  773128 lr:  0.078815 avg.loss:  1.071241 ETA:   0h 0m37s
+Progress:  21.4% words/sec/thread:  773210 lr:  0.078602 avg.loss:  1.071394 ETA:   0h 0m37s
+Progress:  21.6% words/sec/thread:  773319 lr:  0.078389 avg.loss:  1.069807 ETA:   0h 0m37s
+Progress:  21.8% words/sec/thread:  773083 lr:  0.078184 avg.loss:  1.068653 ETA:   0h 0m37s
+Progress:  22.0% words/sec/thread:  772984 lr:  0.077975 avg.loss:  1.068214 ETA:   0h 0m37s
+Progress:  22.2% words/sec/thread:  772651 lr:  0.077774 avg.loss:  1.066945 ETA:   0h 0m37s
+Progress:  22.4% words/sec/thread:  772330 lr:  0.077573 avg.loss:  1.065498 ETA:   0h 0m37s
+Progress:  22.6% words/sec/thread:  772617 lr:  0.077353 avg.loss:  1.065221 ETA:   0h 0m36s
+Progress:  22.8% words/sec/thread:  767120 lr:  0.077154 avg.loss:  1.063473 ETA:   0h 0m37s
+Progress:  23.1% words/sec/thread:  767482 lr:  0.076904 avg.loss:  1.061021 ETA:   0h 0m36s
+Progress:  23.3% words/sec/thread:  767644 lr:  0.076690 avg.loss:  1.060783 ETA:   0h 0m36s
+Progress:  23.5% words/sec/thread:  767666 lr:  0.076480 avg.loss:  1.060079 ETA:   0h 0m36s
+Progress:  23.7% words/sec/thread:  767583 lr:  0.076274 avg.loss:  1.059590 ETA:   0h 0m36s
+Progress:  23.9% words/sec/thread:  767059 lr:  0.076082 avg.loss:  1.058787 ETA:   0h 0m36s
+Progress:  24.1% words/sec/thread:  767727 lr:  0.075852 avg.loss:  1.057755 ETA:   0h 0m36s
+Progress:  24.3% words/sec/thread:  767468 lr:  0.075652 avg.loss:  1.057051 ETA:   0h 0m36s
+Progress:  24.6% words/sec/thread:  767706 lr:  0.075436 avg.loss:  1.055662 ETA:   0h 0m36s
+Progress:  24.8% words/sec/thread:  767634 lr:  0.075229 avg.loss:  1.053744 ETA:   0h 0m36s
+Progress:  25.0% words/sec/thread:  768122 lr:  0.075004 avg.loss:  1.051914 ETA:   0h 0m35s
+Progress:  25.2% words/sec/thread:  768232 lr:  0.074791 avg.loss:  1.049367 ETA:   0h 0m35s
+Progress:  25.4% words/sec/thread:  768269 lr:  0.074581 avg.loss:  1.048664 ETA:   0h 0m35s
+Progress:  25.6% words/sec/thread:  768403 lr:  0.074368 avg.loss:  1.048099 ETA:   0h 0m35s
+Progress:  25.8% words/sec/thread:  768273 lr:  0.074163 avg.loss:  1.047076 ETA:   0h 0m35s
+Progress:  26.0% words/sec/thread:  768189 lr:  0.073957 avg.loss:  1.045879 ETA:   0h 0m35s
+Progress:  26.3% words/sec/thread:  768356 lr:  0.073742 avg.loss:  1.045442 ETA:   0h 0m35s
+Progress:  26.5% words/sec/thread:  768260 lr:  0.073537 avg.loss:  1.045110 ETA:   0h 0m35s
+Progress:  26.7% words/sec/thread:  767940 lr:  0.073339 avg.loss:  1.044587 ETA:   0h 0m35s
+Progress:  26.9% words/sec/thread:  768192 lr:  0.073122 avg.loss:  1.042948 ETA:   0h 0m35s
+Progress:  27.1% words/sec/thread:  768355 lr:  0.072907 avg.loss:  1.041095 ETA:   0h 0m34s
+Progress:  27.3% words/sec/thread:  768494 lr:  0.072693 avg.loss:  1.038843 ETA:   0h 0m34s
+Progress:  27.5% words/sec/thread:  768674 lr:  0.072477 avg.loss:  1.038839 ETA:   0h 0m34s
+Progress:  27.7% words/sec/thread:  768735 lr:  0.072266 avg.loss:  1.037586 ETA:   0h 0m34s
+Progress:  27.9% words/sec/thread:  768760 lr:  0.072056 avg.loss:  1.037165 ETA:   0h 0m34s
+Progress:  28.2% words/sec/thread:  768752 lr:  0.071847 avg.loss:  1.036635 ETA:   0h 0m34s
+Progress:  28.4% words/sec/thread:  768965 lr:  0.071630 avg.loss:  1.036631 ETA:   0h 0m34s
+Progress:  28.6% words/sec/thread:  769054 lr:  0.071417 avg.loss:  1.036635 ETA:   0h 0m34s
+Progress:  28.8% words/sec/thread:  769216 lr:  0.071202 avg.loss:  1.036690 ETA:   0h 0m34s
+Progress:  29.0% words/sec/thread:  769281 lr:  0.070991 avg.loss:  1.035179 ETA:   0h 0m34s
+Progress:  29.2% words/sec/thread:  769255 lr:  0.070781 avg.loss:  1.034411 ETA:   0h 0m33s
+Progress:  29.4% words/sec/thread:  769309 lr:  0.070570 avg.loss:  1.032510 ETA:   0h 0m33s
+Progress:  29.6% words/sec/thread:  769279 lr:  0.070361 avg.loss:  1.031491 ETA:   0h 0m33s
+Progress:  29.8% words/sec/thread:  769211 lr:  0.070155 avg.loss:  1.028509 ETA:   0h 0m33s
+Progress:  30.1% words/sec/thread:  769138 lr:  0.069948 avg.loss:  1.027494 ETA:   0h 0m33s
+Progress:  30.3% words/sec/thread:  769129 lr:  0.069737 avg.loss:  1.024719 ETA:   0h 0m33s
+Progress:  30.5% words/sec/thread:  768982 lr:  0.069533 avg.loss:  1.023653 ETA:   0h 0m33s
+Progress:  30.7% words/sec/thread:  764617 lr:  0.069322 avg.loss:  1.023446 ETA:   0h 0m33s
+Progress:  30.9% words/sec/thread:  764542 lr:  0.069116 avg.loss:  1.021815 ETA:   0h 0m33s
+Progress:  31.1% words/sec/thread:  764473 lr:  0.068910 avg.loss:  1.021438 ETA:   0h 0m33s
+Progress:  31.3% words/sec/thread:  765163 lr:  0.068670 avg.loss:  1.020331 ETA:   0h 0m33s
+Progress:  31.5% words/sec/thread:  765214 lr:  0.068461 avg.loss:  1.019048 ETA:   0h 0m32s
+Progress:  31.8% words/sec/thread:  765437 lr:  0.068244 avg.loss:  1.017466 ETA:   0h 0m32s
+Progress:  32.0% words/sec/thread:  765332 lr:  0.068040 avg.loss:  1.016420 ETA:   0h 0m32s
+Progress:  32.2% words/sec/thread:  766727 lr:  0.067766 avg.loss:  1.015425 ETA:   0h 0m32s
+Progress:  32.4% words/sec/thread:  765572 lr:  0.067604 avg.loss:  1.015030 ETA:   0h 0m32s
+Progress:  32.7% words/sec/thread:  768171 lr:  0.067286 avg.loss:  1.013991 ETA:   0h 0m32s
+Progress:  32.9% words/sec/thread:  767973 lr:  0.067085 avg.loss:  1.013390 ETA:   0h 0m32s
+Progress:  33.1% words/sec/thread:  767917 lr:  0.066879 avg.loss:  1.012495 ETA:   0h 0m32s
+Progress:  33.3% words/sec/thread:  767657 lr:  0.066682 avg.loss:  1.011309 ETA:   0h 0m32s
+Progress:  33.5% words/sec/thread:  767557 lr:  0.066477 avg.loss:  1.010765 ETA:   0h 0m31s
+Progress:  33.7% words/sec/thread:  767352 lr:  0.066278 avg.loss:  1.009756 ETA:   0h 0m31s
+Progress:  33.9% words/sec/thread:  767609 lr:  0.066058 avg.loss:  1.008787 ETA:   0h 0m31s
+Progress:  34.2% words/sec/thread:  767606 lr:  0.065849 avg.loss:  1.007961 ETA:   0h 0m31s
+Progress:  34.4% words/sec/thread:  767755 lr:  0.065634 avg.loss:  1.007783 ETA:   0h 0m31s
+Progress:  34.6% words/sec/thread:  767872 lr:  0.065420 avg.loss:  1.007827 ETA:   0h 0m31s
+Progress:  34.8% words/sec/thread:  767805 lr:  0.065214 avg.loss:  1.006953 ETA:   0h 0m31s
+Progress:  35.1% words/sec/thread:  766312 lr:  0.064869 avg.loss:  1.006168 ETA:   0h 0m31s
+Progress:  35.4% words/sec/thread:  764037 lr:  0.064576 avg.loss:  1.004339 ETA:   0h 0m31s
+Progress:  35.6% words/sec/thread:  764067 lr:  0.064367 avg.loss:  1.003358 ETA:   0h 0m31s
+Progress:  35.8% words/sec/thread:  764163 lr:  0.064155 avg.loss:  1.002484 ETA:   0h 0m30s
+Progress:  36.1% words/sec/thread:  764440 lr:  0.063930 avg.loss:  1.001581 ETA:   0h 0m30s
+Progress:  36.3% words/sec/thread:  764294 lr:  0.063729 avg.loss:  1.001053 ETA:   0h 0m30s
+Progress:  36.5% words/sec/thread:  764169 lr:  0.063527 avg.loss:  0.999553 ETA:   0h 0m30s
+Progress:  36.7% words/sec/thread:  764481 lr:  0.063305 avg.loss:  0.998106 ETA:   0h 0m30s
+Progress:  36.9% words/sec/thread:  764555 lr:  0.063093 avg.loss:  0.996706 ETA:   0h 0m30s
+Progress:  37.1% words/sec/thread:  764490 lr:  0.062888 avg.loss:  0.996033 ETA:   0h 0m30s
+Progress:  37.3% words/sec/thread:  764632 lr:  0.062674 avg.loss:  0.995038 ETA:   0h 0m30s
+Progress:  37.5% words/sec/thread:  764708 lr:  0.062462 avg.loss:  0.993891 ETA:   0h 0m30s
+Progress:  37.7% words/sec/thread:  764659 lr:  0.062257 avg.loss:  0.993474 ETA:   0h 0m30s
+Progress:  38.0% words/sec/thread:  764967 lr:  0.062033 avg.loss:  0.992568 ETA:   0h 0m29s
+Progress:  38.2% words/sec/thread:  765547 lr:  0.061794 avg.loss:  0.991760 ETA:   0h 0m29s
+Progress:  38.4% words/sec/thread:  765748 lr:  0.061576 avg.loss:  0.990752 ETA:   0h 0m29s
+Progress:  38.6% words/sec/thread:  765871 lr:  0.061361 avg.loss:  0.990202 ETA:   0h 0m29s
+Progress:  38.8% words/sec/thread:  765701 lr:  0.061162 avg.loss:  0.989726 ETA:   0h 0m29s
+Progress:  39.0% words/sec/thread:  765717 lr:  0.060952 avg.loss:  0.988308 ETA:   0h 0m29s
+Progress:  39.3% words/sec/thread:  765612 lr:  0.060750 avg.loss:  0.986933 ETA:   0h 0m29s
+Progress:  39.5% words/sec/thread:  765619 lr:  0.060541 avg.loss:  0.986347 ETA:   0h 0m29s
+Progress:  39.7% words/sec/thread:  765644 lr:  0.060332 avg.loss:  0.986176 ETA:   0h 0m29s
+Progress:  39.9% words/sec/thread:  765654 lr:  0.060124 avg.loss:  0.985175 ETA:   0h 0m28s
+Progress:  40.1% words/sec/thread:  765627 lr:  0.059917 avg.loss:  0.984451 ETA:   0h 0m28s
+Progress:  40.3% words/sec/thread:  765810 lr:  0.059699 avg.loss:  0.983570 ETA:   0h 0m28s
+Progress:  40.5% words/sec/thread:  765991 lr:  0.059482 avg.loss:  0.983196 ETA:   0h 0m28s
+Progress:  40.7% words/sec/thread:  766021 lr:  0.059272 avg.loss:  0.982473 ETA:   0h 0m28s
+Progress:  40.9% words/sec/thread:  766231 lr:  0.059052 avg.loss:  0.981613 ETA:   0h 0m28s
+Progress:  41.2% words/sec/thread:  766323 lr:  0.058839 avg.loss:  0.981511 ETA:   0h 0m28s
+Progress:  41.4% words/sec/thread:  766327 lr:  0.058631 avg.loss:  0.980107 ETA:   0h 0m28s
+Progress:  41.6% words/sec/thread:  766341 lr:  0.058421 avg.loss:  0.979151 ETA:   0h 0m28s
+Progress:  41.8% words/sec/thread:  766462 lr:  0.058206 avg.loss:  0.978348 ETA:   0h 0m27s
+Progress:  42.0% words/sec/thread:  766557 lr:  0.057992 avg.loss:  0.977638 ETA:   0h 0m27s
+Progress:  42.2% words/sec/thread:  766382 lr:  0.057794 avg.loss:  0.976721 ETA:   0h 0m27s
+Progress:  42.4% words/sec/thread:  766443 lr:  0.057581 avg.loss:  0.975449 ETA:   0h 0m27s
+Progress:  42.6% words/sec/thread:  766663 lr:  0.057361 avg.loss:  0.974707 ETA:   0h 0m27s
+Progress:  42.9% words/sec/thread:  766923 lr:  0.057137 avg.loss:  0.974081 ETA:   0h 0m27s
+Progress:  43.1% words/sec/thread:  766750 lr:  0.056936 avg.loss:  0.973960 ETA:   0h 0m27s
+Progress:  43.3% words/sec/thread:  766759 lr:  0.056727 avg.loss:  0.973920 ETA:   0h 0m27s
+Progress:  43.5% words/sec/thread:  766803 lr:  0.056515 avg.loss:  0.973019 ETA:   0h 0m27s
+Progress:  43.7% words/sec/thread:  766857 lr:  0.056302 avg.loss:  0.972039 ETA:   0h 0m27s
+Progress:  43.9% words/sec/thread:  766953 lr:  0.056086 avg.loss:  0.971145 ETA:   0h 0m26s
+Progress:  44.1% words/sec/thread:  766812 lr:  0.055886 avg.loss:  0.969935 ETA:   0h 0m26s
+Progress:  44.3% words/sec/thread:  766964 lr:  0.055669 avg.loss:  0.969725 ETA:   0h 0m26s
+Progress:  44.5% words/sec/thread:  766873 lr:  0.055466 avg.loss:  0.968626 ETA:   0h 0m26s
+Progress:  44.7% words/sec/thread:  766957 lr:  0.055251 avg.loss:  0.968339 ETA:   0h 0m26s
+Progress:  45.0% words/sec/thread:  767034 lr:  0.055037 avg.loss:  0.966582 ETA:   0h 0m26s
+Progress:  45.2% words/sec/thread:  767084 lr:  0.054826 avg.loss:  0.965321 ETA:   0h 0m26s
+Progress:  45.4% words/sec/thread:  767148 lr:  0.054614 avg.loss:  0.964789 ETA:   0h 0m26s
+Progress:  45.6% words/sec/thread:  767344 lr:  0.054393 avg.loss:  0.964471 ETA:   0h 0m26s
+Progress:  45.8% words/sec/thread:  767270 lr:  0.054189 avg.loss:  0.964387 ETA:   0h 0m26s
+Progress:  46.0% words/sec/thread:  767205 lr:  0.053983 avg.loss:  0.963775 ETA:   0h 0m25s
+Progress:  46.2% words/sec/thread:  767313 lr:  0.053766 avg.loss:  0.963657 ETA:   0h 0m25s
+Progress:  46.4% words/sec/thread:  767236 lr:  0.053563 avg.loss:  0.962826 ETA:   0h 0m25s
+Progress:  46.7% words/sec/thread:  767367 lr:  0.053345 avg.loss:  0.961675 ETA:   0h 0m25s
+Progress:  46.9% words/sec/thread:  767458 lr:  0.053130 avg.loss:  0.960609 ETA:   0h 0m25s
+Progress:  47.1% words/sec/thread:  767488 lr:  0.052919 avg.loss:  0.959973 ETA:   0h 0m25s
+Progress:  47.3% words/sec/thread:  767438 lr:  0.052712 avg.loss:  0.959148 ETA:   0h 0m25s
+Progress:  47.5% words/sec/thread:  767391 lr:  0.052506 avg.loss:  0.958265 ETA:   0h 0m25s
+Progress:  47.7% words/sec/thread:  767538 lr:  0.052287 avg.loss:  0.957610 ETA:   0h 0m25s
+Progress:  47.9% words/sec/thread:  767506 lr:  0.052080 avg.loss:  0.957325 ETA:   0h 0m25s
+Progress:  48.1% words/sec/thread:  767618 lr:  0.051862 avg.loss:  0.956466 ETA:   0h 0m24s
+Progress:  48.3% words/sec/thread:  767660 lr:  0.051650 avg.loss:  0.955928 ETA:   0h 0m24s
+Progress:  48.5% words/sec/thread:  767482 lr:  0.051453 avg.loss:  0.955308 ETA:   0h 0m24s
+Progress:  48.8% words/sec/thread:  767423 lr:  0.051247 avg.loss:  0.954786 ETA:   0h 0m24s
+Progress:  49.0% words/sec/thread:  767479 lr:  0.051033 avg.loss:  0.954376 ETA:   0h 0m24s
+Progress:  49.2% words/sec/thread:  767456 lr:  0.050825 avg.loss:  0.954167 ETA:   0h 0m24s
+Progress:  49.4% words/sec/thread:  767512 lr:  0.050612 avg.loss:  0.953883 ETA:   0h 0m24s
+Progress:  49.6% words/sec/thread:  767650 lr:  0.050394 avg.loss:  0.953737 ETA:   0h 0m24s
+Progress:  49.8% words/sec/thread:  767781 lr:  0.050175 avg.loss:  0.953225 ETA:   0h 0m24s
+Progress:  50.0% words/sec/thread:  767731 lr:  0.049968 avg.loss:  0.952696 ETA:   0h 0m23s
+Progress:  50.2% words/sec/thread:  767833 lr:  0.049751 avg.loss:  0.951649 ETA:   0h 0m23s
+Progress:  50.5% words/sec/thread:  767866 lr:  0.049540 avg.loss:  0.950501 ETA:   0h 0m23s
+Progress:  50.7% words/sec/thread:  767996 lr:  0.049323 avg.loss:  0.949680 ETA:   0h 0m23s
+Progress:  50.9% words/sec/thread:  768205 lr:  0.049100 avg.loss:  0.949223 ETA:   0h 0m23s
+Progress:  51.1% words/sec/thread:  768193 lr:  0.048890 avg.loss:  0.948007 ETA:   0h 0m23s
+Progress:  51.3% words/sec/thread:  768106 lr:  0.048686 avg.loss:  0.947264 ETA:   0h 0m23s
+Progress:  51.5% words/sec/thread:  768193 lr:  0.048471 avg.loss:  0.946031 ETA:   0h 0m23s
+Progress:  51.7% words/sec/thread:  768300 lr:  0.048254 avg.loss:  0.945867 ETA:   0h 0m23s
+Progress:  52.0% words/sec/thread:  768470 lr:  0.048033 avg.loss:  0.944921 ETA:   0h 0m23s
+Progress:  52.2% words/sec/thread:  768598 lr:  0.047814 avg.loss:  0.944388 ETA:   0h 0m22s
+Progress:  52.4% words/sec/thread:  768387 lr:  0.047619 avg.loss:  0.943695 ETA:   0h 0m22s
+Progress:  52.6% words/sec/thread:  767191 lr:  0.047358 avg.loss:  0.943228 ETA:   0h 0m22s
+Progress:  52.8% words/sec/thread:  767132 lr:  0.047153 avg.loss:  0.942199 ETA:   0h 0m22s
+Progress:  53.1% words/sec/thread:  767458 lr:  0.046921 avg.loss:  0.941074 ETA:   0h 0m22s
+Progress:  53.3% words/sec/thread:  767777 lr:  0.046687 avg.loss:  0.940677 ETA:   0h 0m22s
+Progress:  53.5% words/sec/thread:  767770 lr:  0.046479 avg.loss:  0.939684 ETA:   0h 0m22s
+Progress:  53.7% words/sec/thread:  767999 lr:  0.046252 avg.loss:  0.938607 ETA:   0h 0m22s
+Progress:  54.0% words/sec/thread:  768063 lr:  0.046039 avg.loss:  0.937515 ETA:   0h 0m22s
+Progress:  54.2% words/sec/thread:  768197 lr:  0.045820 avg.loss:  0.936418 ETA:   0h 0m21s
+Progress:  54.4% words/sec/thread:  768199 lr:  0.045611 avg.loss:  0.935470 ETA:   0h 0m21s
+Progress:  54.6% words/sec/thread:  768382 lr:  0.045389 avg.loss:  0.934887 ETA:   0h 0m21s
+Progress:  54.8% words/sec/thread:  768333 lr:  0.045184 avg.loss:  0.934462 ETA:   0h 0m21s
+Progress:  55.0% words/sec/thread:  768388 lr:  0.044971 avg.loss:  0.934444 ETA:   0h 0m21s
+Progress:  55.2% words/sec/thread:  768385 lr:  0.044762 avg.loss:  0.933911 ETA:   0h 0m21s
+Progress:  55.5% words/sec/thread:  768427 lr:  0.044550 avg.loss:  0.933562 ETA:   0h 0m21s
+Progress:  55.7% words/sec/thread:  768584 lr:  0.044330 avg.loss:  0.933212 ETA:   0h 0m21s
+Progress:  55.9% words/sec/thread:  768593 lr:  0.044120 avg.loss:  0.933174 ETA:   0h 0m21s
+Progress:  56.1% words/sec/thread:  768704 lr:  0.043902 avg.loss:  0.932847 ETA:   0h 0m21s
+Progress:  56.3% words/sec/thread:  768706 lr:  0.043693 avg.loss:  0.932267 ETA:   0h 0m20s
+Progress:  56.5% words/sec/thread:  768713 lr:  0.043484 avg.loss:  0.932122 ETA:   0h 0m20s
+Progress:  56.7% words/sec/thread:  768614 lr:  0.043282 avg.loss:  0.931946 ETA:   0h 0m20s
+Progress:  56.9% words/sec/thread:  768475 lr:  0.043083 avg.loss:  0.931421 ETA:   0h 0m20s
+Progress:  57.1% words/sec/thread:  768542 lr:  0.042869 avg.loss:  0.931320 ETA:   0h 0m20s
+Progress:  57.3% words/sec/thread:  767827 lr:  0.042713 avg.loss:  0.931125 ETA:   0h 0m20s
+Progress:  57.5% words/sec/thread:  767766 lr:  0.042509 avg.loss:  0.930551 ETA:   0h 0m20s
+Progress:  57.7% words/sec/thread:  767822 lr:  0.042296 avg.loss:  0.930342 ETA:   0h 0m20s
+Progress:  57.9% words/sec/thread:  767835 lr:  0.042087 avg.loss:  0.929867 ETA:   0h 0m20s
+Progress:  58.1% words/sec/thread:  767858 lr:  0.041876 avg.loss:  0.929589 ETA:   0h 0m20s
+Progress:  58.3% words/sec/thread:  767972 lr:  0.041659 avg.loss:  0.928981 ETA:   0h 0m19s
+Progress:  58.5% words/sec/thread:  767904 lr:  0.041455 avg.loss:  0.928672 ETA:   0h 0m19s
+Progress:  58.8% words/sec/thread:  767962 lr:  0.041241 avg.loss:  0.928377 ETA:   0h 0m19s
+Progress:  59.0% words/sec/thread:  767802 lr:  0.041045 avg.loss:  0.927884 ETA:   0h 0m19s
+Progress:  59.2% words/sec/thread:  767716 lr:  0.040842 avg.loss:  0.927664 ETA:   0h 0m19s
+Progress:  59.4% words/sec/thread:  767757 lr:  0.040630 avg.loss:  0.927490 ETA:   0h 0m19s
+Progress:  59.6% words/sec/thread:  767757 lr:  0.040420 avg.loss:  0.927076 ETA:   0h 0m19s
+Progress:  59.8% words/sec/thread:  765475 lr:  0.040212 avg.loss:  0.926856 ETA:   0h 0m19s
+Progress:  60.0% words/sec/thread:  765512 lr:  0.040000 avg.loss:  0.926594 ETA:   0h 0m19s
+Progress:  60.3% words/sec/thread:  766033 lr:  0.039748 avg.loss:  0.926248 ETA:   0h 0m19s
+Progress:  60.5% words/sec/thread:  766099 lr:  0.039533 avg.loss:  0.926007 ETA:   0h 0m19s
+Progress:  60.7% words/sec/thread:  766281 lr:  0.039310 avg.loss:  0.925486 ETA:   0h 0m18s
+Progress:  61.0% words/sec/thread:  767174 lr:  0.039025 avg.loss:  0.924810 ETA:   0h 0m18s
+Progress:  61.2% words/sec/thread:  767086 lr:  0.038824 avg.loss:  0.924548 ETA:   0h 0m18s
+Progress:  61.4% words/sec/thread:  767170 lr:  0.038609 avg.loss:  0.923971 ETA:   0h 0m18s
+Progress:  61.6% words/sec/thread:  767490 lr:  0.038370 avg.loss:  0.923456 ETA:   0h 0m18s
+Progress:  61.8% words/sec/thread:  767604 lr:  0.038152 avg.loss:  0.923118 ETA:   0h 0m18s
+Progress:  62.1% words/sec/thread:  767586 lr:  0.037945 avg.loss:  0.922903 ETA:   0h 0m18s
+Progress:  62.3% words/sec/thread:  767694 lr:  0.037727 avg.loss:  0.922444 ETA:   0h 0m18s
+Progress:  62.5% words/sec/thread:  767901 lr:  0.037501 avg.loss:  0.921740 ETA:   0h 0m18s
+Progress:  62.7% words/sec/thread:  768058 lr:  0.037279 avg.loss:  0.921405 ETA:   0h 0m17s
+Progress:  62.9% words/sec/thread:  768025 lr:  0.037073 avg.loss:  0.920793 ETA:   0h 0m17s
+Progress:  63.1% words/sec/thread:  767914 lr:  0.036873 avg.loss:  0.920191 ETA:   0h 0m17s
+Progress:  63.3% words/sec/thread:  767975 lr:  0.036659 avg.loss:  0.919673 ETA:   0h 0m17s
+Progress:  63.6% words/sec/thread:  767984 lr:  0.036450 avg.loss:  0.919424 ETA:   0h 0m17s
+Progress:  63.8% words/sec/thread:  768037 lr:  0.036235 avg.loss:  0.918523 ETA:   0h 0m17s
+Progress:  64.0% words/sec/thread:  768159 lr:  0.036015 avg.loss:  0.917992 ETA:   0h 0m17s
+Progress:  64.2% words/sec/thread:  768337 lr:  0.035791 avg.loss:  0.917288 ETA:   0h 0m17s
+Progress:  64.4% words/sec/thread:  768370 lr:  0.035578 avg.loss:  0.917239 ETA:   0h 0m17s
+Progress:  64.6% words/sec/thread:  768393 lr:  0.035367 avg.loss:  0.916973 ETA:   0h 0m16s
+Progress:  64.9% words/sec/thread:  768553 lr:  0.035144 avg.loss:  0.916614 ETA:   0h 0m16s
+Progress:  65.1% words/sec/thread:  768562 lr:  0.034934 avg.loss:  0.916111 ETA:   0h 0m16s
+Progress:  65.3% words/sec/thread:  768502 lr:  0.034730 avg.loss:  0.915527 ETA:   0h 0m16s
+Progress:  65.5% words/sec/thread:  768529 lr:  0.034518 avg.loss:  0.914961 ETA:   0h 0m16s
+Progress:  65.7% words/sec/thread:  768477 lr:  0.034312 avg.loss:  0.914288 ETA:   0h 0m16s
+Progress:  65.9% words/sec/thread:  768577 lr:  0.034095 avg.loss:  0.914300 ETA:   0h 0m16s
+Progress:  66.1% words/sec/thread:  768545 lr:  0.033888 avg.loss:  0.913869 ETA:   0h 0m16s
+Progress:  66.3% words/sec/thread:  768625 lr:  0.033671 avg.loss:  0.913571 ETA:   0h 0m16s
+Progress:  66.5% words/sec/thread:  768726 lr:  0.033453 avg.loss:  0.913018 ETA:   0h 0m16s
+Progress:  66.8% words/sec/thread:  768781 lr:  0.033238 avg.loss:  0.912259 ETA:   0h 0m15s
+Progress:  67.0% words/sec/thread:  768920 lr:  0.033017 avg.loss:  0.911708 ETA:   0h 0m15s
+Progress:  67.2% words/sec/thread:  768874 lr:  0.032811 avg.loss:  0.911162 ETA:   0h 0m15s
+Progress:  67.4% words/sec/thread:  768917 lr:  0.032598 avg.loss:  0.910837 ETA:   0h 0m15s
+Progress:  67.6% words/sec/thread:  769031 lr:  0.032379 avg.loss:  0.910146 ETA:   0h 0m15s
+Progress:  67.8% words/sec/thread:  769051 lr:  0.032168 avg.loss:  0.909721 ETA:   0h 0m15s
+Progress:  68.0% words/sec/thread:  769074 lr:  0.031954 avg.loss:  0.909149 ETA:   0h 0m15s
+Progress:  68.3% words/sec/thread:  769186 lr:  0.031734 avg.loss:  0.908417 ETA:   0h 0m15s
+Progress:  68.5% words/sec/thread:  769087 lr:  0.031533 avg.loss:  0.907918 ETA:   0h 0m15s
+Progress:  68.7% words/sec/thread:  769168 lr:  0.031316 avg.loss:  0.907556 ETA:   0h 0m15s
+Progress:  68.9% words/sec/thread:  769289 lr:  0.031096 avg.loss:  0.907174 ETA:   0h 0m14s
+Progress:  69.1% words/sec/thread:  769280 lr:  0.030888 avg.loss:  0.906723 ETA:   0h 0m14s
+Progress:  69.3% words/sec/thread:  769338 lr:  0.030672 avg.loss:  0.906184 ETA:   0h 0m14s
+Progress:  69.5% words/sec/thread:  769365 lr:  0.030460 avg.loss:  0.905632 ETA:   0h 0m14s
+Progress:  69.7% words/sec/thread:  769353 lr:  0.030251 avg.loss:  0.905058 ETA:   0h 0m14s
+Progress:  70.0% words/sec/thread:  769387 lr:  0.030039 avg.loss:  0.904508 ETA:   0h 0m14s
+Progress:  70.2% words/sec/thread:  769326 lr:  0.029835 avg.loss:  0.904242 ETA:   0h 0m14s
+Progress:  70.4% words/sec/thread:  769395 lr:  0.029619 avg.loss:  0.903618 ETA:   0h 0m14s
+Progress:  70.6% words/sec/thread:  769365 lr:  0.029412 avg.loss:  0.903137 ETA:   0h 0m14s
+Progress:  70.8% words/sec/thread:  769477 lr:  0.029192 avg.loss:  0.902655 ETA:   0h 0m13s
+Progress:  71.0% words/sec/thread:  769568 lr:  0.028974 avg.loss:  0.902115 ETA:   0h 0m13s
+Progress:  71.2% words/sec/thread:  769515 lr:  0.028770 avg.loss:  0.901691 ETA:   0h 0m13s
+Progress:  71.4% words/sec/thread:  769579 lr:  0.028554 avg.loss:  0.900857 ETA:   0h 0m13s
+Progress:  71.6% words/sec/thread:  769435 lr:  0.028357 avg.loss:  0.900111 ETA:   0h 0m13s
+Progress:  71.9% words/sec/thread:  769556 lr:  0.028136 avg.loss:  0.899386 ETA:   0h 0m13s
+Progress:  72.1% words/sec/thread:  769651 lr:  0.027918 avg.loss:  0.899117 ETA:   0h 0m13s
+Progress:  72.3% words/sec/thread:  769709 lr:  0.027703 avg.loss:  0.898616 ETA:   0h 0m13s
+Progress:  72.5% words/sec/thread:  769730 lr:  0.027491 avg.loss:  0.898028 ETA:   0h 0m13s
+Progress:  72.7% words/sec/thread:  769751 lr:  0.027280 avg.loss:  0.897281 ETA:   0h 0m13s
+Progress:  72.9% words/sec/thread:  769815 lr:  0.027063 avg.loss:  0.896656 ETA:   0h 0m12s
+Progress:  73.1% words/sec/thread:  769783 lr:  0.026856 avg.loss:  0.896152 ETA:   0h 0m12s
+Progress:  73.4% words/sec/thread:  769869 lr:  0.026637 avg.loss:  0.896178 ETA:   0h 0m12s
+Progress:  73.6% words/sec/thread:  769870 lr:  0.026428 avg.loss:  0.895733 ETA:   0h 0m12s
+Progress:  73.8% words/sec/thread:  769946 lr:  0.026211 avg.loss:  0.895327 ETA:   0h 0m12s
+Progress:  74.0% words/sec/thread:  769936 lr:  0.026002 avg.loss:  0.895097 ETA:   0h 0m12s
+Progress:  74.2% words/sec/thread:  770024 lr:  0.025784 avg.loss:  0.894416 ETA:   0h 0m12s
+Progress:  74.4% words/sec/thread:  768734 lr:  0.025566 avg.loss:  0.894464 ETA:   0h 0m12s
+Progress:  74.6% words/sec/thread:  768715 lr:  0.025359 avg.loss:  0.894261 ETA:   0h 0m12s
+Progress:  74.9% words/sec/thread:  769102 lr:  0.025109 avg.loss:  0.893606 ETA:   0h 0m12s
+Progress:  75.1% words/sec/thread:  769057 lr:  0.024905 avg.loss:  0.893272 ETA:   0h 0m11s
+Progress:  75.3% words/sec/thread:  769058 lr:  0.024695 avg.loss:  0.893035 ETA:   0h 0m11s
+Progress:  75.5% words/sec/thread:  769073 lr:  0.024485 avg.loss:  0.892728 ETA:   0h 0m11s
+Progress:  75.7% words/sec/thread:  769035 lr:  0.024279 avg.loss:  0.892235 ETA:   0h 0m11s
+Progress:  75.9% words/sec/thread:  768956 lr:  0.024078 avg.loss:  0.891756 ETA:   0h 0m11s
+Progress:  76.1% words/sec/thread:  769011 lr:  0.023864 avg.loss:  0.891410 ETA:   0h 0m11s
+Progress:  76.3% words/sec/thread:  769021 lr:  0.023653 avg.loss:  0.890702 ETA:   0h 0m11s
+Progress:  76.6% words/sec/thread:  769254 lr:  0.023416 avg.loss:  0.889947 ETA:   0h 0m11s
+Progress:  76.8% words/sec/thread:  769231 lr:  0.023209 avg.loss:  0.889519 ETA:   0h 0m11s
+Progress:  77.0% words/sec/thread:  769364 lr:  0.022987 avg.loss:  0.889225 ETA:   0h 0m11s
+Progress:  77.2% words/sec/thread:  769421 lr:  0.022773 avg.loss:  0.889021 ETA:   0h 0m10s
+Progress:  77.4% words/sec/thread:  769459 lr:  0.022560 avg.loss:  0.888638 ETA:   0h 0m10s
+Progress:  77.6% words/sec/thread:  769323 lr:  0.022364 avg.loss:  0.888107 ETA:   0h 0m10s
+Progress:  77.9% words/sec/thread:  769378 lr:  0.022149 avg.loss:  0.887537 ETA:   0h 0m10s
+Progress:  78.1% words/sec/thread:  769501 lr:  0.021927 avg.loss:  0.887136 ETA:   0h 0m10s
+Progress:  78.3% words/sec/thread:  769514 lr:  0.021717 avg.loss:  0.886665 ETA:   0h 0m10s
+Progress:  78.5% words/sec/thread:  769548 lr:  0.021504 avg.loss:  0.886194 ETA:   0h 0m10s
+Progress:  78.7% words/sec/thread:  769681 lr:  0.021281 avg.loss:  0.885432 ETA:   0h 0m10s
+Progress:  78.9% words/sec/thread:  769585 lr:  0.021081 avg.loss:  0.885292 ETA:   0h 0m10s
+Progress:  79.1% words/sec/thread:  769718 lr:  0.020858 avg.loss:  0.884618 ETA:   0h 0m 9s
+Progress:  79.4% words/sec/thread:  769760 lr:  0.020644 avg.loss:  0.883936 ETA:   0h 0m 9s
+Progress:  79.6% words/sec/thread:  769892 lr:  0.020421 avg.loss:  0.883294 ETA:   0h 0m 9s
+Progress:  79.8% words/sec/thread:  769855 lr:  0.020216 avg.loss:  0.882917 ETA:   0h 0m 9s
+Progress:  80.0% words/sec/thread:  769806 lr:  0.020011 avg.loss:  0.882296 ETA:   0h 0m 9s
+Progress:  80.2% words/sec/thread:  769705 lr:  0.019812 avg.loss:  0.881839 ETA:   0h 0m 9s
+Progress:  80.4% words/sec/thread:  769736 lr:  0.019600 avg.loss:  0.881374 ETA:   0h 0m 9s
+Progress:  80.6% words/sec/thread:  769804 lr:  0.019382 avg.loss:  0.880852 ETA:   0h 0m 9s
+Progress:  80.8% words/sec/thread:  769770 lr:  0.019176 avg.loss:  0.880730 ETA:   0h 0m 9s
+Progress:  81.0% words/sec/thread:  769816 lr:  0.018961 avg.loss:  0.880178 ETA:   0h 0m 9s
+Progress:  81.2% words/sec/thread:  769767 lr:  0.018755 avg.loss:  0.879484 ETA:   0h 0m 8s
+Progress:  81.5% words/sec/thread:  769775 lr:  0.018544 avg.loss:  0.878996 ETA:   0h 0m 8s
+Progress:  81.7% words/sec/thread:  768635 lr:  0.018272 avg.loss:  0.878352 ETA:   0h 0m 8s
+Progress:  81.9% words/sec/thread:  768739 lr:  0.018051 avg.loss:  0.877799 ETA:   0h 0m 8s
+Progress:  82.2% words/sec/thread:  768832 lr:  0.017833 avg.loss:  0.877462 ETA:   0h 0m 8s
+Progress:  82.4% words/sec/thread:  768896 lr:  0.017616 avg.loss:  0.876963 ETA:   0h 0m 8s
+Progress:  82.6% words/sec/thread:  768982 lr:  0.017398 avg.loss:  0.876553 ETA:   0h 0m 8s
+Progress:  82.8% words/sec/thread:  768994 lr:  0.017188 avg.loss:  0.875883 ETA:   0h 0m 8s
+Progress:  83.0% words/sec/thread:  768970 lr:  0.016981 avg.loss:  0.875040 ETA:   0h 0m 8s
+Progress:  83.2% words/sec/thread:  769041 lr:  0.016764 avg.loss:  0.874594 ETA:   0h 0m 8s
+Progress:  83.5% words/sec/thread:  769141 lr:  0.016545 avg.loss:  0.873882 ETA:   0h 0m 7s
+Progress:  83.7% words/sec/thread:  769172 lr:  0.016332 avg.loss:  0.873002 ETA:   0h 0m 7s
+Progress:  83.9% words/sec/thread:  769144 lr:  0.016126 avg.loss:  0.872185 ETA:   0h 0m 7s
+Progress:  84.1% words/sec/thread:  769294 lr:  0.015900 avg.loss:  0.871227 ETA:   0h 0m 7s
+Progress:  84.3% words/sec/thread:  769354 lr:  0.015684 avg.loss:  0.870714 ETA:   0h 0m 7s
+Progress:  84.5% words/sec/thread:  769467 lr:  0.015463 avg.loss:  0.870179 ETA:   0h 0m 7s
+Progress:  84.7% words/sec/thread:  769497 lr:  0.015250 avg.loss:  0.869161 ETA:   0h 0m 7s
+Progress:  85.0% words/sec/thread:  769449 lr:  0.015046 avg.loss:  0.868702 ETA:   0h 0m 7s
+Progress:  85.2% words/sec/thread:  769549 lr:  0.014826 avg.loss:  0.867565 ETA:   0h 0m 7s
+Progress:  85.4% words/sec/thread:  769597 lr:  0.014611 avg.loss:  0.866647 ETA:   0h 0m 6s
+Progress:  85.6% words/sec/thread:  769597 lr:  0.014402 avg.loss:  0.866444 ETA:   0h 0m 6s
+Progress:  85.8% words/sec/thread:  769496 lr:  0.014203 avg.loss:  0.865656 ETA:   0h 0m 6s
+Progress:  86.0% words/sec/thread:  769619 lr:  0.013981 avg.loss:  0.865205 ETA:   0h 0m 6s
+Progress:  86.2% words/sec/thread:  769672 lr:  0.013765 avg.loss:  0.864413 ETA:   0h 0m 6s
+Progress:  86.4% words/sec/thread:  769596 lr:  0.013564 avg.loss:  0.863670 ETA:   0h 0m 6s
+Progress:  86.6% words/sec/thread:  769609 lr:  0.013353 avg.loss:  0.862921 ETA:   0h 0m 6s
+Progress:  86.9% words/sec/thread:  769678 lr:  0.013136 avg.loss:  0.861956 ETA:   0h 0m 6s
+Progress:  87.1% words/sec/thread:  769696 lr:  0.012925 avg.loss:  0.861468 ETA:   0h 0m 6s
+Progress:  87.3% words/sec/thread:  769754 lr:  0.012709 avg.loss:  0.860728 ETA:   0h 0m 6s
+Progress:  87.5% words/sec/thread:  769884 lr:  0.012485 avg.loss:  0.859638 ETA:   0h 0m 5s
+Progress:  87.7% words/sec/thread:  769897 lr:  0.012273 avg.loss:  0.858820 ETA:   0h 0m 5s
+Progress:  87.9% words/sec/thread:  769947 lr:  0.012058 avg.loss:  0.858052 ETA:   0h 0m 5s
+Progress:  88.1% words/sec/thread:  769910 lr:  0.011853 avg.loss:  0.857500 ETA:   0h 0m 5s
+Progress:  88.4% words/sec/thread:  769887 lr:  0.011645 avg.loss:  0.857276 ETA:   0h 0m 5s
+Progress:  88.6% words/sec/thread:  770040 lr:  0.011417 avg.loss:  0.856521 ETA:   0h 0m 5s
+Progress:  88.8% words/sec/thread:  770002 lr:  0.011212 avg.loss:  0.855889 ETA:   0h 0m 5s
+Progress:  89.0% words/sec/thread:  769986 lr:  0.011003 avg.loss:  0.855204 ETA:   0h 0m 5s
+Progress:  89.2% words/sec/thread:  770038 lr:  0.010788 avg.loss:  0.854930 ETA:   0h 0m 5s
+Progress:  89.4% words/sec/thread:  770076 lr:  0.010574 avg.loss:  0.854345 ETA:   0h 0m 5s
+Progress:  89.6% words/sec/thread:  770070 lr:  0.010364 avg.loss:  0.853735 ETA:   0h 0m 4s
+Progress:  89.8% words/sec/thread:  770046 lr:  0.010157 avg.loss:  0.853050 ETA:   0h 0m 4s
+Progress:  90.1% words/sec/thread:  770096 lr:  0.009941 avg.loss:  0.852174 ETA:   0h 0m 4s
+Progress:  90.3% words/sec/thread:  770134 lr:  0.009726 avg.loss:  0.851306 ETA:   0h 0m 4s
+Progress:  90.5% words/sec/thread:  770160 lr:  0.009513 avg.loss:  0.850437 ETA:   0h 0m 4s
+Progress:  90.7% words/sec/thread:  770151 lr:  0.009304 avg.loss:  0.849846 ETA:   0h 0m 4s
+Progress:  90.9% words/sec/thread:  770106 lr:  0.009100 avg.loss:  0.849222 ETA:   0h 0m 4s
+Progress:  91.1% words/sec/thread:  769993 lr:  0.008904 avg.loss:  0.848453 ETA:   0h 0m 4s
+Progress:  91.3% words/sec/thread:  769863 lr:  0.008710 avg.loss:  0.847724 ETA:   0h 0m 4s
+Progress:  91.5% words/sec/thread:  769840 lr:  0.008503 avg.loss:  0.847519 ETA:   0h 0m 4s
+Progress:  91.7% words/sec/thread:  769853 lr:  0.008292 avg.loss:  0.846722 ETA:   0h 0m 3s
+Progress:  91.9% words/sec/thread:  769869 lr:  0.008080 avg.loss:  0.845826 ETA:   0h 0m 3s
+Progress:  92.1% words/sec/thread:  769990 lr:  0.007856 avg.loss:  0.845406 ETA:   0h 0m 3s
+Progress:  92.4% words/sec/thread:  770011 lr:  0.007642 avg.loss:  0.845058 ETA:   0h 0m 3s
+Progress:  92.6% words/sec/thread:  770013 lr:  0.007433 avg.loss:  0.844997 ETA:   0h 0m 3s
+Progress:  92.8% words/sec/thread:  769966 lr:  0.007229 avg.loss:  0.844948 ETA:   0h 0m 3s
+Progress:  93.0% words/sec/thread:  770026 lr:  0.007011 avg.loss:  0.844678 ETA:   0h 0m 3s
+Progress:  93.2% words/sec/thread:  770011 lr:  0.006803 avg.loss:  0.844678 ETA:   0h 0m 3s
+Progress:  93.4% words/sec/thread:  770099 lr:  0.006582 avg.loss:  0.844365 ETA:   0h 0m 3s
+Progress:  93.6% words/sec/thread:  770100 lr:  0.006372 avg.loss:  0.844219 ETA:   0h 0m 3s
+Progress:  93.8% words/sec/thread:  770087 lr:  0.006163 avg.loss:  0.844040 ETA:   0h 0m 2s
+Progress:  94.1% words/sec/thread:  770170 lr:  0.005942 avg.loss:  0.843560 ETA:   0h 0m 2s
+Progress:  94.3% words/sec/thread:  770110 lr:  0.005740 avg.loss:  0.843116 ETA:   0h 0m 2s
+Progress:  94.5% words/sec/thread:  770136 lr:  0.005527 avg.loss:  0.843015 ETA:   0h 0m 2s
+Progress:  94.7% words/sec/thread:  770079 lr:  0.005324 avg.loss:  0.842434 ETA:   0h 0m 2s
+Progress:  94.9% words/sec/thread:  770006 lr:  0.005124 avg.loss:  0.842119 ETA:   0h 0m 2s
+Progress:  95.1% words/sec/thread:  770045 lr:  0.004909 avg.loss:  0.841525 ETA:   0h 0m 2s
+Progress:  95.3% words/sec/thread:  770057 lr:  0.004697 avg.loss:  0.841113 ETA:   0h 0m 2s
+Progress:  95.5% words/sec/thread:  769982 lr:  0.004497 avg.loss:  0.840645 ETA:   0h 0m 2s
+Progress:  95.7% words/sec/thread:  769999 lr:  0.004285 avg.loss:  0.840177 ETA:   0h 0m 2s
+Progress:  95.9% words/sec/thread:  769950 lr:  0.004080 avg.loss:  0.839780 ETA:   0h 0m 1s
+Progress:  96.1% words/sec/thread:  770030 lr:  0.003859 avg.loss:  0.839425 ETA:   0h 0m 1s
+Progress:  96.3% words/sec/thread:  769959 lr:  0.003659 avg.loss:  0.839162 ETA:   0h 0m 1s
+Progress:  96.5% words/sec/thread:  769848 lr:  0.003464 avg.loss:  0.838608 ETA:   0h 0m 1s
+Progress:  96.8% words/sec/thread:  769902 lr:  0.003247 avg.loss:  0.838219 ETA:   0h 0m 1s
+Progress:  97.0% words/sec/thread:  769868 lr:  0.003042 avg.loss:  0.837630 ETA:   0h 0m 1s
+Progress:  97.2% words/sec/thread:  769936 lr:  0.002824 avg.loss:  0.837174 ETA:   0h 0m 1s
+Progress:  97.4% words/sec/thread:  770022 lr:  0.002602 avg.loss:  0.836771 ETA:   0h 0m 1s
+Progress:  97.6% words/sec/thread:  769948 lr:  0.002402 avg.loss:  0.836470 ETA:   0h 0m 1s
+Progress:  97.8% words/sec/thread:  769944 lr:  0.002190 avg.loss:  0.836028 ETA:   0h 0m 1s
+Progress:  98.0% words/sec/thread:  769984 lr:  0.001974 avg.loss:  0.835582 ETA:   0h 0m 0s
+Progress:  98.2% words/sec/thread:  769899 lr:  0.001776 avg.loss:  0.834948 ETA:   0h 0m 0s
+Progress:  98.4% words/sec/thread:  769935 lr:  0.001561 avg.loss:  0.834333 ETA:   0h 0m 0s
+Progress:  98.6% words/sec/thread:  769917 lr:  0.001351 avg.loss:  0.833909 ETA:   0h 0m 0s
+Progress:  98.9% words/sec/thread:  769924 lr:  0.001140 avg.loss:  0.833445 ETA:   0h 0m 0s
+Progress:  99.1% words/sec/thread:  768826 lr:  0.000944 avg.loss:  0.832835 ETA:   0h 0m 0s
+Progress:  99.3% words/sec/thread:  768960 lr:  0.000716 avg.loss:  0.832456 ETA:   0h 0m 0s
+Progress:  99.5% words/sec/thread:  769108 lr:  0.000487 avg.loss:  0.832097 ETA:   0h 0m 0s
+Progress:  99.7% words/sec/thread:  769159 lr:  0.000271 avg.loss:  0.831938 ETA:   0h 0m 0s
+Progress:  99.9% words/sec/thread:  769143 lr:  0.000064 avg.loss:  0.831725 ETA:   0h 0m 0s
+Progress: 100.0% words/sec/thread:  768026 lr: -0.000001 avg.loss:  0.831582 ETA:   0h 0m 0s
+Progress: 100.0% words/sec/thread:  768025 lr:  0.000000 avg.loss:  0.831582 ETA:   0h 0m 0s
+convert_data.py
+data
+fastText
+model.bin
+model.vec
+
+========== Run test.sh ==========
+Hit:1 http://deb.debian.org/debian bookworm InRelease
+Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
+Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.88.1-10+deb12u15).
+0 upgraded, 0 newly installed, 0 to remove and 23 not upgraded.
+downloading uv 0.9.5 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+tar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.com.apple.provenance'
+============================= test session starts ==============================
+platform linux -- Python 3.11.14, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 2 items
+
+../tests/test_outputs.py ..                                              [100%]
+
+==================================== PASSES ====================================
+________________________________ test_accuracy _________________________________
+----------------------------- Captured stderr call -----------------------------
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_accuracy
+PASSED ../tests/test_outputs.py::test_model_size
+============================== 2 passed in 3.09s ===============================
+
+========== Result ==========
+Task: train-fasttext
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 60.4s (exit 0)
+Test: 19.7s (exit 0)
+Solve Memory Peak: 1.7 GiB
+Test Memory Peak: 1.4 GiB

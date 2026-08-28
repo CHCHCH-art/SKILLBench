@@ -1,0 +1,21 @@
+# Normalize source text across Windows and Linux checkouts.
+# The benchmark executes primarily in Linux containers, so LF is the default.
+* text=auto eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.sh text eol=lf
+Dockerfile text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.csv text eol=lf
+*.toml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Reproducibility packages are versioned through Git LFS.
+benchmark/Env/images/packages/**/*.tar.gz filter=lfs diff=lfs merge=lfs -text

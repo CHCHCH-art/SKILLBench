@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "econ-detrending-correlation",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 1,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 433.8,
+    "peak_memory_raw": "433.8MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.888,
+    "agent_setup_sec": 0.756,
+    "agent_execution_sec": 295.891,
+    "verifier_sec": 5.553,
+    "total_sec": 313.121
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 563441,
+  "agent_output_tokens": 3985,
+  "image_cache": {
+    "image": "benchmark-cache/econ-detrending-correlation-gold:693ab5b971b40262",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "economic-series-workbook-extraction",
+      "hp-cycle-correlation-verification"
+    ],
+    "available_skills": [
+      "economic-series-workbook-extraction",
+      "hp-cycle-correlation-verification"
+    ],
+    "loaded_skills": [
+      "economic-series-workbook-extraction",
+      "hp-cycle-correlation-verification"
+    ],
+    "trials": [
+      {
+        "trial_id": "econ-detrending-correlation__85vo9Sm",
+        "passed": true,
+        "provided_skills": [
+          "economic-series-workbook-extraction",
+          "hp-cycle-correlation-verification"
+        ],
+        "available_skills": [
+          "economic-series-workbook-extraction",
+          "hp-cycle-correlation-verification"
+        ],
+        "loaded_skills": [
+          "economic-series-workbook-extraction",
+          "hp-cycle-correlation-verification"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "economic-series-workbook-extraction": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_pfwTJFbRYnMjlXkmSb54jAHr",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/economic-series-workbook-extraction/SKILL.md"
+            }
+          ],
+          "hp-cycle-correlation-verification": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_pfwTJFbRYnMjlXkmSb54jAHr",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/hp-cycle-correlation-verification/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

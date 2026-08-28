@@ -1,0 +1,73 @@
+Task: grid-dispatch-operator
+Source type: used
+Task run: 6
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\grid-dispatch-operator
+
+========== Repeated Run 2/4 ==========
+
+========== Run solve.sh ==========
+Solution build: full-angle-dense-ptdf-v5-20260730
+Loaded real_world_network: 2869 buses, 510 generators, 4582 active branches
+Piecewise master: variables=15618, segments=12240, iterations=2594
+Quadratic evaluation at master dispatch: cost=$2965637.909690/h
+Dense spectral consensus: seconds=53.980, max_flow_difference=0.000000 MW
+Dense PTDF optimality certificate: seconds=1.187, iterations=1, gap=$-0.000001/h
+Dispatch complete: cost=$2965637.91/h, reserve=5923.50 MW, overall_python_seconds=55.637
+
+========== Run test.sh ==========
+Requirement already satisfied: pytest in /usr/local/lib/python3.12/dist-packages (9.1.1)
+Requirement already satisfied: pytest-json-ctrf in /usr/local/lib/python3.12/dist-packages (0.5.3)
+Requirement already satisfied: numpy==1.26.4 in /usr/lib/python3/dist-packages (1.26.4)
+Requirement already satisfied: scipy==1.11.4 in /usr/lib/python3/dist-packages (1.11.4)
+Requirement already satisfied: cvxpy==1.4.2 in /usr/local/lib/python3.12/dist-packages (1.4.2)
+Requirement already satisfied: osqp>=0.6.2 in /usr/local/lib/python3.12/dist-packages (from cvxpy==1.4.2) (1.1.3)
+Requirement already satisfied: ecos>=2 in /usr/local/lib/python3.12/dist-packages (from cvxpy==1.4.2) (2.0.14)
+Requirement already satisfied: clarabel>=0.5.0 in /usr/local/lib/python3.12/dist-packages (from cvxpy==1.4.2) (0.11.1)
+Requirement already satisfied: scs>=3.0 in /usr/local/lib/python3.12/dist-packages (from cvxpy==1.4.2) (3.2.11)
+Requirement already satisfied: pybind11 in /usr/local/lib/python3.12/dist-packages (from cvxpy==1.4.2) (3.1.0)
+Requirement already satisfied: iniconfig>=1.0.1 in /usr/local/lib/python3.12/dist-packages (from pytest) (2.3.0)
+Requirement already satisfied: packaging>=22 in /usr/local/lib/python3.12/dist-packages (from pytest) (26.3)
+Requirement already satisfied: pluggy<2,>=1.5 in /usr/local/lib/python3.12/dist-packages (from pytest) (1.6.0)
+Requirement already satisfied: pygments>=2.7.2 in /usr/local/lib/python3.12/dist-packages (from pytest) (2.20.0)
+Requirement already satisfied: cffi in /usr/local/lib/python3.12/dist-packages (from clarabel>=0.5.0->cvxpy==1.4.2) (2.1.1)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/dist-packages (from osqp>=0.6.2->cvxpy==1.4.2) (3.1.6)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from osqp>=0.6.2->cvxpy==1.4.2) (68.1.2)
+Requirement already satisfied: joblib in /usr/local/lib/python3.12/dist-packages (from osqp>=0.6.2->cvxpy==1.4.2) (1.5.3)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.12/dist-packages (from cffi->clarabel>=0.5.0->cvxpy==1.4.2) (3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2->osqp>=0.6.2->cvxpy==1.4.2) (3.0.3)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /
+plugins: json-ctrf-0.5.3
+collecting ... collected 6 items
+
+../tests/test_outputs.py::TestSchema::test_report_schema PASSED          [ 16%]
+../tests/test_outputs.py::TestFeasibility::test_power_balance PASSED     [ 33%]
+../tests/test_outputs.py::TestFeasibility::test_generator_bounds PASSED  [ 50%]
+../tests/test_outputs.py::TestFeasibility::test_reserve_constraints PASSED [ 66%]
+../tests/test_outputs.py::TestFeasibility::test_internal_consistency PASSED [ 83%]
+../tests/test_outputs.py::TestOptimality::test_cost_is_optimal PASSED    [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestSchema::test_report_schema
+PASSED ../tests/test_outputs.py::TestFeasibility::test_power_balance
+PASSED ../tests/test_outputs.py::TestFeasibility::test_generator_bounds
+PASSED ../tests/test_outputs.py::TestFeasibility::test_reserve_constraints
+PASSED ../tests/test_outputs.py::TestFeasibility::test_internal_consistency
+PASSED ../tests/test_outputs.py::TestOptimality::test_cost_is_optimal
+============================== 6 passed in 8.60s ===============================
+
+========== Result ==========
+Task: grid-dispatch-operator
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 56.0s (exit 0)
+Test: 9.3s (exit 0)
+Solve Memory Peak: 657.9 MiB
+Test Memory Peak: 703.0 MiB

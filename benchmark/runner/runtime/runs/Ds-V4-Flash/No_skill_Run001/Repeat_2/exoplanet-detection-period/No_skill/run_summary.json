@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "exoplanet-detection-period",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestExoplanetPeriod::test_period_value_correct: AssertionError: Period 13.53350 does not match expected 5.35699 (tolerance: ±0.01)",
+  "peak_memory": {
+    "peak_memory_mib": 2017.28,
+    "peak_memory_raw": "1.97GiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.453,
+    "agent_setup_sec": 0.634,
+    "agent_execution_sec": 1455.869,
+    "verifier_sec": 15.21,
+    "total_sec": 1477.335
+  },
+  "llm_cost_usd": 0.12445412559999999,
+  "agent_input_tokens": 2587949,
+  "agent_output_tokens": 65213,
+  "image_cache": {
+    "image": "benchmark-cache/exoplanet-detection-period-gold:8bdb5ea239d635d6",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "exoplanet-detection-period__8cF4usW",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

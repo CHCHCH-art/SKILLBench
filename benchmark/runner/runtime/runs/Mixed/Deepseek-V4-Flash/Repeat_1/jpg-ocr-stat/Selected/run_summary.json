@@ -1,0 +1,101 @@
+{
+  "schema_version": 6,
+  "task_id": "jpg-ocr-stat",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_outputs: AssertionError: Requirement failed: null/blank-cell handling differs from oracle.",
+  "peak_memory": {
+    "peak_memory_mib": 148.2,
+    "peak_memory_raw": "148.2MiB",
+    "error": "EOF",
+    "container_name_hint": "jpg-ocr-stat"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.74,
+    "agent_setup_sec": 0.98,
+    "agent_execution_sec": 604.274,
+    "verifier_sec": 67.327,
+    "total_sec": 680.31
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 2351516,
+  "agent_output_tokens": 44052,
+  "image_cache": {
+    "image": "benchmark-cache/jpg-ocr-stat-gold:2312eeab86c89737",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "anthropics--contract-review",
+      "arash77--galaxy-db-migration",
+      "melodic-software--dynamic-schema-design",
+      "receipt-date-candidate-resolution",
+      "receipt-date-total-excel-serialization",
+      "receipt-image-ocr-line-extraction",
+      "receipt-multivariant-ocr-extraction",
+      "receipt-total-candidate-resolution-export",
+      "starwreckntx--enforce-no-duplication-policy",
+      "yoanbernabeu--grepai-trace-callers"
+    ],
+    "available_skills": [
+      "anthropics--contract-review",
+      "arash77--galaxy-db-migration",
+      "melodic-software--dynamic-schema-design",
+      "receipt-date-candidate-resolution",
+      "receipt-date-total-excel-serialization",
+      "receipt-image-ocr-line-extraction",
+      "receipt-multivariant-ocr-extraction",
+      "receipt-total-candidate-resolution-export",
+      "starwreckntx--enforce-no-duplication-policy",
+      "yoanbernabeu--grepai-trace-callers"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "jpg-ocr-stat__iSFwMdo",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "anthropics--contract-review",
+          "arash77--galaxy-db-migration",
+          "melodic-software--dynamic-schema-design",
+          "receipt-date-candidate-resolution",
+          "receipt-date-total-excel-serialization",
+          "receipt-image-ocr-line-extraction",
+          "receipt-multivariant-ocr-extraction",
+          "receipt-total-candidate-resolution-export",
+          "starwreckntx--enforce-no-duplication-policy",
+          "yoanbernabeu--grepai-trace-callers"
+        ],
+        "available_skills": [
+          "anthropics--contract-review",
+          "arash77--galaxy-db-migration",
+          "melodic-software--dynamic-schema-design",
+          "receipt-date-candidate-resolution",
+          "receipt-date-total-excel-serialization",
+          "receipt-image-ocr-line-extraction",
+          "receipt-multivariant-ocr-extraction",
+          "receipt-total-candidate-resolution-export",
+          "starwreckntx--enforce-no-duplication-policy",
+          "yoanbernabeu--grepai-trace-callers"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,28 @@
+2026-08-05T10:47:35.272712+00:00 START operation=run batch=No_skill_Run001 repeat=1 task=dialogue-parser condition=no_skill image=benchmark-cache/dialogue-parser-gold:04e55248526db616 provided_skills=[]
+  1/1 Mean: 1.000 ---------------------------------------- 0:05:00 0:00:00
+no_skill • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 5m 0s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\No_skill_Run001\Repeat_1\dialogue-pa
+rser\No_skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\No_skill_Run001\Repeat_1\dialogue-pa
+rser\No_skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\No_skill_Run001\Repeat_1\dialogue-pa
+rser\No_skill\Job_result`
+
+2026-08-05T10:52:36.792224+00:00 PASS operation=run batch=No_skill_Run001 repeat=1 task=dialogue-parser condition=no_skill

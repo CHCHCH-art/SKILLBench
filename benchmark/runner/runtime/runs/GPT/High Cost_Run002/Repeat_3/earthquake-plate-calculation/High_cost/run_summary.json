@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "earthquake-plate-calculation",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 254.4,
+    "peak_memory_raw": "254.4MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.827,
+    "agent_setup_sec": 0.471,
+    "agent_execution_sec": 170.058,
+    "verifier_sec": 8.582,
+    "total_sec": 187.354
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 176876,
+  "agent_output_tokens": 4346,
+  "image_cache": {
+    "image": "benchmark-cache/earthquake-plate-calculation-gold:9daffd7dc0823601",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "exact-boundary-distance-selection",
+      "geospatial-source-crs-normalization",
+      "raster-distance-candidate-pruning"
+    ],
+    "available_skills": [
+      "exact-boundary-distance-selection",
+      "geospatial-source-crs-normalization",
+      "raster-distance-candidate-pruning"
+    ],
+    "loaded_skills": [
+      "exact-boundary-distance-selection",
+      "geospatial-source-crs-normalization",
+      "raster-distance-candidate-pruning"
+    ],
+    "trials": [
+      {
+        "trial_id": "earthquake-plate-calculation__zE6aZrF",
+        "passed": true,
+        "provided_skills": [
+          "exact-boundary-distance-selection",
+          "geospatial-source-crs-normalization",
+          "raster-distance-candidate-pruning"
+        ],
+        "available_skills": [
+          "exact-boundary-distance-selection",
+          "geospatial-source-crs-normalization",
+          "raster-distance-candidate-pruning"
+        ],
+        "loaded_skills": [
+          "exact-boundary-distance-selection",
+          "geospatial-source-crs-normalization",
+          "raster-distance-candidate-pruning"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "exact-boundary-distance-selection": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_4rORBCcHmshkNDlnrMEn6nqW",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/exact-boundary-distance-selection/SKILL.md"
+            }
+          ],
+          "raster-distance-candidate-pruning": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_4rORBCcHmshkNDlnrMEn6nqW",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/raster-distance-candidate-pruning/SKILL.md"
+            }
+          ],
+          "geospatial-source-crs-normalization": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_4rORBCcHmshkNDlnrMEn6nqW",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/geospatial-source-crs-normalization/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

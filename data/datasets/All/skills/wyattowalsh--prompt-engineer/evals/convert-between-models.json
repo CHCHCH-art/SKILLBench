@@ -1,0 +1,14 @@
+{
+  "skills": ["prompt-engineer"],
+  "query": "/prompt-engineer convert claude gemini ./prompts/system.md",
+  "files": ["prompts/system.md"],
+  "expected_behavior": [
+    "Agent dispatches to Mode C: Convert based on 'convert' keyword with source=claude target=gemini",
+    "Agent reads the file at ./prompts/system.md",
+    "Agent loads both Claude and Gemini playbook sections from references/model-playbooks.md",
+    "Agent builds a conversion plan identifying direct mappings, adaptations, removals, and new features",
+    "Agent executes conversion showing source pattern, target pattern, and rationale for each change",
+    "Agent runs Mode B (Analyze) report-only on converted prompt to catch conversion issues",
+    "Agent recommends Mode D (Evaluate) using same test cases on both models"
+  ]
+}

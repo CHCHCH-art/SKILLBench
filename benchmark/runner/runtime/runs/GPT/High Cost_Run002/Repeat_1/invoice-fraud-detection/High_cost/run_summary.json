@@ -1,0 +1,116 @@
+{
+  "schema_version": 6,
+  "task_id": "invoice-fraud-detection",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 148.7,
+    "peak_memory_raw": "148.7MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.932,
+    "agent_setup_sec": 0.603,
+    "agent_execution_sec": 114.883,
+    "verifier_sec": 5.803,
+    "total_sec": 129.654
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 222834,
+  "agent_output_tokens": 3636,
+  "image_cache": {
+    "image": "benchmark-cache/invoice-fraud-detection-gold:a8a463d9f523584f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "fuzzy-vendor-entity-resolution",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization"
+    ],
+    "available_skills": [
+      "fuzzy-vendor-entity-resolution",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization"
+    ],
+    "loaded_skills": [
+      "fuzzy-vendor-entity-resolution",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization"
+    ],
+    "trials": [
+      {
+        "trial_id": "invoice-fraud-detection__QVH8Y3j",
+        "passed": true,
+        "provided_skills": [
+          "fuzzy-vendor-entity-resolution",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization"
+        ],
+        "available_skills": [
+          "fuzzy-vendor-entity-resolution",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization"
+        ],
+        "loaded_skills": [
+          "fuzzy-vendor-entity-resolution",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "invoice-fraud-reference-rules": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_4GJj9eoOPZaxOXIqIqQIaDxf",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/invoice-fraud-reference-rules/SKILL.md"
+            },
+            {
+              "step_id": 6,
+              "tool_call_id": "call_xNNB2ZN8hmwnVOmsUZjXutSR",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/invoice-fraud-reference-rules/SKILL.md"
+            }
+          ],
+          "fuzzy-vendor-entity-resolution": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_4GJj9eoOPZaxOXIqIqQIaDxf",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/fuzzy-vendor-entity-resolution/SKILL.md"
+            },
+            {
+              "step_id": 6,
+              "tool_call_id": "call_xNNB2ZN8hmwnVOmsUZjXutSR",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/fuzzy-vendor-entity-resolution/SKILL.md"
+            }
+          ],
+          "invoice-pdf-field-normalization": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_xNNB2ZN8hmwnVOmsUZjXutSR",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/invoice-pdf-field-normalization/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

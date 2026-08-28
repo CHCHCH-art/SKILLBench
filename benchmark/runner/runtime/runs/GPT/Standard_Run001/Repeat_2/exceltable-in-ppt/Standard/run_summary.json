@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "exceltable-in-ppt",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 348.7,
+    "peak_memory_raw": "348.7MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.881,
+    "agent_setup_sec": 1.042,
+    "agent_execution_sec": 147.308,
+    "verifier_sec": 81.654,
+    "total_sec": 239.505
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 153032,
+  "agent_output_tokens": 4738,
+  "image_cache": {
+    "image": "benchmark-cache/exceltable-in-ppt-gold:76ac1a2bd4e98536",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration"
+    ],
+    "available_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration"
+    ],
+    "loaded_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration"
+    ],
+    "trials": [
+      {
+        "trial_id": "exceltable-in-ppt__QYaw4aw",
+        "passed": true,
+        "provided_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration"
+        ],
+        "available_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration"
+        ],
+        "loaded_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "inverse-rate-workbook-cell-update": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_I2TY2TFmO5I2FV8Km0Cjncfv",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/inverse-rate-workbook-cell-update/SKILL.md"
+            }
+          ],
+          "pptx-embedded-workbook-orchestration": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_I2TY2TFmO5I2FV8Km0Cjncfv",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/pptx-embedded-workbook-orchestration/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "gravitational-wave-detection",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 282.1,
+    "peak_memory_raw": "282.1MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.514,
+    "agent_setup_sec": 0.41,
+    "agent_execution_sec": 641.252,
+    "verifier_sec": 1.259,
+    "total_sec": 650.235
+  },
+  "llm_cost_usd": 0.008371412,
+  "agent_input_tokens": 549171,
+  "agent_output_tokens": 11210,
+  "image_cache": {
+    "image": "benchmark-cache/gravitational-wave-detection-gold:453ceaaaf619c520",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "pycbc-strain-conditioning-psd",
+      "pycbc-waveform-grid-matched-filter-search"
+    ],
+    "available_skills": [
+      "pycbc-strain-conditioning-psd",
+      "pycbc-waveform-grid-matched-filter-search"
+    ],
+    "loaded_skills": [
+      "pycbc-strain-conditioning-psd",
+      "pycbc-waveform-grid-matched-filter-search"
+    ],
+    "trials": [
+      {
+        "trial_id": "gravitational-wave-detection__uQPa2bo",
+        "passed": true,
+        "provided_skills": [
+          "pycbc-strain-conditioning-psd",
+          "pycbc-waveform-grid-matched-filter-search"
+        ],
+        "available_skills": [
+          "pycbc-strain-conditioning-psd",
+          "pycbc-waveform-grid-matched-filter-search"
+        ],
+        "loaded_skills": [
+          "pycbc-strain-conditioning-psd",
+          "pycbc-waveform-grid-matched-filter-search"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "pycbc-strain-conditioning-psd": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_bc962ddbea65470fba207dea",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/pycbc-strain-conditioning-psd/SKILL.md"
+            }
+          ],
+          "pycbc-waveform-grid-matched-filter-search": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_9ee1b51623b64cb19ae0e19a",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/pycbc-waveform-grid-matched-filter-search/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

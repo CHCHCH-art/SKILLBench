@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "grid-dispatch-operator",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 2048.0,
+    "peak_memory_raw": "2GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.845,
+    "agent_setup_sec": 1.179,
+    "agent_execution_sec": 542.442,
+    "verifier_sec": 80.002,
+    "total_sec": 636.757
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1271815,
+  "agent_output_tokens": 10457,
+  "image_cache": {
+    "image": "benchmark-cache/grid-dispatch-operator-gold:4acd0bce1add524f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dc-dispatch-piecewise-master",
+      "dispatch-reserve-and-ptdf-audit",
+      "quadratic-dispatch-outer-approximation-report"
+    ],
+    "available_skills": [
+      "dc-dispatch-piecewise-master",
+      "dispatch-reserve-and-ptdf-audit",
+      "quadratic-dispatch-outer-approximation-report"
+    ],
+    "loaded_skills": [
+      "dc-dispatch-piecewise-master",
+      "dispatch-reserve-and-ptdf-audit",
+      "quadratic-dispatch-outer-approximation-report"
+    ],
+    "trials": [
+      {
+        "trial_id": "grid-dispatch-operator__4Lk8ivg",
+        "passed": true,
+        "provided_skills": [
+          "dc-dispatch-piecewise-master",
+          "dispatch-reserve-and-ptdf-audit",
+          "quadratic-dispatch-outer-approximation-report"
+        ],
+        "available_skills": [
+          "dc-dispatch-piecewise-master",
+          "dispatch-reserve-and-ptdf-audit",
+          "quadratic-dispatch-outer-approximation-report"
+        ],
+        "loaded_skills": [
+          "dc-dispatch-piecewise-master",
+          "dispatch-reserve-and-ptdf-audit",
+          "quadratic-dispatch-outer-approximation-report"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "dispatch-reserve-and-ptdf-audit": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_ZKYZxkMNTlSis5f8wF5ebR3G",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/dispatch-reserve-and-ptdf-audit/SKILL.md"
+            }
+          ],
+          "dc-dispatch-piecewise-master": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_ZKYZxkMNTlSis5f8wF5ebR3G",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/dc-dispatch-piecewise-master/SKILL.md"
+            }
+          ],
+          "quadratic-dispatch-outer-approximation-report": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_ZKYZxkMNTlSis5f8wF5ebR3G",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/quadratic-dispatch-outer-approximation-report/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

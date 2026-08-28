@@ -1,0 +1,63 @@
+{
+  "schema_version": 6,
+  "task_id": "distribution-search",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 2,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 817.6,
+    "peak_memory_raw": "817.6MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.512,
+    "agent_setup_sec": 0.863,
+    "agent_execution_sec": 109.116,
+    "verifier_sec": 61.472,
+    "total_sec": 182.768
+  },
+  "llm_cost_usd": 0.0055183744,
+  "agent_input_tokens": 253178,
+  "agent_output_tokens": 7019,
+  "image_cache": {
+    "image": "benchmark-cache/distribution-search-gold:430ae95bb5beb0fc",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "logit-distribution-kl-optimization"
+    ],
+    "available_skills": [
+      "logit-distribution-kl-optimization"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "distribution-search__zdRviUk",
+        "passed": true,
+        "provided_skills": [
+          "logit-distribution-kl-optimization"
+        ],
+        "available_skills": [
+          "logit-distribution-kl-optimization"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "dialogue-parser",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 2,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_graph_logic: AssertionError: Unreachable nodes found: ['End']...",
+  "peak_memory": {
+    "peak_memory_mib": 123.9,
+    "peak_memory_raw": "123.9MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.632,
+    "agent_setup_sec": 1.318,
+    "agent_execution_sec": 143.81,
+    "verifier_sec": 7.398,
+    "total_sec": 160.203
+  },
+  "llm_cost_usd": 0.031493088,
+  "agent_input_tokens": 457023,
+  "agent_output_tokens": 9655,
+  "image_cache": {
+    "image": "benchmark-cache/dialogue-parser-gold:c0353fb4817c6884",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-reference-parser"
+    ],
+    "available_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-reference-parser"
+    ],
+    "loaded_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-reference-parser"
+    ],
+    "trials": [
+      {
+        "trial_id": "dialogue-parser__4atugiN",
+        "passed": true,
+        "provided_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-reference-parser"
+        ],
+        "available_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-reference-parser"
+        ],
+        "loaded_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-reference-parser"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "dialogue-reference-parser": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_1b22164fd0a84a66b50ad290",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/dialogue-reference-parser/SKILL.md"
+            }
+          ],
+          "dialogue-graph-construction": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_618b41276def402186cbc5e3",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/dialogue-graph-construction/SKILL.md"
+            }
+          ],
+          "dialogue-dot-rendering": [
+            {
+              "step_id": 7,
+              "tool_call_id": "call_d833d7e24d694b6c8dd2c316",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/dialogue-dot-rendering/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 6,
+  "task_id": "dialogue-parser",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_graph_logic: AssertionError: Unreachable nodes found: ['End']...; test_outputs.py::test_visualization_validity: AssertionError: Choice nodes should be visualized as diamonds; test_outputs.py::test_content_integrity: AssertionError: Edge from 'RecruitOptions' with text 'The stranger seems capable' missing; test_outputs.py::test_structural_integrity: AssertionError: Expected connection StrangerGreet -> CrimsonQuestStart missing",
+  "peak_memory": {
+    "peak_memory_mib": 67.36,
+    "peak_memory_raw": "67.36MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.559,
+    "agent_setup_sec": 0.692,
+    "agent_execution_sec": 58.765,
+    "verifier_sec": 24.574,
+    "total_sec": 93.318
+  },
+  "llm_cost_usd": 0.0032833976000000006,
+  "agent_input_tokens": 168801,
+  "agent_output_tokens": 3468,
+  "image_cache": {
+    "image": "benchmark-cache/dialogue-parser-gold:c0353fb4817c6884",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dialogue-graph-validation-serialization",
+      "dialogue-section-choice-parser"
+    ],
+    "available_skills": [
+      "dialogue-graph-validation-serialization",
+      "dialogue-section-choice-parser"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "dialogue-parser__Bv9vVtw",
+        "passed": true,
+        "provided_skills": [
+          "dialogue-graph-validation-serialization",
+          "dialogue-section-choice-parser"
+        ],
+        "available_skills": [
+          "dialogue-graph-validation-serialization",
+          "dialogue-section-choice-parser"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

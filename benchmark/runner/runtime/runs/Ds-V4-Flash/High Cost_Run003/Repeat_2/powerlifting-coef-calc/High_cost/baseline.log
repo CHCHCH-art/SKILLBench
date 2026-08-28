@@ -1,0 +1,28 @@
+2026-08-22T08:40:41.357941+00:00 START operation=run batch=single_High Cost_Run003 repeat=2 task=powerlifting-coef-calc condition=high_cost image=benchmark-cache/powerlifting-coef-calc-gold:0fef2731a5e5d6d2 provided_skills=["dots-powerlifting-formula-generator", "powerlifting-workbook-column-formula-population"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:14 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 14s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\powerlifting-coef-calc\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\powerlifting-coef-calc\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\powerlifting-coef-calc\High_cost\Job_result`
+
+2026-08-22T08:42:57.314176+00:00 PASS operation=run batch=single_High Cost_Run003 repeat=2 task=powerlifting-coef-calc condition=high_cost

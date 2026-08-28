@@ -1,0 +1,75 @@
+{
+  "schema_version": 6,
+  "task_id": "financial-modeling-qa",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOutputs::test_answer_value_correct: AssertionError: Incorrect answer. Expected 23.0, got 25.0",
+  "peak_memory": {
+    "peak_memory_mib": 251.2,
+    "peak_memory_raw": "251.2MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.528,
+    "agent_setup_sec": 0.922,
+    "agent_execution_sec": 101.39,
+    "verifier_sec": 35.671,
+    "total_sec": 145.39
+  },
+  "llm_cost_usd": 0.021776024,
+  "agent_input_tokens": 255376,
+  "agent_output_tokens": 7463,
+  "image_cache": {
+    "image": "benchmark-cache/financial-modeling-qa-gold:0fdb74de33d4be91",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "bitmask-game-score-pairing",
+      "dice-turn-category-scoring",
+      "pdf-rule-value-extraction",
+      "spreadsheet-turn-record-recovery"
+    ],
+    "available_skills": [
+      "bitmask-game-score-pairing",
+      "dice-turn-category-scoring",
+      "pdf-rule-value-extraction",
+      "spreadsheet-turn-record-recovery"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "financial-modeling-qa__ajx8rq5",
+        "passed": true,
+        "provided_skills": [
+          "bitmask-game-score-pairing",
+          "dice-turn-category-scoring",
+          "pdf-rule-value-extraction",
+          "spreadsheet-turn-record-recovery"
+        ],
+        "available_skills": [
+          "bitmask-game-score-pairing",
+          "dice-turn-category-scoring",
+          "pdf-rule-value-extraction",
+          "spreadsheet-turn-record-recovery"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

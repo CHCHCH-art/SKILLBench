@@ -1,0 +1,141 @@
+
+========== Reuse Image ==========
+Using cached image: benchmark-cache/jpg-ocr-stat-gold:7eeb5a8d01127bee
+Task: jpg-ocr-stat
+Source type: used
+Task run: 5
+Source run: 1
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\jpg-ocr-stat
+
+========== Repeated Run 1/4 ==========
+
+========== Run solve.sh ==========
+Solution complete.
+
+========== Run test.sh ==========
+Get:1 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:3 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1524 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1655 kB]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [50.0 kB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1153 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1478 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [55.8 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1768 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2141 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [35.9 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [671 B]
+Get:19 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [48.9 kB]
+Fetched 32.1 MB in 29s (1107 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  curl
+0 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.
+Need to get 226 kB of archives.
+After this operation, 535 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.11 [226 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 226 kB in 2s (131 kB/s)
+Selecting previously unselected package curl.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 10508 files and directories currently installed.)
+Preparing to unpack .../curl_8.5.0-2ubuntu10.11_amd64.deb ...
+Unpacking curl (8.5.0-2ubuntu10.11) ...
+Setting up curl (8.5.0-2ubuntu10.11) ...
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+Downloading pygments (1.2MiB)
+ Downloading pygments
+Installed 8 packages in 5ms
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 1 item
+
+../../tests/test_outputs.py .                                            [100%]
+
+==================================== PASSES ====================================
+_________________________________ test_outputs _________________________________
+----------------------------- Captured stdout call -----------------------------
+
+============================================================
+OUTPUT_FILE rows (23 total):
+============================================================
+Row 0: ['filename', 'date', 'total_amount']
+Row 1: ['007.jpg', '2019-01-23', '20.00']
+Row 2: ['009.jpg', '2018-01-18', '26.60']
+Row 3: ['010.jpg', '2017-12-29', '14.10']
+Row 4: ['011.jpg', '2017-06-15', '15.00']
+Row 5: ['019.jpg', '2018-03-18', '86.00']
+Row 6: ['034.jpg', '2018-03-09', '332.30']
+Row 7: ['039.jpg', '2018-03-30', '189.75']
+Row 8: ['052.jpg', '2018-03-23', '10.00']
+Row 9: ['063.jpg', '2018-02-26', '85.54']
+Row 10: ['064.jpg', '2018-02-21', '88.17']
+Row 11: ['069.jpg', '2018-02-20', '9.90']
+Row 12: ['071.jpg', '2018-02-19', '17.70']
+Row 13: ['074.jpg', '2018-03-20', '102.00']
+Row 14: ['077.jpg', '2017-10-29', '23.25']
+Row 15: ['078.jpg', '2017-02-02', '92.80']
+Row 16: ['080.jpg', '2017-09-21', '10.40']
+Row 17: ['083.jpg', '2017-05-30', '18.80']
+Row 18: ['087.jpg', '2017-07-27', '538.00']
+Row 19: ['088.jpg', '2017-08-09', '99.80']
+Row 20: ['090.jpg', '2017-03-13', '5.00']
+Row 21: ['094.jpg', '2018-02-09', '5.90']
+Row 22: ['097.jpg', '2018-01-12', '21.00']
+============================================================
+
+=========================== short test summary info ============================
+PASSED ../../tests/test_outputs.py::test_outputs
+============================== 1 passed in 0.30s ===============================
+
+========== Result ==========
+Task: jpg-ocr-stat
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 96.3s (exit 0)
+Test: 50.1s (exit 0)
+Solve Memory Peak: 104.9 MiB
+Test Memory Peak: 105.2 MiB

@@ -1,0 +1,26 @@
+{
+  "curl_examples": {
+    "get_request": {
+      "command": "curl https://api.example.com/users",
+      "status": 200,
+      "response_time": "0.245s"
+    },
+    "post_request": {
+      "command": "curl -X POST https://api.example.com/users -d '{\"name\":\"John\"}'",
+      "status": 201,
+      "response": {
+        "id": 123,
+        "name": "John",
+        "created_at": "2024-01-20T10:30:00Z"
+      }
+    },
+    "auth_request": {
+      "command": "curl -H 'Authorization: Bearer TOKEN' https://api.example.com/profile",
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/json",
+        "X-RateLimit-Remaining": 4999
+      }
+    }
+  }
+}

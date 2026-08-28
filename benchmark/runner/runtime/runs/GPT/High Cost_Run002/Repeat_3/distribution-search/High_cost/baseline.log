@@ -1,0 +1,28 @@
+2026-08-17T09:03:34.713831+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=distribution-search condition=high_cost image=benchmark-cache/distribution-search-gold:430ae95bb5beb0fc provided_skills=["logit-distribution-kl-optimization"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:30 0:00:00
+high_cost • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 30s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\distribution-search\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\distribution-search\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\distribution-search\High_cost\Job_result`
+
+2026-08-17T09:06:07.375431+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=distribution-search condition=high_cost

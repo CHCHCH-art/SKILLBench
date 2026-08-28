@@ -1,0 +1,4 @@
+version: 1
+display_name: "Global Config"
+short_description: "Global defaults and interaction rules for all Alicoder001 skills. Use when starting any task to set communication style, project assumpti..."
+default_prompt: "Use this skill when: Global defaults and interaction rules for all Alicoder001 skills. Use when starting any task to set communication style, project assumptions, and skill priority."

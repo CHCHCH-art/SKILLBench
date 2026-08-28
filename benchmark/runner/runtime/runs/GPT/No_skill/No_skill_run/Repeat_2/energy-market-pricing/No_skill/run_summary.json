@@ -1,0 +1,53 @@
+{
+  "schema_version": 5,
+  "task_id": "energy-market-pricing",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run006",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOptimality::test_costs_near_optimal: AssertionError: base_case cost 2965331.82769156 is lower than optimal 2965637.909677724 beyond 0.0100% (tol=296.5637909677724)",
+  "peak_memory": {
+    "peak_memory_mib": 1009.0,
+    "peak_memory_raw": "1009MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.561,
+    "agent_setup_sec": 168.332,
+    "agent_execution_sec": 383.361,
+    "verifier_sec": 77.779,
+    "total_sec": 636.718
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/energy-market-pricing-gold:856517453474ed1c",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "energy-market-pricing__hQwEJRa",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

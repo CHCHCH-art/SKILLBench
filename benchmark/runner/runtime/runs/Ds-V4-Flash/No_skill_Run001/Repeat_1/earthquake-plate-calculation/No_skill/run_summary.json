@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "earthquake-plate-calculation",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestEarthquakeTask::test_distance_within_tolerance: AssertionError: 2761.37 != 3878.27 within 0.01 delta (1116.9 difference) : Expected 3878.27 ± 0.01 km, got 2761.37 km; test_outputs.py::TestEarthquakeTask::test_earthquake_id_correct: AssertionError: 'us6000m30y' != 'hv74103036'; test_outputs.py::TestEarthquakeTask::test_latitude_within_tolerance: AssertionError: -26.4576 != 19.1868333333333 within 0.0001 delta (45.644433333333296 difference) : Expected latitude 19.1868333333333 ± 0.0001, got -26.4576; test_outputs.py::TestEarthquakeTask::test_longitude_within_tolerance: AssertionError: -141.2625 != -155.493166666667 within 0.0001 delta (14.23066666666702 difference) : Expected longitude -155.493166666667 ± 0.0001, got -141.2625; test_outputs.py::TestEarthquakeTask::test_magnitude_within_tolerance: AssertionError: 5.2 != 5.88 within 0.01 delta (0.6799999999999997 difference) : Expected magnitude 5.88 ± 0.01, got 5.2; test_outputs.py::TestEarthquakeTask::test_place_correct: AssertionError: 'South Pacific Ocean' != '2 km SW of Pāhala, Hawaii'; test_outputs.py::TestEarthquakeTask::test_time_correct: AssertionError: '2024-01-11T04:54:31Z' != '2024-02-09T20:06:31Z'",
+  "peak_memory": {
+    "peak_memory_mib": 170.6,
+    "peak_memory_raw": "170.6MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.511,
+    "agent_setup_sec": 0.59,
+    "agent_execution_sec": 64.949,
+    "verifier_sec": 10.424,
+    "total_sec": 81.606
+  },
+  "llm_cost_usd": 0.0055321448,
+  "agent_input_tokens": 278721,
+  "agent_output_tokens": 4081,
+  "image_cache": {
+    "image": "benchmark-cache/earthquake-plate-calculation-gold:9daffd7dc0823601",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "earthquake-plate-calculation__Mfnf4tJ",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

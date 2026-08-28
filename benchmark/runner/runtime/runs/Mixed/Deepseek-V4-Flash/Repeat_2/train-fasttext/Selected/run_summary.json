@@ -1,0 +1,124 @@
+{
+  "schema_version": 6,
+  "task_id": "train-fasttext",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 3963.904,
+    "peak_memory_raw": "3.871GiB",
+    "error": "EOF",
+    "container_name_hint": "train-fasttext"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.751,
+    "agent_setup_sec": 0.718,
+    "agent_execution_sec": 2139.384,
+    "verifier_sec": 78.189,
+    "total_sec": 2227.399
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1960421,
+  "agent_output_tokens": 6562,
+  "image_cache": {
+    "image": "benchmark-cache/train-fasttext-gold:61266fd7d3d7eaea",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "alexandru--cats-effect-io",
+      "astral-sh--ruff",
+      "baseline-fasttext-small-supervised-training",
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection",
+      "letta-ai--linear",
+      "parquet-to-fasttext-supervised-text",
+      "petekp--design-motion-principles",
+      "piqs-open-dicke-superoperator-construction",
+      "trpc-group--plan-route"
+    ],
+    "available_skills": [
+      "alexandru--cats-effect-io",
+      "astral-sh--ruff",
+      "baseline-fasttext-small-supervised-training",
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection",
+      "letta-ai--linear",
+      "parquet-to-fasttext-supervised-text",
+      "petekp--design-motion-principles",
+      "piqs-open-dicke-superoperator-construction",
+      "trpc-group--plan-route"
+    ],
+    "loaded_skills": [
+      "baseline-fasttext-small-supervised-training",
+      "parquet-to-fasttext-supervised-text"
+    ],
+    "trials": [
+      {
+        "trial_id": "train-fasttext__LG5Kbnh",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "alexandru--cats-effect-io",
+          "astral-sh--ruff",
+          "baseline-fasttext-small-supervised-training",
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection",
+          "letta-ai--linear",
+          "parquet-to-fasttext-supervised-text",
+          "petekp--design-motion-principles",
+          "piqs-open-dicke-superoperator-construction",
+          "trpc-group--plan-route"
+        ],
+        "available_skills": [
+          "alexandru--cats-effect-io",
+          "astral-sh--ruff",
+          "baseline-fasttext-small-supervised-training",
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection",
+          "letta-ai--linear",
+          "parquet-to-fasttext-supervised-text",
+          "petekp--design-motion-principles",
+          "piqs-open-dicke-superoperator-construction",
+          "trpc-group--plan-route"
+        ],
+        "loaded_skills": [
+          "baseline-fasttext-small-supervised-training",
+          "parquet-to-fasttext-supervised-text"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "baseline-fasttext-small-supervised-training": [
+            {
+              "step_id": 27,
+              "tool_call_id": "call_ed7be385520f4a39935e8931",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/baseline-fasttext-small-supervised-training/SKILL.md"
+            }
+          ],
+          "parquet-to-fasttext-supervised-text": [
+            {
+              "step_id": 28,
+              "tool_call_id": "call_228f089c81c44ad99aa4d936",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/parquet-to-fasttext-supervised-text/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

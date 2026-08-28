@@ -1,0 +1,29 @@
+2026-08-22T15:52:12.602271+00:00 START operation=rerun batch=single_High Cost_Run003 repeat=1 task=dialogue-parser condition=high_cost image=benchmark-cache/dialogue-parser-gold:c0353fb4817c6884 provided_skills=["dialogue-dot-rendering", "dialogue-graph-construction", "dialogue-reference-parser"]
+[92m23:54:51 - LiteLLM:WARNING[0m: get_model_cost_map.py:264 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: _ssl.c:993: The handshake operation timed out. Falling back to local backup.
+  1/1 Mean: 0.667 ---------------------------------------- 0:02:48 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.667 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.667  │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 48s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_1\dialogue-parser\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_1\dialogue-parser\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_1\dialogue-parser\High_cost\Job_result`
+
+2026-08-22T15:55:01.942494+00:00 PASS operation=rerun batch=single_High Cost_Run003 repeat=1 task=dialogue-parser condition=high_cost

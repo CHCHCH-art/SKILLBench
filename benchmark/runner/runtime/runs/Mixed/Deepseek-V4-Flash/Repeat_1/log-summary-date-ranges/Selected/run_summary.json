@@ -1,0 +1,101 @@
+{
+  "schema_version": 6,
+  "task_id": "log-summary-date-ranges",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 130.8,
+    "peak_memory_raw": "130.8MiB",
+    "error": null,
+    "container_name_hint": "log-summary-date-ran"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.779,
+    "agent_setup_sec": 0.85,
+    "agent_execution_sec": 32.856,
+    "verifier_sec": 223.61,
+    "total_sec": 265.613
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 53427,
+  "agent_output_tokens": 1043,
+  "image_cache": {
+    "image": "benchmark-cache/log-summary-date-ranges-gold:e28534907986406f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "ancoleman--optimizing-sql",
+      "autonity--afp-product-builder",
+      "clawdbot--sonoscli",
+      "date-range-severity-summary-emission",
+      "dated-log-severity-summary",
+      "github--update-specification",
+      "hookdeck--vercel-webhooks",
+      "lightdash--debug-local",
+      "plurigrid--oapply-colimit",
+      "streaming-dated-log-sqlite-aggregation"
+    ],
+    "available_skills": [
+      "ancoleman--optimizing-sql",
+      "autonity--afp-product-builder",
+      "clawdbot--sonoscli",
+      "date-range-severity-summary-emission",
+      "dated-log-severity-summary",
+      "github--update-specification",
+      "hookdeck--vercel-webhooks",
+      "lightdash--debug-local",
+      "plurigrid--oapply-colimit",
+      "streaming-dated-log-sqlite-aggregation"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "log-summary-date-ranges__cYzprUL",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "ancoleman--optimizing-sql",
+          "autonity--afp-product-builder",
+          "clawdbot--sonoscli",
+          "date-range-severity-summary-emission",
+          "dated-log-severity-summary",
+          "github--update-specification",
+          "hookdeck--vercel-webhooks",
+          "lightdash--debug-local",
+          "plurigrid--oapply-colimit",
+          "streaming-dated-log-sqlite-aggregation"
+        ],
+        "available_skills": [
+          "ancoleman--optimizing-sql",
+          "autonity--afp-product-builder",
+          "clawdbot--sonoscli",
+          "date-range-severity-summary-emission",
+          "dated-log-severity-summary",
+          "github--update-specification",
+          "hookdeck--vercel-webhooks",
+          "lightdash--debug-local",
+          "plurigrid--oapply-colimit",
+          "streaming-dated-log-sqlite-aggregation"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

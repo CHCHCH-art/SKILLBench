@@ -1,0 +1,134 @@
+{
+  "schema_version": 6,
+  "task_id": "dialogue-parser",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_graph_logic: AssertionError: Unreachable nodes found: ['End']...",
+  "peak_memory": {
+    "peak_memory_mib": 84.25,
+    "peak_memory_raw": "84.25MiB",
+    "error": "Error response from daemon: No such container: 5e45c624905e",
+    "container_name_hint": "dialogue-parser"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.604,
+    "agent_setup_sec": 1.013,
+    "agent_execution_sec": 186.408,
+    "verifier_sec": 5.618,
+    "total_sec": 200.212
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 691991,
+  "agent_output_tokens": 8064,
+  "image_cache": {
+    "image": "benchmark-cache/dialogue-parser-gold:c0353fb4817c6884",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "bbeierle12--platform-building",
+      "data-wise--asymptotic-theory",
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser",
+      "jg-chalk-io--moai-core-code-reviewer",
+      "mindrally--pytorch",
+      "zenobi-us--dotnet-framework-4-8-expert"
+    ],
+    "available_skills": [
+      "bbeierle12--platform-building",
+      "data-wise--asymptotic-theory",
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser",
+      "jg-chalk-io--moai-core-code-reviewer",
+      "mindrally--pytorch",
+      "zenobi-us--dotnet-framework-4-8-expert"
+    ],
+    "loaded_skills": [
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser"
+    ],
+    "trials": [
+      {
+        "trial_id": "dialogue-parser__QN6HSLc",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "bbeierle12--platform-building",
+          "data-wise--asymptotic-theory",
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser",
+          "jg-chalk-io--moai-core-code-reviewer",
+          "mindrally--pytorch",
+          "zenobi-us--dotnet-framework-4-8-expert"
+        ],
+        "available_skills": [
+          "bbeierle12--platform-building",
+          "data-wise--asymptotic-theory",
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser",
+          "jg-chalk-io--moai-core-code-reviewer",
+          "mindrally--pytorch",
+          "zenobi-us--dotnet-framework-4-8-expert"
+        ],
+        "loaded_skills": [
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "dialogue-reference-parser": [
+            {
+              "step_id": 17,
+              "tool_call_id": "call_a92cefac7f43451c934afb78",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/dialogue-reference-parser/SKILL.md"
+            }
+          ],
+          "dialogue-graph-construction": [
+            {
+              "step_id": 18,
+              "tool_call_id": "call_d0acb40a456742de86f375ba",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/dialogue-graph-construction/SKILL.md"
+            }
+          ],
+          "dialogue-graph-validation-serialization": [
+            {
+              "step_id": 19,
+              "tool_call_id": "call_563f8b657ab54ace88cbbb2b",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/dialogue-graph-validation-serialization/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

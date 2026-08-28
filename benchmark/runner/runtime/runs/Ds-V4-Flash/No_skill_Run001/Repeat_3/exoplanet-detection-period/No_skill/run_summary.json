@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "exoplanet-detection-period",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 3,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestExoplanetPeriod::test_period_value_correct: AssertionError: Period 2.80433 does not match expected 5.35699 (tolerance: ±0.01)",
+  "peak_memory": {
+    "peak_memory_mib": 199.6,
+    "peak_memory_raw": "199.6MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.57,
+    "agent_setup_sec": 1.134,
+    "agent_execution_sec": 653.096,
+    "verifier_sec": 52.673,
+    "total_sec": 715.389
+  },
+  "llm_cost_usd": 4.490879712000001,
+  "agent_input_tokens": 10481847,
+  "agent_output_tokens": 10927,
+  "image_cache": {
+    "image": "benchmark-cache/exoplanet-detection-period-gold:8bdb5ea239d635d6",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "exoplanet-detection-period__LKNjiGe",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

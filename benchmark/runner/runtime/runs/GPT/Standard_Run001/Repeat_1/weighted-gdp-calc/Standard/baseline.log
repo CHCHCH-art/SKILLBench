@@ -1,0 +1,29 @@
+2026-08-17T13:40:55.714903+00:00 START operation=run batch=single_Standard_Run001 repeat=1 task=weighted-gdp-calc condition=standard image=benchmark-cache/weighted-gdp-calc-gold:9ffa98d58509b229 provided_skills=["net-export-statistics-sumproduct-formulas", "uno-formula-recalc-validation", "uno-two-key-index-match-population"]
+[92m21:43:40 - LiteLLM:WARNING[0m: get_model_cost_map.py:264 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: The read operation timed out. Falling back to local backup.
+  1/1 Mean: 1.000 ---------------------------------------- 0:04:08 0:00:00
+standard • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 8s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\weighted-gdp-calc\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\weighted-gdp-calc\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\weighted-gdp-calc\Standard\Job_result`
+
+2026-08-17T13:45:06.077316+00:00 PASS operation=run batch=single_Standard_Run001 repeat=1 task=weighted-gdp-calc condition=standard

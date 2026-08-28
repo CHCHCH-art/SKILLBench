@@ -1,0 +1,144 @@
+{
+  "schema_version": 6,
+  "task_id": "virtualhome-agent-planning",
+  "condition": "selected",
+  "batch": "single_Selected_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 207.1,
+    "peak_memory_raw": "207.1MiB",
+    "error": "EOF",
+    "container_name_hint": "virtualhome-agent-pl"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.897,
+    "agent_setup_sec": 0.999,
+    "agent_execution_sec": 43.158,
+    "verifier_sec": 74.219,
+    "total_sec": 126.545
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 156887,
+  "agent_output_tokens": 1682,
+  "image_cache": {
+    "image": "benchmark-cache/virtualhome-agent-planning-gold:2a7bb392c743be2d",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "grounded-pyperplan-portfolio-lifting",
+      "leegonzales--research-to-essay",
+      "pddl-pyperplan-baseline-validation",
+      "pddl-task-manifest-plan-orchestration",
+      "pddl-unified-planning-load",
+      "pyperplan-oneshot-plan-generation",
+      "reference-plan-selection-and-safe-write",
+      "shareAI-lab--pdf",
+      "starwreckntx--cognitive-baseline-eval",
+      "unified-planning-plan-file-writing"
+    ],
+    "available_skills": [
+      "grounded-pyperplan-portfolio-lifting",
+      "leegonzales--research-to-essay",
+      "pddl-pyperplan-baseline-validation",
+      "pddl-task-manifest-plan-orchestration",
+      "pddl-unified-planning-load",
+      "pyperplan-oneshot-plan-generation",
+      "reference-plan-selection-and-safe-write",
+      "shareAI-lab--pdf",
+      "starwreckntx--cognitive-baseline-eval",
+      "unified-planning-plan-file-writing"
+    ],
+    "loaded_skills": [
+      "pddl-task-manifest-plan-orchestration",
+      "pddl-unified-planning-load",
+      "pyperplan-oneshot-plan-generation",
+      "unified-planning-plan-file-writing"
+    ],
+    "trials": [
+      {
+        "trial_id": "virtualhome-agent-planning__S8YWxqX",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "grounded-pyperplan-portfolio-lifting",
+          "leegonzales--research-to-essay",
+          "pddl-pyperplan-baseline-validation",
+          "pddl-task-manifest-plan-orchestration",
+          "pddl-unified-planning-load",
+          "pyperplan-oneshot-plan-generation",
+          "reference-plan-selection-and-safe-write",
+          "shareAI-lab--pdf",
+          "starwreckntx--cognitive-baseline-eval",
+          "unified-planning-plan-file-writing"
+        ],
+        "available_skills": [
+          "grounded-pyperplan-portfolio-lifting",
+          "leegonzales--research-to-essay",
+          "pddl-pyperplan-baseline-validation",
+          "pddl-task-manifest-plan-orchestration",
+          "pddl-unified-planning-load",
+          "pyperplan-oneshot-plan-generation",
+          "reference-plan-selection-and-safe-write",
+          "shareAI-lab--pdf",
+          "starwreckntx--cognitive-baseline-eval",
+          "unified-planning-plan-file-writing"
+        ],
+        "loaded_skills": [
+          "pddl-task-manifest-plan-orchestration",
+          "pddl-unified-planning-load",
+          "pyperplan-oneshot-plan-generation",
+          "unified-planning-plan-file-writing"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "pddl-task-manifest-plan-orchestration": [
+            {
+              "step_id": 31,
+              "tool_call_id": "call_8b2873f15a3b42f3ad9f7ae9",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/pddl-task-manifest-plan-orchestration/SKILL.md"
+            }
+          ],
+          "pddl-unified-planning-load": [
+            {
+              "step_id": 32,
+              "tool_call_id": "call_11a982e624e942718e608eab",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/pddl-unified-planning-load/SKILL.md"
+            }
+          ],
+          "pyperplan-oneshot-plan-generation": [
+            {
+              "step_id": 33,
+              "tool_call_id": "call_bec427fbadc24c2196db30fe",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/pyperplan-oneshot-plan-generation/SKILL.md"
+            }
+          ],
+          "unified-planning-plan-file-writing": [
+            {
+              "step_id": 34,
+              "tool_call_id": "call_d0d5924270d041709ea4e702",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/unified-planning-plan-file-writing/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

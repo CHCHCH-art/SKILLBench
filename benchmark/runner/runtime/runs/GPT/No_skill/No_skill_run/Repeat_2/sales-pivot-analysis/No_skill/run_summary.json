@@ -1,0 +1,51 @@
+{
+  "schema_version": 5,
+  "task_id": "sales-pivot-analysis",
+  "condition": "no_skill",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestPivotTableConfiguration::test_pivot_row_is_state: IndexError: list index out of range; test_outputs.py::TestPivotTableConfiguration::test_pivot_uses_correct_aggregation: IndexError: list index out of range; test_outputs.py::TestSourceDataSheet::test_source_data_has_required_column: AssertionError: Missing Total column. Found: ['sourcedata', '', '', '', '', '', '', '', '']; test_outputs.py::TestDataTransformationCorrectness::test_pivot_cache_has_fields: IndexError: list index out of range; test_outputs.py::TestDataTransformationCorrectness::test_sa2_codes_from_income_file_present: AssertionError: Less than 90% SA2 codes found. 0/2450",
+  "peak_memory": {
+    "peak_memory_mib": 400.6,
+    "peak_memory_raw": "400.6MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.422,
+    "agent_setup_sec": 114.87,
+    "agent_execution_sec": 212.944,
+    "verifier_sec": 6.522,
+    "total_sec": 340.073
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/sales-pivot-analysis-gold:b580a0b03ef6ae11",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "sales-pivot-analysis__xwDGQUp",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0,
+  "batch": "No_skill_Run001",
+  "repeat": 2,
+  "operation": "run"
+}

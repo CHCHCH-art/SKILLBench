@@ -1,0 +1,28 @@
+2026-08-20T16:36:32.750519+00:00 START operation=run batch=single_Standard_Run002 repeat=3 task=glm-lake-mendota condition=standard image=benchmark-cache/glm-lake-mendota-gold:cfbcca189cbdcde0 provided_skills=["glm-profile-observation-rmse-alignment", "lake-glm-five-parameter-nelder-mead-calibration"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:05:07 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 5m 7s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_3\glm-lake-mendota\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_3\glm-lake-mendota\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_3\glm-lake-mendota\Standard\Job_result`
+
+2026-08-20T16:41:41.907442+00:00 PASS operation=run batch=single_Standard_Run002 repeat=3 task=glm-lake-mendota condition=standard

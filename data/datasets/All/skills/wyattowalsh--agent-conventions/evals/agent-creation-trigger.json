@@ -1,0 +1,13 @@
+{
+  "skills": ["agent-conventions"],
+  "query": "Create a new agent called 'code-reviewer' that performs automated code reviews with a focus on security",
+  "files": [],
+  "expected_behavior": [
+    "Agent auto-invokes agent-conventions skill when creating a new agent definition",
+    "Agent validates the name 'code-reviewer' as kebab-case matching the pattern ^[a-z0-9][a-z0-9-]*$",
+    "Agent creates agents/code-reviewer.md with required frontmatter fields: name (matching filename) and description (non-empty)",
+    "Agent writes the system prompt body in imperative voice ('Check the logs' not 'Checks the logs')",
+    "Agent updates the corresponding README.md index with a new row for code-reviewer sorted alphabetically",
+    "Agent runs 'wagents validate' after creating the agent to check frontmatter compliance"
+  ]
+}

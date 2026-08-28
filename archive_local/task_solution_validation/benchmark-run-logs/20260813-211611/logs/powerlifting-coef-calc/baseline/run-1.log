@@ -1,0 +1,104 @@
+
+========== Reuse Image ==========
+Using cached image: benchmark-cache/powerlifting-coef-calc-gold:0fef2731a5e5d6d2
+Task: powerlifting-coef-calc
+Source type: baseline
+Task run: 1
+Source run: 1
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\powerlifting-coef-calc
+
+========== Repeated Run 1/4 ==========
+
+========== Run solve.sh ==========
+Initialized project `root`
+Using CPython 3.12.3 interpreter at: /usr/bin/python3.12
+Creating virtual environment at: .venv
+Resolved 10 packages in 1.47s
+Downloading pygments (1.2MiB)
+ Downloaded pygments
+Prepared 8 packages in 1.14s
+Installed 8 packages in 9ms
+ + click==8.4.2
+ + markdown-it-py==4.2.0
+ + mdurl==0.1.2
+ + pygments==2.20.0
+ + rich==15.0.0
+ + shellingham==1.5.4
+ + typer==0.21.1
+ + typing-extensions==4.16.0
+Resolved 12 packages in 1.36s
+Downloading polars-runtime-32 (43.1MiB)
+ Downloaded polars-runtime-32
+Prepared 2 packages in 20.82s
+Installed 2 packages in 5ms
+ + polars==1.37.1
+ + polars-runtime-32==1.37.1
+Resolved 13 packages in 959ms
+Prepared 1 package in 876ms
+Installed 1 package in 1ms
+ + xlsxwriter==3.2.9
+Resolved 14 packages in 1.47s
+Downloading fastexcel (3.2MiB)
+ Downloaded fastexcel
+Prepared 1 package in 2.93s
+Installed 1 package in 0.71ms
+ + fastexcel==0.18.0
+Loaded 20 rows from /root/data/openipf.xlsx
+Saved to /root/data/calced_coefs.xlsx with formulas in Dots sheet
+Solution complete.
+
+========== Run test.sh ==========
+error: Project is already initialized in `/root` (`pyproject.toml` file exists)
+Resolved 18 packages in 1.17s
+Prepared 4 packages in 1.08s
+Installed 4 packages in 3ms
+ + iniconfig==2.3.0
+ + packaging==26.3
+ + pluggy==1.6.0
+ + pytest==8.4.1
+Resolved 19 packages in 1.08s
+Prepared 1 package in 757ms
+Installed 1 package in 0.63ms
+ + pytest-json-ctrf==0.3.5
+Resolved 19 packages in 0.44ms
+Audited 17 packages in 0.12ms
+Resolved 21 packages in 1.11s
+Prepared 2 packages in 947ms
+Installed 2 packages in 3ms
+ + et-xmlfile==2.0.0
+ + openpyxl==3.1.5
+Resolved 21 packages in 0.48ms
+Audited 19 packages in 0.13ms
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 11 items
+
+../tests/test_outputs.py ...........                                     [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_data_sheet_exists
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_dots_sheet_exists
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_dots_sheet_has_correct_columns
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_row_count_matches
+PASSED ../tests/test_outputs.py::TestDotsSheetFormulas::test_dots_sheet_not_empty
+PASSED ../tests/test_outputs.py::TestDotsSheetFormulas::test_total_column_is_formula
+PASSED ../tests/test_outputs.py::TestDotsSheetFormulas::test_dots_column_is_formula
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_dots_values_match_ground_truth
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_all_lifters_have_ground_truth
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_dots_formula_handles_male_lifters
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_dots_formula_handles_female_lifters
+============================== 11 passed in 0.38s ==============================
+
+========== Result ==========
+Task: powerlifting-coef-calc
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 31.8s (exit 0)
+Test: 7.0s (exit 0)
+Solve Memory Peak: 69.4 MiB
+Test Memory Peak: 81.7 MiB

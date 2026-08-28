@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "protein-expression-analysis",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 69.39,
+    "peak_memory_raw": "69.39MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.588,
+    "agent_setup_sec": 1.197,
+    "agent_execution_sec": 89.528,
+    "verifier_sec": 4.97,
+    "total_sec": 102.881
+  },
+  "llm_cost_usd": 0.00665084,
+  "agent_input_tokens": 271896,
+  "agent_output_tokens": 6973,
+  "image_cache": {
+    "image": "benchmark-cache/protein-expression-analysis-gold:a52e2bc643b8e023",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "protein-expression-analysis__ciXfDGN",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

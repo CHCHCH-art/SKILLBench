@@ -1,0 +1,52 @@
+{
+  "schema_version": 6,
+  "task_id": "train-fasttext",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 3,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "trial_error",
+  "passed": false,
+  "error": [
+    {
+      "exception_type": "AgentTimeoutError",
+      "exception_message": "Agent execution timed out after 3600.0 seconds"
+    }
+  ],
+  "failure_reason": "{\"exception_type\":\"AgentTimeoutError\",\"exception_message\":\"Agent execution timed out after 3600.0 seconds\"}",
+  "peak_memory": {
+    "peak_memory_mib": 3688.448,
+    "peak_memory_raw": "3.602GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.549,
+    "agent_setup_sec": 0.907,
+    "agent_execution_sec": 3602.173,
+    "verifier_sec": 207.595,
+    "total_sec": 3819.562
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1319908,
+  "agent_output_tokens": 8357,
+  "image_cache": {
+    "image": "benchmark-cache/train-fasttext-gold:61266fd7d3d7eaea",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": false,
+    "provided_skills": [
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection"
+    ],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [],
+    "error": "No trajectory.json found under E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\runs\\single_High Cost_Run003\\Repeat_3\\train-fasttext\\High_cost\\Job_result"
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

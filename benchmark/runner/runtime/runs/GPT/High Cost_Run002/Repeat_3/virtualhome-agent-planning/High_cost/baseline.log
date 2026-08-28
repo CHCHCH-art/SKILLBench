@@ -1,0 +1,29 @@
+2026-08-17T22:34:22.965581+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=virtualhome-agent-planning condition=high_cost image=benchmark-cache/virtualhome-agent-planning-gold:2a7bb392c743be2d provided_skills=["grounded-pyperplan-portfolio-lifting", "pddl-pyperplan-baseline-validation", "reference-plan-selection-and-safe-write"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:03:55 0:00:00
+high_cost • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 56s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\virtualhome-agent-planning\High_cost\Job_result\result.jso
+n
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\virtualhome-agent-planning\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\virtualhome-agent-planning\High_cost\Job_result`
+
+2026-08-17T22:38:20.617687+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=virtualhome-agent-planning condition=high_cost

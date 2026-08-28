@@ -1,0 +1,101 @@
+{
+  "schema_version": 6,
+  "task_id": "invoice-fraud-detection",
+  "condition": "selected",
+  "batch": "single_Selected_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 73.98,
+    "peak_memory_raw": "73.98MiB",
+    "error": "EOF",
+    "container_name_hint": "invoice-fraud-detect"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.759,
+    "agent_setup_sec": 0.459,
+    "agent_execution_sec": 65.179,
+    "verifier_sec": 5.356,
+    "total_sec": 78.837
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 210945,
+  "agent_output_tokens": 3317,
+  "image_cache": {
+    "image": "benchmark-cache/invoice-fraud-detection-gold:a8a463d9f523584f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "blogic-cz--scan-effect-solutions",
+      "fuzzy-vendor-entity-resolution",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization",
+      "invoice-pdf-reference-field-extraction",
+      "melodic-software--data-modeling",
+      "mikeyobrien--evaluate-presets",
+      "ordered-invoice-masterdata-fraud-rules",
+      "pdf-rule-value-extraction",
+      "reggiechan74--storage-agreement-expert"
+    ],
+    "available_skills": [
+      "blogic-cz--scan-effect-solutions",
+      "fuzzy-vendor-entity-resolution",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization",
+      "invoice-pdf-reference-field-extraction",
+      "melodic-software--data-modeling",
+      "mikeyobrien--evaluate-presets",
+      "ordered-invoice-masterdata-fraud-rules",
+      "pdf-rule-value-extraction",
+      "reggiechan74--storage-agreement-expert"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "invoice-fraud-detection__3TDHCru",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "blogic-cz--scan-effect-solutions",
+          "fuzzy-vendor-entity-resolution",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization",
+          "invoice-pdf-reference-field-extraction",
+          "melodic-software--data-modeling",
+          "mikeyobrien--evaluate-presets",
+          "ordered-invoice-masterdata-fraud-rules",
+          "pdf-rule-value-extraction",
+          "reggiechan74--storage-agreement-expert"
+        ],
+        "available_skills": [
+          "blogic-cz--scan-effect-solutions",
+          "fuzzy-vendor-entity-resolution",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization",
+          "invoice-pdf-reference-field-extraction",
+          "melodic-software--data-modeling",
+          "mikeyobrien--evaluate-presets",
+          "ordered-invoice-masterdata-fraud-rules",
+          "pdf-rule-value-extraction",
+          "reggiechan74--storage-agreement-expert"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

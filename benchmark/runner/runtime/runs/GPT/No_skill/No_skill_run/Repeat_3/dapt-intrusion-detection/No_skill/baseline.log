@@ -1,0 +1,28 @@
+2026-08-05T17:31:28.271934+00:00 START operation=run batch=No_skill_Run001 repeat=3 task=dapt-intrusion-detection condition=no_skill image=benchmark-cache/dapt-intrusion-detection-gold:d683a6252cf07436 provided_skills=[]
+  1/1 Mean: 0.000 ---------------------------------------- 0:08:18 0:00:00
+no_skill • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 8m 18s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\No_skill_Run001\Repeat_3\dapt-intrus
+ion-detection\No_skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\No_skill_Run001\Repeat_3\dapt-intrus
+ion-detection\No_skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\No_skill_Run001\Repeat_3\dapt-intrus
+ion-detection\No_skill\Job_result`
+
+2026-08-05T17:39:47.847252+00:00 FAIL operation=run batch=No_skill_Run001 repeat=3 task=dapt-intrusion-detection condition=no_skill

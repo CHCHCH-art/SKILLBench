@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "pdf-excel-diff",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 241.4,
+    "peak_memory_raw": "241.4MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.988,
+    "agent_setup_sec": 0.872,
+    "agent_execution_sec": 214.863,
+    "verifier_sec": 8.442,
+    "total_sec": 231.901
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 184252,
+  "agent_output_tokens": 5788,
+  "image_cache": {
+    "image": "benchmark-cache/pdf-excel-diff-gold:d574cd2f86bbbcb0",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "pdf-table-structural-guard-and-extraction",
+      "typed-record-diff-json"
+    ],
+    "available_skills": [
+      "pdf-table-structural-guard-and-extraction",
+      "typed-record-diff-json"
+    ],
+    "loaded_skills": [
+      "pdf-table-structural-guard-and-extraction",
+      "typed-record-diff-json"
+    ],
+    "trials": [
+      {
+        "trial_id": "pdf-excel-diff__e6z7TvM",
+        "passed": true,
+        "provided_skills": [
+          "pdf-table-structural-guard-and-extraction",
+          "typed-record-diff-json"
+        ],
+        "available_skills": [
+          "pdf-table-structural-guard-and-extraction",
+          "typed-record-diff-json"
+        ],
+        "loaded_skills": [
+          "pdf-table-structural-guard-and-extraction",
+          "typed-record-diff-json"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "pdf-table-structural-guard-and-extraction": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_HyShW746K0mbkWikmtKSY4Rv",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/pdf-table-structural-guard-and-extraction/SKILL.md"
+            }
+          ],
+          "typed-record-diff-json": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_HyShW746K0mbkWikmtKSY4Rv",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/typed-record-diff-json/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

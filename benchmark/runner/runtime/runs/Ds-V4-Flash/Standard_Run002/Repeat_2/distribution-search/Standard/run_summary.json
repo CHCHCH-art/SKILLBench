@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "distribution-search",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 71.69,
+    "peak_memory_raw": "71.69MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.525,
+    "agent_setup_sec": 0.663,
+    "agent_execution_sec": 67.159,
+    "verifier_sec": 12.411,
+    "total_sec": 89.914
+  },
+  "llm_cost_usd": 0.0034562472,
+  "agent_input_tokens": 148159,
+  "agent_output_tokens": 4622,
+  "image_cache": {
+    "image": "benchmark-cache/distribution-search-gold:430ae95bb5beb0fc",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "three-level-count-search-materialization",
+      "three-level-kl-distribution-solver"
+    ],
+    "available_skills": [
+      "three-level-count-search-materialization",
+      "three-level-kl-distribution-solver"
+    ],
+    "loaded_skills": [
+      "three-level-count-search-materialization",
+      "three-level-kl-distribution-solver"
+    ],
+    "trials": [
+      {
+        "trial_id": "distribution-search__ZJ6mxnE",
+        "passed": true,
+        "provided_skills": [
+          "three-level-count-search-materialization",
+          "three-level-kl-distribution-solver"
+        ],
+        "available_skills": [
+          "three-level-count-search-materialization",
+          "three-level-kl-distribution-solver"
+        ],
+        "loaded_skills": [
+          "three-level-count-search-materialization",
+          "three-level-kl-distribution-solver"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "three-level-count-search-materialization": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_0778054590414e23aa7c7762",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/three-level-count-search-materialization/SKILL.md"
+            }
+          ],
+          "three-level-kl-distribution-solver": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_0778054590414e23aa7c7762",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/three-level-kl-distribution-solver/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

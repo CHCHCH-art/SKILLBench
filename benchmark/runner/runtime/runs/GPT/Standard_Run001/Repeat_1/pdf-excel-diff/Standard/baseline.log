@@ -1,0 +1,28 @@
+2026-08-17T10:47:31.452568+00:00 START operation=run batch=single_Standard_Run001 repeat=1 task=pdf-excel-diff condition=standard image=benchmark-cache/pdf-excel-diff-gold:d574cd2f86bbbcb0 provided_skills=["keyed-record-diff-normalization", "pdf-record-table-extraction"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:47 0:00:00
+standard • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 47s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\pdf-excel-diff\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\pdf-excel-diff\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\pdf-excel-diff\Standard\Job_result`
+
+2026-08-17T10:50:21.007481+00:00 PASS operation=run batch=single_Standard_Run001 repeat=1 task=pdf-excel-diff condition=standard

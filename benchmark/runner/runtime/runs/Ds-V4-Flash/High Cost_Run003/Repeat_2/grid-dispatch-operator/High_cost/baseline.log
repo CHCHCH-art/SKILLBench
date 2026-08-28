@@ -1,0 +1,28 @@
+2026-08-22T03:32:06.354354+00:00 START operation=run batch=single_High Cost_Run003 repeat=2 task=grid-dispatch-operator condition=high_cost image=benchmark-cache/grid-dispatch-operator-gold:4acd0bce1add524f provided_skills=["dc-dispatch-piecewise-master", "dispatch-reserve-and-ptdf-audit", "quadratic-dispatch-outer-approximation-report"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:07:16 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 7m 16s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\grid-dispatch-operator\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\grid-dispatch-operator\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\grid-dispatch-operator\High_cost\Job_result`
+
+2026-08-22T03:39:23.905785+00:00 FAIL operation=run batch=single_High Cost_Run003 repeat=2 task=grid-dispatch-operator condition=high_cost

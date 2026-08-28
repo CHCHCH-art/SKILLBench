@@ -1,0 +1,76 @@
+{
+  "schema_version": 6,
+  "task_id": "mteb-retrieve",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 2,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1793.024,
+    "peak_memory_raw": "1.751GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.639,
+    "agent_setup_sec": 1.195,
+    "agent_execution_sec": 178.277,
+    "verifier_sec": 2140.618,
+    "total_sec": 2327.778
+  },
+  "llm_cost_usd": 0.016148264000000002,
+  "agent_input_tokens": 216553,
+  "agent_output_tokens": 4574,
+  "image_cache": {
+    "image": "benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "mteb-streaming-topk-cosine-retrieval"
+    ],
+    "available_skills": [
+      "mteb-streaming-topk-cosine-retrieval"
+    ],
+    "loaded_skills": [
+      "mteb-streaming-topk-cosine-retrieval"
+    ],
+    "trials": [
+      {
+        "trial_id": "mteb-retrieve__vjfWTcq",
+        "passed": true,
+        "provided_skills": [
+          "mteb-streaming-topk-cosine-retrieval"
+        ],
+        "available_skills": [
+          "mteb-streaming-topk-cosine-retrieval"
+        ],
+        "loaded_skills": [
+          "mteb-streaming-topk-cosine-retrieval"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "mteb-streaming-topk-cosine-retrieval": [
+            {
+              "step_id": 7,
+              "tool_call_id": "call_41c11e84c66344bfabcf10c5",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/mteb-streaming-topk-cosine-retrieval/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

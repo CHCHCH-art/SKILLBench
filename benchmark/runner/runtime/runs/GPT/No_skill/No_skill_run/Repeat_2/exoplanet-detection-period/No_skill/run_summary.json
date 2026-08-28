@@ -1,0 +1,51 @@
+{
+  "schema_version": 5,
+  "task_id": "exoplanet-detection-period",
+  "condition": "no_skill",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 483.5,
+    "peak_memory_raw": "483.5MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.456,
+    "agent_setup_sec": 68.33,
+    "agent_execution_sec": 584.871,
+    "verifier_sec": 8.744,
+    "total_sec": 667.719
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/exoplanet-detection-period-gold:b279d2fd9293de6a",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "exoplanet-detection-period__GfTzA78",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0,
+  "batch": "No_skill_Run001",
+  "repeat": 2,
+  "operation": "run"
+}

@@ -1,0 +1,142 @@
+
+========== Reuse Image ==========
+Using cached image: benchmark-cache/energy-market-pricing-gold:856517453474ed1c
+Task: energy-market-pricing
+Source type: baseline
+Task run: 1
+Source run: 1
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\energy-market-pricing
+
+========== Repeated Run 1/4 ==========
+
+========== Run solve.sh ==========
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Loaded real_world_network: 2869 buses, 510 generators, 4582 branches, 4582 thermally limited lines
+Sparse Bbus: shape=(2869, 2869), nnz=10805; dense equivalent=62.8 MiB
+Target line 64<->1501: 312.000 -> 374.400 MW
+LP: 3889 variables, 2869 equalities, 9675 inequalities, Aeq.nnz=11315, Aub.nnz=19858
+Base case: cost=$2965637.91/hr, HiGHS nit=3549, max_violation=4.270e-10 MW, binding_lines=23
+Counterfactual: cost=$2961759.38/hr, HiGHS nit=3542, max_violation=6.936e-10 MW, binding_lines=24
+
+================================================================
+SPARSE HiGHS PERFORMANCE
+================================================================
+matrix/model build:       0.001 s
+base solve:               0.495 s
+counterfactual solve:     0.269 s
+total Python phase:       0.829 s
+cost reduction:           $3878.53/hr
+congestion relieved:      True
+report:                    /root/report.json
+
+========== Run test.sh ==========
+Collecting pytest
+  Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-json-ctrf
+  Downloading pytest_json_ctrf-0.5.3-py3-none-any.whl.metadata (4.3 kB)
+Requirement already satisfied: numpy==1.26.4 in /usr/local/lib/python3.12/dist-packages (1.26.4)
+Requirement already satisfied: scipy==1.11.4 in /usr/local/lib/python3.12/dist-packages (1.11.4)
+Collecting cvxpy==1.4.2
+  Downloading cvxpy-1.4.2.tar.gz (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 397.6 kB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: still running...
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting osqp>=0.6.2 (from cvxpy==1.4.2)
+  Downloading osqp-1.1.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (2.2 kB)
+Collecting ecos>=2 (from cvxpy==1.4.2)
+  Downloading ecos-2.0.14-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.0 kB)
+Collecting clarabel>=0.5.0 (from cvxpy==1.4.2)
+  Downloading clarabel-0.11.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.8 kB)
+Collecting scs>=3.0 (from cvxpy==1.4.2)
+  Downloading scs-3.2.11-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (2.8 kB)
+Collecting pybind11 (from cvxpy==1.4.2)
+  Using cached pybind11-3.1.0-py3-none-any.whl.metadata (10 kB)
+Collecting iniconfig>=1.0.1 (from pytest)
+  Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting packaging>=22 (from pytest)
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pluggy<2,>=1.5 (from pytest)
+  Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting pygments>=2.7.2 (from pytest)
+  Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting cffi (from clarabel>=0.5.0->cvxpy==1.4.2)
+  Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+Collecting jinja2 (from osqp>=0.6.2->cvxpy==1.4.2)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from osqp>=0.6.2->cvxpy==1.4.2) (68.1.2)
+Collecting joblib (from osqp>=0.6.2->cvxpy==1.4.2)
+  Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting pycparser (from cffi->clarabel>=0.5.0->cvxpy==1.4.2)
+  Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->osqp>=0.6.2->cvxpy==1.4.2)
+  Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 386.5/386.5 kB 49.3 kB/s eta 0:00:00
+Downloading pytest_json_ctrf-0.5.3-py3-none-any.whl (7.5 kB)
+Downloading clarabel-0.11.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 50.6 kB/s eta 0:00:00
+Downloading ecos-2.0.14-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (222 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 222.1/222.1 kB 40.0 kB/s eta 0:00:00
+Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Downloading osqp-1.1.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (354 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 354.1/354.1 kB 52.0 kB/s eta 0:00:00
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 39.6 kB/s eta 0:00:00
+Downloading scs-3.2.11-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 61.9 kB/s eta 0:00:00
+Using cached pybind11-3.1.0-py3-none-any.whl (319 kB)
+Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 221.8/221.8 kB 56.0 kB/s eta 0:00:00
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 52.6 kB/s eta 0:00:00
+Downloading joblib-1.5.3-py3-none-any.whl (309 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 309.1/309.1 kB 58.1 kB/s eta 0:00:00
+Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.2/48.2 kB 38.8 kB/s eta 0:00:00
+Building wheels for collected packages: cvxpy
+  Building wheel for cvxpy (pyproject.toml): started
+  Building wheel for cvxpy (pyproject.toml): finished with status 'done'
+  Created wheel for cvxpy: filename=cvxpy-1.4.2-cp312-cp312-linux_x86_64.whl size=1160658 sha256=56beb2c8dff3145ed2fb3ed81b74bad1e2d65cf9db0d5b7255c583e719bf3df0
+  Stored in directory: /root/.cache/pip/wheels/91/88/73/530df3c40730e9418f94736782333134119da7b16f2a3c62b7
+Successfully built cvxpy
+Installing collected packages: pygments, pycparser, pybind11, pluggy, packaging, MarkupSafe, joblib, iniconfig, scs, pytest, jinja2, ecos, cffi, pytest-json-ctrf, osqp, clarabel, cvxpy
+Successfully installed MarkupSafe-3.0.3 cffi-2.1.1 clarabel-0.11.1 cvxpy-1.4.2 ecos-2.0.14 iniconfig-2.3.0 jinja2-3.1.6 joblib-1.5.3 osqp-1.1.3 packaging-26.3 pluggy-1.6.0 pybind11-3.1.0 pycparser-3.0 pygments-2.20.0 pytest-9.1.1 pytest-json-ctrf-0.5.3 scs-3.2.11
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /tests
+plugins: json-ctrf-0.5.3
+collecting ... collected 4 items
+
+../tests/test_outputs.py::TestSchema::test_report_schema PASSED          [ 25%]
+../tests/test_outputs.py::TestFeasibility::test_internal_consistency PASSED [ 50%]
+../tests/test_outputs.py::TestOptimality::test_costs_near_optimal PASSED [ 75%]
+../tests/test_outputs.py::TestOptimality::test_cost_reduction_non_negative PASSED [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestSchema::test_report_schema
+PASSED ../tests/test_outputs.py::TestFeasibility::test_internal_consistency
+PASSED ../tests/test_outputs.py::TestOptimality::test_costs_near_optimal
+PASSED ../tests/test_outputs.py::TestOptimality::test_cost_reduction_non_negative
+============================== 4 passed in 15.91s ==============================
+
+========== Result ==========
+Task: energy-market-pricing
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 236.0s (exit 0)
+Test: 863.6s (exit 0)
+Solve Memory Peak: 69.1 MiB
+Test Memory Peak: 688.1 MiB

@@ -1,0 +1,62 @@
+Task: econ-detrending-correlation
+Source type: baseline
+Task run: 3
+Source run: 3
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\econ-detrending-correlation
+
+========== Repeated Run 3/4 ==========
+
+========== Run solve.sh ==========
+Calculated Correlation: 0.68885
+
+========== Run test.sh ==========
+Hit:1 http://deb.debian.org/debian trixie InRelease
+Hit:2 http://deb.debian.org/debian trixie-updates InRelease
+Hit:3 http://deb.debian.org/debian-security trixie-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.14.1-2+deb13u4).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+============================= test session starts ==============================
+platform linux -- Python 3.10.20, pytest-8.4.1, pluggy-1.6.0 -- /root/.cache/uv/archive-v0/B5kSPenyGLwZN0_NBQNT_/bin/python
+cachedir: .pytest_cache
+rootdir: /
+plugins: json-ctrf-0.3.5
+collecting ... collected 4 items
+
+../tests/test_outputs.py::TestEconomicsTask::test_answer_file_exists PASSED [ 25%]
+../tests/test_outputs.py::TestEconomicsTask::test_answer_format PASSED   [ 50%]
+../tests/test_outputs.py::TestEconomicsTask::test_answer_is_valid_number PASSED [ 75%]
+../tests/test_outputs.py::TestEconomicsTask::test_correlation_value_correct PASSED [100%]
+
+==================================== PASSES ====================================
+_______________ TestEconomicsTask.test_correlation_value_correct _______________
+----------------------------- Captured stdout call -----------------------------
+Agent's answer: 0.68885
+Expected: 0.68885
+Tolerance: ±0.001
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestEconomicsTask::test_answer_file_exists
+PASSED ../tests/test_outputs.py::TestEconomicsTask::test_answer_format
+PASSED ../tests/test_outputs.py::TestEconomicsTask::test_answer_is_valid_number
+PASSED ../tests/test_outputs.py::TestEconomicsTask::test_correlation_value_correct
+============================== 4 passed in 0.04s ===============================
+
+========== Result ==========
+Task: econ-detrending-correlation
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 1.2s (exit 0)
+Test: 13.8s (exit 0)
+Solve Memory Peak: 97.6 MiB
+Test Memory Peak: 151.2 MiB

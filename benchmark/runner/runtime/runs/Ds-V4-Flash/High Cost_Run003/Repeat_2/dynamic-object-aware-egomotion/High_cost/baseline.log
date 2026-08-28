@@ -1,0 +1,29 @@
+2026-08-21T17:51:06.269611+00:00 START operation=run batch=single_High Cost_Run003 repeat=2 task=dynamic-object-aware-egomotion condition=high_cost image=benchmark-cache/dynamic-object-aware-egomotion-gold:fc972e99cd5a2204 provided_skills=["binary-mask-csr-serialization", "dynamic-region-motion-mask", "egomotion-reference-label-sequence", "video-global-egomotion-estimation"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:05:43 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 5m 43s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\dynamic-object-aware-egomotion\High_cost\Job_result\result
+.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\dynamic-object-aware-egomotion\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\dynamic-object-aware-egomotion\High_cost\Job_result`
+
+2026-08-21T17:56:51.023621+00:00 FAIL operation=run batch=single_High Cost_Run003 repeat=2 task=dynamic-object-aware-egomotion condition=high_cost

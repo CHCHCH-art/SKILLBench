@@ -1,0 +1,28 @@
+2026-08-25T13:52:31.116199+00:00 START operation=run batch=single_Selected_Run002 repeat=1 task=invoice-fraud-detection condition=selected image=benchmark-cache/invoice-fraud-detection-gold:a8a463d9f523584f provided_skills=["blogic-cz--scan-effect-solutions", "fuzzy-vendor-entity-resolution", "invoice-fraud-reference-rules", "invoice-pdf-field-normalization", "invoice-pdf-reference-field-extraction", "melodic-software--data-modeling", "mikeyobrien--evaluate-presets", "ordered-invoice-masterdata-fraud-rules", "pdf-rule-value-extraction", "reggiechan74--storage-agreement-expert"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:01:18 0:00:00
+selected • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 1m 19s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_1\invoice-fraud-detection\Selected\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_1\invoice-fraud-detection\Selected`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run002\Repe
+at_1\invoice-fraud-detection\Selected\Job_result`
+
+2026-08-25T13:53:51.361860+00:00 PASS operation=run batch=single_Selected_Run002 repeat=1 task=invoice-fraud-detection condition=selected

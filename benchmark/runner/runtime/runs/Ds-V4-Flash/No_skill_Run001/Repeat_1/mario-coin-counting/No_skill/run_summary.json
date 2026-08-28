@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "mario-coin-counting",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestFileExists::test_counting_results: assert 8 == 54",
+  "peak_memory": {
+    "peak_memory_mib": 331.6,
+    "peak_memory_raw": "331.6MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.466,
+    "agent_setup_sec": 2.508,
+    "agent_execution_sec": 640.144,
+    "verifier_sec": 59.476,
+    "total_sec": 718.52
+  },
+  "llm_cost_usd": 0.039964674400000004,
+  "agent_input_tokens": 3576245,
+  "agent_output_tokens": 45916,
+  "image_cache": {
+    "image": "benchmark-cache/mario-coin-counting-gold:989a4c6bcaeff277",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "mario-coin-counting__76Nw5r8",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

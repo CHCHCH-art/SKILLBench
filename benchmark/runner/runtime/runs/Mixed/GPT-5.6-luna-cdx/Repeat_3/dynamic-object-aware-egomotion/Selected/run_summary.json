@@ -1,0 +1,101 @@
+{
+  "schema_version": 6,
+  "task_id": "dynamic-object-aware-egomotion",
+  "condition": "selected",
+  "batch": "single_Selected_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestMotionAccuracy::test_motion_macro_f1: assert np.float64(0.0) >= 0.5; test_outputs.py::TestMaskAccuracy::test_mask_comprehensive: AssertionError: Mean IoU is below acceptable threshold.",
+  "peak_memory": {
+    "peak_memory_mib": 280.4,
+    "peak_memory_raw": "280.4MiB",
+    "error": "EOF",
+    "container_name_hint": "dynamic-object-aware"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.556,
+    "agent_setup_sec": 0.432,
+    "agent_execution_sec": 143.365,
+    "verifier_sec": 134.563,
+    "total_sec": 285.419
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 161428,
+  "agent_output_tokens": 4444,
+  "image_cache": {
+    "image": "benchmark-cache/dynamic-object-aware-egomotion-gold:fc972e99cd5a2204",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "binary-mask-csr-npz-serialization",
+      "binary-mask-csr-serialization",
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "oncorporation--chaos-seize",
+      "pjt222--create-github-release",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "available_skills": [
+      "binary-mask-csr-npz-serialization",
+      "binary-mask-csr-serialization",
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "oncorporation--chaos-seize",
+      "pjt222--create-github-release",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "dynamic-object-aware-egomotion__my4q9Sn",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "binary-mask-csr-npz-serialization",
+          "binary-mask-csr-serialization",
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "oncorporation--chaos-seize",
+          "pjt222--create-github-release",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "available_skills": [
+          "binary-mask-csr-npz-serialization",
+          "binary-mask-csr-serialization",
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "oncorporation--chaos-seize",
+          "pjt222--create-github-release",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

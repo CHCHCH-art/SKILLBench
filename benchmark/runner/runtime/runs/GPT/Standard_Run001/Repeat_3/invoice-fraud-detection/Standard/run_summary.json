@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "invoice-fraud-detection",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 100.6,
+    "peak_memory_raw": "100.6MiB",
+    "error": "Error response from daemon: No such container: 5940fa69e0df"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.901,
+    "agent_setup_sec": 0.489,
+    "agent_execution_sec": 131.89,
+    "verifier_sec": 34.61,
+    "total_sec": 175.799
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 163143,
+  "agent_output_tokens": 3309,
+  "image_cache": {
+    "image": "benchmark-cache/invoice-fraud-detection-gold:a8a463d9f523584f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "invoice-pdf-reference-field-extraction",
+      "ordered-invoice-masterdata-fraud-rules"
+    ],
+    "available_skills": [
+      "invoice-pdf-reference-field-extraction",
+      "ordered-invoice-masterdata-fraud-rules"
+    ],
+    "loaded_skills": [
+      "invoice-pdf-reference-field-extraction",
+      "ordered-invoice-masterdata-fraud-rules"
+    ],
+    "trials": [
+      {
+        "trial_id": "invoice-fraud-detection__xMADBKs",
+        "passed": true,
+        "provided_skills": [
+          "invoice-pdf-reference-field-extraction",
+          "ordered-invoice-masterdata-fraud-rules"
+        ],
+        "available_skills": [
+          "invoice-pdf-reference-field-extraction",
+          "ordered-invoice-masterdata-fraud-rules"
+        ],
+        "loaded_skills": [
+          "invoice-pdf-reference-field-extraction",
+          "ordered-invoice-masterdata-fraud-rules"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "ordered-invoice-masterdata-fraud-rules": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_IgY8GC3u4MznYHl75MSuk2wt",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/ordered-invoice-masterdata-fraud-rules/SKILL.md"
+            }
+          ],
+          "invoice-pdf-reference-field-extraction": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_IgY8GC3u4MznYHl75MSuk2wt",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/invoice-pdf-reference-field-extraction/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

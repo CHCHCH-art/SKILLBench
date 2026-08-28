@@ -1,0 +1,30 @@
+2026-08-22T02:41:11.581083+00:00 START operation=run batch=single_High Cost_Run003 repeat=3 task=gravitational-wave-detection condition=high_cost image=benchmark-cache/gravitational-wave-detection-gold:453ceaaaf619c520 provided_skills=["matched-filter-winner-confirmation-audit", "pycbc-reference-matched-filter-search"]
+[92m10:51:40 - LiteLLM:WARNING[0m: get_model_cost_map.py:264 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: _ssl.c:993: The handshake operation timed out. Falling back to local backup.
+  1/1 Mean: 0.000 ---------------------------------------- 0:10:32 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 10m 32s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_3\gravitational-wave-detection\High_cost\Job_result\result.j
+son
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_3\gravitational-wave-detection\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_3\gravitational-wave-detection\High_cost\Job_result`
+
+2026-08-22T02:51:45.116290+00:00 FAIL operation=run batch=single_High Cost_Run003 repeat=3 task=gravitational-wave-detection condition=high_cost

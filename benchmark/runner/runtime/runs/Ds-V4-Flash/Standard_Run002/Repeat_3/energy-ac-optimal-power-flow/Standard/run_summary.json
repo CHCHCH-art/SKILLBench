@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "energy-ac-optimal-power-flow",
+  "condition": "standard",
+  "batch": "single_Standard_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestFeasibility::test_power_balance_acopf: IndexError: index 199 is out of bounds for axis 0 with size 69; test_outputs.py::TestFeasibility::test_branch_limits_and_angle_bounds: IndexError: index 199 is out of bounds for axis 0 with size 69",
+  "peak_memory": {
+    "peak_memory_mib": 1704.96,
+    "peak_memory_raw": "1.665GiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.508,
+    "agent_setup_sec": 0.888,
+    "agent_execution_sec": 222.616,
+    "verifier_sec": 228.831,
+    "total_sec": 461.361
+  },
+  "llm_cost_usd": 0.008781063200000001,
+  "agent_input_tokens": 562747,
+  "agent_output_tokens": 10150,
+  "image_cache": {
+    "image": "benchmark-cache/energy-ac-optimal-power-flow-gold:131fccb5858c984c",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "acopf-feasibility-loading-report",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve"
+    ],
+    "available_skills": [
+      "acopf-feasibility-loading-report",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve"
+    ],
+    "loaded_skills": [
+      "acopf-feasibility-loading-report",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-ac-optimal-power-flow__6cmX7ht",
+        "passed": true,
+        "provided_skills": [
+          "acopf-feasibility-loading-report",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve"
+        ],
+        "available_skills": [
+          "acopf-feasibility-loading-report",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve"
+        ],
+        "loaded_skills": [
+          "acopf-feasibility-loading-report",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "casadi-acopf-pi-network-formulation": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_e058ccd616264622a152322f",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/casadi-acopf-pi-network-formulation/SKILL.md"
+            }
+          ],
+          "ipopt-acopf-reference-solve": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_9a1eca3393984bedb486d7c8",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/ipopt-acopf-reference-solve/SKILL.md"
+            }
+          ],
+          "acopf-feasibility-loading-report": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_6f1d044b3cdc4951acc8bb99",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/acopf-feasibility-loading-report/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

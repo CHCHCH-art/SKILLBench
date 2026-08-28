@@ -1,0 +1,51 @@
+{
+  "schema_version": 5,
+  "task_id": "dialogue-parser",
+  "condition": "no_skill",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_graph_logic: AssertionError: Unreachable nodes found: ['End']...; test_outputs.py::test_visualization_validity: AssertionError: Choice nodes should be visualized as diamonds",
+  "peak_memory": {
+    "peak_memory_mib": 399.2,
+    "peak_memory_raw": "399.2MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.471,
+    "agent_setup_sec": 144.479,
+    "agent_execution_sec": 215.81,
+    "verifier_sec": 4.549,
+    "total_sec": 370.602
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/dialogue-parser-gold:04e55248526db616",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "dialogue-parser__QdyKtH3",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0,
+  "batch": "No_skill_Run001",
+  "repeat": 3,
+  "operation": "run"
+}

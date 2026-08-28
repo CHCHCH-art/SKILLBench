@@ -1,0 +1,51 @@
+{
+  "schema_version": 5,
+  "task_id": "mars-clouds-clustering",
+  "condition": "no_skill",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 521.0,
+    "peak_memory_raw": "521MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.495,
+    "agent_setup_sec": 67.649,
+    "agent_execution_sec": 246.679,
+    "verifier_sec": 1.287,
+    "total_sec": 322.268
+  },
+  "llm_cost_usd": 0.0,
+  "image_cache": {
+    "image": "benchmark-cache/mars-clouds-clustering-gold:10e52f94d8747b27",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "mars-clouds-clustering__BAUY6Tc",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0,
+  "batch": "No_skill_Run001",
+  "repeat": 1,
+  "operation": "run"
+}

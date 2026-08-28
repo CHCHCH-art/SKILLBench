@@ -1,0 +1,15 @@
+{
+  "skills": ["prompt-engineer"],
+  "query": "/prompt-engineer evaluate ./prompts/agent-system.md",
+  "files": ["prompts/agent-system.md"],
+  "expected_behavior": [
+    "Agent dispatches to Mode D: Evaluate based on 'evaluate' keyword",
+    "Agent reads the file at ./prompts/agent-system.md",
+    "Agent performs model-class detection",
+    "Agent works with user to define success criteria (functional, quality, safety, edge case)",
+    "Agent designs test suite with categories: golden set (5-10), edge cases, adversarial, regression",
+    "Agent generates concrete test cases with input, expected behavior, and failure indicators",
+    "Agent builds scoring rubric with dimensions, 1-5 levels, and LLM-as-judge prompt",
+    "Agent presents formatted output per references/output-formats.md Evaluate template with recommended eval tools"
+  ]
+}

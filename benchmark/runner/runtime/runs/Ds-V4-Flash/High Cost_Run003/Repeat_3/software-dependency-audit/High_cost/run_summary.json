@@ -1,0 +1,71 @@
+{
+  "schema_version": 6,
+  "task_id": "software-dependency-audit",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestSecurityAuditTask::test_csv_matches_ground_truth: AssertionError: Generated CSV content does not match expected vulnerabilities",
+  "peak_memory": {
+    "peak_memory_mib": 123.8,
+    "peak_memory_raw": "123.8MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.489,
+    "agent_setup_sec": 0.768,
+    "agent_execution_sec": 110.144,
+    "verifier_sec": 76.051,
+    "total_sec": 193.851
+  },
+  "llm_cost_usd": 0.01269396,
+  "agent_input_tokens": 204414,
+  "agent_output_tokens": 2203,
+  "image_cache": {
+    "image": "benchmark-cache/software-dependency-audit-gold:65439dede9bf4280",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "deterministic-offline-package-tree-reconstruction",
+      "npm-lock-dual-sbom-dependency-graph",
+      "trivy-dual-scan-csv-reconciliation"
+    ],
+    "available_skills": [
+      "deterministic-offline-package-tree-reconstruction",
+      "npm-lock-dual-sbom-dependency-graph",
+      "trivy-dual-scan-csv-reconciliation"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "software-dependency-audit__QPVvdJc",
+        "passed": true,
+        "provided_skills": [
+          "deterministic-offline-package-tree-reconstruction",
+          "npm-lock-dual-sbom-dependency-graph",
+          "trivy-dual-scan-csv-reconciliation"
+        ],
+        "available_skills": [
+          "deterministic-offline-package-tree-reconstruction",
+          "npm-lock-dual-sbom-dependency-graph",
+          "trivy-dual-scan-csv-reconciliation"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

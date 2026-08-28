@@ -1,0 +1,28 @@
+2026-08-17T06:16:24.507912+00:00 START operation=run batch=single_Standard_Run001 repeat=2 task=financial-modeling-qa condition=standard image=benchmark-cache/financial-modeling-qa-gold:0fdb74de33d4be91 provided_skills=["pdf-game-rule-object-extraction", "sparse-ooxml-turn-record-recovery", "unique-category-game-assignment"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:30 0:00:00
+standard • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 30s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_2\financial-modeling-qa\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_2\financial-modeling-qa\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_2\financial-modeling-qa\Standard\Job_result`
+
+2026-08-17T06:18:56.578671+00:00 PASS operation=run batch=single_Standard_Run001 repeat=2 task=financial-modeling-qa condition=standard

@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "dapt-intrusion-detection",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestProtocolDistribution::test_protocol_count: AssertionError: protocol_icmp: expected 8, got 15; test_outputs.py::TestEntropyMetrics::test_entropy_metric: AssertionError: unique_src_ports: expected 1713, got 1714; test_outputs.py::TestGraphMetrics::test_graph_metric: AssertionError: network_density: expected 0.041252, got 0.031818; test_outputs.py::TestTemporalMetrics::test_temporal_metric: AssertionError: num_consumers: expected 13, got 16; test_outputs.py::TestFlowMetrics::test_flow_metric: AssertionError: udp_flows: expected 214, got 218",
+  "peak_memory": {
+    "peak_memory_mib": 121.8,
+    "peak_memory_raw": "121.8MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.857,
+    "agent_setup_sec": 0.494,
+    "agent_execution_sec": 125.595,
+    "verifier_sec": 377.684,
+    "total_sec": 512.045
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 136309,
+  "agent_output_tokens": 5157,
+  "image_cache": {
+    "image": "benchmark-cache/dapt-intrusion-detection-gold:7867f125ad78de68",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "classic-pcap-streaming-network-metrics",
+      "metric-csv-template-update",
+      "network-traffic-reference-behavior-flags"
+    ],
+    "available_skills": [
+      "classic-pcap-streaming-network-metrics",
+      "metric-csv-template-update",
+      "network-traffic-reference-behavior-flags"
+    ],
+    "loaded_skills": [
+      "classic-pcap-streaming-network-metrics",
+      "metric-csv-template-update",
+      "network-traffic-reference-behavior-flags"
+    ],
+    "trials": [
+      {
+        "trial_id": "dapt-intrusion-detection__YPLtMQW",
+        "passed": true,
+        "provided_skills": [
+          "classic-pcap-streaming-network-metrics",
+          "metric-csv-template-update",
+          "network-traffic-reference-behavior-flags"
+        ],
+        "available_skills": [
+          "classic-pcap-streaming-network-metrics",
+          "metric-csv-template-update",
+          "network-traffic-reference-behavior-flags"
+        ],
+        "loaded_skills": [
+          "classic-pcap-streaming-network-metrics",
+          "metric-csv-template-update",
+          "network-traffic-reference-behavior-flags"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "network-traffic-reference-behavior-flags": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_0JG7CUg9jvkw9ecj07y4Acnq",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/network-traffic-reference-behavior-flags/SKILL.md"
+            }
+          ],
+          "metric-csv-template-update": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_0JG7CUg9jvkw9ecj07y4Acnq",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/metric-csv-template-update/SKILL.md"
+            }
+          ],
+          "classic-pcap-streaming-network-metrics": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_0JG7CUg9jvkw9ecj07y4Acnq",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/classic-pcap-streaming-network-metrics/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

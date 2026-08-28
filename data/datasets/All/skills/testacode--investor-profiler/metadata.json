@@ -1,0 +1,17 @@
+{
+  "name": "investor-profiler",
+  "version": "1.0.0",
+  "description": "Entrevista estructurada para determinar perfil de inversor y recomendar asset allocation personalizada",
+  "author": "testacode",
+  "tags": ["finanzas", "inversiones", "perfil-inversor", "asset-allocation", "entrevista"],
+  "triggers": [
+    "perfil inversor",
+    "en qué invertir",
+    "asset allocation",
+    "qué inversiones me convienen",
+    "empezar a invertir",
+    "determinar perfil",
+    "tolerancia al riesgo",
+    "cómo invertir"
+  ]
+}

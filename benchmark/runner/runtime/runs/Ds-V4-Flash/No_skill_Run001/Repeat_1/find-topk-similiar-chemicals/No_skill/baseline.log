@@ -1,0 +1,28 @@
+2026-08-20T09:47:05.717239+00:00 START operation=rerun batch=single_No_skill_Run001 repeat=1 task=find-topk-similiar-chemicals condition=no_skill image=benchmark-cache/find-topk-similiar-chemicals-gold:bd06707e8ac4a427 provided_skills=[]
+  1/1 Mean: 0.000 ---------------------------------------- 0:23:37 0:00:00
+no_skill • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 23m 37s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run001\Repe
+at_1\find-topk-similiar-chemicals\No_skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run001\Repe
+at_1\find-topk-similiar-chemicals\No_skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run001\Repe
+at_1\find-topk-similiar-chemicals\No_skill\Job_result`
+
+2026-08-20T10:10:44.925075+00:00 FAIL operation=rerun batch=single_No_skill_Run001 repeat=1 task=find-topk-similiar-chemicals condition=no_skill

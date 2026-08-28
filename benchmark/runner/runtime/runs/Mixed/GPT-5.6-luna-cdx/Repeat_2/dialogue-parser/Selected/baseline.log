@@ -1,0 +1,28 @@
+2026-08-25T08:57:35.348450+00:00 START operation=run batch=single_Selected_Run001 repeat=2 task=dialogue-parser condition=selected image=benchmark-cache/dialogue-parser-gold:c0353fb4817c6884 provided_skills=["bbeierle12--platform-building", "data-wise--asymptotic-theory", "dialogue-dot-rendering", "dialogue-graph-construction", "dialogue-graph-validation-serialization", "dialogue-reference-parser", "dialogue-section-choice-parser", "jg-chalk-io--moai-core-code-reviewer", "mindrally--pytorch", "zenobi-us--dotnet-framework-4-8-expert"]
+  1/1 Mean: 0.667 ---------------------------------------- 0:02:11 0:00:00
+selected • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.667 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.667  │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 11s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run001\Repe
+at_2\dialogue-parser\Selected\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run001\Repe
+at_2\dialogue-parser\Selected`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Selected_Run001\Repe
+at_2\dialogue-parser\Selected\Job_result`
+
+2026-08-25T08:59:47.990303+00:00 PASS operation=run batch=single_Selected_Run001 repeat=2 task=dialogue-parser condition=selected

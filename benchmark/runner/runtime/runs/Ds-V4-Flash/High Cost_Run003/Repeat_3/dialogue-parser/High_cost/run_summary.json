@@ -1,0 +1,71 @@
+{
+  "schema_version": 6,
+  "task_id": "dialogue-parser",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 3,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_graph_logic: AssertionError: Unreachable nodes found: ['End']...; test_outputs.py::test_visualization_validity: AssertionError: Choice nodes should be visualized as diamonds; test_outputs.py::test_content_integrity: AssertionError: Sampled script line not found in graph:",
+  "peak_memory": {
+    "peak_memory_mib": 83.46,
+    "peak_memory_raw": "83.46MiB",
+    "error": null
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.589,
+    "agent_setup_sec": 0.683,
+    "agent_execution_sec": 75.765,
+    "verifier_sec": 5.702,
+    "total_sec": 89.656
+  },
+  "llm_cost_usd": 0.016041088000000002,
+  "agent_input_tokens": 185996,
+  "agent_output_tokens": 5260,
+  "image_cache": {
+    "image": "benchmark-cache/dialogue-parser-gold:c0353fb4817c6884",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-reference-parser"
+    ],
+    "available_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-reference-parser"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "dialogue-parser__HmQPRtH",
+        "passed": true,
+        "provided_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-reference-parser"
+        ],
+        "available_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-reference-parser"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

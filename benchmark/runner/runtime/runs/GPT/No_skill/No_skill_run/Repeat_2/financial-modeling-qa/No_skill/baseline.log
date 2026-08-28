@@ -1,0 +1,28 @@
+2026-08-06T01:45:57.842685+00:00 START operation=rerun batch=No_skill_Run001 repeat=2 task=financial-modeling-qa condition=no_skill image=benchmark-cache/financial-modeling-qa-gold:dd54b0fb8128ccd6 provided_skills=[]
+  1/1 Mean: 0.000 ---------------------------------------- 0:04:54 0:00:00
+no_skill • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 54s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\No_skill_Run001\Repeat_2\fi
+nancial-modeling-qa\No_skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\No_skill_Run001\Repeat_2\fi
+nancial-modeling-qa\No_skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\No_skill_Run001\Repeat_2\fi
+nancial-modeling-qa\No_skill\Job_result`
+
+2026-08-06T01:50:53.865114+00:00 FAIL operation=rerun batch=No_skill_Run001 repeat=2 task=financial-modeling-qa condition=no_skill

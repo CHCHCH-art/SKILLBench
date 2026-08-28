@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "powerlifting-coef-calc",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 251.0,
+    "peak_memory_raw": "251MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.881,
+    "agent_setup_sec": 1.291,
+    "agent_execution_sec": 120.908,
+    "verifier_sec": 27.624,
+    "total_sec": 157.566
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 145060,
+  "agent_output_tokens": 3988,
+  "image_cache": {
+    "image": "benchmark-cache/powerlifting-coef-calc-gold:0fef2731a5e5d6d2",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dots-coefficient-excel-formula",
+      "powerlifting-workbook-column-formula-population"
+    ],
+    "available_skills": [
+      "dots-coefficient-excel-formula",
+      "powerlifting-workbook-column-formula-population"
+    ],
+    "loaded_skills": [
+      "dots-coefficient-excel-formula",
+      "powerlifting-workbook-column-formula-population"
+    ],
+    "trials": [
+      {
+        "trial_id": "powerlifting-coef-calc__Knv7y5y",
+        "passed": true,
+        "provided_skills": [
+          "dots-coefficient-excel-formula",
+          "powerlifting-workbook-column-formula-population"
+        ],
+        "available_skills": [
+          "dots-coefficient-excel-formula",
+          "powerlifting-workbook-column-formula-population"
+        ],
+        "loaded_skills": [
+          "dots-coefficient-excel-formula",
+          "powerlifting-workbook-column-formula-population"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "powerlifting-workbook-column-formula-population": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_Ibg3jhdplBOQnSEiLiw2cP4f",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/powerlifting-workbook-column-formula-population/SKILL.md"
+            }
+          ],
+          "dots-coefficient-excel-formula": [
+            {
+              "step_id": 4,
+              "tool_call_id": "call_Ibg3jhdplBOQnSEiLiw2cP4f",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/dots-coefficient-excel-formula/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

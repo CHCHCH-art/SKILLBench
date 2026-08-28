@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "econ-detrending-correlation",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestEconomicsTask::test_correlation_value_correct: AssertionError: 0.68986 != 0.68885 within 0.001 delta (0.0010100000000000664 difference) : Correlation mismatch. Expected 0.68885 ± 0.001, got 0.68986",
+  "peak_memory": {
+    "peak_memory_mib": 109.6,
+    "peak_memory_raw": "109.6MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.497,
+    "agent_setup_sec": 0.378,
+    "agent_execution_sec": 85.731,
+    "verifier_sec": 10.224,
+    "total_sec": 102.194
+  },
+  "llm_cost_usd": 0.005697697600000001,
+  "agent_input_tokens": 286894,
+  "agent_output_tokens": 6356,
+  "image_cache": {
+    "image": "benchmark-cache/econ-detrending-correlation-gold:693ab5b971b40262",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "econ-detrending-correlation__VsUjVeB",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

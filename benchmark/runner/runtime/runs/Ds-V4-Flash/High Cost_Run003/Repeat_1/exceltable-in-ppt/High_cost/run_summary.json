@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "exceltable-in-ppt",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_inverse_rate_updated: AssertionError: Inverse rate CNY -> USD was not updated correctly. Expected: 0.142, Got: nan; test_outputs.py::test_other_cells_unchanged: AssertionError: Cell (CNY, EUR) was unexpectedly modified. Original: 0.127, New: nan",
+  "peak_memory": {
+    "peak_memory_mib": 255.7,
+    "peak_memory_raw": "255.7MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.523,
+    "agent_setup_sec": 1.061,
+    "agent_execution_sec": 64.311,
+    "verifier_sec": 58.197,
+    "total_sec": 130.346
+  },
+  "llm_cost_usd": 0.012996712,
+  "agent_input_tokens": 167930,
+  "agent_output_tokens": 3275,
+  "image_cache": {
+    "image": "benchmark-cache/exceltable-in-ppt-gold:76ac1a2bd4e98536",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement"
+    ],
+    "available_skills": [
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement"
+    ],
+    "loaded_skills": [
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement"
+    ],
+    "trials": [
+      {
+        "trial_id": "exceltable-in-ppt__npXiu6M",
+        "passed": true,
+        "provided_skills": [
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement"
+        ],
+        "available_skills": [
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement"
+        ],
+        "loaded_skills": [
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "pptx-embedded-workbook-rate-update": [
+            {
+              "step_id": 9,
+              "tool_call_id": "call_90d32bfb591147daa78edba4",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/pptx-embedded-workbook-rate-update/SKILL.md"
+            }
+          ],
+          "pptx-zip-preserving-embedding-replacement": [
+            {
+              "step_id": 9,
+              "tool_call_id": "call_ee741137ae924015810957cb",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/pptx-zip-preserving-embedding-replacement/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,64 @@
+Task: distribution-search
+Source type: baseline
+Task run: 2
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\distribution-search
+
+========== Repeated Run 2/4 ==========
+
+========== Run solve.sh ==========
+Creating distribution search solution...
+Running distribution search...
+Vocab size: 150000
+KL(P||U): 10.000000 (target 10.0)
+KL(U||P): 10.000000 (target 10.0)
+Sum(P): 1.000000000000 | min(P): 1.868e-10 | max(P): 0.445399
+Saved distribution to: /app/dist.npy
+Solution complete!
+
+========== Run test.sh ==========
+Hit:1 http://deb.debian.org/debian bookworm InRelease
+Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
+Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.88.1-10+deb12u15).
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+downloading uv 0.9.5 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+============================= test session starts ==============================
+platform linux -- Python 3.13.14, pytest-8.4.1, pluggy-1.6.0 -- /root/.cache/uv/archive-v0/7PXY_LslfokjdazOSZUDM/bin/python
+cachedir: .pytest_cache
+rootdir: /
+plugins: json-ctrf-0.3.5
+collecting ... collected 4 items
+
+../tests/test_outputs.py::test_distribution_file_exists PASSED           [ 25%]
+../tests/test_outputs.py::test_distribution_shape PASSED                 [ 50%]
+../tests/test_outputs.py::test_distribution_validity PASSED              [ 75%]
+../tests/test_outputs.py::test_kl_divergences PASSED                     [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_distribution_file_exists
+PASSED ../tests/test_outputs.py::test_distribution_shape
+PASSED ../tests/test_outputs.py::test_distribution_validity
+PASSED ../tests/test_outputs.py::test_kl_divergences
+============================== 4 passed in 0.45s ===============================
+
+========== Result ==========
+Task: distribution-search
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 0.4s (exit 0)
+Test: 22.5s (exit 0)
+Solve Memory Peak: 65.9 MiB
+Test Memory Peak: 93.4 MiB

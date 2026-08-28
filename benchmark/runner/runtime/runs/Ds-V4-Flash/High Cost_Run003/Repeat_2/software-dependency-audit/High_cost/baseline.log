@@ -1,0 +1,29 @@
+2026-08-22T09:59:19.898993+00:00 START operation=run batch=single_High Cost_Run003 repeat=2 task=software-dependency-audit condition=high_cost image=benchmark-cache/software-dependency-audit-gold:65439dede9bf4280 provided_skills=["deterministic-offline-package-tree-reconstruction", "npm-lock-dual-sbom-dependency-graph", "trivy-dual-scan-csv-reconciliation"]
+[92m18:05:19 - LiteLLM:WARNING[0m: get_model_cost_map.py:264 - LiteLLM: Failed to fetch remote model cost map from https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json: _ssl.c:993: The handshake operation timed out. Falling back to local backup.
+  1/1 Mean: 0.000 ---------------------------------------- 0:06:43 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 6m 43s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\software-dependency-audit\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\software-dependency-audit\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\software-dependency-audit\High_cost\Job_result`
+
+2026-08-22T10:06:04.173016+00:00 FAIL operation=run batch=single_High Cost_Run003 repeat=2 task=software-dependency-audit condition=high_cost

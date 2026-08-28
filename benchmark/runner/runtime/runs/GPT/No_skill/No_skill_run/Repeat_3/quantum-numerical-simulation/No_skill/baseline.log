@@ -1,0 +1,28 @@
+2026-08-10T16:48:25.685829+00:00 START operation=run batch=single_No_skill_Run006 repeat=3 task=quantum-numerical-simulation condition=no_skill image=benchmark-cache/quantum-numerical-simulation-gold:86fad49914ce5ee2 provided_skills=[]
+  1/1 Mean: 0.000 ---------------------------------------- 0:14:13 0:00:00
+no_skill • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 14m 13s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run006\Repe
+at_3\quantum-numerical-simulation\No_skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run006\Repe
+at_3\quantum-numerical-simulation\No_skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_No_skill_Run006\Repe
+at_3\quantum-numerical-simulation\No_skill\Job_result`
+
+2026-08-10T17:02:40.441081+00:00 FAIL operation=run batch=single_No_skill_Run006 repeat=3 task=quantum-numerical-simulation condition=no_skill

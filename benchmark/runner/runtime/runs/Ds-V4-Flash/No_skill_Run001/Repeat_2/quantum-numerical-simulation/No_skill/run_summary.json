@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "quantum-numerical-simulation",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_grid_dimensions: ValueError: could not convert string '' to float64 at row 0, column 1.; test_outputs.py::test_values_are_real_and_finite: ValueError: could not convert string '' to float64 at row 0, column 1.; test_outputs.py::test_csv_sums_to_one: ValueError: could not convert string '' to float64 at row 0, column 1.; test_outputs.py::test_cases_are_distinct: ValueError: could not convert string '' to float64 at row 0, column 1.; test_outputs.py::test_wigner_diagonal_sum_matches_reference: ValueError: could not convert string '' to float64 at row 0, column 1.; test_outputs.py::test_wigner_values_match_reference: ValueError: could not convert string '' to float64 at row 0, column 1.",
+  "peak_memory": {
+    "peak_memory_mib": 280.1,
+    "peak_memory_raw": "280.1MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.536,
+    "agent_setup_sec": 0.453,
+    "agent_execution_sec": 80.423,
+    "verifier_sec": 15.351,
+    "total_sec": 103.302
+  },
+  "llm_cost_usd": 0.0030116184000000008,
+  "agent_input_tokens": 126079,
+  "agent_output_tokens": 2659,
+  "image_cache": {
+    "image": "benchmark-cache/quantum-numerical-simulation-gold:8597d1a23d4799e3",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "quantum-numerical-simulation__CnpRcgJ",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

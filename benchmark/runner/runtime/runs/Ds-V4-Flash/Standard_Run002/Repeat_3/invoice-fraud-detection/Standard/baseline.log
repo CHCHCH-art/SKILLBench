@@ -1,0 +1,28 @@
+2026-08-20T18:34:32.245174+00:00 START operation=run batch=single_Standard_Run002 repeat=3 task=invoice-fraud-detection condition=standard image=benchmark-cache/invoice-fraud-detection-gold:a8a463d9f523584f provided_skills=["invoice-pdf-reference-field-extraction", "ordered-invoice-masterdata-fraud-rules"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:01:23 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 1m 23s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_3\invoice-fraud-detection\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_3\invoice-fraud-detection\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run002\Repe
+at_3\invoice-fraud-detection\Standard\Job_result`
+
+2026-08-20T18:35:56.995763+00:00 PASS operation=run batch=single_Standard_Run002 repeat=3 task=invoice-fraud-detection condition=standard

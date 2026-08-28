@@ -1,0 +1,154 @@
+{
+  "schema_version": 6,
+  "task_id": "mario-coin-counting",
+  "condition": "selected",
+  "batch": "single_Selected_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 180.5,
+    "peak_memory_raw": "180.5MiB",
+    "error": "EOF",
+    "container_name_hint": "mario-coin-counting"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.927,
+    "agent_setup_sec": 0.985,
+    "agent_execution_sec": 77.365,
+    "verifier_sec": 137.051,
+    "total_sec": 224.394
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 246397,
+  "agent_output_tokens": 2960,
+  "image_cache": {
+    "image": "benchmark-cache/mario-coin-counting-gold:989a4c6bcaeff277",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "benchflow-ai--azure-bgp",
+      "edge-component-hog-spatial-counting",
+      "edge-hog-template-calibration",
+      "iframe-grayscale-keyframe-extraction",
+      "jondotsoy--runbook-generator",
+      "openclaw--sherpa-onnx-tts",
+      "orientpine--analyst-common-stock",
+      "proffesor-for-testing--qe-test-idea-rewriting",
+      "template-match-spatial-counting",
+      "video-iframe-grayscale-keyframes"
+    ],
+    "available_skills": [
+      "benchflow-ai--azure-bgp",
+      "edge-component-hog-spatial-counting",
+      "edge-hog-template-calibration",
+      "iframe-grayscale-keyframe-extraction",
+      "jondotsoy--runbook-generator",
+      "openclaw--sherpa-onnx-tts",
+      "orientpine--analyst-common-stock",
+      "proffesor-for-testing--qe-test-idea-rewriting",
+      "template-match-spatial-counting",
+      "video-iframe-grayscale-keyframes"
+    ],
+    "loaded_skills": [
+      "edge-component-hog-spatial-counting",
+      "edge-hog-template-calibration",
+      "iframe-grayscale-keyframe-extraction",
+      "template-match-spatial-counting",
+      "video-iframe-grayscale-keyframes"
+    ],
+    "trials": [
+      {
+        "trial_id": "mario-coin-counting__EcrnSDV",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "benchflow-ai--azure-bgp",
+          "edge-component-hog-spatial-counting",
+          "edge-hog-template-calibration",
+          "iframe-grayscale-keyframe-extraction",
+          "jondotsoy--runbook-generator",
+          "openclaw--sherpa-onnx-tts",
+          "orientpine--analyst-common-stock",
+          "proffesor-for-testing--qe-test-idea-rewriting",
+          "template-match-spatial-counting",
+          "video-iframe-grayscale-keyframes"
+        ],
+        "available_skills": [
+          "benchflow-ai--azure-bgp",
+          "edge-component-hog-spatial-counting",
+          "edge-hog-template-calibration",
+          "iframe-grayscale-keyframe-extraction",
+          "jondotsoy--runbook-generator",
+          "openclaw--sherpa-onnx-tts",
+          "orientpine--analyst-common-stock",
+          "proffesor-for-testing--qe-test-idea-rewriting",
+          "template-match-spatial-counting",
+          "video-iframe-grayscale-keyframes"
+        ],
+        "loaded_skills": [
+          "edge-component-hog-spatial-counting",
+          "edge-hog-template-calibration",
+          "iframe-grayscale-keyframe-extraction",
+          "template-match-spatial-counting",
+          "video-iframe-grayscale-keyframes"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "video-iframe-grayscale-keyframes": [
+            {
+              "step_id": 11,
+              "tool_call_id": "call_a5edfd9cd2c548959c3bdbdb",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/video-iframe-grayscale-keyframes/SKILL.md"
+            }
+          ],
+          "iframe-grayscale-keyframe-extraction": [
+            {
+              "step_id": 11,
+              "tool_call_id": "call_a5edfd9cd2c548959c3bdbdb",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/iframe-grayscale-keyframe-extraction/SKILL.md"
+            }
+          ],
+          "template-match-spatial-counting": [
+            {
+              "step_id": 17,
+              "tool_call_id": "call_26230ec84695437487ddc5c4",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/template-match-spatial-counting/SKILL.md"
+            }
+          ],
+          "edge-component-hog-spatial-counting": [
+            {
+              "step_id": 18,
+              "tool_call_id": "call_260488ccf06144dcb684039b",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/edge-component-hog-spatial-counting/SKILL.md"
+            }
+          ],
+          "edge-hog-template-calibration": [
+            {
+              "step_id": 19,
+              "tool_call_id": "call_931c567ee7c54a9294cffd71",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/edge-hog-template-calibration/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

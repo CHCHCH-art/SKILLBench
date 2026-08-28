@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "grid-dispatch-operator",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1605.632,
+    "peak_memory_raw": "1.568GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.904,
+    "agent_setup_sec": 2.807,
+    "agent_execution_sec": 529.047,
+    "verifier_sec": 75.485,
+    "total_sec": 616.484
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 554701,
+  "agent_output_tokens": 6924,
+  "image_cache": {
+    "image": "benchmark-cache/grid-dispatch-operator-gold:4acd0bce1add524f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dispatch-loading-operating-margin-report"
+    ],
+    "available_skills": [
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dispatch-loading-operating-margin-report"
+    ],
+    "loaded_skills": [
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dispatch-loading-operating-margin-report"
+    ],
+    "trials": [
+      {
+        "trial_id": "grid-dispatch-operator__gbmusxP",
+        "passed": true,
+        "provided_skills": [
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dispatch-loading-operating-margin-report"
+        ],
+        "available_skills": [
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dispatch-loading-operating-margin-report"
+        ],
+        "loaded_skills": [
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dispatch-loading-operating-margin-report"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "cvxpy-dcopf-reserve-cooptimization": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_nIdVpsMu2NK9d95ZjzfiDPVZ",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/cvxpy-dcopf-reserve-cooptimization/SKILL.md"
+            }
+          ],
+          "dispatch-loading-operating-margin-report": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_nIdVpsMu2NK9d95ZjzfiDPVZ",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/dispatch-loading-operating-margin-report/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

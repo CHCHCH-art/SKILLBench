@@ -1,0 +1,4 @@
+version: 1
+display_name: "Validation"
+short_description: "Zod schema validation patterns for TypeScript applications. Use when validating API responses, form data, environment variables, or any r..."
+default_prompt: "Use this skill when: Zod schema validation patterns for TypeScript applications. Use when validating API responses, form data, environment variables, or any runtime data. Type-safe validation with automatic TypeScript inference."

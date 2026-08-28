@@ -1,0 +1,67 @@
+{
+  "schema_version": 6,
+  "task_id": "hf-model-inference",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_flask_api_running: ConnectionRefusedError: [Errno 111] Connection refused; test_outputs.py::test_sentiment_endpoint: ConnectionRefusedError: [Errno 111] Connection refused; test_outputs.py::test_api_error_handling: ConnectionRefusedError: [Errno 111] Connection refused",
+  "peak_memory": {
+    "peak_memory_mib": 973.1,
+    "peak_memory_raw": "973.1MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.463,
+    "agent_setup_sec": 0.789,
+    "agent_execution_sec": 572.211,
+    "verifier_sec": 11.712,
+    "total_sec": 591.369
+  },
+  "llm_cost_usd": 0.038176672,
+  "agent_input_tokens": 948131,
+  "agent_output_tokens": 8899,
+  "image_cache": {
+    "image": "benchmark-cache/hf-model-inference-gold:5e2a59f453e212fb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization"
+    ],
+    "available_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization"
+    ],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "hf-model-inference__uGg42VR",
+        "passed": true,
+        "provided_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization"
+        ],
+        "available_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization"
+        ],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

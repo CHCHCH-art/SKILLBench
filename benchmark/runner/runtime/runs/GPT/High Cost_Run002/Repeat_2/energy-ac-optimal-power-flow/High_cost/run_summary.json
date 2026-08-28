@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "task_id": "energy-ac-optimal-power-flow",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1998.848,
+    "peak_memory_raw": "1.952GiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.825,
+    "agent_setup_sec": 0.894,
+    "agent_execution_sec": 395.924,
+    "verifier_sec": 191.049,
+    "total_sec": 596.198
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 549002,
+  "agent_output_tokens": 11353,
+  "image_cache": {
+    "image": "benchmark-cache/energy-ac-optimal-power-flow-gold:131fccb5858c984c",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "rectangular-acopf-network-model"
+    ],
+    "available_skills": [
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "rectangular-acopf-network-model"
+    ],
+    "loaded_skills": [
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "rectangular-acopf-network-model"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-ac-optimal-power-flow__Vo7qYzy",
+        "passed": true,
+        "provided_skills": [
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "rectangular-acopf-network-model"
+        ],
+        "available_skills": [
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "rectangular-acopf-network-model"
+        ],
+        "loaded_skills": [
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "rectangular-acopf-network-model"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "acopf-solution-reporting": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_1W1qVnnvZ8ICpWAUnBY4LHqR",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/acopf-solution-reporting/SKILL.md"
+            }
+          ],
+          "acopf-ipopt-reference-initialization": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_1W1qVnnvZ8ICpWAUnBY4LHqR",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/acopf-ipopt-reference-initialization/SKILL.md"
+            }
+          ],
+          "rectangular-acopf-network-model": [
+            {
+              "step_id": 6,
+              "tool_call_id": "call_1W1qVnnvZ8ICpWAUnBY4LHqR",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/rectangular-acopf-network-model/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,55 @@
+Task: llm-inference-batching-scheduler
+Source type: used
+Task run: 6
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\llm-inference-batching-scheduler
+
+========== Repeated Run 2/4 ==========
+
+========== Run solve.sh ==========
+planner diagnostics: {"bucket1": {"cost": 291882327528.0, "p95_latency_ms": 2038976.6452, "pad_ratio": 0.0523736659215346, "sequential_timecost": 228281275.77599993}, "bucket1_batches": 286, "bucket2": {"cost": 45017597307.0, "p95_latency_ms": 209211.59599999996, "pad_ratio": 0.1409877427528291, "sequential_timecost": 27871943.72199999}, "bucket2_batches": 156, "partition_caps": {"1": 294703210624.0, "2": 46639370752.0}, "shapes": [64, 128, 320, 512, 640, 1280, 1536, 2048]}
+
+========== Run test.sh ==========
+Hit:1 http://deb.debian.org/debian bookworm InRelease
+Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
+Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.88.1-10+deb12u15).
+0 upgraded, 0 newly installed, 0 to remove and 31 not upgraded.
+downloading uv 0.9.5 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+============================= test session starts ==============================
+platform linux -- Python 3.13.7, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 6 items
+
+../tests/test_outputs.py ......                                          [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_output_files_exist
+PASSED ../tests/test_outputs.py::test_input_data_integrity
+PASSED ../tests/test_outputs.py::test_generate_and_schema
+PASSED ../tests/test_outputs.py::test_solution_shape_feasibility_and_batch_consistency
+PASSED ../tests/test_outputs.py::test_solution_coverage_no_duplicates
+PASSED ../tests/test_outputs.py::test_performance_thresholds
+============================== 6 passed in 0.09s ===============================
+
+========== Result ==========
+Task: llm-inference-batching-scheduler
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 2.4s (exit 0)
+Test: 11.3s (exit 0)
+Solve Memory Peak: 60.2 MiB
+Test Memory Peak: 49.4 MiB

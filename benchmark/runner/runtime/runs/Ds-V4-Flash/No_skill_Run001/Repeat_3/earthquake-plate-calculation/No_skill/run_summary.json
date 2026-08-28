@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "earthquake-plate-calculation",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestEarthquakeTask::test_distance_within_tolerance: AssertionError: 3551.98 != 3878.27 within 0.01 delta (326.28999999999996 difference) : Expected 3878.27 ± 0.01 km, got 3551.98 km",
+  "peak_memory": {
+    "peak_memory_mib": 88.99,
+    "peak_memory_raw": "88.99MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.428,
+    "agent_setup_sec": 0.351,
+    "agent_execution_sec": 134.354,
+    "verifier_sec": 7.572,
+    "total_sec": 147.61
+  },
+  "llm_cost_usd": 0.0098669592,
+  "agent_input_tokens": 471657,
+  "agent_output_tokens": 11906,
+  "image_cache": {
+    "image": "benchmark-cache/earthquake-plate-calculation-gold:9daffd7dc0823601",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "earthquake-plate-calculation__eQpca2n",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

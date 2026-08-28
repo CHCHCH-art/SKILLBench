@@ -1,0 +1,304 @@
+
+========== Reuse Image ==========
+Using cached image: benchmark-cache/mteb-leaderboard-gold:4dbd0045d9721c84
+Task: mteb-leaderboard
+Source type: used
+Task run: 5
+Source run: 1
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\mteb-leaderboard
+
+========== Repeated Run 1/4 ==========
+
+========== Run solve.sh ==========
+Cloning into 'mteb-results'...
+Note: switching to 'c0fd3271442f8c0c839084a109fede85c8514dab'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Updating files:   7% (7692/102504)
+Updating files:   8% (8201/102504)
+Updating files:   9% (9226/102504)
+Updating files:  10% (10251/102504)
+Updating files:  11% (11276/102504)
+Updating files:  12% (12301/102504)
+Updating files:  13% (13326/102504)
+Updating files:  13% (14307/102504)
+Updating files:  14% (14351/102504)
+Updating files:  15% (15376/102504)
+Updating files:  16% (16401/102504)
+Updating files:  17% (17426/102504)
+Updating files:  18% (18451/102504)
+Updating files:  19% (19476/102504)
+Updating files:  20% (20501/102504)
+Updating files:  21% (21526/102504)
+Updating files:  22% (22551/102504)
+Updating files:  22% (23170/102504)
+Updating files:  23% (23576/102504)
+Updating files:  24% (24601/102504)
+Updating files:  25% (25626/102504)
+Updating files:  26% (26652/102504)
+Updating files:  27% (27677/102504)
+Updating files:  28% (28702/102504)
+Updating files:  28% (28734/102504)
+Updating files:  28% (28875/102504)
+Updating files:  29% (29727/102504)
+Updating files:  30% (30752/102504)
+Updating files:  31% (31777/102504)
+Updating files:  32% (32802/102504)
+Updating files:  33% (33827/102504)
+Updating files:  33% (34592/102504)
+Updating files:  34% (34852/102504)
+Updating files:  35% (35877/102504)
+Updating files:  36% (36902/102504)
+Updating files:  37% (37927/102504)
+Updating files:  38% (38952/102504)
+Updating files:  39% (39977/102504)
+Updating files:  40% (41002/102504)
+Updating files:  40% (41767/102504)
+Updating files:  41% (42027/102504)
+Updating files:  42% (43052/102504)
+Updating files:  43% (44077/102504)
+Updating files:  44% (45102/102504)
+Updating files:  45% (46127/102504)
+Updating files:  46% (47152/102504)
+Updating files:  47% (48177/102504)
+Updating files:  48% (49202/102504)
+Updating files:  49% (50227/102504)
+Updating files:  49% (50264/102504)
+Updating files:  50% (51252/102504)
+Updating files:  51% (52278/102504)
+Updating files:  52% (53303/102504)
+Updating files:  53% (54328/102504)
+Updating files:  54% (55353/102504)
+Updating files:  55% (56378/102504)
+Updating files:  55% (56541/102504)
+Updating files:  56% (57403/102504)
+Updating files:  57% (58428/102504)
+Updating files:  58% (59453/102504)
+Updating files:  59% (60478/102504)
+Updating files:  60% (61503/102504)
+Updating files:  61% (62528/102504)
+Updating files:  61% (62846/102504)
+Updating files:  62% (63553/102504)
+Updating files:  63% (64578/102504)
+Updating files:  64% (65603/102504)
+Updating files:  65% (66628/102504)
+Updating files:  66% (67653/102504)
+Updating files:  67% (68678/102504)
+Updating files:  68% (69703/102504)
+Updating files:  68% (70215/102504)
+Updating files:  69% (70728/102504)
+Updating files:  70% (71753/102504)
+Updating files:  71% (72778/102504)
+Updating files:  72% (73803/102504)
+Updating files:  73% (74828/102504)
+Updating files:  74% (75853/102504)
+Updating files:  75% (76878/102504)
+Updating files:  75% (77564/102504)
+Updating files:  76% (77904/102504)
+Updating files:  77% (78929/102504)
+Updating files:  78% (79954/102504)
+Updating files:  79% (80979/102504)
+Updating files:  80% (82004/102504)
+Updating files:  81% (83029/102504)
+Updating files:  81% (84024/102504)
+Updating files:  82% (84054/102504)
+Updating files:  83% (85079/102504)
+Updating files:  84% (86104/102504)
+Updating files:  85% (87129/102504)
+Updating files:  86% (88154/102504)
+Updating files:  87% (89179/102504)
+Updating files:  88% (90204/102504)
+Updating files:  89% (91229/102504)
+Updating files:  89% (91545/102504)
+Updating files:  90% (92254/102504)
+Updating files:  91% (93279/102504)
+Updating files:  92% (94304/102504)
+Updating files:  93% (95329/102504)
+Updating files:  94% (96354/102504)
+Updating files:  95% (97379/102504)
+Updating files:  96% (98404/102504)
+Updating files:  97% (99429/102504)
+Updating files:  98% (100454/102504)
+Updating files:  99% (101479/102504)
+Updating files: 100% (102504/102504)
+Updating files: 100% (102504/102504), done.
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing splits {'validation'}
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x7600f59b9750> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x7600f59b9750> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x7600f59b9750> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing splits {'validation'}
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x7600f59b9750> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x7600f59b9750> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x7600f59b9750> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x7600f59b9750> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+MassiveScenarioClassification: Missing subsets {'da', 'sv', ...} for split test
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing subsets {'da', 'sv', ...} for split test
+MassiveIntentClassification: Missing splits {'validation'}
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x7600f59b9750> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing splits {'validation'}
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x7600f59b9750> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x7600f59b9750> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing splits {'validation'}
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x7600f59b9750> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+MassiveScenarioClassification: Missing splits {'validation'}
+MassiveIntentClassification: Missing splits {'validation'}
+MassiveScenarioClassification: Missing subsets {'da', 'sv', ...} for split validation
+MassiveScenarioClassification: Missing subsets {'da', 'sv', ...} for split test
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:559: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(keep_best)
+/usr/local/lib/python3.10/site-packages/mteb/load_results/benchmark_results.py:55: FutureWarning: The provided callable <function mean at 0x7600f59b9750> is currently using DataFrameGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string "mean" instead.
+  return df.pivot_table(
+Best: GritLM/GritLM-7B 0.640838394367255
+
+========== Run test.sh ==========
+Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [333 kB]
+Fetched 9372 kB in 1min 30s (104 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libcurl3-gnutls libcurl4
+The following NEW packages will be installed:
+  curl libcurl4
+The following packages will be upgraded:
+  libcurl3-gnutls
+1 upgraded, 2 newly installed, 0 to remove and 42 not upgraded.
+Need to get 1094 kB of archives.
+After this operation, 1361 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bookworm/main amd64 libcurl4 amd64 7.88.1-10+deb12u15 [392 kB]
+Get:2 http://deb.debian.org/debian bookworm/main amd64 curl amd64 7.88.1-10+deb12u15 [316 kB]
+Get:3 http://deb.debian.org/debian bookworm/main amd64 libcurl3-gnutls amd64 7.88.1-10+deb12u15 [386 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 1094 kB in 8s (138 kB/s)
+Selecting previously unselected package libcurl4:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 17538 files and directories currently installed.)
+Preparing to unpack .../libcurl4_7.88.1-10+deb12u15_amd64.deb ...
+Unpacking libcurl4:amd64 (7.88.1-10+deb12u15) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../curl_7.88.1-10+deb12u15_amd64.deb ...
+Unpacking curl (7.88.1-10+deb12u15) ...
+Preparing to unpack .../libcurl3-gnutls_7.88.1-10+deb12u15_amd64.deb ...
+Unpacking libcurl3-gnutls:amd64 (7.88.1-10+deb12u15) over (7.88.1-10+deb12u14) ...
+Setting up libcurl3-gnutls:amd64 (7.88.1-10+deb12u15) ...
+Setting up libcurl4:amd64 (7.88.1-10+deb12u15) ...
+Setting up curl (7.88.1-10+deb12u15) ...
+Processing triggers for libc-bin (2.36-9+deb12u13) ...
+downloading uv 0.9.5 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+Downloading cpython-3.13.9-linux-x86_64-gnu (download) (32.0MiB)
+ Downloading cpython-3.13.9-linux-x86_64-gnu (download)
+Downloading pygments (1.2MiB)
+ Downloading pygments
+Installed 6 packages in 8ms
+============================= test session starts ==============================
+platform linux -- Python 3.13.9, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 2 items
+
+../tests/test_outputs.py ..                                              [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_result_exists
+PASSED ../tests/test_outputs.py::test_data_matches
+============================== 2 passed in 0.09s ===============================
+
+========== Result ==========
+Task: mteb-leaderboard
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 284.5s (exit 0)
+Test: 130.5s (exit 0)
+Solve Memory Peak: 2.2 GiB
+Test Memory Peak: 1.9 GiB

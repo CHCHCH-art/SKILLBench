@@ -1,0 +1,55 @@
+{
+  "schema_version": 6,
+  "task_id": "grid-dispatch-operator",
+  "condition": "no_skill",
+  "batch": "single_No_skill_Run001",
+  "repeat": 1,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOptimality::test_cost_is_optimal: AssertionError: Optimality gap 6.2318% exceeds 0.01% (actual=3150451.35, optimal=2965637.909677723)",
+  "peak_memory": {
+    "peak_memory_mib": 827.9,
+    "peak_memory_raw": "827.9MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.679,
+    "agent_setup_sec": 0.926,
+    "agent_execution_sec": 402.494,
+    "verifier_sec": 83.939,
+    "total_sec": 494.482
+  },
+  "llm_cost_usd": 0.009923631200000001,
+  "agent_input_tokens": 519913,
+  "agent_output_tokens": 11814,
+  "image_cache": {
+    "image": "benchmark-cache/grid-dispatch-operator-gold:4acd0bce1add524f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [],
+    "available_skills": [],
+    "loaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "grid-dispatch-operator__mq3eTkb",
+        "passed": true,
+        "provided_skills": [],
+        "available_skills": [],
+        "loaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

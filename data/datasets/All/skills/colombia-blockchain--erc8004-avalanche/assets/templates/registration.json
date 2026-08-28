@@ -1,0 +1,64 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "My Agent",
+  "description": "A clear, honest description of what your agent does. Include: capabilities, data sources, number of endpoints (free vs paid), protocols supported (A2A, MCP, x402), and who created it.",
+  "image": "https://your-agent.up.railway.app/public/agent.png",
+  "services": [
+    {
+      "name": "web",
+      "endpoint": "https://your-agent.up.railway.app/"
+    },
+    {
+      "name": "A2A",
+      "endpoint": "https://your-agent.up.railway.app/.well-known/agent-card.json",
+      "version": "0.3.0",
+      "a2aSkills": [
+        "natural_language_processing/information_retrieval_synthesis/search",
+        "natural_language_processing/conversation/chatbot"
+      ]
+    },
+    {
+      "name": "MCP",
+      "endpoint": "https://your-agent.up.railway.app/mcp",
+      "version": "2025-06-18",
+      "mcpTools": [
+        "your_tool_1",
+        "your_tool_2"
+      ],
+      "mcpPrompts": [
+        "your-prompt-1"
+      ]
+    },
+    {
+      "name": "OASF",
+      "version": "v0.8.0",
+      "endpoint": "https://your-agent.up.railway.app/oasf",
+      "skills": [
+        "natural_language_processing/information_retrieval_synthesis/search",
+        "tool_interaction/api_schema_understanding"
+      ],
+      "domains": [
+        "technology/blockchain/your-domain"
+      ]
+    }
+  ],
+  "x402Support": false,
+  "active": true,
+  "registrations": [
+    {
+      "agentId": 0,
+      "agentRegistry": "eip155:43113:0x8004A818BFB912233c491871b3d84c89A494BD9e"
+    },
+    {
+      "agentId": 0,
+      "agentRegistry": "eip155:43114:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
+    }
+  ],
+  "supportedTrust": ["reputation", "crypto-economic", "tee-attestation"],
+  "capabilities": [
+    "your-capability-1",
+    "your-capability-2"
+  ],
+  "pricePerMessage": "Free",
+  "updatedAt": 0
+}

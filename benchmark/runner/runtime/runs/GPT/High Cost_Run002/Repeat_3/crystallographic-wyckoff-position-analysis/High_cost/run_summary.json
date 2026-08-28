@@ -1,0 +1,90 @@
+{
+  "schema_version": 6,
+  "task_id": "crystallographic-wyckoff-position-analysis",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 80.67,
+    "peak_memory_raw": "80.67MiB",
+    "error": "EOF"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.813,
+    "agent_setup_sec": 0.92,
+    "agent_execution_sec": 361.702,
+    "verifier_sec": 60.07,
+    "total_sec": 432.048
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 411143,
+  "agent_output_tokens": 7391,
+  "image_cache": {
+    "image": "benchmark-cache/crystallographic-wyckoff-position-analysis-gold:0f59e77451a3b6af",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "cif-explicit-site-normalization",
+      "wyckoff-spglib-stability-analysis"
+    ],
+    "available_skills": [
+      "cif-explicit-site-normalization",
+      "wyckoff-spglib-stability-analysis"
+    ],
+    "loaded_skills": [
+      "cif-explicit-site-normalization",
+      "wyckoff-spglib-stability-analysis"
+    ],
+    "trials": [
+      {
+        "trial_id": "crystallographic-wyckoff-positio__JRoA7aa",
+        "passed": true,
+        "provided_skills": [
+          "cif-explicit-site-normalization",
+          "wyckoff-spglib-stability-analysis"
+        ],
+        "available_skills": [
+          "cif-explicit-site-normalization",
+          "wyckoff-spglib-stability-analysis"
+        ],
+        "loaded_skills": [
+          "cif-explicit-site-normalization",
+          "wyckoff-spglib-stability-analysis"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "wyckoff-spglib-stability-analysis": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_LWXh3ZZuZ0htxhP8OC6G9LKa",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/wyckoff-spglib-stability-analysis/SKILL.md"
+            }
+          ],
+          "cif-explicit-site-normalization": [
+            {
+              "step_id": 5,
+              "tool_call_id": "call_LWXh3ZZuZ0htxhP8OC6G9LKa",
+              "function_name": "exec",
+              "reference": "/root/.agents/skills/cif-explicit-site-normalization/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}
