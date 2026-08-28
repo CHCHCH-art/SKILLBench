@@ -19,3 +19,5 @@ Dockerfile text eol=lf
 
 # Reproducibility packages are versioned through Git LFS.
 benchmark/Env/images/packages/**/*.tar.gz filter=lfs diff=lfs merge=lfs -text
+# Complete benchmark-run archives exceed GitHub's regular file-size limit.
+benchmark/runner/runtime/runs/runs.zip filter=lfs diff=lfs merge=lfs -text
