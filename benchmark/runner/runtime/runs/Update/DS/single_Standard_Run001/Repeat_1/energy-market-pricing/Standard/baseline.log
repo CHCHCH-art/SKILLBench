@@ -1,0 +1,28 @@
+2026-08-28T11:37:57.151941+00:00 START operation=run batch=single_Standard_Run001 repeat=1 task=energy-market-pricing condition=standard image=benchmark-cache/energy-market-pricing-gold:5e086fb9e6601b54 provided_skills=["highs-dual-market-pricing-report", "sparse-dcopf-reserve-lp-formulation", "transmission-limit-counterfactual-impact"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:04:40 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 40s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\energy-market-pricing\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\energy-market-pricing\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\energy-market-pricing\Standard\Job_result`
+
+2026-08-28T11:42:38.711562+00:00 FAIL operation=run batch=single_Standard_Run001 repeat=1 task=energy-market-pricing condition=standard

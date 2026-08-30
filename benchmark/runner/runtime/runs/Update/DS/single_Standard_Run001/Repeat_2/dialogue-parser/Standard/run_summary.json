@@ -1,0 +1,89 @@
+{
+  "schema_version": 7,
+  "task_id": "dialogue-parser",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_graph_logic: AssertionError: Unreachable nodes found: ['End']...",
+  "peak_memory": {
+    "peak_memory_mib": 66.32,
+    "peak_memory_raw": "66.320 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "dialogue-parser"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.759,
+    "agent_setup_sec": 0.739,
+    "agent_execution_sec": 76.164,
+    "verifier_sec": 6.095,
+    "total_sec": 87.719
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 268785,
+  "agent_output_tokens": 4519,
+  "image_cache": {
+    "image": "benchmark-cache/dialogue-parser-gold:c0353fb4817c6884",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dialogue-graph-validation-serialization",
+      "dialogue-section-choice-parser"
+    ],
+    "available_skills": [
+      "dialogue-graph-validation-serialization",
+      "dialogue-section-choice-parser"
+    ],
+    "loaded_skills": [
+      "dialogue-graph-validation-serialization",
+      "dialogue-section-choice-parser"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "dialogue-graph-validation-serialization",
+      "dialogue-section-choice-parser"
+    ],
+    "trials": [
+      {
+        "trial_id": "dialogue-parser__FyW9496",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "dialogue-graph-validation-serialization",
+          "dialogue-section-choice-parser"
+        ],
+        "available_skills": [
+          "dialogue-graph-validation-serialization",
+          "dialogue-section-choice-parser"
+        ],
+        "loaded_skills": [
+          "dialogue-graph-validation-serialization",
+          "dialogue-section-choice-parser"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "dialogue-graph-validation-serialization",
+          "dialogue-section-choice-parser"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

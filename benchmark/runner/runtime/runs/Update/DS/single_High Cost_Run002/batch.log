@@ -1,0 +1,210 @@
+2026-08-28T11:00:10.143565+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=crystallographic-wyckoff-position-analysis condition=high_cost
+2026-08-28T11:00:10.144092+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=dapt-intrusion-detection condition=high_cost
+2026-08-28T11:05:19.247533+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=1 task=dapt-intrusion-detection condition=high_cost status=completed
+2026-08-28T11:05:19.256344+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=dapt-intrusion-detection condition=high_cost
+2026-08-28T11:09:57.781959+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=crystallographic-wyckoff-position-analysis condition=high_cost status=completed
+2026-08-28T11:09:57.788656+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=crystallographic-wyckoff-position-analysis condition=high_cost
+2026-08-28T11:12:29.934347+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=crystallographic-wyckoff-position-analysis condition=high_cost status=completed
+2026-08-28T11:12:29.940013+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=crystallographic-wyckoff-position-analysis condition=high_cost
+2026-08-28T11:17:12.790389+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=crystallographic-wyckoff-position-analysis condition=high_cost status=completed
+2026-08-28T11:17:12.797634+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=dialogue-parser condition=high_cost
+2026-08-28T11:20:34.359346+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=dialogue-parser condition=high_cost status=completed
+2026-08-28T11:20:34.364615+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=dialogue-parser condition=high_cost
+2026-08-28T11:22:44.811520+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=dialogue-parser condition=high_cost status=completed
+2026-08-28T11:22:44.816381+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=dialogue-parser condition=high_cost
+2026-08-28T11:26:08.166100+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=dialogue-parser condition=high_cost status=completed
+2026-08-28T11:26:08.175533+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=distribution-search condition=high_cost
+2026-08-28T11:27:08.414825+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=2 task=dapt-intrusion-detection condition=high_cost status=completed
+2026-08-28T11:27:08.427418+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=dapt-intrusion-detection condition=high_cost
+2026-08-28T11:27:53.375843+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=distribution-search condition=high_cost status=completed
+2026-08-28T11:27:53.383764+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=distribution-search condition=high_cost
+2026-08-28T11:29:53.950298+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=distribution-search condition=high_cost status=completed
+2026-08-28T11:29:53.962073+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=distribution-search condition=high_cost
+2026-08-28T11:30:04.232423+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=3 task=dapt-intrusion-detection condition=high_cost status=completed
+2026-08-28T11:30:04.249487+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=dynamic-object-aware-egomotion condition=high_cost
+2026-08-28T11:31:50.680324+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=distribution-search condition=high_cost status=completed
+2026-08-28T11:31:50.697186+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=earthquake-plate-calculation condition=high_cost
+2026-08-28T11:34:02.891595+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=earthquake-plate-calculation condition=high_cost status=completed
+2026-08-28T11:34:02.905184+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=earthquake-plate-calculation condition=high_cost
+2026-08-28T11:36:37.530592+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=earthquake-plate-calculation condition=high_cost status=completed
+2026-08-28T11:36:37.544151+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=earthquake-plate-calculation condition=high_cost
+2026-08-28T11:37:22.957165+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=1 task=dynamic-object-aware-egomotion condition=high_cost status=completed
+2026-08-28T11:37:22.971203+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=dynamic-object-aware-egomotion condition=high_cost
+2026-08-28T11:39:29.038149+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=earthquake-plate-calculation condition=high_cost status=completed
+2026-08-28T11:39:29.052416+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=econ-detrending-correlation condition=high_cost
+2026-08-28T11:41:29.398662+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=2 task=dynamic-object-aware-egomotion condition=high_cost status=completed
+2026-08-28T11:41:29.413155+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=dynamic-object-aware-egomotion condition=high_cost
+2026-08-28T11:45:12.112711+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=econ-detrending-correlation condition=high_cost status=completed
+2026-08-28T11:45:12.121978+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=econ-detrending-correlation condition=high_cost
+2026-08-28T11:47:23.916823+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=3 task=dynamic-object-aware-egomotion condition=high_cost status=completed
+2026-08-28T11:47:23.928837+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=energy-ac-optimal-power-flow condition=high_cost
+2026-08-28T11:54:36.421961+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=econ-detrending-correlation condition=high_cost status=completed
+2026-08-28T11:54:36.430386+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=econ-detrending-correlation condition=high_cost
+2026-08-28T11:56:38.052398+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=econ-detrending-correlation condition=high_cost status=completed
+2026-08-28T11:56:38.057451+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=energy-market-pricing condition=high_cost
+2026-08-28T12:06:56.476497+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=energy-market-pricing condition=high_cost status=completed
+2026-08-28T12:06:56.483263+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=energy-market-pricing condition=high_cost
+2026-08-28T12:16:23.863966+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=1 task=energy-ac-optimal-power-flow condition=high_cost status=completed
+2026-08-28T12:16:23.876533+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=energy-ac-optimal-power-flow condition=high_cost
+2026-08-28T12:26:15.418730+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=2 task=energy-market-pricing condition=high_cost status=completed
+2026-08-28T12:26:15.426525+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=energy-market-pricing condition=high_cost
+2026-08-28T12:35:47.610549+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=3 task=energy-market-pricing condition=high_cost status=completed
+2026-08-28T12:35:47.618249+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=exceltable-in-ppt condition=high_cost
+2026-08-28T12:54:11.712842+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=1 task=exceltable-in-ppt condition=high_cost status=completed
+2026-08-28T12:54:11.718272+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=exceltable-in-ppt condition=high_cost
+2026-08-28T13:14:01.648598+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=2 task=exceltable-in-ppt condition=high_cost status=completed
+2026-08-28T13:14:01.653501+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=exceltable-in-ppt condition=high_cost
+2026-08-28T13:27:38.247328+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=3 task=exceltable-in-ppt condition=high_cost status=completed
+2026-08-28T13:27:38.253172+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=exoplanet-detection-period condition=high_cost
+2026-08-28T13:35:34.835788+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=energy-ac-optimal-power-flow condition=high_cost status=completed
+2026-08-28T13:35:34.845239+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=energy-ac-optimal-power-flow condition=high_cost
+2026-08-28T13:55:32.854572+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=1 task=exoplanet-detection-period condition=high_cost status=completed
+2026-08-28T13:55:32.860513+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=exoplanet-detection-period condition=high_cost
+2026-08-28T14:36:33.229874+00:00 ERROR operation=run batch=single_High Cost_Run002 repeat=2 task=exoplanet-detection-period condition=high_cost status=trial_error
+2026-08-28T14:36:33.235871+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=exoplanet-detection-period condition=high_cost
+2026-08-28T14:41:16.809318+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=3 task=energy-ac-optimal-power-flow condition=high_cost status=completed
+2026-08-28T14:41:16.814268+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=financial-modeling-qa condition=high_cost
+2026-08-28T14:46:15.740666+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=1 task=financial-modeling-qa condition=high_cost status=completed
+2026-08-28T14:46:15.746777+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=financial-modeling-qa condition=high_cost
+2026-08-28T14:50:13.005902+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=2 task=financial-modeling-qa condition=high_cost status=completed
+2026-08-28T14:50:13.017975+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=financial-modeling-qa condition=high_cost
+2026-08-28T14:54:26.672951+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=3 task=financial-modeling-qa condition=high_cost status=completed
+2026-08-28T14:54:26.678458+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=find-topk-similiar-chemicals condition=high_cost
+2026-08-28T15:02:45.935619+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=1 task=find-topk-similiar-chemicals condition=high_cost status=completed
+2026-08-28T15:02:45.945347+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=find-topk-similiar-chemicals condition=high_cost
+2026-08-28T15:10:29.217802+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=exoplanet-detection-period condition=high_cost status=completed
+2026-08-28T15:10:29.223857+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=glm-lake-mendota condition=high_cost
+2026-08-28T15:10:51.442329+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=2 task=find-topk-similiar-chemicals condition=high_cost status=completed
+2026-08-28T15:10:51.448677+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=find-topk-similiar-chemicals condition=high_cost
+2026-08-28T15:32:00.720080+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=glm-lake-mendota condition=high_cost status=completed
+2026-08-28T15:32:00.726163+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=glm-lake-mendota condition=high_cost
+2026-08-28T15:56:00.485286+00:00 ERROR operation=run batch=single_High Cost_Run002 repeat=3 task=find-topk-similiar-chemicals condition=high_cost status=trial_error
+2026-08-28T15:56:00.494048+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=gravitational-wave-detection condition=high_cost
+2026-08-28T16:32:27.531808+00:00 ERROR operation=run batch=single_High Cost_Run002 repeat=2 task=glm-lake-mendota condition=high_cost status=trial_error
+2026-08-28T16:32:27.537730+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=glm-lake-mendota condition=high_cost
+2026-08-28T16:38:13.154361+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=gravitational-wave-detection condition=high_cost status=completed
+2026-08-28T16:38:13.164114+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=gravitational-wave-detection condition=high_cost
+2026-08-28T17:23:23.739491+00:00 ERROR operation=run batch=single_High Cost_Run002 repeat=2 task=gravitational-wave-detection condition=high_cost status=trial_error
+2026-08-28T17:23:23.744827+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=gravitational-wave-detection condition=high_cost
+2026-08-28T17:32:49.630002+00:00 ERROR operation=run batch=single_High Cost_Run002 repeat=3 task=glm-lake-mendota condition=high_cost status=trial_error
+2026-08-28T17:32:49.647384+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=grid-dispatch-operator condition=high_cost
+2026-08-28T17:52:34.215034+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=grid-dispatch-operator condition=high_cost status=completed
+2026-08-28T17:52:34.224186+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=grid-dispatch-operator condition=high_cost
+2026-08-28T17:54:12.062173+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=gravitational-wave-detection condition=high_cost status=completed
+2026-08-28T17:54:12.068513+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=hf-model-inference condition=high_cost
+2026-08-28T18:15:38.423294+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=grid-dispatch-operator condition=high_cost status=completed
+2026-08-28T18:15:38.429743+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=grid-dispatch-operator condition=high_cost
+2026-08-28T18:18:22.234147+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=1 task=hf-model-inference condition=high_cost status=completed
+2026-08-28T18:18:22.239132+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=hf-model-inference condition=high_cost
+2026-08-28T18:21:58.345631+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=hf-model-inference condition=high_cost status=completed
+2026-08-28T18:21:58.350253+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=hf-model-inference condition=high_cost
+2026-08-28T18:24:44.240416+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=3 task=hf-model-inference condition=high_cost status=completed
+2026-08-28T18:24:44.246020+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=invoice-fraud-detection condition=high_cost
+2026-08-28T18:27:10.151298+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=invoice-fraud-detection condition=high_cost status=completed
+2026-08-28T18:27:10.156251+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=invoice-fraud-detection condition=high_cost
+2026-08-28T18:30:14.182935+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=2 task=invoice-fraud-detection condition=high_cost status=completed
+2026-08-28T18:30:14.189175+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=invoice-fraud-detection condition=high_cost
+2026-08-28T18:32:11.964257+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=grid-dispatch-operator condition=high_cost status=completed
+2026-08-28T18:32:11.970431+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=jpg-ocr-stat condition=high_cost
+2026-08-28T18:33:17.185950+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=3 task=invoice-fraud-detection condition=high_cost status=completed
+2026-08-28T18:33:17.191377+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=llm-inference-batching-scheduler condition=high_cost
+2026-08-28T18:37:22.403375+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=1 task=jpg-ocr-stat condition=high_cost status=completed
+2026-08-28T18:37:22.412196+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=jpg-ocr-stat condition=high_cost
+2026-08-28T18:40:43.664044+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=2 task=jpg-ocr-stat condition=high_cost status=completed
+2026-08-28T18:40:43.673477+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=jpg-ocr-stat condition=high_cost
+2026-08-28T18:59:48.320492+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=llm-inference-batching-scheduler condition=high_cost status=completed
+2026-08-28T18:59:48.327051+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=llm-inference-batching-scheduler condition=high_cost
+2026-08-28T19:09:54.461216+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=llm-inference-batching-scheduler condition=high_cost status=completed
+2026-08-28T19:09:54.469406+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=llm-inference-batching-scheduler condition=high_cost
+2026-08-28T19:11:31.861967+00:00 ERROR operation=run batch=single_High Cost_Run002 repeat=3 task=jpg-ocr-stat condition=high_cost status=trial_error
+2026-08-28T19:11:31.870805+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=log-summary-date-ranges condition=high_cost
+2026-08-28T19:12:18.310725+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=log-summary-date-ranges condition=high_cost status=completed
+2026-08-28T19:12:18.318048+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=log-summary-date-ranges condition=high_cost
+2026-08-28T19:13:36.325094+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=log-summary-date-ranges condition=high_cost status=completed
+2026-08-28T19:13:36.330742+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=log-summary-date-ranges condition=high_cost
+2026-08-28T19:14:26.887910+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=log-summary-date-ranges condition=high_cost status=completed
+2026-08-28T19:14:26.893781+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=mario-coin-counting condition=high_cost
+2026-08-28T19:17:41.285591+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=mario-coin-counting condition=high_cost status=completed
+2026-08-28T19:17:41.292137+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=mario-coin-counting condition=high_cost
+2026-08-28T19:21:56.690212+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=mario-coin-counting condition=high_cost status=completed
+2026-08-28T19:21:56.697533+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=mario-coin-counting condition=high_cost
+2026-08-28T19:25:35.791452+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=mario-coin-counting condition=high_cost status=completed
+2026-08-28T19:25:35.798141+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=mars-clouds-clustering condition=high_cost
+2026-08-28T19:26:54.918286+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=1 task=mars-clouds-clustering condition=high_cost status=completed
+2026-08-28T19:26:54.927097+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=mars-clouds-clustering condition=high_cost
+2026-08-28T19:29:09.284203+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=2 task=mars-clouds-clustering condition=high_cost status=completed
+2026-08-28T19:29:09.294376+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=mars-clouds-clustering condition=high_cost
+2026-08-28T19:32:59.358841+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=llm-inference-batching-scheduler condition=high_cost status=completed
+2026-08-28T19:32:59.364843+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=mteb-retrieve condition=high_cost
+2026-08-28T19:41:33.951520+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=mars-clouds-clustering condition=high_cost status=completed
+2026-08-28T19:41:33.961679+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=pdf-excel-diff condition=high_cost
+2026-08-28T19:48:13.095504+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=pdf-excel-diff condition=high_cost status=completed
+2026-08-28T19:48:13.102702+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=pdf-excel-diff condition=high_cost
+2026-08-28T19:59:41.178243+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=pdf-excel-diff condition=high_cost status=completed
+2026-08-28T19:59:41.183807+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=pdf-excel-diff condition=high_cost
+2026-08-28T20:03:12.176682+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=pdf-excel-diff condition=high_cost status=completed
+2026-08-28T20:03:12.184120+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=portfolio-optimization condition=high_cost
+2026-08-28T20:06:02.392003+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=portfolio-optimization condition=high_cost status=completed
+2026-08-28T20:06:02.398162+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=portfolio-optimization condition=high_cost
+2026-08-28T20:09:02.263375+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=portfolio-optimization condition=high_cost status=completed
+2026-08-28T20:09:02.271267+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=portfolio-optimization condition=high_cost
+2026-08-28T20:12:06.402477+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=portfolio-optimization condition=high_cost status=completed
+2026-08-28T20:12:06.409582+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=powerlifting-coef-calc condition=high_cost
+2026-08-28T20:13:44.884500+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=powerlifting-coef-calc condition=high_cost status=completed
+2026-08-28T20:13:44.891028+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=powerlifting-coef-calc condition=high_cost
+2026-08-28T20:15:31.171450+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=mteb-retrieve condition=high_cost status=completed
+2026-08-28T20:15:31.177073+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=mteb-retrieve condition=high_cost
+2026-08-28T20:16:21.586114+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=powerlifting-coef-calc condition=high_cost status=completed
+2026-08-28T20:16:21.592056+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=powerlifting-coef-calc condition=high_cost
+2026-08-28T20:18:18.722662+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=powerlifting-coef-calc condition=high_cost status=completed
+2026-08-28T20:18:18.732266+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=protein-expression-analysis condition=high_cost
+2026-08-28T20:22:30.559638+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=protein-expression-analysis condition=high_cost status=completed
+2026-08-28T20:22:30.566210+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=protein-expression-analysis condition=high_cost
+2026-08-28T20:25:24.464356+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=protein-expression-analysis condition=high_cost status=completed
+2026-08-28T20:25:24.469729+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=protein-expression-analysis condition=high_cost
+2026-08-28T20:27:02.493726+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=3 task=protein-expression-analysis condition=high_cost status=completed
+2026-08-28T20:27:02.498669+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=quantum-numerical-simulation condition=high_cost
+2026-08-28T20:34:20.754844+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=1 task=quantum-numerical-simulation condition=high_cost status=completed
+2026-08-28T20:34:20.759312+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=quantum-numerical-simulation condition=high_cost
+2026-08-28T20:45:13.273832+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=mteb-retrieve condition=high_cost status=completed
+2026-08-28T20:45:13.278714+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=mteb-retrieve condition=high_cost
+2026-08-28T21:17:02.562572+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=mteb-retrieve condition=high_cost status=completed
+2026-08-28T21:17:02.567634+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=sales-pivot-analysis condition=high_cost
+2026-08-28T21:26:13.370832+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=sales-pivot-analysis condition=high_cost status=completed
+2026-08-28T21:26:13.376075+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=sales-pivot-analysis condition=high_cost
+2026-08-28T21:33:11.880102+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=2 task=sales-pivot-analysis condition=high_cost status=completed
+2026-08-28T21:33:11.893459+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=sales-pivot-analysis condition=high_cost
+2026-08-28T21:38:25.524878+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=3 task=sales-pivot-analysis condition=high_cost status=completed
+2026-08-28T21:38:25.530030+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=software-dependency-audit condition=high_cost
+2026-08-28T21:39:20.341925+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=1 task=software-dependency-audit condition=high_cost status=completed
+2026-08-28T21:39:20.347388+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=software-dependency-audit condition=high_cost
+2026-08-28T21:42:13.110460+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=software-dependency-audit condition=high_cost status=completed
+2026-08-28T21:42:13.116435+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=software-dependency-audit condition=high_cost
+2026-08-28T21:43:20.002777+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=3 task=software-dependency-audit condition=high_cost status=completed
+2026-08-28T21:43:20.008784+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=train-fasttext condition=high_cost
+2026-08-28T21:59:16.673814+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=train-fasttext condition=high_cost status=completed
+2026-08-28T21:59:16.679854+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=train-fasttext condition=high_cost
+2026-08-28T22:04:50.955204+00:00 ERROR operation=run batch=single_High Cost_Run002 repeat=2 task=quantum-numerical-simulation condition=high_cost status=trial_error
+2026-08-28T22:04:50.959570+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=quantum-numerical-simulation condition=high_cost
+2026-08-28T22:15:42.109306+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=train-fasttext condition=high_cost status=completed
+2026-08-28T22:15:42.125629+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=train-fasttext condition=high_cost
+2026-08-28T22:24:34.400852+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=3 task=quantum-numerical-simulation condition=high_cost status=completed
+2026-08-28T22:24:34.405863+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=video-silence-remover condition=high_cost
+2026-08-28T22:26:14.394134+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=video-silence-remover condition=high_cost status=completed
+2026-08-28T22:26:14.402466+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=video-silence-remover condition=high_cost
+2026-08-28T22:27:51.175972+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=video-silence-remover condition=high_cost status=completed
+2026-08-28T22:27:51.183237+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=video-silence-remover condition=high_cost
+2026-08-28T22:29:55.586144+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=train-fasttext condition=high_cost status=completed
+2026-08-28T22:29:55.592273+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=virtualhome-agent-planning condition=high_cost
+2026-08-28T22:30:15.322514+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=video-silence-remover condition=high_cost status=completed
+2026-08-28T22:30:15.330878+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=weighted-gdp-calc condition=high_cost
+2026-08-28T22:34:02.677721+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=1 task=virtualhome-agent-planning condition=high_cost status=completed
+2026-08-28T22:34:02.691567+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=virtualhome-agent-planning condition=high_cost
+2026-08-28T22:34:29.908064+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=weighted-gdp-calc condition=high_cost status=completed
+2026-08-28T22:34:29.912834+00:00 START operation=run batch=single_High Cost_Run002 repeat=2 task=weighted-gdp-calc condition=high_cost
+2026-08-28T22:36:14.818013+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=2 task=virtualhome-agent-planning condition=high_cost status=completed
+2026-08-28T22:36:14.832213+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=virtualhome-agent-planning condition=high_cost
+2026-08-28T22:38:06.574310+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=3 task=virtualhome-agent-planning condition=high_cost status=completed
+2026-08-28T22:39:20.786905+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=2 task=weighted-gdp-calc condition=high_cost status=completed
+2026-08-28T22:39:20.792653+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=weighted-gdp-calc condition=high_cost
+2026-08-28T22:44:00.796104+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=3 task=weighted-gdp-calc condition=high_cost status=completed

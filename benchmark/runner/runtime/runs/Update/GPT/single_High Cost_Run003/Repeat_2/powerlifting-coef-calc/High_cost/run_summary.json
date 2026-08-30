@@ -1,0 +1,89 @@
+{
+  "schema_version": 7,
+  "task_id": "powerlifting-coef-calc",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 130.8,
+    "peak_memory_raw": "130.800 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "powerlifting-coef-ca"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.799,
+    "agent_setup_sec": 0.925,
+    "agent_execution_sec": 166.895,
+    "verifier_sec": 64.016,
+    "total_sec": 236.59
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 220192,
+  "agent_output_tokens": 6629,
+  "image_cache": {
+    "image": "benchmark-cache/powerlifting-coef-calc-gold:0fef2731a5e5d6d2",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dots-powerlifting-formula-generator",
+      "powerlifting-workbook-column-formula-population"
+    ],
+    "available_skills": [
+      "dots-powerlifting-formula-generator",
+      "powerlifting-workbook-column-formula-population"
+    ],
+    "loaded_skills": [
+      "dots-powerlifting-formula-generator",
+      "powerlifting-workbook-column-formula-population"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "dots-powerlifting-formula-generator",
+      "powerlifting-workbook-column-formula-population"
+    ],
+    "trials": [
+      {
+        "trial_id": "powerlifting-coef-calc__NnAmUB3",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "dots-powerlifting-formula-generator",
+          "powerlifting-workbook-column-formula-population"
+        ],
+        "available_skills": [
+          "dots-powerlifting-formula-generator",
+          "powerlifting-workbook-column-formula-population"
+        ],
+        "loaded_skills": [
+          "dots-powerlifting-formula-generator",
+          "powerlifting-workbook-column-formula-population"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "dots-powerlifting-formula-generator",
+          "powerlifting-workbook-column-formula-population"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

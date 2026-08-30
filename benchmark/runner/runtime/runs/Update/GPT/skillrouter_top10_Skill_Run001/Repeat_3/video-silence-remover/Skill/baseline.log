@@ -1,0 +1,28 @@
+2026-08-29T22:31:03.761149+00:00 START operation=run batch=skillrouter_top10_Skill_Run001 repeat=3 task=video-silence-remover condition=mapping image=benchmark-cache/video-silence-remover-gold:274332f35d40c56d provided_skills=["rms-opening-pause-interval-detection", "rendered-media-compression-report", "audio-energy-removal-window-detection", "probed-duration-removal-report", "single-filtergraph-av-trim-concat", "guia-matthieu--educational-presentation", "dylantarre--universal-mindset", "segmented-video-continuous-audio-reassembly", "dylantarre--motion-sickness", "hjewkes--context-audit"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:19 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 19s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_3\video-silence-remover\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_3\video-silence-remover\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_3\video-silence-remover\Skill\Job_result`
+
+2026-08-29T22:33:24.214224+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run001 repeat=3 task=video-silence-remover condition=mapping

@@ -1,0 +1,69 @@
+{
+  "skill": "analyze-platinum-to-brazil-equities-transmission",
+  "as_of": "2026-01-28",
+  "status": "ok",
+  "pair": {
+    "platinum": "PL=F",
+    "brazil_equities": "EWZ"
+  },
+  "period": {
+    "start": "2003-01-10",
+    "end": "2026-01-24",
+    "frequency": "1wk",
+    "data_points": 1202
+  },
+  "signal": "transmission_moderate",
+  "confidence": "medium",
+  "transmission": {
+    "transmission_strength_score_0_100": 74,
+    "best_lead_lag": {
+      "lag_weeks": 12,
+      "meaning": "Platinum leads EWZ by ~12 weeks",
+      "corr": 0.52
+    },
+    "rolling_corr": {
+      "window_weeks": 52,
+      "latest": 0.41,
+      "positive_share_full": 0.62,
+      "positive_share_5y": 0.68,
+      "max_consecutive_positive_weeks": 78,
+      "max_consecutive_negative_weeks": 34
+    },
+    "regime": {
+      "label": "linked_upcycle",
+      "trend_agreement": 0.65,
+      "ewz_cum_return": 0.12,
+      "detail": "趨勢一致性 65.0%，rolling corr 0.410，傳導結構活躍"
+    },
+    "score_breakdown": {
+      "score": 74.0,
+      "best_corr_component": 22.3,
+      "rolling_stability_component": 20.4,
+      "trend_agreement_component": 26.0,
+      "raw": {
+        "s_corr": 74.3,
+        "s_stability": 68.0,
+        "s_trend": 65.0
+      }
+    }
+  },
+  "interpretation": "白金具備中度領先 EWZ 的傳導特徵，最佳領先期約 12 週，52週 rolling correlation 有 68% 時間為正。當前處於 linked_upcycle 體制。",
+  "monitoring_notes": [
+    "若 PL=F 突破長期區間，觀察 EWZ 在 6-24 週內是否趨勢翻多",
+    "要求 52週 rolling corr 維持正值至少 26 週作為確認",
+    "若白金大漲而 EWZ 不動且 corr 轉負，視為 regime break（可能為巴西特有風險主導）"
+  ],
+  "data_limitations": [
+    "交叉相關只顯示統計關聯，不代表因果關係",
+    "EWZ 以美元計價，受 BRL/USD 匯率影響",
+    "期貨價格在展延日可能出現非市場因素的跳動"
+  ],
+  "artifacts": {
+    "charts": [
+      "output/platinum_vs_ewz_2026-01-28.png"
+    ],
+    "data_cache": [
+      "data/cache/platinum_ewz_1wk.csv"
+    ]
+  }
+}

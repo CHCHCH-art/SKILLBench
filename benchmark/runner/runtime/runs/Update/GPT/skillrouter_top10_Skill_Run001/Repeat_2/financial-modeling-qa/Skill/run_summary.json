@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "financial-modeling-qa",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOutputs::test_answer_value_correct: AssertionError: Incorrect answer. Expected 23.0, got 6.0",
+  "peak_memory": {
+    "peak_memory_mib": 197.1328125,
+    "peak_memory_raw": "197.133 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3461,
+    "observed_containers": [
+      "financial-modeling-qa__4p5fkcn__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "financial-modeling-q",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run001\\Repeat_2\\financial-modeling-qa\\mapping\\financial-modeling-qa\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.8,
+    "agent_setup_sec": 0.463,
+    "agent_execution_sec": 252.935,
+    "verifier_sec": 89.305,
+    "total_sec": 352.856
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1453646,
+  "agent_output_tokens": 9275,
+  "image_cache": {
+    "image": "benchmark-cache/financial-modeling-qa-gold:0fdb74de33d4be91",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "K-Dense-AI--xlsx",
+      "ToruAI--scout",
+      "alsk1992--metaculus",
+      "famaoai-creator--test-viewpoint-analyst",
+      "famaoai-creator--unit-economics-optimizer",
+      "kivo360--moai-domain-data-science",
+      "plurigrid--multiversal-finance",
+      "ratacat--dianalokada",
+      "simhacker--adversarial-committee",
+      "unique-category-game-assignment"
+    ],
+    "available_skills": [
+      "K-Dense-AI--xlsx",
+      "ToruAI--scout",
+      "alsk1992--metaculus",
+      "famaoai-creator--test-viewpoint-analyst",
+      "famaoai-creator--unit-economics-optimizer",
+      "kivo360--moai-domain-data-science",
+      "plurigrid--multiversal-finance",
+      "ratacat--dianalokada",
+      "simhacker--adversarial-committee",
+      "unique-category-game-assignment"
+    ],
+    "loaded_skills": [
+      "K-Dense-AI--xlsx",
+      "ToruAI--scout",
+      "alsk1992--metaculus",
+      "famaoai-creator--test-viewpoint-analyst",
+      "famaoai-creator--unit-economics-optimizer",
+      "kivo360--moai-domain-data-science",
+      "plurigrid--multiversal-finance",
+      "ratacat--dianalokada",
+      "simhacker--adversarial-committee",
+      "unique-category-game-assignment"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "K-Dense-AI--xlsx",
+      "ToruAI--scout",
+      "alsk1992--metaculus",
+      "famaoai-creator--test-viewpoint-analyst",
+      "famaoai-creator--unit-economics-optimizer",
+      "kivo360--moai-domain-data-science",
+      "plurigrid--multiversal-finance",
+      "ratacat--dianalokada",
+      "simhacker--adversarial-committee",
+      "unique-category-game-assignment"
+    ],
+    "trials": [
+      {
+        "trial_id": "financial-modeling-qa__4p5FKCN",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "K-Dense-AI--xlsx",
+          "ToruAI--scout",
+          "alsk1992--metaculus",
+          "famaoai-creator--test-viewpoint-analyst",
+          "famaoai-creator--unit-economics-optimizer",
+          "kivo360--moai-domain-data-science",
+          "plurigrid--multiversal-finance",
+          "ratacat--dianalokada",
+          "simhacker--adversarial-committee",
+          "unique-category-game-assignment"
+        ],
+        "available_skills": [
+          "K-Dense-AI--xlsx",
+          "ToruAI--scout",
+          "alsk1992--metaculus",
+          "famaoai-creator--test-viewpoint-analyst",
+          "famaoai-creator--unit-economics-optimizer",
+          "kivo360--moai-domain-data-science",
+          "plurigrid--multiversal-finance",
+          "ratacat--dianalokada",
+          "simhacker--adversarial-committee",
+          "unique-category-game-assignment"
+        ],
+        "loaded_skills": [
+          "K-Dense-AI--xlsx",
+          "ToruAI--scout",
+          "alsk1992--metaculus",
+          "famaoai-creator--test-viewpoint-analyst",
+          "famaoai-creator--unit-economics-optimizer",
+          "kivo360--moai-domain-data-science",
+          "plurigrid--multiversal-finance",
+          "ratacat--dianalokada",
+          "simhacker--adversarial-committee",
+          "unique-category-game-assignment"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "K-Dense-AI--xlsx",
+          "ToruAI--scout",
+          "alsk1992--metaculus",
+          "famaoai-creator--test-viewpoint-analyst",
+          "famaoai-creator--unit-economics-optimizer",
+          "kivo360--moai-domain-data-science",
+          "plurigrid--multiversal-finance",
+          "ratacat--dianalokada",
+          "simhacker--adversarial-committee",
+          "unique-category-game-assignment"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "energy-market-pricing",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOptimality::test_costs_near_optimal: AssertionError: base_case cost 3073355.64 exceeds optimal 2965637.909677724 by more than 0.0100% (tol=296.5637909677724)",
+  "peak_memory": {
+    "peak_memory_mib": 1285.08984375,
+    "peak_memory_raw": "1285.090 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3372,
+    "observed_containers": [
+      "energy-market-pricing__uyptdtj__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "energy-market-pricin",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run003\\Repeat_2\\energy-market-pricing\\mapping\\energy-market-pricing\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.935,
+    "agent_setup_sec": 0.439,
+    "agent_execution_sec": 221.327,
+    "verifier_sec": 111.484,
+    "total_sec": 343.201
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 406486,
+  "agent_output_tokens": 7327,
+  "image_cache": {
+    "image": "benchmark-cache/energy-market-pricing-gold:5e086fb9e6601b54",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "acopf-feasibility-loading-report",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dcopf-counterfactual-impact-analysis",
+      "dcopf-reserve-lmp-solve",
+      "highs-dual-market-pricing-report",
+      "ipopt-acopf-reference-solve",
+      "lubu-labs--langgraph-project-setup",
+      "rectangular-acopf-network-model",
+      "sparse-dcopf-reserve-lp-formulation",
+      "transmission-limit-counterfactual-impact"
+    ],
+    "available_skills": [
+      "acopf-feasibility-loading-report",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dcopf-counterfactual-impact-analysis",
+      "dcopf-reserve-lmp-solve",
+      "highs-dual-market-pricing-report",
+      "ipopt-acopf-reference-solve",
+      "lubu-labs--langgraph-project-setup",
+      "rectangular-acopf-network-model",
+      "sparse-dcopf-reserve-lp-formulation",
+      "transmission-limit-counterfactual-impact"
+    ],
+    "loaded_skills": [
+      "acopf-feasibility-loading-report",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dcopf-counterfactual-impact-analysis",
+      "dcopf-reserve-lmp-solve",
+      "highs-dual-market-pricing-report",
+      "ipopt-acopf-reference-solve",
+      "lubu-labs--langgraph-project-setup",
+      "rectangular-acopf-network-model",
+      "sparse-dcopf-reserve-lp-formulation",
+      "transmission-limit-counterfactual-impact"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "acopf-feasibility-loading-report",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dcopf-counterfactual-impact-analysis",
+      "dcopf-reserve-lmp-solve",
+      "highs-dual-market-pricing-report",
+      "ipopt-acopf-reference-solve",
+      "lubu-labs--langgraph-project-setup",
+      "rectangular-acopf-network-model",
+      "sparse-dcopf-reserve-lp-formulation",
+      "transmission-limit-counterfactual-impact"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-market-pricing__UYpTdTj",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "acopf-feasibility-loading-report",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dcopf-counterfactual-impact-analysis",
+          "dcopf-reserve-lmp-solve",
+          "highs-dual-market-pricing-report",
+          "ipopt-acopf-reference-solve",
+          "lubu-labs--langgraph-project-setup",
+          "rectangular-acopf-network-model",
+          "sparse-dcopf-reserve-lp-formulation",
+          "transmission-limit-counterfactual-impact"
+        ],
+        "available_skills": [
+          "acopf-feasibility-loading-report",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dcopf-counterfactual-impact-analysis",
+          "dcopf-reserve-lmp-solve",
+          "highs-dual-market-pricing-report",
+          "ipopt-acopf-reference-solve",
+          "lubu-labs--langgraph-project-setup",
+          "rectangular-acopf-network-model",
+          "sparse-dcopf-reserve-lp-formulation",
+          "transmission-limit-counterfactual-impact"
+        ],
+        "loaded_skills": [
+          "acopf-feasibility-loading-report",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dcopf-counterfactual-impact-analysis",
+          "dcopf-reserve-lmp-solve",
+          "highs-dual-market-pricing-report",
+          "ipopt-acopf-reference-solve",
+          "lubu-labs--langgraph-project-setup",
+          "rectangular-acopf-network-model",
+          "sparse-dcopf-reserve-lp-formulation",
+          "transmission-limit-counterfactual-impact"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "acopf-feasibility-loading-report",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dcopf-counterfactual-impact-analysis",
+          "dcopf-reserve-lmp-solve",
+          "highs-dual-market-pricing-report",
+          "ipopt-acopf-reference-solve",
+          "lubu-labs--langgraph-project-setup",
+          "rectangular-acopf-network-model",
+          "sparse-dcopf-reserve-lp-formulation",
+          "transmission-limit-counterfactual-impact"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

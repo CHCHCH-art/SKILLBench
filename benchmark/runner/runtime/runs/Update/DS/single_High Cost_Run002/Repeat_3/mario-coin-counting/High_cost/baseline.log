@@ -1,0 +1,28 @@
+2026-08-28T19:21:56.709057+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=mario-coin-counting condition=high_cost image=benchmark-cache/mario-coin-counting-gold:989a4c6bcaeff277 provided_skills=["iframe-grayscale-keyframe-extraction", "template-match-spatial-counting"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:03:37 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 37s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\mario-coin-counting\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\mario-coin-counting\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\mario-coin-counting\High_cost\Job_result`
+
+2026-08-28T19:25:35.791452+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=mario-coin-counting condition=high_cost

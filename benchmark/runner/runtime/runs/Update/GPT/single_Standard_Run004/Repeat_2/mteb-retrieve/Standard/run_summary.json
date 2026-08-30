@@ -1,0 +1,81 @@
+{
+  "schema_version": 7,
+  "task_id": "mteb-retrieve",
+  "condition": "standard",
+  "batch": "single_Standard_Run004",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 659.6,
+    "peak_memory_raw": "659.600 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "mteb-retrieve"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.884,
+    "agent_setup_sec": 0.893,
+    "agent_execution_sec": 138.482,
+    "verifier_sec": 2799.037,
+    "total_sec": 2944.186
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 124656,
+  "agent_output_tokens": 2527,
+  "image_cache": {
+    "image": "benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "scifact-prompt-bound-mteb-topk-retrieval"
+    ],
+    "available_skills": [
+      "scifact-prompt-bound-mteb-topk-retrieval"
+    ],
+    "loaded_skills": [
+      "scifact-prompt-bound-mteb-topk-retrieval"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "scifact-prompt-bound-mteb-topk-retrieval"
+    ],
+    "trials": [
+      {
+        "trial_id": "mteb-retrieve__4C88RLn",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "scifact-prompt-bound-mteb-topk-retrieval"
+        ],
+        "available_skills": [
+          "scifact-prompt-bound-mteb-topk-retrieval"
+        ],
+        "loaded_skills": [
+          "scifact-prompt-bound-mteb-topk-retrieval"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "scifact-prompt-bound-mteb-topk-retrieval"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

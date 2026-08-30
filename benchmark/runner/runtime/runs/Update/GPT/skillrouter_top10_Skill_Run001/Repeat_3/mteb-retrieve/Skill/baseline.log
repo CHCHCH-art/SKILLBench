@@ -1,0 +1,28 @@
+2026-08-29T20:59:37.137587+00:00 START operation=run batch=skillrouter_top10_Skill_Run001 repeat=3 task=mteb-retrieve condition=mapping image=benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb provided_skills=["mteb-streaming-topk-cosine-retrieval", "scifact-prompt-bound-mteb-topk-retrieval", "tanimoto-topk-molecule-ranking", "parcadei--llm-tuning-patterns", "fasttext-constrained-autotune-selection", "joaquimscosta--deep-research", "clawdbot--spotify-player", "Dicklesworthstone--cass", "blockrunai--clawrouter", "hjewkes--brain"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:09:42 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 9m 42s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_3\mteb-retrieve\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_3\mteb-retrieve\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_3\mteb-retrieve\Skill\Job_result`
+
+2026-08-29T21:09:21.149111+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run001 repeat=3 task=mteb-retrieve condition=mapping

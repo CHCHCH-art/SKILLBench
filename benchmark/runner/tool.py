@@ -210,8 +210,11 @@ def session_trial_id(session_path: Path) -> str:
 def analyze_skill_usage(
     job_dir: Path,
     provided_skills: list[str],
+    *,
+    preloaded_skills: list[str] | None = None,
 ) -> dict[str, Any]:
     provided = set(provided_skills)
+    preloaded = set(preloaded_skills or []) & provided
     # Harbor normally stores trajectories at <trial>/agent/trajectory.json.
     # Keep that fast, deterministic path first, then support newer Harbor
     # layouts that add another artifact directory below the trial.
@@ -222,6 +225,7 @@ def analyze_skill_usage(
     errors: list[str] = []
     available_union: set[str] = set()
     loaded_union: set[str] = set()
+    explicitly_loaded_union: set[str] = set()
     if not trajectory_paths:
         session_paths = sorted(job_dir.glob("*/agent/sessions/**/*.jsonl"))
         if not session_paths:
@@ -234,7 +238,9 @@ def analyze_skill_usage(
                 unexpected_available = sorted(available - provided)
                 trial_passed = not missing_available and not unexpected_available
                 available_union.update(available)
-                loaded_union.update(loaded)
+                combined_loaded = loaded | preloaded
+                loaded_union.update(combined_loaded)
+                explicitly_loaded_union.update(loaded)
                 trials.append(
                     {
                         "trial_id": trial_id,
@@ -242,7 +248,9 @@ def analyze_skill_usage(
                         "passed": trial_passed,
                         "provided_skills": sorted(provided),
                         "available_skills": sorted(available),
-                        "loaded_skills": sorted(loaded),
+                        "loaded_skills": sorted(combined_loaded),
+                        "explicitly_loaded_skills": sorted(loaded),
+                        "preloaded_skills": sorted(preloaded),
                         "missing_available": missing_available,
                         "unexpected_available": unexpected_available,
                         "load_evidence": evidence,
@@ -286,14 +294,18 @@ def analyze_skill_usage(
             unexpected_available = sorted(available - provided)
             trial_passed = not missing_available and not unexpected_available
             available_union.update(available)
-            loaded_union.update(loaded)
+            combined_loaded = loaded | preloaded
+            loaded_union.update(combined_loaded)
+            explicitly_loaded_union.update(loaded)
             trials.append(
                 {
                     "trial_id": trial_id,
                     "passed": trial_passed,
                     "provided_skills": sorted(provided),
                     "available_skills": sorted(available),
-                    "loaded_skills": sorted(loaded),
+                    "loaded_skills": sorted(combined_loaded),
+                    "explicitly_loaded_skills": sorted(loaded),
+                    "preloaded_skills": sorted(preloaded),
                     "missing_available": missing_available,
                     "unexpected_available": unexpected_available,
                     "load_evidence": evidence,
@@ -321,6 +333,8 @@ def analyze_skill_usage(
         "provided_skills": sorted(provided),
         "available_skills": sorted(available_union),
         "loaded_skills": sorted(loaded_union),
+        "explicitly_loaded_skills": sorted(explicitly_loaded_union),
+        "preloaded_skills": sorted(preloaded),
         "trials": trials,
         "error": "; ".join(errors) if errors else None,
     }

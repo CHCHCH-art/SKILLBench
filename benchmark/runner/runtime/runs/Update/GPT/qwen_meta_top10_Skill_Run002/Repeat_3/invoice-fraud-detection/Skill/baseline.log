@@ -1,0 +1,28 @@
+2026-08-29T19:07:33.456861+00:00 START operation=run batch=qwen_meta_top10_Skill_Run002 repeat=3 task=invoice-fraud-detection condition=mapping image=benchmark-cache/invoice-fraud-detection-gold:a8a463d9f523584f provided_skills=["invoice-fraud-reference-rules", "ordered-invoice-masterdata-fraud-rules", "invoice-pdf-field-normalization", "fuzzy-vendor-entity-resolution", "pdf-table-structural-guard-and-extraction", "invoice-pdf-reference-field-extraction", "receipt-date-total-excel-serialization", "wlzh--invoice-scanner", "benchflow-ai--data-reconciliation", "pdf-record-table-extraction"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:03:15 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 15s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+2\Repeat_3\invoice-fraud-detection\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+2\Repeat_3\invoice-fraud-detection\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+2\Repeat_3\invoice-fraud-detection\Skill\Job_result`
+
+2026-08-29T19:10:49.948878+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run002 repeat=3 task=invoice-fraud-detection condition=mapping

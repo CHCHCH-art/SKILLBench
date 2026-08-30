@@ -1,0 +1,97 @@
+{
+  "schema_version": 7,
+  "task_id": "invoice-fraud-detection",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOutputs::test_content: AssertionError: PO Number mismatch for page 3: Expected 'PO-1181', Got 'None'",
+  "peak_memory": {
+    "peak_memory_mib": 72.45,
+    "peak_memory_raw": "72.450 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "invoice-fraud-detect"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.71,
+    "agent_setup_sec": 0.458,
+    "agent_execution_sec": 164.205,
+    "verifier_sec": 12.177,
+    "total_sec": 181.734
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 730171,
+  "agent_output_tokens": 12659,
+  "image_cache": {
+    "image": "benchmark-cache/invoice-fraud-detection-gold:a8a463d9f523584f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "fuzzy-vendor-entity-resolution",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization"
+    ],
+    "available_skills": [
+      "fuzzy-vendor-entity-resolution",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization"
+    ],
+    "loaded_skills": [
+      "fuzzy-vendor-entity-resolution",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "fuzzy-vendor-entity-resolution",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization"
+    ],
+    "trials": [
+      {
+        "trial_id": "invoice-fraud-detection__4asJT8k",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "fuzzy-vendor-entity-resolution",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization"
+        ],
+        "available_skills": [
+          "fuzzy-vendor-entity-resolution",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization"
+        ],
+        "loaded_skills": [
+          "fuzzy-vendor-entity-resolution",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "fuzzy-vendor-entity-resolution",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

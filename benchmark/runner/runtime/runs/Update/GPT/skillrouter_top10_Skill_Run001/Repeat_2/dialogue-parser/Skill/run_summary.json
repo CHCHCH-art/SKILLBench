@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "dialogue-parser",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_system_basics: AssertionError: Node End has invalid type 'terminal'; test_outputs.py::test_graph_logic: AssertionError: Unreachable nodes found: ['End']...",
+  "peak_memory": {
+    "peak_memory_mib": 213.36328125,
+    "peak_memory_raw": "213.363 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2248,
+    "observed_containers": [
+      "dialogue-parser__qos7bum__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "dialogue-parser",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run001\\Repeat_2\\dialogue-parser\\mapping\\dialogue-parser\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.97,
+    "agent_setup_sec": 0.393,
+    "agent_execution_sec": 212.592,
+    "verifier_sec": 5.867,
+    "total_sec": 228.907
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 466415,
+  "agent_output_tokens": 6093,
+  "image_cache": {
+    "image": "benchmark-cache/dialogue-parser-gold:c0353fb4817c6884",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser",
+      "gonglingrui--mind-map-generator",
+      "mindmorass--graphviz-diagrams",
+      "plurigrid--categorical-rewriting-triad4",
+      "plurigrid--little-schemer",
+      "simhacker--adversarial-committee"
+    ],
+    "available_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser",
+      "gonglingrui--mind-map-generator",
+      "mindmorass--graphviz-diagrams",
+      "plurigrid--categorical-rewriting-triad4",
+      "plurigrid--little-schemer",
+      "simhacker--adversarial-committee"
+    ],
+    "loaded_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser",
+      "gonglingrui--mind-map-generator",
+      "mindmorass--graphviz-diagrams",
+      "plurigrid--categorical-rewriting-triad4",
+      "plurigrid--little-schemer",
+      "simhacker--adversarial-committee"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser",
+      "gonglingrui--mind-map-generator",
+      "mindmorass--graphviz-diagrams",
+      "plurigrid--categorical-rewriting-triad4",
+      "plurigrid--little-schemer",
+      "simhacker--adversarial-committee"
+    ],
+    "trials": [
+      {
+        "trial_id": "dialogue-parser__qoS7Bum",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser",
+          "gonglingrui--mind-map-generator",
+          "mindmorass--graphviz-diagrams",
+          "plurigrid--categorical-rewriting-triad4",
+          "plurigrid--little-schemer",
+          "simhacker--adversarial-committee"
+        ],
+        "available_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser",
+          "gonglingrui--mind-map-generator",
+          "mindmorass--graphviz-diagrams",
+          "plurigrid--categorical-rewriting-triad4",
+          "plurigrid--little-schemer",
+          "simhacker--adversarial-committee"
+        ],
+        "loaded_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser",
+          "gonglingrui--mind-map-generator",
+          "mindmorass--graphviz-diagrams",
+          "plurigrid--categorical-rewriting-triad4",
+          "plurigrid--little-schemer",
+          "simhacker--adversarial-committee"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser",
+          "gonglingrui--mind-map-generator",
+          "mindmorass--graphviz-diagrams",
+          "plurigrid--categorical-rewriting-triad4",
+          "plurigrid--little-schemer",
+          "simhacker--adversarial-committee"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,15 @@
+{
+  "skills": ["prompt-engineer"],
+  "query": "/prompt-engineer analyze ./prompts/system.md",
+  "files": ["prompts/system.md"],
+  "expected_behavior": [
+    "Agent dispatches to Mode B: Analyze (full mode with fixes) based on 'analyze' keyword",
+    "Agent reads the file at ./prompts/system.md",
+    "Agent performs model-class detection from prompt content or asks the user",
+    "Agent produces diagnostic scorecard on 5 dimensions (Clarity, Completeness, Efficiency, Robustness, Model Fit) scored 1-5",
+    "Agent applies four-lens analysis (Ambiguity, Security, Robustness, Efficiency)",
+    "Agent runs anti-pattern scan against references/anti-patterns.md",
+    "Agent proposes targeted fixes for dimensions scoring below 4 with before/after diffs",
+    "Agent recommends Mode D (Evaluate) if no eval exists"
+  ]
+}

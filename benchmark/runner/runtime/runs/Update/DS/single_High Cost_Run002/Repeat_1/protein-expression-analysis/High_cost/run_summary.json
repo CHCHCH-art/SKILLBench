@@ -1,0 +1,89 @@
+{
+  "schema_version": 7,
+  "task_id": "protein-expression-analysis",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 364.9,
+    "peak_memory_raw": "364.900 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "protein-expression-a"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.769,
+    "agent_setup_sec": 0.895,
+    "agent_execution_sec": 239.965,
+    "verifier_sec": 4.912,
+    "total_sec": 250.617
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1144115,
+  "agent_output_tokens": 16678,
+  "image_cache": {
+    "image": "benchmark-cache/protein-expression-analysis-gold:a52e2bc643b8e023",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "expression-group-statistics-foldchange",
+      "spreadsheet-two-way-expression-lookup"
+    ],
+    "available_skills": [
+      "expression-group-statistics-foldchange",
+      "spreadsheet-two-way-expression-lookup"
+    ],
+    "loaded_skills": [
+      "expression-group-statistics-foldchange",
+      "spreadsheet-two-way-expression-lookup"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "expression-group-statistics-foldchange",
+      "spreadsheet-two-way-expression-lookup"
+    ],
+    "trials": [
+      {
+        "trial_id": "protein-expression-analysis__EfKCwiw",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "expression-group-statistics-foldchange",
+          "spreadsheet-two-way-expression-lookup"
+        ],
+        "available_skills": [
+          "expression-group-statistics-foldchange",
+          "spreadsheet-two-way-expression-lookup"
+        ],
+        "loaded_skills": [
+          "expression-group-statistics-foldchange",
+          "spreadsheet-two-way-expression-lookup"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "expression-group-statistics-foldchange",
+          "spreadsheet-two-way-expression-lookup"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

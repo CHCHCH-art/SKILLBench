@@ -1,0 +1,97 @@
+{
+  "schema_version": 7,
+  "task_id": "video-silence-remover",
+  "condition": "standard",
+  "batch": "single_Standard_Run004",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 231.3,
+    "peak_memory_raw": "231.300 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "video-silence-remove"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.889,
+    "agent_setup_sec": 1.116,
+    "agent_execution_sec": 165.801,
+    "verifier_sec": 8.621,
+    "total_sec": 181.127
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 345165,
+  "agent_output_tokens": 4257,
+  "image_cache": {
+    "image": "benchmark-cache/video-silence-remover-gold:274332f35d40c56d",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "probed-duration-removal-report",
+      "rms-opening-pause-interval-detection",
+      "segmented-video-continuous-audio-reassembly"
+    ],
+    "available_skills": [
+      "probed-duration-removal-report",
+      "rms-opening-pause-interval-detection",
+      "segmented-video-continuous-audio-reassembly"
+    ],
+    "loaded_skills": [
+      "probed-duration-removal-report",
+      "rms-opening-pause-interval-detection",
+      "segmented-video-continuous-audio-reassembly"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "probed-duration-removal-report",
+      "rms-opening-pause-interval-detection",
+      "segmented-video-continuous-audio-reassembly"
+    ],
+    "trials": [
+      {
+        "trial_id": "video-silence-remover__3aJJibH",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "probed-duration-removal-report",
+          "rms-opening-pause-interval-detection",
+          "segmented-video-continuous-audio-reassembly"
+        ],
+        "available_skills": [
+          "probed-duration-removal-report",
+          "rms-opening-pause-interval-detection",
+          "segmented-video-continuous-audio-reassembly"
+        ],
+        "loaded_skills": [
+          "probed-duration-removal-report",
+          "rms-opening-pause-interval-detection",
+          "segmented-video-continuous-audio-reassembly"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "probed-duration-removal-report",
+          "rms-opening-pause-interval-detection",
+          "segmented-video-continuous-audio-reassembly"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

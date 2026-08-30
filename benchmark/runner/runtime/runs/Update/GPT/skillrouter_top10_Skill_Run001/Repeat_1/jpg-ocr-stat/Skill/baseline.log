@@ -1,0 +1,28 @@
+2026-08-29T19:47:19.020210+00:00 START operation=run batch=skillrouter_top10_Skill_Run001 repeat=1 task=jpg-ocr-stat condition=mapping image=benchmark-cache/jpg-ocr-stat-gold:2312eeab86c89737 provided_skills=["receipt-date-total-excel-serialization", "receipt-total-candidate-resolution-export", "receipt-multivariant-ocr-extraction", "receipt-image-ocr-line-extraction", "kazukinagata--reading-receipt", "receipt-date-candidate-resolution", "wlzh--invoice-scanner", "kazukinagata--invoice-system", "economic-series-workbook-extraction", "pdf-table-structural-guard-and-extraction"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:16:08 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 16m 8s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_1\jpg-ocr-stat\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_1\jpg-ocr-stat\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_1\jpg-ocr-stat\Skill\Job_result`
+
+2026-08-29T20:03:28.882919+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run001 repeat=1 task=jpg-ocr-stat condition=mapping

@@ -1,0 +1,28 @@
+2026-08-29T16:11:39.068928+00:00 START operation=run batch=qwen_meta_top10_Skill_Run002 repeat=3 task=distribution-search condition=mapping image=benchmark-cache/distribution-search-gold:430ae95bb5beb0fc provided_skills=["three-level-kl-distribution-solver", "logit-distribution-kl-optimization", "three-level-count-search-materialization", "OmidZamani--dspy-evaluation-suite", "eyadsibai--data-science", "deterministic-fasttext-search-split", "rmyndharis--llm-evaluation", "weighted-dbscan-centroid-evaluation", "eyh0602--senior-data-scientist", "melodic-software--ml-system-design"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:06 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 6s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+2\Repeat_3\distribution-search\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+2\Repeat_3\distribution-search\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+2\Repeat_3\distribution-search\Skill\Job_result`
+
+2026-08-29T16:13:47.338628+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run002 repeat=3 task=distribution-search condition=mapping

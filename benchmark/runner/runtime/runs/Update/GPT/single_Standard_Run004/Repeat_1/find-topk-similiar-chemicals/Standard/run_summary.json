@@ -1,0 +1,97 @@
+{
+  "schema_version": 7,
+  "task_id": "find-topk-similiar-chemicals",
+  "condition": "standard",
+  "batch": "single_Standard_Run004",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 186.3,
+    "peak_memory_raw": "186.300 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "find-topk-similiar-c"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.845,
+    "agent_setup_sec": 1.315,
+    "agent_execution_sec": 138.29,
+    "verifier_sec": 44.429,
+    "total_sec": 189.317
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 187157,
+  "agent_output_tokens": 3745,
+  "image_cache": {
+    "image": "benchmark-cache/find-topk-similiar-chemicals-gold:bd06707e8ac4a427",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "pdf-molecule-name-pool-extraction",
+      "pubchem-morgan-fingerprint-resolution",
+      "tanimoto-topk-molecule-ranking"
+    ],
+    "available_skills": [
+      "pdf-molecule-name-pool-extraction",
+      "pubchem-morgan-fingerprint-resolution",
+      "tanimoto-topk-molecule-ranking"
+    ],
+    "loaded_skills": [
+      "pdf-molecule-name-pool-extraction",
+      "pubchem-morgan-fingerprint-resolution",
+      "tanimoto-topk-molecule-ranking"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "pdf-molecule-name-pool-extraction",
+      "pubchem-morgan-fingerprint-resolution",
+      "tanimoto-topk-molecule-ranking"
+    ],
+    "trials": [
+      {
+        "trial_id": "find-topk-similiar-chemicals__A28BQ6G",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "pdf-molecule-name-pool-extraction",
+          "pubchem-morgan-fingerprint-resolution",
+          "tanimoto-topk-molecule-ranking"
+        ],
+        "available_skills": [
+          "pdf-molecule-name-pool-extraction",
+          "pubchem-morgan-fingerprint-resolution",
+          "tanimoto-topk-molecule-ranking"
+        ],
+        "loaded_skills": [
+          "pdf-molecule-name-pool-extraction",
+          "pubchem-morgan-fingerprint-resolution",
+          "tanimoto-topk-molecule-ranking"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "pdf-molecule-name-pool-extraction",
+          "pubchem-morgan-fingerprint-resolution",
+          "tanimoto-topk-molecule-ranking"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

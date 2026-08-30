@@ -1,0 +1,28 @@
+2026-08-28T23:47:48.483747+00:00 START operation=run batch=single_High Cost_Run003 repeat=2 task=dapt-intrusion-detection condition=high_cost image=benchmark-cache/dapt-intrusion-detection-gold:7867f125ad78de68 provided_skills=["metric-csv-first-field-update", "network-behavior-reference-heuristics", "network-traffic-reference-metrics", "pcap-pdml-stream-normalization"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:05:47 0:00:00
+high_cost • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 5m 47s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\dapt-intrusion-detection\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\dapt-intrusion-detection\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_2\dapt-intrusion-detection\High_cost\Job_result`
+
+2026-08-28T23:53:37.550949+00:00 FAIL operation=run batch=single_High Cost_Run003 repeat=2 task=dapt-intrusion-detection condition=high_cost

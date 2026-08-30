@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "crystallographic-wyckoff-position-analysis",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 685.0234375,
+    "peak_memory_raw": "685.023 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 1027,
+    "observed_containers": [
+      "crystallographic-wyckoff-positio__odgyi4k__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "crystallographic-wyc",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run001\\Repeat_1\\crystallographic-wyckoff-position-analysis\\mapping\\crystallographic-wyckoff-position-analysis\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.526,
+    "agent_setup_sec": 0.769,
+    "agent_execution_sec": 90.357,
+    "verifier_sec": 5.788,
+    "total_sec": 107.467
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 507154,
+  "agent_output_tokens": 2802,
+  "image_cache": {
+    "image": "benchmark-cache/crystallographic-wyckoff-position-analysis-gold:0f59e77451a3b6af",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "alirezarezvani--financial-analyst",
+      "bobchao--rfp-analyzer",
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting",
+      "joellewis--quantitative-valuation",
+      "mims-harvard--tooluniverse-precision-oncology",
+      "plurigrid--little-schemer",
+      "ratacat--dianalokada",
+      "wyckoff-spglib-stability-analysis",
+      "zhuhongyin--ali1688-sourcing"
+    ],
+    "available_skills": [
+      "alirezarezvani--financial-analyst",
+      "bobchao--rfp-analyzer",
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting",
+      "joellewis--quantitative-valuation",
+      "mims-harvard--tooluniverse-precision-oncology",
+      "plurigrid--little-schemer",
+      "ratacat--dianalokada",
+      "wyckoff-spglib-stability-analysis",
+      "zhuhongyin--ali1688-sourcing"
+    ],
+    "loaded_skills": [
+      "alirezarezvani--financial-analyst",
+      "bobchao--rfp-analyzer",
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting",
+      "joellewis--quantitative-valuation",
+      "mims-harvard--tooluniverse-precision-oncology",
+      "plurigrid--little-schemer",
+      "ratacat--dianalokada",
+      "wyckoff-spglib-stability-analysis",
+      "zhuhongyin--ali1688-sourcing"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "alirezarezvani--financial-analyst",
+      "bobchao--rfp-analyzer",
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting",
+      "joellewis--quantitative-valuation",
+      "mims-harvard--tooluniverse-precision-oncology",
+      "plurigrid--little-schemer",
+      "ratacat--dianalokada",
+      "wyckoff-spglib-stability-analysis",
+      "zhuhongyin--ali1688-sourcing"
+    ],
+    "trials": [
+      {
+        "trial_id": "crystallographic-wyckoff-positio__oDGyi4K",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "alirezarezvani--financial-analyst",
+          "bobchao--rfp-analyzer",
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting",
+          "joellewis--quantitative-valuation",
+          "mims-harvard--tooluniverse-precision-oncology",
+          "plurigrid--little-schemer",
+          "ratacat--dianalokada",
+          "wyckoff-spglib-stability-analysis",
+          "zhuhongyin--ali1688-sourcing"
+        ],
+        "available_skills": [
+          "alirezarezvani--financial-analyst",
+          "bobchao--rfp-analyzer",
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting",
+          "joellewis--quantitative-valuation",
+          "mims-harvard--tooluniverse-precision-oncology",
+          "plurigrid--little-schemer",
+          "ratacat--dianalokada",
+          "wyckoff-spglib-stability-analysis",
+          "zhuhongyin--ali1688-sourcing"
+        ],
+        "loaded_skills": [
+          "alirezarezvani--financial-analyst",
+          "bobchao--rfp-analyzer",
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting",
+          "joellewis--quantitative-valuation",
+          "mims-harvard--tooluniverse-precision-oncology",
+          "plurigrid--little-schemer",
+          "ratacat--dianalokada",
+          "wyckoff-spglib-stability-analysis",
+          "zhuhongyin--ali1688-sourcing"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "alirezarezvani--financial-analyst",
+          "bobchao--rfp-analyzer",
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting",
+          "joellewis--quantitative-valuation",
+          "mims-harvard--tooluniverse-precision-oncology",
+          "plurigrid--little-schemer",
+          "ratacat--dianalokada",
+          "wyckoff-spglib-stability-analysis",
+          "zhuhongyin--ali1688-sourcing"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

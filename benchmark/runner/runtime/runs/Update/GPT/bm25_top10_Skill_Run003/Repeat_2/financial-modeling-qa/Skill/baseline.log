@@ -1,0 +1,28 @@
+2026-08-29T17:17:02.911415+00:00 START operation=run batch=bm25_top10_Skill_Run003 repeat=2 task=financial-modeling-qa condition=mapping image=benchmark-cache/financial-modeling-qa-gold:0fdb74de33d4be91 provided_skills=["anthropics--initiating-coverage", "benchflow-ai--xlsx-1", "unique-category-game-assignment", "aaron-he-zhu--keyword-research", "kamalnrf--skills-discovery", "binjuhor--docs-seeker", "anthropics--check-deck", "dedalus-erp-pas--pptx", "yaleh--error-recovery", "pdf-molecule-name-pool-extraction"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:04:16 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 16s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_2\financial-modeling-qa\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_2\financial-modeling-qa\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_2\financial-modeling-qa\Skill\Job_result`
+
+2026-08-29T17:21:21.083001+00:00 FAIL operation=run batch=bm25_top10_Skill_Run003 repeat=2 task=financial-modeling-qa condition=mapping

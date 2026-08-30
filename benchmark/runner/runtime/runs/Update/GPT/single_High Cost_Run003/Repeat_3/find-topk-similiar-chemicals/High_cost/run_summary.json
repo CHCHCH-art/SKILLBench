@@ -1,0 +1,89 @@
+{
+  "schema_version": 7,
+  "task_id": "find-topk-similiar-chemicals",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 116.1,
+    "peak_memory_raw": "116.100 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "find-topk-similiar-c"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.855,
+    "agent_setup_sec": 0.954,
+    "agent_execution_sec": 231.951,
+    "verifier_sec": 5.29,
+    "total_sec": 243.34
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 340196,
+  "agent_output_tokens": 6867,
+  "image_cache": {
+    "image": "benchmark-cache/find-topk-similiar-chemicals-gold:bd06707e8ac4a427",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "chemical-pdf-pubchem-structure-resolution",
+      "morgan-count-tanimoto-ranking"
+    ],
+    "available_skills": [
+      "chemical-pdf-pubchem-structure-resolution",
+      "morgan-count-tanimoto-ranking"
+    ],
+    "loaded_skills": [
+      "chemical-pdf-pubchem-structure-resolution",
+      "morgan-count-tanimoto-ranking"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "chemical-pdf-pubchem-structure-resolution",
+      "morgan-count-tanimoto-ranking"
+    ],
+    "trials": [
+      {
+        "trial_id": "find-topk-similiar-chemicals__yvzbeXf",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "chemical-pdf-pubchem-structure-resolution",
+          "morgan-count-tanimoto-ranking"
+        ],
+        "available_skills": [
+          "chemical-pdf-pubchem-structure-resolution",
+          "morgan-count-tanimoto-ranking"
+        ],
+        "loaded_skills": [
+          "chemical-pdf-pubchem-structure-resolution",
+          "morgan-count-tanimoto-ranking"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "chemical-pdf-pubchem-structure-resolution",
+          "morgan-count-tanimoto-ranking"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

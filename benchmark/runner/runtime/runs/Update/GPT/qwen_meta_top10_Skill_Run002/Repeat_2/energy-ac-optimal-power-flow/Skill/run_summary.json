@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "energy-ac-optimal-power-flow",
+  "condition": "mapping",
+  "batch": "qwen_meta_top10_Skill_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_meta_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 2711.2265625,
+    "peak_memory_raw": "2711.227 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 4682,
+    "observed_containers": [
+      "energy-ac-optimal-power-flow__y8rmvu4__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "energy-ac-optimal-po",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_meta_top10_Skill_Run002\\Repeat_2\\energy-ac-optimal-power-flow\\mapping\\energy-ac-optimal-power-flow\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.905,
+    "agent_setup_sec": 0.455,
+    "agent_execution_sec": 300.349,
+    "verifier_sec": 179.652,
+    "total_sec": 490.899
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 590623,
+  "agent_output_tokens": 8770,
+  "image_cache": {
+    "image": "benchmark-cache/energy-ac-optimal-power-flow-gold:131fccb5858c984c",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "casadi-acopf-pi-network-formulation",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dcopf-reserve-lmp-solve",
+      "dispatch-loading-operating-margin-report",
+      "ipopt-acopf-reference-solve",
+      "quadratic-dispatch-outer-approximation-report",
+      "rectangular-acopf-network-model"
+    ],
+    "available_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "casadi-acopf-pi-network-formulation",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dcopf-reserve-lmp-solve",
+      "dispatch-loading-operating-margin-report",
+      "ipopt-acopf-reference-solve",
+      "quadratic-dispatch-outer-approximation-report",
+      "rectangular-acopf-network-model"
+    ],
+    "loaded_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "casadi-acopf-pi-network-formulation",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dcopf-reserve-lmp-solve",
+      "dispatch-loading-operating-margin-report",
+      "ipopt-acopf-reference-solve",
+      "quadratic-dispatch-outer-approximation-report",
+      "rectangular-acopf-network-model"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "casadi-acopf-pi-network-formulation",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dcopf-reserve-lmp-solve",
+      "dispatch-loading-operating-margin-report",
+      "ipopt-acopf-reference-solve",
+      "quadratic-dispatch-outer-approximation-report",
+      "rectangular-acopf-network-model"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-ac-optimal-power-flow__Y8Rmvu4",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "casadi-acopf-pi-network-formulation",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dcopf-reserve-lmp-solve",
+          "dispatch-loading-operating-margin-report",
+          "ipopt-acopf-reference-solve",
+          "quadratic-dispatch-outer-approximation-report",
+          "rectangular-acopf-network-model"
+        ],
+        "available_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "casadi-acopf-pi-network-formulation",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dcopf-reserve-lmp-solve",
+          "dispatch-loading-operating-margin-report",
+          "ipopt-acopf-reference-solve",
+          "quadratic-dispatch-outer-approximation-report",
+          "rectangular-acopf-network-model"
+        ],
+        "loaded_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "casadi-acopf-pi-network-formulation",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dcopf-reserve-lmp-solve",
+          "dispatch-loading-operating-margin-report",
+          "ipopt-acopf-reference-solve",
+          "quadratic-dispatch-outer-approximation-report",
+          "rectangular-acopf-network-model"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "casadi-acopf-pi-network-formulation",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dcopf-reserve-lmp-solve",
+          "dispatch-loading-operating-margin-report",
+          "ipopt-acopf-reference-solve",
+          "quadratic-dispatch-outer-approximation-report",
+          "rectangular-acopf-network-model"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "financial-modeling-qa",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run003",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOutputs::test_answer_value_correct: AssertionError: Incorrect answer. Expected 23.0, got 25.0",
+  "peak_memory": {
+    "peak_memory_mib": 269.26171875,
+    "peak_memory_raw": "269.262 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2877,
+    "observed_containers": [
+      "financial-modeling-qa__us7azwd__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "financial-modeling-q",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run003\\Repeat_3\\financial-modeling-qa\\mapping\\financial-modeling-qa\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.784,
+    "agent_setup_sec": 0.496,
+    "agent_execution_sec": 225.123,
+    "verifier_sec": 58.161,
+    "total_sec": 293.792
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 971918,
+  "agent_output_tokens": 7151,
+  "image_cache": {
+    "image": "benchmark-cache/financial-modeling-qa-gold:0fdb74de33d4be91",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "aaron-he-zhu--keyword-research",
+      "anthropics--check-deck",
+      "anthropics--initiating-coverage",
+      "benchflow-ai--xlsx-1",
+      "binjuhor--docs-seeker",
+      "dedalus-erp-pas--pptx",
+      "kamalnrf--skills-discovery",
+      "pdf-molecule-name-pool-extraction",
+      "unique-category-game-assignment",
+      "yaleh--error-recovery"
+    ],
+    "available_skills": [
+      "aaron-he-zhu--keyword-research",
+      "anthropics--check-deck",
+      "anthropics--initiating-coverage",
+      "benchflow-ai--xlsx-1",
+      "binjuhor--docs-seeker",
+      "dedalus-erp-pas--pptx",
+      "kamalnrf--skills-discovery",
+      "pdf-molecule-name-pool-extraction",
+      "unique-category-game-assignment",
+      "yaleh--error-recovery"
+    ],
+    "loaded_skills": [
+      "aaron-he-zhu--keyword-research",
+      "anthropics--check-deck",
+      "anthropics--initiating-coverage",
+      "benchflow-ai--xlsx-1",
+      "binjuhor--docs-seeker",
+      "dedalus-erp-pas--pptx",
+      "kamalnrf--skills-discovery",
+      "pdf-molecule-name-pool-extraction",
+      "unique-category-game-assignment",
+      "yaleh--error-recovery"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "aaron-he-zhu--keyword-research",
+      "anthropics--check-deck",
+      "anthropics--initiating-coverage",
+      "benchflow-ai--xlsx-1",
+      "binjuhor--docs-seeker",
+      "dedalus-erp-pas--pptx",
+      "kamalnrf--skills-discovery",
+      "pdf-molecule-name-pool-extraction",
+      "unique-category-game-assignment",
+      "yaleh--error-recovery"
+    ],
+    "trials": [
+      {
+        "trial_id": "financial-modeling-qa__US7AzWd",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "aaron-he-zhu--keyword-research",
+          "anthropics--check-deck",
+          "anthropics--initiating-coverage",
+          "benchflow-ai--xlsx-1",
+          "binjuhor--docs-seeker",
+          "dedalus-erp-pas--pptx",
+          "kamalnrf--skills-discovery",
+          "pdf-molecule-name-pool-extraction",
+          "unique-category-game-assignment",
+          "yaleh--error-recovery"
+        ],
+        "available_skills": [
+          "aaron-he-zhu--keyword-research",
+          "anthropics--check-deck",
+          "anthropics--initiating-coverage",
+          "benchflow-ai--xlsx-1",
+          "binjuhor--docs-seeker",
+          "dedalus-erp-pas--pptx",
+          "kamalnrf--skills-discovery",
+          "pdf-molecule-name-pool-extraction",
+          "unique-category-game-assignment",
+          "yaleh--error-recovery"
+        ],
+        "loaded_skills": [
+          "aaron-he-zhu--keyword-research",
+          "anthropics--check-deck",
+          "anthropics--initiating-coverage",
+          "benchflow-ai--xlsx-1",
+          "binjuhor--docs-seeker",
+          "dedalus-erp-pas--pptx",
+          "kamalnrf--skills-discovery",
+          "pdf-molecule-name-pool-extraction",
+          "unique-category-game-assignment",
+          "yaleh--error-recovery"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "aaron-he-zhu--keyword-research",
+          "anthropics--check-deck",
+          "anthropics--initiating-coverage",
+          "benchflow-ai--xlsx-1",
+          "binjuhor--docs-seeker",
+          "dedalus-erp-pas--pptx",
+          "kamalnrf--skills-discovery",
+          "pdf-molecule-name-pool-extraction",
+          "unique-category-game-assignment",
+          "yaleh--error-recovery"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

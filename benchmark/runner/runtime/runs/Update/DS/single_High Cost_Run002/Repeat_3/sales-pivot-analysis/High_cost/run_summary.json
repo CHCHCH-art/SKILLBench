@@ -1,0 +1,130 @@
+{
+  "schema_version": 7,
+  "task_id": "sales-pivot-analysis",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestPivotTableConfiguration::test_pivot_row_is_state: AssertionError: Row field should be STATE, got 'SA2_CODE'",
+  "peak_memory": {
+    "peak_memory_mib": 274.7,
+    "peak_memory_raw": "274.700 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "sales-pivot-analysis"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.001,
+    "agent_setup_sec": 0.736,
+    "agent_execution_sec": 300.489,
+    "verifier_sec": 4.89,
+    "total_sec": 312.042
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1664788,
+  "agent_output_tokens": 19063,
+  "image_cache": {
+    "image": "benchmark-cache/sales-pivot-analysis-gold:0de7e366d80d6ca8",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "apache-poi-native-pivot-workbook",
+      "demographic-quantile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join"
+    ],
+    "available_skills": [
+      "apache-poi-native-pivot-workbook",
+      "demographic-quantile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join"
+    ],
+    "loaded_skills": [
+      "apache-poi-native-pivot-workbook",
+      "demographic-quantile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join"
+    ],
+    "explicitly_loaded_skills": [
+      "apache-poi-native-pivot-workbook",
+      "demographic-quantile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join"
+    ],
+    "preloaded_skills": [
+      "apache-poi-native-pivot-workbook",
+      "demographic-quantile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join"
+    ],
+    "trials": [
+      {
+        "trial_id": "sales-pivot-analysis__6ACvMuC",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "apache-poi-native-pivot-workbook",
+          "demographic-quantile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join"
+        ],
+        "available_skills": [
+          "apache-poi-native-pivot-workbook",
+          "demographic-quantile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join"
+        ],
+        "loaded_skills": [
+          "apache-poi-native-pivot-workbook",
+          "demographic-quantile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join"
+        ],
+        "explicitly_loaded_skills": [
+          "apache-poi-native-pivot-workbook",
+          "demographic-quantile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join"
+        ],
+        "preloaded_skills": [
+          "apache-poi-native-pivot-workbook",
+          "demographic-quantile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "heterogeneous-demographic-source-normalization-join": [
+            {
+              "step_id": 11,
+              "tool_call_id": "call_1ad8f9e52f224745b0ceaa18",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/heterogeneous-demographic-source-normalization-join/SKILL.md"
+            }
+          ],
+          "demographic-quantile-derived-enrichment": [
+            {
+              "step_id": 12,
+              "tool_call_id": "call_78f632ada0f048f7a0c0adba",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/demographic-quantile-derived-enrichment/SKILL.md"
+            }
+          ],
+          "apache-poi-native-pivot-workbook": [
+            {
+              "step_id": 13,
+              "tool_call_id": "call_8b37b957f89a4f11b778691a",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/apache-poi-native-pivot-workbook/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": 7,
+  "task_id": "hf-model-inference",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1082.368,
+    "peak_memory_raw": "1082.368 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "hf-model-inference"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.692,
+    "agent_setup_sec": 0.676,
+    "agent_execution_sec": 190.938,
+    "verifier_sec": 18.548,
+    "total_sec": 214.853
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 384693,
+  "agent_output_tokens": 5096,
+  "image_cache": {
+    "image": "benchmark-cache/hf-model-inference-gold:5e2a59f453e212fb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization"
+    ],
+    "available_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization"
+    ],
+    "loaded_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization"
+    ],
+    "trials": [
+      {
+        "trial_id": "hf-model-inference__eRsyNAZ",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization"
+        ],
+        "available_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization"
+        ],
+        "loaded_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

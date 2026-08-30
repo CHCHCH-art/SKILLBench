@@ -1,0 +1,28 @@
+2026-08-29T04:14:25.604850+00:00 START operation=run batch=single_Standard_Run004 repeat=3 task=video-silence-remover condition=standard image=benchmark-cache/video-silence-remover-gold:274332f35d40c56d provided_skills=["probed-duration-removal-report", "rms-opening-pause-interval-detection", "segmented-video-continuous-audio-reassembly"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:08 0:00:00
+standard • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 8s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run004\Repe
+at_3\video-silence-remover\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run004\Repe
+at_3\video-silence-remover\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run004\Repe
+at_3\video-silence-remover\Standard\Job_result`
+
+2026-08-29T04:16:35.202134+00:00 PASS operation=run batch=single_Standard_Run004 repeat=3 task=video-silence-remover condition=standard

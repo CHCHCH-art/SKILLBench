@@ -1,0 +1,97 @@
+{
+  "schema_version": 7,
+  "task_id": "weighted-gdp-calc",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestStep1DataValues::test_gdp_values: AssertionError: GDP value mismatches:",
+  "peak_memory": {
+    "peak_memory_mib": 202.6,
+    "peak_memory_raw": "202.600 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "weighted-gdp-calc"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.724,
+    "agent_setup_sec": 0.727,
+    "agent_execution_sec": 235.186,
+    "verifier_sec": 37.851,
+    "total_sec": 278.807
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1286466,
+  "agent_output_tokens": 19840,
+  "image_cache": {
+    "image": "benchmark-cache/weighted-gdp-calc-gold:9ffa98d58509b229",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "formula-cache-ooxml-roundtrip-verification",
+      "net-export-statistics-weighted-formulas",
+      "ooxml-two-key-lookup-formula-population"
+    ],
+    "available_skills": [
+      "formula-cache-ooxml-roundtrip-verification",
+      "net-export-statistics-weighted-formulas",
+      "ooxml-two-key-lookup-formula-population"
+    ],
+    "loaded_skills": [
+      "formula-cache-ooxml-roundtrip-verification",
+      "net-export-statistics-weighted-formulas",
+      "ooxml-two-key-lookup-formula-population"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "formula-cache-ooxml-roundtrip-verification",
+      "net-export-statistics-weighted-formulas",
+      "ooxml-two-key-lookup-formula-population"
+    ],
+    "trials": [
+      {
+        "trial_id": "weighted-gdp-calc__Zm96kv8",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "formula-cache-ooxml-roundtrip-verification",
+          "net-export-statistics-weighted-formulas",
+          "ooxml-two-key-lookup-formula-population"
+        ],
+        "available_skills": [
+          "formula-cache-ooxml-roundtrip-verification",
+          "net-export-statistics-weighted-formulas",
+          "ooxml-two-key-lookup-formula-population"
+        ],
+        "loaded_skills": [
+          "formula-cache-ooxml-roundtrip-verification",
+          "net-export-statistics-weighted-formulas",
+          "ooxml-two-key-lookup-formula-population"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "formula-cache-ooxml-roundtrip-verification",
+          "net-export-statistics-weighted-formulas",
+          "ooxml-two-key-lookup-formula-population"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

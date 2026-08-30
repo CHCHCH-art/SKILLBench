@@ -1,0 +1,28 @@
+2026-08-28T19:11:31.888889+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=log-summary-date-ranges condition=high_cost image=benchmark-cache/log-summary-date-ranges-gold:e28534907986406f provided_skills=["dated-log-severity-summary"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:00:45 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 45s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_1\log-summary-date-ranges\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_1\log-summary-date-ranges\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_1\log-summary-date-ranges\High_cost\Job_result`
+
+2026-08-28T19:12:18.310725+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=log-summary-date-ranges condition=high_cost

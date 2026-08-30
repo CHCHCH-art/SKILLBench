@@ -1,0 +1,130 @@
+{
+  "schema_version": 7,
+  "task_id": "llm-inference-batching-scheduler",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 90.47,
+    "peak_memory_raw": "90.470 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "llm-inference-batchi"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.717,
+    "agent_setup_sec": 0.706,
+    "agent_execution_sec": 288.763,
+    "verifier_sec": 36.072,
+    "total_sec": 331.273
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 602965,
+  "agent_output_tokens": 18985,
+  "image_cache": {
+    "image": "benchmark-cache/llm-inference-batching-scheduler-gold:c835608261b94b37",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "generation-aware-dp-batch-splitting",
+      "paired-plan-cost-threshold-selection",
+      "shared-sequence-shape-selection"
+    ],
+    "available_skills": [
+      "generation-aware-dp-batch-splitting",
+      "paired-plan-cost-threshold-selection",
+      "shared-sequence-shape-selection"
+    ],
+    "loaded_skills": [
+      "generation-aware-dp-batch-splitting",
+      "paired-plan-cost-threshold-selection",
+      "shared-sequence-shape-selection"
+    ],
+    "explicitly_loaded_skills": [
+      "generation-aware-dp-batch-splitting",
+      "paired-plan-cost-threshold-selection",
+      "shared-sequence-shape-selection"
+    ],
+    "preloaded_skills": [
+      "generation-aware-dp-batch-splitting",
+      "paired-plan-cost-threshold-selection",
+      "shared-sequence-shape-selection"
+    ],
+    "trials": [
+      {
+        "trial_id": "llm-inference-batching-scheduler__ER88snr",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "generation-aware-dp-batch-splitting",
+          "paired-plan-cost-threshold-selection",
+          "shared-sequence-shape-selection"
+        ],
+        "available_skills": [
+          "generation-aware-dp-batch-splitting",
+          "paired-plan-cost-threshold-selection",
+          "shared-sequence-shape-selection"
+        ],
+        "loaded_skills": [
+          "generation-aware-dp-batch-splitting",
+          "paired-plan-cost-threshold-selection",
+          "shared-sequence-shape-selection"
+        ],
+        "explicitly_loaded_skills": [
+          "generation-aware-dp-batch-splitting",
+          "paired-plan-cost-threshold-selection",
+          "shared-sequence-shape-selection"
+        ],
+        "preloaded_skills": [
+          "generation-aware-dp-batch-splitting",
+          "paired-plan-cost-threshold-selection",
+          "shared-sequence-shape-selection"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "generation-aware-dp-batch-splitting": [
+            {
+              "step_id": 51,
+              "tool_call_id": "call_c26b7ac658d14f699da51592",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/generation-aware-dp-batch-splitting/SKILL.md"
+            }
+          ],
+          "shared-sequence-shape-selection": [
+            {
+              "step_id": 54,
+              "tool_call_id": "call_47cabab352894ed08c947b4a",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/shared-sequence-shape-selection/SKILL.md"
+            }
+          ],
+          "paired-plan-cost-threshold-selection": [
+            {
+              "step_id": 57,
+              "tool_call_id": "call_80ed2799dce5495b8ca46058",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/paired-plan-cost-threshold-selection/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

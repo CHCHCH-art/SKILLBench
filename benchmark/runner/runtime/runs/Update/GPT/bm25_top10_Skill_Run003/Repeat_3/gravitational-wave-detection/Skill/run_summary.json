@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "gravitational-wave-detection",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run003",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 404.55859375,
+    "peak_memory_raw": "404.559 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 10099,
+    "observed_containers": [
+      "gravitational-wave-detection__wj3dkrp__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "gravitational-wave-d",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run003\\Repeat_3\\gravitational-wave-detection\\mapping\\gravitational-wave-detection\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.891,
+    "agent_setup_sec": 0.45,
+    "agent_execution_sec": 1335.083,
+    "verifier_sec": 1.487,
+    "total_sec": 1347.469
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 4557758,
+  "agent_output_tokens": 9226,
+  "image_cache": {
+    "image": "benchmark-cache/gravitational-wave-detection-gold:453ceaaaf619c520",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "K-Dense-AI--matlab",
+      "catlog22--workflow-execute",
+      "matched-filter-winner-confirmation-audit",
+      "pycbc-reference-matched-filter-search",
+      "pycbc-strain-conditioning-psd",
+      "pycbc-waveform-grid-matched-filter-search",
+      "scifact-prompt-bound-mteb-topk-retrieval",
+      "thedivergentai--godot-genre-puzzle",
+      "video-global-egomotion-estimation",
+      "wdavidturner--pmf-survey"
+    ],
+    "available_skills": [
+      "K-Dense-AI--matlab",
+      "catlog22--workflow-execute",
+      "matched-filter-winner-confirmation-audit",
+      "pycbc-reference-matched-filter-search",
+      "pycbc-strain-conditioning-psd",
+      "pycbc-waveform-grid-matched-filter-search",
+      "scifact-prompt-bound-mteb-topk-retrieval",
+      "thedivergentai--godot-genre-puzzle",
+      "video-global-egomotion-estimation",
+      "wdavidturner--pmf-survey"
+    ],
+    "loaded_skills": [
+      "K-Dense-AI--matlab",
+      "catlog22--workflow-execute",
+      "matched-filter-winner-confirmation-audit",
+      "pycbc-reference-matched-filter-search",
+      "pycbc-strain-conditioning-psd",
+      "pycbc-waveform-grid-matched-filter-search",
+      "scifact-prompt-bound-mteb-topk-retrieval",
+      "thedivergentai--godot-genre-puzzle",
+      "video-global-egomotion-estimation",
+      "wdavidturner--pmf-survey"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "K-Dense-AI--matlab",
+      "catlog22--workflow-execute",
+      "matched-filter-winner-confirmation-audit",
+      "pycbc-reference-matched-filter-search",
+      "pycbc-strain-conditioning-psd",
+      "pycbc-waveform-grid-matched-filter-search",
+      "scifact-prompt-bound-mteb-topk-retrieval",
+      "thedivergentai--godot-genre-puzzle",
+      "video-global-egomotion-estimation",
+      "wdavidturner--pmf-survey"
+    ],
+    "trials": [
+      {
+        "trial_id": "gravitational-wave-detection__wJ3DKrP",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "K-Dense-AI--matlab",
+          "catlog22--workflow-execute",
+          "matched-filter-winner-confirmation-audit",
+          "pycbc-reference-matched-filter-search",
+          "pycbc-strain-conditioning-psd",
+          "pycbc-waveform-grid-matched-filter-search",
+          "scifact-prompt-bound-mteb-topk-retrieval",
+          "thedivergentai--godot-genre-puzzle",
+          "video-global-egomotion-estimation",
+          "wdavidturner--pmf-survey"
+        ],
+        "available_skills": [
+          "K-Dense-AI--matlab",
+          "catlog22--workflow-execute",
+          "matched-filter-winner-confirmation-audit",
+          "pycbc-reference-matched-filter-search",
+          "pycbc-strain-conditioning-psd",
+          "pycbc-waveform-grid-matched-filter-search",
+          "scifact-prompt-bound-mteb-topk-retrieval",
+          "thedivergentai--godot-genre-puzzle",
+          "video-global-egomotion-estimation",
+          "wdavidturner--pmf-survey"
+        ],
+        "loaded_skills": [
+          "K-Dense-AI--matlab",
+          "catlog22--workflow-execute",
+          "matched-filter-winner-confirmation-audit",
+          "pycbc-reference-matched-filter-search",
+          "pycbc-strain-conditioning-psd",
+          "pycbc-waveform-grid-matched-filter-search",
+          "scifact-prompt-bound-mteb-topk-retrieval",
+          "thedivergentai--godot-genre-puzzle",
+          "video-global-egomotion-estimation",
+          "wdavidturner--pmf-survey"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "K-Dense-AI--matlab",
+          "catlog22--workflow-execute",
+          "matched-filter-winner-confirmation-audit",
+          "pycbc-reference-matched-filter-search",
+          "pycbc-strain-conditioning-psd",
+          "pycbc-waveform-grid-matched-filter-search",
+          "scifact-prompt-bound-mteb-topk-retrieval",
+          "thedivergentai--godot-genre-puzzle",
+          "video-global-egomotion-estimation",
+          "wdavidturner--pmf-survey"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

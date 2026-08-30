@@ -1,0 +1,15 @@
+{
+  "skills": ["prompt-engineer"],
+  "query": "/prompt-engineer craft a system prompt for a RAG customer support agent on Claude",
+  "files": [],
+  "expected_behavior": [
+    "Agent dispatches to Mode A: Craft based on 'craft' keyword",
+    "Agent performs model-class detection and identifies Claude as instruction-following or reasoning depending on variant",
+    "Agent asks targeted requirements gathering questions (task, model, deployment context, format, failure modes, input trust)",
+    "Agent selects RAG architecture pattern from references/architecture-patterns.md",
+    "Agent drafts prompt using XML tags as default structuring format",
+    "Agent structures content for prefix caching efficiency (static early, dynamic late)",
+    "Agent runs hardening checklist from references/hardening-checklist.md",
+    "Agent presents formatted output per references/output-formats.md Craft template and recommends Mode D (Evaluate)"
+  ]
+}

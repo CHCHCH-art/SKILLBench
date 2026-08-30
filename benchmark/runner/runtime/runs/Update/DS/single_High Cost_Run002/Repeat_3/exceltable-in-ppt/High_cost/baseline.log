@@ -1,0 +1,28 @@
+2026-08-28T13:14:01.660160+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=exceltable-in-ppt condition=high_cost image=benchmark-cache/exceltable-in-ppt-gold:76ac1a2bd4e98536 provided_skills=["pptx-embedded-workbook-rate-update", "pptx-zip-preserving-embedding-replacement"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:13:35 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 13m 35s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\exceltable-in-ppt\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\exceltable-in-ppt\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\exceltable-in-ppt\High_cost\Job_result`
+
+2026-08-28T13:27:38.246818+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=3 task=exceltable-in-ppt condition=high_cost

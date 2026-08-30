@@ -1,0 +1,89 @@
+{
+  "schema_version": 7,
+  "task_id": "energy-market-pricing",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOptimality::test_costs_near_optimal: AssertionError: base_case cost 3150451.04 exceeds optimal 2965637.909677724 by more than 0.0100% (tol=296.5637909677724)",
+  "peak_memory": {
+    "peak_memory_mib": 1266.688,
+    "peak_memory_raw": "1266.688 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "energy-market-pricin"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.793,
+    "agent_setup_sec": 0.776,
+    "agent_execution_sec": 541.321,
+    "verifier_sec": 23.175,
+    "total_sec": 570.738
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 605602,
+  "agent_output_tokens": 12496,
+  "image_cache": {
+    "image": "benchmark-cache/energy-market-pricing-gold:5e086fb9e6601b54",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dcopf-counterfactual-impact-analysis",
+      "dcopf-reserve-lmp-solve"
+    ],
+    "available_skills": [
+      "dcopf-counterfactual-impact-analysis",
+      "dcopf-reserve-lmp-solve"
+    ],
+    "loaded_skills": [
+      "dcopf-counterfactual-impact-analysis",
+      "dcopf-reserve-lmp-solve"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "dcopf-counterfactual-impact-analysis",
+      "dcopf-reserve-lmp-solve"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-market-pricing__RMX3jwP",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "dcopf-counterfactual-impact-analysis",
+          "dcopf-reserve-lmp-solve"
+        ],
+        "available_skills": [
+          "dcopf-counterfactual-impact-analysis",
+          "dcopf-reserve-lmp-solve"
+        ],
+        "loaded_skills": [
+          "dcopf-counterfactual-impact-analysis",
+          "dcopf-reserve-lmp-solve"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "dcopf-counterfactual-impact-analysis",
+          "dcopf-reserve-lmp-solve"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,28 @@
+2026-08-28T21:17:02.582774+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=sales-pivot-analysis condition=high_cost image=benchmark-cache/sales-pivot-analysis-gold:0de7e366d80d6ca8 provided_skills=["apache-poi-native-pivot-workbook", "demographic-quantile-derived-enrichment", "heterogeneous-demographic-source-normalization-join"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:09:09 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 9m 9s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_1\sales-pivot-analysis\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_1\sales-pivot-analysis\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_1\sales-pivot-analysis\High_cost\Job_result`
+
+2026-08-28T21:26:13.370219+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=1 task=sales-pivot-analysis condition=high_cost

@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "find-topk-similiar-chemicals",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 742.21875,
+    "peak_memory_raw": "742.219 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 1772,
+    "observed_containers": [
+      "find-topk-similiar-chemicals__hpdkaze__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "find-topk-similiar-c",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run001\\Repeat_1\\find-topk-similiar-chemicals\\mapping\\find-topk-similiar-chemicals\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.775,
+    "agent_setup_sec": 0.688,
+    "agent_execution_sec": 124.866,
+    "verifier_sec": 45.899,
+    "total_sec": 181.402
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 238869,
+  "agent_output_tokens": 3649,
+  "image_cache": {
+    "image": "benchmark-cache/find-topk-similiar-chemicals-gold:bd06707e8ac4a427",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "anthropics--slack-search",
+      "benchflow-ai--reflow-profile-compliance-toolkit",
+      "chemical-pdf-pubchem-structure-resolution",
+      "fractional-coordinate-rational-formatting",
+      "heterogeneous-demographic-source-normalization-join",
+      "kangarooking--x-filter",
+      "morgan-count-tanimoto-ranking",
+      "pdf-molecule-name-pool-extraction",
+      "pubchem-morgan-fingerprint-resolution",
+      "tanimoto-topk-molecule-ranking"
+    ],
+    "available_skills": [
+      "anthropics--slack-search",
+      "benchflow-ai--reflow-profile-compliance-toolkit",
+      "chemical-pdf-pubchem-structure-resolution",
+      "fractional-coordinate-rational-formatting",
+      "heterogeneous-demographic-source-normalization-join",
+      "kangarooking--x-filter",
+      "morgan-count-tanimoto-ranking",
+      "pdf-molecule-name-pool-extraction",
+      "pubchem-morgan-fingerprint-resolution",
+      "tanimoto-topk-molecule-ranking"
+    ],
+    "loaded_skills": [
+      "anthropics--slack-search",
+      "benchflow-ai--reflow-profile-compliance-toolkit",
+      "chemical-pdf-pubchem-structure-resolution",
+      "fractional-coordinate-rational-formatting",
+      "heterogeneous-demographic-source-normalization-join",
+      "kangarooking--x-filter",
+      "morgan-count-tanimoto-ranking",
+      "pdf-molecule-name-pool-extraction",
+      "pubchem-morgan-fingerprint-resolution",
+      "tanimoto-topk-molecule-ranking"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "anthropics--slack-search",
+      "benchflow-ai--reflow-profile-compliance-toolkit",
+      "chemical-pdf-pubchem-structure-resolution",
+      "fractional-coordinate-rational-formatting",
+      "heterogeneous-demographic-source-normalization-join",
+      "kangarooking--x-filter",
+      "morgan-count-tanimoto-ranking",
+      "pdf-molecule-name-pool-extraction",
+      "pubchem-morgan-fingerprint-resolution",
+      "tanimoto-topk-molecule-ranking"
+    ],
+    "trials": [
+      {
+        "trial_id": "find-topk-similiar-chemicals__HpdkazE",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "anthropics--slack-search",
+          "benchflow-ai--reflow-profile-compliance-toolkit",
+          "chemical-pdf-pubchem-structure-resolution",
+          "fractional-coordinate-rational-formatting",
+          "heterogeneous-demographic-source-normalization-join",
+          "kangarooking--x-filter",
+          "morgan-count-tanimoto-ranking",
+          "pdf-molecule-name-pool-extraction",
+          "pubchem-morgan-fingerprint-resolution",
+          "tanimoto-topk-molecule-ranking"
+        ],
+        "available_skills": [
+          "anthropics--slack-search",
+          "benchflow-ai--reflow-profile-compliance-toolkit",
+          "chemical-pdf-pubchem-structure-resolution",
+          "fractional-coordinate-rational-formatting",
+          "heterogeneous-demographic-source-normalization-join",
+          "kangarooking--x-filter",
+          "morgan-count-tanimoto-ranking",
+          "pdf-molecule-name-pool-extraction",
+          "pubchem-morgan-fingerprint-resolution",
+          "tanimoto-topk-molecule-ranking"
+        ],
+        "loaded_skills": [
+          "anthropics--slack-search",
+          "benchflow-ai--reflow-profile-compliance-toolkit",
+          "chemical-pdf-pubchem-structure-resolution",
+          "fractional-coordinate-rational-formatting",
+          "heterogeneous-demographic-source-normalization-join",
+          "kangarooking--x-filter",
+          "morgan-count-tanimoto-ranking",
+          "pdf-molecule-name-pool-extraction",
+          "pubchem-morgan-fingerprint-resolution",
+          "tanimoto-topk-molecule-ranking"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "anthropics--slack-search",
+          "benchflow-ai--reflow-profile-compliance-toolkit",
+          "chemical-pdf-pubchem-structure-resolution",
+          "fractional-coordinate-rational-formatting",
+          "heterogeneous-demographic-source-normalization-join",
+          "kangarooking--x-filter",
+          "morgan-count-tanimoto-ranking",
+          "pdf-molecule-name-pool-extraction",
+          "pubchem-morgan-fingerprint-resolution",
+          "tanimoto-topk-molecule-ranking"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

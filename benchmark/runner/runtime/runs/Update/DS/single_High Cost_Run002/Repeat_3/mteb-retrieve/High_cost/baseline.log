@@ -1,0 +1,28 @@
+2026-08-28T20:45:13.294091+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=mteb-retrieve condition=high_cost image=benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb provided_skills=["mteb-streaming-topk-cosine-retrieval"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:31:47 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 31m 47s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\mteb-retrieve\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\mteb-retrieve\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\mteb-retrieve\High_cost\Job_result`
+
+2026-08-28T21:17:02.562572+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=mteb-retrieve condition=high_cost

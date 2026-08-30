@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "dapt-intrusion-detection",
+  "condition": "mapping",
+  "batch": "qwen_meta_top10_Skill_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_meta_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestProtocolDistribution::test_protocol_count: AssertionError: protocol_ip_total: expected 58474, got 58727; test_outputs.py::TestTimeSeries::test_time_series_metric: AssertionError: packets_per_minute_min: expected 186, got 185; test_outputs.py::TestSizeStats::test_size_metric: AssertionError: avg_packet_size: expected 270.73, got 271.37; test_outputs.py::TestEntropyMetrics::test_entropy_metric: AssertionError: unique_src_ports: expected 1713, got 1714; test_outputs.py::TestGraphMetrics::test_graph_metric: AssertionError: network_density: expected 0.041252, got 0.031818; test_outputs.py::TestTemporalMetrics::test_temporal_metric: AssertionError: num_consumers: expected 13, got 16; test_outputs.py::TestFlowMetrics::test_flow_metric: AssertionError: udp_flows: expected 214, got 218",
+  "peak_memory": {
+    "peak_memory_mib": 220.3359375,
+    "peak_memory_raw": "220.336 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 1811,
+    "observed_containers": [
+      "dapt-intrusion-detection__bwiyi3y__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "dapt-intrusion-detec",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_meta_top10_Skill_Run002\\Repeat_1\\dapt-intrusion-detection\\mapping\\dapt-intrusion-detection\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.882,
+    "agent_setup_sec": 0.613,
+    "agent_execution_sec": 121.043,
+    "verifier_sec": 52.722,
+    "total_sec": 184.362
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 258076,
+  "agent_output_tokens": 5134,
+  "image_cache": {
+    "image": "benchmark-cache/dapt-intrusion-detection-gold:7867f125ad78de68",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "BrownFineSecurity--nmap",
+      "OTRF--hunt-analytics-generation",
+      "brownfinesecurity--netflows",
+      "classic-pcap-streaming-network-metrics",
+      "network-behavior-reference-heuristics",
+      "network-traffic-reference-behavior-flags",
+      "network-traffic-reference-metrics",
+      "oimiragieo--yara-authoring",
+      "pcap-pdml-stream-normalization",
+      "sherifeldeeb--log-forensics"
+    ],
+    "available_skills": [
+      "BrownFineSecurity--nmap",
+      "OTRF--hunt-analytics-generation",
+      "brownfinesecurity--netflows",
+      "classic-pcap-streaming-network-metrics",
+      "network-behavior-reference-heuristics",
+      "network-traffic-reference-behavior-flags",
+      "network-traffic-reference-metrics",
+      "oimiragieo--yara-authoring",
+      "pcap-pdml-stream-normalization",
+      "sherifeldeeb--log-forensics"
+    ],
+    "loaded_skills": [
+      "BrownFineSecurity--nmap",
+      "OTRF--hunt-analytics-generation",
+      "brownfinesecurity--netflows",
+      "classic-pcap-streaming-network-metrics",
+      "network-behavior-reference-heuristics",
+      "network-traffic-reference-behavior-flags",
+      "network-traffic-reference-metrics",
+      "oimiragieo--yara-authoring",
+      "pcap-pdml-stream-normalization",
+      "sherifeldeeb--log-forensics"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "BrownFineSecurity--nmap",
+      "OTRF--hunt-analytics-generation",
+      "brownfinesecurity--netflows",
+      "classic-pcap-streaming-network-metrics",
+      "network-behavior-reference-heuristics",
+      "network-traffic-reference-behavior-flags",
+      "network-traffic-reference-metrics",
+      "oimiragieo--yara-authoring",
+      "pcap-pdml-stream-normalization",
+      "sherifeldeeb--log-forensics"
+    ],
+    "trials": [
+      {
+        "trial_id": "dapt-intrusion-detection__Bwiyi3Y",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "BrownFineSecurity--nmap",
+          "OTRF--hunt-analytics-generation",
+          "brownfinesecurity--netflows",
+          "classic-pcap-streaming-network-metrics",
+          "network-behavior-reference-heuristics",
+          "network-traffic-reference-behavior-flags",
+          "network-traffic-reference-metrics",
+          "oimiragieo--yara-authoring",
+          "pcap-pdml-stream-normalization",
+          "sherifeldeeb--log-forensics"
+        ],
+        "available_skills": [
+          "BrownFineSecurity--nmap",
+          "OTRF--hunt-analytics-generation",
+          "brownfinesecurity--netflows",
+          "classic-pcap-streaming-network-metrics",
+          "network-behavior-reference-heuristics",
+          "network-traffic-reference-behavior-flags",
+          "network-traffic-reference-metrics",
+          "oimiragieo--yara-authoring",
+          "pcap-pdml-stream-normalization",
+          "sherifeldeeb--log-forensics"
+        ],
+        "loaded_skills": [
+          "BrownFineSecurity--nmap",
+          "OTRF--hunt-analytics-generation",
+          "brownfinesecurity--netflows",
+          "classic-pcap-streaming-network-metrics",
+          "network-behavior-reference-heuristics",
+          "network-traffic-reference-behavior-flags",
+          "network-traffic-reference-metrics",
+          "oimiragieo--yara-authoring",
+          "pcap-pdml-stream-normalization",
+          "sherifeldeeb--log-forensics"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "BrownFineSecurity--nmap",
+          "OTRF--hunt-analytics-generation",
+          "brownfinesecurity--netflows",
+          "classic-pcap-streaming-network-metrics",
+          "network-behavior-reference-heuristics",
+          "network-traffic-reference-behavior-flags",
+          "network-traffic-reference-metrics",
+          "oimiragieo--yara-authoring",
+          "pcap-pdml-stream-normalization",
+          "sherifeldeeb--log-forensics"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

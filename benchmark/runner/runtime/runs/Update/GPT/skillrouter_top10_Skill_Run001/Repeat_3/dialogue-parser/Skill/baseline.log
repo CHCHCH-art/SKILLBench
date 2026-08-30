@@ -1,0 +1,28 @@
+2026-08-29T15:59:31.159815+00:00 START operation=run batch=skillrouter_top10_Skill_Run001 repeat=3 task=dialogue-parser condition=mapping image=benchmark-cache/dialogue-parser-gold:c0353fb4817c6884 provided_skills=["dialogue-graph-validation-serialization", "dialogue-graph-construction", "dialogue-dot-rendering", "dialogue-section-choice-parser", "dialogue-reference-parser", "gonglingrui--mind-map-generator", "mindmorass--graphviz-diagrams", "simhacker--adversarial-committee", "plurigrid--categorical-rewriting-triad4", "plurigrid--little-schemer"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:04:20 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 20s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_3\dialogue-parser\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_3\dialogue-parser\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_3\dialogue-parser\Skill\Job_result`
+
+2026-08-29T16:03:53.906950+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run001 repeat=3 task=dialogue-parser condition=mapping

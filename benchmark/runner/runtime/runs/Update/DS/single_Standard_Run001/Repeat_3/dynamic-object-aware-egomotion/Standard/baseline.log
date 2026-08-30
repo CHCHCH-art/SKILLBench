@@ -1,0 +1,28 @@
+2026-08-28T11:34:01.350892+00:00 START operation=run batch=single_Standard_Run001 repeat=3 task=dynamic-object-aware-egomotion condition=standard image=benchmark-cache/dynamic-object-aware-egomotion-gold:fc972e99cd5a2204 provided_skills=["binary-mask-csr-npz-serialization", "camera-motion-reference-label-sequence", "dynamic-region-flow-residual-tracking", "video-global-egomotion-homography"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:03:51 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 51s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_3\dynamic-object-aware-egomotion\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_3\dynamic-object-aware-egomotion\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_3\dynamic-object-aware-egomotion\Standard\Job_result`
+
+2026-08-28T11:37:57.115078+00:00 FAIL operation=run batch=single_Standard_Run001 repeat=3 task=dynamic-object-aware-egomotion condition=standard

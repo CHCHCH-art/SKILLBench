@@ -1,0 +1,28 @@
+2026-08-29T21:10:37.967684+00:00 START operation=run batch=bm25_top10_Skill_Run003 repeat=1 task=protein-expression-analysis condition=mapping image=benchmark-cache/protein-expression-analysis-gold:a52e2bc643b8e023 provided_skills=["spreadsheet-two-way-expression-lookup", "protein-group-statistics-foldchange-formulas", "expression-group-statistics-foldchange", "protein-sample-direct-reference-lookup", "ooxml-two-key-lookup-formula-population", "omer-metin--early-stage-hustle", "net-export-statistics-weighted-formulas", "uno-two-key-index-match-population", "sbroenne--excel-mcp", "guia-matthieu--challenger-sale"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:04:10 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 10s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_1\protein-expression-analysis\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_1\protein-expression-analysis\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_1\protein-expression-analysis\Skill\Job_result`
+
+2026-08-29T21:14:49.803190+00:00 PASS operation=run batch=bm25_top10_Skill_Run003 repeat=1 task=protein-expression-analysis condition=mapping

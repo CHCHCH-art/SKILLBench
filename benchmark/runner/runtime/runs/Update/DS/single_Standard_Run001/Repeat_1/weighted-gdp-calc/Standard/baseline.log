@@ -1,0 +1,28 @@
+2026-08-28T17:29:38.770632+00:00 START operation=run batch=single_Standard_Run001 repeat=1 task=weighted-gdp-calc condition=standard image=benchmark-cache/weighted-gdp-calc-gold:9ffa98d58509b229 provided_skills=["net-export-statistics-sumproduct-formulas", "uno-formula-recalc-validation", "uno-two-key-index-match-population"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:03:00 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 0s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\weighted-gdp-calc\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\weighted-gdp-calc\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\weighted-gdp-calc\Standard\Job_result`
+
+2026-08-28T17:32:40.283125+00:00 FAIL operation=run batch=single_Standard_Run001 repeat=1 task=weighted-gdp-calc condition=standard

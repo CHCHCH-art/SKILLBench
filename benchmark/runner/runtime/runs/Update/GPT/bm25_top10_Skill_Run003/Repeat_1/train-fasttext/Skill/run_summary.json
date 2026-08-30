@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "train-fasttext",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 4096.0,
+    "peak_memory_raw": "4096.000 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 12173,
+    "observed_containers": [
+      "train-fasttext__albvz3w__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "train-fasttext",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run003\\Repeat_1\\train-fasttext\\mapping\\train-fasttext\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 3.035,
+    "agent_setup_sec": 0.79,
+    "agent_execution_sec": 1325.566,
+    "verifier_sec": 28.657,
+    "total_sec": 1368.729
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 5901251,
+  "agent_output_tokens": 10242,
+  "image_cache": {
+    "image": "benchmark-cache/train-fasttext-gold:61266fd7d3d7eaea",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "assimovt--experiment-design",
+      "baseline-fasttext-small-supervised-training",
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection",
+      "laststance--qa-team",
+      "mteb-streaming-topk-cosine-retrieval",
+      "parquet-to-fasttext-supervised-text",
+      "rjroy--dh-rules",
+      "steipete--gh-issues",
+      "vasilyu1983--startup-fundraising"
+    ],
+    "available_skills": [
+      "assimovt--experiment-design",
+      "baseline-fasttext-small-supervised-training",
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection",
+      "laststance--qa-team",
+      "mteb-streaming-topk-cosine-retrieval",
+      "parquet-to-fasttext-supervised-text",
+      "rjroy--dh-rules",
+      "steipete--gh-issues",
+      "vasilyu1983--startup-fundraising"
+    ],
+    "loaded_skills": [
+      "assimovt--experiment-design",
+      "baseline-fasttext-small-supervised-training",
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection",
+      "laststance--qa-team",
+      "mteb-streaming-topk-cosine-retrieval",
+      "parquet-to-fasttext-supervised-text",
+      "rjroy--dh-rules",
+      "steipete--gh-issues",
+      "vasilyu1983--startup-fundraising"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "assimovt--experiment-design",
+      "baseline-fasttext-small-supervised-training",
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection",
+      "laststance--qa-team",
+      "mteb-streaming-topk-cosine-retrieval",
+      "parquet-to-fasttext-supervised-text",
+      "rjroy--dh-rules",
+      "steipete--gh-issues",
+      "vasilyu1983--startup-fundraising"
+    ],
+    "trials": [
+      {
+        "trial_id": "train-fasttext__ALbvz3w",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "assimovt--experiment-design",
+          "baseline-fasttext-small-supervised-training",
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection",
+          "laststance--qa-team",
+          "mteb-streaming-topk-cosine-retrieval",
+          "parquet-to-fasttext-supervised-text",
+          "rjroy--dh-rules",
+          "steipete--gh-issues",
+          "vasilyu1983--startup-fundraising"
+        ],
+        "available_skills": [
+          "assimovt--experiment-design",
+          "baseline-fasttext-small-supervised-training",
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection",
+          "laststance--qa-team",
+          "mteb-streaming-topk-cosine-retrieval",
+          "parquet-to-fasttext-supervised-text",
+          "rjroy--dh-rules",
+          "steipete--gh-issues",
+          "vasilyu1983--startup-fundraising"
+        ],
+        "loaded_skills": [
+          "assimovt--experiment-design",
+          "baseline-fasttext-small-supervised-training",
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection",
+          "laststance--qa-team",
+          "mteb-streaming-topk-cosine-retrieval",
+          "parquet-to-fasttext-supervised-text",
+          "rjroy--dh-rules",
+          "steipete--gh-issues",
+          "vasilyu1983--startup-fundraising"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "assimovt--experiment-design",
+          "baseline-fasttext-small-supervised-training",
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection",
+          "laststance--qa-team",
+          "mteb-streaming-topk-cosine-retrieval",
+          "parquet-to-fasttext-supervised-text",
+          "rjroy--dh-rules",
+          "steipete--gh-issues",
+          "vasilyu1983--startup-fundraising"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,28 @@
+2026-08-28T11:37:23.441672+00:00 START operation=run batch=single_Standard_Run001 repeat=1 task=energy-ac-optimal-power-flow condition=standard image=benchmark-cache/energy-ac-optimal-power-flow-gold:131fccb5858c984c provided_skills=["acopf-feasibility-loading-report", "casadi-acopf-pi-network-formulation", "ipopt-acopf-reference-solve"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:12:58 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 12m 59s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\energy-ac-optimal-power-flow\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\energy-ac-optimal-power-flow\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\energy-ac-optimal-power-flow\Standard\Job_result`
+
+2026-08-28T11:50:27.941273+00:00 FAIL operation=run batch=single_Standard_Run001 repeat=1 task=energy-ac-optimal-power-flow condition=standard

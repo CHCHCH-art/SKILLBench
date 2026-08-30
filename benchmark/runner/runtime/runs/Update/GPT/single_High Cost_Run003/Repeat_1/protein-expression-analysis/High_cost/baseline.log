@@ -1,0 +1,29 @@
+2026-08-29T05:42:42.549838+00:00 START operation=run batch=single_High Cost_Run003 repeat=1 task=protein-expression-analysis condition=high_cost image=benchmark-cache/protein-expression-analysis-gold:a52e2bc643b8e023 provided_skills=["expression-group-statistics-foldchange", "spreadsheet-two-way-expression-lookup"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:37 0:00:00
+high_cost • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 37s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_1\protein-expression-analysis\High_cost\Job_result\result.js
+on
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_1\protein-expression-analysis\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run003\Repeat_1\protein-expression-analysis\High_cost\Job_result`
+
+2026-08-29T05:45:21.296553+00:00 PASS operation=run batch=single_High Cost_Run003 repeat=1 task=protein-expression-analysis condition=high_cost

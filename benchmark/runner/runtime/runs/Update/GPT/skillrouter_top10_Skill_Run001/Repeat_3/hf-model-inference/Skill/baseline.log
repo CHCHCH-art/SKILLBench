@@ -1,0 +1,28 @@
+2026-08-29T19:34:50.297929+00:00 START operation=run batch=skillrouter_top10_Skill_Run001 repeat=3 task=hf-model-inference condition=mapping image=benchmark-cache/hf-model-inference-gold:5e2a59f453e212fb provided_skills=["numpy-distilbert-int8-inference", "huggingface-local-model-materialization", "flask-local-classification-service", "flask-sequence-classification-api", "tondevrel--transformers", "madsnorgaard--docker-local", "blockrunai--clawrouter", "letta-ai--pypi-server", "itechmeat--openclaw", "tenequm--cloudflare-workers"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:52 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 52s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_3\hf-model-inference\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_3\hf-model-inference\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_3\hf-model-inference\Skill\Job_result`
+
+2026-08-29T19:37:44.357299+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run001 repeat=3 task=hf-model-inference condition=mapping

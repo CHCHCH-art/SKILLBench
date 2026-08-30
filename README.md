@@ -19,20 +19,20 @@ Harbor Runner、端到端运行记录，以及 Task Solution 的重复验证数�
 
 ```text
 Route 设计快照
-├── Base  ──> Standard Route ──> Standard SKILLs ──> Standard 运行
-└── Used  ──> High Cost Route ─> High_Cost_Skills ─> High Cost 运行
+├── Base  ──> Standard Route ──> standard.jsonl ──> Standard 运行
+└── Used  ──> High Cost Route ─> high_cost.jsonl ─> High Cost 运行
 
-Standard SKILLs + High_Cost_Skills + 34k-skills 可复现噪声采样
-└── Selected（每个 Task 固定 10 个 Skill）──> Mixed 运行
+Standard Route Skill + High Cost Route Skill + 34k-skills 可复现噪声采样
+└── random_selected.jsonl（每个 Task 固定 10 个 Skill）──> Mixed 运行
 ```
 
 ### 路线与目录名称对照
 
 | 含义 | 快照目录名称 | Mapping 名称 | Runner 条件 |
 | --- | --- | --- | --- |
-| Standard Route | `Base` / `baseline_task` | `Standard SKILLs` | `--standard` |
-| High Cost Route | `Used` / `used_task` | `High_Cost_Skills` | `--high-cost` |
-| 混合候选集合 | — | `Selected` | `--selected` |
+| Standard Route | `Base` / `baseline_task` | `standard.jsonl` | `--mapping-file PATH` |
+| High Cost Route | `Used` / `used_task` | `high_cost.jsonl` | `--mapping-file PATH` |
+| 混合候选集合 | — | `random_selected.jsonl` | `--mapping-file PATH` |
 | 无 Skill 对照 | — | — | `--no-skill` |
 
 `Base` 和 `Used` 是构建快照中的物理目录名，分别对应 Standard Route
@@ -129,8 +129,8 @@ SKILLBench/
 ├── benchmark/
 │   ├── datas/
 │   │   ├── tasks/                    # 当前 Benchmark Task
-│   │   ├── single_skill_mapping/     # 每个 Task 的三类 Skill 组
-│   │   └── optional_skills/          # 可选 Skill 资料
+│   │   ├── single_skill_mapping/     # Task 到 Skill 的映射表
+│   │   └── optional_skills/skills/   # Runner 使用的统一 Skill 实体库
 │   ├── Env/
 │   │   ├── src/my_agents/            # 自定义 Harbor Agent
 │   │   ├── images/                   # Task 镜像准备、补丁和审计工具
@@ -168,20 +168,20 @@ SKILLBench/
 中的执行目录混淆。详细说明见
 [`archive_local/Snaps/README.md`](archive_local/Snaps/README.md)。
 
-### 三类 Skill 组：`benchmark/datas/single_skill_mapping`
+### Skill 映射：`benchmark/datas/single_skill_mapping`
 
-当前 Mapping 包含 35 个 Task。每个 `<task>_Gold_skill/` 下有三类 Skill 集合：
+当前 Mapping 包含 35 个 Task，由三个 JSONL 文件声明 Task 到 Skill 的引用：
 
-| 目录 | 内容 | 用途 |
+| 文件 | 内容 | 用途 |
 | --- | --- | --- |
-| `Standard SKILLs` | Standard Route 对应的 Skill | Standard 基线 |
-| `High_Cost_Skills` | High Cost Route 对应的 Skill | High Cost 基线 |
-| `Selected` | 上述两组的并集，加来自 34k-skills 的可复现噪声采样 | Mixed/Selected 实验 |
+| `standard.jsonl` | Standard Route 对应的 Skill | Standard 基线 |
+| `high_cost.jsonl` | High Cost Route 对应的 Skill | High Cost 基线 |
+| `random_selected.jsonl` | 上述两组的并集，加来自 34k-skills 的可复现噪声采样 | Mixed/Selected 实验 |
 
 每个 Task 的 `Selected` 固定为 10 个 Skill。噪声数量
 `N = 10 - Standard Skill 数 - High Cost Skill 数`，因此不同 Task 的 `N` 可以不同。
-当前集合总计包含 86 个 Standard Skill、86 个 High Cost Skill，以及 350 个
-按 Task 组织的 Selected Skill 条目。
+当前映射总计包含 86 个 Standard、86 个 High Cost 和 350 个 Selected 引用。
+Skill 实体只保存在 `benchmark/datas/optional_skills/skills`。
 
 详细结构与约束见
 [`benchmark/datas/single_skill_mapping/Readme.md`](benchmark/datas/single_skill_mapping/Readme.md)。
@@ -222,27 +222,31 @@ Route 设计结果是否正确，并估计 Standard/High Cost Route 的时间与
 
 ## 运行 Benchmark
 
-Runner 默认读取 `benchmark/datas/tasks`、
-`benchmark/datas/single_skill_mapping` 和已经准备好的本地镜像映射。
+Runner 默认读取 `benchmark/datas/tasks` 和已经准备好的本地镜像映射；Skill 模式
+必须显式传入映射文件。
 
 ```powershell
 # 无 Skill 对照
 python .\benchmark\runner\run_baseline.py --no-skill
 
 # Standard Route
-python .\benchmark\runner\run_baseline.py --standard
+python .\benchmark\runner\run_baseline.py --mapping-file `
+  .\benchmark\datas\single_skill_mapping\standard.jsonl
 
 # High Cost Route
-python .\benchmark\runner\run_baseline.py --high-cost
+python .\benchmark\runner\run_baseline.py --mapping-file `
+  .\benchmark\datas\single_skill_mapping\high_cost.jsonl
 
 # Standard + High Cost + 噪声 Skill，共 10 个
-python .\benchmark\runner\run_baseline.py --selected
+python .\benchmark\runner\run_baseline.py --mapping-file `
+  .\benchmark\datas\single_skill_mapping\random_selected.jsonl
 ```
 
 运行单个 Task 并重复三次：
 
 ```powershell
-python .\benchmark\runner\run_baseline.py --selected `
+python .\benchmark\runner\run_baseline.py `
+  --mapping-file .\benchmark\datas\single_skill_mapping\random_selected.jsonl `
   --task weighted-gdp-calc `
   --repeat 3
 ```
@@ -250,13 +254,14 @@ python .\benchmark\runner\run_baseline.py --selected `
 Runner 默认最多并行执行 2 个轻量 Task。可显式调整调度资源：
 
 ```powershell
-python .\benchmark\runner\run_baseline.py --standard `
+python .\benchmark\runner\run_baseline.py `
+  --mapping-file .\benchmark\datas\single_skill_mapping\standard.jsonl `
   --task-workers 2 `
   --max-parallel-cpus 16 `
   --max-parallel-memory-mib 24576
 ```
 
-更完整的调度、重跑、Danger 模式和结果结构说明见
+更完整的调度、重跑和结果结构说明见
 [`benchmark/runner/Readme.md`](benchmark/runner/Readme.md)。
 
 ## 验证 Task Solution

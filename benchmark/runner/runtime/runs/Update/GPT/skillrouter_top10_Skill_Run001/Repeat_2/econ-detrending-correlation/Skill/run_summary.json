@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "econ-detrending-correlation",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 428.49609375,
+    "peak_memory_raw": "428.496 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2528,
+    "observed_containers": [
+      "econ-detrending-correlation__lt5qcmw__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "econ-detrending-corr",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run001\\Repeat_2\\econ-detrending-correlation\\mapping\\econ-detrending-correlation\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.625,
+    "agent_setup_sec": 0.444,
+    "agent_execution_sec": 212.821,
+    "verifier_sec": 35.885,
+    "total_sec": 258.6
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 616147,
+  "agent_output_tokens": 3981,
+  "image_cache": {
+    "image": "benchmark-cache/econ-detrending-correlation-gold:693ab5b971b40262",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "PolicyEngine--policyengine-api",
+      "davila7--neurokit2",
+      "economic-series-workbook-extraction",
+      "erp-annual-partial-quarter-extraction",
+      "hp-cycle-correlation-verification",
+      "hp-log-cycle-correlation",
+      "khw1031--financial-tax-guide",
+      "octagonai--market-analyst-master",
+      "samarv--b2b-value-negotiation",
+      "travisjneuman--case-interview-practice"
+    ],
+    "available_skills": [
+      "PolicyEngine--policyengine-api",
+      "davila7--neurokit2",
+      "economic-series-workbook-extraction",
+      "erp-annual-partial-quarter-extraction",
+      "hp-cycle-correlation-verification",
+      "hp-log-cycle-correlation",
+      "khw1031--financial-tax-guide",
+      "octagonai--market-analyst-master",
+      "samarv--b2b-value-negotiation",
+      "travisjneuman--case-interview-practice"
+    ],
+    "loaded_skills": [
+      "PolicyEngine--policyengine-api",
+      "davila7--neurokit2",
+      "economic-series-workbook-extraction",
+      "erp-annual-partial-quarter-extraction",
+      "hp-cycle-correlation-verification",
+      "hp-log-cycle-correlation",
+      "khw1031--financial-tax-guide",
+      "octagonai--market-analyst-master",
+      "samarv--b2b-value-negotiation",
+      "travisjneuman--case-interview-practice"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "PolicyEngine--policyengine-api",
+      "davila7--neurokit2",
+      "economic-series-workbook-extraction",
+      "erp-annual-partial-quarter-extraction",
+      "hp-cycle-correlation-verification",
+      "hp-log-cycle-correlation",
+      "khw1031--financial-tax-guide",
+      "octagonai--market-analyst-master",
+      "samarv--b2b-value-negotiation",
+      "travisjneuman--case-interview-practice"
+    ],
+    "trials": [
+      {
+        "trial_id": "econ-detrending-correlation__Lt5qcMw",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "PolicyEngine--policyengine-api",
+          "davila7--neurokit2",
+          "economic-series-workbook-extraction",
+          "erp-annual-partial-quarter-extraction",
+          "hp-cycle-correlation-verification",
+          "hp-log-cycle-correlation",
+          "khw1031--financial-tax-guide",
+          "octagonai--market-analyst-master",
+          "samarv--b2b-value-negotiation",
+          "travisjneuman--case-interview-practice"
+        ],
+        "available_skills": [
+          "PolicyEngine--policyengine-api",
+          "davila7--neurokit2",
+          "economic-series-workbook-extraction",
+          "erp-annual-partial-quarter-extraction",
+          "hp-cycle-correlation-verification",
+          "hp-log-cycle-correlation",
+          "khw1031--financial-tax-guide",
+          "octagonai--market-analyst-master",
+          "samarv--b2b-value-negotiation",
+          "travisjneuman--case-interview-practice"
+        ],
+        "loaded_skills": [
+          "PolicyEngine--policyengine-api",
+          "davila7--neurokit2",
+          "economic-series-workbook-extraction",
+          "erp-annual-partial-quarter-extraction",
+          "hp-cycle-correlation-verification",
+          "hp-log-cycle-correlation",
+          "khw1031--financial-tax-guide",
+          "octagonai--market-analyst-master",
+          "samarv--b2b-value-negotiation",
+          "travisjneuman--case-interview-practice"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "PolicyEngine--policyengine-api",
+          "davila7--neurokit2",
+          "economic-series-workbook-extraction",
+          "erp-annual-partial-quarter-extraction",
+          "hp-cycle-correlation-verification",
+          "hp-log-cycle-correlation",
+          "khw1031--financial-tax-guide",
+          "octagonai--market-analyst-master",
+          "samarv--b2b-value-negotiation",
+          "travisjneuman--case-interview-practice"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

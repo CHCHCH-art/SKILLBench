@@ -1,0 +1,4 @@
+version: 1
+display_name: "Api Patterns"
+short_description: "API integration patterns including REST, GraphQL, WebSocket, and tRPC. Use when designing APIs, implementing data fetching, or building r..."
+default_prompt: "Use this skill when: API integration patterns including REST, GraphQL, WebSocket, and tRPC. Use when designing APIs, implementing data fetching, or building real-time features."

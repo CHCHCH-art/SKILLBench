@@ -18,7 +18,6 @@
 
 # Benchmark runtime output.
 /benchmark/runner/sink_network
-/benchmark/runner/runtime/probes
 # Keep compact summaries and logs under runtime/runs, but exclude Harbor's
 # nested job workspace (raw sessions, copied agent state, and duplicate files).
 /benchmark/runner/runtime/runs/**/Job_result/

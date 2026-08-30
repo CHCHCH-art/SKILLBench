@@ -1,0 +1,28 @@
+2026-08-29T22:51:45.347845+00:00 START operation=run batch=skillrouter_top10_Skill_Run001 repeat=3 task=train-fasttext condition=mapping image=benchmark-cache/train-fasttext-gold:61266fd7d3d7eaea provided_skills=["fasttext-constrained-autotune-selection", "baseline-fasttext-small-supervised-training", "deterministic-fasttext-search-split", "parquet-to-fasttext-supervised-text", "parcadei--llm-tuning-patterns", "tondevrel--transformers", "ratacat--dianalokada", "blockrunai--clawrouter", "huggingface--hf-mcp", "openclaw--sherpa-onnx-tts"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:24:32 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 24m 33s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_3\train-fasttext\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_3\train-fasttext\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_3\train-fasttext\Skill\Job_result`
+
+2026-08-29T23:16:19.446175+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run001 repeat=3 task=train-fasttext condition=mapping

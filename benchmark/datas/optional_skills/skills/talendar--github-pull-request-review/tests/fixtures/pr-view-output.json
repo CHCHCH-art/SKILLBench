@@ -1,0 +1,24 @@
+{
+  "title": "Add user authentication middleware",
+  "body": "## Summary\nAdds JWT-based authentication middleware for API routes.\n\nFixes #42\nCloses #99\nRelated to #101\n\n## Changes\n- New `authMiddleware.ts` with JWT verification\n- Updated route handlers to use middleware\n- Added tests for auth flows\n\nAlso references #200 in the context of future RBAC work.",
+  "baseRefName": "main",
+  "headRefName": "feature/auth-middleware",
+  "state": "OPEN",
+  "labels": [
+    {"name": "enhancement"},
+    {"name": "security"}
+  ],
+  "milestone": {
+    "title": "v2.0"
+  },
+  "author": {
+    "login": "octocat"
+  },
+  "reviewRequests": [
+    {"login": "reviewer1"}
+  ],
+  "reviews": [],
+  "additions": 342,
+  "deletions": 28,
+  "changedFiles": 8
+}

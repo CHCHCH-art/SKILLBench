@@ -1,0 +1,39 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "My Agent",
+  "description": "Describe what your agent does. Be specific: what data it provides, what tools it has, who built it.",
+  "image": "https://YOUR-DOMAIN/public/agent.png",
+  "services": [
+    {
+      "name": "web",
+      "endpoint": "https://YOUR-DOMAIN/"
+    },
+    {
+      "name": "A2A",
+      "endpoint": "https://YOUR-DOMAIN/.well-known/agent-card.json",
+      "version": "0.3.0"
+    },
+    {
+      "name": "MCP",
+      "endpoint": "https://YOUR-DOMAIN/mcp",
+      "version": "2025-06-18",
+      "mcpTools": [
+        "get_agent_info",
+        "ping"
+      ]
+    }
+  ],
+  "x402Support": false,
+  "active": true,
+  "registrations": [
+    {
+      "agentId": 0,
+      "agentRegistry": "eip155:43113:0x8004A818BFB912233c491871b3d84c89A494BD9e"
+    }
+  ],
+  "supportedTrust": ["reputation"],
+  "capabilities": [
+    "your-capability-1"
+  ],
+  "pricePerMessage": "Free"
+}

@@ -1,0 +1,28 @@
+2026-08-29T20:05:50.742090+00:00 START operation=run batch=skillrouter_top10_Skill_Run001 repeat=1 task=llm-inference-batching-scheduler condition=mapping image=benchmark-cache/llm-inference-batching-scheduler-gold:c835608261b94b37 provided_skills=["constrained-agglomerative-request-batching", "shape-aware-batch-cost-model", "paired-plan-cost-threshold-selection", "shared-sequence-shape-selection", "shared-shape-dp-budget-closure", "generation-aware-dp-batch-splitting", "tondevrel--transformers", "blockrunai--clawrouter", "parcadei--llm-tuning-patterns", "bejranonda--performance-scaling"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:08:46 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 8m 46s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_1\llm-inference-batching-scheduler\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_1\llm-inference-batching-scheduler\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_1\llm-inference-batching-scheduler\Skill\Job_result`
+
+2026-08-29T20:14:39.131465+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run001 repeat=1 task=llm-inference-batching-scheduler condition=mapping

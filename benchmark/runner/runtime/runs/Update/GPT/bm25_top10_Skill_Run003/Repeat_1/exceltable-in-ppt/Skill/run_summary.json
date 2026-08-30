@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "exceltable-in-ppt",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 309.73828125,
+    "peak_memory_raw": "309.738 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3180,
+    "observed_containers": [
+      "exceltable-in-ppt__snw5cmt__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "exceltable-in-ppt",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run003\\Repeat_1\\exceltable-in-ppt\\mapping\\exceltable-in-ppt\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.703,
+    "agent_setup_sec": 0.398,
+    "agent_execution_sec": 290.684,
+    "verifier_sec": 22.156,
+    "total_sec": 323.169
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 757611,
+  "agent_output_tokens": 8056,
+  "image_cache": {
+    "image": "benchmark-cache/exceltable-in-ppt-gold:76ac1a2bd4e98536",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "BrownFineSecurity--ffind",
+      "adaptyvbio--setup",
+      "anthropics--initiating-coverage",
+      "gohypergiant--accelint-security-best-practices",
+      "inverse-rate-workbook-cell-update",
+      "ooxml-two-key-lookup-formula-population",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement",
+      "xlsx-formula-cache-preserving-recalc"
+    ],
+    "available_skills": [
+      "BrownFineSecurity--ffind",
+      "adaptyvbio--setup",
+      "anthropics--initiating-coverage",
+      "gohypergiant--accelint-security-best-practices",
+      "inverse-rate-workbook-cell-update",
+      "ooxml-two-key-lookup-formula-population",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement",
+      "xlsx-formula-cache-preserving-recalc"
+    ],
+    "loaded_skills": [
+      "BrownFineSecurity--ffind",
+      "adaptyvbio--setup",
+      "anthropics--initiating-coverage",
+      "gohypergiant--accelint-security-best-practices",
+      "inverse-rate-workbook-cell-update",
+      "ooxml-two-key-lookup-formula-population",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement",
+      "xlsx-formula-cache-preserving-recalc"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "BrownFineSecurity--ffind",
+      "adaptyvbio--setup",
+      "anthropics--initiating-coverage",
+      "gohypergiant--accelint-security-best-practices",
+      "inverse-rate-workbook-cell-update",
+      "ooxml-two-key-lookup-formula-population",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement",
+      "xlsx-formula-cache-preserving-recalc"
+    ],
+    "trials": [
+      {
+        "trial_id": "exceltable-in-ppt__snw5cMT",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "BrownFineSecurity--ffind",
+          "adaptyvbio--setup",
+          "anthropics--initiating-coverage",
+          "gohypergiant--accelint-security-best-practices",
+          "inverse-rate-workbook-cell-update",
+          "ooxml-two-key-lookup-formula-population",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement",
+          "xlsx-formula-cache-preserving-recalc"
+        ],
+        "available_skills": [
+          "BrownFineSecurity--ffind",
+          "adaptyvbio--setup",
+          "anthropics--initiating-coverage",
+          "gohypergiant--accelint-security-best-practices",
+          "inverse-rate-workbook-cell-update",
+          "ooxml-two-key-lookup-formula-population",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement",
+          "xlsx-formula-cache-preserving-recalc"
+        ],
+        "loaded_skills": [
+          "BrownFineSecurity--ffind",
+          "adaptyvbio--setup",
+          "anthropics--initiating-coverage",
+          "gohypergiant--accelint-security-best-practices",
+          "inverse-rate-workbook-cell-update",
+          "ooxml-two-key-lookup-formula-population",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement",
+          "xlsx-formula-cache-preserving-recalc"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "BrownFineSecurity--ffind",
+          "adaptyvbio--setup",
+          "anthropics--initiating-coverage",
+          "gohypergiant--accelint-security-best-practices",
+          "inverse-rate-workbook-cell-update",
+          "ooxml-two-key-lookup-formula-population",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement",
+          "xlsx-formula-cache-preserving-recalc"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

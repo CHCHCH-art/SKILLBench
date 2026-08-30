@@ -1,0 +1,97 @@
+{
+  "schema_version": 7,
+  "task_id": "software-dependency-audit",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestSecurityAuditTask::test_csv_matches_ground_truth: AssertionError: Generated CSV content does not match expected vulnerabilities",
+  "peak_memory": {
+    "peak_memory_mib": 350.3,
+    "peak_memory_raw": "350.300 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "software-dependency-"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.833,
+    "agent_setup_sec": 1.118,
+    "agent_execution_sec": 369.265,
+    "verifier_sec": 5.358,
+    "total_sec": 380.937
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 939500,
+  "agent_output_tokens": 12597,
+  "image_cache": {
+    "image": "benchmark-cache/software-dependency-audit-gold:65439dede9bf4280",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "deterministic-offline-package-tree-reconstruction",
+      "npm-lock-dual-sbom-dependency-graph",
+      "trivy-dual-scan-csv-reconciliation"
+    ],
+    "available_skills": [
+      "deterministic-offline-package-tree-reconstruction",
+      "npm-lock-dual-sbom-dependency-graph",
+      "trivy-dual-scan-csv-reconciliation"
+    ],
+    "loaded_skills": [
+      "deterministic-offline-package-tree-reconstruction",
+      "npm-lock-dual-sbom-dependency-graph",
+      "trivy-dual-scan-csv-reconciliation"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "deterministic-offline-package-tree-reconstruction",
+      "npm-lock-dual-sbom-dependency-graph",
+      "trivy-dual-scan-csv-reconciliation"
+    ],
+    "trials": [
+      {
+        "trial_id": "software-dependency-audit__aDEhfwZ",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "deterministic-offline-package-tree-reconstruction",
+          "npm-lock-dual-sbom-dependency-graph",
+          "trivy-dual-scan-csv-reconciliation"
+        ],
+        "available_skills": [
+          "deterministic-offline-package-tree-reconstruction",
+          "npm-lock-dual-sbom-dependency-graph",
+          "trivy-dual-scan-csv-reconciliation"
+        ],
+        "loaded_skills": [
+          "deterministic-offline-package-tree-reconstruction",
+          "npm-lock-dual-sbom-dependency-graph",
+          "trivy-dual-scan-csv-reconciliation"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "deterministic-offline-package-tree-reconstruction",
+          "npm-lock-dual-sbom-dependency-graph",
+          "trivy-dual-scan-csv-reconciliation"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,28 @@
+2026-08-29T20:22:49.786674+00:00 START operation=run batch=qwen_meta_top10_Skill_Run002 repeat=3 task=mteb-retrieve condition=mapping image=benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb provided_skills=["mteb-streaming-topk-cosine-retrieval", "scifact-prompt-bound-mteb-topk-retrieval", "Microck--rag-implementation", "cinience--alicloud-ai-search-milvus", "patricio0312rev--rag-pipeline-builder", "deterministic-fasttext-search-split", "jackjin1997--langsmith-dataset", "tanimoto-topk-molecule-ranking", "kivo360--moai-domain-data-science", "numpy-distilbert-int8-inference"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:15:14 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 15m 14s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+2\Repeat_3\mteb-retrieve\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+2\Repeat_3\mteb-retrieve\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+2\Repeat_3\mteb-retrieve\Skill\Job_result`
+
+2026-08-29T20:38:05.280442+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run002 repeat=3 task=mteb-retrieve condition=mapping

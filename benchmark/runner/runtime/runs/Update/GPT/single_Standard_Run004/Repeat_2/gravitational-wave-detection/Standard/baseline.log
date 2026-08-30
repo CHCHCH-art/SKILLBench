@@ -1,0 +1,28 @@
+2026-08-29T01:03:57.878675+00:00 START operation=run batch=single_Standard_Run004 repeat=2 task=gravitational-wave-detection condition=standard image=benchmark-cache/gravitational-wave-detection-gold:453ceaaaf619c520 provided_skills=["pycbc-strain-conditioning-psd", "pycbc-waveform-grid-matched-filter-search"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:09:39 0:00:00
+standard • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 9m 39s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run004\Repe
+at_2\gravitational-wave-detection\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run004\Repe
+at_2\gravitational-wave-detection\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run004\Repe
+at_2\gravitational-wave-detection\Standard\Job_result`
+
+2026-08-29T01:13:38.509486+00:00 PASS operation=run batch=single_Standard_Run004 repeat=2 task=gravitational-wave-detection condition=standard

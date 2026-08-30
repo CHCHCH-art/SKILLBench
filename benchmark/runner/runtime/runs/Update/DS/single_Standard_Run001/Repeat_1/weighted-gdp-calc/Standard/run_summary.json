@@ -1,0 +1,97 @@
+{
+  "schema_version": 7,
+  "task_id": "weighted-gdp-calc",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestStep1DataValues::test_exports_values: AssertionError: Exports value mismatches:; test_outputs.py::TestStep1DataValues::test_imports_values: AssertionError: Imports value mismatches:; test_outputs.py::TestStep1DataValues::test_gdp_values: AssertionError: GDP value mismatches:; test_outputs.py::TestStep2NetExportsCalculation::test_net_exports_pct_values: AssertionError: Net exports % mismatches:; test_outputs.py::TestStep2Statistics::test_min_values: AssertionError: MIN value mismatches:; test_outputs.py::TestStep2Statistics::test_max_values: AssertionError: MAX value mismatches:; test_outputs.py::TestStep2Statistics::test_median_values: AssertionError: MEDIAN value mismatches:; test_outputs.py::TestStep2Statistics::test_mean_values: AssertionError: MEAN value mismatches:; test_outputs.py::TestStep2Statistics::test_percentile_values: AssertionError: PERCENTILE value mismatches:; test_outputs.py::TestStep3WeightedMean::test_weighted_mean_values_reasonable: AssertionError: Weighted mean issues:; test_outputs.py::TestStep3WeightedMean::test_weighted_mean_values: AssertionError: Weighted mean value mismatches:; test_outputs.py::TestNoExcelErrors::test_no_formula_errors: AssertionError: Excel errors found:",
+  "peak_memory": {
+    "peak_memory_mib": 268.3,
+    "peak_memory_raw": "268.300 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "weighted-gdp-calc"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.902,
+    "agent_setup_sec": 1.047,
+    "agent_execution_sec": 121.772,
+    "verifier_sec": 51.751,
+    "total_sec": 180.058
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 415893,
+  "agent_output_tokens": 7928,
+  "image_cache": {
+    "image": "benchmark-cache/weighted-gdp-calc-gold:9ffa98d58509b229",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "net-export-statistics-sumproduct-formulas",
+      "uno-formula-recalc-validation",
+      "uno-two-key-index-match-population"
+    ],
+    "available_skills": [
+      "net-export-statistics-sumproduct-formulas",
+      "uno-formula-recalc-validation",
+      "uno-two-key-index-match-population"
+    ],
+    "loaded_skills": [
+      "net-export-statistics-sumproduct-formulas",
+      "uno-formula-recalc-validation",
+      "uno-two-key-index-match-population"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "net-export-statistics-sumproduct-formulas",
+      "uno-formula-recalc-validation",
+      "uno-two-key-index-match-population"
+    ],
+    "trials": [
+      {
+        "trial_id": "weighted-gdp-calc__pAhCUkH",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "net-export-statistics-sumproduct-formulas",
+          "uno-formula-recalc-validation",
+          "uno-two-key-index-match-population"
+        ],
+        "available_skills": [
+          "net-export-statistics-sumproduct-formulas",
+          "uno-formula-recalc-validation",
+          "uno-two-key-index-match-population"
+        ],
+        "loaded_skills": [
+          "net-export-statistics-sumproduct-formulas",
+          "uno-formula-recalc-validation",
+          "uno-two-key-index-match-population"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "net-export-statistics-sumproduct-formulas",
+          "uno-formula-recalc-validation",
+          "uno-two-key-index-match-population"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

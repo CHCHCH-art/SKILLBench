@@ -1,74 +1,61 @@
 # Single Skill Mapping
 
-本目录按 Task 保存 Runner 使用的三类 Skill 集合。当前共有 35 个 Task，每个 Task
-对应一个 `<task-id>_Gold_skill/` 目录。
-
-## 目录结构
+本目录只保存 Task 到 Skill 目录名的映射，不再保存 Skill 内容副本。实际 Skill 统一位于：
 
 ```text
-<task-id>_Gold_skill/
-├── Standard SKILLs/       # Standard Route 的 Skill
-├── High_Cost_Skills/      # High Cost Route 的 Skill
-└── Selected/              # 两条 Route 的 Skill + 可复现噪声 Skill
+benchmark/datas/optional_skills/skills/<skill-name>/SKILL.md
 ```
 
-每个 Skill 保留独立目录和完整内容，且目录根部必须直接包含 `SKILL.md`。Runner 不再
-从 ZIP 文件读取 Skill。
+当前映射文件：
 
-## 三类 Skill 组
+- `standard.jsonl`：Standard Route，35 个 Task、86 个 Skill 引用；
+- `high_cost.jsonl`：High Cost Route，35 个 Task、86 个 Skill 引用；
+- `random_selected.jsonl`：Mixed/Selected 实验，35 个 Task、350 个 Skill 引用；
+- `bm25_top10.jsonl`：BM25 初级检索 Top10，35 个 Task、350 个 Skill 引用；
+- `qwen_meta_top10.jsonl`：Qwen-Meta 初级检索 Top10，35 个 Task、350 个 Skill 引用；
+- `skillrouter_top10.jsonl`：SkillRouter 初级检索 Top10，35 个 Task、350 个 Skill 引用。
 
-### `Standard SKILLs`
+## JSONL 格式
 
-对应 Base/Standard Route，来源于
-`archive_local/Snaps/Skills_snap/Base` 中按 Task 保存的设计 Skill。
+每行必须是一个对象：
 
-### `High_Cost_Skills`
-
-对应 Used/High Cost Route，来源于
-`archive_local/Snaps/Skills_snap/Used` 中按 Task 保存的设计 Skill。
-
-### `Selected`
-
-用于 Mixed 实验。每个 Task 固定包含 10 个 Skill，由以下内容组成：
-
-1. 该 Task 的全部 Standard Skill；
-2. 该 Task 的全部 High Cost Skill；
-3. 从 34k-skills 候选池中可复现采样的 `N` 个无关噪声 Skill。
-
-噪声数量按 Task 计算：
-
-```text
-N = 10 - Standard Skill 数 - High Cost Skill 数
+```json
+{"task_id":"dialogue-parser","skills":["dialogue-graph-validation-serialization","dialogue-section-choice-parser"]}
 ```
 
-因此不同 Task 的噪声数量不同，但 `Selected` 总数始终为 10。当前统计为：
+同一文件中 `task_id` 不得重复，同一 Task 的 Skill 名也不得重复。Skill 字段只能是
+`optional_skills/skills` 下的一级目录名，不能填写任意路径。
 
-| 项目 | 数量 |
-| --- | ---: |
-| Task | 35 |
-| Standard Skill 条目 | 86 |
-| High Cost Skill 条目 | 86 |
-| Selected Skill 条目 | 350 |
+Runner 同时接受 `.yaml`/`.yml`，其顶层必须是相同记录组成的列表：
 
-`Selected` 的噪声 Skill 来源快照位于 `archive_local/ALL-34K-SKILLS`。可复现采样的
-目的，是在固定候选规模下生成可比较的 Skill 注入与加载验证数据，而不是把
-噪声 Skill 当作 Task 的 Gold Skill。
+```yaml
+- task_id: dialogue-parser
+  skills:
+    - dialogue-graph-validation-serialization
+    - dialogue-section-choice-parser
+```
 
-## Runner 对应关系
+YAML 解析需要 PyYAML；JSONL 只依赖 Python 标准库，是仓库内的默认格式。
+
+## Runner 用法
 
 ```powershell
-python .\benchmark\runner\run_baseline.py --standard
-python .\benchmark\runner\run_baseline.py --high-cost
-python .\benchmark\runner\run_baseline.py --selected
+python .\benchmark\runner\run_baseline.py --mapping-file `
+  .\benchmark\datas\single_skill_mapping\standard.jsonl
+
+python .\benchmark\runner\run_baseline.py --mapping-file `
+  .\benchmark\datas\single_skill_mapping\high_cost.jsonl
+
+python .\benchmark\runner\run_baseline.py --mapping-file `
+  .\benchmark\datas\single_skill_mapping\bm25_top10.jsonl
 ```
 
-Runner 会按 Task ID 查找 `<task-id>_Gold_skill`，并只加载当前条件对应的一级 Skill
-目录。`court-form-filling` 已停用，不属于当前 Task 集合。
+Runner 在调用 Harbor、Docker、API 或创建运行批次之前解析整份映射，并检查：
 
-## 维护约束
+1. 映射格式及字段类型；
+2. 本次运行的每个 Task 都存在映射；
+3. Task 和 Skill 引用没有重复；
+4. Skill 目录名没有路径穿越或大小写不一致；
+5. 每个 Skill 目录存在且根部包含 `SKILL.md`。
 
-- 修改 Standard 或 High Cost 集合后，必须重新核对 `Selected` 是否仍为 10 个；
-- Skill 目录名在同一 Task 内应保持大小写不敏感唯一；
-- 每个 Skill 根目录必须包含 `SKILL.md`；
-- 不要把运行时修改写回本目录；Runner 会在 `runtime/work` 中创建任务副本；
-- 更新 Mapping 后，应同步检查数据组件和相关运行结果的版本一致性。
+任一检查失败都会汇总错误并立即退出，不启动任何 Task。

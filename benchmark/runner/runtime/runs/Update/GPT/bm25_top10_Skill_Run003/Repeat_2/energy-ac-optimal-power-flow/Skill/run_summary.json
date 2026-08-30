@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "energy-ac-optimal-power-flow",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestFeasibility::test_internal_consistency_losses: AssertionError: Computed losses 425.12 != reported 423.88",
+  "peak_memory": {
+    "peak_memory_mib": 4745.0234375,
+    "peak_memory_raw": "4745.023 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 7617,
+    "observed_containers": [
+      "energy-ac-optimal-power-flow__fxiyktr__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "energy-ac-optimal-po",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run003\\Repeat_2\\energy-ac-optimal-power-flow\\mapping\\energy-ac-optimal-power-flow\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.669,
+    "agent_setup_sec": 0.403,
+    "agent_execution_sec": 694.886,
+    "verifier_sec": 154.961,
+    "total_sec": 860.259
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 2852743,
+  "agent_output_tokens": 13229,
+  "image_cache": {
+    "image": "benchmark-cache/energy-ac-optimal-power-flow-gold:131fccb5858c984c",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "anthropics--initiating-coverage",
+      "brianrwagner--reddit-insights",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve",
+      "rectangular-acopf-network-model",
+      "sparse-dcopf-reserve-lp-formulation",
+      "zhanlincui--project-to-obsidian"
+    ],
+    "available_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "anthropics--initiating-coverage",
+      "brianrwagner--reddit-insights",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve",
+      "rectangular-acopf-network-model",
+      "sparse-dcopf-reserve-lp-formulation",
+      "zhanlincui--project-to-obsidian"
+    ],
+    "loaded_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "anthropics--initiating-coverage",
+      "brianrwagner--reddit-insights",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve",
+      "rectangular-acopf-network-model",
+      "sparse-dcopf-reserve-lp-formulation",
+      "zhanlincui--project-to-obsidian"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "anthropics--initiating-coverage",
+      "brianrwagner--reddit-insights",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve",
+      "rectangular-acopf-network-model",
+      "sparse-dcopf-reserve-lp-formulation",
+      "zhanlincui--project-to-obsidian"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-ac-optimal-power-flow__FxiYKTr",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "anthropics--initiating-coverage",
+          "brianrwagner--reddit-insights",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve",
+          "rectangular-acopf-network-model",
+          "sparse-dcopf-reserve-lp-formulation",
+          "zhanlincui--project-to-obsidian"
+        ],
+        "available_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "anthropics--initiating-coverage",
+          "brianrwagner--reddit-insights",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve",
+          "rectangular-acopf-network-model",
+          "sparse-dcopf-reserve-lp-formulation",
+          "zhanlincui--project-to-obsidian"
+        ],
+        "loaded_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "anthropics--initiating-coverage",
+          "brianrwagner--reddit-insights",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve",
+          "rectangular-acopf-network-model",
+          "sparse-dcopf-reserve-lp-formulation",
+          "zhanlincui--project-to-obsidian"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "anthropics--initiating-coverage",
+          "brianrwagner--reddit-insights",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve",
+          "rectangular-acopf-network-model",
+          "sparse-dcopf-reserve-lp-formulation",
+          "zhanlincui--project-to-obsidian"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "mteb-retrieve",
+  "condition": "mapping",
+  "batch": "qwen_meta_top10_Skill_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_meta_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 2048.16796875,
+    "peak_memory_raw": "2048.168 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 6267,
+    "observed_containers": [
+      "mteb-retrieve__zr5aahf__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "mteb-retrieve",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_meta_top10_Skill_Run002\\Repeat_2\\mteb-retrieve\\mapping\\mteb-retrieve\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.129,
+    "agent_setup_sec": 0.519,
+    "agent_execution_sec": 175.388,
+    "verifier_sec": 460.01,
+    "total_sec": 648.002
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 372108,
+  "agent_output_tokens": 4089,
+  "image_cache": {
+    "image": "benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "Microck--rag-implementation",
+      "cinience--alicloud-ai-search-milvus",
+      "deterministic-fasttext-search-split",
+      "jackjin1997--langsmith-dataset",
+      "kivo360--moai-domain-data-science",
+      "mteb-streaming-topk-cosine-retrieval",
+      "numpy-distilbert-int8-inference",
+      "patricio0312rev--rag-pipeline-builder",
+      "scifact-prompt-bound-mteb-topk-retrieval",
+      "tanimoto-topk-molecule-ranking"
+    ],
+    "available_skills": [
+      "Microck--rag-implementation",
+      "cinience--alicloud-ai-search-milvus",
+      "deterministic-fasttext-search-split",
+      "jackjin1997--langsmith-dataset",
+      "kivo360--moai-domain-data-science",
+      "mteb-streaming-topk-cosine-retrieval",
+      "numpy-distilbert-int8-inference",
+      "patricio0312rev--rag-pipeline-builder",
+      "scifact-prompt-bound-mteb-topk-retrieval",
+      "tanimoto-topk-molecule-ranking"
+    ],
+    "loaded_skills": [
+      "Microck--rag-implementation",
+      "cinience--alicloud-ai-search-milvus",
+      "deterministic-fasttext-search-split",
+      "jackjin1997--langsmith-dataset",
+      "kivo360--moai-domain-data-science",
+      "mteb-streaming-topk-cosine-retrieval",
+      "numpy-distilbert-int8-inference",
+      "patricio0312rev--rag-pipeline-builder",
+      "scifact-prompt-bound-mteb-topk-retrieval",
+      "tanimoto-topk-molecule-ranking"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "Microck--rag-implementation",
+      "cinience--alicloud-ai-search-milvus",
+      "deterministic-fasttext-search-split",
+      "jackjin1997--langsmith-dataset",
+      "kivo360--moai-domain-data-science",
+      "mteb-streaming-topk-cosine-retrieval",
+      "numpy-distilbert-int8-inference",
+      "patricio0312rev--rag-pipeline-builder",
+      "scifact-prompt-bound-mteb-topk-retrieval",
+      "tanimoto-topk-molecule-ranking"
+    ],
+    "trials": [
+      {
+        "trial_id": "mteb-retrieve__Zr5aahf",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "Microck--rag-implementation",
+          "cinience--alicloud-ai-search-milvus",
+          "deterministic-fasttext-search-split",
+          "jackjin1997--langsmith-dataset",
+          "kivo360--moai-domain-data-science",
+          "mteb-streaming-topk-cosine-retrieval",
+          "numpy-distilbert-int8-inference",
+          "patricio0312rev--rag-pipeline-builder",
+          "scifact-prompt-bound-mteb-topk-retrieval",
+          "tanimoto-topk-molecule-ranking"
+        ],
+        "available_skills": [
+          "Microck--rag-implementation",
+          "cinience--alicloud-ai-search-milvus",
+          "deterministic-fasttext-search-split",
+          "jackjin1997--langsmith-dataset",
+          "kivo360--moai-domain-data-science",
+          "mteb-streaming-topk-cosine-retrieval",
+          "numpy-distilbert-int8-inference",
+          "patricio0312rev--rag-pipeline-builder",
+          "scifact-prompt-bound-mteb-topk-retrieval",
+          "tanimoto-topk-molecule-ranking"
+        ],
+        "loaded_skills": [
+          "Microck--rag-implementation",
+          "cinience--alicloud-ai-search-milvus",
+          "deterministic-fasttext-search-split",
+          "jackjin1997--langsmith-dataset",
+          "kivo360--moai-domain-data-science",
+          "mteb-streaming-topk-cosine-retrieval",
+          "numpy-distilbert-int8-inference",
+          "patricio0312rev--rag-pipeline-builder",
+          "scifact-prompt-bound-mteb-topk-retrieval",
+          "tanimoto-topk-molecule-ranking"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "Microck--rag-implementation",
+          "cinience--alicloud-ai-search-milvus",
+          "deterministic-fasttext-search-split",
+          "jackjin1997--langsmith-dataset",
+          "kivo360--moai-domain-data-science",
+          "mteb-streaming-topk-cosine-retrieval",
+          "numpy-distilbert-int8-inference",
+          "patricio0312rev--rag-pipeline-builder",
+          "scifact-prompt-bound-mteb-topk-retrieval",
+          "tanimoto-topk-molecule-ranking"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

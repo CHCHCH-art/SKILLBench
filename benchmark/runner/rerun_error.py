@@ -32,11 +32,10 @@ def parse_args() -> argparse.Namespace:
         help=f"Task input directory (default: {baseline.DEFAULT_TASKS_ROOT}).",
     )
     parser.add_argument(
-        "--mapping-root",
+        "--mapping-file",
         type=Path,
-        default=baseline.DEFAULT_MAPPING_ROOT,
         metavar="PATH",
-        help=f"Skill Mapping input directory (default: {baseline.DEFAULT_MAPPING_ROOT}).",
+        help="JSONL/YAML Skill mapping used by this batch (required for Skill runs).",
     )
     parser.add_argument(
         "--repeat",
@@ -246,11 +245,16 @@ def main() -> int:
     selected = errors if args.all_errors else requested_tasks(args.task)
     try:
         tasks_root = args.tasks_root.expanduser().resolve()
-        mapping_root = args.mapping_root.expanduser().resolve()
         validate_selection(selected, rows)
-        harbor, docker, api = baseline.preflight(
-            selected, condition, tasks_root, mapping_root
-        )
+        if condition == "no_skill":
+            mapping_file = None
+            skill_paths_by_task = {task_id: [] for task_id in selected}
+        else:
+            if args.mapping_file is None:
+                raise ValueError("--mapping-file is required when rerunning a Skill batch")
+            mapping_file = args.mapping_file.expanduser().resolve()
+            skill_paths_by_task = baseline.resolve_skill_mapping(mapping_file, selected)
+        harbor, docker, api = baseline.preflight(selected, tasks_root)
         light_tasks, heavy_tasks = baseline.build_execution_plan(
             selected,
             tasks_root,
@@ -267,7 +271,6 @@ def main() -> int:
     all_tasks = [row["task_id"].strip() for row in rows]
     failed: list[str] = []
     setup_failed: list[str] = []
-    monitor_stop_failed: list[str] = []
     interrupted = False
     result_code = 1
     try:
@@ -275,7 +278,7 @@ def main() -> int:
             f"[rerun-error] batch={batch_dir.name} condition={condition} "
             f"repeat={repeat} tasks={len(selected)}"
         )
-        effective_workers = 1 if condition == "danger" else args.task_workers
+        effective_workers = args.task_workers
         print(
             f"[rerun-error] scheduler=resource-aware "
             f"task_workers={effective_workers} light_tasks={len(light_tasks)} "
@@ -299,14 +302,14 @@ def main() -> int:
                 api=api,
                 batch_dir=batch_dir,
                 tasks_root=tasks_root,
-                mapping_root=mapping_root,
+                mapping_file=mapping_file,
+                skill_paths_by_task=skill_paths_by_task,
                 operation="rerun",
                 before_run=prepare_rerun,
             )
             for execution_result in execution_results:
                 failed.extend(execution_result.failures)
                 setup_failed.extend(execution_result.setup_failures)
-                monitor_stop_failed.extend(execution_result.monitor_stop_failures)
         except KeyboardInterrupt:
             print("\n[rerun-error] interrupted by user.", file=sys.stderr)
             interrupted = True
@@ -340,8 +343,6 @@ def main() -> int:
         else:
             print(f"[rerun-error] completed tasks={len(selected)}")
             result_code = 0
-        if monitor_stop_failed and result_code == 0:
-            result_code = 1
     except Exception as exc:
         print(f"[rerun-error][error] {type(exc).__name__}: {exc}", file=sys.stderr)
         try:

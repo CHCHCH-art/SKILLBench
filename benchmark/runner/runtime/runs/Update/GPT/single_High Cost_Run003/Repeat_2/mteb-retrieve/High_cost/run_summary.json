@@ -1,0 +1,73 @@
+{
+  "schema_version": 8,
+  "task_id": "mteb-retrieve",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run003",
+  "repeat": 2,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\high_cost.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1284.096,
+    "peak_memory_raw": "1284.096 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": null,
+    "container_name_hint": "mteb-retrieve"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.88,
+    "agent_setup_sec": 1.118,
+    "agent_execution_sec": 129.074,
+    "verifier_sec": 581.568,
+    "total_sec": 716.718
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 173984,
+  "agent_output_tokens": 2367,
+  "image_cache": {
+    "image": "benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "mteb-streaming-topk-cosine-retrieval"
+    ],
+    "available_skills": [
+      "mteb-streaming-topk-cosine-retrieval"
+    ],
+    "loaded_skills": [],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "mteb-retrieve__LhQWTuM",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "mteb-streaming-topk-cosine-retrieval"
+        ],
+        "available_skills": [
+          "mteb-streaming-topk-cosine-retrieval"
+        ],
+        "loaded_skills": [],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": false,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

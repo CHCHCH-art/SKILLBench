@@ -1,0 +1,89 @@
+{
+  "schema_version": 7,
+  "task_id": "earthquake-plate-calculation",
+  "condition": "standard",
+  "batch": "single_Standard_Run004",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 70.76,
+    "peak_memory_raw": "70.760 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "earthquake-plate-cal"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.816,
+    "agent_setup_sec": 0.404,
+    "agent_execution_sec": 72.025,
+    "verifier_sec": 7.626,
+    "total_sec": 84.821
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 115006,
+  "agent_output_tokens": 2540,
+  "image_cache": {
+    "image": "benchmark-cache/earthquake-plate-calculation-gold:9daffd7dc0823601",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "geospatial-plate-membership-filter",
+      "projected-boundary-distance-selection"
+    ],
+    "available_skills": [
+      "geospatial-plate-membership-filter",
+      "projected-boundary-distance-selection"
+    ],
+    "loaded_skills": [
+      "geospatial-plate-membership-filter",
+      "projected-boundary-distance-selection"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "geospatial-plate-membership-filter",
+      "projected-boundary-distance-selection"
+    ],
+    "trials": [
+      {
+        "trial_id": "earthquake-plate-calculation__NLu2ucR",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "geospatial-plate-membership-filter",
+          "projected-boundary-distance-selection"
+        ],
+        "available_skills": [
+          "geospatial-plate-membership-filter",
+          "projected-boundary-distance-selection"
+        ],
+        "loaded_skills": [
+          "geospatial-plate-membership-filter",
+          "projected-boundary-distance-selection"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "geospatial-plate-membership-filter",
+          "projected-boundary-distance-selection"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

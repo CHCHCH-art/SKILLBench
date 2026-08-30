@@ -1,0 +1,4 @@
+version: 1
+display_name: "Zustand"
+short_description: "Zustand state management patterns for React applications. Use when implementing client-side global state, persisted state, or computed va..."
+default_prompt: "Use this skill when: Zustand state management patterns for React applications. Use when implementing client-side global state, persisted state, or computed values. Lightweight alternative to Redux with minimal boilerplate."

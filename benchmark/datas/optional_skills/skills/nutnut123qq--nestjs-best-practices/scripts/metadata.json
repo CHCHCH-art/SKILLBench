@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "organization": "NestJS Best Practices",
+  "date": "2025",
+  "abstract": "Conventions for NestJS applications using configurable dynamic modules, custom domain exceptions, Mongoose data access, and feature-based module organization. Designed for AI agents and LLMs when maintaining or refactoring NestJS codebases.",
+  "references": [
+    "NestJS Dynamic Modules: https://docs.nestjs.com/fundamentals/dynamic-modules",
+    "NestJS Custom Decorators: https://docs.nestjs.com/custom-decorators",
+    "class-validator: https://github.com/typestack/class-validator"
+  ]
+}

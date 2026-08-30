@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "dialogue-parser",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 545.73828125,
+    "peak_memory_raw": "545.738 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 1853,
+    "observed_containers": [
+      "dialogue-parser__ebnroxz__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "dialogue-parser",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run003\\Repeat_2\\dialogue-parser\\mapping\\dialogue-parser\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.359,
+    "agent_setup_sec": 0.456,
+    "agent_execution_sec": 172.468,
+    "verifier_sec": 4.578,
+    "total_sec": 189.206
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 352554,
+  "agent_output_tokens": 5305,
+  "image_cache": {
+    "image": "benchmark-cache/dialogue-parser-gold:c0353fb4817c6884",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "AltimateAI--creating-dbt-models",
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser",
+      "lubu-labs--langgraph-project-setup",
+      "posit-dev--release-post",
+      "unified-planning-plan-file-writing",
+      "yaleh--error-recovery"
+    ],
+    "available_skills": [
+      "AltimateAI--creating-dbt-models",
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser",
+      "lubu-labs--langgraph-project-setup",
+      "posit-dev--release-post",
+      "unified-planning-plan-file-writing",
+      "yaleh--error-recovery"
+    ],
+    "loaded_skills": [
+      "AltimateAI--creating-dbt-models",
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser",
+      "lubu-labs--langgraph-project-setup",
+      "posit-dev--release-post",
+      "unified-planning-plan-file-writing",
+      "yaleh--error-recovery"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "AltimateAI--creating-dbt-models",
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser",
+      "lubu-labs--langgraph-project-setup",
+      "posit-dev--release-post",
+      "unified-planning-plan-file-writing",
+      "yaleh--error-recovery"
+    ],
+    "trials": [
+      {
+        "trial_id": "dialogue-parser__eBnroXZ",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "AltimateAI--creating-dbt-models",
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser",
+          "lubu-labs--langgraph-project-setup",
+          "posit-dev--release-post",
+          "unified-planning-plan-file-writing",
+          "yaleh--error-recovery"
+        ],
+        "available_skills": [
+          "AltimateAI--creating-dbt-models",
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser",
+          "lubu-labs--langgraph-project-setup",
+          "posit-dev--release-post",
+          "unified-planning-plan-file-writing",
+          "yaleh--error-recovery"
+        ],
+        "loaded_skills": [
+          "AltimateAI--creating-dbt-models",
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser",
+          "lubu-labs--langgraph-project-setup",
+          "posit-dev--release-post",
+          "unified-planning-plan-file-writing",
+          "yaleh--error-recovery"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "AltimateAI--creating-dbt-models",
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser",
+          "lubu-labs--langgraph-project-setup",
+          "posit-dev--release-post",
+          "unified-planning-plan-file-writing",
+          "yaleh--error-recovery"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

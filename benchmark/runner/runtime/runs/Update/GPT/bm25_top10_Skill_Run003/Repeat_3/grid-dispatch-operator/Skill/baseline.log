@@ -1,0 +1,28 @@
+2026-08-29T19:05:57.455770+00:00 START operation=run batch=bm25_top10_Skill_Run003 repeat=3 task=grid-dispatch-operator condition=mapping image=benchmark-cache/grid-dispatch-operator-gold:4acd0bce1add524f provided_skills=["sparse-dcopf-reserve-lp-formulation", "cvxpy-dcopf-reserve-cooptimization", "dcopf-reserve-lmp-solve", "dispatch-loading-operating-margin-report", "dc-dispatch-piecewise-master", "dcopf-counterfactual-impact-analysis", "rectangular-acopf-network-model", "dispatch-reserve-and-ptdf-audit", "acopf-solution-reporting", "transmission-limit-counterfactual-impact"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:04:38 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 38s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_3\grid-dispatch-operator\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_3\grid-dispatch-operator\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_3\grid-dispatch-operator\Skill\Job_result`
+
+2026-08-29T19:10:37.144838+00:00 FAIL operation=run batch=bm25_top10_Skill_Run003 repeat=3 task=grid-dispatch-operator condition=mapping

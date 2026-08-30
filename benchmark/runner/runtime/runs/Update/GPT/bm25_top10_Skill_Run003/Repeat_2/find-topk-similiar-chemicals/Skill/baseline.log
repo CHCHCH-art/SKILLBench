@@ -1,0 +1,28 @@
+2026-08-29T17:32:54.656654+00:00 START operation=run batch=bm25_top10_Skill_Run003 repeat=2 task=find-topk-similiar-chemicals condition=mapping image=benchmark-cache/find-topk-similiar-chemicals-gold:bd06707e8ac4a427 provided_skills=["pdf-molecule-name-pool-extraction", "tanimoto-topk-molecule-ranking", "chemical-pdf-pubchem-structure-resolution", "pubchem-morgan-fingerprint-resolution", "morgan-count-tanimoto-ranking", "mteb-streaming-topk-cosine-retrieval", "davila7--pennylane", "julianobarbosa--markitdown-skill", "scifact-prompt-bound-mteb-topk-retrieval", "tavily-ai--search"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:06:08 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 6m 8s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_2\find-topk-similiar-chemicals\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_2\find-topk-similiar-chemicals\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_2\find-topk-similiar-chemicals\Skill\Job_result`
+
+2026-08-29T17:39:04.242311+00:00 PASS operation=run batch=bm25_top10_Skill_Run003 repeat=2 task=find-topk-similiar-chemicals condition=mapping

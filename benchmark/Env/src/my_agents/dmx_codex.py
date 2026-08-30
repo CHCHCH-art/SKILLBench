@@ -51,6 +51,7 @@ class DMXCodex(BaseInstalledAgent):
     _CHAT_ADAPTER_MODELS = frozenset({"deepseek-v4-flash"})
     _CHAT_ADAPTER_PORT = 18766
     _CLEAN_IMAGE_SKILLS_ENV = "DMX_CODEX_CLEAN_IMAGE_SKILLS"
+    _PRELOAD_SKILLS_ENV = "DMX_CODEX_PRELOAD_SKILLS"
     _IMAGE_SKILL_DIRS = (
         "/app/skills",
         "/etc/claude-code/.claude/skills",
@@ -1184,6 +1185,44 @@ class DMXCodex(BaseInstalledAgent):
             "-name SKILL.md -print"
         )
 
+    def _build_preloaded_instruction_command(self, instruction: str) -> str | None:
+        """Build an in-container command that adds root Skills to the prompt."""
+        preload = parse_bool_env_value(
+            self._get_env(self._PRELOAD_SKILLS_ENV),
+            name=self._PRELOAD_SKILLS_ENV,
+            default=False,
+        )
+        if not preload or not self.skills_dir:
+            return None
+
+        escaped_instruction = shlex.quote(instruction)
+        return (
+            'prompt_file="$CODEX_HOME/preloaded-instruction.md"; '
+            'skill_files=$(find "$HOME/.agents/skills" -mindepth 2 -maxdepth 2 '
+            '-type f -name SKILL.md -print | LC_ALL=C sort); '
+            'test -n "$skill_files" || { '
+            'echo "No root SKILL.md files found under $HOME/.agents/skills" >&2; '
+            'exit 1; }; '
+            '{ '
+            "printf '%s\\n\\n' "
+            + shlex.quote(
+                "The following task Skills are preloaded into your context. Apply "
+                "their instructions as relevant. They remain available on disk under "
+                "/root/.agents/skills for reference."
+            )
+            + '; printf \'%s\\n\' "$skill_files" | '
+            'while IFS= read -r skill_file; do '
+            'skill_name=$(basename "$(dirname "$skill_file")"); '
+            'printf \'<preloaded_skill name="%s">\\n\' "$skill_name"; '
+            'cat "$skill_file"; '
+            "printf '\\n</preloaded_skill>\\n\\n'; "
+            'done; '
+            "printf '<task_instruction>\\n'; "
+            + f"printf '%s\\n' {escaped_instruction}; "
+            "printf '</task_instruction>\\n'; "
+            '} > "$prompt_file"'
+        )
+
     def _build_register_mcp_servers_command(self) -> str | None:
         """Return a shell command that writes MCP config to $CODEX_HOME/config.toml."""
         if not self.mcp_servers:
@@ -1304,6 +1343,9 @@ class DMXCodex(BaseInstalledAgent):
         self, instruction: str, environment: BaseEnvironment, context: AgentContext
     ) -> None:
         escaped_instruction = shlex.quote(instruction)
+        preloaded_instruction_command = self._build_preloaded_instruction_command(
+            instruction
+        )
 
         if not self.model_name:
             raise ValueError("Model name is required")
@@ -1421,21 +1463,35 @@ class DMXCodex(BaseInstalledAgent):
                     upstream_base_url=openai_base_url,
                     api_key=api_key,
                 )
+            preload_prefix = ""
+            codex_instruction = escaped_instruction
+            stdin_redirect = "</dev/null"
+            if preloaded_instruction_command:
+                preload_prefix = preloaded_instruction_command + "; "
+                # A preloaded prompt can easily exceed Linux's per-argument
+                # MAX_ARG_STRLEN (normally 128 KiB). Codex treats `-` as an
+                # instruction to read the complete initial prompt from stdin,
+                # so keep the prompt in the file instead of copying it into
+                # one argv entry.
+                codex_instruction = "-"
+                stdin_redirect = '< "$CODEX_HOME/preloaded-instruction.md"'
+            codex_command = (
+                "if [ -s ~/.nvm/nvm.sh ]; then . ~/.nvm/nvm.sh; fi; "
+                + preload_prefix
+                + "codex exec "
+                + "--dangerously-bypass-approvals-and-sandbox "
+                + "--skip-git-repo-check "
+                + f"--model {model} "
+                + "--json "
+                + "--enable unified_exec "
+                + cli_flags_arg
+                + "-- "
+                + codex_instruction
+                + f" 2>&1 {stdin_redirect} | tee {shlex.quote(codex_output_path)}"
+            )
             await self.exec_as_agent(
                 environment,
-                command=(
-                    "if [ -s ~/.nvm/nvm.sh ]; then . ~/.nvm/nvm.sh; fi; "
-                    "codex exec "
-                    "--dangerously-bypass-approvals-and-sandbox "
-                    "--skip-git-repo-check "
-                    f"--model {model} "
-                    "--json "
-                    "--enable unified_exec "
-                    f"{cli_flags_arg}"
-                    "-- "  # end of flags
-                    f"{escaped_instruction} "
-                    f"2>&1 </dev/null | tee {shlex.quote(codex_output_path)}"
-                ),
+                command=codex_command,
                 env=env,
             )
         finally:

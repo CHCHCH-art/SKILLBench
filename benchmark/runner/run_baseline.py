@@ -24,42 +24,38 @@ from paths import (
     AGENT_SRC_ROOT,
     CURRENT_TASKS_ROOT,
     DEFAULT_API_CONFIG,
-    DEFAULT_MAPPING_ROOT,
+    DEFAULT_SKILLS_ROOT,
     DEFAULT_TASKS_ROOT,
     RUNNER_ROOT,
     RUNS_ROOT,
-    SINK_DOCKER_ROOT,
     TASK_IMAGES_FILE,
     WORK_ROOT,
 )
 
 
-SINK_START_SCRIPT = SINK_DOCKER_ROOT / "start_container.sh"
-SINK_STOP_SCRIPT = SINK_DOCKER_ROOT / "stop_container.sh"
-DANGER_NETWORK_NAME = "skill_net_network"
-DANGER_NETWORK_COMPOSE = "danger-network.compose.yaml"
-DANGER_MONITOR_LOG_NAME = "danger-monitor.log"
-
 DEFAULT_AGENT = "my_agents.dmx_codex:DMXCodex"
-DEFAULT_MODEL = "deepseek-v4-flash"
+DEFAULT_MODEL = "gpt-5.6-luna-cdx"
 DEFAULT_CODEX_VERSION = "0.145.0"
 DEFAULT_AGENT_SETUP_TIMEOUT_MULTIPLIER = "2.0"
 JOB_NAME = "Job_result"
-MEMORY_POLL_SECONDS = 0.05
+MEMORY_POLL_SECONDS = 0.1
+DOCKER_COMMAND_TIMEOUT_SECONDS = 10.0
 DEFAULT_TASK_WORKERS = 2
 DEFAULT_MAX_PARALLEL_CPUS = 16
 DEFAULT_MAX_PARALLEL_MEMORY_MIB = 24 * 1024
 CONDITION_DIR_NAMES = {
+    "mapping": "Skill",
+    # Retained so rerun_error.py can still read batches created by older CLIs.
     "standard": "Standard",
     "high_cost": "High_cost",
-    "danger": "Danger",
     "selected": "Selected",
     "no_skill": "No_skill",
 }
 RUN_DIR_PREFIXES = {
+    "mapping": "Skill",
+    # Retained for compatibility with existing batch metadata.
     "standard": "Standard",
     "high_cost": "High Cost",
-    "danger": "Risk",
     "selected": "Selected",
     "no_skill": "No_skill",
 }
@@ -87,7 +83,6 @@ class ScheduledTask:
 class TaskExecutionResult:
     failures: list[str]
     setup_failures: list[str]
-    monitor_stop_failures: list[str]
 
 
 def utc_now() -> str:
@@ -120,8 +115,8 @@ def configure_standard_streams() -> None:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Run Harbor with No Skills, Standard Skills, Danger Path_Read Skills, "
-            "task-specific High Cost Skills, or task-specific Selected Skills."
+            "Run Harbor with No Skills or task-specific Skills selected by a "
+            "JSONL/YAML mapping file."
         )
     )
     condition = parser.add_mutually_exclusive_group(required=True)
@@ -133,31 +128,11 @@ def parse_args() -> argparse.Namespace:
         help="Run without providing any task Skill to the Agent.",
     )
     condition.add_argument(
-        "--standard",
-        action="store_true",
-        help="Run the Standard baseline for every task (or the tasks selected by --task).",
-    )
-    condition.add_argument(
-        "--high_cost",
-        "--high-cost",
-        dest="high_cost",
-        action="store_true",
-        help="Run the High Cost baseline for every task (or the tasks selected by --task).",
-    )
-    condition.add_argument(
-        "--selected",
-        action="store_true",
-        help="Run the task-specific Skills under each task's Selected directory.",
-    )
-    condition.add_argument(
-        "--danger",
-        "--Danger",
-        dest="danger",
-        action="store_true",
-        help=(
-            "Run the Danger baseline using every first-level Skill under "
-            "Danger/Path_Read for each task."
-        ),
+        "--mapping-file",
+        dest="mapping_file",
+        type=Path,
+        metavar="PATH",
+        help="Run with the task-to-Skill assignments in this JSONL/YAML mapping.",
     )
     parser.add_argument(
         "--tasks-root",
@@ -166,21 +141,31 @@ def parse_args() -> argparse.Namespace:
         metavar="PATH",
         help=f"Task input directory (default: {DEFAULT_TASKS_ROOT}).",
     )
-    parser.add_argument(
-        "--mapping-root",
-        type=Path,
-        default=DEFAULT_MAPPING_ROOT,
-        metavar="PATH",
-        help=f"Skill Mapping input directory (default: {DEFAULT_MAPPING_ROOT}).",
+    preload_group = parser.add_mutually_exclusive_group()
+    preload_group.add_argument(
+        "--preload-skills",
+        dest="preload_skills",
+        action="store_true",
+        default=True,
+        help=(
+            "Embed each provided root SKILL.md in the initial Codex instruction "
+            "while still exposing it as a mounted Skill (default)."
+        ),
+    )
+    preload_group.add_argument(
+        "--no-preload-skills",
+        dest="preload_skills",
+        action="store_false",
+        help="Do not embed provided Skill content in the initial Codex instruction.",
     )
     parser.add_argument(
         "--repeat",
         type=int,
-        default=1,
+        default=3,
         metavar="N",
         help=(
             "Number of repetitions in one batch. Repetitions of the same task "
-            "stay in one sequential worker unit (default: 1)."
+            "stay in one sequential worker unit (default: 3)."
         ),
     )
     parser.add_argument(
@@ -298,108 +283,147 @@ def command_path(name: str) -> str:
     return resolved
 
 
-def bash_path() -> str:
-    candidates: list[Path] = []
-    if os.name == "nt":
-        program_files = os.environ.get("ProgramFiles")
-        if program_files:
-            candidates.append(Path(program_files) / "Git" / "bin" / "bash.exe")
-    resolved = shutil.which("bash")
-    if resolved:
-        candidates.append(Path(resolved))
+def read_skill_mapping(path: Path) -> list[dict[str, Any]]:
+    if not path.is_file():
+        raise FileNotFoundError(f"Skill mapping file does not exist: {path}")
 
-    for candidate in candidates:
-        if candidate.is_file():
-            return str(candidate)
-    raise FileNotFoundError(
-        "bash was not found; Git Bash is required to manage the Danger sink container"
-    )
+    suffix = path.suffix.lower()
+    if suffix == ".jsonl":
+        records: list[dict[str, Any]] = []
+        for line_number, raw_line in enumerate(
+            path.read_text(encoding="utf-8-sig").splitlines(), start=1
+        ):
+            line = raw_line.strip()
+            if not line:
+                continue
+            try:
+                record = json.loads(line)
+            except json.JSONDecodeError as exc:
+                raise ValueError(
+                    f"Invalid JSON in {path} line {line_number}: {exc.msg}"
+                ) from exc
+            if not isinstance(record, dict):
+                raise ValueError(
+                    f"Mapping record in {path} line {line_number} must be an object"
+                )
+            records.append(record)
+        return records
 
-
-def run_sink_script(
-    script: Path,
-    *,
-    extra_env: dict[str, str] | None = None,
-) -> str:
-    if not script.is_file():
-        raise FileNotFoundError(f"Sink lifecycle script not found: {script}")
-    relative_script = script.relative_to(RUNNER_ROOT).as_posix()
-    env = os.environ.copy()
-    env["NETWORK_NAME"] = DANGER_NETWORK_NAME
-    if extra_env:
-        env.update(extra_env)
-    result = subprocess.run(
-        [bash_path(), relative_script],
-        cwd=RUNNER_ROOT,
-        env=env,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        check=False,
-    )
-    output = result.stdout.rstrip()
-    if result.returncode != 0:
-        raise RuntimeError(
-            f"Sink lifecycle script failed ({script.name}, exit={result.returncode}): "
-            f"{output or 'no output'}"
-        )
-    return output
-
-
-def git_bash_path(path: Path) -> str:
-    resolved = path.resolve().as_posix()
-    if os.name == "nt":
-        drive_match = re.match(r"^([A-Za-z]):/(.*)$", resolved)
-        if drive_match:
-            drive, remainder = drive_match.groups()
-            return f"/{drive.lower()}/{remainder}"
-    return resolved
-
-
-def start_danger_monitor(log_file: Path) -> dict[str, str]:
-    # Always create a fresh receiver lifecycle for this Danger batch so the
-    # log cannot be shared with a previous run. Keep the receiver log beside
-    # the rest of that batch's artifacts instead of in sink_network.
-    log_file.parent.mkdir(parents=True, exist_ok=True)
-    stop_output = run_sink_script(SINK_STOP_SCRIPT)
-    start_output = run_sink_script(
-        SINK_START_SCRIPT,
-        extra_env={
-            "LOG_DIR": git_bash_path(log_file.parent),
-            "LOG_FILE_NAME": log_file.name,
-        },
-    )
-    log_match = re.search(r"^Log file:\s*(.+)$", start_output, re.MULTILINE)
-    if log_match is None:
+    if suffix in {".yaml", ".yml"}:
         try:
-            run_sink_script(SINK_STOP_SCRIPT)
-        except Exception:
-            pass
-        raise RuntimeError(
-            "Danger sink started but did not report its log file: "
-            + start_output
-        )
-    if not log_file.is_file():
-        try:
-            run_sink_script(SINK_STOP_SCRIPT)
-        except Exception:
-            pass
-        raise RuntimeError(
-            "Danger sink did not create its expected batch log: "
-            f"{log_file} (reported {log_match.group(1).strip()})"
-        )
-    return {
-        "network": DANGER_NETWORK_NAME,
-        "log_file": str(log_file),
-        "stop_output": stop_output,
-        "start_output": start_output,
-    }
+            import yaml
+        except ImportError as exc:
+            raise RuntimeError(
+                "YAML mapping files require PyYAML; install it or use JSONL"
+            ) from exc
+        payload = yaml.safe_load(path.read_text(encoding="utf-8-sig"))
+        if not isinstance(payload, list) or any(
+            not isinstance(record, dict) for record in payload
+        ):
+            raise ValueError(f"YAML mapping must be a list of objects: {path}")
+        return payload
+
+    raise ValueError(
+        f"Unsupported mapping format {path.suffix!r}; expected .jsonl, .yaml, or .yml"
+    )
 
 
-def stop_danger_monitor() -> str:
-    return run_sink_script(SINK_STOP_SCRIPT)
+def resolve_skill_mapping(
+    mapping_file: Path,
+    tasks: list[str],
+    skills_root: Path = DEFAULT_SKILLS_ROOT,
+) -> dict[str, list[Path]]:
+    records = read_skill_mapping(mapping_file)
+    errors: list[str] = []
+    configured: dict[str, list[str]] = {}
+
+    for index, record in enumerate(records, start=1):
+        task_id = record.get("task_id")
+        skill_names = record.get("skills")
+        if not isinstance(task_id, str) or not task_id.strip():
+            errors.append(f"record {index}: task_id must be a non-empty string")
+            continue
+        task_id = task_id.strip()
+        if task_id in configured:
+            errors.append(f"task {task_id!r}: duplicate mapping entry")
+            continue
+        if not isinstance(skill_names, list) or not skill_names:
+            errors.append(f"task {task_id!r}: skills must be a non-empty list")
+            continue
+        invalid = [
+            name
+            for name in skill_names
+            if not isinstance(name, str) or not name.strip()
+        ]
+        if invalid:
+            errors.append(
+                f"task {task_id!r}: every Skill name must be a non-empty string"
+            )
+            continue
+        configured[task_id] = [name.strip() for name in skill_names]
+
+    available: dict[str, Path] = {}
+    casefold_names: dict[str, str] = {}
+    if not skills_root.is_dir():
+        errors.append(f"central Skill directory does not exist: {skills_root}")
+    else:
+        for child in skills_root.iterdir():
+            if not child.is_dir():
+                continue
+            folded = child.name.casefold()
+            previous = casefold_names.get(folded)
+            if previous is not None:
+                errors.append(
+                    f"central Skill names are not case-insensitively unique: "
+                    f"{previous!r}, {child.name!r}"
+                )
+            else:
+                casefold_names[folded] = child.name
+                available[child.name] = child
+
+    selected: dict[str, list[Path]] = {}
+    for task_id in tasks:
+        skill_names = configured.get(task_id)
+        if skill_names is None:
+            errors.append(f"task {task_id!r}: no mapping entry")
+            continue
+        seen: set[str] = set()
+        paths: list[Path] = []
+        for name in skill_names:
+            if name in seen:
+                errors.append(f"task {task_id!r}: duplicate Skill {name!r}")
+                continue
+            seen.add(name)
+            if (
+                Path(name).name != name
+                or name in {".", ".."}
+                or "/" in name
+                or "\\" in name
+            ):
+                errors.append(f"task {task_id!r}: invalid Skill directory name {name!r}")
+                continue
+            skill_dir = available.get(name)
+            if skill_dir is None:
+                case_match = casefold_names.get(name.casefold())
+                if case_match is not None:
+                    errors.append(
+                        f"task {task_id!r}: Skill name case mismatch {name!r}; "
+                        f"expected {case_match!r}"
+                    )
+                else:
+                    errors.append(f"task {task_id!r}: Skill not found {name!r}")
+                continue
+            if not (skill_dir / "SKILL.md").is_file():
+                errors.append(
+                    f"task {task_id!r}: Skill has no root SKILL.md: {skill_dir}"
+                )
+                continue
+            paths.append(skill_dir)
+        selected[task_id] = paths
+
+    if errors:
+        raise ValueError("Skill mapping validation failed:\n- " + "\n- ".join(errors))
+    return selected
 
 
 def load_task_image_map(path: Path) -> dict[str, str]:
@@ -463,9 +487,7 @@ def resolve_mapped_images(docker: str, tasks: list[str]) -> dict[str, str]:
 
 def preflight(
     tasks: list[str],
-    condition: str,
     tasks_root: Path,
-    mapping_root: Path,
 ) -> tuple[str, str, dict[str, Any]]:
     if not RUNNER_ROOT.is_dir():
         raise FileNotFoundError(f"Runner project not found: {RUNNER_ROOT}")
@@ -503,71 +525,11 @@ def preflight(
             if not (task_dir / relative).is_file():
                 raise FileNotFoundError(f"Task {task_id!r} is missing {relative}")
 
-        group_dir = mapping_root / f"{task_id}_Gold_skill"
-        if condition == "standard":
-            standard_dir = group_dir / "Standard SKILLs"
-            skill_dirs = skill_dirs_under(standard_dir)
-            if not skill_dirs:
-                raise ValueError(f"No Standard Skills found for {task_id}: {standard_dir}")
-        elif condition == "high_cost":
-            high_cost_dir = resolve_high_cost_dir(group_dir)
-            skill_dirs = skill_dirs_under(high_cost_dir)
-            if not skill_dirs:
-                raise ValueError(f"No High Cost Skills found for {task_id}: {high_cost_dir}")
-        elif condition == "danger":
-            danger_dir = group_dir / "Danger" / "Path_Read"
-            skill_dirs = danger_skill_dirs(danger_dir)
-            if not skill_dirs:
-                raise ValueError(f"No Danger Path_Read Skills found for {task_id}: {danger_dir}")
-        elif condition == "selected":
-            selected_dir = group_dir / "Selected"
-            skill_dirs = skill_dirs_under(selected_dir)
-            if not skill_dirs:
-                raise ValueError(f"No Selected Skills found for {task_id}: {selected_dir}")
-        elif condition != "no_skill":
-            raise ValueError(f"Unsupported condition: {condition}")
-
     return harbor, docker, {
         **api,
         "api_config_path": str(api_config_path),
         "mapped_images": mapped_images,
     }
-
-
-def skill_dirs_under(parent: Path) -> list[Path]:
-    if not parent.is_dir():
-        return []
-    return sorted(
-        path
-        for path in parent.iterdir()
-        if path.is_dir() and (path / "SKILL.md").is_file()
-    )
-
-
-def resolve_high_cost_dir(group_dir: Path) -> Path:
-    candidates = [group_dir / "High_Cost_Skills", group_dir / "High cost"]
-    existing = [path for path in candidates if path.is_dir()]
-    if len(existing) == 1:
-        return existing[0]
-    if not existing:
-        raise FileNotFoundError(
-            f"High Cost directory not found under {group_dir}; expected "
-            "'High_Cost_Skills' or 'High cost'"
-        )
-    raise ValueError(
-        f"Multiple High Cost directories found under {group_dir}: "
-        + ", ".join(path.name for path in existing)
-    )
-
-
-def danger_skill_dirs(path_read_dir: Path) -> list[Path]:
-    if not path_read_dir.is_dir():
-        return []
-    return sorted(
-        path
-        for path in path_read_dir.iterdir()
-        if path.is_dir() and (path / "SKILL.md").is_file()
-    )
 
 
 def assert_within(path: Path, root: Path) -> None:
@@ -663,90 +625,33 @@ def configure_prebuilt_image(task_dir: Path, image: str) -> None:
     task_toml.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def write_danger_network_compose(run_dir: Path, task_id: str) -> Path:
-    compose_path = run_dir / DANGER_NETWORK_COMPOSE
-    write_json(
-        compose_path,
-        {
-            "services": {
-                "main": {
-                    "networks": ["default", DANGER_NETWORK_NAME],
-                    "environment": {
-                        "BENCHMARK_TASK_ID": task_id,
-                        # Backward compatibility for previously injected
-                        # injected backup sender copies.
-                        "CONTAINER_NAME": task_id,
-                    },
-                    "labels": {
-                        "benchmark.task_id": task_id,
-                    },
-                }
-            },
-            "networks": {
-                "default": {},
-                DANGER_NETWORK_NAME: {
-                    "external": True,
-                    "name": DANGER_NETWORK_NAME,
-                },
-            },
-        },
-    )
-    return compose_path
-
-
-def standard_skill_paths(task_id: str, mapping_root: Path) -> list[Path]:
-    source_root = mapping_root / f"{task_id}_Gold_skill" / "Standard SKILLs"
-    return skill_dirs_under(source_root)
-
-
-def danger_skill_paths(task_id: str, mapping_root: Path) -> list[Path]:
-    source_root = (
-        mapping_root
-        / f"{task_id}_Gold_skill"
-        / "Danger"
-        / "Path_Read"
-    )
-    return danger_skill_dirs(source_root)
-
-
-def high_cost_skill_paths(task_id: str, mapping_root: Path) -> list[Path]:
-    group_dir = mapping_root / f"{task_id}_Gold_skill"
-    return skill_dirs_under(resolve_high_cost_dir(group_dir))
-
-
-def selected_skill_paths(task_id: str, mapping_root: Path) -> list[Path]:
-    source_root = mapping_root / f"{task_id}_Gold_skill" / "Selected"
-    return skill_dirs_under(source_root)
-
-
 def validate_selected_skills(
     condition: str,
     selected: list[Path],
 ) -> None:
-    if condition in {"standard", "high_cost", "danger", "selected"} and not selected:
-        raise RuntimeError(f"{condition} runs require at least one Skill directory")
     if condition == "no_skill" and selected:
         raise RuntimeError("No Skill runs must not select any Skill directories")
+    if condition != "no_skill" and not selected:
+        raise RuntimeError("Mapped Skill runs require at least one Skill directory")
     for skill_dir in selected:
         if not (skill_dir / "SKILL.md").is_file():
             raise FileNotFoundError(f"Selected Skill has no root SKILL.md: {skill_dir}")
 
 
-def mapping_run_prefix(mapping_root: Path) -> str:
-    parts = mapping_root.name.rsplit("_", 2)
-    if len(parts) != 3 or not parts[0]:
-        raise ValueError(
-            "Mapping directory name must contain at least two underscores so its "
-            f"run prefix can be inferred: {mapping_root.name!r}"
-        )
-    return parts[0]
+def mapping_run_prefix(mapping_file: Path | None) -> str:
+    if mapping_file is None:
+        return "single"
+    prefix = re.sub(r"[^A-Za-z0-9._-]+", "_", mapping_file.stem).strip("._-")
+    if not prefix:
+        raise ValueError(f"Cannot infer a run prefix from mapping file: {mapping_file}")
+    return prefix
 
 
-def allocate_batch_dir(condition: str, mapping_root: Path) -> Path:
+def allocate_batch_dir(condition: str, mapping_file: Path | None) -> Path:
     condition_prefix = RUN_DIR_PREFIXES.get(condition)
     if condition_prefix is None:
         raise ValueError(f"Unsupported condition: {condition}")
-    prefix = f"{mapping_run_prefix(mapping_root)}_{condition_prefix}"
+    prefix = f"{mapping_run_prefix(mapping_file)}_{condition_prefix}"
 
     RUNS_ROOT.mkdir(parents=True, exist_ok=True)
     for _ in range(1_000_000):
@@ -904,136 +809,70 @@ def batch_work_root(batch_dir: Path) -> Path:
     return CURRENT_TASKS_ROOT.joinpath(*relative.parts)
 
 
-def parse_memory_mib(raw: str) -> float | None:
-    value = raw.strip()
-    units = {
-        "B": 1 / 1024 / 1024,
-        "KiB": 1 / 1024,
-        "MiB": 1,
-        "GiB": 1024,
-        "TiB": 1024 * 1024,
-        "kB": 1000 / 1024 / 1024,
-        "KB": 1000 / 1024 / 1024,
-        "MB": 1000 * 1000 / 1024 / 1024,
-        "GB": 1000 * 1000 * 1000 / 1024 / 1024,
-    }
-    for unit in sorted(units, key=len, reverse=True):
-        if value.endswith(unit):
-            try:
-                return float(value[: -len(unit)].strip()) * units[unit]
-            except ValueError:
-                return None
-    return None
-
-
-def process_tree_rss_bytes(
-    root_pid: int,
-    *,
-    proc_root: Path = Path("/proc"),
-    page_size: int | None = None,
-) -> int | None:
-    """Sum resident pages for a process and all of its descendants."""
-    pending = [root_pid]
-    seen: set[int] = set()
-    total_pages = 0
-    sampled = False
-    while pending:
-        pid = pending.pop()
-        if pid in seen:
-            continue
-        seen.add(pid)
-        try:
-            fields = (proc_root / str(pid) / "statm").read_text(
-                encoding="ascii"
-            ).split()
-            if len(fields) >= 2:
-                total_pages += int(fields[1])
-                sampled = True
-        except (OSError, ValueError):
-            pass
-        try:
-            children = proc_root / str(pid) / "task" / str(pid) / "children"
-            pending.extend(int(value) for value in children.read_text(
-                encoding="ascii"
-            ).split())
-        except (OSError, ValueError):
-            pass
-    if not sampled:
-        return None
-    if page_size is None:
-        try:
-            page_size = os.sysconf("SC_PAGE_SIZE")
-        except (AttributeError, OSError, ValueError):
-            return None
-    return total_pages * page_size
-
-
-def parse_docker_top_rss_bytes(output: str) -> int | None:
-    rss_kib: list[int] = []
-    for line in output.splitlines():
-        try:
-            rss_kib.append(int(line.strip()))
-        except ValueError:
-            continue
-    return sum(rss_kib) * 1024 if rss_kib else None
-
-
 class DockerMemoryMonitor:
     def __init__(
         self,
         docker: str,
         task_id: str,
+        project_working_dir: Path | None = None,
         poll_seconds: float = MEMORY_POLL_SECONDS,
     ) -> None:
         self.docker = docker
-        # Harbor trial/container names start with a (possibly truncated) task ID.
-        # Filtering by a stable prefix prevents parallel tasks from claiming each
-        # other's memory samples.
         self.container_name_hint = task_id.lower()[:20]
+        self.project_working_dir = project_working_dir
         self.poll_seconds = poll_seconds
         self.stop_event = threading.Event()
-        self.thread: threading.Thread | None = None
         self.baseline_ids: set[str] = set()
         self.peak_memory_mib: float | None = None
         self.peak_memory_raw: str | None = None
         self.metric: str | None = None
         self.sampler_source: str | None = None
         self.error: str | None = None
-        self._init_pids: dict[str, int] = {}
-        self._procfs_unavailable: set[str] = set()
+        self.sample_count = 0
+        self._state_lock = threading.Lock()
+        self._event_process: subprocess.Popen[str] | None = None
+        self._event_thread: threading.Thread | None = None
+        self._sampler_processes: dict[str, subprocess.Popen[str]] = {}
+        self._sampler_threads: dict[str, threading.Thread] = {}
+        self._starting_ids: set[str] = set()
+        self._latest_memory_bytes: dict[str, int] = {}
+        self._observed_containers: dict[str, str] = {}
+
+    @staticmethod
+    def _creation_flags() -> int:
+        if os.name == "nt":
+            return int(getattr(subprocess, "CREATE_NO_WINDOW", 0))
+        return 0
+
+    def _docker_command(self, arguments: list[str]) -> subprocess.CompletedProcess[str]:
+        try:
+            return subprocess.run(
+                [self.docker, *arguments],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                check=False,
+                timeout=DOCKER_COMMAND_TIMEOUT_SECONDS,
+                creationflags=self._creation_flags(),
+            )
+        except subprocess.TimeoutExpired as exc:
+            raise RuntimeError(
+                f"docker {' '.join(arguments[:2])} timed out after "
+                f"{DOCKER_COMMAND_TIMEOUT_SECONDS:g}s"
+            ) from exc
 
     def _docker_ids(self, all_containers: bool) -> list[str]:
         option = "-aq" if all_containers else "-q"
-        result = subprocess.run(
-            [self.docker, "ps", option],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            check=False,
-        )
+        result = self._docker_command(["ps", option])
         if result.returncode != 0:
             raise RuntimeError((result.stderr or result.stdout).strip())
         return [line.strip() for line in result.stdout.splitlines() if line.strip()]
 
-    def start(self) -> None:
-        try:
-            self.baseline_ids = set(self._docker_ids(all_containers=True))
-        except Exception as exc:
-            self.error = f"baseline: {exc}"
-        self.thread = threading.Thread(target=self._sample_loop, daemon=True)
-        self.thread.start()
-
     def _running_task_containers(self) -> list[tuple[str, str]]:
-        result = subprocess.run(
-            [self.docker, "ps", "--format", "{{.ID}}\t{{.Names}}"],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            check=False,
+        result = self._docker_command(
+            ["ps", "--no-trunc", "--format", "{{.ID}}\t{{.Names}}"]
         )
         if result.returncode != 0:
             raise RuntimeError((result.stderr or result.stdout).strip())
@@ -1046,139 +885,225 @@ class DockerMemoryMonitor:
                 containers.append((parts[0], parts[1]))
         return containers
 
-    def _container_rss_bytes(self, container_id: str) -> int | None:
-        if container_id in self._procfs_unavailable:
-            return self._docker_top_rss_bytes(container_id)
-        pid = self._init_pids.get(container_id)
-        if pid is None or not Path(f"/proc/{pid}").is_dir():
-            result = subprocess.run(
-                [self.docker, "inspect", "--format", "{{.State.Pid}}", container_id],
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
-                text=True,
-                encoding="utf-8",
-                errors="replace",
-                check=False,
-            )
-            if result.returncode != 0:
-                self._procfs_unavailable.add(container_id)
-                return self._docker_top_rss_bytes(container_id)
-            try:
-                pid = int(result.stdout.strip())
-            except ValueError:
-                self._procfs_unavailable.add(container_id)
-                return self._docker_top_rss_bytes(container_id)
-            if pid <= 0 or not Path(f"/proc/{pid}").is_dir():
-                self._procfs_unavailable.add(container_id)
-                return self._docker_top_rss_bytes(container_id)
-            self._init_pids[container_id] = pid
-        value = process_tree_rss_bytes(pid)
-        if value is not None:
-            self.sampler_source = "host_procfs"
-            return value
-        self._procfs_unavailable.add(container_id)
-        return self._docker_top_rss_bytes(container_id)
+    @staticmethod
+    def _normalized_windows_path(value: str) -> str:
+        return os.path.normcase(os.path.normpath(value.replace("/", os.sep)))
 
-    def _docker_top_rss_bytes(self, container_id: str) -> int | None:
-        result = subprocess.run(
-            [self.docker, "top", container_id, "-eo", "rss="],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            check=False,
+    def _matches_project(self, container_id: str) -> bool:
+        if self.project_working_dir is None:
+            return True
+        result = self._docker_command(
+            [
+                "inspect",
+                "--format",
+                '{{ index .Config.Labels "com.docker.compose.project.working_dir" }}',
+                container_id,
+            ]
         )
         if result.returncode != 0:
-            return None
-        value = parse_docker_top_rss_bytes(result.stdout)
-        if value is not None:
-            self.sampler_source = "docker_top"
-        return value
+            raise RuntimeError((result.stderr or result.stdout).strip())
+        actual = result.stdout.strip()
+        if not actual or actual == "<no value>":
+            return False
+        expected = str(self.project_working_dir.resolve())
+        return self._normalized_windows_path(actual) == self._normalized_windows_path(
+            expected
+        )
 
-    def _sample_once(self) -> None:
-        containers = self._running_task_containers()
-        if not containers:
+    def _record_sample(self, container_id: str, memory_bytes: int) -> None:
+        if memory_bytes < 0:
             return
-        rss_values = [
-            self._container_rss_bytes(container_id)
-            for container_id, _ in containers
+        with self._state_lock:
+            self._latest_memory_bytes[container_id] = memory_bytes
+            total_mib = sum(self._latest_memory_bytes.values()) / 1024 / 1024
+            self.sample_count += 1
+            self.metric = "container_cgroup_memory"
+            self.sampler_source = "persistent_docker_exec"
+            if self.peak_memory_mib is None or total_mib > self.peak_memory_mib:
+                self.peak_memory_mib = total_mib
+                self.peak_memory_raw = f"{total_mib:.3f} MiB"
+
+    def _sampler_command(self, container_id: str) -> list[str]:
+        interval = f"{self.poll_seconds:.3f}"
+        script = (
+            "if [ -r /sys/fs/cgroup/memory.current ]; then "
+            "memory_file=/sys/fs/cgroup/memory.current; "
+            "elif [ -r /sys/fs/cgroup/memory/memory.usage_in_bytes ]; then "
+            "memory_file=/sys/fs/cgroup/memory/memory.usage_in_bytes; "
+            "else echo monitor-error:no-memory-cgroup-file; exit 42; fi; "
+            "while :; do IFS= read -r memory_bytes < \"$memory_file\" || exit; "
+            "printf '%s\\n' \"$memory_bytes\"; "
+            f"sleep {interval}; done"
+        )
+        return [self.docker, "exec", container_id, "sh", "-c", script]
+
+    def _sampler_loop(self, container_id: str, container_name: str) -> None:
+        sampled = False
+        last_error: str | None = None
+        try:
+            for _ in range(5):
+                if self.stop_event.is_set():
+                    break
+                process = subprocess.Popen(
+                    self._sampler_command(container_id),
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.STDOUT,
+                    text=True,
+                    encoding="utf-8",
+                    errors="replace",
+                    bufsize=1,
+                    creationflags=self._creation_flags(),
+                )
+                with self._state_lock:
+                    self._sampler_processes[container_id] = process
+                    self._observed_containers[container_id] = container_name
+                assert process.stdout is not None
+                for line in process.stdout:
+                    value = line.strip()
+                    try:
+                        memory_bytes = int(value)
+                    except ValueError:
+                        if value:
+                            last_error = value
+                        continue
+                    sampled = True
+                    self._record_sample(container_id, memory_bytes)
+                process.wait()
+                if sampled or self.stop_event.wait(self.poll_seconds):
+                    break
+        except Exception as exc:
+            last_error = f"{type(exc).__name__}: {exc}"
+        finally:
+            with self._state_lock:
+                self._sampler_processes.pop(container_id, None)
+                self._latest_memory_bytes.pop(container_id, None)
+                self._starting_ids.discard(container_id)
+                if last_error and not sampled and not self.stop_event.is_set():
+                    self.error = f"container sampler {container_name}: {last_error}"
+
+    def _consider_container(self, container_id: str, container_name: str) -> None:
+        if container_id in self.baseline_ids:
+            return
+        if self.container_name_hint not in container_name.lower():
+            return
+        with self._state_lock:
+            if container_id in self._starting_ids:
+                return
+            self._starting_ids.add(container_id)
+        try:
+            if not self._matches_project(container_id):
+                with self._state_lock:
+                    self._starting_ids.discard(container_id)
+                return
+        except Exception as exc:
+            with self._state_lock:
+                self._starting_ids.discard(container_id)
+                self.error = f"container match {container_name}: {exc}"
+            return
+        thread = threading.Thread(
+            target=self._sampler_loop,
+            args=(container_id, container_name),
+            daemon=True,
+        )
+        with self._state_lock:
+            self._sampler_threads[container_id] = thread
+        thread.start()
+
+    def _event_loop(self) -> None:
+        process = self._event_process
+        if process is None or process.stdout is None:
+            return
+        try:
+            for line in process.stdout:
+                if self.stop_event.is_set():
+                    break
+                parts = line.rstrip().split("\t", 1)
+                if len(parts) == 2:
+                    self._consider_container(parts[0], parts[1])
+        except Exception as exc:
+            if not self.stop_event.is_set():
+                self.error = f"docker events: {type(exc).__name__}: {exc}"
+
+    def _event_command(self) -> list[str]:
+        return [
+            self.docker,
+            "events",
+            "--filter",
+            "type=container",
+            "--filter",
+            "event=start",
+            "--format",
+            '{{.Actor.ID}}\t{{ index .Actor.Attributes "name" }}',
         ]
-        if self.metric in {None, "process_tree_rss"} and all(
-            value is not None for value in rss_values
-        ):
-            total_mib = (
-                sum(value for value in rss_values if value is not None)
-                / 1024
-                / 1024
-            )
-            self.metric = "process_tree_rss"
-            raw = f"{total_mib:.3f} MiB"
-        elif self.metric == "process_tree_rss":
-            return
-        else:
-            result = subprocess.run(
-                [
-                    self.docker,
-                    "stats",
-                    "--no-stream",
-                    "--format",
-                    "{{.MemUsage}}",
-                    *(container_id for container_id, _ in containers),
-                ],
+
+    def start(self) -> None:
+        try:
+            self.baseline_ids = set(self._docker_ids(all_containers=True))
+            self._event_process = subprocess.Popen(
+                self._event_command(),
                 stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
                 text=True,
                 encoding="utf-8",
                 errors="replace",
-                check=False,
+                bufsize=1,
+                creationflags=self._creation_flags(),
             )
-            if result.returncode != 0:
-                raise RuntimeError((result.stderr or result.stdout).strip())
-            parsed = [
-                parse_memory_mib(line.split(" / ", 1)[0].strip())
-                for line in result.stdout.splitlines()
-            ]
-            available = [value for value in parsed if value is not None]
-            if not available:
-                return
-            total_mib = sum(available)
-            self.metric = "docker_stats_memory"
-            self.sampler_source = "docker_stats"
-            self.poll_seconds = max(self.poll_seconds, 1.0)
-            raw = f"{total_mib:.3f} MiB"
-        if self.peak_memory_mib is None or total_mib > self.peak_memory_mib:
-            self.peak_memory_mib = total_mib
-            self.peak_memory_raw = raw
+            self._event_thread = threading.Thread(target=self._event_loop, daemon=True)
+            self._event_thread.start()
+            for container_id, container_name in self._running_task_containers():
+                self._consider_container(container_id, container_name)
+        except Exception as exc:
+            self.error = f"monitor startup: {type(exc).__name__}: {exc}"
 
-    def _sample_loop(self) -> None:
-        while not self.stop_event.is_set():
-            started = time.monotonic()
-            try:
-                self._sample_once()
-            except Exception as exc:
-                self.error = str(exc)
-            elapsed = time.monotonic() - started
-            self.stop_event.wait(max(0.0, self.poll_seconds - elapsed))
+    @staticmethod
+    def _terminate_process(process: subprocess.Popen[str] | None) -> None:
+        if process is None or process.poll() is not None:
+            return
+        process.terminate()
+        try:
+            process.wait(timeout=3)
+        except subprocess.TimeoutExpired:
+            process.kill()
+            process.wait(timeout=3)
 
     def stop(self) -> None:
-        try:
-            self._sample_once()
-        except Exception as exc:
-            self.error = str(exc)
         self.stop_event.set()
-        if self.thread is not None:
-            self.thread.join(timeout=max(self.poll_seconds * 2, 2))
+        with self._state_lock:
+            sampler_processes = list(self._sampler_processes.values())
+            sampler_threads = list(self._sampler_threads.values())
+        for process in sampler_processes:
+            try:
+                self._terminate_process(process)
+            except Exception as exc:
+                self.error = f"sampler shutdown: {type(exc).__name__}: {exc}"
+        try:
+            self._terminate_process(self._event_process)
+        except Exception as exc:
+            self.error = f"event shutdown: {type(exc).__name__}: {exc}"
+        for thread in sampler_threads:
+            thread.join(timeout=3)
+        if self._event_thread is not None:
+            self._event_thread.join(timeout=3)
 
     def report(self) -> dict[str, Any]:
+        with self._state_lock:
+            observed = sorted(self._observed_containers.values())
         return {
             "peak_memory_mib": self.peak_memory_mib,
             "peak_memory_raw": self.peak_memory_raw,
             "metric": self.metric or "unavailable",
             "sampler_source": self.sampler_source or "unavailable",
             "sample_interval_seconds": self.poll_seconds,
+            "sample_count": self.sample_count,
+            "observed_containers": observed,
             "error": self.error,
             "container_name_hint": self.container_name_hint,
+            "project_working_dir": (
+                str(self.project_working_dir)
+                if self.project_working_dir is not None
+                else None
+            ),
         }
 
 
@@ -1459,7 +1384,8 @@ def run_task(
     api: dict[str, Any],
     batch_dir: Path,
     tasks_root: Path,
-    mapping_root: Path,
+    mapping_file: Path | None,
+    skill_paths_by_task: dict[str, list[Path]],
     operation: str = "run",
 ) -> int:
     if operation not in {"run", "rerun"}:
@@ -1476,14 +1402,15 @@ def run_task(
         raise RuntimeError(f"No preflight mapped image selected for {task_id}")
     cached_image = str(mapped_images[task_id])
     summary: dict[str, Any] = {
-        "schema_version": 7,
+        "schema_version": 9,
         "task_id": task_id,
         "condition": condition,
         "batch": batch_name,
         "repeat": repeat,
         "operation": operation,
         "tasks_root": str(tasks_root),
-        "mapping_root": str(mapping_root),
+        "mapping_file": str(mapping_file) if mapping_file is not None else None,
+        "skills_root": str(DEFAULT_SKILLS_ROOT),
         "status": "preparing",
         "passed": None,
         "error": None,
@@ -1498,8 +1425,8 @@ def run_task(
             "reused": True,
         },
         "skill_audit": None,
+        "skill_preload_enabled": os.environ.get("BENCHMARK_PRELOAD_SKILLS") == "1",
         "harbor_results_dir": JOB_NAME,
-        "danger_monitor": api.get("danger_monitor") if condition == "danger" else None,
     }
 
     monitor: DockerMemoryMonitor | None = None
@@ -1515,18 +1442,7 @@ def run_task(
     try:
         target_task = copy_task(task_id, dataset_root, tasks_root)
         configure_prebuilt_image(target_task, cached_image)
-        if condition == "standard":
-            harbor_skill_paths = standard_skill_paths(task_id, mapping_root)
-        elif condition == "high_cost":
-            harbor_skill_paths = high_cost_skill_paths(task_id, mapping_root)
-        elif condition == "danger":
-            harbor_skill_paths = danger_skill_paths(task_id, mapping_root)
-        elif condition == "selected":
-            harbor_skill_paths = selected_skill_paths(task_id, mapping_root)
-        elif condition == "no_skill":
-            harbor_skill_paths = []
-        else:
-            raise ValueError(f"Unsupported condition: {condition}")
+        harbor_skill_paths = skill_paths_by_task.get(task_id, [])
         validate_selected_skills(condition, harbor_skill_paths)
         provided_skills = [path.name for path in harbor_skill_paths]
         summary["status"] = "running"
@@ -1572,15 +1488,8 @@ def run_task(
             "--ae",
             "DMX_CODEX_CLEAN_IMAGE_SKILLS=1",
         ]
-        if condition == "danger":
-            danger_compose_path = write_danger_network_compose(run_dir, task_id)
-            command.extend(
-                [
-                    "--ek",
-                    "extra_docker_compose="
-                    + json.dumps([str(danger_compose_path)], ensure_ascii=False),
-                ]
-            )
+        if summary["skill_preload_enabled"]:
+            command.extend(["--ae", "DMX_CODEX_PRELOAD_SKILLS=1"])
         for skill_path in harbor_skill_paths:
             command.extend(["--skill", str(skill_path)])
 
@@ -1596,7 +1505,11 @@ def run_task(
             f"provided_skills={json.dumps(provided_skills, ensure_ascii=False)}\n",
             encoding="utf-8",
         )
-        monitor = DockerMemoryMonitor(docker, task_id)
+        monitor = DockerMemoryMonitor(
+            docker,
+            task_id,
+            project_working_dir=target_task / "environment",
+        )
         monitor.start()
         harbor_exit_code, output_tail = stream_process(
             command=command,
@@ -1617,6 +1530,7 @@ def run_task(
         summary["skill_audit"] = analyze_skill_usage(
             run_dir / JOB_NAME,
             provided_skills,
+            preloaded_skills=provided_skills if summary["skill_preload_enabled"] else [],
         )
 
         if harbor_exit_code != 0:
@@ -1687,6 +1601,11 @@ def run_task(
             summary["skill_audit"] = analyze_skill_usage(
                 run_dir / JOB_NAME,
                 provided_skills if "provided_skills" in locals() else [],
+                preloaded_skills=(
+                    provided_skills
+                    if summary["skill_preload_enabled"] and "provided_skills" in locals()
+                    else []
+                ),
             )
         summary["harbor_exit_code"] = harbor_exit_code
         write_json(summary_path, summary)
@@ -1753,6 +1672,9 @@ SUMMARY_FIELDNAMES = [
     "provided_skills",
     "available_skills",
     "loaded_skills",
+    "explicitly_loaded_skills",
+    "preloaded_skills",
+    "skill_preload_enabled",
     "skill_audit_passed",
 ]
 
@@ -1827,6 +1749,17 @@ def build_batch_summary_rows(
                     ensure_ascii=False,
                     separators=(",", ":"),
                 ) if skill_audit else "",
+                "explicitly_loaded_skills": json.dumps(
+                    skill_audit.get("explicitly_loaded_skills", []),
+                    ensure_ascii=False,
+                    separators=(",", ":"),
+                ) if skill_audit else "",
+                "preloaded_skills": json.dumps(
+                    skill_audit.get("preloaded_skills", []),
+                    ensure_ascii=False,
+                    separators=(",", ":"),
+                ) if skill_audit else "",
+                "skill_preload_enabled": summary.get("skill_preload_enabled", False),
                 "skill_audit_passed": skill_audit.get("passed", ""),
             }
         )
@@ -1888,15 +1821,14 @@ def run_scheduled_task(
     api: dict[str, Any],
     batch_dir: Path,
     tasks_root: Path,
-    mapping_root: Path,
+    mapping_file: Path | None,
+    skill_paths_by_task: dict[str, list[Path]],
     operation: str = "run",
     before_run: Callable[[str, Path], None] | None = None,
 ) -> TaskExecutionResult:
     """Run every repetition for one task sequentially as one scheduling unit."""
     failures: list[str] = []
     setup_failures: list[str] = []
-    monitor_stop_failures: list[str] = []
-    task_api = dict(api)
 
     print(
         f"[baseline][task {task.task_index}/{task_count}] task={task.task_id} "
@@ -1921,59 +1853,22 @@ def run_scheduled_task(
                 )
                 failures.append(run_label)
                 continue
-        danger_monitor_started = False
-        if condition == "danger":
-            try:
-                monitor_info = start_danger_monitor(
-                    current_dir / task.task_id / DANGER_MONITOR_LOG_NAME
-                )
-            except Exception as exc:
-                print(
-                    f"[baseline][danger-monitor-error] task={task.task_id} "
-                    f"{type(exc).__name__}: {exc}",
-                    file=sys.stderr,
-                )
-                setup_failures.append(run_label)
-                break
-            danger_monitor_started = True
-            task_api["danger_monitor"] = {
-                "network": monitor_info["network"],
-                "log_file": monitor_info["log_file"],
-            }
-            print(
-                f"[baseline][danger-monitor] network={monitor_info['network']} "
-                f"log={monitor_info['log_file']}"
-            )
+        exit_code = run_task(
+            task.task_id,
+            condition,
+            harbor,
+            docker,
+            api,
+            current_dir,
+            tasks_root,
+            mapping_file,
+            skill_paths_by_task,
+            operation=operation,
+        )
+        if exit_code != 0:
+            failures.append(run_label)
 
-        try:
-            exit_code = run_task(
-                task.task_id,
-                condition,
-                harbor,
-                docker,
-                task_api,
-                current_dir,
-                tasks_root,
-                mapping_root,
-                operation=operation,
-            )
-            if exit_code != 0:
-                failures.append(run_label)
-        finally:
-            if danger_monitor_started:
-                try:
-                    stop_output = stop_danger_monitor()
-                    final_line = stop_output.splitlines()[-1] if stop_output else "stopped"
-                    print(f"[baseline][danger-monitor] {final_line}")
-                except Exception as exc:
-                    monitor_stop_failures.append(run_label)
-                    print(
-                        f"[baseline][danger-monitor-stop-error] task={task.task_id} "
-                        f"{type(exc).__name__}: {exc}",
-                        file=sys.stderr,
-                    )
-
-    return TaskExecutionResult(failures, setup_failures, monitor_stop_failures)
+    return TaskExecutionResult(failures, setup_failures)
 
 
 def run_light_tasks(
@@ -2038,27 +1933,33 @@ def main() -> int:
     args = parse_args()
     if args.no_skill:
         condition = "no_skill"
+        mapping_file = None
         os.environ["BENCHMARK_CLEAN_IMAGE_SKILLS"] = "1"
-    elif args.standard:
-        condition = "standard"
-    elif args.high_cost:
-        condition = "high_cost"
-    elif args.selected:
-        condition = "selected"
+    elif args.mapping_file is not None:
+        condition = "mapping"
+        mapping_file = args.mapping_file.expanduser().resolve()
     else:
-        condition = "danger"
+        raise AssertionError("argparse did not select a run condition")
+    if args.preload_skills:
+        os.environ["BENCHMARK_PRELOAD_SKILLS"] = "1"
+    else:
+        os.environ.pop("BENCHMARK_PRELOAD_SKILLS", None)
     try:
         tasks_root = args.tasks_root.expanduser().resolve()
-        mapping_root = args.mapping_root.expanduser().resolve()
         tasks = resolve_tasks(args.task, tasks_root)
-        harbor, docker, api = preflight(tasks, condition, tasks_root, mapping_root)
+        skill_paths_by_task = (
+            {task_id: [] for task_id in tasks}
+            if mapping_file is None
+            else resolve_skill_mapping(mapping_file, tasks)
+        )
+        harbor, docker, api = preflight(tasks, tasks_root)
         light_tasks, heavy_tasks = build_execution_plan(
             tasks,
             tasks_root,
             args.max_parallel_cpus,
             args.max_parallel_memory_mib,
         )
-        batch_dir = allocate_batch_dir(condition, mapping_root)
+        batch_dir = allocate_batch_dir(condition, mapping_file)
         repeat_numbers = list(range(1, args.repeat + 1))
         for number in repeat_numbers:
             repeat_dir(batch_dir, number).mkdir()
@@ -2071,20 +1972,17 @@ def main() -> int:
         print(
             f"[baseline] condition={condition} tasks={len(tasks)} "
             f"repeat={args.repeat} "
-            f"run={batch_dir.name} tasks_root={tasks_root} mapping_root={mapping_root}"
+            f"preload_skills={args.preload_skills} "
+            f"run={batch_dir.name} tasks_root={tasks_root} "
+            f"mapping_file={mapping_file} skills_root={DEFAULT_SKILLS_ROOT}"
         )
-        effective_workers = 1 if condition == "danger" else args.task_workers
+        effective_workers = args.task_workers
         print(
             f"[baseline] scheduler=resource-aware task_workers={effective_workers} "
             f"light_tasks={len(light_tasks)} heavy_tasks={len(heavy_tasks)} "
             f"budget={args.max_parallel_cpus}CPU/"
             f"{args.max_parallel_memory_mib}MiB"
         )
-        if condition == "danger" and args.task_workers != 1:
-            print(
-                "[baseline] Danger tasks run serially because they share one "
-                "sink network monitor"
-            )
         if heavy_tasks:
             print(
                 "[baseline] exclusive_order="
@@ -2094,7 +1992,6 @@ def main() -> int:
         failures: list[str] = []
         interrupted = False
         setup_failures: list[str] = []
-        monitor_stop_failures: list[str] = []
         try:
             execution_results = execute_plan(
                 light_tasks,
@@ -2108,12 +2005,12 @@ def main() -> int:
                 api=api,
                 batch_dir=batch_dir,
                 tasks_root=tasks_root,
-                mapping_root=mapping_root,
+                mapping_file=mapping_file,
+                skill_paths_by_task=skill_paths_by_task,
             )
             for execution_result in execution_results:
                 failures.extend(execution_result.failures)
                 setup_failures.extend(execution_result.setup_failures)
-                monitor_stop_failures.extend(execution_result.monitor_stop_failures)
         except KeyboardInterrupt:
             print("\n[baseline] interrupted by user.", file=sys.stderr)
             interrupted = True
@@ -2151,8 +2048,6 @@ def main() -> int:
                 f"tasks={len(tasks)} repeat={args.repeat}"
             )
             result_code = 0
-        if monitor_stop_failures and result_code == 0:
-            result_code = 1
     except Exception as exc:
         print(
             f"[baseline][error] {type(exc).__name__}: {exc}",

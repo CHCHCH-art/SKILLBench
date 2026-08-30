@@ -7,14 +7,12 @@ PROJECT_ROOT = BENCHMARK_ROOT.parent
 
 DATAS_ROOT = BENCHMARK_ROOT / "datas"
 DEFAULT_TASKS_ROOT = DATAS_ROOT / "tasks"
-DEFAULT_MAPPING_ROOT = DATAS_ROOT / "single_skill_mapping"
+DEFAULT_SKILLS_ROOT = DATAS_ROOT / "optional_skills" / "skills"
 
 ENV_ROOT = BENCHMARK_ROOT / "Env"
 AGENT_SRC_ROOT = ENV_ROOT / "src"
 DEFAULT_API_CONFIG = ENV_ROOT / "local" / "API.jsonl"
 TASK_IMAGES_FILE = ENV_ROOT / "task_images.json"
-
-SINK_DOCKER_ROOT = RUNNER_ROOT / "sink_network"
 
 RUNTIME_ROOT = RUNNER_ROOT / "runtime"
 WORK_ROOT = RUNTIME_ROOT / "work"

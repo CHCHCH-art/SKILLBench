@@ -7,15 +7,14 @@ import argparse
 import hashlib
 import json
 import os
-import re
 import shutil
 from collections import defaultdict
 from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
-SKILL_MAPPING_ROOT = REPO_ROOT / "benchmark" / "datas" / "single_skill_mapping"
-SOURCE_PARTITION = "Standard SKILLs"
+SKILL_MAPPING_FILE = REPO_ROOT / "benchmark" / "datas" / "single_skill_mapping" / "standard.jsonl"
+SKILLS_ROOT = REPO_ROOT / "benchmark" / "datas" / "optional_skills" / "skills"
 TARGET = Path(__file__).resolve().parent / "skills"
 STAGING = TARGET.with_name("skills.__staging__")
 REGISTRY = Path(__file__).resolve().parent / "task_skill_registry.jsonl"
@@ -74,13 +73,23 @@ def exact_unique(candidates: list[Path]) -> list[Path]:
     return selected
 
 
-def task_label(skill_dir: Path) -> str:
-    task_directory = skill_dir.relative_to(SKILL_MAPPING_ROOT).parts[0]
-    label = re.sub(r"_Gold_skill$", "", task_directory, flags=re.IGNORECASE)
-    label = re.sub(r'[<>:"/\\|?*]+', "-", label).strip(" .-")
-    if not label:
-        raise ValueError(f"Cannot derive a task label from: {task_directory}")
-    return label
+def mapping_records() -> list[dict[str, object]]:
+    records = [
+        json.loads(line)
+        for line in SKILL_MAPPING_FILE.read_text(encoding="utf-8-sig").splitlines()
+        if line.strip()
+    ]
+    if any(not isinstance(record, dict) for record in records):
+        raise ValueError(f"Invalid mapping record in {SKILL_MAPPING_FILE}")
+    return records
+
+
+def first_task_for_skill(skill_name: str) -> str:
+    for record in mapping_records():
+        skills = record.get("skills")
+        if isinstance(skills, list) and skill_name in skills:
+            return str(record["task_id"])
+    raise ValueError(f"Skill is not referenced by the mapping: {skill_name}")
 
 
 def unique_destination_name(
@@ -113,31 +122,18 @@ def parse_args() -> argparse.Namespace:
 
 def collect_candidates() -> list[Path]:
     candidates: list[Path] = []
-    task_dirs = sorted(
-        (path for path in SKILL_MAPPING_ROOT.iterdir() if path.is_dir()),
-        key=lambda path: path.name.casefold(),
-    )
-    for task_dir in task_dirs:
-        standard_dir = task_dir / SOURCE_PARTITION
-        if not standard_dir.is_dir():
-            raise FileNotFoundError(
-                f"Task is missing {SOURCE_PARTITION!r}: {task_dir}"
-            )
-        skill_dirs = sorted(
-            (path for path in standard_dir.iterdir() if path.is_dir()),
-            key=lambda path: path.name.casefold(),
-        )
-        if not skill_dirs:
-            raise ValueError(f"Standard source partition is empty: {standard_dir}")
-        missing_skill_md = [
-            skill_dir for skill_dir in skill_dirs if not (skill_dir / "SKILL.md").is_file()
-        ]
-        if missing_skill_md:
-            raise FileNotFoundError(
-                "Standard source directories missing a top-level SKILL.md: "
-                f"{missing_skill_md}"
-            )
-        candidates.extend(skill_dirs)
+    for record in mapping_records():
+        task_id = record.get("task_id")
+        skill_names = record.get("skills")
+        if not isinstance(task_id, str) or not isinstance(skill_names, list):
+            raise ValueError(f"Invalid mapping record: {record!r}")
+        for skill_name in skill_names:
+            if not isinstance(skill_name, str):
+                raise ValueError(f"Invalid Skill name for {task_id}: {skill_name!r}")
+            skill_dir = SKILLS_ROOT / skill_name
+            if not (skill_dir / "SKILL.md").is_file():
+                raise FileNotFoundError(f"Mapped Skill is unavailable: {skill_dir}")
+            candidates.append(skill_dir)
     return candidates
 
 
@@ -145,7 +141,7 @@ def build_selection(candidates: list[Path]) -> list[tuple[Path, str, str]]:
     used_names: set[str] = set()
     selected: list[tuple[Path, str, str]] = []
     for skill_dir in exact_unique(candidates):
-        source_task_label = task_label(skill_dir)
+        source_task_label = first_task_for_skill(skill_dir.name)
         destination_name = unique_destination_name(
             skill_dir.name,
             source_task_label,
@@ -165,26 +161,23 @@ def build_relations(
     }
     relations: list[dict[str, str | int]] = []
     seen: set[tuple[str, str, str]] = set()
-    for skill_dir in candidates:
-        identity = (skill_dir.name.casefold(), tree_sha256(skill_dir))
-        try:
+    for record in mapping_records():
+        for skill_name in record["skills"]:
+            skill_dir = SKILLS_ROOT / str(skill_name)
+            identity = (skill_dir.name.casefold(), tree_sha256(skill_dir))
             destination_name = destination_by_identity[identity]
-        except KeyError as exc:
-            raise RuntimeError(
-                f"Cannot map Standard source skill to extracted destination: {skill_dir}"
-            ) from exc
-        relation_key = (task_label(skill_dir), "Standard", destination_name)
-        if relation_key in seen:
-            continue
-        seen.add(relation_key)
-        relations.append(
-            {
-                "schema_version": 1,
-                "task_id": relation_key[0],
-                "label": relation_key[1],
-                "skill_dir_name": relation_key[2],
-            }
-        )
+            relation_key = (str(record["task_id"]), "Standard", destination_name)
+            if relation_key in seen:
+                continue
+            seen.add(relation_key)
+            relations.append(
+                {
+                    "schema_version": 1,
+                    "task_id": relation_key[0],
+                    "label": relation_key[1],
+                    "skill_dir_name": relation_key[2],
+                }
+            )
     relations.sort(
         key=lambda item: (
             str(item["task_id"]).casefold(),
@@ -224,10 +217,10 @@ def write_registry(relations: list[dict[str, str | int]]) -> None:
 
 def main() -> None:
     args = parse_args()
-    if not SKILL_MAPPING_ROOT.is_dir():
-        raise FileNotFoundError(
-            f"Single-skill mapping root does not exist: {SKILL_MAPPING_ROOT}"
-        )
+    if not SKILL_MAPPING_FILE.is_file():
+        raise FileNotFoundError(f"Standard mapping does not exist: {SKILL_MAPPING_FILE}")
+    if not SKILLS_ROOT.is_dir():
+        raise FileNotFoundError(f"Central Skill directory does not exist: {SKILLS_ROOT}")
     if not TARGET.is_dir():
         raise FileNotFoundError(f"Target directory does not exist: {TARGET}")
 
@@ -238,7 +231,7 @@ def main() -> None:
     if not selected:
         raise RuntimeError(
             f"No Standard skills containing a top-level SKILL.md were found in "
-            f"{SKILL_MAPPING_ROOT}"
+            f"{SKILL_MAPPING_FILE}"
         )
     if args.registry_only:
         validate_existing_target(selected)

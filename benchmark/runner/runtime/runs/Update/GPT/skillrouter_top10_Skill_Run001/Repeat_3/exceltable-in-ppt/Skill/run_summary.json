@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "exceltable-in-ppt",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 303.83984375,
+    "peak_memory_raw": "303.840 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2200,
+    "observed_containers": [
+      "exceltable-in-ppt__9rsvwff__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "exceltable-in-ppt",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run001\\Repeat_3\\exceltable-in-ppt\\mapping\\exceltable-in-ppt\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.734,
+    "agent_setup_sec": 0.425,
+    "agent_execution_sec": 162.88,
+    "verifier_sec": 51.238,
+    "total_sec": 224.476
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 408236,
+  "agent_output_tokens": 5857,
+  "image_cache": {
+    "image": "benchmark-cache/exceltable-in-ppt-gold:76ac1a2bd4e98536",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "benchflow-ai--xlsx-1",
+      "dedalus-erp-pas--pptx",
+      "inverse-rate-workbook-cell-update",
+      "ooxml-two-key-lookup-formula-population",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement",
+      "sickn33--xlsx-official",
+      "uno-formula-recalc-validation",
+      "xlsx-formula-cache-preserving-recalc"
+    ],
+    "available_skills": [
+      "benchflow-ai--xlsx-1",
+      "dedalus-erp-pas--pptx",
+      "inverse-rate-workbook-cell-update",
+      "ooxml-two-key-lookup-formula-population",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement",
+      "sickn33--xlsx-official",
+      "uno-formula-recalc-validation",
+      "xlsx-formula-cache-preserving-recalc"
+    ],
+    "loaded_skills": [
+      "benchflow-ai--xlsx-1",
+      "dedalus-erp-pas--pptx",
+      "inverse-rate-workbook-cell-update",
+      "ooxml-two-key-lookup-formula-population",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement",
+      "sickn33--xlsx-official",
+      "uno-formula-recalc-validation",
+      "xlsx-formula-cache-preserving-recalc"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "benchflow-ai--xlsx-1",
+      "dedalus-erp-pas--pptx",
+      "inverse-rate-workbook-cell-update",
+      "ooxml-two-key-lookup-formula-population",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement",
+      "sickn33--xlsx-official",
+      "uno-formula-recalc-validation",
+      "xlsx-formula-cache-preserving-recalc"
+    ],
+    "trials": [
+      {
+        "trial_id": "exceltable-in-ppt__9rSvWff",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "benchflow-ai--xlsx-1",
+          "dedalus-erp-pas--pptx",
+          "inverse-rate-workbook-cell-update",
+          "ooxml-two-key-lookup-formula-population",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement",
+          "sickn33--xlsx-official",
+          "uno-formula-recalc-validation",
+          "xlsx-formula-cache-preserving-recalc"
+        ],
+        "available_skills": [
+          "benchflow-ai--xlsx-1",
+          "dedalus-erp-pas--pptx",
+          "inverse-rate-workbook-cell-update",
+          "ooxml-two-key-lookup-formula-population",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement",
+          "sickn33--xlsx-official",
+          "uno-formula-recalc-validation",
+          "xlsx-formula-cache-preserving-recalc"
+        ],
+        "loaded_skills": [
+          "benchflow-ai--xlsx-1",
+          "dedalus-erp-pas--pptx",
+          "inverse-rate-workbook-cell-update",
+          "ooxml-two-key-lookup-formula-population",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement",
+          "sickn33--xlsx-official",
+          "uno-formula-recalc-validation",
+          "xlsx-formula-cache-preserving-recalc"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "benchflow-ai--xlsx-1",
+          "dedalus-erp-pas--pptx",
+          "inverse-rate-workbook-cell-update",
+          "ooxml-two-key-lookup-formula-population",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement",
+          "sickn33--xlsx-official",
+          "uno-formula-recalc-validation",
+          "xlsx-formula-cache-preserving-recalc"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

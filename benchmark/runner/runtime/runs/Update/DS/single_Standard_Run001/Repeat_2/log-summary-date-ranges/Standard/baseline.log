@@ -1,0 +1,28 @@
+2026-08-28T14:42:30.113414+00:00 START operation=run batch=single_Standard_Run001 repeat=2 task=log-summary-date-ranges condition=standard image=benchmark-cache/log-summary-date-ranges-gold:e28534907986406f provided_skills=["date-range-severity-summary-emission", "streaming-dated-log-sqlite-aggregation"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:01 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 1s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_2\log-summary-date-ranges\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_2\log-summary-date-ranges\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_2\log-summary-date-ranges\Standard\Job_result`
+
+2026-08-28T14:44:33.193271+00:00 PASS operation=run batch=single_Standard_Run001 repeat=2 task=log-summary-date-ranges condition=standard

@@ -1,0 +1,28 @@
+2026-08-29T16:05:58.031010+00:00 START operation=run batch=bm25_top10_Skill_Run003 repeat=1 task=dynamic-object-aware-egomotion condition=mapping image=benchmark-cache/dynamic-object-aware-egomotion-gold:fc972e99cd5a2204 provided_skills=["video-global-egomotion-homography", "binary-mask-csr-npz-serialization", "dynamic-region-motion-mask", "egomotion-reference-label-sequence", "dynamic-region-flow-residual-tracking", "video-global-egomotion-estimation", "binary-mask-csr-serialization", "aaron-he-zhu--keyword-research", "constrained-agglomerative-request-batching", "pdf-record-table-extraction"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:03:58 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 58s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_1\dynamic-object-aware-egomotion\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_1\dynamic-object-aware-egomotion\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_1\dynamic-object-aware-egomotion\Skill\Job_result`
+
+2026-08-29T16:09:57.469729+00:00 FAIL operation=run batch=bm25_top10_Skill_Run003 repeat=1 task=dynamic-object-aware-egomotion condition=mapping

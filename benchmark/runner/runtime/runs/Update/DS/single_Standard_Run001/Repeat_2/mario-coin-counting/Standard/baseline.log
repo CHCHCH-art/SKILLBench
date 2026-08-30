@@ -1,0 +1,34 @@
+2026-08-28T14:56:25.420096+00:00 START operation=run batch=single_Standard_Run001 repeat=2 task=mario-coin-counting condition=standard image=benchmark-cache/mario-coin-counting-gold:989a4c6bcaeff277 provided_skills=["edge-component-hog-spatial-counting", "edge-hog-template-calibration", "video-iframe-grayscale-keyframes"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:32:18 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          1 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+┌───────────────────┬───────┐
+│ Exception         │ Count │
+├───────────────────┼───────┤
+│ AgentTimeoutError │     1 │
+└───────────────────┴───────┘
+
+Job Info
+Total runtime: 32m 18s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_2\mario-coin-counting\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_2\mario-coin-counting\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_2\mario-coin-counting\Standard\Job_result`
+
+2026-08-28T15:28:44.986287+00:00 ERROR operation=run batch=single_Standard_Run001 repeat=2 task=mario-coin-counting condition=standard [{"exception_type":"AgentTimeoutError","exception_message":"Agent execution timed out after 1800.0 seconds"}]

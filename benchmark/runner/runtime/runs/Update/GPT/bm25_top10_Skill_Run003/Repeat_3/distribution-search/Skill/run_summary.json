@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "distribution-search",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run003",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 150.171875,
+    "peak_memory_raw": "150.172 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 1083,
+    "observed_containers": [
+      "distribution-search__xiihhdr__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "distribution-search",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run003\\Repeat_3\\distribution-search\\mapping\\distribution-search\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.643,
+    "agent_setup_sec": 0.393,
+    "agent_execution_sec": 81.906,
+    "verifier_sec": 19.743,
+    "total_sec": 111.304
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 137697,
+  "agent_output_tokens": 3548,
+  "image_cache": {
+    "image": "benchmark-cache/distribution-search-gold:430ae95bb5beb0fc",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "AltimateAI--creating-dbt-models",
+      "binjuhor--docs-seeker",
+      "guia-matthieu--educational-presentation",
+      "jeremylongshore--explaining-machine-learning-models",
+      "jkappers--enhance-prompt",
+      "logit-distribution-kl-optimization",
+      "posit-dev--release-post",
+      "three-level-count-search-materialization",
+      "three-level-kl-distribution-solver",
+      "yaleh--error-recovery"
+    ],
+    "available_skills": [
+      "AltimateAI--creating-dbt-models",
+      "binjuhor--docs-seeker",
+      "guia-matthieu--educational-presentation",
+      "jeremylongshore--explaining-machine-learning-models",
+      "jkappers--enhance-prompt",
+      "logit-distribution-kl-optimization",
+      "posit-dev--release-post",
+      "three-level-count-search-materialization",
+      "three-level-kl-distribution-solver",
+      "yaleh--error-recovery"
+    ],
+    "loaded_skills": [
+      "AltimateAI--creating-dbt-models",
+      "binjuhor--docs-seeker",
+      "guia-matthieu--educational-presentation",
+      "jeremylongshore--explaining-machine-learning-models",
+      "jkappers--enhance-prompt",
+      "logit-distribution-kl-optimization",
+      "posit-dev--release-post",
+      "three-level-count-search-materialization",
+      "three-level-kl-distribution-solver",
+      "yaleh--error-recovery"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "AltimateAI--creating-dbt-models",
+      "binjuhor--docs-seeker",
+      "guia-matthieu--educational-presentation",
+      "jeremylongshore--explaining-machine-learning-models",
+      "jkappers--enhance-prompt",
+      "logit-distribution-kl-optimization",
+      "posit-dev--release-post",
+      "three-level-count-search-materialization",
+      "three-level-kl-distribution-solver",
+      "yaleh--error-recovery"
+    ],
+    "trials": [
+      {
+        "trial_id": "distribution-search__XiiHhDR",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "AltimateAI--creating-dbt-models",
+          "binjuhor--docs-seeker",
+          "guia-matthieu--educational-presentation",
+          "jeremylongshore--explaining-machine-learning-models",
+          "jkappers--enhance-prompt",
+          "logit-distribution-kl-optimization",
+          "posit-dev--release-post",
+          "three-level-count-search-materialization",
+          "three-level-kl-distribution-solver",
+          "yaleh--error-recovery"
+        ],
+        "available_skills": [
+          "AltimateAI--creating-dbt-models",
+          "binjuhor--docs-seeker",
+          "guia-matthieu--educational-presentation",
+          "jeremylongshore--explaining-machine-learning-models",
+          "jkappers--enhance-prompt",
+          "logit-distribution-kl-optimization",
+          "posit-dev--release-post",
+          "three-level-count-search-materialization",
+          "three-level-kl-distribution-solver",
+          "yaleh--error-recovery"
+        ],
+        "loaded_skills": [
+          "AltimateAI--creating-dbt-models",
+          "binjuhor--docs-seeker",
+          "guia-matthieu--educational-presentation",
+          "jeremylongshore--explaining-machine-learning-models",
+          "jkappers--enhance-prompt",
+          "logit-distribution-kl-optimization",
+          "posit-dev--release-post",
+          "three-level-count-search-materialization",
+          "three-level-kl-distribution-solver",
+          "yaleh--error-recovery"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "AltimateAI--creating-dbt-models",
+          "binjuhor--docs-seeker",
+          "guia-matthieu--educational-presentation",
+          "jeremylongshore--explaining-machine-learning-models",
+          "jkappers--enhance-prompt",
+          "logit-distribution-kl-optimization",
+          "posit-dev--release-post",
+          "three-level-count-search-materialization",
+          "three-level-kl-distribution-solver",
+          "yaleh--error-recovery"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

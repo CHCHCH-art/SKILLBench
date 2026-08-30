@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "hf-model-inference",
+  "condition": "mapping",
+  "batch": "qwen_meta_top10_Skill_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_meta_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 2047.9921875,
+    "peak_memory_raw": "2047.992 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2086,
+    "observed_containers": [
+      "hf-model-inference__ttrsvyz__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "hf-model-inference",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_meta_top10_Skill_Run002\\Repeat_1\\hf-model-inference\\mapping\\hf-model-inference\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.873,
+    "agent_setup_sec": 0.635,
+    "agent_execution_sec": 189.077,
+    "verifier_sec": 14.619,
+    "total_sec": 214.671
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 502663,
+  "agent_output_tokens": 3327,
+  "image_cache": {
+    "image": "benchmark-cache/hf-model-inference-gold:5e2a59f453e212fb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization",
+      "huggingface-snapshot-int8-runtime-materialization",
+      "jeremylongshore--torchserve-config-generator",
+      "letta-ai--pytorch-model-cli",
+      "majiayu000--ai-ml-integration",
+      "melodic-software--ml-system-design",
+      "numpy-distilbert-int8-inference",
+      "tondevrel--pytorch-deployment",
+      "vasilyu1983--ai-mlops"
+    ],
+    "available_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization",
+      "huggingface-snapshot-int8-runtime-materialization",
+      "jeremylongshore--torchserve-config-generator",
+      "letta-ai--pytorch-model-cli",
+      "majiayu000--ai-ml-integration",
+      "melodic-software--ml-system-design",
+      "numpy-distilbert-int8-inference",
+      "tondevrel--pytorch-deployment",
+      "vasilyu1983--ai-mlops"
+    ],
+    "loaded_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization",
+      "huggingface-snapshot-int8-runtime-materialization",
+      "jeremylongshore--torchserve-config-generator",
+      "letta-ai--pytorch-model-cli",
+      "majiayu000--ai-ml-integration",
+      "melodic-software--ml-system-design",
+      "numpy-distilbert-int8-inference",
+      "tondevrel--pytorch-deployment",
+      "vasilyu1983--ai-mlops"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization",
+      "huggingface-snapshot-int8-runtime-materialization",
+      "jeremylongshore--torchserve-config-generator",
+      "letta-ai--pytorch-model-cli",
+      "majiayu000--ai-ml-integration",
+      "melodic-software--ml-system-design",
+      "numpy-distilbert-int8-inference",
+      "tondevrel--pytorch-deployment",
+      "vasilyu1983--ai-mlops"
+    ],
+    "trials": [
+      {
+        "trial_id": "hf-model-inference__TtrSvyZ",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization",
+          "huggingface-snapshot-int8-runtime-materialization",
+          "jeremylongshore--torchserve-config-generator",
+          "letta-ai--pytorch-model-cli",
+          "majiayu000--ai-ml-integration",
+          "melodic-software--ml-system-design",
+          "numpy-distilbert-int8-inference",
+          "tondevrel--pytorch-deployment",
+          "vasilyu1983--ai-mlops"
+        ],
+        "available_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization",
+          "huggingface-snapshot-int8-runtime-materialization",
+          "jeremylongshore--torchserve-config-generator",
+          "letta-ai--pytorch-model-cli",
+          "majiayu000--ai-ml-integration",
+          "melodic-software--ml-system-design",
+          "numpy-distilbert-int8-inference",
+          "tondevrel--pytorch-deployment",
+          "vasilyu1983--ai-mlops"
+        ],
+        "loaded_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization",
+          "huggingface-snapshot-int8-runtime-materialization",
+          "jeremylongshore--torchserve-config-generator",
+          "letta-ai--pytorch-model-cli",
+          "majiayu000--ai-ml-integration",
+          "melodic-software--ml-system-design",
+          "numpy-distilbert-int8-inference",
+          "tondevrel--pytorch-deployment",
+          "vasilyu1983--ai-mlops"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization",
+          "huggingface-snapshot-int8-runtime-materialization",
+          "jeremylongshore--torchserve-config-generator",
+          "letta-ai--pytorch-model-cli",
+          "majiayu000--ai-ml-integration",
+          "melodic-software--ml-system-design",
+          "numpy-distilbert-int8-inference",
+          "tondevrel--pytorch-deployment",
+          "vasilyu1983--ai-mlops"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

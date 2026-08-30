@@ -1,0 +1,29 @@
+2026-08-28T19:09:54.481934+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=llm-inference-batching-scheduler condition=high_cost image=benchmark-cache/llm-inference-batching-scheduler-gold:c835608261b94b37 provided_skills=["constrained-agglomerative-request-batching", "shape-aware-batch-cost-model", "shared-shape-dp-budget-closure"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:23:03 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 23m 3s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\llm-inference-batching-scheduler\High_cost\Job_result\resu
+lt.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\llm-inference-batching-scheduler\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\llm-inference-batching-scheduler\High_cost\Job_result`
+
+2026-08-28T19:32:59.358841+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=llm-inference-batching-scheduler condition=high_cost

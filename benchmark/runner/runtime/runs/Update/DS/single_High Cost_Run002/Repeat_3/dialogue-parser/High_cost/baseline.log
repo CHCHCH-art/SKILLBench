@@ -1,0 +1,28 @@
+2026-08-28T11:22:44.822857+00:00 START operation=run batch=single_High Cost_Run002 repeat=3 task=dialogue-parser condition=high_cost image=benchmark-cache/dialogue-parser-gold:c0353fb4817c6884 provided_skills=["dialogue-dot-rendering", "dialogue-graph-construction", "dialogue-reference-parser"]
+  1/1 Mean: 0.500 ---------------------------------------- 0:03:22 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.500 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.5    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 22s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\dialogue-parser\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\dialogue-parser\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_3\dialogue-parser\High_cost\Job_result`
+
+2026-08-28T11:26:08.166100+00:00 PASS operation=run batch=single_High Cost_Run002 repeat=3 task=dialogue-parser condition=high_cost

@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "grid-dispatch-operator",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestFeasibility::test_power_balance: AssertionError: Power imbalance: gen=147808.66 != load=144839.06; test_outputs.py::TestOptimality::test_cost_is_optimal: AssertionError: Optimality gap 21.3748% exceeds 0.01% (actual=3599537.11, optimal=2965637.909677723)",
+  "peak_memory": {
+    "peak_memory_mib": 1511.56640625,
+    "peak_memory_raw": "1511.566 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3643,
+    "observed_containers": [
+      "grid-dispatch-operator__agjuw4v__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "grid-dispatch-operat",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run001\\Repeat_3\\grid-dispatch-operator\\mapping\\grid-dispatch-operator\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.916,
+    "agent_setup_sec": 0.488,
+    "agent_execution_sec": 391.729,
+    "verifier_sec": 76.393,
+    "total_sec": 479.351
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 579380,
+  "agent_output_tokens": 9144,
+  "image_cache": {
+    "image": "benchmark-cache/grid-dispatch-operator-gold:4acd0bce1add524f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "acopf-solution-reporting",
+      "casadi-acopf-pi-network-formulation",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dc-dispatch-piecewise-master",
+      "dcopf-reserve-lmp-solve",
+      "dispatch-loading-operating-margin-report",
+      "dispatch-reserve-and-ptdf-audit",
+      "highs-dual-market-pricing-report",
+      "quadratic-dispatch-outer-approximation-report",
+      "sparse-dcopf-reserve-lp-formulation"
+    ],
+    "available_skills": [
+      "acopf-solution-reporting",
+      "casadi-acopf-pi-network-formulation",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dc-dispatch-piecewise-master",
+      "dcopf-reserve-lmp-solve",
+      "dispatch-loading-operating-margin-report",
+      "dispatch-reserve-and-ptdf-audit",
+      "highs-dual-market-pricing-report",
+      "quadratic-dispatch-outer-approximation-report",
+      "sparse-dcopf-reserve-lp-formulation"
+    ],
+    "loaded_skills": [
+      "acopf-solution-reporting",
+      "casadi-acopf-pi-network-formulation",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dc-dispatch-piecewise-master",
+      "dcopf-reserve-lmp-solve",
+      "dispatch-loading-operating-margin-report",
+      "dispatch-reserve-and-ptdf-audit",
+      "highs-dual-market-pricing-report",
+      "quadratic-dispatch-outer-approximation-report",
+      "sparse-dcopf-reserve-lp-formulation"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "acopf-solution-reporting",
+      "casadi-acopf-pi-network-formulation",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dc-dispatch-piecewise-master",
+      "dcopf-reserve-lmp-solve",
+      "dispatch-loading-operating-margin-report",
+      "dispatch-reserve-and-ptdf-audit",
+      "highs-dual-market-pricing-report",
+      "quadratic-dispatch-outer-approximation-report",
+      "sparse-dcopf-reserve-lp-formulation"
+    ],
+    "trials": [
+      {
+        "trial_id": "grid-dispatch-operator__aGJuW4V",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "acopf-solution-reporting",
+          "casadi-acopf-pi-network-formulation",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dc-dispatch-piecewise-master",
+          "dcopf-reserve-lmp-solve",
+          "dispatch-loading-operating-margin-report",
+          "dispatch-reserve-and-ptdf-audit",
+          "highs-dual-market-pricing-report",
+          "quadratic-dispatch-outer-approximation-report",
+          "sparse-dcopf-reserve-lp-formulation"
+        ],
+        "available_skills": [
+          "acopf-solution-reporting",
+          "casadi-acopf-pi-network-formulation",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dc-dispatch-piecewise-master",
+          "dcopf-reserve-lmp-solve",
+          "dispatch-loading-operating-margin-report",
+          "dispatch-reserve-and-ptdf-audit",
+          "highs-dual-market-pricing-report",
+          "quadratic-dispatch-outer-approximation-report",
+          "sparse-dcopf-reserve-lp-formulation"
+        ],
+        "loaded_skills": [
+          "acopf-solution-reporting",
+          "casadi-acopf-pi-network-formulation",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dc-dispatch-piecewise-master",
+          "dcopf-reserve-lmp-solve",
+          "dispatch-loading-operating-margin-report",
+          "dispatch-reserve-and-ptdf-audit",
+          "highs-dual-market-pricing-report",
+          "quadratic-dispatch-outer-approximation-report",
+          "sparse-dcopf-reserve-lp-formulation"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "acopf-solution-reporting",
+          "casadi-acopf-pi-network-formulation",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dc-dispatch-piecewise-master",
+          "dcopf-reserve-lmp-solve",
+          "dispatch-loading-operating-margin-report",
+          "dispatch-reserve-and-ptdf-audit",
+          "highs-dual-market-pricing-report",
+          "quadratic-dispatch-outer-approximation-report",
+          "sparse-dcopf-reserve-lp-formulation"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

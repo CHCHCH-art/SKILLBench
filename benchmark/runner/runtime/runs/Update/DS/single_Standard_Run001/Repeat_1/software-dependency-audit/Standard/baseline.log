@@ -1,0 +1,28 @@
+2026-08-28T16:21:32.932500+00:00 START operation=run batch=single_Standard_Run001 repeat=1 task=software-dependency-audit condition=standard image=benchmark-cache/software-dependency-audit-gold:65439dede9bf4280 provided_skills=["trivy-offline-filesystem-vulnerability-scan", "trivy-severity-cvss-csv-normalization"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:01:03 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 1m 4s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\software-dependency-audit\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\software-dependency-audit\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_1\software-dependency-audit\Standard\Job_result`
+
+2026-08-28T16:22:38.642255+00:00 FAIL operation=run batch=single_Standard_Run001 repeat=1 task=software-dependency-audit condition=standard

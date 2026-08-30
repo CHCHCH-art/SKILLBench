@@ -1,0 +1,94 @@
+{
+  "schema_version": 7,
+  "task_id": "jpg-ocr-stat",
+  "condition": "high_cost",
+  "batch": "single_High Cost_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "trial_error",
+  "passed": false,
+  "error": [
+    {
+      "exception_type": "AgentTimeoutError",
+      "exception_message": "Agent execution timed out after 1800.0 seconds"
+    }
+  ],
+  "failure_reason": "{\"exception_type\":\"AgentTimeoutError\",\"exception_message\":\"Agent execution timed out after 1800.0 seconds\"}",
+  "peak_memory": {
+    "peak_memory_mib": 287.8,
+    "peak_memory_raw": "287.800 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": null,
+    "container_name_hint": "jpg-ocr-stat"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.647,
+    "agent_setup_sec": 0.748,
+    "agent_execution_sec": 1801.163,
+    "verifier_sec": 40.346,
+    "total_sec": 1846.757
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1538577,
+  "agent_output_tokens": 39858,
+  "image_cache": {
+    "image": "benchmark-cache/jpg-ocr-stat-gold:2312eeab86c89737",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "receipt-date-total-excel-serialization",
+      "receipt-multivariant-ocr-extraction"
+    ],
+    "available_skills": [
+      "receipt-date-total-excel-serialization",
+      "receipt-multivariant-ocr-extraction"
+    ],
+    "loaded_skills": [
+      "receipt-date-total-excel-serialization",
+      "receipt-multivariant-ocr-extraction"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "receipt-date-total-excel-serialization",
+      "receipt-multivariant-ocr-extraction"
+    ],
+    "trials": [
+      {
+        "trial_id": "jpg-ocr-stat__jEWptC2",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "receipt-date-total-excel-serialization",
+          "receipt-multivariant-ocr-extraction"
+        ],
+        "available_skills": [
+          "receipt-date-total-excel-serialization",
+          "receipt-multivariant-ocr-extraction"
+        ],
+        "loaded_skills": [
+          "receipt-date-total-excel-serialization",
+          "receipt-multivariant-ocr-extraction"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "receipt-date-total-excel-serialization",
+          "receipt-multivariant-ocr-extraction"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

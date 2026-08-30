@@ -1,0 +1,28 @@
+2026-08-29T22:36:09.111921+00:00 START operation=run batch=skillrouter_top10_Skill_Run001 repeat=2 task=virtualhome-agent-planning condition=mapping image=benchmark-cache/virtualhome-agent-planning-gold:2a7bb392c743be2d provided_skills=["pddl-unified-planning-load", "pddl-task-manifest-plan-orchestration", "unified-planning-plan-file-writing", "pyperplan-oneshot-plan-generation", "pddl-pyperplan-baseline-validation", "grounded-pyperplan-portfolio-lifting", "reference-plan-selection-and-safe-write", "alsk1992--metaculus", "netease-youdao--create-plan", "disco-trooper--cycling-training"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:32 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 32s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_2\virtualhome-agent-planning\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_2\virtualhome-agent-planning\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_2\virtualhome-agent-planning\Skill\Job_result`
+
+2026-08-29T22:38:42.838691+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run001 repeat=2 task=virtualhome-agent-planning condition=mapping

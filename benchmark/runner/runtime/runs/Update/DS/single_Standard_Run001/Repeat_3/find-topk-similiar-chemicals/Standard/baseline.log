@@ -1,0 +1,28 @@
+2026-08-28T13:00:38.231247+00:00 START operation=run batch=single_Standard_Run001 repeat=3 task=find-topk-similiar-chemicals condition=standard image=benchmark-cache/find-topk-similiar-chemicals-gold:bd06707e8ac4a427 provided_skills=["pdf-molecule-name-pool-extraction", "pubchem-morgan-fingerprint-resolution", "tanimoto-topk-molecule-ranking"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:16:41 0:00:00
+standard • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 16m 41s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_3\find-topk-similiar-chemicals\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_3\find-topk-similiar-chemicals\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run001\Repe
+at_3\find-topk-similiar-chemicals\Standard\Job_result`
+
+2026-08-28T13:17:20.644162+00:00 FAIL operation=run batch=single_Standard_Run001 repeat=3 task=find-topk-similiar-chemicals condition=standard

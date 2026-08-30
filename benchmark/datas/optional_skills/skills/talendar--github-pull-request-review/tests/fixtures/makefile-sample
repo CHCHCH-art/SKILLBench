@@ -1,0 +1,16 @@
+.PHONY: lint test build deploy clean
+
+lint:
+	golangci-lint run ./...
+
+test:
+	go test ./...
+
+build:
+	go build -o bin/app ./cmd/app
+
+deploy:
+	kubectl apply -f k8s/
+
+clean:
+	rm -rf bin/

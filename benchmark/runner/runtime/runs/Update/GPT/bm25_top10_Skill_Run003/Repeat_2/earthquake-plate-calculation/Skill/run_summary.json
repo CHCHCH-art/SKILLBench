@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "earthquake-plate-calculation",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 211.0,
+    "peak_memory_raw": "211.000 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 1436,
+    "observed_containers": [
+      "earthquake-plate-calculation__faufkoj__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "earthquake-plate-cal",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run003\\Repeat_2\\earthquake-plate-calculation\\mapping\\earthquake-plate-calculation\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.759,
+    "agent_setup_sec": 0.388,
+    "agent_execution_sec": 127.806,
+    "verifier_sec": 9.41,
+    "total_sec": 147.323
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 314505,
+  "agent_output_tokens": 4905,
+  "image_cache": {
+    "image": "benchmark-cache/earthquake-plate-calculation-gold:9daffd7dc0823601",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "benchflow-ai--map-optimization-strategy",
+      "exact-boundary-distance-selection",
+      "eyh0602--senior-data-scientist",
+      "geospatial-plate-membership-filter",
+      "geospatial-source-crs-normalization",
+      "iframe-grayscale-keyframe-extraction",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization",
+      "projected-boundary-distance-selection",
+      "ralphcrisostomo--ralph"
+    ],
+    "available_skills": [
+      "benchflow-ai--map-optimization-strategy",
+      "exact-boundary-distance-selection",
+      "eyh0602--senior-data-scientist",
+      "geospatial-plate-membership-filter",
+      "geospatial-source-crs-normalization",
+      "iframe-grayscale-keyframe-extraction",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization",
+      "projected-boundary-distance-selection",
+      "ralphcrisostomo--ralph"
+    ],
+    "loaded_skills": [
+      "benchflow-ai--map-optimization-strategy",
+      "exact-boundary-distance-selection",
+      "eyh0602--senior-data-scientist",
+      "geospatial-plate-membership-filter",
+      "geospatial-source-crs-normalization",
+      "iframe-grayscale-keyframe-extraction",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization",
+      "projected-boundary-distance-selection",
+      "ralphcrisostomo--ralph"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "benchflow-ai--map-optimization-strategy",
+      "exact-boundary-distance-selection",
+      "eyh0602--senior-data-scientist",
+      "geospatial-plate-membership-filter",
+      "geospatial-source-crs-normalization",
+      "iframe-grayscale-keyframe-extraction",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization",
+      "projected-boundary-distance-selection",
+      "ralphcrisostomo--ralph"
+    ],
+    "trials": [
+      {
+        "trial_id": "earthquake-plate-calculation__FAufkoj",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "benchflow-ai--map-optimization-strategy",
+          "exact-boundary-distance-selection",
+          "eyh0602--senior-data-scientist",
+          "geospatial-plate-membership-filter",
+          "geospatial-source-crs-normalization",
+          "iframe-grayscale-keyframe-extraction",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization",
+          "projected-boundary-distance-selection",
+          "ralphcrisostomo--ralph"
+        ],
+        "available_skills": [
+          "benchflow-ai--map-optimization-strategy",
+          "exact-boundary-distance-selection",
+          "eyh0602--senior-data-scientist",
+          "geospatial-plate-membership-filter",
+          "geospatial-source-crs-normalization",
+          "iframe-grayscale-keyframe-extraction",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization",
+          "projected-boundary-distance-selection",
+          "ralphcrisostomo--ralph"
+        ],
+        "loaded_skills": [
+          "benchflow-ai--map-optimization-strategy",
+          "exact-boundary-distance-selection",
+          "eyh0602--senior-data-scientist",
+          "geospatial-plate-membership-filter",
+          "geospatial-source-crs-normalization",
+          "iframe-grayscale-keyframe-extraction",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization",
+          "projected-boundary-distance-selection",
+          "ralphcrisostomo--ralph"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "benchflow-ai--map-optimization-strategy",
+          "exact-boundary-distance-selection",
+          "eyh0602--senior-data-scientist",
+          "geospatial-plate-membership-filter",
+          "geospatial-source-crs-normalization",
+          "iframe-grayscale-keyframe-extraction",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization",
+          "projected-boundary-distance-selection",
+          "ralphcrisostomo--ralph"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

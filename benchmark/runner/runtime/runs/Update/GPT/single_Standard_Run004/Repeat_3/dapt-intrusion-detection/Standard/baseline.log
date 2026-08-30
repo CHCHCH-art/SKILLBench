@@ -1,0 +1,28 @@
+2026-08-28T23:47:11.576685+00:00 START operation=run batch=single_Standard_Run004 repeat=3 task=dapt-intrusion-detection condition=standard image=benchmark-cache/dapt-intrusion-detection-gold:7867f125ad78de68 provided_skills=["classic-pcap-streaming-network-metrics", "metric-csv-template-update", "network-traffic-reference-behavior-flags"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:03:01 0:00:00
+standard • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 1s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run004\Repe
+at_3\dapt-intrusion-detection\Standard\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run004\Repe
+at_3\dapt-intrusion-detection\Standard`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_Standard_Run004\Repe
+at_3\dapt-intrusion-detection\Standard\Job_result`
+
+2026-08-28T23:50:17.337109+00:00 FAIL operation=run batch=single_Standard_Run004 repeat=3 task=dapt-intrusion-detection condition=standard

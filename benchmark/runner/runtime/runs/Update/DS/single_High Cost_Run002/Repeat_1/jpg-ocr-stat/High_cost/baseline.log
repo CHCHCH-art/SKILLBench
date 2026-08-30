@@ -1,0 +1,28 @@
+2026-08-28T18:32:12.000384+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=jpg-ocr-stat condition=high_cost image=benchmark-cache/jpg-ocr-stat-gold:2312eeab86c89737 provided_skills=["receipt-date-total-excel-serialization", "receipt-multivariant-ocr-extraction"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:05:09 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 5m 9s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_1\jpg-ocr-stat\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_1\jpg-ocr-stat\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_1\jpg-ocr-stat\High_cost\Job_result`
+
+2026-08-28T18:37:22.403375+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=1 task=jpg-ocr-stat condition=high_cost

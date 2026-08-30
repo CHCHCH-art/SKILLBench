@@ -1,0 +1,28 @@
+2026-08-29T16:17:54.286653+00:00 START operation=run batch=skillrouter_top10_Skill_Run001 repeat=1 task=energy-ac-optimal-power-flow condition=mapping image=benchmark-cache/energy-ac-optimal-power-flow-gold:131fccb5858c984c provided_skills=["acopf-ipopt-reference-initialization", "ipopt-acopf-reference-solve", "acopf-feasibility-loading-report", "acopf-solution-reporting", "casadi-acopf-pi-network-formulation", "rectangular-acopf-network-model", "quadratic-dispatch-outer-approximation-report", "dispatch-loading-operating-margin-report", "sparse-dcopf-reserve-lp-formulation", "dcopf-reserve-lmp-solve"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:08:45 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 8m 45s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_1\energy-ac-optimal-power-flow\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_1\energy-ac-optimal-power-flow\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+001\Repeat_1\energy-ac-optimal-power-flow\Skill\Job_result`
+
+2026-08-29T16:26:41.206701+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run001 repeat=1 task=energy-ac-optimal-power-flow condition=mapping

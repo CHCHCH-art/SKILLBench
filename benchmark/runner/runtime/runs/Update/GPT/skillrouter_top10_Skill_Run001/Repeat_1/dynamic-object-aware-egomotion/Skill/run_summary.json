@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "dynamic-object-aware-egomotion",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestMotionAccuracy::test_motion_macro_f1: assert np.float64(0.48484848484848486) >= 0.5",
+  "peak_memory": {
+    "peak_memory_mib": 1176.26953125,
+    "peak_memory_raw": "1176.270 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2354,
+    "observed_containers": [
+      "dynamic-object-aware-egomotion__gls7bak__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "dynamic-object-aware",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run001\\Repeat_1\\dynamic-object-aware-egomotion\\mapping\\dynamic-object-aware-egomotion\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.704,
+    "agent_setup_sec": 0.583,
+    "agent_execution_sec": 151.256,
+    "verifier_sec": 82.065,
+    "total_sec": 243.591
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 310894,
+  "agent_output_tokens": 5478,
+  "image_cache": {
+    "image": "benchmark-cache/dynamic-object-aware-egomotion-gold:fc972e99cd5a2204",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "camera-motion-reference-label-sequence",
+      "curiositech--ai-video-production-master",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "harlan-zw--motion-v-skilld",
+      "metta-ai--tv-observation",
+      "plurigrid--active-inference-robotics",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "available_skills": [
+      "camera-motion-reference-label-sequence",
+      "curiositech--ai-video-production-master",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "harlan-zw--motion-v-skilld",
+      "metta-ai--tv-observation",
+      "plurigrid--active-inference-robotics",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "loaded_skills": [
+      "camera-motion-reference-label-sequence",
+      "curiositech--ai-video-production-master",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "harlan-zw--motion-v-skilld",
+      "metta-ai--tv-observation",
+      "plurigrid--active-inference-robotics",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "camera-motion-reference-label-sequence",
+      "curiositech--ai-video-production-master",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "harlan-zw--motion-v-skilld",
+      "metta-ai--tv-observation",
+      "plurigrid--active-inference-robotics",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "trials": [
+      {
+        "trial_id": "dynamic-object-aware-egomotion__gLs7BAK",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "camera-motion-reference-label-sequence",
+          "curiositech--ai-video-production-master",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "harlan-zw--motion-v-skilld",
+          "metta-ai--tv-observation",
+          "plurigrid--active-inference-robotics",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "available_skills": [
+          "camera-motion-reference-label-sequence",
+          "curiositech--ai-video-production-master",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "harlan-zw--motion-v-skilld",
+          "metta-ai--tv-observation",
+          "plurigrid--active-inference-robotics",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "loaded_skills": [
+          "camera-motion-reference-label-sequence",
+          "curiositech--ai-video-production-master",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "harlan-zw--motion-v-skilld",
+          "metta-ai--tv-observation",
+          "plurigrid--active-inference-robotics",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "camera-motion-reference-label-sequence",
+          "curiositech--ai-video-production-master",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "harlan-zw--motion-v-skilld",
+          "metta-ai--tv-observation",
+          "plurigrid--active-inference-robotics",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

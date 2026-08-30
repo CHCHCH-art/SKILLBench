@@ -1,0 +1,28 @@
+2026-08-29T15:47:44.168768+00:00 START operation=run batch=qwen_meta_top10_Skill_Run002 repeat=1 task=dapt-intrusion-detection condition=mapping image=benchmark-cache/dapt-intrusion-detection-gold:7867f125ad78de68 provided_skills=["classic-pcap-streaming-network-metrics", "network-traffic-reference-behavior-flags", "network-traffic-reference-metrics", "brownfinesecurity--netflows", "network-behavior-reference-heuristics", "pcap-pdml-stream-normalization", "OTRF--hunt-analytics-generation", "BrownFineSecurity--nmap", "sherifeldeeb--log-forensics", "oimiragieo--yara-authoring"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:03:04 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 4s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+2\Repeat_1\dapt-intrusion-detection\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+2\Repeat_1\dapt-intrusion-detection\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+2\Repeat_1\dapt-intrusion-detection\Skill\Job_result`
+
+2026-08-29T15:50:50.137107+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run002 repeat=1 task=dapt-intrusion-detection condition=mapping

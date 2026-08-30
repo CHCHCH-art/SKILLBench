@@ -1,0 +1,28 @@
+2026-08-28T14:41:16.831367+00:00 START operation=run batch=single_High Cost_Run002 repeat=1 task=financial-modeling-qa condition=high_cost image=benchmark-cache/financial-modeling-qa-gold:0fdb74de33d4be91 provided_skills=["bitmask-game-score-pairing", "dice-turn-category-scoring", "pdf-rule-value-extraction", "spreadsheet-turn-record-recovery"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:04:57 0:00:00
+high_cost • dmx-codex • deepseek-v4-flash
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 57s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_1\financial-modeling-qa\High_cost\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_1\financial-modeling-qa\High_cost`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\single_High 
+Cost_Run002\Repeat_1\financial-modeling-qa\High_cost\Job_result`
+
+2026-08-28T14:46:15.740666+00:00 FAIL operation=run batch=single_High Cost_Run002 repeat=1 task=financial-modeling-qa condition=high_cost

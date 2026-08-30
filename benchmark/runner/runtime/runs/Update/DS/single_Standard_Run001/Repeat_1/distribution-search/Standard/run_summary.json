@@ -1,0 +1,112 @@
+{
+  "schema_version": 7,
+  "task_id": "distribution-search",
+  "condition": "standard",
+  "batch": "single_Standard_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 167.3,
+    "peak_memory_raw": "167.300 MiB",
+    "metric": "docker_stats_memory",
+    "sampler_source": "docker_stats",
+    "sample_interval_seconds": 1.0,
+    "error": "EOF",
+    "container_name_hint": "distribution-search"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.994,
+    "agent_setup_sec": 0.897,
+    "agent_execution_sec": 62.496,
+    "verifier_sec": 149.311,
+    "total_sec": 217.757
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 120696,
+  "agent_output_tokens": 4426,
+  "image_cache": {
+    "image": "benchmark-cache/distribution-search-gold:430ae95bb5beb0fc",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "three-level-count-search-materialization",
+      "three-level-kl-distribution-solver"
+    ],
+    "available_skills": [
+      "three-level-count-search-materialization",
+      "three-level-kl-distribution-solver"
+    ],
+    "loaded_skills": [
+      "three-level-count-search-materialization",
+      "three-level-kl-distribution-solver"
+    ],
+    "explicitly_loaded_skills": [
+      "three-level-count-search-materialization",
+      "three-level-kl-distribution-solver"
+    ],
+    "preloaded_skills": [
+      "three-level-count-search-materialization",
+      "three-level-kl-distribution-solver"
+    ],
+    "trials": [
+      {
+        "trial_id": "distribution-search__QfYdvJt",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "three-level-count-search-materialization",
+          "three-level-kl-distribution-solver"
+        ],
+        "available_skills": [
+          "three-level-count-search-materialization",
+          "three-level-kl-distribution-solver"
+        ],
+        "loaded_skills": [
+          "three-level-count-search-materialization",
+          "three-level-kl-distribution-solver"
+        ],
+        "explicitly_loaded_skills": [
+          "three-level-count-search-materialization",
+          "three-level-kl-distribution-solver"
+        ],
+        "preloaded_skills": [
+          "three-level-count-search-materialization",
+          "three-level-kl-distribution-solver"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {
+          "three-level-count-search-materialization": [
+            {
+              "step_id": 11,
+              "tool_call_id": "call_2678c8e35f2b405c9509daa1",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/three-level-count-search-materialization/SKILL.md"
+            }
+          ],
+          "three-level-kl-distribution-solver": [
+            {
+              "step_id": 12,
+              "tool_call_id": "call_9f32763c0f95439b9f445034",
+              "function_name": "exec_command",
+              "reference": "/root/.agents/skills/three-level-kl-distribution-solver/SKILL.md"
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "danger_monitor": null,
+  "harbor_exit_code": 0
+}

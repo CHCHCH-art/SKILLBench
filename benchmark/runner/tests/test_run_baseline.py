@@ -16,6 +16,42 @@ import run_baseline as baseline  # noqa: E402
 import tool  # noqa: E402
 
 
+class CommandLineTests(unittest.TestCase):
+    def test_mapping_file_is_the_only_skill_run_selector(self) -> None:
+        with mock.patch.object(
+            sys,
+            "argv",
+            ["run_baseline.py", "--mapping-file", "custom.jsonl"],
+        ):
+            args = baseline.parse_args()
+
+        self.assertEqual(args.mapping_file, Path("custom.jsonl"))
+        self.assertFalse(args.no_skill)
+
+    def test_no_skill_remains_a_separate_selector(self) -> None:
+        with mock.patch.object(sys, "argv", ["run_baseline.py", "--no-skill"]):
+            args = baseline.parse_args()
+
+        self.assertTrue(args.no_skill)
+        self.assertIsNone(args.mapping_file)
+
+    def test_legacy_named_mapping_flags_are_rejected(self) -> None:
+        for option in ("--standard", "--high-cost", "--selected", "--mapping_file"):
+            with self.subTest(option=option):
+                with (
+                    mock.patch.object(
+                        sys,
+                        "argv",
+                        ["run_baseline.py", option, "mapping.jsonl"],
+                    ),
+                    mock.patch("sys.stderr"),
+                    self.assertRaises(SystemExit) as raised,
+                ):
+                    baseline.parse_args()
+
+                self.assertEqual(raised.exception.code, 2)
+
+
 class TaskMajorScheduleTests(unittest.TestCase):
     def test_repeats_of_each_task_are_adjacent(self) -> None:
         self.assertEqual(
@@ -31,67 +67,51 @@ class TaskMajorScheduleTests(unittest.TestCase):
         )
 
 
-class ProcessTreeRssTests(unittest.TestCase):
-    def test_parses_docker_top_rss_kib_and_ignores_header(self) -> None:
-        measured = baseline.parse_docker_top_rss_bytes("RSS\n  128\n256\n")
-
-        self.assertEqual(measured, (128 + 256) * 1024)
-
-    def test_sums_root_and_descendant_resident_pages(self) -> None:
-        with tempfile.TemporaryDirectory() as temp:
-            proc_root = Path(temp)
-            for pid, resident_pages, children in (
-                (100, 7, "101 102"),
-                (101, 11, "103"),
-                (102, 13, ""),
-                (103, 17, ""),
-            ):
-                process_dir = proc_root / str(pid)
-                children_dir = process_dir / "task" / str(pid)
-                children_dir.mkdir(parents=True)
-                (process_dir / "statm").write_text(
-                    f"999 {resident_pages} 0 0 0 0 0\n", encoding="ascii"
-                )
-                (children_dir / "children").write_text(children, encoding="ascii")
-
-            measured = baseline.process_tree_rss_bytes(
-                100,
-                proc_root=proc_root,
-                page_size=4096,
-            )
-
-        self.assertEqual(measured, (7 + 11 + 13 + 17) * 4096)
-
-    def test_returns_none_when_process_cannot_be_sampled(self) -> None:
-        with tempfile.TemporaryDirectory() as temp:
-            measured = baseline.process_tree_rss_bytes(
-                404,
-                proc_root=Path(temp),
-                page_size=4096,
-            )
-
-        self.assertIsNone(measured)
-
-    def test_monitor_sums_rss_across_task_containers(self) -> None:
+class DockerMemoryMonitorTests(unittest.TestCase):
+    def test_monitor_sums_current_memory_across_task_containers(self) -> None:
         monitor = baseline.DockerMemoryMonitor("docker", "task-a")
-        containers = [("first", "task-a-agent"), ("second", "task-a-env")]
-
-        with (
-            mock.patch.object(
-                monitor,
-                "_running_task_containers",
-                return_value=containers,
-            ),
-            mock.patch.object(
-                monitor,
-                "_container_rss_bytes",
-                side_effect=[2 * 1024 * 1024, 3 * 1024 * 1024],
-            ),
-        ):
-            monitor._sample_once()
+        monitor._record_sample("first", 2 * 1024 * 1024)
+        monitor._record_sample("second", 3 * 1024 * 1024)
 
         self.assertEqual(monitor.peak_memory_mib, 5.0)
-        self.assertEqual(monitor.metric, "process_tree_rss")
+        self.assertEqual(monitor.metric, "container_cgroup_memory")
+        self.assertEqual(monitor.sample_count, 2)
+
+    def test_sampler_uses_one_persistent_cgroup_reader_at_100ms(self) -> None:
+        monitor = baseline.DockerMemoryMonitor("docker", "task-a")
+
+        command = monitor._sampler_command("container-id")
+
+        self.assertEqual(command[:3], ["docker", "exec", "container-id"])
+        self.assertIn("/sys/fs/cgroup/memory.current", command[-1])
+        self.assertIn("sleep 0.100", command[-1])
+
+    def test_event_stream_uses_actor_fields_supported_by_docker(self) -> None:
+        monitor = baseline.DockerMemoryMonitor("docker", "task-a")
+
+        command = monitor._event_command()
+
+        self.assertIn("{{.Actor.ID}}", command[-1])
+        self.assertIn('index .Actor.Attributes "name"', command[-1])
+
+    def test_project_label_is_used_to_isolate_parallel_batches(self) -> None:
+        expected = Path(r"E:\runs\batch-a\task-a\mapping\task-a\environment")
+        monitor = baseline.DockerMemoryMonitor(
+            "docker",
+            "task-a",
+            project_working_dir=expected,
+        )
+        completed = baseline.subprocess.CompletedProcess(
+            args=[],
+            returncode=0,
+            stdout=str(expected).replace("\\", "/") + "\n",
+            stderr="",
+        )
+
+        with mock.patch.object(monitor, "_docker_command", return_value=completed):
+            matched = monitor._matches_project("container-id")
+
+        self.assertTrue(matched)
 
 
 class ResourceAwareScheduleTests(unittest.TestCase):
@@ -175,7 +195,7 @@ class ResourceAwareScheduleTests(unittest.TestCase):
             else:
                 with state_lock:
                     heavy_started_after_light = completed_light == {"light-a", "light-b"}
-            return baseline.TaskExecutionResult([], [], [])
+            return baseline.TaskExecutionResult([], [])
 
         with mock.patch.object(baseline, "run_scheduled_task", side_effect=fake_run):
             results = baseline.execute_plan(light, heavy, task_workers=2)
@@ -200,13 +220,14 @@ class ResourceAwareScheduleTests(unittest.TestCase):
                     scheduled,
                     task_count=1,
                     repeat_numbers=[1],
-                    condition="standard",
+                    condition="mapping",
                     harbor="harbor",
                     docker="docker",
                     api={},
                     batch_dir=batch_dir,
                     tasks_root=Path(temp),
-                    mapping_root=Path(temp),
+                    mapping_file=Path(temp) / "mapping.jsonl",
+                    skill_paths_by_task={"task-a": []},
                     operation="rerun",
                     before_run=lambda task_id, current_dir: prepared.append(
                         (task_id, current_dir.name)
@@ -218,20 +239,67 @@ class ResourceAwareScheduleTests(unittest.TestCase):
         self.assertEqual(run_task.call_args.kwargs["operation"], "rerun")
 
 
-class SelectedSkillTests(unittest.TestCase):
-    def test_selected_skill_paths_uses_task_selected_directory(self) -> None:
+class SkillMappingTests(unittest.TestCase):
+    def test_jsonl_mapping_resolves_central_skill_directories(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
-            mapping_root = Path(temp)
-            selected_skill = (
-                mapping_root / "task-a_Gold_skill" / "Selected" / "chosen-skill"
-            )
+            root = Path(temp)
+            skills_root = root / "skills"
+            selected_skill = skills_root / "chosen-skill"
             selected_skill.mkdir(parents=True)
             (selected_skill / "SKILL.md").write_text("# Chosen", encoding="utf-8")
+            mapping_file = root / "selected.jsonl"
+            mapping_file.write_text(
+                '{"task_id":"task-a","skills":["chosen-skill"]}\n',
+                encoding="utf-8",
+            )
 
             self.assertEqual(
-                baseline.selected_skill_paths("task-a", mapping_root),
-                [selected_skill],
+                baseline.resolve_skill_mapping(
+                    mapping_file, ["task-a"], skills_root
+                ),
+                {"task-a": [selected_skill]},
             )
+
+    def test_mapping_validation_reports_all_missing_references(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            skills_root = root / "skills"
+            skills_root.mkdir()
+            mapping_file = root / "standard.jsonl"
+            mapping_file.write_text(
+                '{"task_id":"task-a","skills":["missing-skill"]}\n',
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(
+                ValueError, "(?s)Skill not found 'missing-skill'.*no mapping entry"
+            ):
+                baseline.resolve_skill_mapping(
+                    mapping_file, ["task-a", "task-b"], skills_root
+                )
+
+    def test_yaml_mapping_uses_the_same_record_schema(self) -> None:
+        try:
+            import yaml  # noqa: F401
+        except ImportError:
+            self.skipTest("PyYAML is not installed")
+
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            skill_dir = root / "skills" / "chosen-skill"
+            skill_dir.mkdir(parents=True)
+            (skill_dir / "SKILL.md").write_text("# Chosen", encoding="utf-8")
+            mapping_file = root / "standard.yaml"
+            mapping_file.write_text(
+                "- task_id: task-a\n  skills:\n    - chosen-skill\n",
+                encoding="utf-8",
+            )
+
+            resolved = baseline.resolve_skill_mapping(
+                mapping_file, ["task-a"], root / "skills"
+            )
+
+        self.assertEqual([path.name for path in resolved["task-a"]], ["chosen-skill"])
 
 
 class SessionSkillAuditTests(unittest.TestCase):
@@ -256,6 +324,26 @@ class SessionSkillAuditTests(unittest.TestCase):
         self.assertEqual(available, {"chosen-skill"})
         self.assertEqual(loaded, {"chosen-skill"})
         self.assertIn("chosen-skill", evidence)
+
+    def test_preloaded_skills_count_as_loaded_and_remain_distinguishable(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            job_dir = Path(temp)
+            trajectory_path = job_dir / "trial-1" / "agent" / "trajectory.json"
+            trajectory_path.parent.mkdir(parents=True)
+            trajectory_path.write_text(
+                '{"steps":[{"source":"system","message":"<skills_instructions>\\n### Available skills\\n- chosen-skill (file: /root/.agents/skills/chosen-skill/SKILL.md)"}]}',
+                encoding="utf-8",
+            )
+
+            audit = tool.analyze_skill_usage(
+                job_dir,
+                ["chosen-skill"],
+                preloaded_skills=["chosen-skill"],
+            )
+
+        self.assertEqual(audit["loaded_skills"], ["chosen-skill"])
+        self.assertEqual(audit["preloaded_skills"], ["chosen-skill"])
+        self.assertEqual(audit["explicitly_loaded_skills"], [])
 
 
 class StagedTaskPathTests(unittest.TestCase):
@@ -397,7 +485,7 @@ class SummaryTokenTests(unittest.TestCase):
             baseline.write_json(
                 batch_dir
                 / task_id
-                / baseline.CONDITION_DIR_NAMES["standard"]
+                / baseline.CONDITION_DIR_NAMES["mapping"]
                 / "run_summary.json",
                 {
                     "status": "completed",
@@ -410,7 +498,7 @@ class SummaryTokenTests(unittest.TestCase):
             rows, _ = baseline.build_batch_summary_rows(
                 batch_dir,
                 [task_id],
-                "standard",
+                "mapping",
             )
 
         self.assertNotIn("run_summary", baseline.SUMMARY_FIELDNAMES)

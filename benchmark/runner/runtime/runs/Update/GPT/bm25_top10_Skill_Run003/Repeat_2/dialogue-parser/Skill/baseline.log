@@ -1,0 +1,28 @@
+2026-08-29T15:59:33.836536+00:00 START operation=run batch=bm25_top10_Skill_Run003 repeat=2 task=dialogue-parser condition=mapping image=benchmark-cache/dialogue-parser-gold:c0353fb4817c6884 provided_skills=["dialogue-section-choice-parser", "dialogue-reference-parser", "dialogue-dot-rendering", "dialogue-graph-validation-serialization", "dialogue-graph-construction", "yaleh--error-recovery", "AltimateAI--creating-dbt-models", "posit-dev--release-post", "unified-planning-plan-file-writing", "lubu-labs--langgraph-project-setup"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:03:09 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 9s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_2\dialogue-parser\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_2\dialogue-parser\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run003\Rep
+eat_2\dialogue-parser\Skill\Job_result`
+
+2026-08-29T16:02:45.321712+00:00 PASS operation=run batch=bm25_top10_Skill_Run003 repeat=2 task=dialogue-parser condition=mapping
