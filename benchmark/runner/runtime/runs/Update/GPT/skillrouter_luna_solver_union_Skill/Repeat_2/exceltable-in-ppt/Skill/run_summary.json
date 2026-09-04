@@ -1,0 +1,102 @@
+{
+  "schema_version": 9,
+  "task_id": "exceltable-in-ppt",
+  "condition": "mapping",
+  "batch": "skillrouter_luna_solver_union_Skill_Run003",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 308.5546875,
+    "peak_memory_raw": "308.555 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3186,
+    "observed_containers": [
+      "exceltable-in-ppt__gzlools__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "exceltable-in-ppt",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_luna_solver_union_Skill_Run003\\Repeat_2\\exceltable-in-ppt\\mapping\\exceltable-in-ppt\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.86,
+    "agent_setup_sec": 0.43,
+    "agent_execution_sec": 160.128,
+    "verifier_sec": 156.444,
+    "total_sec": 324.333
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 181636,
+  "agent_output_tokens": 4592,
+  "image_cache": {
+    "image": "benchmark-cache/exceltable-in-ppt-gold:76ac1a2bd4e98536",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-zip-preserving-embedding-replacement"
+    ],
+    "available_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-zip-preserving-embedding-replacement"
+    ],
+    "loaded_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-zip-preserving-embedding-replacement"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-zip-preserving-embedding-replacement"
+    ],
+    "trials": [
+      {
+        "trial_id": "exceltable-in-ppt__gZLooLs",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-zip-preserving-embedding-replacement"
+        ],
+        "available_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-zip-preserving-embedding-replacement"
+        ],
+        "loaded_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-zip-preserving-embedding-replacement"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-zip-preserving-embedding-replacement"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

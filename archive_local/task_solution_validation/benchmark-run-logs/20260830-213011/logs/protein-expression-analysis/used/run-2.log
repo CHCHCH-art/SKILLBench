@@ -1,0 +1,48 @@
+Task: protein-expression-analysis
+Source type: used
+Task run: 5
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\protein-expression-analysis
+
+========== Repeated Run 2/3 ==========
+
+========== Run solve.sh ==========
+
+========== Run test.sh ==========
+Requirement already satisfied: pytest in /usr/local/lib/python3.12/dist-packages (9.1.1)
+Requirement already satisfied: pytest-json-ctrf in /usr/local/lib/python3.12/dist-packages (0.5.3)
+Requirement already satisfied: iniconfig>=1.0.1 in /usr/local/lib/python3.12/dist-packages (from pytest) (2.3.0)
+Requirement already satisfied: packaging>=22 in /usr/local/lib/python3.12/dist-packages (from pytest) (26.3)
+Requirement already satisfied: pluggy<2,>=1.5 in /usr/local/lib/python3.12/dist-packages (from pytest) (1.6.0)
+Requirement already satisfied: pygments>=2.7.2 in /usr/local/lib/python3.12/dist-packages (from pytest) (2.21.0)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+All tests passed!
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /tests
+plugins: json-ctrf-0.5.3
+collecting ... collected 6 items
+
+../tests/test_outputs.py::test_file_exists PASSED                        [ 16%]
+../tests/test_outputs.py::test_sheets_exist PASSED                       [ 33%]
+../tests/test_outputs.py::test_step1_expression_values_filled PASSED     [ 50%]
+../tests/test_outputs.py::test_step2_statistics_calculated PASSED        [ 66%]
+../tests/test_outputs.py::test_step3_fold_changes_calculated PASSED      [ 83%]
+../tests/test_outputs.py::test_values_are_numeric PASSED                 [100%]
+
+============================== 6 passed in 0.23s ===============================
+
+========== Result ==========
+Task: protein-expression-analysis
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 1.6s (exit 0)
+Test: 0.7s (exit 0)
+Solve Memory Peak: 167.9 MiB
+Test Memory Peak: 170.8 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s

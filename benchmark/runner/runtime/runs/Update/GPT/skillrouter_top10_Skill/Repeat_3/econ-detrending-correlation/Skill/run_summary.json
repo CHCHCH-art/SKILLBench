@@ -1,0 +1,163 @@
+{
+  "schema_version": 9,
+  "task_id": "econ-detrending-correlation",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run005",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "trial_error",
+  "passed": false,
+  "error": [
+    {
+      "exception_type": "AgentTimeoutError",
+      "exception_message": "Agent execution timed out after 900.0 seconds"
+    }
+  ],
+  "failure_reason": "{\"exception_type\":\"AgentTimeoutError\",\"exception_message\":\"Agent execution timed out after 900.0 seconds\"}",
+  "peak_memory": {
+    "peak_memory_mib": 490.4140625,
+    "peak_memory_raw": "490.414 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 9315,
+    "observed_containers": [
+      "econ-detrending-correlation__4sxaohr__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "econ-detrending-corr",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run005\\Repeat_3\\econ-detrending-correlation\\mapping\\econ-detrending-correlation\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.441,
+    "agent_setup_sec": 0.325,
+    "agent_execution_sec": 900.506,
+    "verifier_sec": 31.972,
+    "total_sec": 941.145
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 2177258,
+  "agent_output_tokens": 5775,
+  "image_cache": {
+    "image": "benchmark-cache/econ-detrending-correlation-gold:693ab5b971b40262",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "economic-series-workbook-extraction",
+      "erp-annual-partial-quarter-extraction",
+      "famaoai-creator--unit-economics-optimizer",
+      "fatfingererr--analyze-platinum-to-brazil-equities-transmission",
+      "fatfingererr-fiscal-deficit-scenarios",
+      "hp-cycle-correlation-verification",
+      "hp-log-cycle-correlation",
+      "joellewis--quantitative-valuation",
+      "majiayu000--daoagent",
+      "rkiding--alphaear-predictor"
+    ],
+    "available_skills": [
+      "economic-series-workbook-extraction",
+      "erp-annual-partial-quarter-extraction",
+      "famaoai-creator--unit-economics-optimizer",
+      "fatfingererr--analyze-platinum-to-brazil-equities-transmission",
+      "fatfingererr-fiscal-deficit-scenarios",
+      "hp-cycle-correlation-verification",
+      "hp-log-cycle-correlation",
+      "joellewis--quantitative-valuation",
+      "majiayu000--daoagent",
+      "rkiding--alphaear-predictor"
+    ],
+    "loaded_skills": [
+      "economic-series-workbook-extraction",
+      "erp-annual-partial-quarter-extraction",
+      "famaoai-creator--unit-economics-optimizer",
+      "fatfingererr--analyze-platinum-to-brazil-equities-transmission",
+      "fatfingererr-fiscal-deficit-scenarios",
+      "hp-cycle-correlation-verification",
+      "hp-log-cycle-correlation",
+      "joellewis--quantitative-valuation",
+      "majiayu000--daoagent",
+      "rkiding--alphaear-predictor"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "economic-series-workbook-extraction",
+      "erp-annual-partial-quarter-extraction",
+      "famaoai-creator--unit-economics-optimizer",
+      "fatfingererr--analyze-platinum-to-brazil-equities-transmission",
+      "fatfingererr-fiscal-deficit-scenarios",
+      "hp-cycle-correlation-verification",
+      "hp-log-cycle-correlation",
+      "joellewis--quantitative-valuation",
+      "majiayu000--daoagent",
+      "rkiding--alphaear-predictor"
+    ],
+    "trials": [
+      {
+        "trial_id": "econ-detrending-correlation__4sXAoHR",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "economic-series-workbook-extraction",
+          "erp-annual-partial-quarter-extraction",
+          "famaoai-creator--unit-economics-optimizer",
+          "fatfingererr--analyze-platinum-to-brazil-equities-transmission",
+          "fatfingererr-fiscal-deficit-scenarios",
+          "hp-cycle-correlation-verification",
+          "hp-log-cycle-correlation",
+          "joellewis--quantitative-valuation",
+          "majiayu000--daoagent",
+          "rkiding--alphaear-predictor"
+        ],
+        "available_skills": [
+          "economic-series-workbook-extraction",
+          "erp-annual-partial-quarter-extraction",
+          "famaoai-creator--unit-economics-optimizer",
+          "fatfingererr--analyze-platinum-to-brazil-equities-transmission",
+          "fatfingererr-fiscal-deficit-scenarios",
+          "hp-cycle-correlation-verification",
+          "hp-log-cycle-correlation",
+          "joellewis--quantitative-valuation",
+          "majiayu000--daoagent",
+          "rkiding--alphaear-predictor"
+        ],
+        "loaded_skills": [
+          "economic-series-workbook-extraction",
+          "erp-annual-partial-quarter-extraction",
+          "famaoai-creator--unit-economics-optimizer",
+          "fatfingererr--analyze-platinum-to-brazil-equities-transmission",
+          "fatfingererr-fiscal-deficit-scenarios",
+          "hp-cycle-correlation-verification",
+          "hp-log-cycle-correlation",
+          "joellewis--quantitative-valuation",
+          "majiayu000--daoagent",
+          "rkiding--alphaear-predictor"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "economic-series-workbook-extraction",
+          "erp-annual-partial-quarter-extraction",
+          "famaoai-creator--unit-economics-optimizer",
+          "fatfingererr--analyze-platinum-to-brazil-equities-transmission",
+          "fatfingererr-fiscal-deficit-scenarios",
+          "hp-cycle-correlation-verification",
+          "hp-log-cycle-correlation",
+          "joellewis--quantitative-valuation",
+          "majiayu000--daoagent",
+          "rkiding--alphaear-predictor"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

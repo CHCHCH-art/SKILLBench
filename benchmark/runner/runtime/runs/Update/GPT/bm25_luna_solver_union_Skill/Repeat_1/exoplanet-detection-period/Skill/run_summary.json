@@ -1,0 +1,86 @@
+{
+  "schema_version": 9,
+  "task_id": "exoplanet-detection-period",
+  "condition": "mapping",
+  "batch": "bm25_luna_solver_union_Skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 985.55859375,
+    "peak_memory_raw": "985.559 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 7394,
+    "observed_containers": [
+      "exoplanet-detection-period__v9txia7__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "exoplanet-detection-",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_luna_solver_union_Skill_Run001\\Repeat_1\\exoplanet-detection-period\\mapping\\exoplanet-detection-period\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.502,
+    "agent_setup_sec": 0.594,
+    "agent_execution_sec": 302.103,
+    "verifier_sec": 440.347,
+    "total_sec": 749.054
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 194557,
+  "agent_output_tokens": 4479,
+  "image_cache": {
+    "image": "benchmark-cache/exoplanet-detection-period-gold:8bdb5ea239d635d6",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "lightcurve-quality-outlier-flatten"
+    ],
+    "available_skills": [
+      "lightcurve-quality-outlier-flatten"
+    ],
+    "loaded_skills": [
+      "lightcurve-quality-outlier-flatten"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "lightcurve-quality-outlier-flatten"
+    ],
+    "trials": [
+      {
+        "trial_id": "exoplanet-detection-period__v9txia7",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "lightcurve-quality-outlier-flatten"
+        ],
+        "available_skills": [
+          "lightcurve-quality-outlier-flatten"
+        ],
+        "loaded_skills": [
+          "lightcurve-quality-outlier-flatten"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "lightcurve-quality-outlier-flatten"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

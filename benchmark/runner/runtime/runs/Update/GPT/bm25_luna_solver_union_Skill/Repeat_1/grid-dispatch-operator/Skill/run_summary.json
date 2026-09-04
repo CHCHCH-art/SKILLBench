@@ -1,0 +1,94 @@
+{
+  "schema_version": 9,
+  "task_id": "grid-dispatch-operator",
+  "condition": "mapping",
+  "batch": "bm25_luna_solver_union_Skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOptimality::test_cost_is_optimal: AssertionError: Optimality gap 83060.0903% exceeds 0.01% (actual=2466227162.846957, optimal=2965637.909677723)",
+  "peak_memory": {
+    "peak_memory_mib": 1981.61328125,
+    "peak_memory_raw": "1981.613 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 17961,
+    "observed_containers": [
+      "grid-dispatch-operator__ygkad4y__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "grid-dispatch-operat",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_luna_solver_union_Skill_Run001\\Repeat_1\\grid-dispatch-operator\\mapping\\grid-dispatch-operator\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.424,
+    "agent_setup_sec": 0.513,
+    "agent_execution_sec": 1792.455,
+    "verifier_sec": 22.266,
+    "total_sec": 1821.277
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1699140,
+  "agent_output_tokens": 15138,
+  "image_cache": {
+    "image": "benchmark-cache/grid-dispatch-operator-gold:4acd0bce1add524f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dispatch-loading-operating-margin-report"
+    ],
+    "available_skills": [
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dispatch-loading-operating-margin-report"
+    ],
+    "loaded_skills": [
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dispatch-loading-operating-margin-report"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dispatch-loading-operating-margin-report"
+    ],
+    "trials": [
+      {
+        "trial_id": "grid-dispatch-operator__YGKAD4y",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dispatch-loading-operating-margin-report"
+        ],
+        "available_skills": [
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dispatch-loading-operating-margin-report"
+        ],
+        "loaded_skills": [
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dispatch-loading-operating-margin-report"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dispatch-loading-operating-margin-report"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

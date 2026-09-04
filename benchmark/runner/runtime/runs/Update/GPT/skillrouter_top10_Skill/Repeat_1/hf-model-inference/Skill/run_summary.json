@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "hf-model-inference",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run005",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 2048.453125,
+    "peak_memory_raw": "2048.453 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 6844,
+    "observed_containers": [
+      "hf-model-inference__pwyvqx3__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "hf-model-inference",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run005\\Repeat_1\\hf-model-inference\\mapping\\hf-model-inference\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.528,
+    "agent_setup_sec": 0.51,
+    "agent_execution_sec": 344.742,
+    "verifier_sec": 340.694,
+    "total_sec": 694.612
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 519402,
+  "agent_output_tokens": 5370,
+  "image_cache": {
+    "image": "benchmark-cache/hf-model-inference-gold:5e2a59f453e212fb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "PolicyEngine--policyengine-api",
+      "basedhardware--local-dev",
+      "cinience--alicloud-ai-entry-modelstudio",
+      "flask-local-classification-service",
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization",
+      "letta-ai--pypi-server",
+      "numpy-distilbert-int8-inference",
+      "openclaw--sherpa-onnx-tts",
+      "tenequm--cloudflare-workers"
+    ],
+    "available_skills": [
+      "PolicyEngine--policyengine-api",
+      "basedhardware--local-dev",
+      "cinience--alicloud-ai-entry-modelstudio",
+      "flask-local-classification-service",
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization",
+      "letta-ai--pypi-server",
+      "numpy-distilbert-int8-inference",
+      "openclaw--sherpa-onnx-tts",
+      "tenequm--cloudflare-workers"
+    ],
+    "loaded_skills": [
+      "PolicyEngine--policyengine-api",
+      "basedhardware--local-dev",
+      "cinience--alicloud-ai-entry-modelstudio",
+      "flask-local-classification-service",
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization",
+      "letta-ai--pypi-server",
+      "numpy-distilbert-int8-inference",
+      "openclaw--sherpa-onnx-tts",
+      "tenequm--cloudflare-workers"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "PolicyEngine--policyengine-api",
+      "basedhardware--local-dev",
+      "cinience--alicloud-ai-entry-modelstudio",
+      "flask-local-classification-service",
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization",
+      "letta-ai--pypi-server",
+      "numpy-distilbert-int8-inference",
+      "openclaw--sherpa-onnx-tts",
+      "tenequm--cloudflare-workers"
+    ],
+    "trials": [
+      {
+        "trial_id": "hf-model-inference__pWyVqX3",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "PolicyEngine--policyengine-api",
+          "basedhardware--local-dev",
+          "cinience--alicloud-ai-entry-modelstudio",
+          "flask-local-classification-service",
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization",
+          "letta-ai--pypi-server",
+          "numpy-distilbert-int8-inference",
+          "openclaw--sherpa-onnx-tts",
+          "tenequm--cloudflare-workers"
+        ],
+        "available_skills": [
+          "PolicyEngine--policyengine-api",
+          "basedhardware--local-dev",
+          "cinience--alicloud-ai-entry-modelstudio",
+          "flask-local-classification-service",
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization",
+          "letta-ai--pypi-server",
+          "numpy-distilbert-int8-inference",
+          "openclaw--sherpa-onnx-tts",
+          "tenequm--cloudflare-workers"
+        ],
+        "loaded_skills": [
+          "PolicyEngine--policyengine-api",
+          "basedhardware--local-dev",
+          "cinience--alicloud-ai-entry-modelstudio",
+          "flask-local-classification-service",
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization",
+          "letta-ai--pypi-server",
+          "numpy-distilbert-int8-inference",
+          "openclaw--sherpa-onnx-tts",
+          "tenequm--cloudflare-workers"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "PolicyEngine--policyengine-api",
+          "basedhardware--local-dev",
+          "cinience--alicloud-ai-entry-modelstudio",
+          "flask-local-classification-service",
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization",
+          "letta-ai--pypi-server",
+          "numpy-distilbert-int8-inference",
+          "openclaw--sherpa-onnx-tts",
+          "tenequm--cloudflare-workers"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

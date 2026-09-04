@@ -1,0 +1,126 @@
+{
+  "schema_version": 9,
+  "task_id": "dynamic-object-aware-egomotion",
+  "condition": "mapping",
+  "batch": "bm25_luna_solver_union_Skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestMotionAccuracy::test_motion_macro_f1: assert np.float64(0.09523809523809523) >= 0.5; test_outputs.py::TestMaskAccuracy::test_mask_comprehensive: AssertionError: Mean IoU is below acceptable threshold.",
+  "peak_memory": {
+    "peak_memory_mib": 919.9140625,
+    "peak_memory_raw": "919.914 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 6494,
+    "observed_containers": [
+      "dynamic-object-aware-egomotion__gtszkv2__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "dynamic-object-aware",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_luna_solver_union_Skill_Run001\\Repeat_3\\dynamic-object-aware-egomotion\\mapping\\dynamic-object-aware-egomotion\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.438,
+    "agent_setup_sec": 0.56,
+    "agent_execution_sec": 191.228,
+    "verifier_sec": 457.87,
+    "total_sec": 656.847
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 172813,
+  "agent_output_tokens": 5155,
+  "image_cache": {
+    "image": "benchmark-cache/dynamic-object-aware-egomotion-gold:fc972e99cd5a2204",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "binary-mask-csr-npz-serialization",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "available_skills": [
+      "binary-mask-csr-npz-serialization",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "loaded_skills": [
+      "binary-mask-csr-npz-serialization",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "binary-mask-csr-npz-serialization",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "trials": [
+      {
+        "trial_id": "dynamic-object-aware-egomotion__GtsZkV2",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "binary-mask-csr-npz-serialization",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "available_skills": [
+          "binary-mask-csr-npz-serialization",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "loaded_skills": [
+          "binary-mask-csr-npz-serialization",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "binary-mask-csr-npz-serialization",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

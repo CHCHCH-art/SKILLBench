@@ -1,0 +1,102 @@
+{
+  "schema_version": 9,
+  "task_id": "video-silence-remover",
+  "condition": "mapping",
+  "batch": "bm25_luna_solver_union_Skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 264.125,
+    "peak_memory_raw": "264.125 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 1590,
+    "observed_containers": [
+      "video-silence-remover__7eqlxip__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "video-silence-remove",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_luna_solver_union_Skill_Run001\\Repeat_2\\video-silence-remover\\mapping\\video-silence-remover\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.824,
+    "agent_setup_sec": 0.46,
+    "agent_execution_sec": 144.752,
+    "verifier_sec": 11.466,
+    "total_sec": 163.831
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 198444,
+  "agent_output_tokens": 3156,
+  "image_cache": {
+    "image": "benchmark-cache/video-silence-remover-gold:274332f35d40c56d",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "audio-energy-removal-window-detection",
+      "probed-duration-removal-report",
+      "single-filtergraph-av-trim-concat"
+    ],
+    "available_skills": [
+      "audio-energy-removal-window-detection",
+      "probed-duration-removal-report",
+      "single-filtergraph-av-trim-concat"
+    ],
+    "loaded_skills": [
+      "audio-energy-removal-window-detection",
+      "probed-duration-removal-report",
+      "single-filtergraph-av-trim-concat"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "audio-energy-removal-window-detection",
+      "probed-duration-removal-report",
+      "single-filtergraph-av-trim-concat"
+    ],
+    "trials": [
+      {
+        "trial_id": "video-silence-remover__7eqLxip",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "audio-energy-removal-window-detection",
+          "probed-duration-removal-report",
+          "single-filtergraph-av-trim-concat"
+        ],
+        "available_skills": [
+          "audio-energy-removal-window-detection",
+          "probed-duration-removal-report",
+          "single-filtergraph-av-trim-concat"
+        ],
+        "loaded_skills": [
+          "audio-energy-removal-window-detection",
+          "probed-duration-removal-report",
+          "single-filtergraph-av-trim-concat"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "audio-energy-removal-window-detection",
+          "probed-duration-removal-report",
+          "single-filtergraph-av-trim-concat"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

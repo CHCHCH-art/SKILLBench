@@ -1,0 +1,28 @@
+2026-09-01T14:36:32.788980+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=distribution-search condition=mapping image=benchmark-cache/distribution-search-gold:430ae95bb5beb0fc provided_skills=["three-level-kl-distribution-solver", "logit-distribution-kl-optimization"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:04:56 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 56s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_luna_solver_union_Skil
+l_Run002\Repeat_1\distribution-search\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_luna_solver_union_Skil
+l_Run002\Repeat_1\distribution-search\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_luna_solver_union_Skil
+l_Run002\Repeat_1\distribution-search\Skill\Job_result`
+
+2026-09-01T14:41:30.605919+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=distribution-search condition=mapping

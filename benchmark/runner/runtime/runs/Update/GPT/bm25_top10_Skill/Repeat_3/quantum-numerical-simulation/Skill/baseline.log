@@ -1,0 +1,28 @@
+2026-09-03T07:43:44.324622+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=quantum-numerical-simulation condition=mapping image=benchmark-cache/quantum-numerical-simulation-gold:8597d1a23d4799e3 provided_skills=["direct-steady-state-cavity-wigner-export", "cavity-wigner-grid-export", "piqs-open-dicke-liouvillian", "benchflow-ai--qutip", "piqs-open-dicke-superoperator-construction", "arpack-liouvillian-steady-state", "guia-matthieu--educational-presentation", "posit-dev--release-post", "delneg--veo3-1", "hatayama--uloop-get-logs"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:05:30 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 5m 30s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_3\quantum-numerical-simulation\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_3\quantum-numerical-simulation\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_3\quantum-numerical-simulation\Skill\Job_result`
+
+2026-09-03T07:49:15.981171+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=quantum-numerical-simulation condition=mapping

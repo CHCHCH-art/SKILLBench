@@ -1,0 +1,28 @@
+2026-09-03T01:14:22.653039+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=exceltable-in-ppt condition=mapping image=benchmark-cache/exceltable-in-ppt-gold:76ac1a2bd4e98536 provided_skills=["pptx-zip-preserving-embedding-replacement", "pptx-embedded-workbook-rate-update", "ooxml-two-key-lookup-formula-population", "pptx-embedded-workbook-orchestration", "gohypergiant--accelint-security-best-practices", "BrownFineSecurity--ffind", "anthropics--initiating-coverage", "adaptyvbio--setup", "inverse-rate-workbook-cell-update", "xlsx-formula-cache-preserving-recalc"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:06:27 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 6m 27s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_1\exceltable-in-ppt\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_1\exceltable-in-ppt\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_1\exceltable-in-ppt\Skill\Job_result`
+
+2026-09-03T01:20:51.355778+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=exceltable-in-ppt condition=mapping

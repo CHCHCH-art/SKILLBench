@@ -1,0 +1,210 @@
+2026-09-01T14:19:53.200161+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-01T14:19:53.200161+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=dapt-intrusion-detection condition=mapping
+2026-09-01T14:26:23.282293+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-01T14:26:23.291899+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-01T14:26:33.806507+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-01T14:26:33.816393+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=dapt-intrusion-detection condition=mapping
+2026-09-01T14:31:12.575563+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-01T14:31:12.582821+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-01T14:31:15.741403+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-01T14:31:15.753595+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=dapt-intrusion-detection condition=mapping
+2026-09-01T14:35:32.413262+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-01T14:35:32.413262+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=dialogue-parser condition=mapping
+2026-09-01T14:36:32.774899+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-01T14:36:32.782669+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=distribution-search condition=mapping
+2026-09-01T14:41:12.327073+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=dialogue-parser condition=mapping status=completed
+2026-09-01T14:41:12.331780+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=dialogue-parser condition=mapping
+2026-09-01T14:41:30.605919+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=distribution-search condition=mapping status=completed
+2026-09-01T14:41:30.613331+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=distribution-search condition=mapping
+2026-09-01T14:45:48.748137+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=dialogue-parser condition=mapping status=completed
+2026-09-01T14:45:48.752235+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=dialogue-parser condition=mapping
+2026-09-01T14:45:52.556021+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=distribution-search condition=mapping status=completed
+2026-09-01T14:45:52.563848+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=distribution-search condition=mapping
+2026-09-01T14:49:38.166890+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=distribution-search condition=mapping status=completed
+2026-09-01T14:49:38.175203+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-01T14:52:23.087524+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=dialogue-parser condition=mapping status=completed
+2026-09-01T14:52:23.093942+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=earthquake-plate-calculation condition=mapping
+2026-09-01T14:59:12.827864+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-01T14:59:12.833619+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=earthquake-plate-calculation condition=mapping
+2026-09-01T14:59:36.155362+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-01T14:59:36.161129+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-01T15:04:26.591729+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-01T15:04:26.597466+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=earthquake-plate-calculation condition=mapping
+2026-09-01T15:05:48.693930+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-01T15:05:48.700132+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-01T15:09:24.161019+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-01T15:09:24.167281+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=econ-detrending-correlation condition=mapping
+2026-09-01T15:13:51.408836+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-01T15:13:51.414058+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-01T15:14:11.894678+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=econ-detrending-correlation condition=mapping status=completed
+2026-09-01T15:14:11.898867+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=econ-detrending-correlation condition=mapping
+2026-09-01T15:19:27.820842+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=econ-detrending-correlation condition=mapping status=completed
+2026-09-01T15:19:27.827452+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=econ-detrending-correlation condition=mapping
+2026-09-01T15:23:37.801618+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=econ-detrending-correlation condition=mapping status=completed
+2026-09-01T15:23:37.807296+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=energy-market-pricing condition=mapping
+2026-09-01T15:28:58.349370+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-01T15:28:58.357146+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-01T15:39:36.090770+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=energy-market-pricing condition=mapping status=completed
+2026-09-01T15:39:36.096963+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=energy-market-pricing condition=mapping
+2026-09-01T15:52:27.237146+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=energy-market-pricing condition=mapping status=completed
+2026-09-01T15:52:27.244453+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=energy-market-pricing condition=mapping
+2026-09-01T16:01:14.759105+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-01T16:01:14.767690+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-01T16:01:56.151630+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=energy-market-pricing condition=mapping status=completed
+2026-09-01T16:01:56.159145+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=exceltable-in-ppt condition=mapping
+2026-09-01T16:08:53.734128+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-01T16:08:53.740450+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=exceltable-in-ppt condition=mapping
+2026-09-01T16:27:03.877452+00:00 ERROR operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=exceltable-in-ppt condition=mapping status=trial_error
+2026-09-01T16:27:03.883938+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=exceltable-in-ppt condition=mapping
+2026-09-01T16:27:47.755887+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-01T16:27:47.762671+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=exoplanet-detection-period condition=mapping
+2026-09-01T16:32:33.598565+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-01T16:32:33.604839+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=financial-modeling-qa condition=mapping
+2026-09-01T16:36:51.185498+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=exoplanet-detection-period condition=mapping status=completed
+2026-09-01T16:36:51.191724+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=exoplanet-detection-period condition=mapping
+2026-09-01T16:37:22.467616+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=financial-modeling-qa condition=mapping status=completed
+2026-09-01T16:37:22.480722+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=financial-modeling-qa condition=mapping
+2026-09-01T16:41:59.979505+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=financial-modeling-qa condition=mapping status=completed
+2026-09-01T16:41:59.980029+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=financial-modeling-qa condition=mapping
+2026-09-01T16:45:52.616081+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=financial-modeling-qa condition=mapping status=completed
+2026-09-01T16:45:52.625840+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=find-topk-similiar-chemicals condition=mapping
+2026-09-01T16:49:42.925471+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-01T16:49:42.931522+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=find-topk-similiar-chemicals condition=mapping
+2026-09-01T16:53:18.897353+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-01T16:53:18.903215+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=find-topk-similiar-chemicals condition=mapping
+2026-09-01T16:57:15.813533+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-01T16:57:15.818497+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=glm-lake-mendota condition=mapping
+2026-09-01T17:20:50.428400+00:00 ERROR operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=exoplanet-detection-period condition=mapping status=trial_error
+2026-09-01T17:20:50.435542+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=exoplanet-detection-period condition=mapping
+2026-09-01T17:30:24.761510+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=glm-lake-mendota condition=mapping status=completed
+2026-09-01T17:30:24.779948+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=glm-lake-mendota condition=mapping
+2026-09-01T17:36:27.193078+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=glm-lake-mendota condition=mapping status=completed
+2026-09-01T17:36:27.200393+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=glm-lake-mendota condition=mapping
+2026-09-01T17:42:36.468080+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=glm-lake-mendota condition=mapping status=completed
+2026-09-01T17:42:36.475240+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=gravitational-wave-detection condition=mapping
+2026-09-01T17:47:37.918192+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=exoplanet-detection-period condition=mapping status=completed
+2026-09-01T17:47:37.924196+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=grid-dispatch-operator condition=mapping
+2026-09-01T17:55:02.184314+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-01T17:55:02.190638+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=grid-dispatch-operator condition=mapping
+2026-09-01T18:11:48.831084+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-01T18:11:48.840567+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=grid-dispatch-operator condition=mapping
+2026-09-01T18:27:55.884674+00:00 ERROR operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=gravitational-wave-detection condition=mapping status=trial_error
+2026-09-01T18:27:55.891462+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=gravitational-wave-detection condition=mapping
+2026-09-01T18:33:18.982786+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-01T18:33:18.989095+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=hf-model-inference condition=mapping
+2026-09-01T18:40:40.989941+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=hf-model-inference condition=mapping status=completed
+2026-09-01T18:40:41.012766+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=hf-model-inference condition=mapping
+2026-09-01T18:45:18.000237+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=hf-model-inference condition=mapping status=completed
+2026-09-01T18:45:18.007921+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=hf-model-inference condition=mapping
+2026-09-01T19:11:51.396205+00:00 ERROR operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=hf-model-inference condition=mapping status=trial_error
+2026-09-01T19:11:51.403580+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=invoice-fraud-detection condition=mapping
+2026-09-01T19:13:14.217127+00:00 ERROR operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=gravitational-wave-detection condition=mapping status=trial_error
+2026-09-01T19:13:14.226421+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=gravitational-wave-detection condition=mapping
+2026-09-01T19:15:52.717625+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-01T19:15:52.725016+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=invoice-fraud-detection condition=mapping
+2026-09-01T19:19:20.710940+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-01T19:19:20.717913+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=invoice-fraud-detection condition=mapping
+2026-09-01T19:22:47.126690+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-01T19:22:47.134619+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=jpg-ocr-stat condition=mapping
+2026-09-01T19:32:35.948967+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-01T19:32:35.964451+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=jpg-ocr-stat condition=mapping
+2026-09-01T19:36:46.608742+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-01T19:36:46.617778+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=llm-inference-batching-scheduler condition=mapping
+2026-09-01T19:43:24.443873+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-01T19:43:24.455514+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=jpg-ocr-stat condition=mapping
+2026-09-01T19:46:14.233230+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-01T19:46:14.241035+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=llm-inference-batching-scheduler condition=mapping
+2026-09-01T19:49:42.458833+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-01T19:49:42.472226+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=log-summary-date-ranges condition=mapping
+2026-09-01T19:51:07.796375+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-01T19:51:07.805733+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=llm-inference-batching-scheduler condition=mapping
+2026-09-01T19:52:30.102707+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-01T19:52:30.109102+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=log-summary-date-ranges condition=mapping
+2026-09-01T19:54:47.850571+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-01T19:54:47.861901+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=log-summary-date-ranges condition=mapping
+2026-09-01T19:56:49.657067+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-01T19:56:49.667903+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=mario-coin-counting condition=mapping
+2026-09-01T19:57:06.336114+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-01T19:57:06.350420+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=mars-clouds-clustering condition=mapping
+2026-09-01T20:02:31.666666+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=mario-coin-counting condition=mapping status=completed
+2026-09-01T20:02:31.678551+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=mario-coin-counting condition=mapping
+2026-09-01T20:05:54.288931+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-01T20:05:54.321552+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=mars-clouds-clustering condition=mapping
+2026-09-01T20:08:37.243062+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=mario-coin-counting condition=mapping status=completed
+2026-09-01T20:08:37.250872+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=mario-coin-counting condition=mapping
+2026-09-01T20:09:22.938334+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-01T20:09:22.967599+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=mars-clouds-clustering condition=mapping
+2026-09-01T20:13:10.451401+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=mario-coin-counting condition=mapping status=completed
+2026-09-01T20:13:10.461487+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=mteb-retrieve condition=mapping
+2026-09-01T20:16:01.757232+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-01T20:16:01.776385+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=pdf-excel-diff condition=mapping
+2026-09-01T20:19:23.537980+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=mteb-retrieve condition=mapping status=completed
+2026-09-01T20:19:23.549358+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=mteb-retrieve condition=mapping
+2026-09-01T20:21:14.574680+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=pdf-excel-diff condition=mapping status=completed
+2026-09-01T20:21:14.580896+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=pdf-excel-diff condition=mapping
+2026-09-01T20:31:01.822837+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=pdf-excel-diff condition=mapping status=completed
+2026-09-01T20:31:01.829382+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=pdf-excel-diff condition=mapping
+2026-09-01T20:32:28.327823+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=mteb-retrieve condition=mapping status=completed
+2026-09-01T20:32:28.336760+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=mteb-retrieve condition=mapping
+2026-09-01T20:37:02.400512+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=pdf-excel-diff condition=mapping status=completed
+2026-09-01T20:37:02.408883+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=portfolio-optimization condition=mapping
+2026-09-01T20:44:14.396564+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=mteb-retrieve condition=mapping status=completed
+2026-09-01T20:44:14.408008+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=powerlifting-coef-calc condition=mapping
+2026-09-01T20:47:14.993491+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-01T20:47:15.000435+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=powerlifting-coef-calc condition=mapping
+2026-09-01T20:47:26.512845+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=portfolio-optimization condition=mapping status=completed
+2026-09-01T20:47:26.532615+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=portfolio-optimization condition=mapping
+2026-09-01T20:50:44.900032+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-01T20:50:44.910083+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=powerlifting-coef-calc condition=mapping
+2026-09-01T20:53:00.167993+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=portfolio-optimization condition=mapping status=completed
+2026-09-01T20:53:00.177216+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=portfolio-optimization condition=mapping
+2026-09-01T20:54:27.500762+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-01T20:54:27.510610+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=protein-expression-analysis condition=mapping
+2026-09-01T20:57:41.140854+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=protein-expression-analysis condition=mapping status=completed
+2026-09-01T20:57:41.148827+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=protein-expression-analysis condition=mapping
+2026-09-01T20:57:58.822114+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=portfolio-optimization condition=mapping status=completed
+2026-09-01T20:57:58.829392+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=quantum-numerical-simulation condition=mapping
+2026-09-01T21:00:31.138087+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=protein-expression-analysis condition=mapping status=completed
+2026-09-01T21:00:31.149719+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=protein-expression-analysis condition=mapping
+2026-09-01T21:04:05.617052+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=protein-expression-analysis condition=mapping status=completed
+2026-09-01T21:04:05.629884+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=sales-pivot-analysis condition=mapping
+2026-09-01T21:08:30.533527+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-01T21:08:30.541972+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=quantum-numerical-simulation condition=mapping
+2026-09-01T21:08:41.082232+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=sales-pivot-analysis condition=mapping status=completed
+2026-09-01T21:08:41.090992+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=sales-pivot-analysis condition=mapping
+2026-09-01T21:17:44.452760+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=sales-pivot-analysis condition=mapping status=completed
+2026-09-01T21:17:44.460681+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=sales-pivot-analysis condition=mapping
+2026-09-01T21:18:14.141055+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-01T21:18:14.156284+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=quantum-numerical-simulation condition=mapping
+2026-09-01T21:26:29.167424+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-01T21:26:29.178740+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=software-dependency-audit condition=mapping
+2026-09-01T21:28:52.151096+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=sales-pivot-analysis condition=mapping status=completed
+2026-09-01T21:28:52.156678+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=train-fasttext condition=mapping
+2026-09-01T21:34:01.983463+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=software-dependency-audit condition=mapping status=completed
+2026-09-01T21:34:01.990457+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=software-dependency-audit condition=mapping
+2026-09-01T21:40:00.852048+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=software-dependency-audit condition=mapping status=completed
+2026-09-01T21:40:00.857328+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=software-dependency-audit condition=mapping
+2026-09-01T21:44:03.164285+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=software-dependency-audit condition=mapping status=completed
+2026-09-01T21:44:03.170996+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=video-silence-remover condition=mapping
+2026-09-01T21:46:32.906798+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=video-silence-remover condition=mapping status=completed
+2026-09-01T21:46:32.915955+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=video-silence-remover condition=mapping
+2026-09-01T21:46:56.801567+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=train-fasttext condition=mapping status=completed
+2026-09-01T21:46:56.808746+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=train-fasttext condition=mapping
+2026-09-01T21:49:29.012076+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=video-silence-remover condition=mapping status=completed
+2026-09-01T21:49:29.026282+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=video-silence-remover condition=mapping
+2026-09-01T21:52:16.898639+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=video-silence-remover condition=mapping status=completed
+2026-09-01T21:52:16.908811+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=virtualhome-agent-planning condition=mapping
+2026-09-01T21:56:08.676943+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-01T21:56:08.702889+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=virtualhome-agent-planning condition=mapping
+2026-09-01T21:58:27.542857+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=train-fasttext condition=mapping status=completed
+2026-09-01T21:58:27.550145+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=train-fasttext condition=mapping
+2026-09-01T22:02:42.623102+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-01T22:02:42.635233+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=virtualhome-agent-planning condition=mapping
+2026-09-01T22:09:40.813055+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-01T22:09:40.833509+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=weighted-gdp-calc condition=mapping
+2026-09-01T22:13:38.450050+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-01T22:13:38.455180+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=weighted-gdp-calc condition=mapping
+2026-09-01T22:16:00.654658+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=train-fasttext condition=mapping status=completed
+2026-09-01T22:18:35.338954+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=2 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-01T22:18:35.345647+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=weighted-gdp-calc condition=mapping
+2026-09-01T22:24:39.601386+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=weighted-gdp-calc condition=mapping status=completed

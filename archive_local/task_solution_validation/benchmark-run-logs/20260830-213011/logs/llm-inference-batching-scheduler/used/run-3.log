@@ -1,0 +1,61 @@
+Task: llm-inference-batching-scheduler
+Source type: used
+Task run: 6
+Source run: 3
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\llm-inference-batching-scheduler
+
+========== Repeated Run 3/3 ==========
+
+========== Run solve.sh ==========
+/solution/solve.sh: line 780:   718 Segmentation fault      (core dumped) python3 "$TARGET_DIR/solution.py"
+
+========== Run test.sh ==========
+Hit:1 http://deb.debian.org/debian bookworm InRelease
+Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
+Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.88.1-10+deb12u15).
+0 upgraded, 0 newly installed, 0 to remove and 31 not upgraded.
+downloading uv 0.9.5 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+============================= test session starts ==============================
+platform linux -- Python 3.13.7, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 6 items
+
+../tests/test_outputs.py ......                                          [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_output_files_exist
+PASSED ../tests/test_outputs.py::test_input_data_integrity
+PASSED ../tests/test_outputs.py::test_generate_and_schema
+PASSED ../tests/test_outputs.py::test_solution_shape_feasibility_and_batch_consistency
+PASSED ../tests/test_outputs.py::test_solution_coverage_no_duplicates
+PASSED ../tests/test_outputs.py::test_performance_thresholds
+============================== 6 passed in 0.07s ===============================
+
+========== Result ==========
+Task: llm-inference-batching-scheduler
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 1.5s (exit 139)
+Test: 14.3s (exit 0)
+Solve Memory Peak: 52.0 MiB
+Test Memory Peak: 40.6 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s
+
+========== Cleanup ==========
+Removing container: test-solution-llm-inference-batching-scheduler-1788103162157152600-b90263fb

@@ -1,0 +1,28 @@
+2026-09-02T23:36:43.563390+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=crystallographic-wyckoff-position-analysis condition=mapping image=benchmark-cache/crystallographic-wyckoff-position-analysis-gold:0f59e77451a3b6af provided_skills=["fractional-coordinate-rational-formatting", "cif-wyckoff-letter-reference-summary", "wyckoff-spglib-stability-analysis", "cif-explicit-site-normalization", "anthropics--initiating-coverage", "AltimateAI--creating-dbt-models", "anthropics--check-deck", "guia-matthieu--educational-presentation", "posit-dev--release-post", "yaleh--error-recovery"]
+  1/1 Mean: 0.730 ---------------------------------------- 0:03:16 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.730 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.73   │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 17s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_2\crystallographic-wyckoff-position-analysis\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_2\crystallographic-wyckoff-position-analysis\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_2\crystallographic-wyckoff-position-analysis\Skill\Job_result`
+
+2026-09-02T23:40:01.911855+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=crystallographic-wyckoff-position-analysis condition=mapping

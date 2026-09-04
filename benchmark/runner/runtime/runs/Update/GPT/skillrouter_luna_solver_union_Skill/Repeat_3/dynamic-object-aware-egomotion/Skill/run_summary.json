@@ -1,0 +1,110 @@
+{
+  "schema_version": 9,
+  "task_id": "dynamic-object-aware-egomotion",
+  "condition": "mapping",
+  "batch": "skillrouter_luna_solver_union_Skill_Run003",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestMotionAccuracy::test_motion_macro_f1: assert np.float64(0.4587813620071684) >= 0.5",
+  "peak_memory": {
+    "peak_memory_mib": 367.4765625,
+    "peak_memory_raw": "367.477 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 5451,
+    "observed_containers": [
+      "dynamic-object-aware-egomotion__9hrvgbk__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "dynamic-object-aware",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_luna_solver_union_Skill_Run003\\Repeat_3\\dynamic-object-aware-egomotion\\mapping\\dynamic-object-aware-egomotion\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.689,
+    "agent_setup_sec": 0.377,
+    "agent_execution_sec": 238.452,
+    "verifier_sec": 305.757,
+    "total_sec": 551.868
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 256969,
+  "agent_output_tokens": 6240,
+  "image_cache": {
+    "image": "benchmark-cache/dynamic-object-aware-egomotion-gold:fc972e99cd5a2204",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "available_skills": [
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "loaded_skills": [
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "trials": [
+      {
+        "trial_id": "dynamic-object-aware-egomotion__9HrVgbK",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "available_skills": [
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "loaded_skills": [
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

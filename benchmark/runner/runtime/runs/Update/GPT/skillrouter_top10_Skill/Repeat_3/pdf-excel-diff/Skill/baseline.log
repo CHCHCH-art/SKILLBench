@@ -1,0 +1,28 @@
+2026-09-02T11:55:03.099597+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=pdf-excel-diff condition=mapping image=benchmark-cache/pdf-excel-diff-gold:d574cd2f86bbbcb0 provided_skills=["pdf-table-structural-guard-and-extraction", "keyed-record-diff-normalization", "typed-record-diff-json", "pdf-record-table-extraction", "spreadsheet-turn-record-recovery", "pptx-zip-preserving-embedding-replacement", "kazukinagata--reading-receipt", "vamseeachanta--sweetviz", "BbgnsurfTech--comparing-database-schemas", "skillcreatorai--docx"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:23:24 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 23m 25s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_3\pdf-excel-diff\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_3\pdf-excel-diff\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_3\pdf-excel-diff\Skill\Job_result`
+
+2026-09-02T12:18:29.233205+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=pdf-excel-diff condition=mapping

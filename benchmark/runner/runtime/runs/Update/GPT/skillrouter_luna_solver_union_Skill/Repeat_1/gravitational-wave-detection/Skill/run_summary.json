@@ -1,0 +1,86 @@
+{
+  "schema_version": 9,
+  "task_id": "gravitational-wave-detection",
+  "condition": "mapping",
+  "batch": "skillrouter_luna_solver_union_Skill_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestGravitationalWaveDetection::test_matches_expected_result: Failed: Result mismatches found:",
+  "peak_memory": {
+    "peak_memory_mib": 258.45703125,
+    "peak_memory_raw": "258.457 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 12624,
+    "observed_containers": [
+      "gravitational-wave-detection__gppapkk__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "gravitational-wave-d",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_luna_solver_union_Skill_Run003\\Repeat_1\\gravitational-wave-detection\\mapping\\gravitational-wave-detection\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.019,
+    "agent_setup_sec": 0.517,
+    "agent_execution_sec": 1634.699,
+    "verifier_sec": 1.491,
+    "total_sec": 1643.414
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 2497229,
+  "agent_output_tokens": 11753,
+  "image_cache": {
+    "image": "benchmark-cache/gravitational-wave-detection-gold:453ceaaaf619c520",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "pycbc-reference-matched-filter-search"
+    ],
+    "available_skills": [
+      "pycbc-reference-matched-filter-search"
+    ],
+    "loaded_skills": [
+      "pycbc-reference-matched-filter-search"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "pycbc-reference-matched-filter-search"
+    ],
+    "trials": [
+      {
+        "trial_id": "gravitational-wave-detection__gPPAPKK",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "pycbc-reference-matched-filter-search"
+        ],
+        "available_skills": [
+          "pycbc-reference-matched-filter-search"
+        ],
+        "loaded_skills": [
+          "pycbc-reference-matched-filter-search"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "pycbc-reference-matched-filter-search"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

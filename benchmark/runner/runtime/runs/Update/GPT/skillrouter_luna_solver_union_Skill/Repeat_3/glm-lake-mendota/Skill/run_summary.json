@@ -1,0 +1,102 @@
+{
+  "schema_version": 9,
+  "task_id": "glm-lake-mendota",
+  "condition": "mapping",
+  "batch": "skillrouter_luna_solver_union_Skill_Run003",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 324.13671875,
+    "peak_memory_raw": "324.137 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 4450,
+    "observed_containers": [
+      "glm-lake-mendota__vavmyz6__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "glm-lake-mendota",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_luna_solver_union_Skill_Run003\\Repeat_3\\glm-lake-mendota\\mapping\\glm-lake-mendota\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.899,
+    "agent_setup_sec": 0.464,
+    "agent_execution_sec": 426.568,
+    "verifier_sec": 17.764,
+    "total_sec": 452.171
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 557556,
+  "agent_output_tokens": 10160,
+  "image_cache": {
+    "image": "benchmark-cache/glm-lake-mendota-gold:cfbcca189cbdcde0",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "glm-observation-profile-evaluation",
+      "glm-profile-observation-rmse-alignment",
+      "lake-glm-five-parameter-nelder-mead-calibration"
+    ],
+    "available_skills": [
+      "glm-observation-profile-evaluation",
+      "glm-profile-observation-rmse-alignment",
+      "lake-glm-five-parameter-nelder-mead-calibration"
+    ],
+    "loaded_skills": [
+      "glm-observation-profile-evaluation",
+      "glm-profile-observation-rmse-alignment",
+      "lake-glm-five-parameter-nelder-mead-calibration"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "glm-observation-profile-evaluation",
+      "glm-profile-observation-rmse-alignment",
+      "lake-glm-five-parameter-nelder-mead-calibration"
+    ],
+    "trials": [
+      {
+        "trial_id": "glm-lake-mendota__vaVMyz6",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "glm-observation-profile-evaluation",
+          "glm-profile-observation-rmse-alignment",
+          "lake-glm-five-parameter-nelder-mead-calibration"
+        ],
+        "available_skills": [
+          "glm-observation-profile-evaluation",
+          "glm-profile-observation-rmse-alignment",
+          "lake-glm-five-parameter-nelder-mead-calibration"
+        ],
+        "loaded_skills": [
+          "glm-observation-profile-evaluation",
+          "glm-profile-observation-rmse-alignment",
+          "lake-glm-five-parameter-nelder-mead-calibration"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "glm-observation-profile-evaluation",
+          "glm-profile-observation-rmse-alignment",
+          "lake-glm-five-parameter-nelder-mead-calibration"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

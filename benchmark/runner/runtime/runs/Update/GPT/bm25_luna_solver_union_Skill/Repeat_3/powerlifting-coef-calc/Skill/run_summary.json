@@ -1,0 +1,91 @@
+{
+  "schema_version": 9,
+  "task_id": "powerlifting-coef-calc",
+  "condition": "mapping",
+  "batch": "bm25_luna_solver_union_Skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "trial_error",
+  "passed": false,
+  "error": [
+    {
+      "exception_type": "AgentTimeoutError",
+      "exception_message": "Agent execution timed out after 1200.0 seconds"
+    }
+  ],
+  "failure_reason": "{\"exception_type\":\"AgentTimeoutError\",\"exception_message\":\"Agent execution timed out after 1200.0 seconds\"}",
+  "peak_memory": {
+    "peak_memory_mib": 384.4609375,
+    "peak_memory_raw": "384.461 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 14665,
+    "observed_containers": [
+      "powerlifting-coef-calc__xswvjuo__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "powerlifting-coef-ca",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_luna_solver_union_Skill_Run001\\Repeat_3\\powerlifting-coef-calc\\mapping\\powerlifting-coef-calc\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.412,
+    "agent_setup_sec": 0.392,
+    "agent_execution_sec": 1200.524,
+    "verifier_sec": 273.672,
+    "total_sec": 1480.271
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 430709,
+  "agent_output_tokens": 9106,
+  "image_cache": {
+    "image": "benchmark-cache/powerlifting-coef-calc-gold:0fef2731a5e5d6d2",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "powerlifting-workbook-column-formula-population"
+    ],
+    "available_skills": [
+      "powerlifting-workbook-column-formula-population"
+    ],
+    "loaded_skills": [
+      "powerlifting-workbook-column-formula-population"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "powerlifting-workbook-column-formula-population"
+    ],
+    "trials": [
+      {
+        "trial_id": "powerlifting-coef-calc__xsWVJuo",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "powerlifting-workbook-column-formula-population"
+        ],
+        "available_skills": [
+          "powerlifting-workbook-column-formula-population"
+        ],
+        "loaded_skills": [
+          "powerlifting-workbook-column-formula-population"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "powerlifting-workbook-column-formula-population"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

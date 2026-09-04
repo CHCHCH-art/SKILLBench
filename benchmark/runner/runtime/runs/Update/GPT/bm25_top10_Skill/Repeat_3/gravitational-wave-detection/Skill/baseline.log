@@ -1,0 +1,28 @@
+2026-09-03T03:56:09.861913+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=gravitational-wave-detection condition=mapping image=benchmark-cache/gravitational-wave-detection-gold:453ceaaaf619c520 provided_skills=["pycbc-reference-matched-filter-search", "pycbc-waveform-grid-matched-filter-search", "pycbc-strain-conditioning-psd", "matched-filter-winner-confirmation-audit", "wdavidturner--pmf-survey", "K-Dense-AI--matlab", "catlog22--workflow-execute", "thedivergentai--godot-genre-puzzle", "video-global-egomotion-estimation", "scifact-prompt-bound-mteb-topk-retrieval"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:24:00 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 24m 0s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_3\gravitational-wave-detection\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_3\gravitational-wave-detection\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_3\gravitational-wave-detection\Skill\Job_result`
+
+2026-09-03T04:20:11.834859+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=gravitational-wave-detection condition=mapping

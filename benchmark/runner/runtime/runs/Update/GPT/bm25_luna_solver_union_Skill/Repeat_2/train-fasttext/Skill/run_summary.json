@@ -1,0 +1,94 @@
+{
+  "schema_version": 9,
+  "task_id": "train-fasttext",
+  "condition": "mapping",
+  "batch": "bm25_luna_solver_union_Skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 2441.29296875,
+    "peak_memory_raw": "2441.293 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 25392,
+    "observed_containers": [
+      "train-fasttext__inwt2vz__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "train-fasttext",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_luna_solver_union_Skill_Run001\\Repeat_2\\train-fasttext\\mapping\\train-fasttext\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.423,
+    "agent_setup_sec": 0.532,
+    "agent_execution_sec": 1063.682,
+    "verifier_sec": 1536.364,
+    "total_sec": 2607.12
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1444010,
+  "agent_output_tokens": 8385,
+  "image_cache": {
+    "image": "benchmark-cache/train-fasttext-gold:61266fd7d3d7eaea",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "baseline-fasttext-small-supervised-training",
+      "parquet-to-fasttext-supervised-text"
+    ],
+    "available_skills": [
+      "baseline-fasttext-small-supervised-training",
+      "parquet-to-fasttext-supervised-text"
+    ],
+    "loaded_skills": [
+      "baseline-fasttext-small-supervised-training",
+      "parquet-to-fasttext-supervised-text"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "baseline-fasttext-small-supervised-training",
+      "parquet-to-fasttext-supervised-text"
+    ],
+    "trials": [
+      {
+        "trial_id": "train-fasttext__iNwT2vz",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "baseline-fasttext-small-supervised-training",
+          "parquet-to-fasttext-supervised-text"
+        ],
+        "available_skills": [
+          "baseline-fasttext-small-supervised-training",
+          "parquet-to-fasttext-supervised-text"
+        ],
+        "loaded_skills": [
+          "baseline-fasttext-small-supervised-training",
+          "parquet-to-fasttext-supervised-text"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "baseline-fasttext-small-supervised-training",
+          "parquet-to-fasttext-supervised-text"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

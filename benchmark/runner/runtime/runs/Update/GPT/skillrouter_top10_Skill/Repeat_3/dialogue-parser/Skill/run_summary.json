@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "dialogue-parser",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run005",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 688.015625,
+    "peak_memory_raw": "688.016 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 4060,
+    "observed_containers": [
+      "dialogue-parser__pdt8t3k__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "dialogue-parser",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run005\\Repeat_3\\dialogue-parser\\mapping\\dialogue-parser\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.427,
+    "agent_setup_sec": 0.338,
+    "agent_execution_sec": 395.82,
+    "verifier_sec": 6.675,
+    "total_sec": 411.002
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 406507,
+  "agent_output_tokens": 5701,
+  "image_cache": {
+    "image": "benchmark-cache/dialogue-parser-gold:c0353fb4817c6884",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser",
+      "khaihuynhvn--ai-interaction",
+      "majiayu000--daoagent",
+      "mindmorass--graphviz-diagrams",
+      "omer-metin--nlp-advanced",
+      "parcadei--mcp-scripts"
+    ],
+    "available_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser",
+      "khaihuynhvn--ai-interaction",
+      "majiayu000--daoagent",
+      "mindmorass--graphviz-diagrams",
+      "omer-metin--nlp-advanced",
+      "parcadei--mcp-scripts"
+    ],
+    "loaded_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser",
+      "khaihuynhvn--ai-interaction",
+      "majiayu000--daoagent",
+      "mindmorass--graphviz-diagrams",
+      "omer-metin--nlp-advanced",
+      "parcadei--mcp-scripts"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser",
+      "khaihuynhvn--ai-interaction",
+      "majiayu000--daoagent",
+      "mindmorass--graphviz-diagrams",
+      "omer-metin--nlp-advanced",
+      "parcadei--mcp-scripts"
+    ],
+    "trials": [
+      {
+        "trial_id": "dialogue-parser__Pdt8T3k",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser",
+          "khaihuynhvn--ai-interaction",
+          "majiayu000--daoagent",
+          "mindmorass--graphviz-diagrams",
+          "omer-metin--nlp-advanced",
+          "parcadei--mcp-scripts"
+        ],
+        "available_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser",
+          "khaihuynhvn--ai-interaction",
+          "majiayu000--daoagent",
+          "mindmorass--graphviz-diagrams",
+          "omer-metin--nlp-advanced",
+          "parcadei--mcp-scripts"
+        ],
+        "loaded_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser",
+          "khaihuynhvn--ai-interaction",
+          "majiayu000--daoagent",
+          "mindmorass--graphviz-diagrams",
+          "omer-metin--nlp-advanced",
+          "parcadei--mcp-scripts"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser",
+          "khaihuynhvn--ai-interaction",
+          "majiayu000--daoagent",
+          "mindmorass--graphviz-diagrams",
+          "omer-metin--nlp-advanced",
+          "parcadei--mcp-scripts"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

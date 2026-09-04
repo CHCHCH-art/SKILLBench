@@ -1,0 +1,110 @@
+{
+  "schema_version": 9,
+  "task_id": "protein-expression-analysis",
+  "condition": "mapping",
+  "batch": "qwen_luna_solver_union_Skill_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 228.67578125,
+    "peak_memory_raw": "228.676 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2058,
+    "observed_containers": [
+      "protein-expression-analysis__uwvbstp__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "protein-expression-a",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_luna_solver_union_Skill_Run002\\Repeat_3\\protein-expression-analysis\\mapping\\protein-expression-analysis\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.672,
+    "agent_setup_sec": 0.742,
+    "agent_execution_sec": 192.597,
+    "verifier_sec": 8.402,
+    "total_sec": 212.009
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 274770,
+  "agent_output_tokens": 6099,
+  "image_cache": {
+    "image": "benchmark-cache/protein-expression-analysis-gold:a52e2bc643b8e023",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "expression-group-statistics-foldchange",
+      "protein-group-statistics-foldchange-formulas",
+      "protein-sample-direct-reference-lookup",
+      "spreadsheet-two-way-expression-lookup"
+    ],
+    "available_skills": [
+      "expression-group-statistics-foldchange",
+      "protein-group-statistics-foldchange-formulas",
+      "protein-sample-direct-reference-lookup",
+      "spreadsheet-two-way-expression-lookup"
+    ],
+    "loaded_skills": [
+      "expression-group-statistics-foldchange",
+      "protein-group-statistics-foldchange-formulas",
+      "protein-sample-direct-reference-lookup",
+      "spreadsheet-two-way-expression-lookup"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "expression-group-statistics-foldchange",
+      "protein-group-statistics-foldchange-formulas",
+      "protein-sample-direct-reference-lookup",
+      "spreadsheet-two-way-expression-lookup"
+    ],
+    "trials": [
+      {
+        "trial_id": "protein-expression-analysis__uWVbStp",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "expression-group-statistics-foldchange",
+          "protein-group-statistics-foldchange-formulas",
+          "protein-sample-direct-reference-lookup",
+          "spreadsheet-two-way-expression-lookup"
+        ],
+        "available_skills": [
+          "expression-group-statistics-foldchange",
+          "protein-group-statistics-foldchange-formulas",
+          "protein-sample-direct-reference-lookup",
+          "spreadsheet-two-way-expression-lookup"
+        ],
+        "loaded_skills": [
+          "expression-group-statistics-foldchange",
+          "protein-group-statistics-foldchange-formulas",
+          "protein-sample-direct-reference-lookup",
+          "spreadsheet-two-way-expression-lookup"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "expression-group-statistics-foldchange",
+          "protein-group-statistics-foldchange-formulas",
+          "protein-sample-direct-reference-lookup",
+          "spreadsheet-two-way-expression-lookup"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

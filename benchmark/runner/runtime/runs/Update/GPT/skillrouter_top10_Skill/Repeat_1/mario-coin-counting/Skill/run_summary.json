@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "mario-coin-counting",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run005",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1529.52734375,
+    "peak_memory_raw": "1529.527 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3708,
+    "observed_containers": [
+      "mario-coin-counting__wgxhrwn__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "mario-coin-counting",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run005\\Repeat_1\\mario-coin-counting\\mapping\\mario-coin-counting\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.423,
+    "agent_setup_sec": 0.449,
+    "agent_execution_sec": 120.966,
+    "verifier_sec": 247.949,
+    "total_sec": 377.447
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 238541,
+  "agent_output_tokens": 3232,
+  "image_cache": {
+    "image": "benchmark-cache/mario-coin-counting-gold:989a4c6bcaeff277",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "AIA-11-HN-MIB--gemini-vision",
+      "classic-pcap-streaming-network-metrics",
+      "edge-component-hog-spatial-counting",
+      "edge-hog-template-calibration",
+      "iframe-grayscale-keyframe-extraction",
+      "metta-ai--tv-observation",
+      "template-match-spatial-counting",
+      "video-global-egomotion-homography",
+      "video-iframe-grayscale-keyframes",
+      "wlzh--invoice-scanner"
+    ],
+    "available_skills": [
+      "AIA-11-HN-MIB--gemini-vision",
+      "classic-pcap-streaming-network-metrics",
+      "edge-component-hog-spatial-counting",
+      "edge-hog-template-calibration",
+      "iframe-grayscale-keyframe-extraction",
+      "metta-ai--tv-observation",
+      "template-match-spatial-counting",
+      "video-global-egomotion-homography",
+      "video-iframe-grayscale-keyframes",
+      "wlzh--invoice-scanner"
+    ],
+    "loaded_skills": [
+      "AIA-11-HN-MIB--gemini-vision",
+      "classic-pcap-streaming-network-metrics",
+      "edge-component-hog-spatial-counting",
+      "edge-hog-template-calibration",
+      "iframe-grayscale-keyframe-extraction",
+      "metta-ai--tv-observation",
+      "template-match-spatial-counting",
+      "video-global-egomotion-homography",
+      "video-iframe-grayscale-keyframes",
+      "wlzh--invoice-scanner"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "AIA-11-HN-MIB--gemini-vision",
+      "classic-pcap-streaming-network-metrics",
+      "edge-component-hog-spatial-counting",
+      "edge-hog-template-calibration",
+      "iframe-grayscale-keyframe-extraction",
+      "metta-ai--tv-observation",
+      "template-match-spatial-counting",
+      "video-global-egomotion-homography",
+      "video-iframe-grayscale-keyframes",
+      "wlzh--invoice-scanner"
+    ],
+    "trials": [
+      {
+        "trial_id": "mario-coin-counting__wGXHRwN",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "AIA-11-HN-MIB--gemini-vision",
+          "classic-pcap-streaming-network-metrics",
+          "edge-component-hog-spatial-counting",
+          "edge-hog-template-calibration",
+          "iframe-grayscale-keyframe-extraction",
+          "metta-ai--tv-observation",
+          "template-match-spatial-counting",
+          "video-global-egomotion-homography",
+          "video-iframe-grayscale-keyframes",
+          "wlzh--invoice-scanner"
+        ],
+        "available_skills": [
+          "AIA-11-HN-MIB--gemini-vision",
+          "classic-pcap-streaming-network-metrics",
+          "edge-component-hog-spatial-counting",
+          "edge-hog-template-calibration",
+          "iframe-grayscale-keyframe-extraction",
+          "metta-ai--tv-observation",
+          "template-match-spatial-counting",
+          "video-global-egomotion-homography",
+          "video-iframe-grayscale-keyframes",
+          "wlzh--invoice-scanner"
+        ],
+        "loaded_skills": [
+          "AIA-11-HN-MIB--gemini-vision",
+          "classic-pcap-streaming-network-metrics",
+          "edge-component-hog-spatial-counting",
+          "edge-hog-template-calibration",
+          "iframe-grayscale-keyframe-extraction",
+          "metta-ai--tv-observation",
+          "template-match-spatial-counting",
+          "video-global-egomotion-homography",
+          "video-iframe-grayscale-keyframes",
+          "wlzh--invoice-scanner"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "AIA-11-HN-MIB--gemini-vision",
+          "classic-pcap-streaming-network-metrics",
+          "edge-component-hog-spatial-counting",
+          "edge-hog-template-calibration",
+          "iframe-grayscale-keyframe-extraction",
+          "metta-ai--tv-observation",
+          "template-match-spatial-counting",
+          "video-global-egomotion-homography",
+          "video-iframe-grayscale-keyframes",
+          "wlzh--invoice-scanner"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

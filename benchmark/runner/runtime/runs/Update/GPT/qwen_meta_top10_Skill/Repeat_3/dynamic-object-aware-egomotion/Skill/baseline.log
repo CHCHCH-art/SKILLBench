@@ -1,0 +1,28 @@
+2026-09-02T05:36:56.084496+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=dynamic-object-aware-egomotion condition=mapping image=benchmark-cache/dynamic-object-aware-egomotion-gold:fc972e99cd5a2204 provided_skills=["camera-motion-reference-label-sequence", "video-global-egomotion-estimation", "egomotion-reference-label-sequence", "dynamic-region-motion-mask", "video-global-egomotion-homography", "dynamic-region-flow-residual-tracking", "edge-component-hog-spatial-counting", "nodnarbnitram--frigate-configurator", "video-iframe-grayscale-keyframes", "edge-hog-template-calibration"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:07:42 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 7m 42s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+4\Repeat_3\dynamic-object-aware-egomotion\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+4\Repeat_3\dynamic-object-aware-egomotion\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+4\Repeat_3\dynamic-object-aware-egomotion\Skill\Job_result`
+
+2026-09-02T05:44:39.612533+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=dynamic-object-aware-egomotion condition=mapping

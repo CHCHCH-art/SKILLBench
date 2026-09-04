@@ -1,0 +1,28 @@
+2026-09-03T15:30:01.980503+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=dialogue-parser condition=mapping image=benchmark-cache/dialogue-parser-gold:c0353fb4817c6884 provided_skills=["dialogue-section-choice-parser", "dialogue-dot-rendering", "dialogue-graph-validation-serialization", "dialogue-graph-construction"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:57 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 57s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\dialogue-parser\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\dialogue-parser\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\dialogue-parser\Skill\Job_result`
+
+2026-09-03T15:33:00.614668+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=dialogue-parser condition=mapping

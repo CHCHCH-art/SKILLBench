@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "energy-ac-optimal-power-flow",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestSchema::test_top_level_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_summary_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_generator_count: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_generator_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_bus_count: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_bus_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_most_loaded_branches: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_feasibility_check_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_solver_status: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_voltage_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_generator_p_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_generator_q_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_reference_angle: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_power_balance_acopf: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_branch_limits_and_angle_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_branch_current_limits: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_internal_consistency_generation: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_internal_consistency_losses: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_losses_reasonable: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_no_voltage_violations: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_no_branch_overloads: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestOptimality::test_cost_is_positive: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestOptimality::test_cost_matches_gencost: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestOptimality::test_cost_within_10pct_of_solved_acopf: AssertionError: Output file /root/report.json does not exist",
+  "peak_memory": {
+    "peak_memory_mib": 2280.44140625,
+    "peak_memory_raw": "2280.441 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 16788,
+    "observed_containers": [
+      "energy-ac-optimal-power-flow__yrvwumz__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "energy-ac-optimal-po",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run001\\Repeat_2\\energy-ac-optimal-power-flow\\mapping\\energy-ac-optimal-power-flow\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.656,
+    "agent_setup_sec": 0.718,
+    "agent_execution_sec": 2071.824,
+    "verifier_sec": 174.632,
+    "total_sec": 2256.303
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 5636630,
+  "agent_output_tokens": 19245,
+  "image_cache": {
+    "image": "benchmark-cache/energy-ac-optimal-power-flow-gold:131fccb5858c984c",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "anthropics--initiating-coverage",
+      "brianrwagner--reddit-insights",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve",
+      "rectangular-acopf-network-model",
+      "sparse-dcopf-reserve-lp-formulation",
+      "zhanlincui--project-to-obsidian"
+    ],
+    "available_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "anthropics--initiating-coverage",
+      "brianrwagner--reddit-insights",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve",
+      "rectangular-acopf-network-model",
+      "sparse-dcopf-reserve-lp-formulation",
+      "zhanlincui--project-to-obsidian"
+    ],
+    "loaded_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "anthropics--initiating-coverage",
+      "brianrwagner--reddit-insights",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve",
+      "rectangular-acopf-network-model",
+      "sparse-dcopf-reserve-lp-formulation",
+      "zhanlincui--project-to-obsidian"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "anthropics--initiating-coverage",
+      "brianrwagner--reddit-insights",
+      "casadi-acopf-pi-network-formulation",
+      "ipopt-acopf-reference-solve",
+      "rectangular-acopf-network-model",
+      "sparse-dcopf-reserve-lp-formulation",
+      "zhanlincui--project-to-obsidian"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-ac-optimal-power-flow__yrVWumz",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "anthropics--initiating-coverage",
+          "brianrwagner--reddit-insights",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve",
+          "rectangular-acopf-network-model",
+          "sparse-dcopf-reserve-lp-formulation",
+          "zhanlincui--project-to-obsidian"
+        ],
+        "available_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "anthropics--initiating-coverage",
+          "brianrwagner--reddit-insights",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve",
+          "rectangular-acopf-network-model",
+          "sparse-dcopf-reserve-lp-formulation",
+          "zhanlincui--project-to-obsidian"
+        ],
+        "loaded_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "anthropics--initiating-coverage",
+          "brianrwagner--reddit-insights",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve",
+          "rectangular-acopf-network-model",
+          "sparse-dcopf-reserve-lp-formulation",
+          "zhanlincui--project-to-obsidian"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "anthropics--initiating-coverage",
+          "brianrwagner--reddit-insights",
+          "casadi-acopf-pi-network-formulation",
+          "ipopt-acopf-reference-solve",
+          "rectangular-acopf-network-model",
+          "sparse-dcopf-reserve-lp-formulation",
+          "zhanlincui--project-to-obsidian"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

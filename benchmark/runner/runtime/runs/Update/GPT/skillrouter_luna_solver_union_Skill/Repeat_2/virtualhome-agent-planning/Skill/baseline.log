@@ -1,0 +1,29 @@
+2026-09-01T22:02:54.282696+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=virtualhome-agent-planning condition=mapping image=benchmark-cache/virtualhome-agent-planning-gold:2a7bb392c743be2d provided_skills=["pddl-task-manifest-plan-orchestration", "pddl-unified-planning-load", "pyperplan-oneshot-plan-generation", "unified-planning-plan-file-writing"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:05:17 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 5m 17s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_luna_solver_uni
+on_Skill_Run003\Repeat_2\virtualhome-agent-planning\Skill\Job_result\result.jso
+n
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_luna_solver_uni
+on_Skill_Run003\Repeat_2\virtualhome-agent-planning\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_luna_solver_uni
+on_Skill_Run003\Repeat_2\virtualhome-agent-planning\Skill\Job_result`
+
+2026-09-01T22:08:13.540054+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=virtualhome-agent-planning condition=mapping

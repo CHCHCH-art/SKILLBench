@@ -1,0 +1,59 @@
+Task: hf-model-inference
+Source type: baseline
+Task run: 3
+Source run: 3
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\hf-model-inference
+
+========== Repeated Run 3/3 ==========
+
+========== Run solve.sh ==========
+
+========== Run test.sh ==========
+Requirement already satisfied: pytest==8.4.1 in /usr/local/lib/python3.13/site-packages (8.4.1)
+Requirement already satisfied: psutil==7.0.0 in /usr/local/lib/python3.13/site-packages (7.0.0)
+Requirement already satisfied: requests==2.32.4 in /usr/local/lib/python3.13/site-packages (2.32.4)
+Requirement already satisfied: pytest-json-ctrf==0.3.5 in /usr/local/lib/python3.13/site-packages (0.3.5)
+Requirement already satisfied: iniconfig>=1 in /usr/local/lib/python3.13/site-packages (from pytest==8.4.1) (2.3.0)
+Requirement already satisfied: packaging>=20 in /usr/local/lib/python3.13/site-packages (from pytest==8.4.1) (25.0)
+Requirement already satisfied: pluggy<2,>=1.5 in /usr/local/lib/python3.13/site-packages (from pytest==8.4.1) (1.6.0)
+Requirement already satisfied: pygments>=2.7.2 in /usr/local/lib/python3.13/site-packages (from pytest==8.4.1) (2.21.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.13/site-packages (from requests==2.32.4) (3.4.3)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.13/site-packages (from requests==2.32.4) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.13/site-packages (from requests==2.32.4) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.13/site-packages (from requests==2.32.4) (2025.8.3)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 25.2 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+============================= test session starts ==============================
+platform linux -- Python 3.13.7, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 4 items
+
+../tests/test_outputs.py ....                                            [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_model_downloaded
+PASSED ../tests/test_outputs.py::test_flask_api_running
+PASSED ../tests/test_outputs.py::test_sentiment_endpoint
+PASSED ../tests/test_outputs.py::test_api_error_handling
+============================== 4 passed in 2.78s ===============================
+
+========== Result ==========
+Task: hf-model-inference
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 1.2s (exit 0)
+Test: 4.1s (exit 0)
+Solve Memory Peak: 586.3 MiB
+Test Memory Peak: 915.2 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s
+
+========== Cleanup ==========
+Removing container: test-solution-hf-model-inference-1788102557209669800-5ef32982

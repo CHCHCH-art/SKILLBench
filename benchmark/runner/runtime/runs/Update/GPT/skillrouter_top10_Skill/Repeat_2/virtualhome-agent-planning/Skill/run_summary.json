@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "virtualhome-agent-planning",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run005",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 443.01953125,
+    "peak_memory_raw": "443.020 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3208,
+    "observed_containers": [
+      "virtualhome-agent-planning__ps9odqs__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "virtualhome-agent-pl",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run005\\Repeat_2\\virtualhome-agent-planning\\mapping\\virtualhome-agent-planning\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.495,
+    "agent_setup_sec": 0.394,
+    "agent_execution_sec": 81.382,
+    "verifier_sec": 234.739,
+    "total_sec": 326.41
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 162611,
+  "agent_output_tokens": 2196,
+  "image_cache": {
+    "image": "benchmark-cache/virtualhome-agent-planning-gold:2a7bb392c743be2d",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "catlog22--team-planex",
+      "disco-trooper--cycling-training",
+      "grounded-pyperplan-portfolio-lifting",
+      "jeremylongshore--penetration-test-planner",
+      "pddl-pyperplan-baseline-validation",
+      "pddl-task-manifest-plan-orchestration",
+      "pddl-unified-planning-load",
+      "pyperplan-oneshot-plan-generation",
+      "reference-plan-selection-and-safe-write",
+      "unified-planning-plan-file-writing"
+    ],
+    "available_skills": [
+      "catlog22--team-planex",
+      "disco-trooper--cycling-training",
+      "grounded-pyperplan-portfolio-lifting",
+      "jeremylongshore--penetration-test-planner",
+      "pddl-pyperplan-baseline-validation",
+      "pddl-task-manifest-plan-orchestration",
+      "pddl-unified-planning-load",
+      "pyperplan-oneshot-plan-generation",
+      "reference-plan-selection-and-safe-write",
+      "unified-planning-plan-file-writing"
+    ],
+    "loaded_skills": [
+      "catlog22--team-planex",
+      "disco-trooper--cycling-training",
+      "grounded-pyperplan-portfolio-lifting",
+      "jeremylongshore--penetration-test-planner",
+      "pddl-pyperplan-baseline-validation",
+      "pddl-task-manifest-plan-orchestration",
+      "pddl-unified-planning-load",
+      "pyperplan-oneshot-plan-generation",
+      "reference-plan-selection-and-safe-write",
+      "unified-planning-plan-file-writing"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "catlog22--team-planex",
+      "disco-trooper--cycling-training",
+      "grounded-pyperplan-portfolio-lifting",
+      "jeremylongshore--penetration-test-planner",
+      "pddl-pyperplan-baseline-validation",
+      "pddl-task-manifest-plan-orchestration",
+      "pddl-unified-planning-load",
+      "pyperplan-oneshot-plan-generation",
+      "reference-plan-selection-and-safe-write",
+      "unified-planning-plan-file-writing"
+    ],
+    "trials": [
+      {
+        "trial_id": "virtualhome-agent-planning__Ps9odQs",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "catlog22--team-planex",
+          "disco-trooper--cycling-training",
+          "grounded-pyperplan-portfolio-lifting",
+          "jeremylongshore--penetration-test-planner",
+          "pddl-pyperplan-baseline-validation",
+          "pddl-task-manifest-plan-orchestration",
+          "pddl-unified-planning-load",
+          "pyperplan-oneshot-plan-generation",
+          "reference-plan-selection-and-safe-write",
+          "unified-planning-plan-file-writing"
+        ],
+        "available_skills": [
+          "catlog22--team-planex",
+          "disco-trooper--cycling-training",
+          "grounded-pyperplan-portfolio-lifting",
+          "jeremylongshore--penetration-test-planner",
+          "pddl-pyperplan-baseline-validation",
+          "pddl-task-manifest-plan-orchestration",
+          "pddl-unified-planning-load",
+          "pyperplan-oneshot-plan-generation",
+          "reference-plan-selection-and-safe-write",
+          "unified-planning-plan-file-writing"
+        ],
+        "loaded_skills": [
+          "catlog22--team-planex",
+          "disco-trooper--cycling-training",
+          "grounded-pyperplan-portfolio-lifting",
+          "jeremylongshore--penetration-test-planner",
+          "pddl-pyperplan-baseline-validation",
+          "pddl-task-manifest-plan-orchestration",
+          "pddl-unified-planning-load",
+          "pyperplan-oneshot-plan-generation",
+          "reference-plan-selection-and-safe-write",
+          "unified-planning-plan-file-writing"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "catlog22--team-planex",
+          "disco-trooper--cycling-training",
+          "grounded-pyperplan-portfolio-lifting",
+          "jeremylongshore--penetration-test-planner",
+          "pddl-pyperplan-baseline-validation",
+          "pddl-task-manifest-plan-orchestration",
+          "pddl-unified-planning-load",
+          "pyperplan-oneshot-plan-generation",
+          "reference-plan-selection-and-safe-write",
+          "unified-planning-plan-file-writing"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

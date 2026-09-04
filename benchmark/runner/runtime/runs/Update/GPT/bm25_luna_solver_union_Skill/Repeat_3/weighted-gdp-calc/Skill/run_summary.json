@@ -1,0 +1,94 @@
+{
+  "schema_version": 9,
+  "task_id": "weighted-gdp-calc",
+  "condition": "mapping",
+  "batch": "bm25_luna_solver_union_Skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 710.1328125,
+    "peak_memory_raw": "710.133 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 4714,
+    "observed_containers": [
+      "weighted-gdp-calc__uxdgkgr__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "weighted-gdp-calc",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_luna_solver_union_Skill_Run001\\Repeat_3\\weighted-gdp-calc\\mapping\\weighted-gdp-calc\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.425,
+    "agent_setup_sec": 0.346,
+    "agent_execution_sec": 413.261,
+    "verifier_sec": 57.221,
+    "total_sec": 476.767
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 985752,
+  "agent_output_tokens": 15564,
+  "image_cache": {
+    "image": "benchmark-cache/weighted-gdp-calc-gold:9ffa98d58509b229",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "net-export-statistics-sumproduct-formulas",
+      "ooxml-two-key-lookup-formula-population"
+    ],
+    "available_skills": [
+      "net-export-statistics-sumproduct-formulas",
+      "ooxml-two-key-lookup-formula-population"
+    ],
+    "loaded_skills": [
+      "net-export-statistics-sumproduct-formulas",
+      "ooxml-two-key-lookup-formula-population"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "net-export-statistics-sumproduct-formulas",
+      "ooxml-two-key-lookup-formula-population"
+    ],
+    "trials": [
+      {
+        "trial_id": "weighted-gdp-calc__UxdGkGr",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "net-export-statistics-sumproduct-formulas",
+          "ooxml-two-key-lookup-formula-population"
+        ],
+        "available_skills": [
+          "net-export-statistics-sumproduct-formulas",
+          "ooxml-two-key-lookup-formula-population"
+        ],
+        "loaded_skills": [
+          "net-export-statistics-sumproduct-formulas",
+          "ooxml-two-key-lookup-formula-population"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "net-export-statistics-sumproduct-formulas",
+          "ooxml-two-key-lookup-formula-population"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

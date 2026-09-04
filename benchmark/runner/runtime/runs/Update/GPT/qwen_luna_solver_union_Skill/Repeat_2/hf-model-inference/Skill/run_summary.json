@@ -1,0 +1,110 @@
+{
+  "schema_version": 9,
+  "task_id": "hf-model-inference",
+  "condition": "mapping",
+  "batch": "qwen_luna_solver_union_Skill_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_flask_api_running: ConnectionRefusedError: [Errno 111] Connection refused; test_outputs.py::test_sentiment_endpoint: ConnectionRefusedError: [Errno 111] Connection refused; test_outputs.py::test_api_error_handling: ConnectionRefusedError: [Errno 111] Connection refused",
+  "peak_memory": {
+    "peak_memory_mib": 1953.78515625,
+    "peak_memory_raw": "1953.785 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2688,
+    "observed_containers": [
+      "hf-model-inference__2qpol9r__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "hf-model-inference",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_luna_solver_union_Skill_Run002\\Repeat_2\\hf-model-inference\\mapping\\hf-model-inference\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.904,
+    "agent_setup_sec": 0.48,
+    "agent_execution_sec": 253.65,
+    "verifier_sec": 12.976,
+    "total_sec": 275.155
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 191066,
+  "agent_output_tokens": 3401,
+  "image_cache": {
+    "image": "benchmark-cache/hf-model-inference-gold:5e2a59f453e212fb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization",
+      "huggingface-snapshot-int8-runtime-materialization",
+      "numpy-distilbert-int8-inference"
+    ],
+    "available_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization",
+      "huggingface-snapshot-int8-runtime-materialization",
+      "numpy-distilbert-int8-inference"
+    ],
+    "loaded_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization",
+      "huggingface-snapshot-int8-runtime-materialization",
+      "numpy-distilbert-int8-inference"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "flask-sequence-classification-api",
+      "huggingface-local-model-materialization",
+      "huggingface-snapshot-int8-runtime-materialization",
+      "numpy-distilbert-int8-inference"
+    ],
+    "trials": [
+      {
+        "trial_id": "hf-model-inference__2qPoL9r",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization",
+          "huggingface-snapshot-int8-runtime-materialization",
+          "numpy-distilbert-int8-inference"
+        ],
+        "available_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization",
+          "huggingface-snapshot-int8-runtime-materialization",
+          "numpy-distilbert-int8-inference"
+        ],
+        "loaded_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization",
+          "huggingface-snapshot-int8-runtime-materialization",
+          "numpy-distilbert-int8-inference"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "flask-sequence-classification-api",
+          "huggingface-local-model-materialization",
+          "huggingface-snapshot-int8-runtime-materialization",
+          "numpy-distilbert-int8-inference"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

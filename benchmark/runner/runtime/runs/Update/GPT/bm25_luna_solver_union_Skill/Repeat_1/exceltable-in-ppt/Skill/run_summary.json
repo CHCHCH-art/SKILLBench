@@ -1,0 +1,110 @@
+{
+  "schema_version": 9,
+  "task_id": "exceltable-in-ppt",
+  "condition": "mapping",
+  "batch": "bm25_luna_solver_union_Skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_inverse_rate_updated: AssertionError: Inverse rate CNY -> USD was not updated correctly. Expected: 0.142, Got: nan; test_outputs.py::test_other_cells_unchanged: AssertionError: Cell (CNY, EUR) was unexpectedly modified. Original: 0.127, New: nan",
+  "peak_memory": {
+    "peak_memory_mib": 1126.34375,
+    "peak_memory_raw": "1126.344 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 4928,
+    "observed_containers": [
+      "exceltable-in-ppt__8fubprm__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "exceltable-in-ppt",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_luna_solver_union_Skill_Run001\\Repeat_1\\exceltable-in-ppt\\mapping\\exceltable-in-ppt\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.771,
+    "agent_setup_sec": 0.599,
+    "agent_execution_sec": 354.02,
+    "verifier_sec": 137.857,
+    "total_sec": 499.625
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 333017,
+  "agent_output_tokens": 4231,
+  "image_cache": {
+    "image": "benchmark-cache/exceltable-in-ppt-gold:76ac1a2bd4e98536",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement"
+    ],
+    "available_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement"
+    ],
+    "loaded_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement"
+    ],
+    "trials": [
+      {
+        "trial_id": "exceltable-in-ppt__8FUbpRM",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement"
+        ],
+        "available_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement"
+        ],
+        "loaded_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,405 @@
+
+========== Reuse Image ==========
+Using cached image: benchmark-cache/dapt-intrusion-detection-gold:7867f125ad78de68
+Memory monitor: metric=docker_stats_memory, source=docker_stats, interval=1.000s
+Task: dapt-intrusion-detection
+Source type: used
+Task run: 4
+Source run: 1
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\dapt-intrusion-detection
+
+========== Repeated Run 1/3 ==========
+
+========== Run solve.sh ==========
+Get:1 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:3 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [50.0 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1730 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1527 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1200 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+Get:12 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1525 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2149 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [55.8 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1842 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [48.9 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [671 B]
+Get:19 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [35.9 kB]
+Fetched 32.4 MB in 54s (595 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libbcg729-0 libcap2-bin libcares2 libdbus-1-3 libglib2.0-0t64 libibverbs1
+  libicu74 liblua5.2-0 libmaxminddb0 libnghttp3-3 libnl-3-200 libnl-genl-3-200
+  libnl-route-3-200 libopencore-amrnb0 libopus0 libpcap0.8t64 libsbc1
+  libsmi2t64 libsnappy1v5 libspandsp2t64 libspeexdsp1 libssh-gcrypt-4
+  libwireshark-data libwireshark17t64 libwiretap14t64 libwsutil15t64 libxml2
+  wireshark-common
+Suggested packages:
+  low-memory-monitor mmdb-bin opus-tools snmp-mibs-downloader geoipupdate
+  geoip-database geoip-database-extra libjs-leaflet
+  libjs-leaflet.markercluster wireshark-doc python-networkx-doc python3-gdal
+  python3-matplotlib python3-pydot python3-pygraphviz python3-scipy
+Recommended packages:
+  libpam-cap dbus libglib2.0-data shared-mime-info xdg-user-dirs
+  ibverbs-providers python3-numpy python3-yaml
+The following NEW packages will be installed:
+  libbcg729-0 libcap2-bin libcares2 libdbus-1-3 libglib2.0-0t64 libibverbs1
+  libicu74 liblua5.2-0 libmaxminddb0 libnghttp3-3 libnl-3-200 libnl-genl-3-200
+  libnl-route-3-200 libopencore-amrnb0 libopus0 libpcap0.8t64 libsbc1
+  libsmi2t64 libsnappy1v5 libspandsp2t64 libspeexdsp1 libssh-gcrypt-4
+  libwireshark-data libwireshark17t64 libwiretap14t64 libwsutil15t64 libxml2
+  python3-networkx tshark wireshark-common
+0 upgraded, 30 newly installed, 0 to remove and 43 not upgraded.
+Need to get 42.0 MB of archives.
+After this operation, 193 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcap2-bin amd64 1:2.66-5ubuntu2.4 [34.1 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdbus-1-3 amd64 1.14.10-4ubuntu4.1 [210 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libglib2.0-0t64 amd64 2.80.0-6ubuntu3.8 [1545 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libicu74 amd64 74.2-1ubuntu3.1 [10.9 MB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libxml2 amd64 2.9.14+dfsg-1.3ubuntu3.8 [764 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libnl-3-200 amd64 3.7.0-0.3build1.1 [55.7 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libnl-route-3-200 amd64 3.7.0-0.3build1.1 [189 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libibverbs1 amd64 50.0-2ubuntu0.2 [68.0 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 libmaxminddb0 amd64 1.9.1-1build1 [24.4 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 libpcap0.8t64 amd64 1.10.4-4.1ubuntu3 [151 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/universe amd64 libbcg729-0 amd64 1.1.1-2build1 [35.3 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 libcares2 amd64 1.27.0-1.0ubuntu1 [73.7 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble/universe amd64 liblua5.2-0 amd64 5.2.4-3build2 [123 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble/universe amd64 libnghttp3-3 amd64 0.8.0-2 [59.0 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libnl-genl-3-200 amd64 3.7.0-0.3build1.1 [12.2 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble/universe amd64 libopencore-amrnb0 amd64 0.1.6-1build1 [98.2 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 libopus0 amd64 1.4-1build1 [208 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble/universe amd64 libsmi2t64 amd64 0.4.8+dfsg2-16.1build1 [112 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble/universe amd64 libspandsp2t64 amd64 0.0.6+dfsg-2.1build1 [311 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble/main amd64 libspeexdsp1 amd64 1.2.1-1ubuntu3 [43.1 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libssh-gcrypt-4 amd64 0.10.6-2ubuntu0.4 [225 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble/universe amd64 libwireshark-data all 4.2.2-1.1build3 [454 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble/main amd64 libsbc1 amd64 2.0-1build1 [33.9 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble/main amd64 libsnappy1v5 amd64 1.1.10-1build1 [28.6 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble/universe amd64 libwsutil15t64 amd64 4.2.2-1.1build3 [121 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble/universe amd64 libwiretap14t64 amd64 4.2.2-1.1build3 [259 kB]
+Get:27 http://archive.ubuntu.com/ubuntu noble/universe amd64 libwireshark17t64 amd64 4.2.2-1.1build3 [23.7 MB]
+Get:28 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-networkx all 2.8.8-1ubuntu1 [1468 kB]
+Get:29 http://archive.ubuntu.com/ubuntu noble/universe amd64 wireshark-common amd64 4.2.2-1.1build3 [587 kB]
+Get:30 http://archive.ubuntu.com/ubuntu noble/universe amd64 tshark amd64 4.2.2-1.1build3 [158 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 42.0 MB in 2min 37s (268 kB/s)
+Selecting previously unselected package libcap2-bin.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 18415 files and directories currently installed.)
+Preparing to unpack .../00-libcap2-bin_1%3a2.66-5ubuntu2.4_amd64.deb ...
+Unpacking libcap2-bin (1:2.66-5ubuntu2.4) ...
+Selecting previously unselected package libdbus-1-3:amd64.
+Preparing to unpack .../01-libdbus-1-3_1.14.10-4ubuntu4.1_amd64.deb ...
+Unpacking libdbus-1-3:amd64 (1.14.10-4ubuntu4.1) ...
+Selecting previously unselected package libglib2.0-0t64:amd64.
+Preparing to unpack .../02-libglib2.0-0t64_2.80.0-6ubuntu3.8_amd64.deb ...
+Unpacking libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.8) ...
+Selecting previously unselected package libicu74:amd64.
+Preparing to unpack .../03-libicu74_74.2-1ubuntu3.1_amd64.deb ...
+Unpacking libicu74:amd64 (74.2-1ubuntu3.1) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../04-libxml2_2.9.14+dfsg-1.3ubuntu3.8_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.14+dfsg-1.3ubuntu3.8) ...
+Selecting previously unselected package libnl-3-200:amd64.
+Preparing to unpack .../05-libnl-3-200_3.7.0-0.3build1.1_amd64.deb ...
+Unpacking libnl-3-200:amd64 (3.7.0-0.3build1.1) ...
+Selecting previously unselected package libnl-route-3-200:amd64.
+Preparing to unpack .../06-libnl-route-3-200_3.7.0-0.3build1.1_amd64.deb ...
+Unpacking libnl-route-3-200:amd64 (3.7.0-0.3build1.1) ...
+Selecting previously unselected package libibverbs1:amd64.
+Preparing to unpack .../07-libibverbs1_50.0-2ubuntu0.2_amd64.deb ...
+Unpacking libibverbs1:amd64 (50.0-2ubuntu0.2) ...
+Selecting previously unselected package libmaxminddb0:amd64.
+Preparing to unpack .../08-libmaxminddb0_1.9.1-1build1_amd64.deb ...
+Unpacking libmaxminddb0:amd64 (1.9.1-1build1) ...
+Selecting previously unselected package libpcap0.8t64:amd64.
+Preparing to unpack .../09-libpcap0.8t64_1.10.4-4.1ubuntu3_amd64.deb ...
+Unpacking libpcap0.8t64:amd64 (1.10.4-4.1ubuntu3) ...
+Selecting previously unselected package libbcg729-0:amd64.
+Preparing to unpack .../10-libbcg729-0_1.1.1-2build1_amd64.deb ...
+Unpacking libbcg729-0:amd64 (1.1.1-2build1) ...
+Selecting previously unselected package libcares2:amd64.
+Preparing to unpack .../11-libcares2_1.27.0-1.0ubuntu1_amd64.deb ...
+Unpacking libcares2:amd64 (1.27.0-1.0ubuntu1) ...
+Selecting previously unselected package liblua5.2-0:amd64.
+Preparing to unpack .../12-liblua5.2-0_5.2.4-3build2_amd64.deb ...
+Unpacking liblua5.2-0:amd64 (5.2.4-3build2) ...
+Selecting previously unselected package libnghttp3-3:amd64.
+Preparing to unpack .../13-libnghttp3-3_0.8.0-2_amd64.deb ...
+Unpacking libnghttp3-3:amd64 (0.8.0-2) ...
+Selecting previously unselected package libnl-genl-3-200:amd64.
+Preparing to unpack .../14-libnl-genl-3-200_3.7.0-0.3build1.1_amd64.deb ...
+Unpacking libnl-genl-3-200:amd64 (3.7.0-0.3build1.1) ...
+Selecting previously unselected package libopencore-amrnb0:amd64.
+Preparing to unpack .../15-libopencore-amrnb0_0.1.6-1build1_amd64.deb ...
+Unpacking libopencore-amrnb0:amd64 (0.1.6-1build1) ...
+Selecting previously unselected package libopus0:amd64.
+Preparing to unpack .../16-libopus0_1.4-1build1_amd64.deb ...
+Unpacking libopus0:amd64 (1.4-1build1) ...
+Selecting previously unselected package libsmi2t64:amd64.
+Preparing to unpack .../17-libsmi2t64_0.4.8+dfsg2-16.1build1_amd64.deb ...
+Unpacking libsmi2t64:amd64 (0.4.8+dfsg2-16.1build1) ...
+Selecting previously unselected package libspandsp2t64:amd64.
+Preparing to unpack .../18-libspandsp2t64_0.0.6+dfsg-2.1build1_amd64.deb ...
+Unpacking libspandsp2t64:amd64 (0.0.6+dfsg-2.1build1) ...
+Selecting previously unselected package libspeexdsp1:amd64.
+Preparing to unpack .../19-libspeexdsp1_1.2.1-1ubuntu3_amd64.deb ...
+Unpacking libspeexdsp1:amd64 (1.2.1-1ubuntu3) ...
+Selecting previously unselected package libssh-gcrypt-4:amd64.
+Preparing to unpack .../20-libssh-gcrypt-4_0.10.6-2ubuntu0.4_amd64.deb ...
+Unpacking libssh-gcrypt-4:amd64 (0.10.6-2ubuntu0.4) ...
+Selecting previously unselected package libwireshark-data.
+Preparing to unpack .../21-libwireshark-data_4.2.2-1.1build3_all.deb ...
+Unpacking libwireshark-data (4.2.2-1.1build3) ...
+Selecting previously unselected package libsbc1:amd64.
+Preparing to unpack .../22-libsbc1_2.0-1build1_amd64.deb ...
+Unpacking libsbc1:amd64 (2.0-1build1) ...
+Selecting previously unselected package libsnappy1v5:amd64.
+Preparing to unpack .../23-libsnappy1v5_1.1.10-1build1_amd64.deb ...
+Unpacking libsnappy1v5:amd64 (1.1.10-1build1) ...
+Selecting previously unselected package libwsutil15t64:amd64.
+Preparing to unpack .../24-libwsutil15t64_4.2.2-1.1build3_amd64.deb ...
+Unpacking libwsutil15t64:amd64 (4.2.2-1.1build3) ...
+Selecting previously unselected package libwiretap14t64:amd64.
+Preparing to unpack .../25-libwiretap14t64_4.2.2-1.1build3_amd64.deb ...
+Unpacking libwiretap14t64:amd64 (4.2.2-1.1build3) ...
+Selecting previously unselected package libwireshark17t64:amd64.
+Preparing to unpack .../26-libwireshark17t64_4.2.2-1.1build3_amd64.deb ...
+Unpacking libwireshark17t64:amd64 (4.2.2-1.1build3) ...
+Selecting previously unselected package python3-networkx.
+Preparing to unpack .../27-python3-networkx_2.8.8-1ubuntu1_all.deb ...
+Unpacking python3-networkx (2.8.8-1ubuntu1) ...
+Selecting previously unselected package wireshark-common.
+Preparing to unpack .../28-wireshark-common_4.2.2-1.1build3_amd64.deb ...
+Unpacking wireshark-common (4.2.2-1.1build3) ...
+Selecting previously unselected package tshark.
+Preparing to unpack .../29-tshark_4.2.2-1.1build3_amd64.deb ...
+Unpacking tshark (4.2.2-1.1build3) ...
+Setting up libssh-gcrypt-4:amd64 (0.10.6-2ubuntu0.4) ...
+Setting up libnghttp3-3:amd64 (0.8.0-2) ...
+Setting up libsbc1:amd64 (2.0-1build1) ...
+Setting up libsmi2t64:amd64 (0.4.8+dfsg2-16.1build1) ...
+Setting up libbcg729-0:amd64 (1.1.1-2build1) ...
+Setting up libmaxminddb0:amd64 (1.9.1-1build1) ...
+Setting up python3-networkx (2.8.8-1ubuntu1) ...
+/usr/lib/python3/dist-packages/networkx/readwrite/tests/test_gml.py:556: SyntaxWarning: invalid octal escape sequence '\420'
+  "graph [edge [ source u'u\4200' target u'u\4200' ] "
+/usr/lib/python3/dist-packages/networkx/readwrite/tests/test_gml.py:557: SyntaxWarning: invalid octal escape sequence '\420'
+  + "node [ id u'u\4200' label b ] ]"
+Setting up libsnappy1v5:amd64 (1.1.10-1build1) ...
+Setting up libcap2-bin (1:2.66-5ubuntu2.4) ...
+Setting up libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.8) ...
+No schema files found: doing nothing.
+Setting up libdbus-1-3:amd64 (1.14.10-4ubuntu4.1) ...
+Setting up libopus0:amd64 (1.4-1build1) ...
+Setting up libcares2:amd64 (1.27.0-1.0ubuntu1) ...
+Setting up libicu74:amd64 (74.2-1ubuntu3.1) ...
+Setting up libspandsp2t64:amd64 (0.0.6+dfsg-2.1build1) ...
+Setting up libwireshark-data (4.2.2-1.1build3) ...
+Setting up liblua5.2-0:amd64 (5.2.4-3build2) ...
+Setting up libspeexdsp1:amd64 (1.2.1-1ubuntu3) ...
+Setting up libnl-3-200:amd64 (3.7.0-0.3build1.1) ...
+Setting up libopencore-amrnb0:amd64 (0.1.6-1build1) ...
+Setting up libwsutil15t64:amd64 (4.2.2-1.1build3) ...
+Setting up libxml2:amd64 (2.9.14+dfsg-1.3ubuntu3.8) ...
+Setting up libnl-route-3-200:amd64 (3.7.0-0.3build1.1) ...
+Setting up libnl-genl-3-200:amd64 (3.7.0-0.3build1.1) ...
+Setting up libwiretap14t64:amd64 (4.2.2-1.1build3) ...
+Setting up libibverbs1:amd64 (50.0-2ubuntu0.2) ...
+Setting up libwireshark17t64:amd64 (4.2.2-1.1build3) ...
+Setting up libpcap0.8t64:amd64 (1.10.4-4.1ubuntu3) ...
+Setting up wireshark-common (4.2.2-1.1build3) ...
+Setting up tshark (4.2.2-1.1build3) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.8) ...
+Running as user "root" and group "root". This could be dangerous.
+{
+  "avg_packet_size": 270.73,
+  "bidirectional_flows": 1758,
+  "dominant_protocol": "arp",
+  "dst_ip_entropy": 2.4618,
+  "dst_port_entropy": 4.2811,
+  "duration_seconds": 26030.33,
+  "has_beaconing": false,
+  "has_dos_pattern": false,
+  "has_port_scan": false,
+  "iat_cv": 1.1026,
+  "iat_mean": 0.22814,
+  "iat_variance": 0.063282,
+  "is_traffic_benign": true,
+  "max_indegree": 23,
+  "max_outdegree": 27,
+  "max_packet_size": 56538,
+  "min_packet_size": 42,
+  "network_density": 0.041252,
+  "num_consumers": 13,
+  "num_edges": 58,
+  "num_nodes": 38,
+  "num_producers": 23,
+  "packets_per_minute_avg": 262.9,
+  "packets_per_minute_max": 2372,
+  "packets_per_minute_min": 186,
+  "protocol_arp": 54938,
+  "protocol_icmp": 8,
+  "protocol_ip_total": 58474,
+  "protocol_tcp": 32620,
+  "protocol_udp": 26092,
+  "src_ip_entropy": 2.4833,
+  "src_port_entropy": 4.3396,
+  "tcp_flows": 3353,
+  "total_bytes": 30889470,
+  "total_packets": 114099,
+  "udp_flows": 214,
+  "unique_dst_ports": 1675,
+  "unique_flows": 3567,
+  "unique_src_ports": 1713
+}
+Completed: /root/network_stats.csv
+
+========== Run test.sh ==========
+debconf: delaying package configuration, since apt-utils is not installed
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+WARN: The following commands are shadowed by other commands in your PATH: uv uvx
+=== Running Intrusion Detection Tests ===
+Downloading pygments (1.2MiB)
+ Downloading pygments
+Installed 6 packages in 7ms
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0 -- /root/.cache/uv/archive-v0/NllFS-zVcm52KmhpI1zIi/bin/python
+cachedir: .pytest_cache
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collecting ... collected 37 items
+
+../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_tcp] PASSED [  2%]
+../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_icmp] PASSED [  5%]
+../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_arp] PASSED [  8%]
+../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_ip_total] PASSED [ 10%]
+../tests/test_outputs.py::TestProtocolDistribution::test_protocol_udp PASSED [ 13%]
+../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[duration_seconds] PASSED [ 16%]
+../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[packets_per_minute_avg] PASSED [ 18%]
+../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[packets_per_minute_max] PASSED [ 21%]
+../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[packets_per_minute_min] PASSED [ 24%]
+../tests/test_outputs.py::TestSizeStats::test_size_metric[total_bytes] PASSED [ 27%]
+../tests/test_outputs.py::TestSizeStats::test_size_metric[avg_packet_size] PASSED [ 29%]
+../tests/test_outputs.py::TestSizeStats::test_size_metric[min_packet_size] PASSED [ 32%]
+../tests/test_outputs.py::TestSizeStats::test_size_metric[max_packet_size] PASSED [ 35%]
+../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[dst_port_entropy] PASSED [ 37%]
+../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[src_port_entropy] PASSED [ 40%]
+../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[src_ip_entropy] PASSED [ 43%]
+../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[dst_ip_entropy] PASSED [ 45%]
+../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[unique_dst_ports] PASSED [ 48%]
+../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[unique_src_ports] PASSED [ 51%]
+../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[num_nodes] PASSED [ 54%]
+../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[num_edges] PASSED [ 56%]
+../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[network_density] PASSED [ 59%]
+../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[max_indegree] PASSED [ 62%]
+../tests/test_outputs.py::TestGraphMetrics::test_max_outdegree PASSED    [ 64%]
+../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[iat_mean] PASSED [ 67%]
+../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[iat_variance] PASSED [ 70%]
+../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[iat_cv] PASSED [ 72%]
+../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[num_producers] PASSED [ 75%]
+../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[num_consumers] PASSED [ 78%]
+../tests/test_outputs.py::TestFlowMetrics::test_flow_metric[unique_flows] PASSED [ 81%]
+../tests/test_outputs.py::TestFlowMetrics::test_flow_metric[tcp_flows] PASSED [ 83%]
+../tests/test_outputs.py::TestFlowMetrics::test_flow_metric[udp_flows] PASSED [ 86%]
+../tests/test_outputs.py::TestFlowMetrics::test_bidirectional_flows PASSED [ 89%]
+../tests/test_outputs.py::TestAnalysisQuestions::test_is_traffic_benign PASSED [ 91%]
+../tests/test_outputs.py::TestAnalysisQuestions::test_has_port_scan PASSED [ 94%]
+../tests/test_outputs.py::TestAnalysisQuestions::test_has_dos_pattern PASSED [ 97%]
+../tests/test_outputs.py::TestAnalysisQuestions::test_has_beaconing PASSED [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_tcp]
+PASSED ../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_icmp]
+PASSED ../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_arp]
+PASSED ../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_ip_total]
+PASSED ../tests/test_outputs.py::TestProtocolDistribution::test_protocol_udp
+PASSED ../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[duration_seconds]
+PASSED ../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[packets_per_minute_avg]
+PASSED ../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[packets_per_minute_max]
+PASSED ../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[packets_per_minute_min]
+PASSED ../tests/test_outputs.py::TestSizeStats::test_size_metric[total_bytes]
+PASSED ../tests/test_outputs.py::TestSizeStats::test_size_metric[avg_packet_size]
+PASSED ../tests/test_outputs.py::TestSizeStats::test_size_metric[min_packet_size]
+PASSED ../tests/test_outputs.py::TestSizeStats::test_size_metric[max_packet_size]
+PASSED ../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[dst_port_entropy]
+PASSED ../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[src_port_entropy]
+PASSED ../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[src_ip_entropy]
+PASSED ../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[dst_ip_entropy]
+PASSED ../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[unique_dst_ports]
+PASSED ../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[unique_src_ports]
+PASSED ../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[num_nodes]
+PASSED ../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[num_edges]
+PASSED ../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[network_density]
+PASSED ../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[max_indegree]
+PASSED ../tests/test_outputs.py::TestGraphMetrics::test_max_outdegree
+PASSED ../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[iat_mean]
+PASSED ../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[iat_variance]
+PASSED ../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[iat_cv]
+PASSED ../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[num_producers]
+PASSED ../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[num_consumers]
+PASSED ../tests/test_outputs.py::TestFlowMetrics::test_flow_metric[unique_flows]
+PASSED ../tests/test_outputs.py::TestFlowMetrics::test_flow_metric[tcp_flows]
+PASSED ../tests/test_outputs.py::TestFlowMetrics::test_flow_metric[udp_flows]
+PASSED ../tests/test_outputs.py::TestFlowMetrics::test_bidirectional_flows
+PASSED ../tests/test_outputs.py::TestAnalysisQuestions::test_is_traffic_benign
+PASSED ../tests/test_outputs.py::TestAnalysisQuestions::test_has_port_scan
+PASSED ../tests/test_outputs.py::TestAnalysisQuestions::test_has_dos_pattern
+PASSED ../tests/test_outputs.py::TestAnalysisQuestions::test_has_beaconing
+============================== 37 passed in 0.10s ==============================
+
+✅ All tests passed!
+
+========== Result ==========
+Task: dapt-intrusion-detection
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 254.8s (exit 0)
+Test: 56.9s (exit 0)
+Solve Memory Peak: 1.1 GiB
+Test Memory Peak: 251.0 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s

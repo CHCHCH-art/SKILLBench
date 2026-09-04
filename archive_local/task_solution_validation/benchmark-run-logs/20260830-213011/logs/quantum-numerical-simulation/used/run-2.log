@@ -1,0 +1,135 @@
+Task: quantum-numerical-simulation
+Source type: used
+Task run: 5
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\quantum-numerical-simulation
+
+========== Repeated Run 2/3 ==========
+
+========== Run solve.sh ==========
+/usr/local/lib/python3.10/site-packages/qutip/__init__.py:96: UserWarning: matplotlib not found: Graphics will not work.
+  warnings.warn("matplotlib not found: Graphics will not work.")
+Saving CSV files to /root
+Case 1: Arnoldi spectral solve (dimension=20736, nnz=157990)
+Case 1: selected lambda=-3.608374e-09+1.142155e-15j, relative residual=3.608e-09
+Saved /root/1.csv
+Case 2: Arnoldi spectral solve (dimension=20736, nnz=157990)
+Case 2: selected lambda=-2.059021e-11-8.309212e-15j, relative residual=4.580e-11
+Saved /root/2.csv
+Case 3: Arnoldi spectral solve (dimension=20736, nnz=163111)
+Case 3: selected lambda=-1.141475e-08-2.710474e-15j, relative residual=1.141e-08
+Saved /root/3.csv
+Case 4: Arnoldi spectral solve (dimension=20736, nnz=157990)
+Case 4: selected lambda=2.731935e-09-5.920933e-15j, relative residual=2.732e-09
+Saved /root/4.csv
+All four cases completed
+
+========== Run test.sh ==========
+Hit:1 http://mirrors.aliyun.com/debian trixie InRelease
+Hit:2 http://mirrors.aliyun.com/debian trixie-updates InRelease
+Hit:3 http://mirrors.aliyun.com/debian-security trixie-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.14.1-2+deb13u4).
+0 upgraded, 0 newly installed, 0 to remove and 13 not upgraded.
+Traceback (most recent call last):
+  File "/usr/local/bin/pip", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.10/site-packages/pip/_internal/cli/main.py", line 84, in main
+    command = create_command(cmd_name, isolated=("--isolated" in cmd_args))
+  File "/usr/local/lib/python3.10/site-packages/pip/_internal/commands/__init__.py", line 121, in create_command
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/local/lib/python3.10/site-packages/pip/_internal/commands/install.py", line 18, in <module>
+    from pip._vendor.requests.exceptions import InvalidProxyURL
+  File "/usr/local/lib/python3.10/site-packages/pip/_vendor/requests/__init__.py", line 45, in <module>
+    from pip._vendor import urllib3
+  File "/usr/local/lib/python3.10/site-packages/pip/_vendor/urllib3/__init__.py", line 15, in <module>
+    from ._base_connection import _TYPE_BODY
+  File "/usr/local/lib/python3.10/site-packages/pip/_vendor/urllib3/_base_connection.py", line 5, in <module>
+    from .util.connection import _TYPE_SOCKET_OPTIONS
+  File "/usr/local/lib/python3.10/site-packages/pip/_vendor/urllib3/util/__init__.py", line 8, in <module>
+    from .ssl_ import (
+  File "/usr/local/lib/python3.10/site-packages/pip/_vendor/urllib3/util/ssl_.py", line 13, in <module>
+    from .url import _BRACELESS_IPV6_ADDRZ_RE, _IPV4_RE
+  File "/usr/local/lib/python3.10/site-packages/pip/_vendor/urllib3/util/url.py", line 61, in <module>
+    _BRACELESS_IPV6_ADDRZ_RE = re.compile("^" + _IPV6_ADDRZ_PAT[2:-2] + "$")
+  File "/usr/local/lib/python3.10/re.py", line 251, in compile
+    return _compile(pattern, flags)
+  File "/usr/local/lib/python3.10/re.py", line 303, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/local/lib/python3.10/sre_compile.py", line 788, in compile
+    p = sre_parse.parse(p, flags)
+  File "/usr/local/lib/python3.10/sre_parse.py", line 955, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/usr/local/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/local/lib/python3.10/sre_parse.py", line 841, in _parse
+    p = _parse_sub(source, state, sub_verbose, nested + 1)
+  File "/usr/local/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/local/lib/python3.10/sre_parse.py", line 841, in _parse
+    p = _parse_sub(source, state, sub_verbose, nested + 1)
+  File "/usr/local/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/local/lib/python3.10/sre_parse.py", line 512, in _parse
+    sourceget()
+  File "/usr/local/lib/python3.10/sre_parse.py", line 257, in get
+    self.__next()
+  File "/usr/local/lib/python3.10/sre_parse.py", line 248, in __next
+    self.index = index + 1
+TypeError: unsupported operand type(s) for +: 'Tokenizer' and 'int'
+============================= test session starts ==============================
+platform linux -- Python 3.10.20, pytest-8.4.1, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /
+plugins: json-ctrf-0.3.5
+collecting ... collected 7 items
+
+../tests/test_outputs.py::test_all_files_exist PASSED                    [ 14%]
+../tests/test_outputs.py::test_grid_dimensions PASSED                    [ 28%]
+../tests/test_outputs.py::test_values_are_real_and_finite PASSED         [ 42%]
+../tests/test_outputs.py::test_csv_sums_to_one PASSED                    [ 57%]
+../tests/test_outputs.py::test_cases_are_distinct PASSED                 [ 71%]
+../tests/test_outputs.py::test_wigner_diagonal_sum_matches_reference PASSED [ 85%]
+../tests/test_outputs.py::test_wigner_values_match_reference PASSED      [100%]
+
+=============================== warnings summary ===============================
+../usr/local/lib/python3.10/site-packages/qutip/__init__.py:96
+  /usr/local/lib/python3.10/site-packages/qutip/__init__.py:96: UserWarning: matplotlib not found: Graphics will not work.
+    warnings.warn("matplotlib not found: Graphics will not work.")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_all_files_exist
+PASSED ../tests/test_outputs.py::test_grid_dimensions
+PASSED ../tests/test_outputs.py::test_values_are_real_and_finite
+PASSED ../tests/test_outputs.py::test_csv_sums_to_one
+PASSED ../tests/test_outputs.py::test_cases_are_distinct
+PASSED ../tests/test_outputs.py::test_wigner_diagonal_sum_matches_reference
+PASSED ../tests/test_outputs.py::test_wigner_values_match_reference
+======================== 7 passed, 1 warning in 27.41s =========================
+
+========== Result ==========
+Task: quantum-numerical-simulation
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 105.5s (exit 0)
+Test: 28.7s (exit 0)
+Solve Memory Peak: 216.0 MiB
+Test Memory Peak: 353.8 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s

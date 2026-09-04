@@ -1,0 +1,123 @@
+{
+  "schema_version": 9,
+  "task_id": "sales-pivot-analysis",
+  "condition": "mapping",
+  "batch": "skillrouter_luna_solver_union_Skill_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "trial_error",
+  "passed": false,
+  "error": [
+    {
+      "exception_type": "AgentTimeoutError",
+      "exception_message": "Agent execution timed out after 900.0 seconds"
+    }
+  ],
+  "failure_reason": "{\"exception_type\":\"AgentTimeoutError\",\"exception_message\":\"Agent execution timed out after 900.0 seconds\"}",
+  "peak_memory": {
+    "peak_memory_mib": 980.27734375,
+    "peak_memory_raw": "980.277 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 9051,
+    "observed_containers": [
+      "sales-pivot-analysis__zkhayej__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "sales-pivot-analysis",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_luna_solver_union_Skill_Run003\\Repeat_1\\sales-pivot-analysis\\mapping\\sales-pivot-analysis\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.774,
+    "agent_setup_sec": 0.776,
+    "agent_execution_sec": 901.141,
+    "verifier_sec": 7.162,
+    "total_sec": 919.851
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1717610,
+  "agent_output_tokens": 10698,
+  "image_cache": {
+    "image": "benchmark-cache/sales-pivot-analysis-gold:0de7e366d80d6ca8",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "apache-poi-native-pivot-workbook",
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quantile-derived-enrichment",
+      "demographic-quartile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join"
+    ],
+    "available_skills": [
+      "apache-poi-native-pivot-workbook",
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quantile-derived-enrichment",
+      "demographic-quartile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join"
+    ],
+    "loaded_skills": [
+      "apache-poi-native-pivot-workbook",
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quantile-derived-enrichment",
+      "demographic-quartile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "apache-poi-native-pivot-workbook",
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quantile-derived-enrichment",
+      "demographic-quartile-derived-enrichment",
+      "heterogeneous-demographic-source-normalization-join"
+    ],
+    "trials": [
+      {
+        "trial_id": "sales-pivot-analysis__zkHaYEJ",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "apache-poi-native-pivot-workbook",
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quantile-derived-enrichment",
+          "demographic-quartile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join"
+        ],
+        "available_skills": [
+          "apache-poi-native-pivot-workbook",
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quantile-derived-enrichment",
+          "demographic-quartile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join"
+        ],
+        "loaded_skills": [
+          "apache-poi-native-pivot-workbook",
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quantile-derived-enrichment",
+          "demographic-quartile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "apache-poi-native-pivot-workbook",
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quantile-derived-enrichment",
+          "demographic-quartile-derived-enrichment",
+          "heterogeneous-demographic-source-normalization-join"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

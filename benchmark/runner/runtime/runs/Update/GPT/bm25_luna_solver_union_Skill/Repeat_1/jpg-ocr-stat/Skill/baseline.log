@@ -1,0 +1,28 @@
+2026-09-03T20:17:42.275099+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=jpg-ocr-stat condition=mapping image=benchmark-cache/jpg-ocr-stat-gold:2312eeab86c89737 provided_skills=["receipt-date-total-excel-serialization", "receipt-image-ocr-line-extraction"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:09:03 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 9m 4s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_1\jpg-ocr-stat\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_1\jpg-ocr-stat\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_1\jpg-ocr-stat\Skill\Job_result`
+
+2026-09-03T20:26:47.309413+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=jpg-ocr-stat condition=mapping

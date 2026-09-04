@@ -1,0 +1,28 @@
+2026-09-03T17:40:46.254017+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=energy-market-pricing condition=mapping image=benchmark-cache/energy-market-pricing-gold:5e086fb9e6601b54 provided_skills=["sparse-dcopf-reserve-lp-formulation", "transmission-limit-counterfactual-impact", "highs-dual-market-pricing-report"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:20:48 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 20m 48s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_3\energy-market-pricing\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_3\energy-market-pricing\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_3\energy-market-pricing\Skill\Job_result`
+
+2026-09-03T18:01:35.653810+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=energy-market-pricing condition=mapping

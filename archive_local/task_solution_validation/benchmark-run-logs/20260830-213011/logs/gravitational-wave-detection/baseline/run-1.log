@@ -1,0 +1,53 @@
+
+========== Reuse Image ==========
+Using cached image: benchmark-cache/gravitational-wave-detection-gold:453ceaaaf619c520
+Memory monitor: metric=docker_stats_memory, source=docker_stats, interval=1.000s
+Task: gravitational-wave-detection
+Source type: baseline
+Task run: 1
+Source run: 1
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\gravitational-wave-detection
+
+========== Repeated Run 1/3 ==========
+
+========== Run solve.sh ==========
+Solution completed. Best signal found for each approximant.
+Best SEOBNRv4_opt: SNR=17.90, total_mass=44.0
+Best IMRPhenomD: SNR=18.07, total_mass=44.0
+Best TaylorT4: SNR=17.27, total_mass=44.0
+
+========== Run test.sh ==========
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 9 items
+
+../tests/test_outputs.py .........                                       [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_output_file_exists
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_output_format
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_output_types
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_row_count
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_snr_range
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_total_mass_values
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_all_approximants_tested
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_result_satisfies_grid_search_constraints
+PASSED ../tests/test_outputs.py::TestGravitationalWaveDetection::test_matches_expected_result
+============================== 9 passed in 0.43s ===============================
+
+========== Result ==========
+Task: gravitational-wave-detection
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 535.8s (exit 0)
+Test: 0.8s (exit 0)
+Solve Memory Peak: 272.5 MiB
+Test Memory Peak: 40.9 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s

@@ -1,0 +1,59 @@
+Task: financial-modeling-qa
+Source type: baseline
+Task run: 2
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\financial-modeling-qa
+
+========== Repeated Run 2/3 ==========
+
+========== Run solve.sh ==========
+Ignoring wrong pointing object 8 0 (offset 0)
+Ignoring wrong pointing object 10 0 (offset 0)
+Ignoring wrong pointing object 15 0 (offset 0)
+
+========== Run test.sh ==========
+Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.5.0-2ubuntu10.13).
+0 upgraded, 0 newly installed, 0 to remove and 33 not upgraded.
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 4 items
+
+../tests/test_outputs.py ....                                            [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestOutputs::test_inputs_exist
+PASSED ../tests/test_outputs.py::TestOutputs::test_answer_file_exists
+PASSED ../tests/test_outputs.py::TestOutputs::test_answer_format_is_number
+PASSED ../tests/test_outputs.py::TestOutputs::test_answer_value_correct
+============================== 4 passed in 0.07s ===============================
+
+========== Result ==========
+Task: financial-modeling-qa
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 0.4s (exit 0)
+Test: 16.5s (exit 0)
+Solve Memory Peak: 78.1 MiB
+Test Memory Peak: 115.3 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s

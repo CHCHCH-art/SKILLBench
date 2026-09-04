@@ -1,0 +1,28 @@
+2026-09-01T20:31:01.834167+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=pdf-excel-diff condition=mapping image=benchmark-cache/pdf-excel-diff-gold:d574cd2f86bbbcb0 provided_skills=["typed-record-diff-json", "pdf-record-table-extraction", "keyed-record-diff-normalization", "heterogeneous-demographic-source-normalization-join"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:05:59 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 5m 59s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_luna_solver_union_Skil
+l_Run002\Repeat_3\pdf-excel-diff\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_luna_solver_union_Skil
+l_Run002\Repeat_3\pdf-excel-diff\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_luna_solver_union_Skil
+l_Run002\Repeat_3\pdf-excel-diff\Skill\Job_result`
+
+2026-09-01T20:37:02.400512+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=3 task=pdf-excel-diff condition=mapping

@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "virtualhome-agent-planning",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1136.25,
+    "peak_memory_raw": "1136.250 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2957,
+    "observed_containers": [
+      "virtualhome-agent-planning__mgyn8cr__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "virtualhome-agent-pl",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run001\\Repeat_1\\virtualhome-agent-planning\\mapping\\virtualhome-agent-planning\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.746,
+    "agent_setup_sec": 0.519,
+    "agent_execution_sec": 140.999,
+    "verifier_sec": 150.621,
+    "total_sec": 301.486
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 141941,
+  "agent_output_tokens": 2310,
+  "image_cache": {
+    "image": "benchmark-cache/virtualhome-agent-planning-gold:2a7bb392c743be2d",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "chrisbanes--grove-multi-agent",
+      "grounded-pyperplan-portfolio-lifting",
+      "ooxml-two-key-lookup-formula-population",
+      "pddl-pyperplan-baseline-validation",
+      "pddl-task-manifest-plan-orchestration",
+      "pddl-unified-planning-load",
+      "pyperplan-oneshot-plan-generation",
+      "ratacat--kieran-python-reviewer",
+      "unified-planning-plan-file-writing",
+      "uno-two-key-index-match-population"
+    ],
+    "available_skills": [
+      "chrisbanes--grove-multi-agent",
+      "grounded-pyperplan-portfolio-lifting",
+      "ooxml-two-key-lookup-formula-population",
+      "pddl-pyperplan-baseline-validation",
+      "pddl-task-manifest-plan-orchestration",
+      "pddl-unified-planning-load",
+      "pyperplan-oneshot-plan-generation",
+      "ratacat--kieran-python-reviewer",
+      "unified-planning-plan-file-writing",
+      "uno-two-key-index-match-population"
+    ],
+    "loaded_skills": [
+      "chrisbanes--grove-multi-agent",
+      "grounded-pyperplan-portfolio-lifting",
+      "ooxml-two-key-lookup-formula-population",
+      "pddl-pyperplan-baseline-validation",
+      "pddl-task-manifest-plan-orchestration",
+      "pddl-unified-planning-load",
+      "pyperplan-oneshot-plan-generation",
+      "ratacat--kieran-python-reviewer",
+      "unified-planning-plan-file-writing",
+      "uno-two-key-index-match-population"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "chrisbanes--grove-multi-agent",
+      "grounded-pyperplan-portfolio-lifting",
+      "ooxml-two-key-lookup-formula-population",
+      "pddl-pyperplan-baseline-validation",
+      "pddl-task-manifest-plan-orchestration",
+      "pddl-unified-planning-load",
+      "pyperplan-oneshot-plan-generation",
+      "ratacat--kieran-python-reviewer",
+      "unified-planning-plan-file-writing",
+      "uno-two-key-index-match-population"
+    ],
+    "trials": [
+      {
+        "trial_id": "virtualhome-agent-planning__MGyN8cR",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "chrisbanes--grove-multi-agent",
+          "grounded-pyperplan-portfolio-lifting",
+          "ooxml-two-key-lookup-formula-population",
+          "pddl-pyperplan-baseline-validation",
+          "pddl-task-manifest-plan-orchestration",
+          "pddl-unified-planning-load",
+          "pyperplan-oneshot-plan-generation",
+          "ratacat--kieran-python-reviewer",
+          "unified-planning-plan-file-writing",
+          "uno-two-key-index-match-population"
+        ],
+        "available_skills": [
+          "chrisbanes--grove-multi-agent",
+          "grounded-pyperplan-portfolio-lifting",
+          "ooxml-two-key-lookup-formula-population",
+          "pddl-pyperplan-baseline-validation",
+          "pddl-task-manifest-plan-orchestration",
+          "pddl-unified-planning-load",
+          "pyperplan-oneshot-plan-generation",
+          "ratacat--kieran-python-reviewer",
+          "unified-planning-plan-file-writing",
+          "uno-two-key-index-match-population"
+        ],
+        "loaded_skills": [
+          "chrisbanes--grove-multi-agent",
+          "grounded-pyperplan-portfolio-lifting",
+          "ooxml-two-key-lookup-formula-population",
+          "pddl-pyperplan-baseline-validation",
+          "pddl-task-manifest-plan-orchestration",
+          "pddl-unified-planning-load",
+          "pyperplan-oneshot-plan-generation",
+          "ratacat--kieran-python-reviewer",
+          "unified-planning-plan-file-writing",
+          "uno-two-key-index-match-population"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "chrisbanes--grove-multi-agent",
+          "grounded-pyperplan-portfolio-lifting",
+          "ooxml-two-key-lookup-formula-population",
+          "pddl-pyperplan-baseline-validation",
+          "pddl-task-manifest-plan-orchestration",
+          "pddl-unified-planning-load",
+          "pyperplan-oneshot-plan-generation",
+          "ratacat--kieran-python-reviewer",
+          "unified-planning-plan-file-writing",
+          "uno-two-key-index-match-population"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

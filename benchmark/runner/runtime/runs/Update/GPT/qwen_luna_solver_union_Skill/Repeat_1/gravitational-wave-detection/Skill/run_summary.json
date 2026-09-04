@@ -1,0 +1,115 @@
+{
+  "schema_version": 9,
+  "task_id": "gravitational-wave-detection",
+  "condition": "mapping",
+  "batch": "qwen_luna_solver_union_Skill_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "trial_error",
+  "passed": false,
+  "error": [
+    {
+      "exception_type": "AgentTimeoutError",
+      "exception_message": "Agent execution timed out after 2700.0 seconds"
+    }
+  ],
+  "failure_reason": "{\"exception_type\":\"AgentTimeoutError\",\"exception_message\":\"Agent execution timed out after 2700.0 seconds\"}",
+  "peak_memory": {
+    "peak_memory_mib": 539.3515625,
+    "peak_memory_raw": "539.352 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 17459,
+    "observed_containers": [
+      "gravitational-wave-detection__mztqngs__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "gravitational-wave-d",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_luna_solver_union_Skill_Run002\\Repeat_1\\gravitational-wave-detection\\mapping\\gravitational-wave-detection\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.934,
+    "agent_setup_sec": 0.554,
+    "agent_execution_sec": 2702.297,
+    "verifier_sec": 6.499,
+    "total_sec": 2717.424
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 3412541,
+  "agent_output_tokens": 11203,
+  "image_cache": {
+    "image": "benchmark-cache/gravitational-wave-detection-gold:453ceaaaf619c520",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "matched-filter-winner-confirmation-audit",
+      "pycbc-reference-matched-filter-search",
+      "pycbc-strain-conditioning-psd",
+      "pycbc-waveform-grid-matched-filter-search"
+    ],
+    "available_skills": [
+      "matched-filter-winner-confirmation-audit",
+      "pycbc-reference-matched-filter-search",
+      "pycbc-strain-conditioning-psd",
+      "pycbc-waveform-grid-matched-filter-search"
+    ],
+    "loaded_skills": [
+      "matched-filter-winner-confirmation-audit",
+      "pycbc-reference-matched-filter-search",
+      "pycbc-strain-conditioning-psd",
+      "pycbc-waveform-grid-matched-filter-search"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "matched-filter-winner-confirmation-audit",
+      "pycbc-reference-matched-filter-search",
+      "pycbc-strain-conditioning-psd",
+      "pycbc-waveform-grid-matched-filter-search"
+    ],
+    "trials": [
+      {
+        "trial_id": "gravitational-wave-detection__mZtqNgs",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "matched-filter-winner-confirmation-audit",
+          "pycbc-reference-matched-filter-search",
+          "pycbc-strain-conditioning-psd",
+          "pycbc-waveform-grid-matched-filter-search"
+        ],
+        "available_skills": [
+          "matched-filter-winner-confirmation-audit",
+          "pycbc-reference-matched-filter-search",
+          "pycbc-strain-conditioning-psd",
+          "pycbc-waveform-grid-matched-filter-search"
+        ],
+        "loaded_skills": [
+          "matched-filter-winner-confirmation-audit",
+          "pycbc-reference-matched-filter-search",
+          "pycbc-strain-conditioning-psd",
+          "pycbc-waveform-grid-matched-filter-search"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "matched-filter-winner-confirmation-audit",
+          "pycbc-reference-matched-filter-search",
+          "pycbc-strain-conditioning-psd",
+          "pycbc-waveform-grid-matched-filter-search"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

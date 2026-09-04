@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "log-summary-date-ranges",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run005",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 94.12109375,
+    "peak_memory_raw": "94.121 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 1562,
+    "observed_containers": [
+      "log-summary-date-ranges__3hmqmr4__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "log-summary-date-ran",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run005\\Repeat_3\\log-summary-date-ranges\\mapping\\log-summary-date-ranges\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.49,
+    "agent_setup_sec": 0.338,
+    "agent_execution_sec": 92.198,
+    "verifier_sec": 58.173,
+    "total_sec": 159.175
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 213550,
+  "agent_output_tokens": 2972,
+  "image_cache": {
+    "image": "benchmark-cache/log-summary-date-ranges-gold:e28534907986406f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "chaterm--file-operations",
+      "date-range-severity-summary-emission",
+      "dated-log-severity-summary",
+      "gillkyle--agent-tail",
+      "hatayama--uloop-get-logs",
+      "htlin222--error-detective",
+      "incidentfox--investigate",
+      "sherifeldeeb--log-forensics",
+      "sickn33--azure-monitor-query-py",
+      "streaming-dated-log-sqlite-aggregation"
+    ],
+    "available_skills": [
+      "chaterm--file-operations",
+      "date-range-severity-summary-emission",
+      "dated-log-severity-summary",
+      "gillkyle--agent-tail",
+      "hatayama--uloop-get-logs",
+      "htlin222--error-detective",
+      "incidentfox--investigate",
+      "sherifeldeeb--log-forensics",
+      "sickn33--azure-monitor-query-py",
+      "streaming-dated-log-sqlite-aggregation"
+    ],
+    "loaded_skills": [
+      "chaterm--file-operations",
+      "date-range-severity-summary-emission",
+      "dated-log-severity-summary",
+      "gillkyle--agent-tail",
+      "hatayama--uloop-get-logs",
+      "htlin222--error-detective",
+      "incidentfox--investigate",
+      "sherifeldeeb--log-forensics",
+      "sickn33--azure-monitor-query-py",
+      "streaming-dated-log-sqlite-aggregation"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "chaterm--file-operations",
+      "date-range-severity-summary-emission",
+      "dated-log-severity-summary",
+      "gillkyle--agent-tail",
+      "hatayama--uloop-get-logs",
+      "htlin222--error-detective",
+      "incidentfox--investigate",
+      "sherifeldeeb--log-forensics",
+      "sickn33--azure-monitor-query-py",
+      "streaming-dated-log-sqlite-aggregation"
+    ],
+    "trials": [
+      {
+        "trial_id": "log-summary-date-ranges__3HmQMr4",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "chaterm--file-operations",
+          "date-range-severity-summary-emission",
+          "dated-log-severity-summary",
+          "gillkyle--agent-tail",
+          "hatayama--uloop-get-logs",
+          "htlin222--error-detective",
+          "incidentfox--investigate",
+          "sherifeldeeb--log-forensics",
+          "sickn33--azure-monitor-query-py",
+          "streaming-dated-log-sqlite-aggregation"
+        ],
+        "available_skills": [
+          "chaterm--file-operations",
+          "date-range-severity-summary-emission",
+          "dated-log-severity-summary",
+          "gillkyle--agent-tail",
+          "hatayama--uloop-get-logs",
+          "htlin222--error-detective",
+          "incidentfox--investigate",
+          "sherifeldeeb--log-forensics",
+          "sickn33--azure-monitor-query-py",
+          "streaming-dated-log-sqlite-aggregation"
+        ],
+        "loaded_skills": [
+          "chaterm--file-operations",
+          "date-range-severity-summary-emission",
+          "dated-log-severity-summary",
+          "gillkyle--agent-tail",
+          "hatayama--uloop-get-logs",
+          "htlin222--error-detective",
+          "incidentfox--investigate",
+          "sherifeldeeb--log-forensics",
+          "sickn33--azure-monitor-query-py",
+          "streaming-dated-log-sqlite-aggregation"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "chaterm--file-operations",
+          "date-range-severity-summary-emission",
+          "dated-log-severity-summary",
+          "gillkyle--agent-tail",
+          "hatayama--uloop-get-logs",
+          "htlin222--error-detective",
+          "incidentfox--investigate",
+          "sherifeldeeb--log-forensics",
+          "sickn33--azure-monitor-query-py",
+          "streaming-dated-log-sqlite-aggregation"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

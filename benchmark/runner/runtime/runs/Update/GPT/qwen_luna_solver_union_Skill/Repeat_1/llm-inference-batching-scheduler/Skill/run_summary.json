@@ -1,0 +1,110 @@
+{
+  "schema_version": 9,
+  "task_id": "llm-inference-batching-scheduler",
+  "condition": "mapping",
+  "batch": "qwen_luna_solver_union_Skill_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_performance_thresholds: AssertionError: bucket2 sequential_timecost 37909758.5808 > 3.2e7",
+  "peak_memory": {
+    "peak_memory_mib": 95.0859375,
+    "peak_memory_raw": "95.086 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 5529,
+    "observed_containers": [
+      "llm-inference-batching-scheduler__nrix6xs__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "llm-inference-batchi",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_luna_solver_union_Skill_Run002\\Repeat_1\\llm-inference-batching-scheduler\\mapping\\llm-inference-batching-scheduler\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.116,
+    "agent_setup_sec": 0.502,
+    "agent_execution_sec": 529.609,
+    "verifier_sec": 27.083,
+    "total_sec": 565.326
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1019829,
+  "agent_output_tokens": 12782,
+  "image_cache": {
+    "image": "benchmark-cache/llm-inference-batching-scheduler-gold:c835608261b94b37",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "generation-aware-dp-batch-splitting",
+      "shape-aware-batch-cost-model",
+      "shared-sequence-shape-selection",
+      "shared-shape-dp-budget-closure"
+    ],
+    "available_skills": [
+      "generation-aware-dp-batch-splitting",
+      "shape-aware-batch-cost-model",
+      "shared-sequence-shape-selection",
+      "shared-shape-dp-budget-closure"
+    ],
+    "loaded_skills": [
+      "generation-aware-dp-batch-splitting",
+      "shape-aware-batch-cost-model",
+      "shared-sequence-shape-selection",
+      "shared-shape-dp-budget-closure"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "generation-aware-dp-batch-splitting",
+      "shape-aware-batch-cost-model",
+      "shared-sequence-shape-selection",
+      "shared-shape-dp-budget-closure"
+    ],
+    "trials": [
+      {
+        "trial_id": "llm-inference-batching-scheduler__NRiX6XS",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "generation-aware-dp-batch-splitting",
+          "shape-aware-batch-cost-model",
+          "shared-sequence-shape-selection",
+          "shared-shape-dp-budget-closure"
+        ],
+        "available_skills": [
+          "generation-aware-dp-batch-splitting",
+          "shape-aware-batch-cost-model",
+          "shared-sequence-shape-selection",
+          "shared-shape-dp-budget-closure"
+        ],
+        "loaded_skills": [
+          "generation-aware-dp-batch-splitting",
+          "shape-aware-batch-cost-model",
+          "shared-sequence-shape-selection",
+          "shared-shape-dp-budget-closure"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "generation-aware-dp-batch-splitting",
+          "shape-aware-batch-cost-model",
+          "shared-sequence-shape-selection",
+          "shared-shape-dp-budget-closure"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,212 @@
+2026-09-02T23:33:22.225593+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=dapt-intrusion-detection condition=mapping
+2026-09-02T23:33:22.228585+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-02T23:36:43.536466+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-02T23:36:43.544389+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-02T23:38:07.003704+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-02T23:38:07.011705+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=dapt-intrusion-detection condition=mapping
+2026-09-02T23:40:01.912217+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-02T23:40:01.929095+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-02T23:42:05.059662+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-02T23:42:05.081427+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=dapt-intrusion-detection condition=mapping
+2026-09-02T23:43:34.462058+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-02T23:43:34.468780+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=dialogue-parser condition=mapping
+2026-09-02T23:47:06.969618+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=dialogue-parser condition=mapping status=completed
+2026-09-02T23:47:06.974128+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=dialogue-parser condition=mapping
+2026-09-02T23:49:01.386239+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-02T23:49:01.394245+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=distribution-search condition=mapping
+2026-09-02T23:51:14.855446+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=distribution-search condition=mapping status=completed
+2026-09-02T23:51:14.861447+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=distribution-search condition=mapping
+2026-09-02T23:52:24.728768+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=dialogue-parser condition=mapping status=completed
+2026-09-02T23:52:24.734251+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=dialogue-parser condition=mapping
+2026-09-02T23:54:22.174991+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=distribution-search condition=mapping status=completed
+2026-09-02T23:54:22.178304+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=distribution-search condition=mapping
+2026-09-02T23:56:32.956950+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=dialogue-parser condition=mapping status=completed
+2026-09-02T23:56:32.973014+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-03T00:03:09.114273+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-03T00:03:09.130344+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-03T00:07:43.507184+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=distribution-search condition=mapping status=completed
+2026-09-03T00:07:43.521523+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=earthquake-plate-calculation condition=mapping
+2026-09-03T00:08:39.622984+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-03T00:08:39.637007+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-03T00:09:48.233124+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-03T00:09:48.245870+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=earthquake-plate-calculation condition=mapping
+2026-09-03T00:11:49.902176+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-03T00:11:49.909363+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=earthquake-plate-calculation condition=mapping
+2026-09-03T00:14:11.446487+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-03T00:14:11.452077+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=econ-detrending-correlation condition=mapping
+2026-09-03T00:14:19.314801+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-03T00:14:19.329016+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-03T00:27:54.023315+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=econ-detrending-correlation condition=mapping status=completed
+2026-09-03T00:27:54.049402+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=econ-detrending-correlation condition=mapping
+2026-09-03T00:30:00.803971+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-03T00:30:00.817256+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-03T00:43:18.624805+00:00 ERROR operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=econ-detrending-correlation condition=mapping status=trial_error
+2026-09-03T00:43:18.629810+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=econ-detrending-correlation condition=mapping
+2026-09-03T00:48:17.917349+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=econ-detrending-correlation condition=mapping status=completed
+2026-09-03T00:48:17.923353+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=energy-market-pricing condition=mapping
+2026-09-03T00:55:11.637851+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=energy-market-pricing condition=mapping status=completed
+2026-09-03T00:55:11.642858+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=energy-market-pricing condition=mapping
+2026-09-03T01:05:07.515357+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=energy-market-pricing condition=mapping status=completed
+2026-09-03T01:05:07.520235+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=energy-market-pricing condition=mapping
+2026-09-03T01:07:38.324298+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-03T01:07:38.329562+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-03T01:14:22.638038+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=energy-market-pricing condition=mapping status=completed
+2026-09-03T01:14:22.643051+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=exceltable-in-ppt condition=mapping
+2026-09-03T01:20:33.327991+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-03T01:20:33.343005+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=exoplanet-detection-period condition=mapping
+2026-09-03T01:20:51.355778+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-03T01:20:51.360791+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=exceltable-in-ppt condition=mapping
+2026-09-03T01:27:00.148627+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-03T01:27:00.154671+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=exceltable-in-ppt condition=mapping
+2026-09-03T01:32:06.140427+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-03T01:32:06.146252+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=financial-modeling-qa condition=mapping
+2026-09-03T01:39:15.301198+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=financial-modeling-qa condition=mapping status=completed
+2026-09-03T01:39:15.312196+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=financial-modeling-qa condition=mapping
+2026-09-03T01:43:18.942372+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=financial-modeling-qa condition=mapping status=completed
+2026-09-03T01:43:18.951875+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=financial-modeling-qa condition=mapping
+2026-09-03T01:49:50.065037+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=financial-modeling-qa condition=mapping status=completed
+2026-09-03T01:49:50.070037+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=find-topk-similiar-chemicals condition=mapping
+2026-09-03T01:55:04.813352+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-03T01:55:04.821467+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=find-topk-similiar-chemicals condition=mapping
+2026-09-03T02:00:31.793810+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-03T02:00:31.798815+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=find-topk-similiar-chemicals condition=mapping
+2026-09-03T02:02:29.068300+00:00 ERROR operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=exoplanet-detection-period condition=mapping status=trial_error
+2026-09-03T02:02:29.074069+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=exoplanet-detection-period condition=mapping
+2026-09-03T02:07:54.187529+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-03T02:07:54.192709+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=glm-lake-mendota condition=mapping
+2026-09-03T02:33:11.614364+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=glm-lake-mendota condition=mapping status=completed
+2026-09-03T02:33:11.623362+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=glm-lake-mendota condition=mapping
+2026-09-03T02:50:15.067528+00:00 ERROR operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=exoplanet-detection-period condition=mapping status=trial_error
+2026-09-03T02:50:15.073877+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=exoplanet-detection-period condition=mapping
+2026-09-03T02:51:46.713085+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=glm-lake-mendota condition=mapping status=completed
+2026-09-03T02:51:46.720157+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=glm-lake-mendota condition=mapping
+2026-09-03T03:05:26.157943+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=exoplanet-detection-period condition=mapping status=completed
+2026-09-03T03:05:26.162908+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=gravitational-wave-detection condition=mapping
+2026-09-03T03:14:16.241183+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=glm-lake-mendota condition=mapping status=completed
+2026-09-03T03:14:16.250122+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=grid-dispatch-operator condition=mapping
+2026-09-03T03:27:13.973114+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-03T03:27:13.977878+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=grid-dispatch-operator condition=mapping
+2026-09-03T03:35:08.462981+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-03T03:35:08.467980+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=gravitational-wave-detection condition=mapping
+2026-09-03T03:38:46.191502+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-03T03:38:46.196502+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=grid-dispatch-operator condition=mapping
+2026-09-03T03:48:17.528084+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-03T03:48:17.535675+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=hf-model-inference condition=mapping
+2026-09-03T03:56:09.838182+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-03T03:56:09.843799+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=gravitational-wave-detection condition=mapping
+2026-09-03T03:59:05.631108+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=hf-model-inference condition=mapping status=completed
+2026-09-03T03:59:05.636317+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=hf-model-inference condition=mapping
+2026-09-03T04:10:06.891641+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=hf-model-inference condition=mapping status=completed
+2026-09-03T04:10:06.901295+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=hf-model-inference condition=mapping
+2026-09-03T04:20:11.834859+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-03T04:20:11.840876+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=invoice-fraud-detection condition=mapping
+2026-09-03T04:24:05.948682+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-03T04:24:05.954689+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=invoice-fraud-detection condition=mapping
+2026-09-03T04:25:33.492339+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=hf-model-inference condition=mapping status=completed
+2026-09-03T04:25:33.497684+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=jpg-ocr-stat condition=mapping
+2026-09-03T04:28:24.532906+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-03T04:28:24.538496+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=invoice-fraud-detection condition=mapping
+2026-09-03T04:33:15.853722+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-03T04:33:15.861524+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=llm-inference-batching-scheduler condition=mapping
+2026-09-03T04:40:21.531553+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-03T04:40:21.542177+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=llm-inference-batching-scheduler condition=mapping
+2026-09-03T04:43:20.328073+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-03T04:43:20.339100+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=jpg-ocr-stat condition=mapping
+2026-09-03T04:51:50.512994+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-03T04:51:50.522108+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=jpg-ocr-stat condition=mapping
+2026-09-03T04:53:21.922438+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-03T04:53:21.928941+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=llm-inference-batching-scheduler condition=mapping
+2026-09-03T05:02:12.057277+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-03T05:02:12.067288+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=log-summary-date-ranges condition=mapping
+2026-09-03T05:05:30.464837+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-03T05:05:30.469874+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=log-summary-date-ranges condition=mapping
+2026-09-03T05:07:18.145816+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-03T05:07:18.150816+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=log-summary-date-ranges condition=mapping
+2026-09-03T05:10:48.422487+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-03T05:10:48.426994+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=mario-coin-counting condition=mapping
+2026-09-03T05:16:37.391612+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=mario-coin-counting condition=mapping status=completed
+2026-09-03T05:16:37.398608+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=mario-coin-counting condition=mapping
+2026-09-03T05:17:58.692512+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-03T05:17:58.699198+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=mars-clouds-clustering condition=mapping
+2026-09-03T05:23:24.905021+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=mario-coin-counting condition=mapping status=completed
+2026-09-03T05:23:24.914746+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=mario-coin-counting condition=mapping
+2026-09-03T05:25:45.779278+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-03T05:25:45.789329+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=mars-clouds-clustering condition=mapping
+2026-09-03T05:30:04.120732+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=mario-coin-counting condition=mapping status=completed
+2026-09-03T05:30:04.128731+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=mteb-retrieve condition=mapping
+2026-09-03T05:33:16.353939+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-03T05:33:16.364844+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=mars-clouds-clustering condition=mapping
+2026-09-03T05:36:53.303283+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-03T05:36:53.312504+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=pdf-excel-diff condition=mapping
+2026-09-03T05:41:46.891238+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=mteb-retrieve condition=mapping status=completed
+2026-09-03T05:41:46.896767+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=mteb-retrieve condition=mapping
+2026-09-03T06:12:03.721442+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=mteb-retrieve condition=mapping status=completed
+2026-09-03T06:12:03.726495+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=mteb-retrieve condition=mapping
+2026-09-03T06:31:03.070170+00:00 ERROR operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=pdf-excel-diff condition=mapping status=trial_error
+2026-09-03T06:31:03.075717+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=pdf-excel-diff condition=mapping
+2026-09-03T06:59:05.327496+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=pdf-excel-diff condition=mapping status=completed
+2026-09-03T06:59:05.332222+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=pdf-excel-diff condition=mapping
+2026-09-03T07:12:02.772335+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=pdf-excel-diff condition=mapping status=completed
+2026-09-03T07:12:02.777251+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=portfolio-optimization condition=mapping
+2026-09-03T07:18:54.304212+00:00 ERROR operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=mteb-retrieve condition=mapping status=trial_error
+2026-09-03T07:18:54.310213+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=powerlifting-coef-calc condition=mapping
+2026-09-03T07:20:10.021570+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=portfolio-optimization condition=mapping status=completed
+2026-09-03T07:20:10.027565+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=portfolio-optimization condition=mapping
+2026-09-03T07:23:02.050008+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-03T07:23:02.054565+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=powerlifting-coef-calc condition=mapping
+2026-09-03T07:28:20.648413+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-03T07:28:20.653560+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=powerlifting-coef-calc condition=mapping
+2026-09-03T07:28:56.271674+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=portfolio-optimization condition=mapping status=completed
+2026-09-03T07:28:56.277809+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=portfolio-optimization condition=mapping
+2026-09-03T07:32:21.166623+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-03T07:32:21.171623+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=protein-expression-analysis condition=mapping
+2026-09-03T07:34:57.008201+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=portfolio-optimization condition=mapping status=completed
+2026-09-03T07:34:57.013200+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=quantum-numerical-simulation condition=mapping
+2026-09-03T07:35:32.966307+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=protein-expression-analysis condition=mapping status=completed
+2026-09-03T07:35:32.972300+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=protein-expression-analysis condition=mapping
+2026-09-03T07:39:09.276615+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-03T07:39:09.282069+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=quantum-numerical-simulation condition=mapping
+2026-09-03T07:41:52.416718+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=protein-expression-analysis condition=mapping status=completed
+2026-09-03T07:41:52.421297+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=protein-expression-analysis condition=mapping
+2026-09-03T07:43:44.312618+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-03T07:43:44.317622+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=quantum-numerical-simulation condition=mapping
+2026-09-03T07:48:08.406882+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=protein-expression-analysis condition=mapping status=completed
+2026-09-03T07:48:08.411516+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=sales-pivot-analysis condition=mapping
+2026-09-03T07:49:15.981171+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-03T07:49:15.986466+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=software-dependency-audit condition=mapping
+2026-09-03T07:51:28.356134+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=sales-pivot-analysis condition=mapping status=completed
+2026-09-03T07:51:28.361081+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=sales-pivot-analysis condition=mapping
+2026-09-03T07:52:23.323211+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=software-dependency-audit condition=mapping status=completed
+2026-09-03T07:52:23.329478+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=software-dependency-audit condition=mapping
+2026-09-03T07:55:49.806581+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=software-dependency-audit condition=mapping status=completed
+2026-09-03T07:55:49.811578+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=software-dependency-audit condition=mapping
+2026-09-03T07:57:57.787813+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=sales-pivot-analysis condition=mapping status=completed
+2026-09-03T07:57:57.792764+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=sales-pivot-analysis condition=mapping
+2026-09-03T07:59:05.057123+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=software-dependency-audit condition=mapping status=completed
+2026-09-03T07:59:05.062261+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=train-fasttext condition=mapping
+2026-09-03T08:01:07.874424+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=sales-pivot-analysis condition=mapping status=completed
+2026-09-03T08:01:07.880715+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=video-silence-remover condition=mapping
+2026-09-03T08:04:46.901830+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=video-silence-remover condition=mapping status=completed
+2026-09-03T08:04:46.910025+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=video-silence-remover condition=mapping
+2026-09-03T08:07:54.782936+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=video-silence-remover condition=mapping status=completed
+2026-09-03T08:07:54.792032+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=video-silence-remover condition=mapping
+2026-09-03T08:13:38.885875+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=video-silence-remover condition=mapping status=completed
+2026-09-03T08:13:38.895383+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=virtualhome-agent-planning condition=mapping
+2026-09-03T08:18:42.384872+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-03T08:18:42.400880+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=virtualhome-agent-planning condition=mapping
+2026-09-03T08:22:42.480062+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=train-fasttext condition=mapping status=completed
+2026-09-03T08:22:42.486784+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=train-fasttext condition=mapping
+2026-09-03T08:25:53.571171+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-03T08:25:53.585915+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=virtualhome-agent-planning condition=mapping
+2026-09-03T08:34:59.279823+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-03T08:34:59.297897+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=weighted-gdp-calc condition=mapping
+2026-09-03T08:40:46.260193+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-03T08:40:46.265201+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=weighted-gdp-calc condition=mapping
+2026-09-03T08:47:50.394193+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=train-fasttext condition=mapping status=completed
+2026-09-03T08:47:50.401126+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=train-fasttext condition=mapping
+2026-09-03T08:48:05.224456+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-03T08:48:05.230457+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=weighted-gdp-calc condition=mapping
+2026-09-03T08:54:08.486076+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-03T09:19:01.896875+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=train-fasttext condition=mapping status=completed
+2026-09-03T13:01:48.613257+00:00 START operation=rerun batch=bm25_top10_Skill_Run001 repeat=3 task=mteb-retrieve condition=mapping
+2026-09-03T14:08:27.699349+00:00 FAIL operation=rerun batch=bm25_top10_Skill_Run001 repeat=3 task=mteb-retrieve condition=mapping status=completed

@@ -21,3 +21,7 @@ python .\data\components\Random_2K\extract_random_2k.py --dry-run
 确认结果后，去掉 `--dry-run` 才会重建 `skills/`。
 
 当前注册的 8 个 Skill 与无 Task Gold 的任务直接对应。项目使用自行生成的 Baseline ZIP，因此必须避免 Random_2K 抽到 34K 中的对应版本，造成语义级 Gold 泄漏。后续数据集构建阶段的精确哈希去重不能替代这里的抽样前排除。
+
+## Skill 名称纠正
+
+`extract_random_2k.py` 中的 `SKILL_NAME_OVERRIDES` 记录从归档源名称到 canonical 名称的确定性纠正;

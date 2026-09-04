@@ -1,0 +1,28 @@
+2026-09-03T13:01:48.624480+00:00 START operation=rerun batch=bm25_top10_Skill_Run001 repeat=3 task=mteb-retrieve condition=mapping image=benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb provided_skills=["mteb-streaming-topk-cosine-retrieval", "scifact-prompt-bound-mteb-topk-retrieval", "yaleh--error-recovery", "anthropics--initiating-coverage", "baseline-fasttext-small-supervised-training", "ederheisler--executing-plans", "guia-matthieu--challenger-sale", "lubu-labs--langgraph-project-setup", "guia-matthieu--educational-presentation", "binjuhor--docs-seeker"]
+  1/1 Mean: 0.000 ---------------------------------------- 1:06:37 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 1h 6m 38s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_3\mteb-retrieve\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_3\mteb-retrieve\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_3\mteb-retrieve\Skill\Job_result`
+
+2026-09-03T14:08:27.699349+00:00 FAIL operation=rerun batch=bm25_top10_Skill_Run001 repeat=3 task=mteb-retrieve condition=mapping

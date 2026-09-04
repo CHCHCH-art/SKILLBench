@@ -1,0 +1,102 @@
+{
+  "schema_version": 9,
+  "task_id": "pdf-excel-diff",
+  "condition": "mapping",
+  "batch": "skillrouter_luna_solver_union_Skill_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1264.19921875,
+    "peak_memory_raw": "1264.199 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2792,
+    "observed_containers": [
+      "pdf-excel-diff__hwbvgm7__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "pdf-excel-diff",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_luna_solver_union_Skill_Run003\\Repeat_1\\pdf-excel-diff\\mapping\\pdf-excel-diff\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.286,
+    "agent_setup_sec": 0.584,
+    "agent_execution_sec": 225.38,
+    "verifier_sec": 51.007,
+    "total_sec": 285.242
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 176381,
+  "agent_output_tokens": 4652,
+  "image_cache": {
+    "image": "benchmark-cache/pdf-excel-diff-gold:d574cd2f86bbbcb0",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "keyed-record-diff-normalization",
+      "pdf-record-table-extraction",
+      "typed-record-diff-json"
+    ],
+    "available_skills": [
+      "keyed-record-diff-normalization",
+      "pdf-record-table-extraction",
+      "typed-record-diff-json"
+    ],
+    "loaded_skills": [
+      "keyed-record-diff-normalization",
+      "pdf-record-table-extraction",
+      "typed-record-diff-json"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "keyed-record-diff-normalization",
+      "pdf-record-table-extraction",
+      "typed-record-diff-json"
+    ],
+    "trials": [
+      {
+        "trial_id": "pdf-excel-diff__hWBvgM7",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "keyed-record-diff-normalization",
+          "pdf-record-table-extraction",
+          "typed-record-diff-json"
+        ],
+        "available_skills": [
+          "keyed-record-diff-normalization",
+          "pdf-record-table-extraction",
+          "typed-record-diff-json"
+        ],
+        "loaded_skills": [
+          "keyed-record-diff-normalization",
+          "pdf-record-table-extraction",
+          "typed-record-diff-json"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "keyed-record-diff-normalization",
+          "pdf-record-table-extraction",
+          "typed-record-diff-json"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

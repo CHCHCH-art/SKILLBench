@@ -1,0 +1,102 @@
+{
+  "schema_version": 9,
+  "task_id": "portfolio-optimization",
+  "condition": "mapping",
+  "batch": "qwen_luna_solver_union_Skill_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 2251.13671875,
+    "peak_memory_raw": "2251.137 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2912,
+    "observed_containers": [
+      "portfolio-optimization__fa549bk__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "portfolio-optimizati",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_luna_solver_union_Skill_Run002\\Repeat_3\\portfolio-optimization\\mapping\\portfolio-optimization\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.973,
+    "agent_setup_sec": 0.408,
+    "agent_execution_sec": 178.12,
+    "verifier_sec": 110.808,
+    "total_sec": 296.842
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 178868,
+  "agent_output_tokens": 4701,
+  "image_cache": {
+    "image": "benchmark-cache/portfolio-optimization-gold:8362bcbb069434ab",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "cpython-symmetric-quadratic-risk-kernel",
+      "cpython-vector-return-build-wrapper",
+      "numpy-contiguous-c-extension-wrapper"
+    ],
+    "available_skills": [
+      "cpython-symmetric-quadratic-risk-kernel",
+      "cpython-vector-return-build-wrapper",
+      "numpy-contiguous-c-extension-wrapper"
+    ],
+    "loaded_skills": [
+      "cpython-symmetric-quadratic-risk-kernel",
+      "cpython-vector-return-build-wrapper",
+      "numpy-contiguous-c-extension-wrapper"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "cpython-symmetric-quadratic-risk-kernel",
+      "cpython-vector-return-build-wrapper",
+      "numpy-contiguous-c-extension-wrapper"
+    ],
+    "trials": [
+      {
+        "trial_id": "portfolio-optimization__Fa549bK",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "cpython-symmetric-quadratic-risk-kernel",
+          "cpython-vector-return-build-wrapper",
+          "numpy-contiguous-c-extension-wrapper"
+        ],
+        "available_skills": [
+          "cpython-symmetric-quadratic-risk-kernel",
+          "cpython-vector-return-build-wrapper",
+          "numpy-contiguous-c-extension-wrapper"
+        ],
+        "loaded_skills": [
+          "cpython-symmetric-quadratic-risk-kernel",
+          "cpython-vector-return-build-wrapper",
+          "numpy-contiguous-c-extension-wrapper"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "cpython-symmetric-quadratic-risk-kernel",
+          "cpython-vector-return-build-wrapper",
+          "numpy-contiguous-c-extension-wrapper"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

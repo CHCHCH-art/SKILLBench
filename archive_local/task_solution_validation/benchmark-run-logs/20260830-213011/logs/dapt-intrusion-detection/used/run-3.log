@@ -1,0 +1,165 @@
+Task: dapt-intrusion-detection
+Source type: used
+Task run: 6
+Source run: 3
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\dapt-intrusion-detection
+
+========== Repeated Run 3/3 ==========
+
+========== Run solve.sh ==========
+Running as user "root" and group "root". This could be dangerous.
+{
+  "avg_packet_size": 270.73,
+  "bidirectional_flows": 1758,
+  "dominant_protocol": "arp",
+  "dst_ip_entropy": 2.4618,
+  "dst_port_entropy": 4.2811,
+  "duration_seconds": 26030.33,
+  "has_beaconing": false,
+  "has_dos_pattern": false,
+  "has_port_scan": false,
+  "iat_cv": 1.1026,
+  "iat_mean": 0.22814,
+  "iat_variance": 0.063282,
+  "is_traffic_benign": true,
+  "max_indegree": 23,
+  "max_outdegree": 27,
+  "max_packet_size": 56538,
+  "min_packet_size": 42,
+  "network_density": 0.041252,
+  "num_consumers": 13,
+  "num_edges": 58,
+  "num_nodes": 38,
+  "num_producers": 23,
+  "packets_per_minute_avg": 262.9,
+  "packets_per_minute_max": 2372,
+  "packets_per_minute_min": 186,
+  "protocol_arp": 54938,
+  "protocol_icmp": 8,
+  "protocol_ip_total": 58474,
+  "protocol_tcp": 32620,
+  "protocol_udp": 26092,
+  "src_ip_entropy": 2.4833,
+  "src_port_entropy": 4.3396,
+  "tcp_flows": 3353,
+  "total_bytes": 30889470,
+  "total_packets": 114099,
+  "udp_flows": 214,
+  "unique_dst_ports": 1675,
+  "unique_flows": 3567,
+  "unique_src_ports": 1713
+}
+Completed: /root/network_stats.csv
+
+========== Run test.sh ==========
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+=== Running Intrusion Detection Tests ===
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0 -- /root/.cache/uv/archive-v0/NllFS-zVcm52KmhpI1zIi/bin/python
+cachedir: .pytest_cache
+rootdir: /
+plugins: json-ctrf-0.3.5
+collecting ... collected 37 items
+
+../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_tcp] PASSED [  2%]
+../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_icmp] PASSED [  5%]
+../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_arp] PASSED [  8%]
+../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_ip_total] PASSED [ 10%]
+../tests/test_outputs.py::TestProtocolDistribution::test_protocol_udp PASSED [ 13%]
+../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[duration_seconds] PASSED [ 16%]
+../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[packets_per_minute_avg] PASSED [ 18%]
+../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[packets_per_minute_max] PASSED [ 21%]
+../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[packets_per_minute_min] PASSED [ 24%]
+../tests/test_outputs.py::TestSizeStats::test_size_metric[total_bytes] PASSED [ 27%]
+../tests/test_outputs.py::TestSizeStats::test_size_metric[avg_packet_size] PASSED [ 29%]
+../tests/test_outputs.py::TestSizeStats::test_size_metric[min_packet_size] PASSED [ 32%]
+../tests/test_outputs.py::TestSizeStats::test_size_metric[max_packet_size] PASSED [ 35%]
+../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[dst_port_entropy] PASSED [ 37%]
+../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[src_port_entropy] PASSED [ 40%]
+../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[src_ip_entropy] PASSED [ 43%]
+../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[dst_ip_entropy] PASSED [ 45%]
+../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[unique_dst_ports] PASSED [ 48%]
+../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[unique_src_ports] PASSED [ 51%]
+../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[num_nodes] PASSED [ 54%]
+../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[num_edges] PASSED [ 56%]
+../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[network_density] PASSED [ 59%]
+../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[max_indegree] PASSED [ 62%]
+../tests/test_outputs.py::TestGraphMetrics::test_max_outdegree PASSED    [ 64%]
+../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[iat_mean] PASSED [ 67%]
+../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[iat_variance] PASSED [ 70%]
+../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[iat_cv] PASSED [ 72%]
+../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[num_producers] PASSED [ 75%]
+../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[num_consumers] PASSED [ 78%]
+../tests/test_outputs.py::TestFlowMetrics::test_flow_metric[unique_flows] PASSED [ 81%]
+../tests/test_outputs.py::TestFlowMetrics::test_flow_metric[tcp_flows] PASSED [ 83%]
+../tests/test_outputs.py::TestFlowMetrics::test_flow_metric[udp_flows] PASSED [ 86%]
+../tests/test_outputs.py::TestFlowMetrics::test_bidirectional_flows PASSED [ 89%]
+../tests/test_outputs.py::TestAnalysisQuestions::test_is_traffic_benign PASSED [ 91%]
+../tests/test_outputs.py::TestAnalysisQuestions::test_has_port_scan PASSED [ 94%]
+../tests/test_outputs.py::TestAnalysisQuestions::test_has_dos_pattern PASSED [ 97%]
+../tests/test_outputs.py::TestAnalysisQuestions::test_has_beaconing PASSED [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_tcp]
+PASSED ../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_icmp]
+PASSED ../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_arp]
+PASSED ../tests/test_outputs.py::TestProtocolDistribution::test_protocol_count[protocol_ip_total]
+PASSED ../tests/test_outputs.py::TestProtocolDistribution::test_protocol_udp
+PASSED ../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[duration_seconds]
+PASSED ../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[packets_per_minute_avg]
+PASSED ../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[packets_per_minute_max]
+PASSED ../tests/test_outputs.py::TestTimeSeries::test_time_series_metric[packets_per_minute_min]
+PASSED ../tests/test_outputs.py::TestSizeStats::test_size_metric[total_bytes]
+PASSED ../tests/test_outputs.py::TestSizeStats::test_size_metric[avg_packet_size]
+PASSED ../tests/test_outputs.py::TestSizeStats::test_size_metric[min_packet_size]
+PASSED ../tests/test_outputs.py::TestSizeStats::test_size_metric[max_packet_size]
+PASSED ../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[dst_port_entropy]
+PASSED ../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[src_port_entropy]
+PASSED ../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[src_ip_entropy]
+PASSED ../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[dst_ip_entropy]
+PASSED ../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[unique_dst_ports]
+PASSED ../tests/test_outputs.py::TestEntropyMetrics::test_entropy_metric[unique_src_ports]
+PASSED ../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[num_nodes]
+PASSED ../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[num_edges]
+PASSED ../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[network_density]
+PASSED ../tests/test_outputs.py::TestGraphMetrics::test_graph_metric[max_indegree]
+PASSED ../tests/test_outputs.py::TestGraphMetrics::test_max_outdegree
+PASSED ../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[iat_mean]
+PASSED ../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[iat_variance]
+PASSED ../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[iat_cv]
+PASSED ../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[num_producers]
+PASSED ../tests/test_outputs.py::TestTemporalMetrics::test_temporal_metric[num_consumers]
+PASSED ../tests/test_outputs.py::TestFlowMetrics::test_flow_metric[unique_flows]
+PASSED ../tests/test_outputs.py::TestFlowMetrics::test_flow_metric[tcp_flows]
+PASSED ../tests/test_outputs.py::TestFlowMetrics::test_flow_metric[udp_flows]
+PASSED ../tests/test_outputs.py::TestFlowMetrics::test_bidirectional_flows
+PASSED ../tests/test_outputs.py::TestAnalysisQuestions::test_is_traffic_benign
+PASSED ../tests/test_outputs.py::TestAnalysisQuestions::test_has_port_scan
+PASSED ../tests/test_outputs.py::TestAnalysisQuestions::test_has_dos_pattern
+PASSED ../tests/test_outputs.py::TestAnalysisQuestions::test_has_beaconing
+============================== 37 passed in 0.10s ==============================
+
+✅ All tests passed!
+
+========== Result ==========
+Task: dapt-intrusion-detection
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 36.5s (exit 0)
+Test: 28.1s (exit 0)
+Solve Memory Peak: 1.6 GiB
+Test Memory Peak: 160.6 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s
+
+========== Cleanup ==========
+Removing container: test-solution-dapt-intrusion-detection-1788096611561818300-f9221d22

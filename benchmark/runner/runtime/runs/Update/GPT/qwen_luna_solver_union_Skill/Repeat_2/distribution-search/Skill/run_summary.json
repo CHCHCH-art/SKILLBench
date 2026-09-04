@@ -1,0 +1,94 @@
+{
+  "schema_version": 9,
+  "task_id": "distribution-search",
+  "condition": "mapping",
+  "batch": "qwen_luna_solver_union_Skill_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 137.95703125,
+    "peak_memory_raw": "137.957 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2353,
+    "observed_containers": [
+      "distribution-search__meqqzws__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "distribution-search",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_luna_solver_union_Skill_Run002\\Repeat_2\\distribution-search\\mapping\\distribution-search\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.627,
+    "agent_setup_sec": 0.376,
+    "agent_execution_sec": 193.903,
+    "verifier_sec": 59.516,
+    "total_sec": 260.256
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 160629,
+  "agent_output_tokens": 5765,
+  "image_cache": {
+    "image": "benchmark-cache/distribution-search-gold:430ae95bb5beb0fc",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "logit-distribution-kl-optimization",
+      "three-level-kl-distribution-solver"
+    ],
+    "available_skills": [
+      "logit-distribution-kl-optimization",
+      "three-level-kl-distribution-solver"
+    ],
+    "loaded_skills": [
+      "logit-distribution-kl-optimization",
+      "three-level-kl-distribution-solver"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "logit-distribution-kl-optimization",
+      "three-level-kl-distribution-solver"
+    ],
+    "trials": [
+      {
+        "trial_id": "distribution-search__meqQZWS",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "logit-distribution-kl-optimization",
+          "three-level-kl-distribution-solver"
+        ],
+        "available_skills": [
+          "logit-distribution-kl-optimization",
+          "three-level-kl-distribution-solver"
+        ],
+        "loaded_skills": [
+          "logit-distribution-kl-optimization",
+          "three-level-kl-distribution-solver"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "logit-distribution-kl-optimization",
+          "three-level-kl-distribution-solver"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

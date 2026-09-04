@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "mars-clouds-clustering",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 413.3515625,
+    "peak_memory_raw": "413.352 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2121,
+    "observed_containers": [
+      "mars-clouds-clustering__nv9maqk__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "mars-clouds-clusteri",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run001\\Repeat_3\\mars-clouds-clustering\\mapping\\mars-clouds-clustering\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.411,
+    "agent_setup_sec": 0.319,
+    "agent_execution_sec": 206.011,
+    "verifier_sec": 1.046,
+    "total_sec": 215.74
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 439597,
+  "agent_output_tokens": 4021,
+  "image_cache": {
+    "image": "benchmark-cache/mars-clouds-clustering-gold:b70cf811266787f2",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "AltimateAI--creating-dbt-models",
+      "adaptyvbio--setup",
+      "benchflow-ai--qutip",
+      "databricks-solutions--databricks-jobs",
+      "guia-matthieu--educational-presentation",
+      "laurigates--ast-grep-search",
+      "manual-weighted-dbscan-image-evaluation",
+      "parallel-dbscan-grid-pareto-frontier",
+      "pareto-grid-search-selection",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "available_skills": [
+      "AltimateAI--creating-dbt-models",
+      "adaptyvbio--setup",
+      "benchflow-ai--qutip",
+      "databricks-solutions--databricks-jobs",
+      "guia-matthieu--educational-presentation",
+      "laurigates--ast-grep-search",
+      "manual-weighted-dbscan-image-evaluation",
+      "parallel-dbscan-grid-pareto-frontier",
+      "pareto-grid-search-selection",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "loaded_skills": [
+      "AltimateAI--creating-dbt-models",
+      "adaptyvbio--setup",
+      "benchflow-ai--qutip",
+      "databricks-solutions--databricks-jobs",
+      "guia-matthieu--educational-presentation",
+      "laurigates--ast-grep-search",
+      "manual-weighted-dbscan-image-evaluation",
+      "parallel-dbscan-grid-pareto-frontier",
+      "pareto-grid-search-selection",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "AltimateAI--creating-dbt-models",
+      "adaptyvbio--setup",
+      "benchflow-ai--qutip",
+      "databricks-solutions--databricks-jobs",
+      "guia-matthieu--educational-presentation",
+      "laurigates--ast-grep-search",
+      "manual-weighted-dbscan-image-evaluation",
+      "parallel-dbscan-grid-pareto-frontier",
+      "pareto-grid-search-selection",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "trials": [
+      {
+        "trial_id": "mars-clouds-clustering__nV9MaqK",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "AltimateAI--creating-dbt-models",
+          "adaptyvbio--setup",
+          "benchflow-ai--qutip",
+          "databricks-solutions--databricks-jobs",
+          "guia-matthieu--educational-presentation",
+          "laurigates--ast-grep-search",
+          "manual-weighted-dbscan-image-evaluation",
+          "parallel-dbscan-grid-pareto-frontier",
+          "pareto-grid-search-selection",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "available_skills": [
+          "AltimateAI--creating-dbt-models",
+          "adaptyvbio--setup",
+          "benchflow-ai--qutip",
+          "databricks-solutions--databricks-jobs",
+          "guia-matthieu--educational-presentation",
+          "laurigates--ast-grep-search",
+          "manual-weighted-dbscan-image-evaluation",
+          "parallel-dbscan-grid-pareto-frontier",
+          "pareto-grid-search-selection",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "loaded_skills": [
+          "AltimateAI--creating-dbt-models",
+          "adaptyvbio--setup",
+          "benchflow-ai--qutip",
+          "databricks-solutions--databricks-jobs",
+          "guia-matthieu--educational-presentation",
+          "laurigates--ast-grep-search",
+          "manual-weighted-dbscan-image-evaluation",
+          "parallel-dbscan-grid-pareto-frontier",
+          "pareto-grid-search-selection",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "AltimateAI--creating-dbt-models",
+          "adaptyvbio--setup",
+          "benchflow-ai--qutip",
+          "databricks-solutions--databricks-jobs",
+          "guia-matthieu--educational-presentation",
+          "laurigates--ast-grep-search",
+          "manual-weighted-dbscan-image-evaluation",
+          "parallel-dbscan-grid-pareto-frontier",
+          "pareto-grid-search-selection",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,78 @@
+Task: video-silence-remover
+Source type: used
+Task run: 5
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\video-silence-remover
+
+========== Repeated Run 2/3 ==========
+
+========== Run solve.sh ==========
+=== Video Silence Remover ===
+Step 1/5: extracting audio
+Step 2/5: calculating energy
+Step 3/5: detecting silence and pauses
+Detected 11 removal segments
+  0s -> 236s (236s)
+  239s -> 242s (3s)
+  253s -> 256s (3s)
+  327s -> 331s (4s)
+  464s -> 467s (3s)
+  483s -> 485s (2s)
+  522s -> 524s (2s)
+  525s -> 527s (2s)
+  557s -> 559s (2s)
+  585s -> 587s (2s)
+  597s -> 599s (2s)
+Step 4/5: processing video
+Step 5/5: writing report
+Wrote compressed_video.mp4
+Wrote compression_report.json
+
+========== Run test.sh ==========
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+============================= test session starts ==============================
+platform linux -- Python 3.11.15, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.11
+cachedir: .pytest_cache
+rootdir: /
+plugins: json-ctrf-0.3.6
+collecting ... collected 9 items
+
+../tests/test_outputs.py::test_output_files_exist PASSED                 [ 11%]
+../tests/test_outputs.py::test_report_structure PASSED                   [ 22%]
+../tests/test_outputs.py::test_segment_detection_recall PASSED           [ 33%]
+../tests/test_outputs.py::test_segment_detection_precision PASSED        [ 44%]
+../tests/test_outputs.py::test_total_removed_duration PASSED             [ 55%]
+../tests/test_outputs.py::test_compressed_duration PASSED                [ 66%]
+../tests/test_outputs.py::test_math_consistency PASSED                   [ 77%]
+../tests/test_outputs.py::test_no_invalid_segments PASSED                [ 88%]
+../tests/test_outputs.py::test_audio_matches_json_segments PASSED        [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_output_files_exist
+PASSED ../tests/test_outputs.py::test_report_structure
+PASSED ../tests/test_outputs.py::test_segment_detection_recall
+PASSED ../tests/test_outputs.py::test_segment_detection_precision
+PASSED ../tests/test_outputs.py::test_total_removed_duration
+PASSED ../tests/test_outputs.py::test_compressed_duration
+PASSED ../tests/test_outputs.py::test_math_consistency
+PASSED ../tests/test_outputs.py::test_no_invalid_segments
+PASSED ../tests/test_outputs.py::test_audio_matches_json_segments
+============================== 9 passed in 3.70s ===============================
+
+========== Result ==========
+Task: video-silence-remover
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 28.2s (exit 0)
+Test: 4.5s (exit 0)
+Solve Memory Peak: 208.0 MiB
+Test Memory Peak: 140.4 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s

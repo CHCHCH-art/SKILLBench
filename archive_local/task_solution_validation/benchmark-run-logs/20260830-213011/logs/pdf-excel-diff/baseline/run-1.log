@@ -1,0 +1,177 @@
+
+========== Reuse Image ==========
+Using cached image: benchmark-cache/pdf-excel-diff-gold:d574cd2f86bbbcb0
+Memory monitor: metric=docker_stats_memory, source=docker_stats, interval=1.000s
+Task: pdf-excel-diff
+Source type: baseline
+Task run: 1
+Source run: 1
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\pdf-excel-diff
+
+========== Repeated Run 1/3 ==========
+
+========== Run solve.sh ==========
+============================================================
+PDF-Excel Diff Solution
+============================================================
+
+[1/3] Extracting table from PDF...
+Opening PDF: /root/employees_backup.pdf
+PDF has 229 pages
+Processing page 1/229...
+Processing page 51/229...
+Processing page 101/229...
+Processing page 151/229...
+Processing page 201/229...
+Extracted 10500 data rows
+
+[2/3] Reading current Excel file...
+Reading Excel: /root/employees_current.xlsx
+Excel has 10485 rows
+
+[3/3] Comparing data...
+Found 15 deleted employees
+Comparing 10485 common employees...
+Found 20 modifications
+
+============================================================
+Results written to /root/diff_report.json
+  - Deleted employees: 15
+  - Modified values: 20
+============================================================
+Solution complete.
+
+========== Run test.sh ==========
+Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [50.0 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1730 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1527 kB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1200 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1842 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [55.8 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1525 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2149 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [671 B]
+Get:18 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [48.9 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [35.9 kB]
+Fetched 32.4 MB in 42s (763 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libcurl3t64-gnutls libcurl4t64
+The following NEW packages will be installed:
+  curl
+The following packages will be upgraded:
+  libcurl3t64-gnutls libcurl4t64
+2 upgraded, 1 newly installed, 0 to remove and 62 not upgraded.
+Need to get 904 kB of archives.
+After this operation, 538 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.13 [343 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.13 [226 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl3t64-gnutls amd64 8.5.0-2ubuntu10.13 [335 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 904 kB in 36s (25.1 kB/s)
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 47351 files and directories currently installed.)
+Preparing to unpack .../libcurl4t64_8.5.0-2ubuntu10.13_amd64.deb ...
+Unpacking libcurl4t64:amd64 (8.5.0-2ubuntu10.13) over (8.5.0-2ubuntu10.11) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../curl_8.5.0-2ubuntu10.13_amd64.deb ...
+Unpacking curl (8.5.0-2ubuntu10.13) ...
+Preparing to unpack .../libcurl3t64-gnutls_8.5.0-2ubuntu10.13_amd64.deb ...
+Unpacking libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.13) over (8.5.0-2ubuntu10.11) ...
+Setting up libcurl4t64:amd64 (8.5.0-2ubuntu10.13) ...
+Setting up libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.13) ...
+Setting up curl (8.5.0-2ubuntu10.13) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+WARN: The following commands are shadowed by other commands in your PATH: uv uvx
+Downloading pygments (1.2MiB)
+ Downloading pygments
+Installed 6 packages in 7ms
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0 -- /root/.cache/uv/archive-v0/5wnT6xzCiZN_cWauot_Iu/bin/python
+cachedir: .pytest_cache
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collecting ... collected 11 items
+
+../tests/test_outputs.py::TestFileExists::test_output_file_exists PASSED [  9%]
+../tests/test_outputs.py::TestFileExists::test_output_file_valid_json PASSED [ 18%]
+../tests/test_outputs.py::TestFileExists::test_output_has_required_keys PASSED [ 27%]
+../tests/test_outputs.py::TestDeletedEmployees::test_correct_deleted_count PASSED [ 36%]
+../tests/test_outputs.py::TestDeletedEmployees::test_correct_deleted_ids PASSED [ 45%]
+../tests/test_outputs.py::TestModifiedEmployees::test_correct_modified_count PASSED [ 54%]
+../tests/test_outputs.py::TestModifiedEmployees::test_modified_employee_structure PASSED [ 63%]
+../tests/test_outputs.py::TestModifiedEmployees::test_correct_modified_ids PASSED [ 72%]
+../tests/test_outputs.py::TestModifiedEmployees::test_correct_modified_fields PASSED [ 81%]
+../tests/test_outputs.py::TestModifiedEmployees::test_correct_modified_values PASSED [ 90%]
+../tests/test_outputs.py::TestIntegration::test_full_comparison PASSED   [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestFileExists::test_output_file_exists
+PASSED ../tests/test_outputs.py::TestFileExists::test_output_file_valid_json
+PASSED ../tests/test_outputs.py::TestFileExists::test_output_has_required_keys
+PASSED ../tests/test_outputs.py::TestDeletedEmployees::test_correct_deleted_count
+PASSED ../tests/test_outputs.py::TestDeletedEmployees::test_correct_deleted_ids
+PASSED ../tests/test_outputs.py::TestModifiedEmployees::test_correct_modified_count
+PASSED ../tests/test_outputs.py::TestModifiedEmployees::test_modified_employee_structure
+PASSED ../tests/test_outputs.py::TestModifiedEmployees::test_correct_modified_ids
+PASSED ../tests/test_outputs.py::TestModifiedEmployees::test_correct_modified_fields
+PASSED ../tests/test_outputs.py::TestModifiedEmployees::test_correct_modified_values
+PASSED ../tests/test_outputs.py::TestIntegration::test_full_comparison
+============================== 11 passed in 0.10s ==============================
+
+========== Result ==========
+Task: pdf-excel-diff
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 31.9s (exit 0)
+Test: 105.1s (exit 0)
+Solve Memory Peak: 1.1 GiB
+Test Memory Peak: 168.5 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s

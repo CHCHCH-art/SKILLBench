@@ -1,0 +1,28 @@
+2026-09-02T05:13:38.577051+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=distribution-search condition=mapping image=benchmark-cache/distribution-search-gold:430ae95bb5beb0fc provided_skills=["three-level-kl-distribution-solver", "logit-distribution-kl-optimization", "three-level-count-search-materialization", "parcadei--llm-tuning-patterns", "haoxuanlithuai--sentence-stimulus-norming", "alsk1992--metaculus", "numpy-distilbert-int8-inference", "plurigrid--multiversal-finance", "plurigrid--active-inference-robotics", "plurigrid--triangle-metrics"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:36 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 36s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_1\distribution-search\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_1\distribution-search\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_1\distribution-search\Skill\Job_result`
+
+2026-09-02T05:16:16.406417+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=distribution-search condition=mapping

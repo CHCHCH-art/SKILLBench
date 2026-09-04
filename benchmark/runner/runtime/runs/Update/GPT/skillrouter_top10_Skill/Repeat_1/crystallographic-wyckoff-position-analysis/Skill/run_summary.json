@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "crystallographic-wyckoff-position-analysis",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run005",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 181.4921875,
+    "peak_memory_raw": "181.492 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2344,
+    "observed_containers": [
+      "crystallographic-wyckoff-positio__x4ecvjl__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "crystallographic-wyc",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run005\\Repeat_1\\crystallographic-wyckoff-position-analysis\\mapping\\crystallographic-wyckoff-position-analysis\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.573,
+    "agent_setup_sec": 0.326,
+    "agent_execution_sec": 222.001,
+    "verifier_sec": 8.672,
+    "total_sec": 239.428
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 352152,
+  "agent_output_tokens": 3474,
+  "image_cache": {
+    "image": "benchmark-cache/crystallographic-wyckoff-position-analysis-gold:0f59e77451a3b6af",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "K-Dense-AI--pathml",
+      "aminoanalytica--pdb-database",
+      "cif-explicit-site-normalization",
+      "cif-wyckoff-letter-reference-summary",
+      "eventual-inc--daft-distributed-scaling",
+      "fractional-coordinate-rational-formatting",
+      "mims-harvard--tooluniverse-precision-oncology",
+      "sickn33--product-manager-toolkit",
+      "three-level-count-search-materialization",
+      "wyckoff-spglib-stability-analysis"
+    ],
+    "available_skills": [
+      "K-Dense-AI--pathml",
+      "aminoanalytica--pdb-database",
+      "cif-explicit-site-normalization",
+      "cif-wyckoff-letter-reference-summary",
+      "eventual-inc--daft-distributed-scaling",
+      "fractional-coordinate-rational-formatting",
+      "mims-harvard--tooluniverse-precision-oncology",
+      "sickn33--product-manager-toolkit",
+      "three-level-count-search-materialization",
+      "wyckoff-spglib-stability-analysis"
+    ],
+    "loaded_skills": [
+      "K-Dense-AI--pathml",
+      "aminoanalytica--pdb-database",
+      "cif-explicit-site-normalization",
+      "cif-wyckoff-letter-reference-summary",
+      "eventual-inc--daft-distributed-scaling",
+      "fractional-coordinate-rational-formatting",
+      "mims-harvard--tooluniverse-precision-oncology",
+      "sickn33--product-manager-toolkit",
+      "three-level-count-search-materialization",
+      "wyckoff-spglib-stability-analysis"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "K-Dense-AI--pathml",
+      "aminoanalytica--pdb-database",
+      "cif-explicit-site-normalization",
+      "cif-wyckoff-letter-reference-summary",
+      "eventual-inc--daft-distributed-scaling",
+      "fractional-coordinate-rational-formatting",
+      "mims-harvard--tooluniverse-precision-oncology",
+      "sickn33--product-manager-toolkit",
+      "three-level-count-search-materialization",
+      "wyckoff-spglib-stability-analysis"
+    ],
+    "trials": [
+      {
+        "trial_id": "crystallographic-wyckoff-positio__x4eCVJL",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "K-Dense-AI--pathml",
+          "aminoanalytica--pdb-database",
+          "cif-explicit-site-normalization",
+          "cif-wyckoff-letter-reference-summary",
+          "eventual-inc--daft-distributed-scaling",
+          "fractional-coordinate-rational-formatting",
+          "mims-harvard--tooluniverse-precision-oncology",
+          "sickn33--product-manager-toolkit",
+          "three-level-count-search-materialization",
+          "wyckoff-spglib-stability-analysis"
+        ],
+        "available_skills": [
+          "K-Dense-AI--pathml",
+          "aminoanalytica--pdb-database",
+          "cif-explicit-site-normalization",
+          "cif-wyckoff-letter-reference-summary",
+          "eventual-inc--daft-distributed-scaling",
+          "fractional-coordinate-rational-formatting",
+          "mims-harvard--tooluniverse-precision-oncology",
+          "sickn33--product-manager-toolkit",
+          "three-level-count-search-materialization",
+          "wyckoff-spglib-stability-analysis"
+        ],
+        "loaded_skills": [
+          "K-Dense-AI--pathml",
+          "aminoanalytica--pdb-database",
+          "cif-explicit-site-normalization",
+          "cif-wyckoff-letter-reference-summary",
+          "eventual-inc--daft-distributed-scaling",
+          "fractional-coordinate-rational-formatting",
+          "mims-harvard--tooluniverse-precision-oncology",
+          "sickn33--product-manager-toolkit",
+          "three-level-count-search-materialization",
+          "wyckoff-spglib-stability-analysis"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "K-Dense-AI--pathml",
+          "aminoanalytica--pdb-database",
+          "cif-explicit-site-normalization",
+          "cif-wyckoff-letter-reference-summary",
+          "eventual-inc--daft-distributed-scaling",
+          "fractional-coordinate-rational-formatting",
+          "mims-harvard--tooluniverse-precision-oncology",
+          "sickn33--product-manager-toolkit",
+          "three-level-count-search-materialization",
+          "wyckoff-spglib-stability-analysis"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

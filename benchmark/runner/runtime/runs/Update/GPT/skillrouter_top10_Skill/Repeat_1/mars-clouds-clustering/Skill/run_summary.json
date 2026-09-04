@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "mars-clouds-clustering",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run005",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 3441.40234375,
+    "peak_memory_raw": "3441.402 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 4466,
+    "observed_containers": [
+      "mars-clouds-clustering__6wohxw3__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "mars-clouds-clusteri",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run005\\Repeat_1\\mars-clouds-clustering\\mapping\\mars-clouds-clustering\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.524,
+    "agent_setup_sec": 0.566,
+    "agent_execution_sec": 441.816,
+    "verifier_sec": 1.088,
+    "total_sec": 452.077
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 718838,
+  "agent_output_tokens": 4725,
+  "image_cache": {
+    "image": "benchmark-cache/mars-clouds-clustering-gold:b70cf811266787f2",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "bejranonda--performance-scaling",
+      "benchflow-ai--map-optimization-strategy",
+      "bitmask-game-score-pairing",
+      "blockrunai--clawrouter",
+      "bls-transit-period-refinement",
+      "manual-weighted-dbscan-image-evaluation",
+      "parallel-dbscan-grid-pareto-frontier",
+      "pareto-grid-search-selection",
+      "v1truv1us--incentive-prompting",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "available_skills": [
+      "bejranonda--performance-scaling",
+      "benchflow-ai--map-optimization-strategy",
+      "bitmask-game-score-pairing",
+      "blockrunai--clawrouter",
+      "bls-transit-period-refinement",
+      "manual-weighted-dbscan-image-evaluation",
+      "parallel-dbscan-grid-pareto-frontier",
+      "pareto-grid-search-selection",
+      "v1truv1us--incentive-prompting",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "loaded_skills": [
+      "bejranonda--performance-scaling",
+      "benchflow-ai--map-optimization-strategy",
+      "bitmask-game-score-pairing",
+      "blockrunai--clawrouter",
+      "bls-transit-period-refinement",
+      "manual-weighted-dbscan-image-evaluation",
+      "parallel-dbscan-grid-pareto-frontier",
+      "pareto-grid-search-selection",
+      "v1truv1us--incentive-prompting",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "bejranonda--performance-scaling",
+      "benchflow-ai--map-optimization-strategy",
+      "bitmask-game-score-pairing",
+      "blockrunai--clawrouter",
+      "bls-transit-period-refinement",
+      "manual-weighted-dbscan-image-evaluation",
+      "parallel-dbscan-grid-pareto-frontier",
+      "pareto-grid-search-selection",
+      "v1truv1us--incentive-prompting",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "trials": [
+      {
+        "trial_id": "mars-clouds-clustering__6woHXW3",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "bejranonda--performance-scaling",
+          "benchflow-ai--map-optimization-strategy",
+          "bitmask-game-score-pairing",
+          "blockrunai--clawrouter",
+          "bls-transit-period-refinement",
+          "manual-weighted-dbscan-image-evaluation",
+          "parallel-dbscan-grid-pareto-frontier",
+          "pareto-grid-search-selection",
+          "v1truv1us--incentive-prompting",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "available_skills": [
+          "bejranonda--performance-scaling",
+          "benchflow-ai--map-optimization-strategy",
+          "bitmask-game-score-pairing",
+          "blockrunai--clawrouter",
+          "bls-transit-period-refinement",
+          "manual-weighted-dbscan-image-evaluation",
+          "parallel-dbscan-grid-pareto-frontier",
+          "pareto-grid-search-selection",
+          "v1truv1us--incentive-prompting",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "loaded_skills": [
+          "bejranonda--performance-scaling",
+          "benchflow-ai--map-optimization-strategy",
+          "bitmask-game-score-pairing",
+          "blockrunai--clawrouter",
+          "bls-transit-period-refinement",
+          "manual-weighted-dbscan-image-evaluation",
+          "parallel-dbscan-grid-pareto-frontier",
+          "pareto-grid-search-selection",
+          "v1truv1us--incentive-prompting",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "bejranonda--performance-scaling",
+          "benchflow-ai--map-optimization-strategy",
+          "bitmask-game-score-pairing",
+          "blockrunai--clawrouter",
+          "bls-transit-period-refinement",
+          "manual-weighted-dbscan-image-evaluation",
+          "parallel-dbscan-grid-pareto-frontier",
+          "pareto-grid-search-selection",
+          "v1truv1us--incentive-prompting",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

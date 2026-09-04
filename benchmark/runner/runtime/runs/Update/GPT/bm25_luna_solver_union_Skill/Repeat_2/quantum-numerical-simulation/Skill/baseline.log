@@ -1,0 +1,28 @@
+2026-09-04T00:18:21.396276+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=quantum-numerical-simulation condition=mapping image=benchmark-cache/quantum-numerical-simulation-gold:8597d1a23d4799e3 provided_skills=["direct-steady-state-cavity-wigner-export", "cavity-wigner-grid-export", "piqs-open-dicke-liouvillian", "arpack-liouvillian-steady-state"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:07:27 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 7m 27s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\quantum-numerical-simulation\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\quantum-numerical-simulation\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\quantum-numerical-simulation\Skill\Job_result`
+
+2026-09-04T00:25:50.105485+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=quantum-numerical-simulation condition=mapping

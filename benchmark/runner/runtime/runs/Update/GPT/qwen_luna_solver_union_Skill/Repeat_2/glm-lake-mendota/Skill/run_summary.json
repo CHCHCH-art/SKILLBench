@@ -1,0 +1,118 @@
+{
+  "schema_version": 9,
+  "task_id": "glm-lake-mendota",
+  "condition": "mapping",
+  "batch": "qwen_luna_solver_union_Skill_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1936.6015625,
+    "peak_memory_raw": "1936.602 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3530,
+    "observed_containers": [
+      "glm-lake-mendota__ro68a3z__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "glm-lake-mendota",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_luna_solver_union_Skill_Run002\\Repeat_2\\glm-lake-mendota\\mapping\\glm-lake-mendota\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.015,
+    "agent_setup_sec": 0.537,
+    "agent_execution_sec": 338.33,
+    "verifier_sec": 12.492,
+    "total_sec": 360.35
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 613871,
+  "agent_output_tokens": 7371,
+  "image_cache": {
+    "image": "benchmark-cache/glm-lake-mendota-gold:cfbcca189cbdcde0",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "HeshamFS--simulation-orchestrator",
+      "HeshamFS--simulation-validator",
+      "glm-observation-profile-evaluation",
+      "glm-profile-observation-rmse-alignment",
+      "lake-glm-five-parameter-nelder-mead-calibration"
+    ],
+    "available_skills": [
+      "HeshamFS--simulation-orchestrator",
+      "HeshamFS--simulation-validator",
+      "glm-observation-profile-evaluation",
+      "glm-profile-observation-rmse-alignment",
+      "lake-glm-five-parameter-nelder-mead-calibration"
+    ],
+    "loaded_skills": [
+      "HeshamFS--simulation-orchestrator",
+      "HeshamFS--simulation-validator",
+      "glm-observation-profile-evaluation",
+      "glm-profile-observation-rmse-alignment",
+      "lake-glm-five-parameter-nelder-mead-calibration"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "HeshamFS--simulation-orchestrator",
+      "HeshamFS--simulation-validator",
+      "glm-observation-profile-evaluation",
+      "glm-profile-observation-rmse-alignment",
+      "lake-glm-five-parameter-nelder-mead-calibration"
+    ],
+    "trials": [
+      {
+        "trial_id": "glm-lake-mendota__Ro68A3Z",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "HeshamFS--simulation-orchestrator",
+          "HeshamFS--simulation-validator",
+          "glm-observation-profile-evaluation",
+          "glm-profile-observation-rmse-alignment",
+          "lake-glm-five-parameter-nelder-mead-calibration"
+        ],
+        "available_skills": [
+          "HeshamFS--simulation-orchestrator",
+          "HeshamFS--simulation-validator",
+          "glm-observation-profile-evaluation",
+          "glm-profile-observation-rmse-alignment",
+          "lake-glm-five-parameter-nelder-mead-calibration"
+        ],
+        "loaded_skills": [
+          "HeshamFS--simulation-orchestrator",
+          "HeshamFS--simulation-validator",
+          "glm-observation-profile-evaluation",
+          "glm-profile-observation-rmse-alignment",
+          "lake-glm-five-parameter-nelder-mead-calibration"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "HeshamFS--simulation-orchestrator",
+          "HeshamFS--simulation-validator",
+          "glm-observation-profile-evaluation",
+          "glm-profile-observation-rmse-alignment",
+          "lake-glm-five-parameter-nelder-mead-calibration"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

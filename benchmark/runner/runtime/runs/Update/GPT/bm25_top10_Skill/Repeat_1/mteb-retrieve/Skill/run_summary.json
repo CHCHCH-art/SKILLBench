@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "mteb-retrieve",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 2048.5078125,
+    "peak_memory_raw": "2048.508 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 6527,
+    "observed_containers": [
+      "mteb-retrieve__yeewe8d__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "mteb-retrieve",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run001\\Repeat_1\\mteb-retrieve\\mapping\\mteb-retrieve\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.703,
+    "agent_setup_sec": 0.499,
+    "agent_execution_sec": 266.617,
+    "verifier_sec": 424.728,
+    "total_sec": 701.107
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 536969,
+  "agent_output_tokens": 3125,
+  "image_cache": {
+    "image": "benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "anthropics--initiating-coverage",
+      "baseline-fasttext-small-supervised-training",
+      "binjuhor--docs-seeker",
+      "ederheisler--executing-plans",
+      "guia-matthieu--challenger-sale",
+      "guia-matthieu--educational-presentation",
+      "lubu-labs--langgraph-project-setup",
+      "mteb-streaming-topk-cosine-retrieval",
+      "scifact-prompt-bound-mteb-topk-retrieval",
+      "yaleh--error-recovery"
+    ],
+    "available_skills": [
+      "anthropics--initiating-coverage",
+      "baseline-fasttext-small-supervised-training",
+      "binjuhor--docs-seeker",
+      "ederheisler--executing-plans",
+      "guia-matthieu--challenger-sale",
+      "guia-matthieu--educational-presentation",
+      "lubu-labs--langgraph-project-setup",
+      "mteb-streaming-topk-cosine-retrieval",
+      "scifact-prompt-bound-mteb-topk-retrieval",
+      "yaleh--error-recovery"
+    ],
+    "loaded_skills": [
+      "anthropics--initiating-coverage",
+      "baseline-fasttext-small-supervised-training",
+      "binjuhor--docs-seeker",
+      "ederheisler--executing-plans",
+      "guia-matthieu--challenger-sale",
+      "guia-matthieu--educational-presentation",
+      "lubu-labs--langgraph-project-setup",
+      "mteb-streaming-topk-cosine-retrieval",
+      "scifact-prompt-bound-mteb-topk-retrieval",
+      "yaleh--error-recovery"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "anthropics--initiating-coverage",
+      "baseline-fasttext-small-supervised-training",
+      "binjuhor--docs-seeker",
+      "ederheisler--executing-plans",
+      "guia-matthieu--challenger-sale",
+      "guia-matthieu--educational-presentation",
+      "lubu-labs--langgraph-project-setup",
+      "mteb-streaming-topk-cosine-retrieval",
+      "scifact-prompt-bound-mteb-topk-retrieval",
+      "yaleh--error-recovery"
+    ],
+    "trials": [
+      {
+        "trial_id": "mteb-retrieve__YeeWE8d",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "anthropics--initiating-coverage",
+          "baseline-fasttext-small-supervised-training",
+          "binjuhor--docs-seeker",
+          "ederheisler--executing-plans",
+          "guia-matthieu--challenger-sale",
+          "guia-matthieu--educational-presentation",
+          "lubu-labs--langgraph-project-setup",
+          "mteb-streaming-topk-cosine-retrieval",
+          "scifact-prompt-bound-mteb-topk-retrieval",
+          "yaleh--error-recovery"
+        ],
+        "available_skills": [
+          "anthropics--initiating-coverage",
+          "baseline-fasttext-small-supervised-training",
+          "binjuhor--docs-seeker",
+          "ederheisler--executing-plans",
+          "guia-matthieu--challenger-sale",
+          "guia-matthieu--educational-presentation",
+          "lubu-labs--langgraph-project-setup",
+          "mteb-streaming-topk-cosine-retrieval",
+          "scifact-prompt-bound-mteb-topk-retrieval",
+          "yaleh--error-recovery"
+        ],
+        "loaded_skills": [
+          "anthropics--initiating-coverage",
+          "baseline-fasttext-small-supervised-training",
+          "binjuhor--docs-seeker",
+          "ederheisler--executing-plans",
+          "guia-matthieu--challenger-sale",
+          "guia-matthieu--educational-presentation",
+          "lubu-labs--langgraph-project-setup",
+          "mteb-streaming-topk-cosine-retrieval",
+          "scifact-prompt-bound-mteb-topk-retrieval",
+          "yaleh--error-recovery"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "anthropics--initiating-coverage",
+          "baseline-fasttext-small-supervised-training",
+          "binjuhor--docs-seeker",
+          "ederheisler--executing-plans",
+          "guia-matthieu--challenger-sale",
+          "guia-matthieu--educational-presentation",
+          "lubu-labs--langgraph-project-setup",
+          "mteb-streaming-topk-cosine-retrieval",
+          "scifact-prompt-bound-mteb-topk-retrieval",
+          "yaleh--error-recovery"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

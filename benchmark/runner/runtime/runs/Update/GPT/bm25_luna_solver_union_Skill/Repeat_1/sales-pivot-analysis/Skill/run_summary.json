@@ -1,0 +1,102 @@
+{
+  "schema_version": 9,
+  "task_id": "sales-pivot-analysis",
+  "condition": "mapping",
+  "batch": "bm25_luna_solver_union_Skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestPivotTableConfiguration::test_pivot_row_is_state: IndexError: list index out of range; test_outputs.py::TestPivotTableConfiguration::test_pivot_uses_correct_aggregation: IndexError: list index out of range; test_outputs.py::TestDataTransformationCorrectness::test_pivot_cache_has_fields: IndexError: list index out of range",
+  "peak_memory": {
+    "peak_memory_mib": 858.94140625,
+    "peak_memory_raw": "858.941 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 4543,
+    "observed_containers": [
+      "sales-pivot-analysis__jrdujdt__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "sales-pivot-analysis",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_luna_solver_union_Skill_Run001\\Repeat_1\\sales-pivot-analysis\\mapping\\sales-pivot-analysis\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.275,
+    "agent_setup_sec": 0.786,
+    "agent_execution_sec": 445.311,
+    "verifier_sec": 9.864,
+    "total_sec": 464.225
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 525368,
+  "agent_output_tokens": 8130,
+  "image_cache": {
+    "image": "benchmark-cache/sales-pivot-analysis-gold:0de7e366d80d6ca8",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "benchflow-ai--xlsx-1",
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quartile-derived-enrichment"
+    ],
+    "available_skills": [
+      "benchflow-ai--xlsx-1",
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quartile-derived-enrichment"
+    ],
+    "loaded_skills": [
+      "benchflow-ai--xlsx-1",
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quartile-derived-enrichment"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "benchflow-ai--xlsx-1",
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quartile-derived-enrichment"
+    ],
+    "trials": [
+      {
+        "trial_id": "sales-pivot-analysis__jrDUjdT",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "benchflow-ai--xlsx-1",
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quartile-derived-enrichment"
+        ],
+        "available_skills": [
+          "benchflow-ai--xlsx-1",
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quartile-derived-enrichment"
+        ],
+        "loaded_skills": [
+          "benchflow-ai--xlsx-1",
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quartile-derived-enrichment"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "benchflow-ai--xlsx-1",
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quartile-derived-enrichment"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,28 @@
+2026-09-02T12:48:35.775916+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=powerlifting-coef-calc condition=mapping image=benchmark-cache/powerlifting-coef-calc-gold:0fef2731a5e5d6d2 provided_skills=["powerlifting-workbook-column-formula-population", "dots-powerlifting-formula-generator", "powerlifting-workbook-formula-population", "dots-coefficient-excel-formula", "highs-dual-market-pricing-report", "economic-series-workbook-extraction", "disco-trooper--cycling-training", "gtmagents--lead-qualification", "sbroenne--excel-mcp", "hannesill--sapsii-score"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:04:33 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 33s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_3\powerlifting-coef-calc\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_3\powerlifting-coef-calc\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_3\powerlifting-coef-calc\Skill\Job_result`
+
+2026-09-02T12:53:10.234737+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=powerlifting-coef-calc condition=mapping

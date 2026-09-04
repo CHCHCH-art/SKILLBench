@@ -1,0 +1,28 @@
+2026-09-04T04:00:13.719492+00:00 START operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=powerlifting-coef-calc condition=mapping image=benchmark-cache/powerlifting-coef-calc-gold:0fef2731a5e5d6d2 provided_skills=["powerlifting-workbook-column-formula-population"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:10:22 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 10m 22s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\powerlifting-coef-calc\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\powerlifting-coef-calc\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\powerlifting-coef-calc\Skill\Job_result`
+
+2026-09-04T04:10:37.724439+00:00 PASS operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=powerlifting-coef-calc condition=mapping

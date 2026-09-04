@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "crystallographic-wyckoff-position-analysis",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run001",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 658.27734375,
+    "peak_memory_raw": "658.277 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 1933,
+    "observed_containers": [
+      "crystallographic-wyckoff-positio__5kyf4iw__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "crystallographic-wyc",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run001\\Repeat_1\\crystallographic-wyckoff-position-analysis\\mapping\\crystallographic-wyckoff-position-analysis\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.043,
+    "agent_setup_sec": 0.747,
+    "agent_execution_sec": 162.675,
+    "verifier_sec": 26.415,
+    "total_sec": 199.613
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 336099,
+  "agent_output_tokens": 4852,
+  "image_cache": {
+    "image": "benchmark-cache/crystallographic-wyckoff-position-analysis-gold:0f59e77451a3b6af",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "AltimateAI--creating-dbt-models",
+      "anthropics--check-deck",
+      "anthropics--initiating-coverage",
+      "cif-explicit-site-normalization",
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting",
+      "guia-matthieu--educational-presentation",
+      "posit-dev--release-post",
+      "wyckoff-spglib-stability-analysis",
+      "yaleh--error-recovery"
+    ],
+    "available_skills": [
+      "AltimateAI--creating-dbt-models",
+      "anthropics--check-deck",
+      "anthropics--initiating-coverage",
+      "cif-explicit-site-normalization",
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting",
+      "guia-matthieu--educational-presentation",
+      "posit-dev--release-post",
+      "wyckoff-spglib-stability-analysis",
+      "yaleh--error-recovery"
+    ],
+    "loaded_skills": [
+      "AltimateAI--creating-dbt-models",
+      "anthropics--check-deck",
+      "anthropics--initiating-coverage",
+      "cif-explicit-site-normalization",
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting",
+      "guia-matthieu--educational-presentation",
+      "posit-dev--release-post",
+      "wyckoff-spglib-stability-analysis",
+      "yaleh--error-recovery"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "AltimateAI--creating-dbt-models",
+      "anthropics--check-deck",
+      "anthropics--initiating-coverage",
+      "cif-explicit-site-normalization",
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting",
+      "guia-matthieu--educational-presentation",
+      "posit-dev--release-post",
+      "wyckoff-spglib-stability-analysis",
+      "yaleh--error-recovery"
+    ],
+    "trials": [
+      {
+        "trial_id": "crystallographic-wyckoff-positio__5kyf4iW",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "AltimateAI--creating-dbt-models",
+          "anthropics--check-deck",
+          "anthropics--initiating-coverage",
+          "cif-explicit-site-normalization",
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting",
+          "guia-matthieu--educational-presentation",
+          "posit-dev--release-post",
+          "wyckoff-spglib-stability-analysis",
+          "yaleh--error-recovery"
+        ],
+        "available_skills": [
+          "AltimateAI--creating-dbt-models",
+          "anthropics--check-deck",
+          "anthropics--initiating-coverage",
+          "cif-explicit-site-normalization",
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting",
+          "guia-matthieu--educational-presentation",
+          "posit-dev--release-post",
+          "wyckoff-spglib-stability-analysis",
+          "yaleh--error-recovery"
+        ],
+        "loaded_skills": [
+          "AltimateAI--creating-dbt-models",
+          "anthropics--check-deck",
+          "anthropics--initiating-coverage",
+          "cif-explicit-site-normalization",
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting",
+          "guia-matthieu--educational-presentation",
+          "posit-dev--release-post",
+          "wyckoff-spglib-stability-analysis",
+          "yaleh--error-recovery"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "AltimateAI--creating-dbt-models",
+          "anthropics--check-deck",
+          "anthropics--initiating-coverage",
+          "cif-explicit-site-normalization",
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting",
+          "guia-matthieu--educational-presentation",
+          "posit-dev--release-post",
+          "wyckoff-spglib-stability-analysis",
+          "yaleh--error-recovery"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

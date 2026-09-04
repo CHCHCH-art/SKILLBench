@@ -1,0 +1,28 @@
+2026-09-01T21:26:29.190355+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=software-dependency-audit condition=mapping image=benchmark-cache/software-dependency-audit-gold:65439dede9bf4280 provided_skills=["trivy-offline-filesystem-vulnerability-scan", "trivy-severity-cvss-csv-normalization", "npm-lock-dual-sbom-dependency-graph", "oimiragieo--gemini-cli-security", "benchflow-ai--cvss-score-extraction"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:07:31 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 7m 31s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_luna_solver_union_Skil
+l_Run002\Repeat_1\software-dependency-audit\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_luna_solver_union_Skil
+l_Run002\Repeat_1\software-dependency-audit\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_luna_solver_union_Skil
+l_Run002\Repeat_1\software-dependency-audit\Skill\Job_result`
+
+2026-09-01T21:34:01.983463+00:00 FAIL operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=software-dependency-audit condition=mapping

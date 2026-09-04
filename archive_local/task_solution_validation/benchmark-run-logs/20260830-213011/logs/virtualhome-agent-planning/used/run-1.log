@@ -1,0 +1,156 @@
+
+========== Reuse Image ==========
+Using cached image: benchmark-cache/virtualhome-agent-planning-gold:2a7bb392c743be2d
+Memory monitor: metric=docker_stats_memory, source=docker_stats, interval=1.000s
+Task: virtualhome-agent-planning
+Source type: used
+Task run: 4
+Source run: 1
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\virtualhome-agent-planning
+
+========== Repeated Run 1/3 ==========
+
+========== Run solve.sh ==========
+[task01] domain:  /app/airport/domain01.pddl
+[task01] problem: /app/airport/task01.pddl
+[task01] output:  /app/task01.txt
+[96m[1mNOTE: To disable printing of planning engine credits, add this line to your code: `up.shortcuts.get_environment().credits_stream = None`
+[0m[96m  *** Credits ***
+[0m[96m  * In operation mode `OneshotPlanner` at line 96 of `<stdin>`, [0m[96myou are using the following planning engine:
+[0m[96m  * Engine name: pyperplan
+  * Developers:  Albert-Ludwigs-Universität Freiburg (Yusra Alkhazraji, Matthias Frorath, Markus Grützner, Malte Helmert, Thomas Liebetraut, Robert Mattmüller, Manuela Ortlieb, Jendrik Seipp, Tobias Springenberg, Philip Stahl, Jan Wülfing)
+[0m[96m  * Description: [0m[96mPyperplan is a lightweight STRIPS planner written in Python.[0m[96m
+[0m[96m
+[0m[task01] selected=weighted-astar+hff; baseline_actions=8; output_actions=8
+[task02] domain:  /app/airport/domain02.pddl
+[task02] problem: /app/airport/task02.pddl
+[task02] output:  /app/task02.txt
+[96m  *** Credits ***
+[0m[96m  * In operation mode `OneshotPlanner` at line 96 of `<stdin>`, [0m[96myou are using the following planning engine:
+[0m[96m  * Engine name: pyperplan
+  * Developers:  Albert-Ludwigs-Universität Freiburg (Yusra Alkhazraji, Matthias Frorath, Markus Grützner, Malte Helmert, Thomas Liebetraut, Robert Mattmüller, Manuela Ortlieb, Jendrik Seipp, Tobias Springenberg, Philip Stahl, Jan Wülfing)
+[0m[96m  * Description: [0m[96mPyperplan is a lightweight STRIPS planner written in Python.[0m[96m
+[0m[96m
+[0m[task02] selected=weighted-astar+hff; baseline_actions=9; output_actions=9
+
+========== Run test.sh ==========
+Get:1 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1730 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [50.0 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1525 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2149 kB]
+Get:13 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1527 kB]
+Get:14 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1200 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [55.8 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1842 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [671 B]
+Get:18 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [48.9 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [35.9 kB]
+Fetched 32.4 MB in 60s (536 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libcurl4t64
+The following packages will be upgraded:
+  curl libcurl4t64
+2 upgraded, 0 newly installed, 0 to remove and 40 not upgraded.
+Need to get 569 kB of archives.
+After this operation, 2048 B of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.13 [226 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.13 [343 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 569 kB in 3s (170 kB/s)
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 17208 files and directories currently installed.)
+Preparing to unpack .../curl_8.5.0-2ubuntu10.13_amd64.deb ...
+Unpacking curl (8.5.0-2ubuntu10.13) over (8.5.0-2ubuntu10.11) ...
+Preparing to unpack .../libcurl4t64_8.5.0-2ubuntu10.13_amd64.deb ...
+Unpacking libcurl4t64:amd64 (8.5.0-2ubuntu10.13) over (8.5.0-2ubuntu10.11) ...
+Setting up libcurl4t64:amd64 (8.5.0-2ubuntu10.13) ...
+Setting up curl (8.5.0-2ubuntu10.13) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.8) ...
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+WARN: The following commands are shadowed by other commands in your PATH: uv uvx
+Downloading networkx (2.0MiB)
+Downloading scipy (33.7MiB)
+Downloading pygments (1.2MiB)
+Downloading numpy (15.6MiB)
+ Downloading pygments
+ Downloading networkx
+ Downloading numpy
+ Downloading scipy
+Installed 17 packages in 69ms
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 2 items
+
+../tests/test_outputs.py ..                                              [100%]
+
+==================================== PASSES ====================================
+_____________ TestNumericalCorrectness.test_allclose[1e-05-1e-06] ______________
+----------------------------- Captured stdout call -----------------------------
+airport/domain01.pddl airport/task01.pddl task01.txt
+val:  status: VALID
+engine: sequential_plan_validator
+airport/domain02.pddl airport/task02.pddl task02.txt
+val:  status: VALID
+engine: sequential_plan_validator
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestOutputFilesExist::test_all_output_files_exist
+PASSED ../tests/test_outputs.py::TestNumericalCorrectness::test_allclose[1e-05-1e-06]
+============================== 2 passed in 3.62s ===============================
+
+========== Result ==========
+Task: virtualhome-agent-planning
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 4.6s (exit 0)
+Test: 90.7s (exit 0)
+Solve Memory Peak: 130.4 MiB
+Test Memory Peak: 260.3 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s

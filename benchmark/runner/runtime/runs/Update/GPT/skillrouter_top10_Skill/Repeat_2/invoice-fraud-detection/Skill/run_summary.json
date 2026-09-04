@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "invoice-fraud-detection",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run005",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOutputs::test_content: AssertionError: PO Number mismatch for page 1: Expected 'PO-1030', Got 'None'",
+  "peak_memory": {
+    "peak_memory_mib": 128.47265625,
+    "peak_memory_raw": "128.473 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2658,
+    "observed_containers": [
+      "invoice-fraud-detection__mu5mzsj__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "invoice-fraud-detect",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run005\\Repeat_2\\invoice-fraud-detection\\mapping\\invoice-fraud-detection\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.512,
+    "agent_setup_sec": 0.347,
+    "agent_execution_sec": 222.494,
+    "verifier_sec": 39.514,
+    "total_sec": 271.064
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 428842,
+  "agent_output_tokens": 7702,
+  "image_cache": {
+    "image": "benchmark-cache/invoice-fraud-detection-gold:a8a463d9f523584f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "fuzzy-vendor-entity-resolution",
+      "geeksfino--financial-statement-analyzer",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization",
+      "invoice-pdf-reference-field-extraction",
+      "kazukinagata--invoice-system",
+      "kazukinagata--reading-receipt",
+      "ordered-invoice-masterdata-fraud-rules",
+      "personamanagmentlayer--retail-expert",
+      "wlzh--invoice-scanner"
+    ],
+    "available_skills": [
+      "fuzzy-vendor-entity-resolution",
+      "geeksfino--financial-statement-analyzer",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization",
+      "invoice-pdf-reference-field-extraction",
+      "kazukinagata--invoice-system",
+      "kazukinagata--reading-receipt",
+      "ordered-invoice-masterdata-fraud-rules",
+      "personamanagmentlayer--retail-expert",
+      "wlzh--invoice-scanner"
+    ],
+    "loaded_skills": [
+      "fuzzy-vendor-entity-resolution",
+      "geeksfino--financial-statement-analyzer",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization",
+      "invoice-pdf-reference-field-extraction",
+      "kazukinagata--invoice-system",
+      "kazukinagata--reading-receipt",
+      "ordered-invoice-masterdata-fraud-rules",
+      "personamanagmentlayer--retail-expert",
+      "wlzh--invoice-scanner"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "fuzzy-vendor-entity-resolution",
+      "geeksfino--financial-statement-analyzer",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization",
+      "invoice-pdf-reference-field-extraction",
+      "kazukinagata--invoice-system",
+      "kazukinagata--reading-receipt",
+      "ordered-invoice-masterdata-fraud-rules",
+      "personamanagmentlayer--retail-expert",
+      "wlzh--invoice-scanner"
+    ],
+    "trials": [
+      {
+        "trial_id": "invoice-fraud-detection__mu5MZsJ",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "fuzzy-vendor-entity-resolution",
+          "geeksfino--financial-statement-analyzer",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization",
+          "invoice-pdf-reference-field-extraction",
+          "kazukinagata--invoice-system",
+          "kazukinagata--reading-receipt",
+          "ordered-invoice-masterdata-fraud-rules",
+          "personamanagmentlayer--retail-expert",
+          "wlzh--invoice-scanner"
+        ],
+        "available_skills": [
+          "fuzzy-vendor-entity-resolution",
+          "geeksfino--financial-statement-analyzer",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization",
+          "invoice-pdf-reference-field-extraction",
+          "kazukinagata--invoice-system",
+          "kazukinagata--reading-receipt",
+          "ordered-invoice-masterdata-fraud-rules",
+          "personamanagmentlayer--retail-expert",
+          "wlzh--invoice-scanner"
+        ],
+        "loaded_skills": [
+          "fuzzy-vendor-entity-resolution",
+          "geeksfino--financial-statement-analyzer",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization",
+          "invoice-pdf-reference-field-extraction",
+          "kazukinagata--invoice-system",
+          "kazukinagata--reading-receipt",
+          "ordered-invoice-masterdata-fraud-rules",
+          "personamanagmentlayer--retail-expert",
+          "wlzh--invoice-scanner"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "fuzzy-vendor-entity-resolution",
+          "geeksfino--financial-statement-analyzer",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization",
+          "invoice-pdf-reference-field-extraction",
+          "kazukinagata--invoice-system",
+          "kazukinagata--reading-receipt",
+          "ordered-invoice-masterdata-fraud-rules",
+          "personamanagmentlayer--retail-expert",
+          "wlzh--invoice-scanner"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,126 @@
+{
+  "schema_version": 9,
+  "task_id": "dynamic-object-aware-egomotion",
+  "condition": "mapping",
+  "batch": "qwen_luna_solver_union_Skill_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestMotionAccuracy::test_motion_macro_f1: assert np.float64(0.48484848484848486) >= 0.5",
+  "peak_memory": {
+    "peak_memory_mib": 354.94921875,
+    "peak_memory_raw": "354.949 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3598,
+    "observed_containers": [
+      "dynamic-object-aware-egomotion__w5bebme__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "dynamic-object-aware",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_luna_solver_union_Skill_Run002\\Repeat_2\\dynamic-object-aware-egomotion\\mapping\\dynamic-object-aware-egomotion\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.782,
+    "agent_setup_sec": 0.358,
+    "agent_execution_sec": 184.563,
+    "verifier_sec": 178.234,
+    "total_sec": 371.127
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 159847,
+  "agent_output_tokens": 5530,
+  "image_cache": {
+    "image": "benchmark-cache/dynamic-object-aware-egomotion-gold:fc972e99cd5a2204",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "available_skills": [
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "loaded_skills": [
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "camera-motion-reference-label-sequence",
+      "dynamic-region-flow-residual-tracking",
+      "dynamic-region-motion-mask",
+      "egomotion-reference-label-sequence",
+      "video-global-egomotion-estimation",
+      "video-global-egomotion-homography"
+    ],
+    "trials": [
+      {
+        "trial_id": "dynamic-object-aware-egomotion__W5beBme",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "available_skills": [
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "loaded_skills": [
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "camera-motion-reference-label-sequence",
+          "dynamic-region-flow-residual-tracking",
+          "dynamic-region-motion-mask",
+          "egomotion-reference-label-sequence",
+          "video-global-egomotion-estimation",
+          "video-global-egomotion-homography"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": 9,
+  "task_id": "energy-market-pricing",
+  "condition": "mapping",
+  "batch": "bm25_luna_solver_union_Skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 847.48046875,
+    "peak_memory_raw": "847.480 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 17421,
+    "observed_containers": [
+      "energy-market-pricing__heqarcf__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "energy-market-pricin",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_luna_solver_union_Skill_Run001\\Repeat_2\\energy-market-pricing\\mapping\\energy-market-pricing\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.442,
+    "agent_setup_sec": 0.606,
+    "agent_execution_sec": 1204.428,
+    "verifier_sec": 547.398,
+    "total_sec": 1759.003
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 655441,
+  "agent_output_tokens": 8593,
+  "image_cache": {
+    "image": "benchmark-cache/energy-market-pricing-gold:5e086fb9e6601b54",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "highs-dual-market-pricing-report",
+      "sparse-dcopf-reserve-lp-formulation",
+      "transmission-limit-counterfactual-impact"
+    ],
+    "available_skills": [
+      "highs-dual-market-pricing-report",
+      "sparse-dcopf-reserve-lp-formulation",
+      "transmission-limit-counterfactual-impact"
+    ],
+    "loaded_skills": [
+      "highs-dual-market-pricing-report",
+      "sparse-dcopf-reserve-lp-formulation",
+      "transmission-limit-counterfactual-impact"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "highs-dual-market-pricing-report",
+      "sparse-dcopf-reserve-lp-formulation",
+      "transmission-limit-counterfactual-impact"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-market-pricing__HEQarCF",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "highs-dual-market-pricing-report",
+          "sparse-dcopf-reserve-lp-formulation",
+          "transmission-limit-counterfactual-impact"
+        ],
+        "available_skills": [
+          "highs-dual-market-pricing-report",
+          "sparse-dcopf-reserve-lp-formulation",
+          "transmission-limit-counterfactual-impact"
+        ],
+        "loaded_skills": [
+          "highs-dual-market-pricing-report",
+          "sparse-dcopf-reserve-lp-formulation",
+          "transmission-limit-counterfactual-impact"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "highs-dual-market-pricing-report",
+          "sparse-dcopf-reserve-lp-formulation",
+          "transmission-limit-counterfactual-impact"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

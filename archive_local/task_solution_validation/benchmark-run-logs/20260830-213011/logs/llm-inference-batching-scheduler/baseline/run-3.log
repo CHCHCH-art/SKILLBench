@@ -1,0 +1,73 @@
+Task: llm-inference-batching-scheduler
+Source type: baseline
+Task run: 3
+Source run: 3
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\llm-inference-batching-scheduler
+
+========== Repeated Run 3/3 ==========
+
+========== Run solve.sh ==========
+Fatal Python error: _PyEval_EvalFrameDefault: Executing a cache.
+Python runtime state: initialized
+
+Current thread 0x00007ee22cfa7b80 (most recent call first):
+  File "/app/task_file/output/solution.py", line 205 in _decode_cost_per_req
+  File "/app/task_file/output/solution.py", line 226 in seg_cost
+  File "/app/task_file/output/solution.py", line 234 in _dp_split_by_cost
+  File "/app/task_file/output/solution.py", line 256 in _emit_records
+  File "/app/task_file/output/solution.py", line 299 in _build_for_reps
+  File "/app/task_file/output/solution.py", line 343 in _sweep_and_choose
+  File "/app/task_file/output/solution.py", line 394 in build_plan
+  File "/app/task_file/output/solution.py", line 405 in <module>
+/solution/solve.sh: line 418:   720 Aborted                 (core dumped) python3 $TARGET_DIR/solution.py
+
+========== Run test.sh ==========
+Hit:1 http://deb.debian.org/debian bookworm InRelease
+Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
+Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.88.1-10+deb12u15).
+0 upgraded, 0 newly installed, 0 to remove and 31 not upgraded.
+downloading uv 0.9.5 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+============================= test session starts ==============================
+platform linux -- Python 3.13.7, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 6 items
+
+../tests/test_outputs.py ......                                          [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_output_files_exist
+PASSED ../tests/test_outputs.py::test_input_data_integrity
+PASSED ../tests/test_outputs.py::test_generate_and_schema
+PASSED ../tests/test_outputs.py::test_solution_shape_feasibility_and_batch_consistency
+PASSED ../tests/test_outputs.py::test_solution_coverage_no_duplicates
+PASSED ../tests/test_outputs.py::test_performance_thresholds
+============================== 6 passed in 0.08s ===============================
+
+========== Result ==========
+Task: llm-inference-batching-scheduler
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 1.2s (exit 134)
+Test: 13.8s (exit 0)
+Solve Memory Peak: 64.7 MiB
+Test Memory Peak: 62.8 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s
+
+========== Cleanup ==========
+Removing container: test-solution-llm-inference-batching-scheduler-1788103162155982300-a9a164da

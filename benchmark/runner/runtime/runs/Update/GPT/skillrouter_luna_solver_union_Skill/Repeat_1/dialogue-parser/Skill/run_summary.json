@@ -1,0 +1,94 @@
+{
+  "schema_version": 9,
+  "task_id": "dialogue-parser",
+  "condition": "mapping",
+  "batch": "skillrouter_luna_solver_union_Skill_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 532.69921875,
+    "peak_memory_raw": "532.699 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2374,
+    "observed_containers": [
+      "dialogue-parser__brusrrq__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "dialogue-parser",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_luna_solver_union_Skill_Run003\\Repeat_1\\dialogue-parser\\mapping\\dialogue-parser\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.816,
+    "agent_setup_sec": 0.541,
+    "agent_execution_sec": 212.335,
+    "verifier_sec": 21.617,
+    "total_sec": 241.132
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 239755,
+  "agent_output_tokens": 5316,
+  "image_cache": {
+    "image": "benchmark-cache/dialogue-parser-gold:c0353fb4817c6884",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dialogue-graph-validation-serialization",
+      "dialogue-section-choice-parser"
+    ],
+    "available_skills": [
+      "dialogue-graph-validation-serialization",
+      "dialogue-section-choice-parser"
+    ],
+    "loaded_skills": [
+      "dialogue-graph-validation-serialization",
+      "dialogue-section-choice-parser"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "dialogue-graph-validation-serialization",
+      "dialogue-section-choice-parser"
+    ],
+    "trials": [
+      {
+        "trial_id": "dialogue-parser__bRusRRq",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "dialogue-graph-validation-serialization",
+          "dialogue-section-choice-parser"
+        ],
+        "available_skills": [
+          "dialogue-graph-validation-serialization",
+          "dialogue-section-choice-parser"
+        ],
+        "loaded_skills": [
+          "dialogue-graph-validation-serialization",
+          "dialogue-section-choice-parser"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "dialogue-graph-validation-serialization",
+          "dialogue-section-choice-parser"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

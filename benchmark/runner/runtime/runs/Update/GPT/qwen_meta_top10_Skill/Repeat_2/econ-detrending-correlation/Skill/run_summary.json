@@ -1,0 +1,163 @@
+{
+  "schema_version": 9,
+  "task_id": "econ-detrending-correlation",
+  "condition": "mapping",
+  "batch": "qwen_meta_top10_Skill_Run004",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_meta_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "trial_error",
+  "passed": false,
+  "error": [
+    {
+      "exception_type": "AgentTimeoutError",
+      "exception_message": "Agent execution timed out after 900.0 seconds"
+    }
+  ],
+  "failure_reason": "{\"exception_type\":\"AgentTimeoutError\",\"exception_message\":\"Agent execution timed out after 900.0 seconds\"}",
+  "peak_memory": {
+    "peak_memory_mib": 264.7109375,
+    "peak_memory_raw": "264.711 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 9326,
+    "observed_containers": [
+      "econ-detrending-correlation__lxbfarc__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "econ-detrending-corr",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_meta_top10_Skill_Run004\\Repeat_2\\econ-detrending-correlation\\mapping\\econ-detrending-correlation\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.409,
+    "agent_setup_sec": 0.332,
+    "agent_execution_sec": 900.718,
+    "verifier_sec": 32.528,
+    "total_sec": 941.767
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1392195,
+  "agent_output_tokens": 2852,
+  "image_cache": {
+    "image": "benchmark-cache/econ-detrending-correlation-gold:693ab5b971b40262",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "benchflow-ai--pca-decomposition",
+      "economic-series-workbook-extraction",
+      "erp-annual-partial-quarter-extraction",
+      "eyadsibai--data-science",
+      "eyh0602--senior-data-scientist",
+      "fatfingererr-fiscal-deficit-scenarios",
+      "heterogeneous-demographic-source-normalization-join",
+      "hp-cycle-correlation-verification",
+      "hp-log-cycle-correlation",
+      "net-export-statistics-sumproduct-formulas"
+    ],
+    "available_skills": [
+      "benchflow-ai--pca-decomposition",
+      "economic-series-workbook-extraction",
+      "erp-annual-partial-quarter-extraction",
+      "eyadsibai--data-science",
+      "eyh0602--senior-data-scientist",
+      "fatfingererr-fiscal-deficit-scenarios",
+      "heterogeneous-demographic-source-normalization-join",
+      "hp-cycle-correlation-verification",
+      "hp-log-cycle-correlation",
+      "net-export-statistics-sumproduct-formulas"
+    ],
+    "loaded_skills": [
+      "benchflow-ai--pca-decomposition",
+      "economic-series-workbook-extraction",
+      "erp-annual-partial-quarter-extraction",
+      "eyadsibai--data-science",
+      "eyh0602--senior-data-scientist",
+      "fatfingererr-fiscal-deficit-scenarios",
+      "heterogeneous-demographic-source-normalization-join",
+      "hp-cycle-correlation-verification",
+      "hp-log-cycle-correlation",
+      "net-export-statistics-sumproduct-formulas"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "benchflow-ai--pca-decomposition",
+      "economic-series-workbook-extraction",
+      "erp-annual-partial-quarter-extraction",
+      "eyadsibai--data-science",
+      "eyh0602--senior-data-scientist",
+      "fatfingererr-fiscal-deficit-scenarios",
+      "heterogeneous-demographic-source-normalization-join",
+      "hp-cycle-correlation-verification",
+      "hp-log-cycle-correlation",
+      "net-export-statistics-sumproduct-formulas"
+    ],
+    "trials": [
+      {
+        "trial_id": "econ-detrending-correlation__LXbFaRC",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "benchflow-ai--pca-decomposition",
+          "economic-series-workbook-extraction",
+          "erp-annual-partial-quarter-extraction",
+          "eyadsibai--data-science",
+          "eyh0602--senior-data-scientist",
+          "fatfingererr-fiscal-deficit-scenarios",
+          "heterogeneous-demographic-source-normalization-join",
+          "hp-cycle-correlation-verification",
+          "hp-log-cycle-correlation",
+          "net-export-statistics-sumproduct-formulas"
+        ],
+        "available_skills": [
+          "benchflow-ai--pca-decomposition",
+          "economic-series-workbook-extraction",
+          "erp-annual-partial-quarter-extraction",
+          "eyadsibai--data-science",
+          "eyh0602--senior-data-scientist",
+          "fatfingererr-fiscal-deficit-scenarios",
+          "heterogeneous-demographic-source-normalization-join",
+          "hp-cycle-correlation-verification",
+          "hp-log-cycle-correlation",
+          "net-export-statistics-sumproduct-formulas"
+        ],
+        "loaded_skills": [
+          "benchflow-ai--pca-decomposition",
+          "economic-series-workbook-extraction",
+          "erp-annual-partial-quarter-extraction",
+          "eyadsibai--data-science",
+          "eyh0602--senior-data-scientist",
+          "fatfingererr-fiscal-deficit-scenarios",
+          "heterogeneous-demographic-source-normalization-join",
+          "hp-cycle-correlation-verification",
+          "hp-log-cycle-correlation",
+          "net-export-statistics-sumproduct-formulas"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "benchflow-ai--pca-decomposition",
+          "economic-series-workbook-extraction",
+          "erp-annual-partial-quarter-extraction",
+          "eyadsibai--data-science",
+          "eyh0602--senior-data-scientist",
+          "fatfingererr-fiscal-deficit-scenarios",
+          "heterogeneous-demographic-source-normalization-join",
+          "hp-cycle-correlation-verification",
+          "hp-log-cycle-correlation",
+          "net-export-statistics-sumproduct-formulas"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

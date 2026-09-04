@@ -1,0 +1,214 @@
+2026-09-02T04:56:17.281575+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=dapt-intrusion-detection condition=mapping
+2026-09-02T04:56:17.281575+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-02T05:00:18.214112+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-02T05:00:18.229158+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-02T05:02:08.314922+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-02T05:02:08.325050+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=dapt-intrusion-detection condition=mapping
+2026-09-02T05:05:55.266320+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-02T05:05:55.272002+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-02T05:06:45.690870+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-02T05:06:45.701846+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=dapt-intrusion-detection condition=mapping
+2026-09-02T05:09:38.385173+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-02T05:09:38.400006+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=dialogue-parser condition=mapping
+2026-09-02T05:12:35.255544+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=dialogue-parser condition=mapping status=completed
+2026-09-02T05:12:35.261264+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=dialogue-parser condition=mapping
+2026-09-02T05:13:38.555427+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-02T05:13:38.563833+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=distribution-search condition=mapping
+2026-09-02T05:16:16.406417+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=distribution-search condition=mapping status=completed
+2026-09-02T05:16:16.412433+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=distribution-search condition=mapping
+2026-09-02T05:17:44.812634+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=dialogue-parser condition=mapping status=completed
+2026-09-02T05:17:44.817972+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=dialogue-parser condition=mapping
+2026-09-02T05:20:28.555695+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=distribution-search condition=mapping status=completed
+2026-09-02T05:20:28.562044+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=distribution-search condition=mapping
+2026-09-02T05:24:36.991243+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=dialogue-parser condition=mapping status=completed
+2026-09-02T05:24:36.995946+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-02T05:25:26.380894+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=distribution-search condition=mapping status=completed
+2026-09-02T05:25:26.384642+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=earthquake-plate-calculation condition=mapping
+2026-09-02T05:27:51.344004+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-02T05:27:51.349706+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=earthquake-plate-calculation condition=mapping
+2026-09-02T05:34:36.583228+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-02T05:34:36.589456+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=earthquake-plate-calculation condition=mapping
+2026-09-02T05:35:25.935954+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-02T05:35:25.941634+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-02T05:39:26.789231+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-02T05:39:26.794908+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=econ-detrending-correlation condition=mapping
+2026-09-02T05:42:34.649447+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-02T05:42:34.655811+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-02T05:55:16.107221+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-02T05:55:16.113849+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-02T05:58:36.175757+00:00 ERROR operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=econ-detrending-correlation condition=mapping status=trial_error
+2026-09-02T05:58:36.180945+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=econ-detrending-correlation condition=mapping
+2026-09-02T06:10:41.027442+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=econ-detrending-correlation condition=mapping status=completed
+2026-09-02T06:10:41.033051+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=econ-detrending-correlation condition=mapping
+2026-09-02T06:24:15.900275+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-02T06:24:15.906244+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-02T06:26:23.397529+00:00 ERROR operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=econ-detrending-correlation condition=mapping status=trial_error
+2026-09-02T06:26:23.402436+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=energy-market-pricing condition=mapping
+2026-09-02T06:41:01.040125+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-02T06:41:01.046417+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-02T06:42:29.750762+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=energy-market-pricing condition=mapping status=completed
+2026-09-02T06:42:29.756443+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=energy-market-pricing condition=mapping
+2026-09-02T06:58:12.230881+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=energy-market-pricing condition=mapping status=completed
+2026-09-02T06:58:12.248953+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=energy-market-pricing condition=mapping
+2026-09-02T06:59:47.704860+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-02T06:59:47.710666+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=exceltable-in-ppt condition=mapping
+2026-09-02T07:05:22.430735+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-02T07:05:22.441524+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=exceltable-in-ppt condition=mapping
+2026-09-02T07:08:52.651270+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=energy-market-pricing condition=mapping status=completed
+2026-09-02T07:08:52.657228+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=exoplanet-detection-period condition=mapping
+2026-09-02T07:11:41.975082+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-02T07:11:41.979848+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=exceltable-in-ppt condition=mapping
+2026-09-02T07:16:16.748812+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-02T07:16:16.748812+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=financial-modeling-qa condition=mapping
+2026-09-02T07:20:16.944822+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=financial-modeling-qa condition=mapping status=completed
+2026-09-02T07:20:16.944822+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=financial-modeling-qa condition=mapping
+2026-09-02T07:26:18.781500+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=financial-modeling-qa condition=mapping status=completed
+2026-09-02T07:26:18.781500+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=financial-modeling-qa condition=mapping
+2026-09-02T07:30:56.428818+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=financial-modeling-qa condition=mapping status=completed
+2026-09-02T07:30:56.433266+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=find-topk-similiar-chemicals condition=mapping
+2026-09-02T07:31:16.277449+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=exoplanet-detection-period condition=mapping status=completed
+2026-09-02T07:31:16.281713+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=exoplanet-detection-period condition=mapping
+2026-09-02T07:37:58.382913+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-02T07:37:58.386046+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=find-topk-similiar-chemicals condition=mapping
+2026-09-02T07:43:38.525171+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-02T07:43:38.525171+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=find-topk-similiar-chemicals condition=mapping
+2026-09-02T07:50:26.632048+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-02T07:50:26.642367+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=glm-lake-mendota condition=mapping
+2026-09-02T08:08:38.602343+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=glm-lake-mendota condition=mapping status=completed
+2026-09-02T08:08:38.608880+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=glm-lake-mendota condition=mapping
+2026-09-02T08:16:02.645904+00:00 ERROR operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=exoplanet-detection-period condition=mapping status=trial_error
+2026-09-02T08:16:02.650678+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=exoplanet-detection-period condition=mapping
+2026-09-02T08:28:34.932431+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=glm-lake-mendota condition=mapping status=completed
+2026-09-02T08:28:34.937487+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=glm-lake-mendota condition=mapping
+2026-09-02T08:45:17.295593+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=glm-lake-mendota condition=mapping status=completed
+2026-09-02T08:45:17.301558+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=gravitational-wave-detection condition=mapping
+2026-09-02T08:49:49.853737+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=exoplanet-detection-period condition=mapping status=completed
+2026-09-02T08:49:49.859870+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=grid-dispatch-operator condition=mapping
+2026-09-02T09:06:24.652627+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-02T09:06:24.658371+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=gravitational-wave-detection condition=mapping
+2026-09-02T09:23:40.215056+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-02T09:23:40.220575+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=grid-dispatch-operator condition=mapping
+2026-09-02T09:27:41.769533+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-02T09:27:41.780107+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=gravitational-wave-detection condition=mapping
+2026-09-02T09:34:35.203114+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-02T09:34:35.206022+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=grid-dispatch-operator condition=mapping
+2026-09-02T09:44:02.228466+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-02T09:44:02.234315+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=hf-model-inference condition=mapping
+2026-09-02T09:46:26.243065+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-02T09:46:26.255657+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=invoice-fraud-detection condition=mapping
+2026-09-02T09:55:38.403559+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=hf-model-inference condition=mapping status=completed
+2026-09-02T09:55:38.415327+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=hf-model-inference condition=mapping
+2026-09-02T09:56:02.261274+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-02T09:56:02.269377+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=invoice-fraud-detection condition=mapping
+2026-09-02T10:00:34.602959+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-02T10:00:34.614303+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=invoice-fraud-detection condition=mapping
+2026-09-02T10:01:34.596938+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=hf-model-inference condition=mapping status=completed
+2026-09-02T10:01:34.608281+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=hf-model-inference condition=mapping
+2026-09-02T10:05:27.290053+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-02T10:05:27.294867+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=jpg-ocr-stat condition=mapping
+2026-09-02T10:08:52.610487+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=hf-model-inference condition=mapping status=completed
+2026-09-02T10:08:52.616228+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=llm-inference-batching-scheduler condition=mapping
+2026-09-02T10:22:10.945455+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-02T10:22:10.954707+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=jpg-ocr-stat condition=mapping
+2026-09-02T10:22:55.670126+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-02T10:22:55.676471+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=llm-inference-batching-scheduler condition=mapping
+2026-09-02T10:32:06.624724+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-02T10:32:06.631063+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=jpg-ocr-stat condition=mapping
+2026-09-02T10:36:32.541352+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-02T10:36:32.548423+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=llm-inference-batching-scheduler condition=mapping
+2026-09-02T10:39:18.168263+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-02T10:39:18.172310+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=log-summary-date-ranges condition=mapping
+2026-09-02T10:47:31.234939+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-02T10:47:31.234939+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=log-summary-date-ranges condition=mapping
+2026-09-02T10:48:11.090821+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-02T10:48:11.090821+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=mario-coin-counting condition=mapping
+2026-09-02T10:51:13.314344+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-02T10:51:13.320744+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=log-summary-date-ranges condition=mapping
+2026-09-02T10:53:53.715928+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-02T10:53:53.721146+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=mars-clouds-clustering condition=mapping
+2026-09-02T10:54:29.842456+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=mario-coin-counting condition=mapping status=completed
+2026-09-02T10:54:29.850026+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=mario-coin-counting condition=mapping
+2026-09-02T10:58:00.592835+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=mario-coin-counting condition=mapping status=completed
+2026-09-02T10:58:00.600829+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=mario-coin-counting condition=mapping
+2026-09-02T11:01:27.244475+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-02T11:01:27.252403+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=mars-clouds-clustering condition=mapping
+2026-09-02T11:05:05.628538+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=mario-coin-counting condition=mapping status=completed
+2026-09-02T11:05:05.636037+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=mteb-retrieve condition=mapping
+2026-09-02T11:09:50.591150+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-02T11:09:50.595758+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=mars-clouds-clustering condition=mapping
+2026-09-02T11:18:39.471477+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=mteb-retrieve condition=mapping status=completed
+2026-09-02T11:18:39.477065+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=mteb-retrieve condition=mapping
+2026-09-02T11:18:49.439335+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-02T11:18:49.446589+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=pdf-excel-diff condition=mapping
+2026-09-02T11:24:57.422514+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=pdf-excel-diff condition=mapping status=completed
+2026-09-02T11:24:57.427534+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=pdf-excel-diff condition=mapping
+2026-09-02T11:55:03.086441+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=pdf-excel-diff condition=mapping status=completed
+2026-09-02T11:55:03.091420+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=pdf-excel-diff condition=mapping
+2026-09-02T12:07:08.739537+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=mteb-retrieve condition=mapping status=completed
+2026-09-02T12:07:08.746664+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=mteb-retrieve condition=mapping
+2026-09-02T12:18:29.233205+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=pdf-excel-diff condition=mapping status=completed
+2026-09-02T12:18:29.237880+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=portfolio-optimization condition=mapping
+2026-09-02T12:25:38.486394+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=portfolio-optimization condition=mapping status=completed
+2026-09-02T12:25:38.494964+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=portfolio-optimization condition=mapping
+2026-09-02T12:33:05.009921+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=portfolio-optimization condition=mapping status=completed
+2026-09-02T12:33:05.022261+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=portfolio-optimization condition=mapping
+2026-09-02T12:37:35.385893+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=portfolio-optimization condition=mapping status=completed
+2026-09-02T12:37:35.395443+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=powerlifting-coef-calc condition=mapping
+2026-09-02T12:42:07.980298+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-02T12:42:07.989297+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=powerlifting-coef-calc condition=mapping
+2026-09-02T12:48:35.764210+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-02T12:48:35.771108+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=powerlifting-coef-calc condition=mapping
+2026-09-02T12:53:10.234737+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-02T12:53:10.245176+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=protein-expression-analysis condition=mapping
+2026-09-02T12:57:56.060237+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=protein-expression-analysis condition=mapping status=completed
+2026-09-02T12:57:56.065964+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=protein-expression-analysis condition=mapping
+2026-09-02T13:05:04.573491+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=protein-expression-analysis condition=mapping status=completed
+2026-09-02T13:05:04.580101+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=protein-expression-analysis condition=mapping
+2026-09-02T13:08:59.563992+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=protein-expression-analysis condition=mapping status=completed
+2026-09-02T13:08:59.565996+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=quantum-numerical-simulation condition=mapping
+2026-09-02T13:10:59.206286+00:00 ERROR operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=mteb-retrieve condition=mapping status=trial_error
+2026-09-02T13:10:59.220167+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=sales-pivot-analysis condition=mapping
+2026-09-02T13:22:16.189888+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-02T13:22:16.194916+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=quantum-numerical-simulation condition=mapping
+2026-09-02T13:23:41.423929+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=sales-pivot-analysis condition=mapping status=completed
+2026-09-02T13:23:41.429417+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=sales-pivot-analysis condition=mapping
+2026-09-02T13:32:55.920485+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-02T13:32:55.924619+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=quantum-numerical-simulation condition=mapping
+2026-09-02T13:39:08.076739+00:00 ERROR operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=sales-pivot-analysis condition=mapping status=trial_error
+2026-09-02T13:39:08.085673+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=sales-pivot-analysis condition=mapping
+2026-09-02T13:39:56.872979+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-02T13:39:56.880296+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=software-dependency-audit condition=mapping
+2026-09-02T13:44:27.833668+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=software-dependency-audit condition=mapping status=completed
+2026-09-02T13:44:27.839392+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=software-dependency-audit condition=mapping
+2026-09-02T13:47:10.696936+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=software-dependency-audit condition=mapping status=completed
+2026-09-02T13:47:10.696936+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=software-dependency-audit condition=mapping
+2026-09-02T13:47:58.879552+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=sales-pivot-analysis condition=mapping status=completed
+2026-09-02T13:47:58.885258+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=train-fasttext condition=mapping
+2026-09-02T13:52:20.995319+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=software-dependency-audit condition=mapping status=completed
+2026-09-02T13:52:20.997376+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=video-silence-remover condition=mapping
+2026-09-02T13:56:43.097434+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=video-silence-remover condition=mapping status=completed
+2026-09-02T13:56:43.105312+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=video-silence-remover condition=mapping
+2026-09-02T13:59:19.502457+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=video-silence-remover condition=mapping status=completed
+2026-09-02T13:59:19.511089+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=video-silence-remover condition=mapping
+2026-09-02T14:03:05.823603+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=video-silence-remover condition=mapping status=completed
+2026-09-02T14:03:05.831980+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=virtualhome-agent-planning condition=mapping
+2026-09-02T14:09:30.310509+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-02T14:09:30.326564+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=virtualhome-agent-planning condition=mapping
+2026-09-02T14:14:58.601679+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-02T14:14:58.618876+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=virtualhome-agent-planning condition=mapping
+2026-09-02T14:18:47.871819+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-02T14:18:47.886910+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=weighted-gdp-calc condition=mapping
+2026-09-02T14:26:49.406335+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-02T14:26:49.412262+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=weighted-gdp-calc condition=mapping
+2026-09-02T14:29:42.290971+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-02T14:29:42.294978+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=weighted-gdp-calc condition=mapping
+2026-09-02T14:37:00.939580+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=1 task=train-fasttext condition=mapping status=completed
+2026-09-02T14:37:00.947775+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=train-fasttext condition=mapping
+2026-09-02T14:38:16.493521+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-02T15:49:14.428695+00:00 ERROR operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=train-fasttext condition=mapping status=trial_error
+2026-09-02T15:49:14.432983+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=train-fasttext condition=mapping
+2026-09-02T16:27:31.295024+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=train-fasttext condition=mapping status=completed
+2026-09-02T22:58:50.802312+00:00 START operation=rerun batch=skillrouter_top10_Skill_Run005 repeat=3 task=mteb-retrieve condition=mapping
+2026-09-02T23:05:21.360937+00:00 ERROR operation=rerun batch=skillrouter_top10_Skill_Run005 repeat=3 task=mteb-retrieve condition=mapping status=harbor_error
+2026-09-02T23:05:26.886891+00:00 START operation=rerun batch=skillrouter_top10_Skill_Run005 repeat=3 task=mteb-retrieve condition=mapping
+2026-09-02T23:18:48.642430+00:00 PASS operation=rerun batch=skillrouter_top10_Skill_Run005 repeat=3 task=mteb-retrieve condition=mapping status=completed

@@ -1,0 +1,163 @@
+{
+  "schema_version": 9,
+  "task_id": "sales-pivot-analysis",
+  "condition": "mapping",
+  "batch": "qwen_meta_top10_Skill_Run004",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_meta_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "trial_error",
+  "passed": false,
+  "error": [
+    {
+      "exception_type": "AgentTimeoutError",
+      "exception_message": "Agent execution timed out after 900.0 seconds"
+    }
+  ],
+  "failure_reason": "{\"exception_type\":\"AgentTimeoutError\",\"exception_message\":\"Agent execution timed out after 900.0 seconds\"}",
+  "peak_memory": {
+    "peak_memory_mib": 1448.8984375,
+    "peak_memory_raw": "1448.898 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 9493,
+    "observed_containers": [
+      "sales-pivot-analysis__zsuf5s4__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "sales-pivot-analysis",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_meta_top10_Skill_Run004\\Repeat_1\\sales-pivot-analysis\\mapping\\sales-pivot-analysis\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.531,
+    "agent_setup_sec": 0.687,
+    "agent_execution_sec": 900.454,
+    "verifier_sec": 48.722,
+    "total_sec": 963.3
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 2284217,
+  "agent_output_tokens": 10782,
+  "image_cache": {
+    "image": "benchmark-cache/sales-pivot-analysis-gold:0de7e366d80d6ca8",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "apache-poi-native-pivot-workbook",
+      "benchflow-ai--xlsx-1",
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quantile-derived-enrichment",
+      "demographic-quartile-derived-enrichment",
+      "famaoai-creator--excel-artisan",
+      "heterogeneous-demographic-source-normalization-join",
+      "openpyxl-native-pivot-workbook",
+      "sbroenne--excel-mcp",
+      "sickn33--xlsx-official"
+    ],
+    "available_skills": [
+      "apache-poi-native-pivot-workbook",
+      "benchflow-ai--xlsx-1",
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quantile-derived-enrichment",
+      "demographic-quartile-derived-enrichment",
+      "famaoai-creator--excel-artisan",
+      "heterogeneous-demographic-source-normalization-join",
+      "openpyxl-native-pivot-workbook",
+      "sbroenne--excel-mcp",
+      "sickn33--xlsx-official"
+    ],
+    "loaded_skills": [
+      "apache-poi-native-pivot-workbook",
+      "benchflow-ai--xlsx-1",
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quantile-derived-enrichment",
+      "demographic-quartile-derived-enrichment",
+      "famaoai-creator--excel-artisan",
+      "heterogeneous-demographic-source-normalization-join",
+      "openpyxl-native-pivot-workbook",
+      "sbroenne--excel-mcp",
+      "sickn33--xlsx-official"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "apache-poi-native-pivot-workbook",
+      "benchflow-ai--xlsx-1",
+      "demographic-pdf-excel-normalization-join",
+      "demographic-quantile-derived-enrichment",
+      "demographic-quartile-derived-enrichment",
+      "famaoai-creator--excel-artisan",
+      "heterogeneous-demographic-source-normalization-join",
+      "openpyxl-native-pivot-workbook",
+      "sbroenne--excel-mcp",
+      "sickn33--xlsx-official"
+    ],
+    "trials": [
+      {
+        "trial_id": "sales-pivot-analysis__zSUf5s4",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "apache-poi-native-pivot-workbook",
+          "benchflow-ai--xlsx-1",
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quantile-derived-enrichment",
+          "demographic-quartile-derived-enrichment",
+          "famaoai-creator--excel-artisan",
+          "heterogeneous-demographic-source-normalization-join",
+          "openpyxl-native-pivot-workbook",
+          "sbroenne--excel-mcp",
+          "sickn33--xlsx-official"
+        ],
+        "available_skills": [
+          "apache-poi-native-pivot-workbook",
+          "benchflow-ai--xlsx-1",
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quantile-derived-enrichment",
+          "demographic-quartile-derived-enrichment",
+          "famaoai-creator--excel-artisan",
+          "heterogeneous-demographic-source-normalization-join",
+          "openpyxl-native-pivot-workbook",
+          "sbroenne--excel-mcp",
+          "sickn33--xlsx-official"
+        ],
+        "loaded_skills": [
+          "apache-poi-native-pivot-workbook",
+          "benchflow-ai--xlsx-1",
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quantile-derived-enrichment",
+          "demographic-quartile-derived-enrichment",
+          "famaoai-creator--excel-artisan",
+          "heterogeneous-demographic-source-normalization-join",
+          "openpyxl-native-pivot-workbook",
+          "sbroenne--excel-mcp",
+          "sickn33--xlsx-official"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "apache-poi-native-pivot-workbook",
+          "benchflow-ai--xlsx-1",
+          "demographic-pdf-excel-normalization-join",
+          "demographic-quantile-derived-enrichment",
+          "demographic-quartile-derived-enrichment",
+          "famaoai-creator--excel-artisan",
+          "heterogeneous-demographic-source-normalization-join",
+          "openpyxl-native-pivot-workbook",
+          "sbroenne--excel-mcp",
+          "sickn33--xlsx-official"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

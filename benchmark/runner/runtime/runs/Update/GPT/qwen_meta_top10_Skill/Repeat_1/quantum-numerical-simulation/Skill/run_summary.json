@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "quantum-numerical-simulation",
+  "condition": "mapping",
+  "batch": "qwen_meta_top10_Skill_Run004",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_meta_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 948.85546875,
+    "peak_memory_raw": "948.855 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 4623,
+    "observed_containers": [
+      "quantum-numerical-simulation__kjdxnka__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "quantum-numerical-si",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_meta_top10_Skill_Run004\\Repeat_1\\quantum-numerical-simulation\\mapping\\quantum-numerical-simulation\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.072,
+    "agent_setup_sec": 0.561,
+    "agent_execution_sec": 232.984,
+    "verifier_sec": 234.893,
+    "total_sec": 479.334
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 569425,
+  "agent_output_tokens": 4240,
+  "image_cache": {
+    "image": "benchmark-cache/quantum-numerical-simulation-gold:8597d1a23d4799e3",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "HeshamFS--simulation-orchestrator",
+      "HeshamFS--simulation-validator",
+      "arpack-liouvillian-steady-state",
+      "benchflow-ai--qutip",
+      "cavity-wigner-grid-export",
+      "davila7--pennylane",
+      "direct-steady-state-cavity-wigner-export",
+      "piqs-open-dicke-liouvillian",
+      "piqs-open-dicke-superoperator-construction",
+      "plurigrid--quantum-guitar"
+    ],
+    "available_skills": [
+      "HeshamFS--simulation-orchestrator",
+      "HeshamFS--simulation-validator",
+      "arpack-liouvillian-steady-state",
+      "benchflow-ai--qutip",
+      "cavity-wigner-grid-export",
+      "davila7--pennylane",
+      "direct-steady-state-cavity-wigner-export",
+      "piqs-open-dicke-liouvillian",
+      "piqs-open-dicke-superoperator-construction",
+      "plurigrid--quantum-guitar"
+    ],
+    "loaded_skills": [
+      "HeshamFS--simulation-orchestrator",
+      "HeshamFS--simulation-validator",
+      "arpack-liouvillian-steady-state",
+      "benchflow-ai--qutip",
+      "cavity-wigner-grid-export",
+      "davila7--pennylane",
+      "direct-steady-state-cavity-wigner-export",
+      "piqs-open-dicke-liouvillian",
+      "piqs-open-dicke-superoperator-construction",
+      "plurigrid--quantum-guitar"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "HeshamFS--simulation-orchestrator",
+      "HeshamFS--simulation-validator",
+      "arpack-liouvillian-steady-state",
+      "benchflow-ai--qutip",
+      "cavity-wigner-grid-export",
+      "davila7--pennylane",
+      "direct-steady-state-cavity-wigner-export",
+      "piqs-open-dicke-liouvillian",
+      "piqs-open-dicke-superoperator-construction",
+      "plurigrid--quantum-guitar"
+    ],
+    "trials": [
+      {
+        "trial_id": "quantum-numerical-simulation__kJDxnkA",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "HeshamFS--simulation-orchestrator",
+          "HeshamFS--simulation-validator",
+          "arpack-liouvillian-steady-state",
+          "benchflow-ai--qutip",
+          "cavity-wigner-grid-export",
+          "davila7--pennylane",
+          "direct-steady-state-cavity-wigner-export",
+          "piqs-open-dicke-liouvillian",
+          "piqs-open-dicke-superoperator-construction",
+          "plurigrid--quantum-guitar"
+        ],
+        "available_skills": [
+          "HeshamFS--simulation-orchestrator",
+          "HeshamFS--simulation-validator",
+          "arpack-liouvillian-steady-state",
+          "benchflow-ai--qutip",
+          "cavity-wigner-grid-export",
+          "davila7--pennylane",
+          "direct-steady-state-cavity-wigner-export",
+          "piqs-open-dicke-liouvillian",
+          "piqs-open-dicke-superoperator-construction",
+          "plurigrid--quantum-guitar"
+        ],
+        "loaded_skills": [
+          "HeshamFS--simulation-orchestrator",
+          "HeshamFS--simulation-validator",
+          "arpack-liouvillian-steady-state",
+          "benchflow-ai--qutip",
+          "cavity-wigner-grid-export",
+          "davila7--pennylane",
+          "direct-steady-state-cavity-wigner-export",
+          "piqs-open-dicke-liouvillian",
+          "piqs-open-dicke-superoperator-construction",
+          "plurigrid--quantum-guitar"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "HeshamFS--simulation-orchestrator",
+          "HeshamFS--simulation-validator",
+          "arpack-liouvillian-steady-state",
+          "benchflow-ai--qutip",
+          "cavity-wigner-grid-export",
+          "davila7--pennylane",
+          "direct-steady-state-cavity-wigner-export",
+          "piqs-open-dicke-liouvillian",
+          "piqs-open-dicke-superoperator-construction",
+          "plurigrid--quantum-guitar"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,210 @@
+2026-09-02T04:55:49.834852+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-02T04:55:49.834852+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=dapt-intrusion-detection condition=mapping
+2026-09-02T04:57:59.520162+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-02T04:57:59.525998+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-02T05:03:36.772687+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-02T05:03:36.778455+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-02T05:03:57.092071+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-02T05:03:57.102883+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=dapt-intrusion-detection condition=mapping
+2026-09-02T05:06:43.589557+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-02T05:06:43.589557+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=dialogue-parser condition=mapping
+2026-09-02T05:10:10.121532+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-02T05:10:10.125623+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=dapt-intrusion-detection condition=mapping
+2026-09-02T05:11:01.974435+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=dialogue-parser condition=mapping status=completed
+2026-09-02T05:11:01.979125+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=dialogue-parser condition=mapping
+2026-09-02T05:14:32.195242+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-02T05:14:32.204009+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=distribution-search condition=mapping
+2026-09-02T05:14:36.675963+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=dialogue-parser condition=mapping status=completed
+2026-09-02T05:14:36.681659+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=dialogue-parser condition=mapping
+2026-09-02T05:18:36.663884+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=distribution-search condition=mapping status=completed
+2026-09-02T05:18:36.666011+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=distribution-search condition=mapping
+2026-09-02T05:20:22.219957+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=dialogue-parser condition=mapping status=completed
+2026-09-02T05:20:22.229069+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-02T05:22:45.987837+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=distribution-search condition=mapping status=completed
+2026-09-02T05:22:46.001383+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=distribution-search condition=mapping
+2026-09-02T05:25:39.614324+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=distribution-search condition=mapping status=completed
+2026-09-02T05:25:39.623477+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=earthquake-plate-calculation condition=mapping
+2026-09-02T05:27:45.031569+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-02T05:27:45.036746+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-02T05:30:28.823092+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-02T05:30:28.828789+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=earthquake-plate-calculation condition=mapping
+2026-09-02T05:36:56.069873+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-02T05:36:56.075880+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-02T05:40:30.183934+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-02T05:40:30.189690+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=earthquake-plate-calculation condition=mapping
+2026-09-02T05:44:39.612533+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-02T05:44:39.621973+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=econ-detrending-correlation condition=mapping
+2026-09-02T05:45:44.111094+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-02T05:45:44.118022+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-02T05:50:00.227775+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=econ-detrending-correlation condition=mapping status=completed
+2026-09-02T05:50:00.229795+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=econ-detrending-correlation condition=mapping
+2026-09-02T06:05:38.551141+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-02T06:05:38.556102+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-02T06:05:43.221223+00:00 ERROR operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=econ-detrending-correlation condition=mapping status=trial_error
+2026-09-02T06:05:43.226982+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=econ-detrending-correlation condition=mapping
+2026-09-02T06:21:06.993284+00:00 ERROR operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=econ-detrending-correlation condition=mapping status=trial_error
+2026-09-02T06:21:06.998492+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=energy-market-pricing condition=mapping
+2026-09-02T06:31:09.605994+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=energy-market-pricing condition=mapping status=completed
+2026-09-02T06:31:09.616412+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=energy-market-pricing condition=mapping
+2026-09-02T06:33:35.933069+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-02T06:33:35.936710+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-02T06:47:33.185792+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=energy-market-pricing condition=mapping status=completed
+2026-09-02T06:47:33.192207+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=energy-market-pricing condition=mapping
+2026-09-02T06:52:17.837442+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-02T06:52:17.840522+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=exceltable-in-ppt condition=mapping
+2026-09-02T07:00:52.261510+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=energy-market-pricing condition=mapping status=completed
+2026-09-02T07:00:52.274013+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=exoplanet-detection-period condition=mapping
+2026-09-02T07:01:37.786675+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-02T07:01:37.786675+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=exceltable-in-ppt condition=mapping
+2026-09-02T07:06:43.245470+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-02T07:06:43.252211+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=exceltable-in-ppt condition=mapping
+2026-09-02T07:12:05.143333+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-02T07:12:05.143333+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=financial-modeling-qa condition=mapping
+2026-09-02T07:19:00.952977+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=financial-modeling-qa condition=mapping status=completed
+2026-09-02T07:19:00.957913+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=financial-modeling-qa condition=mapping
+2026-09-02T07:24:54.095048+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=financial-modeling-qa condition=mapping status=completed
+2026-09-02T07:24:54.100641+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=financial-modeling-qa condition=mapping
+2026-09-02T07:31:58.997956+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=financial-modeling-qa condition=mapping status=completed
+2026-09-02T07:31:59.003684+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=find-topk-similiar-chemicals condition=mapping
+2026-09-02T07:32:19.925047+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=exoplanet-detection-period condition=mapping status=completed
+2026-09-02T07:32:19.925047+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=exoplanet-detection-period condition=mapping
+2026-09-02T07:39:32.976078+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-02T07:39:32.981851+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=find-topk-similiar-chemicals condition=mapping
+2026-09-02T07:50:48.323119+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-02T07:50:48.323119+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=find-topk-similiar-chemicals condition=mapping
+2026-09-02T07:57:45.925602+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-02T07:57:45.934713+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=glm-lake-mendota condition=mapping
+2026-09-02T08:11:33.844399+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=exoplanet-detection-period condition=mapping status=completed
+2026-09-02T08:11:33.849861+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=exoplanet-detection-period condition=mapping
+2026-09-02T08:22:18.522116+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=glm-lake-mendota condition=mapping status=completed
+2026-09-02T08:22:18.535211+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=glm-lake-mendota condition=mapping
+2026-09-02T08:31:48.024118+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=exoplanet-detection-period condition=mapping status=completed
+2026-09-02T08:31:48.030449+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=gravitational-wave-detection condition=mapping
+2026-09-02T08:39:48.124393+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=glm-lake-mendota condition=mapping status=completed
+2026-09-02T08:39:48.136391+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=glm-lake-mendota condition=mapping
+2026-09-02T08:52:57.431975+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-02T08:52:57.437859+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=gravitational-wave-detection condition=mapping
+2026-09-02T08:55:40.091219+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=glm-lake-mendota condition=mapping status=completed
+2026-09-02T08:55:40.092723+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=grid-dispatch-operator condition=mapping
+2026-09-02T09:14:45.655898+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-02T09:14:45.655898+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=grid-dispatch-operator condition=mapping
+2026-09-02T09:24:13.172512+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-02T09:24:13.175954+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=grid-dispatch-operator condition=mapping
+2026-09-02T09:24:23.100084+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-02T09:24:23.110916+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=gravitational-wave-detection condition=mapping
+2026-09-02T10:05:57.506918+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-02T10:05:57.512463+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=hf-model-inference condition=mapping
+2026-09-02T10:07:33.623249+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-02T10:07:33.628492+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=invoice-fraud-detection condition=mapping
+2026-09-02T10:11:29.695027+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=hf-model-inference condition=mapping status=completed
+2026-09-02T10:11:29.700543+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=hf-model-inference condition=mapping
+2026-09-02T10:11:51.173485+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-02T10:11:51.178573+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=invoice-fraud-detection condition=mapping
+2026-09-02T10:15:52.537342+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-02T10:15:52.539005+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=invoice-fraud-detection condition=mapping
+2026-09-02T10:18:09.450984+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=hf-model-inference condition=mapping status=completed
+2026-09-02T10:18:09.457381+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=hf-model-inference condition=mapping
+2026-09-02T10:18:49.026859+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-02T10:18:49.033617+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=jpg-ocr-stat condition=mapping
+2026-09-02T10:24:25.506508+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=hf-model-inference condition=mapping status=completed
+2026-09-02T10:24:25.511831+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=llm-inference-batching-scheduler condition=mapping
+2026-09-02T10:30:01.193468+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-02T10:30:01.203061+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=llm-inference-batching-scheduler condition=mapping
+2026-09-02T10:35:17.926243+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-02T10:35:17.939604+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=jpg-ocr-stat condition=mapping
+2026-09-02T10:36:03.099460+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-02T10:36:03.106154+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=llm-inference-batching-scheduler condition=mapping
+2026-09-02T10:48:45.582208+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-02T10:48:45.592555+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=jpg-ocr-stat condition=mapping
+2026-09-02T10:55:11.907319+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-02T10:55:11.913656+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=log-summary-date-ranges condition=mapping
+2026-09-02T10:57:55.078584+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-02T10:57:55.084828+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=log-summary-date-ranges condition=mapping
+2026-09-02T10:58:34.336324+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-02T10:58:34.349934+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=mario-coin-counting condition=mapping
+2026-09-02T11:02:25.938447+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-02T11:02:25.944437+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=log-summary-date-ranges condition=mapping
+2026-09-02T11:11:06.015659+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=mario-coin-counting condition=mapping status=completed
+2026-09-02T11:11:06.022863+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=mario-coin-counting condition=mapping
+2026-09-02T11:12:03.718150+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-02T11:12:03.724165+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=mars-clouds-clustering condition=mapping
+2026-09-02T11:17:09.724199+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=mario-coin-counting condition=mapping status=completed
+2026-09-02T11:17:09.727761+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=mario-coin-counting condition=mapping
+2026-09-02T11:21:18.990015+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-02T11:21:18.993597+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=mars-clouds-clustering condition=mapping
+2026-09-02T11:22:14.541553+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=mario-coin-counting condition=mapping status=completed
+2026-09-02T11:22:14.551536+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=mteb-retrieve condition=mapping
+2026-09-02T11:29:08.034283+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-02T11:29:08.041132+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=mars-clouds-clustering condition=mapping
+2026-09-02T11:36:16.521908+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=mteb-retrieve condition=mapping status=completed
+2026-09-02T11:36:16.528791+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=mteb-retrieve condition=mapping
+2026-09-02T11:38:50.430257+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-02T11:38:50.436431+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=pdf-excel-diff condition=mapping
+2026-09-02T11:49:43.524843+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=mteb-retrieve condition=mapping status=completed
+2026-09-02T11:49:43.532117+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=mteb-retrieve condition=mapping
+2026-09-02T11:56:37.058074+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=pdf-excel-diff condition=mapping status=completed
+2026-09-02T11:56:37.063223+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=pdf-excel-diff condition=mapping
+2026-09-02T12:42:56.198932+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=mteb-retrieve condition=mapping status=completed
+2026-09-02T12:42:56.206571+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=portfolio-optimization condition=mapping
+2026-09-02T12:44:13.925670+00:00 ERROR operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=pdf-excel-diff condition=mapping status=trial_error
+2026-09-02T12:44:13.932568+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=pdf-excel-diff condition=mapping
+2026-09-02T12:50:04.465779+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=portfolio-optimization condition=mapping status=completed
+2026-09-02T12:50:04.472185+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=portfolio-optimization condition=mapping
+2026-09-02T12:57:10.922599+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=portfolio-optimization condition=mapping status=completed
+2026-09-02T12:57:10.928657+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=portfolio-optimization condition=mapping
+2026-09-02T13:06:26.525335+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=portfolio-optimization condition=mapping status=completed
+2026-09-02T13:06:26.539039+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=powerlifting-coef-calc condition=mapping
+2026-09-02T13:12:04.730267+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-02T13:12:04.732677+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=powerlifting-coef-calc condition=mapping
+2026-09-02T13:17:23.526388+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-02T13:17:23.531545+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=powerlifting-coef-calc condition=mapping
+2026-09-02T13:20:36.556386+00:00 ERROR operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=pdf-excel-diff condition=mapping status=trial_error
+2026-09-02T13:20:36.562249+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=protein-expression-analysis condition=mapping
+2026-09-02T13:21:57.152959+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-02T13:21:57.168604+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=quantum-numerical-simulation condition=mapping
+2026-09-02T13:26:14.576410+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=protein-expression-analysis condition=mapping status=completed
+2026-09-02T13:26:14.591207+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=protein-expression-analysis condition=mapping
+2026-09-02T13:29:58.831382+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-02T13:29:58.836594+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=quantum-numerical-simulation condition=mapping
+2026-09-02T13:31:10.538883+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=protein-expression-analysis condition=mapping status=completed
+2026-09-02T13:31:10.538883+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=protein-expression-analysis condition=mapping
+2026-09-02T13:34:53.258931+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=protein-expression-analysis condition=mapping status=completed
+2026-09-02T13:34:53.274921+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=sales-pivot-analysis condition=mapping
+2026-09-02T13:36:23.152162+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-02T13:36:23.153288+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=quantum-numerical-simulation condition=mapping
+2026-09-02T13:43:52.386789+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-02T13:43:52.392641+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=software-dependency-audit condition=mapping
+2026-09-02T13:46:49.437494+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=software-dependency-audit condition=mapping status=completed
+2026-09-02T13:46:49.442691+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=software-dependency-audit condition=mapping
+2026-09-02T13:50:42.031544+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=software-dependency-audit condition=mapping status=completed
+2026-09-02T13:50:42.037226+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=software-dependency-audit condition=mapping
+2026-09-02T13:50:59.110018+00:00 ERROR operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=sales-pivot-analysis condition=mapping status=trial_error
+2026-09-02T13:50:59.116579+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=sales-pivot-analysis condition=mapping
+2026-09-02T13:56:59.294598+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=software-dependency-audit condition=mapping status=completed
+2026-09-02T13:56:59.300342+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=train-fasttext condition=mapping
+2026-09-02T14:04:49.971629+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=sales-pivot-analysis condition=mapping status=completed
+2026-09-02T14:04:49.977469+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=sales-pivot-analysis condition=mapping
+2026-09-02T14:20:18.756362+00:00 ERROR operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=sales-pivot-analysis condition=mapping status=trial_error
+2026-09-02T14:20:18.767644+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=video-silence-remover condition=mapping
+2026-09-02T14:22:55.837903+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=video-silence-remover condition=mapping status=completed
+2026-09-02T14:22:55.854272+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=video-silence-remover condition=mapping
+2026-09-02T14:25:00.597301+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=train-fasttext condition=mapping status=completed
+2026-09-02T14:25:00.602122+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=train-fasttext condition=mapping
+2026-09-02T14:25:26.799424+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=video-silence-remover condition=mapping status=completed
+2026-09-02T14:25:26.799424+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=video-silence-remover condition=mapping
+2026-09-02T14:28:04.451499+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=video-silence-remover condition=mapping status=completed
+2026-09-02T14:28:04.458834+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=virtualhome-agent-planning condition=mapping
+2026-09-02T14:34:14.293126+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-02T14:34:14.300136+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=virtualhome-agent-planning condition=mapping
+2026-09-02T14:42:50.687677+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-02T14:42:50.700625+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=virtualhome-agent-planning condition=mapping
+2026-09-02T14:47:15.317024+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-02T14:47:15.331151+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=weighted-gdp-calc condition=mapping
+2026-09-02T15:01:56.024887+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=train-fasttext condition=mapping status=completed
+2026-09-02T15:01:56.031304+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=train-fasttext condition=mapping
+2026-09-02T15:03:22.854567+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=1 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-02T15:03:22.859215+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=weighted-gdp-calc condition=mapping
+2026-09-02T15:08:44.606531+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-02T15:08:44.617828+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=weighted-gdp-calc condition=mapping
+2026-09-02T15:13:38.637217+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-02T15:35:48.146062+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=train-fasttext condition=mapping status=completed

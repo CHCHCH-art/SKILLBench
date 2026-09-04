@@ -1,0 +1,28 @@
+2026-09-02T14:22:55.875911+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=video-silence-remover condition=mapping image=benchmark-cache/video-silence-remover-gold:274332f35d40c56d provided_skills=["audio-energy-removal-window-detection", "rms-opening-pause-interval-detection", "single-filtergraph-av-trim-concat", "probed-duration-removal-report", "rendered-media-compression-report", "segmented-video-continuous-audio-reassembly", "benchflow-ai--speech-to-text", "loonghao--remotion", "video-iframe-grayscale-keyframes", "davila7--remotion"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:29 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 29s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+4\Repeat_2\video-silence-remover\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+4\Repeat_2\video-silence-remover\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+4\Repeat_2\video-silence-remover\Skill\Job_result`
+
+2026-09-02T14:25:26.799424+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=2 task=video-silence-remover condition=mapping

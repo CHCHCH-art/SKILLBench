@@ -1,0 +1,28 @@
+2026-09-02T14:26:49.433253+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=weighted-gdp-calc condition=mapping image=benchmark-cache/weighted-gdp-calc-gold:9ffa98d58509b229 provided_skills=["net-export-statistics-sumproduct-formulas", "uno-two-key-index-match-population", "net-export-statistics-weighted-formulas", "spreadsheet-two-way-expression-lookup", "K-Dense-AI--xlsx", "expression-group-statistics-foldchange", "dots-powerlifting-formula-generator", "weighted-dbscan-centroid-evaluation", "benchflow-ai--data-reconciliation", "sbroenne--excel-mcp"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:51 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 51s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_2\weighted-gdp-calc\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_2\weighted-gdp-calc\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_2\weighted-gdp-calc\Skill\Job_result`
+
+2026-09-02T14:29:42.290971+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=weighted-gdp-calc condition=mapping

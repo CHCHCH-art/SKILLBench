@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "virtualhome-agent-planning",
+  "condition": "mapping",
+  "batch": "qwen_meta_top10_Skill_Run004",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_meta_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 467.42578125,
+    "peak_memory_raw": "467.426 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3607,
+    "observed_containers": [
+      "virtualhome-agent-planning__bml5f3w__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "virtualhome-agent-pl",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_meta_top10_Skill_Run004\\Repeat_1\\virtualhome-agent-planning\\mapping\\virtualhome-agent-planning\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.7,
+    "agent_setup_sec": 0.375,
+    "agent_execution_sec": 128.08,
+    "verifier_sec": 229.904,
+    "total_sec": 367.607
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 264384,
+  "agent_output_tokens": 3292,
+  "image_cache": {
+    "image": "benchmark-cache/virtualhome-agent-planning-gold:2a7bb392c743be2d",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "davila7--autonomous-agent-patterns",
+      "famaoai-creator--test-viewpoint-analyst",
+      "galz10--implementation-planner",
+      "grounded-pyperplan-portfolio-lifting",
+      "mastra-ai--ralph-plan",
+      "pddl-pyperplan-baseline-validation",
+      "pddl-task-manifest-plan-orchestration",
+      "pyperplan-oneshot-plan-generation",
+      "udecode--agent-native-architecture",
+      "unified-planning-plan-file-writing"
+    ],
+    "available_skills": [
+      "davila7--autonomous-agent-patterns",
+      "famaoai-creator--test-viewpoint-analyst",
+      "galz10--implementation-planner",
+      "grounded-pyperplan-portfolio-lifting",
+      "mastra-ai--ralph-plan",
+      "pddl-pyperplan-baseline-validation",
+      "pddl-task-manifest-plan-orchestration",
+      "pyperplan-oneshot-plan-generation",
+      "udecode--agent-native-architecture",
+      "unified-planning-plan-file-writing"
+    ],
+    "loaded_skills": [
+      "davila7--autonomous-agent-patterns",
+      "famaoai-creator--test-viewpoint-analyst",
+      "galz10--implementation-planner",
+      "grounded-pyperplan-portfolio-lifting",
+      "mastra-ai--ralph-plan",
+      "pddl-pyperplan-baseline-validation",
+      "pddl-task-manifest-plan-orchestration",
+      "pyperplan-oneshot-plan-generation",
+      "udecode--agent-native-architecture",
+      "unified-planning-plan-file-writing"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "davila7--autonomous-agent-patterns",
+      "famaoai-creator--test-viewpoint-analyst",
+      "galz10--implementation-planner",
+      "grounded-pyperplan-portfolio-lifting",
+      "mastra-ai--ralph-plan",
+      "pddl-pyperplan-baseline-validation",
+      "pddl-task-manifest-plan-orchestration",
+      "pyperplan-oneshot-plan-generation",
+      "udecode--agent-native-architecture",
+      "unified-planning-plan-file-writing"
+    ],
+    "trials": [
+      {
+        "trial_id": "virtualhome-agent-planning__BML5F3w",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "davila7--autonomous-agent-patterns",
+          "famaoai-creator--test-viewpoint-analyst",
+          "galz10--implementation-planner",
+          "grounded-pyperplan-portfolio-lifting",
+          "mastra-ai--ralph-plan",
+          "pddl-pyperplan-baseline-validation",
+          "pddl-task-manifest-plan-orchestration",
+          "pyperplan-oneshot-plan-generation",
+          "udecode--agent-native-architecture",
+          "unified-planning-plan-file-writing"
+        ],
+        "available_skills": [
+          "davila7--autonomous-agent-patterns",
+          "famaoai-creator--test-viewpoint-analyst",
+          "galz10--implementation-planner",
+          "grounded-pyperplan-portfolio-lifting",
+          "mastra-ai--ralph-plan",
+          "pddl-pyperplan-baseline-validation",
+          "pddl-task-manifest-plan-orchestration",
+          "pyperplan-oneshot-plan-generation",
+          "udecode--agent-native-architecture",
+          "unified-planning-plan-file-writing"
+        ],
+        "loaded_skills": [
+          "davila7--autonomous-agent-patterns",
+          "famaoai-creator--test-viewpoint-analyst",
+          "galz10--implementation-planner",
+          "grounded-pyperplan-portfolio-lifting",
+          "mastra-ai--ralph-plan",
+          "pddl-pyperplan-baseline-validation",
+          "pddl-task-manifest-plan-orchestration",
+          "pyperplan-oneshot-plan-generation",
+          "udecode--agent-native-architecture",
+          "unified-planning-plan-file-writing"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "davila7--autonomous-agent-patterns",
+          "famaoai-creator--test-viewpoint-analyst",
+          "galz10--implementation-planner",
+          "grounded-pyperplan-portfolio-lifting",
+          "mastra-ai--ralph-plan",
+          "pddl-pyperplan-baseline-validation",
+          "pddl-task-manifest-plan-orchestration",
+          "pyperplan-oneshot-plan-generation",
+          "udecode--agent-native-architecture",
+          "unified-planning-plan-file-writing"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

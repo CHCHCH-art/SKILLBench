@@ -1,0 +1,86 @@
+{
+  "schema_version": 9,
+  "task_id": "distribution-search",
+  "condition": "mapping",
+  "batch": "skillrouter_luna_solver_union_Skill_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 531.47265625,
+    "peak_memory_raw": "531.473 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2447,
+    "observed_containers": [
+      "distribution-search__6x9frzd__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "distribution-search",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_luna_solver_union_Skill_Run003\\Repeat_1\\distribution-search\\mapping\\distribution-search\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.728,
+    "agent_setup_sec": 0.599,
+    "agent_execution_sec": 153.657,
+    "verifier_sec": 88.775,
+    "total_sec": 249.264
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 141711,
+  "agent_output_tokens": 4013,
+  "image_cache": {
+    "image": "benchmark-cache/distribution-search-gold:430ae95bb5beb0fc",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "three-level-kl-distribution-solver"
+    ],
+    "available_skills": [
+      "three-level-kl-distribution-solver"
+    ],
+    "loaded_skills": [
+      "three-level-kl-distribution-solver"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "three-level-kl-distribution-solver"
+    ],
+    "trials": [
+      {
+        "trial_id": "distribution-search__6x9fRZD",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "three-level-kl-distribution-solver"
+        ],
+        "available_skills": [
+          "three-level-kl-distribution-solver"
+        ],
+        "loaded_skills": [
+          "three-level-kl-distribution-solver"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "three-level-kl-distribution-solver"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

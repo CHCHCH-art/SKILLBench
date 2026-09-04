@@ -1,0 +1,86 @@
+{
+  "schema_version": 9,
+  "task_id": "mteb-retrieve",
+  "condition": "mapping",
+  "batch": "skillrouter_luna_solver_union_Skill_Run003",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 1273.84375,
+    "peak_memory_raw": "1273.844 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 5486,
+    "observed_containers": [
+      "mteb-retrieve__nay2fxt__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "mteb-retrieve",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_luna_solver_union_Skill_Run003\\Repeat_3\\mteb-retrieve\\mapping\\mteb-retrieve\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.791,
+    "agent_setup_sec": 0.415,
+    "agent_execution_sec": 410.352,
+    "verifier_sec": 219.942,
+    "total_sec": 637.854
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 376874,
+  "agent_output_tokens": 4512,
+  "image_cache": {
+    "image": "benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "mteb-streaming-topk-cosine-retrieval"
+    ],
+    "available_skills": [
+      "mteb-streaming-topk-cosine-retrieval"
+    ],
+    "loaded_skills": [
+      "mteb-streaming-topk-cosine-retrieval"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "mteb-streaming-topk-cosine-retrieval"
+    ],
+    "trials": [
+      {
+        "trial_id": "mteb-retrieve__NAy2fXt",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "mteb-streaming-topk-cosine-retrieval"
+        ],
+        "available_skills": [
+          "mteb-streaming-topk-cosine-retrieval"
+        ],
+        "loaded_skills": [
+          "mteb-streaming-topk-cosine-retrieval"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "mteb-streaming-topk-cosine-retrieval"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

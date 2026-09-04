@@ -12,7 +12,6 @@ import shutil
 import subprocess
 import sys
 import threading
-import time
 import tomllib
 from datetime import datetime, timezone
 from pathlib import Path
@@ -41,8 +40,8 @@ JOB_NAME = "Job_result"
 MEMORY_POLL_SECONDS = 0.1
 DOCKER_COMMAND_TIMEOUT_SECONDS = 10.0
 DEFAULT_TASK_WORKERS = 2
-DEFAULT_MAX_PARALLEL_CPUS = 16
-DEFAULT_MAX_PARALLEL_MEMORY_MIB = 24 * 1024
+DEFAULT_MAX_PARALLEL_CPUS = 18
+DEFAULT_MAX_PARALLEL_MEMORY_MIB = 32 * 1024
 CONDITION_DIR_NAMES = {
     "mapping": "Skill",
     # Retained so rerun_error.py can still read batches created by older CLIs.

@@ -1,0 +1,28 @@
+2026-09-03T19:32:54.743582+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=grid-dispatch-operator condition=mapping image=benchmark-cache/grid-dispatch-operator-gold:4acd0bce1add524f provided_skills=["cvxpy-dcopf-reserve-cooptimization", "dispatch-loading-operating-margin-report"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:19:28 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 19m 28s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\grid-dispatch-operator\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\grid-dispatch-operator\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\grid-dispatch-operator\Skill\Job_result`
+
+2026-09-03T19:52:24.209016+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=grid-dispatch-operator condition=mapping

@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "llm-inference-batching-scheduler",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run005",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 93.44140625,
+    "peak_memory_raw": "93.441 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 6889,
+    "observed_containers": [
+      "llm-inference-batching-scheduler__5nq4bcn__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "llm-inference-batchi",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run005\\Repeat_3\\llm-inference-batching-scheduler\\mapping\\llm-inference-batching-scheduler\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.376,
+    "agent_setup_sec": 0.31,
+    "agent_execution_sec": 550.558,
+    "verifier_sec": 138.416,
+    "total_sec": 697.3
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 613761,
+  "agent_output_tokens": 11582,
+  "image_cache": {
+    "image": "benchmark-cache/llm-inference-batching-scheduler-gold:c835608261b94b37",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "andrueandersoncs--effect-ai",
+      "blockrunai--clawrouter",
+      "constrained-agglomerative-request-batching",
+      "generation-aware-dp-batch-splitting",
+      "jeremylongshore--processing-api-batches",
+      "paired-plan-cost-threshold-selection",
+      "parcadei--llm-tuning-patterns",
+      "shape-aware-batch-cost-model",
+      "shared-sequence-shape-selection",
+      "shared-shape-dp-budget-closure"
+    ],
+    "available_skills": [
+      "andrueandersoncs--effect-ai",
+      "blockrunai--clawrouter",
+      "constrained-agglomerative-request-batching",
+      "generation-aware-dp-batch-splitting",
+      "jeremylongshore--processing-api-batches",
+      "paired-plan-cost-threshold-selection",
+      "parcadei--llm-tuning-patterns",
+      "shape-aware-batch-cost-model",
+      "shared-sequence-shape-selection",
+      "shared-shape-dp-budget-closure"
+    ],
+    "loaded_skills": [
+      "andrueandersoncs--effect-ai",
+      "blockrunai--clawrouter",
+      "constrained-agglomerative-request-batching",
+      "generation-aware-dp-batch-splitting",
+      "jeremylongshore--processing-api-batches",
+      "paired-plan-cost-threshold-selection",
+      "parcadei--llm-tuning-patterns",
+      "shape-aware-batch-cost-model",
+      "shared-sequence-shape-selection",
+      "shared-shape-dp-budget-closure"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "andrueandersoncs--effect-ai",
+      "blockrunai--clawrouter",
+      "constrained-agglomerative-request-batching",
+      "generation-aware-dp-batch-splitting",
+      "jeremylongshore--processing-api-batches",
+      "paired-plan-cost-threshold-selection",
+      "parcadei--llm-tuning-patterns",
+      "shape-aware-batch-cost-model",
+      "shared-sequence-shape-selection",
+      "shared-shape-dp-budget-closure"
+    ],
+    "trials": [
+      {
+        "trial_id": "llm-inference-batching-scheduler__5NQ4BcN",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "andrueandersoncs--effect-ai",
+          "blockrunai--clawrouter",
+          "constrained-agglomerative-request-batching",
+          "generation-aware-dp-batch-splitting",
+          "jeremylongshore--processing-api-batches",
+          "paired-plan-cost-threshold-selection",
+          "parcadei--llm-tuning-patterns",
+          "shape-aware-batch-cost-model",
+          "shared-sequence-shape-selection",
+          "shared-shape-dp-budget-closure"
+        ],
+        "available_skills": [
+          "andrueandersoncs--effect-ai",
+          "blockrunai--clawrouter",
+          "constrained-agglomerative-request-batching",
+          "generation-aware-dp-batch-splitting",
+          "jeremylongshore--processing-api-batches",
+          "paired-plan-cost-threshold-selection",
+          "parcadei--llm-tuning-patterns",
+          "shape-aware-batch-cost-model",
+          "shared-sequence-shape-selection",
+          "shared-shape-dp-budget-closure"
+        ],
+        "loaded_skills": [
+          "andrueandersoncs--effect-ai",
+          "blockrunai--clawrouter",
+          "constrained-agglomerative-request-batching",
+          "generation-aware-dp-batch-splitting",
+          "jeremylongshore--processing-api-batches",
+          "paired-plan-cost-threshold-selection",
+          "parcadei--llm-tuning-patterns",
+          "shape-aware-batch-cost-model",
+          "shared-sequence-shape-selection",
+          "shared-shape-dp-budget-closure"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "andrueandersoncs--effect-ai",
+          "blockrunai--clawrouter",
+          "constrained-agglomerative-request-batching",
+          "generation-aware-dp-batch-splitting",
+          "jeremylongshore--processing-api-batches",
+          "paired-plan-cost-threshold-selection",
+          "parcadei--llm-tuning-patterns",
+          "shape-aware-batch-cost-model",
+          "shared-sequence-shape-selection",
+          "shared-shape-dp-budget-closure"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

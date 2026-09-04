@@ -1,0 +1,28 @@
+2026-09-01T19:49:42.481713+00:00 START operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=log-summary-date-ranges condition=mapping image=benchmark-cache/log-summary-date-ranges-gold:e28534907986406f provided_skills=["dated-log-severity-summary", "streaming-dated-log-sqlite-aggregation"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:46 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 46s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_luna_solver_union_Skil
+l_Run002\Repeat_1\log-summary-date-ranges\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_luna_solver_union_Skil
+l_Run002\Repeat_1\log-summary-date-ranges\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_luna_solver_union_Skil
+l_Run002\Repeat_1\log-summary-date-ranges\Skill\Job_result`
+
+2026-09-01T19:52:30.102707+00:00 PASS operation=run batch=qwen_luna_solver_union_Skill_Run002 repeat=1 task=log-summary-date-ranges condition=mapping

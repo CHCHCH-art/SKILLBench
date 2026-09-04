@@ -27,6 +27,48 @@ EXCLUDE_SKILLS = Path(__file__).resolve().parent / "Exclude_SKILLS"
 SAMPLE_SIZE = 2000
 RANDOM_SEED = 20260805
 
+# Preserve the archived source directory name for deterministic sampling, but
+# materialize this known Codex-incompatible Skill under its canonical name.
+# Codex requires both the directory name and the SKILL.md frontmatter name to
+# be shorter than 64 characters.
+SKILL_NAME_OVERRIDES = {
+    "fatfingererr--analyze-high-unemployment-high-gdp-growth-fiscal-deficit-scenarios": (
+        "fatfingererr-fiscal-deficit-scenarios"
+    ),
+}
+
+
+def destination_name(skill_dir: Path) -> str:
+    """Return the canonical directory name used in the generated sample."""
+    return SKILL_NAME_OVERRIDES.get(skill_dir.name, skill_dir.name)
+
+
+def normalize_copied_skill(source: Path, destination: Path) -> None:
+    """Apply the declared name correction to all UTF-8 text after copying."""
+    canonical_name = destination_name(source)
+    if canonical_name == source.name:
+        return
+    source_frontmatter = source.name.split("--", maxsplit=1)[-1]
+    replacements = 0
+    for path in sorted(item for item in destination.rglob("*") if item.is_file()):
+        try:
+            content = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            continue
+        count = content.count(source_frontmatter)
+        if count:
+            path.write_text(
+                content.replace(source_frontmatter, canonical_name),
+                encoding="utf-8",
+            )
+            replacements += count
+    if replacements == 0:
+        raise RuntimeError(
+            f"Cannot normalize Skill frontmatter for {source.name}: "
+            f"no {source_frontmatter!r} references were found"
+        )
+    skill_md.write_text(content.replace(expected, replacement), encoding="utf-8")
+
 def skill_md_sha256(skill_dir: Path) -> str:
     skill_md = skill_dir / "SKILL.md"
     if not skill_md.is_file():
@@ -140,11 +182,16 @@ def select_sample(unique_candidates: list[Path]) -> list[Path]:
 def validate_destination_names(selected: list[Path]) -> None:
     folded: dict[str, str] = {}
     for source in selected:
-        previous = folded.setdefault(source.name.casefold(), source.name)
-        if previous != source.name:
+        name = destination_name(source)
+        if len(name) >= 64:
+            raise RuntimeError(
+                f"Selected Skill name exceeds Codex's 64-character limit: {name}"
+            )
+        previous = folded.setdefault(name.casefold(), name)
+        if previous != name:
             raise RuntimeError(
                 f"Selected skills have a case-insensitive name collision: "
-                f"{previous} / {source.name}"
+                f"{previous} / {name}"
             )
 
 
@@ -160,8 +207,9 @@ def copy_sample(selected: list[Path]) -> None:
     try:
         expected_hashes: dict[str, str] = {}
         for source in selected:
-            destination = STAGING / source.name
+            destination = STAGING / destination_name(source)
             shutil.copytree(source, destination, symlinks=True)
+            normalize_copied_skill(source, destination)
             expected_hashes[source.name.casefold()] = tree_sha256(source)
 
         copied = sorted(
@@ -173,9 +221,12 @@ def copy_sample(selected: list[Path]) -> None:
                 f"Copied directory count differs from {SAMPLE_SIZE}: {len(copied)}"
             )
         for destination in copied:
-            expected = expected_hashes[destination.name.casefold()]
-            if tree_sha256(destination) != expected:
-                raise RuntimeError(f"Copied skill differs from source: {destination.name}")
+            if destination.name not in SKILL_NAME_OVERRIDES.values():
+                expected = expected_hashes[destination.name.casefold()]
+                if tree_sha256(destination) != expected:
+                    raise RuntimeError(
+                        f"Copied skill differs from source: {destination.name}"
+                    )
 
         backup = TARGET.with_name(f"skills.__backup__-{uuid.uuid4().hex}")
         if TARGET.exists():

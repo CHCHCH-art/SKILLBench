@@ -1,0 +1,94 @@
+{
+  "schema_version": 9,
+  "task_id": "jpg-ocr-stat",
+  "condition": "mapping",
+  "batch": "bm25_luna_solver_union_Skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_outputs: AssertionError: Requirement failed: null/blank-cell handling differs from oracle.",
+  "peak_memory": {
+    "peak_memory_mib": 517.75,
+    "peak_memory_raw": "517.750 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 4545,
+    "observed_containers": [
+      "jpg-ocr-stat__mftkjpb__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "jpg-ocr-stat",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_luna_solver_union_Skill_Run001\\Repeat_3\\jpg-ocr-stat\\mapping\\jpg-ocr-stat\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.392,
+    "agent_setup_sec": 0.553,
+    "agent_execution_sec": 311.259,
+    "verifier_sec": 141.869,
+    "total_sec": 459.606
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 280437,
+  "agent_output_tokens": 10484,
+  "image_cache": {
+    "image": "benchmark-cache/jpg-ocr-stat-gold:2312eeab86c89737",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "receipt-date-total-excel-serialization",
+      "receipt-image-ocr-line-extraction"
+    ],
+    "available_skills": [
+      "receipt-date-total-excel-serialization",
+      "receipt-image-ocr-line-extraction"
+    ],
+    "loaded_skills": [
+      "receipt-date-total-excel-serialization",
+      "receipt-image-ocr-line-extraction"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "receipt-date-total-excel-serialization",
+      "receipt-image-ocr-line-extraction"
+    ],
+    "trials": [
+      {
+        "trial_id": "jpg-ocr-stat__MFTkJpB",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "receipt-date-total-excel-serialization",
+          "receipt-image-ocr-line-extraction"
+        ],
+        "available_skills": [
+          "receipt-date-total-excel-serialization",
+          "receipt-image-ocr-line-extraction"
+        ],
+        "loaded_skills": [
+          "receipt-date-total-excel-serialization",
+          "receipt-image-ocr-line-extraction"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "receipt-date-total-excel-serialization",
+          "receipt-image-ocr-line-extraction"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

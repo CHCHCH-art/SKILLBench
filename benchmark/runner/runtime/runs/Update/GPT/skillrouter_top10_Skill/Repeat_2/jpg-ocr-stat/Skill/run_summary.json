@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "jpg-ocr-stat",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run005",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 159.84765625,
+    "peak_memory_raw": "159.848 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 5875,
+    "observed_containers": [
+      "jpg-ocr-stat__zwnyzcd__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "jpg-ocr-stat",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run005\\Repeat_2\\jpg-ocr-stat\\mapping\\jpg-ocr-stat\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.388,
+    "agent_setup_sec": 0.309,
+    "agent_execution_sec": 430.906,
+    "verifier_sec": 154.994,
+    "total_sec": 594.281
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 919613,
+  "agent_output_tokens": 12390,
+  "image_cache": {
+    "image": "benchmark-cache/jpg-ocr-stat-gold:2312eeab86c89737",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "invoice-pdf-reference-field-extraction",
+      "kazukinagata--reading-receipt",
+      "mgd34msu--precision-mastery",
+      "personamanagmentlayer--retail-expert",
+      "receipt-date-candidate-resolution",
+      "receipt-date-total-excel-serialization",
+      "receipt-image-ocr-line-extraction",
+      "receipt-multivariant-ocr-extraction",
+      "receipt-total-candidate-resolution-export",
+      "wlzh--invoice-scanner"
+    ],
+    "available_skills": [
+      "invoice-pdf-reference-field-extraction",
+      "kazukinagata--reading-receipt",
+      "mgd34msu--precision-mastery",
+      "personamanagmentlayer--retail-expert",
+      "receipt-date-candidate-resolution",
+      "receipt-date-total-excel-serialization",
+      "receipt-image-ocr-line-extraction",
+      "receipt-multivariant-ocr-extraction",
+      "receipt-total-candidate-resolution-export",
+      "wlzh--invoice-scanner"
+    ],
+    "loaded_skills": [
+      "invoice-pdf-reference-field-extraction",
+      "kazukinagata--reading-receipt",
+      "mgd34msu--precision-mastery",
+      "personamanagmentlayer--retail-expert",
+      "receipt-date-candidate-resolution",
+      "receipt-date-total-excel-serialization",
+      "receipt-image-ocr-line-extraction",
+      "receipt-multivariant-ocr-extraction",
+      "receipt-total-candidate-resolution-export",
+      "wlzh--invoice-scanner"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "invoice-pdf-reference-field-extraction",
+      "kazukinagata--reading-receipt",
+      "mgd34msu--precision-mastery",
+      "personamanagmentlayer--retail-expert",
+      "receipt-date-candidate-resolution",
+      "receipt-date-total-excel-serialization",
+      "receipt-image-ocr-line-extraction",
+      "receipt-multivariant-ocr-extraction",
+      "receipt-total-candidate-resolution-export",
+      "wlzh--invoice-scanner"
+    ],
+    "trials": [
+      {
+        "trial_id": "jpg-ocr-stat__zWnYzCd",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "invoice-pdf-reference-field-extraction",
+          "kazukinagata--reading-receipt",
+          "mgd34msu--precision-mastery",
+          "personamanagmentlayer--retail-expert",
+          "receipt-date-candidate-resolution",
+          "receipt-date-total-excel-serialization",
+          "receipt-image-ocr-line-extraction",
+          "receipt-multivariant-ocr-extraction",
+          "receipt-total-candidate-resolution-export",
+          "wlzh--invoice-scanner"
+        ],
+        "available_skills": [
+          "invoice-pdf-reference-field-extraction",
+          "kazukinagata--reading-receipt",
+          "mgd34msu--precision-mastery",
+          "personamanagmentlayer--retail-expert",
+          "receipt-date-candidate-resolution",
+          "receipt-date-total-excel-serialization",
+          "receipt-image-ocr-line-extraction",
+          "receipt-multivariant-ocr-extraction",
+          "receipt-total-candidate-resolution-export",
+          "wlzh--invoice-scanner"
+        ],
+        "loaded_skills": [
+          "invoice-pdf-reference-field-extraction",
+          "kazukinagata--reading-receipt",
+          "mgd34msu--precision-mastery",
+          "personamanagmentlayer--retail-expert",
+          "receipt-date-candidate-resolution",
+          "receipt-date-total-excel-serialization",
+          "receipt-image-ocr-line-extraction",
+          "receipt-multivariant-ocr-extraction",
+          "receipt-total-candidate-resolution-export",
+          "wlzh--invoice-scanner"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "invoice-pdf-reference-field-extraction",
+          "kazukinagata--reading-receipt",
+          "mgd34msu--precision-mastery",
+          "personamanagmentlayer--retail-expert",
+          "receipt-date-candidate-resolution",
+          "receipt-date-total-excel-serialization",
+          "receipt-image-ocr-line-extraction",
+          "receipt-multivariant-ocr-extraction",
+          "receipt-total-candidate-resolution-export",
+          "wlzh--invoice-scanner"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

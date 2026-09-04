@@ -1,0 +1,28 @@
+2026-09-02T07:26:18.797762+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=financial-modeling-qa condition=mapping image=benchmark-cache/financial-modeling-qa-gold:0fdb74de33d4be91 provided_skills=["unique-category-game-assignment", "famaoai-creator--test-viewpoint-analyst", "kivo360--moai-domain-data-science", "alsk1992--metaculus", "ToruAI--scout", "travisjneuman--case-interview-practice", "sickn33--deep-research", "K-Dense-AI--matlab", "XSpoonAi--onchain-data-analysis", "majiayu000--daoagent"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:04:36 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 36s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_3\financial-modeling-qa\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_3\financial-modeling-qa\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_3\financial-modeling-qa\Skill\Job_result`
+
+2026-09-02T07:30:56.427073+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=financial-modeling-qa condition=mapping

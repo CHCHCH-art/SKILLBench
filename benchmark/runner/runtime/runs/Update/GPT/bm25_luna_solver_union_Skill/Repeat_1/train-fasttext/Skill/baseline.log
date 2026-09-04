@@ -1,0 +1,28 @@
+2026-09-04T00:57:42.532753+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=train-fasttext condition=mapping image=benchmark-cache/train-fasttext-gold:61266fd7d3d7eaea provided_skills=["baseline-fasttext-small-supervised-training", "parquet-to-fasttext-supervised-text"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:34:09 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 34m 9s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_1\train-fasttext\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_1\train-fasttext\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_1\train-fasttext\Skill\Job_result`
+
+2026-09-04T01:31:53.203657+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=train-fasttext condition=mapping

@@ -1,0 +1,102 @@
+{
+  "schema_version": 9,
+  "task_id": "exoplanet-detection-period",
+  "condition": "mapping",
+  "batch": "skillrouter_luna_solver_union_Skill_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 446.65234375,
+    "peak_memory_raw": "446.652 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 6855,
+    "observed_containers": [
+      "exoplanet-detection-period__6uqxhtk__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "exoplanet-detection-",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_luna_solver_union_Skill_Run003\\Repeat_1\\exoplanet-detection-period\\mapping\\exoplanet-detection-period\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.743,
+    "agent_setup_sec": 0.4,
+    "agent_execution_sec": 1216.478,
+    "verifier_sec": 177.563,
+    "total_sec": 1401.431
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 972225,
+  "agent_output_tokens": 10563,
+  "image_cache": {
+    "image": "benchmark-cache/exoplanet-detection-period-gold:8bdb5ea239d635d6",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "bls-transit-period-refinement",
+      "lightcurve-quality-outlier-flatten",
+      "quasiperiodic-gp-activity-removal"
+    ],
+    "available_skills": [
+      "bls-transit-period-refinement",
+      "lightcurve-quality-outlier-flatten",
+      "quasiperiodic-gp-activity-removal"
+    ],
+    "loaded_skills": [
+      "bls-transit-period-refinement",
+      "lightcurve-quality-outlier-flatten",
+      "quasiperiodic-gp-activity-removal"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "bls-transit-period-refinement",
+      "lightcurve-quality-outlier-flatten",
+      "quasiperiodic-gp-activity-removal"
+    ],
+    "trials": [
+      {
+        "trial_id": "exoplanet-detection-period__6UQxHTK",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "bls-transit-period-refinement",
+          "lightcurve-quality-outlier-flatten",
+          "quasiperiodic-gp-activity-removal"
+        ],
+        "available_skills": [
+          "bls-transit-period-refinement",
+          "lightcurve-quality-outlier-flatten",
+          "quasiperiodic-gp-activity-removal"
+        ],
+        "loaded_skills": [
+          "bls-transit-period-refinement",
+          "lightcurve-quality-outlier-flatten",
+          "quasiperiodic-gp-activity-removal"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "bls-transit-period-refinement",
+          "lightcurve-quality-outlier-flatten",
+          "quasiperiodic-gp-activity-removal"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

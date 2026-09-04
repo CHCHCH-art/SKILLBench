@@ -1,0 +1,210 @@
+2026-09-01T14:20:16.271014+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-01T14:20:16.271540+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=dapt-intrusion-detection condition=mapping
+2026-09-01T14:22:46.538467+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-01T14:22:46.545355+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-01T14:25:31.010468+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-01T14:25:31.017347+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-01T14:26:43.552858+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-01T14:26:43.562294+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=dapt-intrusion-detection condition=mapping
+2026-09-01T14:27:31.172073+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-01T14:27:31.180732+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=dialogue-parser condition=mapping
+2026-09-01T14:30:10.752704+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-01T14:30:10.759843+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=dapt-intrusion-detection condition=mapping
+2026-09-01T14:31:33.609288+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=dialogue-parser condition=mapping status=completed
+2026-09-01T14:31:33.616126+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=dialogue-parser condition=mapping
+2026-09-01T14:34:14.210270+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=dialogue-parser condition=mapping status=completed
+2026-09-01T14:34:14.217467+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=dialogue-parser condition=mapping
+2026-09-01T14:35:06.027536+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-01T14:35:06.036996+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=distribution-search condition=mapping
+2026-09-01T14:37:37.519085+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=dialogue-parser condition=mapping status=completed
+2026-09-01T14:37:37.523781+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-01T14:39:16.658217+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=distribution-search condition=mapping status=completed
+2026-09-01T14:39:16.662553+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=distribution-search condition=mapping
+2026-09-01T14:43:11.116947+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=distribution-search condition=mapping status=completed
+2026-09-01T14:43:11.122648+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=distribution-search condition=mapping
+2026-09-01T14:43:12.454502+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-01T14:43:12.464015+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-01T14:47:05.272335+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=distribution-search condition=mapping status=completed
+2026-09-01T14:47:05.280426+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=earthquake-plate-calculation condition=mapping
+2026-09-01T14:52:38.256754+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-01T14:52:38.261505+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-01T14:52:48.550046+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-01T14:52:48.557085+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=earthquake-plate-calculation condition=mapping
+2026-09-01T15:01:39.453774+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-01T15:01:39.461479+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=earthquake-plate-calculation condition=mapping
+2026-09-01T15:01:51.581664+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-01T15:01:51.586391+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=econ-detrending-correlation condition=mapping
+2026-09-01T15:05:03.446317+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-01T15:05:03.452118+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-01T15:07:15.016199+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=econ-detrending-correlation condition=mapping status=completed
+2026-09-01T15:07:15.024108+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=econ-detrending-correlation condition=mapping
+2026-09-01T15:14:19.140872+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=econ-detrending-correlation condition=mapping status=completed
+2026-09-01T15:14:19.145014+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=econ-detrending-correlation condition=mapping
+2026-09-01T15:19:11.124637+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=econ-detrending-correlation condition=mapping status=completed
+2026-09-01T15:19:11.130854+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=energy-market-pricing condition=mapping
+2026-09-01T15:29:49.539447+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=energy-market-pricing condition=mapping status=completed
+2026-09-01T15:29:49.547362+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=energy-market-pricing condition=mapping
+2026-09-01T15:30:59.338197+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-01T15:30:59.340798+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-01T15:45:44.806868+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=energy-market-pricing condition=mapping status=completed
+2026-09-01T15:45:44.813320+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=energy-market-pricing condition=mapping
+2026-09-01T15:53:25.411236+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=energy-market-pricing condition=mapping status=completed
+2026-09-01T15:53:25.417886+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=exceltable-in-ppt condition=mapping
+2026-09-01T15:58:18.622032+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-01T15:58:18.628085+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=exceltable-in-ppt condition=mapping
+2026-09-01T16:03:44.437962+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-01T16:03:44.448047+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=exceltable-in-ppt condition=mapping
+2026-09-01T16:09:29.827559+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-01T16:09:29.833392+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=exoplanet-detection-period condition=mapping
+2026-09-01T16:23:16.148091+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-01T16:23:16.161674+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-01T16:32:52.751107+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=exoplanet-detection-period condition=mapping status=completed
+2026-09-01T16:32:52.757052+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=exoplanet-detection-period condition=mapping
+2026-09-01T16:38:21.653662+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-01T16:38:21.659737+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=financial-modeling-qa condition=mapping
+2026-09-01T16:43:54.620960+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=financial-modeling-qa condition=mapping status=completed
+2026-09-01T16:43:54.628766+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=financial-modeling-qa condition=mapping
+2026-09-01T16:49:21.349227+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=financial-modeling-qa condition=mapping status=completed
+2026-09-01T16:49:21.355327+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=financial-modeling-qa condition=mapping
+2026-09-01T16:53:49.484704+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=financial-modeling-qa condition=mapping status=completed
+2026-09-01T16:53:49.493429+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=find-topk-similiar-chemicals condition=mapping
+2026-09-01T16:57:07.106455+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-01T16:57:07.112671+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=find-topk-similiar-chemicals condition=mapping
+2026-09-01T17:01:25.527192+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-01T17:01:25.533433+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=find-topk-similiar-chemicals condition=mapping
+2026-09-01T17:04:26.600686+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-01T17:04:26.617780+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=glm-lake-mendota condition=mapping
+2026-09-01T17:13:39.876220+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=glm-lake-mendota condition=mapping status=completed
+2026-09-01T17:13:39.884782+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=glm-lake-mendota condition=mapping
+2026-09-01T17:17:00.776441+00:00 ERROR operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=exoplanet-detection-period condition=mapping status=trial_error
+2026-09-01T17:17:00.786020+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=exoplanet-detection-period condition=mapping
+2026-09-01T17:31:32.613554+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=glm-lake-mendota condition=mapping status=completed
+2026-09-01T17:31:32.625650+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=glm-lake-mendota condition=mapping
+2026-09-01T17:39:06.594910+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=glm-lake-mendota condition=mapping status=completed
+2026-09-01T17:39:06.603293+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=gravitational-wave-detection condition=mapping
+2026-09-01T18:02:23.141157+00:00 ERROR operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=exoplanet-detection-period condition=mapping status=trial_error
+2026-09-01T18:02:23.148518+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=grid-dispatch-operator condition=mapping
+2026-09-01T18:06:31.921380+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-01T18:06:31.928105+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=gravitational-wave-detection condition=mapping
+2026-09-01T18:17:59.733369+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-01T18:17:59.740789+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=grid-dispatch-operator condition=mapping
+2026-09-01T18:32:09.409480+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-01T18:32:09.417019+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=grid-dispatch-operator condition=mapping
+2026-09-01T18:44:58.728237+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-01T18:44:58.735198+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=hf-model-inference condition=mapping
+2026-09-01T18:51:19.443973+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-01T18:51:19.454648+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=gravitational-wave-detection condition=mapping
+2026-09-01T18:53:46.917025+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=hf-model-inference condition=mapping status=completed
+2026-09-01T18:53:46.923143+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=hf-model-inference condition=mapping
+2026-09-01T19:15:43.310395+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-01T19:15:43.317127+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=invoice-fraud-detection condition=mapping
+2026-09-01T19:19:45.971384+00:00 ERROR operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=hf-model-inference condition=mapping status=trial_error
+2026-09-01T19:19:45.979900+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=hf-model-inference condition=mapping
+2026-09-01T19:22:14.530018+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-01T19:22:14.536401+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=invoice-fraud-detection condition=mapping
+2026-09-01T19:26:05.958821+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-01T19:26:05.966201+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=invoice-fraud-detection condition=mapping
+2026-09-01T19:29:01.798635+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=hf-model-inference condition=mapping status=completed
+2026-09-01T19:29:01.803808+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=jpg-ocr-stat condition=mapping
+2026-09-01T19:30:32.500085+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-01T19:30:32.508651+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=llm-inference-batching-scheduler condition=mapping
+2026-09-01T19:33:10.950412+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-01T19:33:10.964625+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=jpg-ocr-stat condition=mapping
+2026-09-01T19:37:58.876827+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-01T19:37:58.891733+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=jpg-ocr-stat condition=mapping
+2026-09-01T19:41:33.055097+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-01T19:41:33.067388+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=log-summary-date-ranges condition=mapping
+2026-09-01T19:41:58.844933+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-01T19:41:58.854711+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=llm-inference-batching-scheduler condition=mapping
+2026-09-01T19:45:05.978843+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-01T19:45:05.987544+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=log-summary-date-ranges condition=mapping
+2026-09-01T19:47:42.326852+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-01T19:47:42.332578+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=log-summary-date-ranges condition=mapping
+2026-09-01T19:51:21.170091+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-01T19:51:21.180055+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=mario-coin-counting condition=mapping
+2026-09-01T19:55:59.940941+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=mario-coin-counting condition=mapping status=completed
+2026-09-01T19:55:59.955561+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=mario-coin-counting condition=mapping
+2026-09-01T20:01:02.884510+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=mario-coin-counting condition=mapping status=completed
+2026-09-01T20:01:02.895497+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=mario-coin-counting condition=mapping
+2026-09-01T20:06:45.050931+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-01T20:06:45.057748+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=llm-inference-batching-scheduler condition=mapping
+2026-09-01T20:07:26.823718+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=mario-coin-counting condition=mapping status=completed
+2026-09-01T20:07:26.834024+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=mars-clouds-clustering condition=mapping
+2026-09-01T20:13:56.163008+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-01T20:13:56.179155+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=mars-clouds-clustering condition=mapping
+2026-09-01T20:17:04.368156+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-01T20:17:04.380591+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=mteb-retrieve condition=mapping
+2026-09-01T20:18:05.978947+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-01T20:18:05.993461+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=mars-clouds-clustering condition=mapping
+2026-09-01T20:23:22.687780+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=mteb-retrieve condition=mapping status=completed
+2026-09-01T20:23:22.695593+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=mteb-retrieve condition=mapping
+2026-09-01T20:23:51.068140+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-01T20:23:51.083502+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=pdf-excel-diff condition=mapping
+2026-09-01T20:28:07.704071+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=mteb-retrieve condition=mapping status=completed
+2026-09-01T20:28:07.710428+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=mteb-retrieve condition=mapping
+2026-09-01T20:28:38.626178+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=pdf-excel-diff condition=mapping status=completed
+2026-09-01T20:28:38.626178+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=pdf-excel-diff condition=mapping
+2026-09-01T20:32:11.122712+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=pdf-excel-diff condition=mapping status=completed
+2026-09-01T20:32:11.130985+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=pdf-excel-diff condition=mapping
+2026-09-01T20:38:14.025259+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=pdf-excel-diff condition=mapping status=completed
+2026-09-01T20:38:14.032274+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=portfolio-optimization condition=mapping
+2026-09-01T20:38:47.118231+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=mteb-retrieve condition=mapping status=completed
+2026-09-01T20:38:47.124094+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=powerlifting-coef-calc condition=mapping
+2026-09-01T20:42:00.016104+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-01T20:42:00.025153+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=powerlifting-coef-calc condition=mapping
+2026-09-01T20:44:48.958157+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=portfolio-optimization condition=mapping status=completed
+2026-09-01T20:44:48.970853+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=portfolio-optimization condition=mapping
+2026-09-01T20:45:51.374126+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-01T20:45:51.383665+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=powerlifting-coef-calc condition=mapping
+2026-09-01T20:49:15.390740+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-01T20:49:15.398217+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=protein-expression-analysis condition=mapping
+2026-09-01T20:51:09.159778+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=portfolio-optimization condition=mapping status=completed
+2026-09-01T20:51:09.170443+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=portfolio-optimization condition=mapping
+2026-09-01T20:53:28.955359+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=protein-expression-analysis condition=mapping status=completed
+2026-09-01T20:53:28.961989+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=protein-expression-analysis condition=mapping
+2026-09-01T20:57:15.865605+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=protein-expression-analysis condition=mapping status=completed
+2026-09-01T20:57:15.873166+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=protein-expression-analysis condition=mapping
+2026-09-01T20:57:48.390292+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=portfolio-optimization condition=mapping status=completed
+2026-09-01T20:57:48.400055+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=quantum-numerical-simulation condition=mapping
+2026-09-01T21:01:17.933304+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=protein-expression-analysis condition=mapping status=completed
+2026-09-01T21:01:17.945839+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=sales-pivot-analysis condition=mapping
+2026-09-01T21:05:33.737462+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-01T21:05:33.740058+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=quantum-numerical-simulation condition=mapping
+2026-09-01T21:13:05.400219+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-01T21:13:05.405841+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=quantum-numerical-simulation condition=mapping
+2026-09-01T21:16:40.649756+00:00 ERROR operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=sales-pivot-analysis condition=mapping status=trial_error
+2026-09-01T21:16:40.658431+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=sales-pivot-analysis condition=mapping
+2026-09-01T21:20:19.908241+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-01T21:20:19.915890+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=software-dependency-audit condition=mapping
+2026-09-01T21:24:31.550667+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=software-dependency-audit condition=mapping status=completed
+2026-09-01T21:24:31.578734+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=software-dependency-audit condition=mapping
+2026-09-01T21:28:38.587088+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=software-dependency-audit condition=mapping status=completed
+2026-09-01T21:28:38.592313+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=software-dependency-audit condition=mapping
+2026-09-01T21:32:01.198891+00:00 ERROR operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=sales-pivot-analysis condition=mapping status=trial_error
+2026-09-01T21:32:01.204821+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=sales-pivot-analysis condition=mapping
+2026-09-01T21:32:55.925891+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=software-dependency-audit condition=mapping status=completed
+2026-09-01T21:32:55.930643+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=train-fasttext condition=mapping
+2026-09-01T21:47:38.108690+00:00 ERROR operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=sales-pivot-analysis condition=mapping status=trial_error
+2026-09-01T21:47:38.117226+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=video-silence-remover condition=mapping
+2026-09-01T21:51:18.246533+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=video-silence-remover condition=mapping status=completed
+2026-09-01T21:51:18.255510+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=video-silence-remover condition=mapping
+2026-09-01T21:54:05.384056+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=video-silence-remover condition=mapping status=completed
+2026-09-01T21:54:05.391877+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=video-silence-remover condition=mapping
+2026-09-01T21:57:04.799658+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=video-silence-remover condition=mapping status=completed
+2026-09-01T21:57:04.809536+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=virtualhome-agent-planning condition=mapping
+2026-09-01T22:02:54.216615+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-01T22:02:54.234553+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=virtualhome-agent-planning condition=mapping
+2026-09-01T22:03:34.599916+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=train-fasttext condition=mapping status=completed
+2026-09-01T22:03:34.609041+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=train-fasttext condition=mapping
+2026-09-01T22:08:13.540054+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-01T22:08:13.558838+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=virtualhome-agent-planning condition=mapping
+2026-09-01T22:11:38.496981+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-01T22:11:38.518937+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=weighted-gdp-calc condition=mapping
+2026-09-01T22:16:35.167928+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=1 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-01T22:16:35.172202+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=weighted-gdp-calc condition=mapping
+2026-09-01T22:20:52.140078+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-01T22:20:52.154498+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=weighted-gdp-calc condition=mapping
+2026-09-01T22:26:15.306287+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-01T22:27:47.639627+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=train-fasttext condition=mapping status=completed
+2026-09-01T22:27:47.653986+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=train-fasttext condition=mapping
+2026-09-01T22:59:44.328608+00:00 FAIL operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=3 task=train-fasttext condition=mapping status=completed

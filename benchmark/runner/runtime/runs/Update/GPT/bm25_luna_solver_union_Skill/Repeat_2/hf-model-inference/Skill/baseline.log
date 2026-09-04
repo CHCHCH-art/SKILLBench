@@ -1,0 +1,34 @@
+2026-09-03T19:56:42.277891+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=hf-model-inference condition=mapping image=benchmark-cache/hf-model-inference-gold:5e2a59f453e212fb provided_skills=["huggingface-local-model-materialization"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:26:31 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          1 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+┌───────────────────┬───────┐
+│ Exception         │ Count │
+├───────────────────┼───────┤
+│ AgentTimeoutError │     1 │
+└───────────────────┴───────┘
+
+Job Info
+Total runtime: 26m 31s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\hf-model-inference\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\hf-model-inference\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\hf-model-inference\Skill\Job_result`
+
+2026-09-03T20:23:14.565182+00:00 ERROR operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=hf-model-inference condition=mapping [{"exception_type":"AgentTimeoutError","exception_message":"Agent execution timed out after 1500.0 seconds"}]

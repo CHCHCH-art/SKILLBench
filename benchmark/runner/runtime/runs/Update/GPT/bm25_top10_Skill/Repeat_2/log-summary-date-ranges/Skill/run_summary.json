@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "log-summary-date-ranges",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 93.81640625,
+    "peak_memory_raw": "93.816 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 1045,
+    "observed_containers": [
+      "log-summary-date-ranges__ctkwdz6__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "log-summary-date-ran",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run001\\Repeat_2\\log-summary-date-ranges\\mapping\\log-summary-date-ranges\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.421,
+    "agent_setup_sec": 0.294,
+    "agent_execution_sec": 73.127,
+    "verifier_sec": 25.15,
+    "total_sec": 106.642
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 170816,
+  "agent_output_tokens": 1792,
+  "image_cache": {
+    "image": "benchmark-cache/log-summary-date-ranges-gold:e28534907986406f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "9qwnkc6s79-a11y--health-data",
+      "date-range-severity-summary-emission",
+      "dated-log-severity-summary",
+      "net-export-statistics-weighted-formulas",
+      "nikhilbhansali--dataforseo",
+      "powerlifting-workbook-column-formula-population",
+      "receipt-date-total-excel-serialization",
+      "sherifeldeeb--log-forensics",
+      "streaming-dated-log-sqlite-aggregation",
+      "tumf--slack-rs"
+    ],
+    "available_skills": [
+      "9qwnkc6s79-a11y--health-data",
+      "date-range-severity-summary-emission",
+      "dated-log-severity-summary",
+      "net-export-statistics-weighted-formulas",
+      "nikhilbhansali--dataforseo",
+      "powerlifting-workbook-column-formula-population",
+      "receipt-date-total-excel-serialization",
+      "sherifeldeeb--log-forensics",
+      "streaming-dated-log-sqlite-aggregation",
+      "tumf--slack-rs"
+    ],
+    "loaded_skills": [
+      "9qwnkc6s79-a11y--health-data",
+      "date-range-severity-summary-emission",
+      "dated-log-severity-summary",
+      "net-export-statistics-weighted-formulas",
+      "nikhilbhansali--dataforseo",
+      "powerlifting-workbook-column-formula-population",
+      "receipt-date-total-excel-serialization",
+      "sherifeldeeb--log-forensics",
+      "streaming-dated-log-sqlite-aggregation",
+      "tumf--slack-rs"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "9qwnkc6s79-a11y--health-data",
+      "date-range-severity-summary-emission",
+      "dated-log-severity-summary",
+      "net-export-statistics-weighted-formulas",
+      "nikhilbhansali--dataforseo",
+      "powerlifting-workbook-column-formula-population",
+      "receipt-date-total-excel-serialization",
+      "sherifeldeeb--log-forensics",
+      "streaming-dated-log-sqlite-aggregation",
+      "tumf--slack-rs"
+    ],
+    "trials": [
+      {
+        "trial_id": "log-summary-date-ranges__CTKwDZ6",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "9qwnkc6s79-a11y--health-data",
+          "date-range-severity-summary-emission",
+          "dated-log-severity-summary",
+          "net-export-statistics-weighted-formulas",
+          "nikhilbhansali--dataforseo",
+          "powerlifting-workbook-column-formula-population",
+          "receipt-date-total-excel-serialization",
+          "sherifeldeeb--log-forensics",
+          "streaming-dated-log-sqlite-aggregation",
+          "tumf--slack-rs"
+        ],
+        "available_skills": [
+          "9qwnkc6s79-a11y--health-data",
+          "date-range-severity-summary-emission",
+          "dated-log-severity-summary",
+          "net-export-statistics-weighted-formulas",
+          "nikhilbhansali--dataforseo",
+          "powerlifting-workbook-column-formula-population",
+          "receipt-date-total-excel-serialization",
+          "sherifeldeeb--log-forensics",
+          "streaming-dated-log-sqlite-aggregation",
+          "tumf--slack-rs"
+        ],
+        "loaded_skills": [
+          "9qwnkc6s79-a11y--health-data",
+          "date-range-severity-summary-emission",
+          "dated-log-severity-summary",
+          "net-export-statistics-weighted-formulas",
+          "nikhilbhansali--dataforseo",
+          "powerlifting-workbook-column-formula-population",
+          "receipt-date-total-excel-serialization",
+          "sherifeldeeb--log-forensics",
+          "streaming-dated-log-sqlite-aggregation",
+          "tumf--slack-rs"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "9qwnkc6s79-a11y--health-data",
+          "date-range-severity-summary-emission",
+          "dated-log-severity-summary",
+          "net-export-statistics-weighted-formulas",
+          "nikhilbhansali--dataforseo",
+          "powerlifting-workbook-column-formula-population",
+          "receipt-date-total-excel-serialization",
+          "sherifeldeeb--log-forensics",
+          "streaming-dated-log-sqlite-aggregation",
+          "tumf--slack-rs"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

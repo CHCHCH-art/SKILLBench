@@ -1,0 +1,110 @@
+{
+  "schema_version": 9,
+  "task_id": "mars-clouds-clustering",
+  "condition": "mapping",
+  "batch": "qwen_luna_solver_union_Skill_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 1119.484375,
+    "peak_memory_raw": "1119.484 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3876,
+    "observed_containers": [
+      "mars-clouds-clustering__jwmupma__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "mars-clouds-clusteri",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_luna_solver_union_Skill_Run002\\Repeat_3\\mars-clouds-clustering\\mapping\\mars-clouds-clustering\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.39,
+    "agent_setup_sec": 0.603,
+    "agent_execution_sec": 383.964,
+    "verifier_sec": 2.156,
+    "total_sec": 396.03
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 627845,
+  "agent_output_tokens": 5603,
+  "image_cache": {
+    "image": "benchmark-cache/mars-clouds-clustering-gold:b70cf811266787f2",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "manual-weighted-dbscan-image-evaluation",
+      "parallel-dbscan-grid-pareto-frontier",
+      "pareto-grid-search-selection",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "available_skills": [
+      "manual-weighted-dbscan-image-evaluation",
+      "parallel-dbscan-grid-pareto-frontier",
+      "pareto-grid-search-selection",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "loaded_skills": [
+      "manual-weighted-dbscan-image-evaluation",
+      "parallel-dbscan-grid-pareto-frontier",
+      "pareto-grid-search-selection",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "manual-weighted-dbscan-image-evaluation",
+      "parallel-dbscan-grid-pareto-frontier",
+      "pareto-grid-search-selection",
+      "weighted-dbscan-centroid-evaluation"
+    ],
+    "trials": [
+      {
+        "trial_id": "mars-clouds-clustering__jwMUPmA",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "manual-weighted-dbscan-image-evaluation",
+          "parallel-dbscan-grid-pareto-frontier",
+          "pareto-grid-search-selection",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "available_skills": [
+          "manual-weighted-dbscan-image-evaluation",
+          "parallel-dbscan-grid-pareto-frontier",
+          "pareto-grid-search-selection",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "loaded_skills": [
+          "manual-weighted-dbscan-image-evaluation",
+          "parallel-dbscan-grid-pareto-frontier",
+          "pareto-grid-search-selection",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "manual-weighted-dbscan-image-evaluation",
+          "parallel-dbscan-grid-pareto-frontier",
+          "pareto-grid-search-selection",
+          "weighted-dbscan-centroid-evaluation"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

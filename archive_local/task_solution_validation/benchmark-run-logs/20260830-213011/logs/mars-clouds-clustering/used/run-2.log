@@ -1,0 +1,44 @@
+Task: mars-clouds-clustering
+Source type: used
+Task run: 5
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\mars-clouds-clustering
+
+========== Repeated Run 2/3 ==========
+
+========== Run solve.sh ==========
+
+========== Run test.sh ==========
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 8 items
+
+../tests/test_outputs.py ........                                        [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestParetoFrontier::test_result_file_exists
+PASSED ../tests/test_outputs.py::TestParetoFrontier::test_result_file_not_empty
+PASSED ../tests/test_outputs.py::TestParetoFrontier::test_required_columns
+PASSED ../tests/test_outputs.py::TestParetoFrontier::test_f1_values_valid
+PASSED ../tests/test_outputs.py::TestParetoFrontier::test_delta_values_positive
+PASSED ../tests/test_outputs.py::TestParetoFrontier::test_hyperparameter_ranges
+PASSED ../tests/test_outputs.py::TestParetoFrontier::test_is_valid_pareto_frontier
+PASSED ../tests/test_outputs.py::TestParetoFrontier::test_all_expected_points_found
+============================== 8 passed in 0.35s ===============================
+
+========== Result ==========
+Task: mars-clouds-clustering
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 95.5s (exit 0)
+Test: 0.6s (exit 0)
+Solve Memory Peak: 741.7 MiB
+Test Memory Peak: 83.9 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s

@@ -1,0 +1,28 @@
+2026-09-02T10:54:29.863209+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=mario-coin-counting condition=mapping image=benchmark-cache/mario-coin-counting-gold:989a4c6bcaeff277 provided_skills=["video-iframe-grayscale-keyframes", "iframe-grayscale-keyframe-extraction", "template-match-spatial-counting", "edge-component-hog-spatial-counting", "edge-hog-template-calibration", "AIA-11-HN-MIB--gemini-vision", "classic-pcap-streaming-network-metrics", "video-global-egomotion-homography", "metta-ai--tv-observation", "wlzh--invoice-scanner"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:03:29 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 29s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_2\mario-coin-counting\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_2\mario-coin-counting\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_2\mario-coin-counting\Skill\Job_result`
+
+2026-09-02T10:58:00.592835+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=mario-coin-counting condition=mapping

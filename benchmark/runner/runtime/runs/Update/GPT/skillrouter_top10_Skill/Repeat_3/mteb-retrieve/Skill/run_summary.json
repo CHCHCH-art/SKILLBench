@@ -1,0 +1,114 @@
+{
+  "schema_version": 9,
+  "task_id": "mteb-retrieve",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run005",
+  "repeat": 3,
+  "operation": "rerun",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 2048.17578125,
+    "peak_memory_raw": "2048.176 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 7715,
+    "observed_containers": [
+      "mteb-retrieve__nxqxzgn__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "mteb-retrieve",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run005\\Repeat_3\\mteb-retrieve\\mapping\\mteb-retrieve\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.416,
+    "agent_setup_sec": 0.362,
+    "agent_execution_sec": 214.947,
+    "verifier_sec": 576.293,
+    "total_sec": 800.683
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 176345,
+  "agent_output_tokens": 3473,
+  "image_cache": {
+    "image": "benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "alinaqi--ai-models",
+      "clawdbot--spotify-player",
+      "huggingface--hf-mcp",
+      "mgd34msu--precision-mastery",
+      "mteb-streaming-topk-cosine-retrieval",
+      "ratacat--dianalokada",
+      "scifact-prompt-bound-mteb-topk-retrieval",
+      "tanimoto-topk-molecule-ranking",
+      "tavily-ai--search",
+      "yoanbernabeu--grepai-search-basics"
+    ],
+    "available_skills": [
+      "alinaqi--ai-models",
+      "clawdbot--spotify-player",
+      "huggingface--hf-mcp",
+      "mgd34msu--precision-mastery",
+      "mteb-streaming-topk-cosine-retrieval",
+      "ratacat--dianalokada",
+      "scifact-prompt-bound-mteb-topk-retrieval",
+      "tanimoto-topk-molecule-ranking",
+      "tavily-ai--search",
+      "yoanbernabeu--grepai-search-basics"
+    ],
+    "loaded_skills": [],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [],
+    "trials": [
+      {
+        "trial_id": "mteb-retrieve__nXqxZgn",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "alinaqi--ai-models",
+          "clawdbot--spotify-player",
+          "huggingface--hf-mcp",
+          "mgd34msu--precision-mastery",
+          "mteb-streaming-topk-cosine-retrieval",
+          "ratacat--dianalokada",
+          "scifact-prompt-bound-mteb-topk-retrieval",
+          "tanimoto-topk-molecule-ranking",
+          "tavily-ai--search",
+          "yoanbernabeu--grepai-search-basics"
+        ],
+        "available_skills": [
+          "alinaqi--ai-models",
+          "clawdbot--spotify-player",
+          "huggingface--hf-mcp",
+          "mgd34msu--precision-mastery",
+          "mteb-streaming-topk-cosine-retrieval",
+          "ratacat--dianalokada",
+          "scifact-prompt-bound-mteb-topk-retrieval",
+          "tanimoto-topk-molecule-ranking",
+          "tavily-ai--search",
+          "yoanbernabeu--grepai-search-basics"
+        ],
+        "loaded_skills": [],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": false,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

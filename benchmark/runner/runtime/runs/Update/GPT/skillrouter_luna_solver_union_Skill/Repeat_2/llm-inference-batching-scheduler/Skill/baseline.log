@@ -1,0 +1,29 @@
+2026-09-01T19:41:58.871339+00:00 START operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=llm-inference-batching-scheduler condition=mapping image=benchmark-cache/llm-inference-batching-scheduler-gold:c835608261b94b37 provided_skills=["shared-shape-dp-budget-closure", "generation-aware-dp-batch-splitting", "paired-plan-cost-threshold-selection", "shared-sequence-shape-selection"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:24:44 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 24m 44s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_luna_solver_uni
+on_Skill_Run003\Repeat_2\llm-inference-batching-scheduler\Skill\Job_result\resu
+lt.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_luna_solver_uni
+on_Skill_Run003\Repeat_2\llm-inference-batching-scheduler\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_luna_solver_uni
+on_Skill_Run003\Repeat_2\llm-inference-batching-scheduler\Skill\Job_result`
+
+2026-09-01T20:06:45.050393+00:00 PASS operation=run batch=skillrouter_luna_solver_union_Skill_Run003 repeat=2 task=llm-inference-batching-scheduler condition=mapping

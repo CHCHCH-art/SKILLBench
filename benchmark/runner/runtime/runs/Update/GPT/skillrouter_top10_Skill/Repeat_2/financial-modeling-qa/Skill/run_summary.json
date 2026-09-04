@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "financial-modeling-qa",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run005",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 148.9765625,
+    "peak_memory_raw": "148.977 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3547,
+    "observed_containers": [
+      "financial-modeling-qa__zpntnzj__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "financial-modeling-q",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run005\\Repeat_2\\financial-modeling-qa\\mapping\\financial-modeling-qa\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.474,
+    "agent_setup_sec": 0.35,
+    "agent_execution_sec": 162.854,
+    "verifier_sec": 188.926,
+    "total_sec": 360.582
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 373210,
+  "agent_output_tokens": 5204,
+  "image_cache": {
+    "image": "benchmark-cache/financial-modeling-qa-gold:0fdb74de33d4be91",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "K-Dense-AI--matlab",
+      "ToruAI--scout",
+      "XSpoonAi--onchain-data-analysis",
+      "alsk1992--metaculus",
+      "famaoai-creator--test-viewpoint-analyst",
+      "kivo360--moai-domain-data-science",
+      "majiayu000--daoagent",
+      "sickn33--deep-research",
+      "travisjneuman--case-interview-practice",
+      "unique-category-game-assignment"
+    ],
+    "available_skills": [
+      "K-Dense-AI--matlab",
+      "ToruAI--scout",
+      "XSpoonAi--onchain-data-analysis",
+      "alsk1992--metaculus",
+      "famaoai-creator--test-viewpoint-analyst",
+      "kivo360--moai-domain-data-science",
+      "majiayu000--daoagent",
+      "sickn33--deep-research",
+      "travisjneuman--case-interview-practice",
+      "unique-category-game-assignment"
+    ],
+    "loaded_skills": [
+      "K-Dense-AI--matlab",
+      "ToruAI--scout",
+      "XSpoonAi--onchain-data-analysis",
+      "alsk1992--metaculus",
+      "famaoai-creator--test-viewpoint-analyst",
+      "kivo360--moai-domain-data-science",
+      "majiayu000--daoagent",
+      "sickn33--deep-research",
+      "travisjneuman--case-interview-practice",
+      "unique-category-game-assignment"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "K-Dense-AI--matlab",
+      "ToruAI--scout",
+      "XSpoonAi--onchain-data-analysis",
+      "alsk1992--metaculus",
+      "famaoai-creator--test-viewpoint-analyst",
+      "kivo360--moai-domain-data-science",
+      "majiayu000--daoagent",
+      "sickn33--deep-research",
+      "travisjneuman--case-interview-practice",
+      "unique-category-game-assignment"
+    ],
+    "trials": [
+      {
+        "trial_id": "financial-modeling-qa__ZPNtNZj",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "K-Dense-AI--matlab",
+          "ToruAI--scout",
+          "XSpoonAi--onchain-data-analysis",
+          "alsk1992--metaculus",
+          "famaoai-creator--test-viewpoint-analyst",
+          "kivo360--moai-domain-data-science",
+          "majiayu000--daoagent",
+          "sickn33--deep-research",
+          "travisjneuman--case-interview-practice",
+          "unique-category-game-assignment"
+        ],
+        "available_skills": [
+          "K-Dense-AI--matlab",
+          "ToruAI--scout",
+          "XSpoonAi--onchain-data-analysis",
+          "alsk1992--metaculus",
+          "famaoai-creator--test-viewpoint-analyst",
+          "kivo360--moai-domain-data-science",
+          "majiayu000--daoagent",
+          "sickn33--deep-research",
+          "travisjneuman--case-interview-practice",
+          "unique-category-game-assignment"
+        ],
+        "loaded_skills": [
+          "K-Dense-AI--matlab",
+          "ToruAI--scout",
+          "XSpoonAi--onchain-data-analysis",
+          "alsk1992--metaculus",
+          "famaoai-creator--test-viewpoint-analyst",
+          "kivo360--moai-domain-data-science",
+          "majiayu000--daoagent",
+          "sickn33--deep-research",
+          "travisjneuman--case-interview-practice",
+          "unique-category-game-assignment"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "K-Dense-AI--matlab",
+          "ToruAI--scout",
+          "XSpoonAi--onchain-data-analysis",
+          "alsk1992--metaculus",
+          "famaoai-creator--test-viewpoint-analyst",
+          "kivo360--moai-domain-data-science",
+          "majiayu000--daoagent",
+          "sickn33--deep-research",
+          "travisjneuman--case-interview-practice",
+          "unique-category-game-assignment"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

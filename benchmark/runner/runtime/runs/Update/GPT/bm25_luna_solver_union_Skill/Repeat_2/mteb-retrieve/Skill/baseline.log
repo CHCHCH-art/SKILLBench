@@ -1,0 +1,28 @@
+2026-09-04T04:07:40.492704+00:00 START operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=mteb-retrieve condition=mapping image=benchmark-cache/mteb-retrieve-gold:445b21d86c9909eb provided_skills=["mteb-streaming-topk-cosine-retrieval"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:28:29 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 28m 29s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\mteb-retrieve\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\mteb-retrieve\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\mteb-retrieve\Skill\Job_result`
+
+2026-09-04T04:36:11.428681+00:00 PASS operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=mteb-retrieve condition=mapping

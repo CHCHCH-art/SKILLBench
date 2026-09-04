@@ -1,0 +1,28 @@
+2026-09-02T07:11:41.992717+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=exceltable-in-ppt condition=mapping image=benchmark-cache/exceltable-in-ppt-gold:76ac1a2bd4e98536 provided_skills=["pptx-embedded-workbook-orchestration", "pptx-embedded-workbook-rate-update", "pptx-zip-preserving-embedding-replacement", "inverse-rate-workbook-cell-update", "dedalus-erp-pas--pptx", "benchflow-ai--xlsx-1", "xlsx-formula-cache-preserving-recalc", "sickn33--xlsx-official", "K-Dense-AI--xlsx", "sbroenne--excel-mcp"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:04:33 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 33s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_3\exceltable-in-ppt\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_3\exceltable-in-ppt\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_3\exceltable-in-ppt\Skill\Job_result`
+
+2026-09-02T07:16:16.748812+00:00 PASS operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=exceltable-in-ppt condition=mapping

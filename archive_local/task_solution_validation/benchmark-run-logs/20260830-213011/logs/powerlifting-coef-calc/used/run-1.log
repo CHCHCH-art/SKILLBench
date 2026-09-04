@@ -1,0 +1,105 @@
+
+========== Reuse Image ==========
+Using cached image: benchmark-cache/powerlifting-coef-calc-gold:0fef2731a5e5d6d2
+Memory monitor: metric=docker_stats_memory, source=docker_stats, interval=1.000s
+Task: powerlifting-coef-calc
+Source type: used
+Task run: 4
+Source run: 1
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\powerlifting-coef-calc
+
+========== Repeated Run 1/3 ==========
+
+========== Run solve.sh ==========
+convert /root/data/openipf.xlsx as a Calc document -> /tmp/powerlifting_coef_calc_heavy/openipf.fods using filter : OpenDocument Spreadsheet Flat XML
+convert /root/data/openipf_filled.xlsx as a Calc document -> /tmp/powerlifting_coef_calc_heavy/roundtrip/openipf_filled.ods using filter : calc8
+convert /tmp/powerlifting_coef_calc_heavy/roundtrip/openipf_filled.ods as a Calc document -> /tmp/powerlifting_coef_calc_heavy/roundtrip/openipf_filled.xlsx using filter : Calc Office Open XML
+
+========== Run test.sh ==========
+Initialized project `root`
+Using CPython 3.12.3 interpreter at: /usr/bin/python3.12
+Creating virtual environment at: .venv
+Resolved 7 packages in 2.32s
+Downloading pygments (1.2MiB)
+ Downloaded pygments
+Prepared 5 packages in 951ms
+Installed 5 packages in 6ms
+ + iniconfig==2.3.0
+ + packaging==26.3
+ + pluggy==1.6.0
+ + pygments==2.21.0
+ + pytest==8.4.1
+Resolved 8 packages in 1.76s
+Prepared 1 package in 248ms
+Installed 1 package in 0.58ms
+ + pytest-json-ctrf==0.3.5
+Resolved 10 packages in 1.54s
+Downloading polars-runtime-32 (43.1MiB)
+ Downloaded polars-runtime-32
+Prepared 2 packages in 10.52s
+Installed 2 packages in 4ms
+ + polars==1.37.1
+ + polars-runtime-32==1.37.1
+Resolved 12 packages in 1.46s
+Prepared 2 packages in 754ms
+Installed 2 packages in 3ms
+ + et-xmlfile==2.0.0
+ + openpyxl==3.1.5
+Resolved 13 packages in 571ms
+Downloading fastexcel (3.2MiB)
+ Downloaded fastexcel
+Prepared 1 package in 3.40s
+Installed 1 package in 1ms
+ + fastexcel==0.18.0
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 11 items
+
+../tests/test_outputs.py ...........                                     [100%]
+
+==================================== PASSES ====================================
+__________________ TestSheetStructure.test_dots_sheet_exists ___________________
+------------------------------ Captured log setup ------------------------------
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 6, falling back to string
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 7, falling back to string
+____________ TestSheetStructure.test_dots_sheet_has_correct_columns ____________
+------------------------------ Captured log setup ------------------------------
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 6, falling back to string
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 7, falling back to string
+__________________ TestSheetStructure.test_row_count_matches ___________________
+------------------------------ Captured log setup ------------------------------
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 6, falling back to string
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 7, falling back to string
+_______________ TestDotsSheetFormulas.test_dots_sheet_not_empty ________________
+------------------------------ Captured log setup ------------------------------
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 6, falling back to string
+WARNING  fastexcel.types.dtype:mod.rs:245 Could not determine dtype for column 7, falling back to string
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_data_sheet_exists
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_dots_sheet_exists
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_dots_sheet_has_correct_columns
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_row_count_matches
+PASSED ../tests/test_outputs.py::TestDotsSheetFormulas::test_dots_sheet_not_empty
+PASSED ../tests/test_outputs.py::TestDotsSheetFormulas::test_total_column_is_formula
+PASSED ../tests/test_outputs.py::TestDotsSheetFormulas::test_dots_column_is_formula
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_dots_values_match_ground_truth
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_all_lifters_have_ground_truth
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_dots_formula_handles_male_lifters
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_dots_formula_handles_female_lifters
+============================== 11 passed in 0.53s ==============================
+
+========== Result ==========
+Task: powerlifting-coef-calc
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 3.1s (exit 0)
+Test: 24.7s (exit 0)
+Solve Memory Peak: 195.6 MiB
+Test Memory Peak: 235.7 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s

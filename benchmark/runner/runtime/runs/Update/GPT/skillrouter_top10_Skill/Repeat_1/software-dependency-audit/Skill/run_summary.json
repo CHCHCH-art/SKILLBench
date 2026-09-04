@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "software-dependency-audit",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run005",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestSecurityAuditTask::test_csv_matches_ground_truth: AssertionError: Generated CSV content does not match expected vulnerabilities",
+  "peak_memory": {
+    "peak_memory_mib": 719.265625,
+    "peak_memory_raw": "719.266 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2632,
+    "observed_containers": [
+      "software-dependency-audit__8fq8d5h__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "software-dependency-",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run005\\Repeat_1\\software-dependency-audit\\mapping\\software-dependency-audit\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 2.271,
+    "agent_setup_sec": 0.818,
+    "agent_execution_sec": 156.964,
+    "verifier_sec": 99.069,
+    "total_sec": 268.238
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 501222,
+  "agent_output_tokens": 4033,
+  "image_cache": {
+    "image": "benchmark-cache/software-dependency-audit-gold:65439dede9bf4280",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "89jobrien--security-audit",
+      "TheDecipherist--security-audit",
+      "aj-geddes--vulnerability-scanning",
+      "bagelhole--vulnerability-scanning",
+      "curiouslearner--dependency-auditor",
+      "dirnbauer--enterprise-readiness",
+      "hack23--cis-controls",
+      "oimiragieo--gemini-cli-security",
+      "ruvnet--agent-v3-security-architect",
+      "trivy-offline-filesystem-vulnerability-scan"
+    ],
+    "available_skills": [
+      "89jobrien--security-audit",
+      "TheDecipherist--security-audit",
+      "aj-geddes--vulnerability-scanning",
+      "bagelhole--vulnerability-scanning",
+      "curiouslearner--dependency-auditor",
+      "dirnbauer--enterprise-readiness",
+      "hack23--cis-controls",
+      "oimiragieo--gemini-cli-security",
+      "ruvnet--agent-v3-security-architect",
+      "trivy-offline-filesystem-vulnerability-scan"
+    ],
+    "loaded_skills": [
+      "89jobrien--security-audit",
+      "TheDecipherist--security-audit",
+      "aj-geddes--vulnerability-scanning",
+      "bagelhole--vulnerability-scanning",
+      "curiouslearner--dependency-auditor",
+      "dirnbauer--enterprise-readiness",
+      "hack23--cis-controls",
+      "oimiragieo--gemini-cli-security",
+      "ruvnet--agent-v3-security-architect",
+      "trivy-offline-filesystem-vulnerability-scan"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "89jobrien--security-audit",
+      "TheDecipherist--security-audit",
+      "aj-geddes--vulnerability-scanning",
+      "bagelhole--vulnerability-scanning",
+      "curiouslearner--dependency-auditor",
+      "dirnbauer--enterprise-readiness",
+      "hack23--cis-controls",
+      "oimiragieo--gemini-cli-security",
+      "ruvnet--agent-v3-security-architect",
+      "trivy-offline-filesystem-vulnerability-scan"
+    ],
+    "trials": [
+      {
+        "trial_id": "software-dependency-audit__8Fq8D5H",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "89jobrien--security-audit",
+          "TheDecipherist--security-audit",
+          "aj-geddes--vulnerability-scanning",
+          "bagelhole--vulnerability-scanning",
+          "curiouslearner--dependency-auditor",
+          "dirnbauer--enterprise-readiness",
+          "hack23--cis-controls",
+          "oimiragieo--gemini-cli-security",
+          "ruvnet--agent-v3-security-architect",
+          "trivy-offline-filesystem-vulnerability-scan"
+        ],
+        "available_skills": [
+          "89jobrien--security-audit",
+          "TheDecipherist--security-audit",
+          "aj-geddes--vulnerability-scanning",
+          "bagelhole--vulnerability-scanning",
+          "curiouslearner--dependency-auditor",
+          "dirnbauer--enterprise-readiness",
+          "hack23--cis-controls",
+          "oimiragieo--gemini-cli-security",
+          "ruvnet--agent-v3-security-architect",
+          "trivy-offline-filesystem-vulnerability-scan"
+        ],
+        "loaded_skills": [
+          "89jobrien--security-audit",
+          "TheDecipherist--security-audit",
+          "aj-geddes--vulnerability-scanning",
+          "bagelhole--vulnerability-scanning",
+          "curiouslearner--dependency-auditor",
+          "dirnbauer--enterprise-readiness",
+          "hack23--cis-controls",
+          "oimiragieo--gemini-cli-security",
+          "ruvnet--agent-v3-security-architect",
+          "trivy-offline-filesystem-vulnerability-scan"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "89jobrien--security-audit",
+          "TheDecipherist--security-audit",
+          "aj-geddes--vulnerability-scanning",
+          "bagelhole--vulnerability-scanning",
+          "curiouslearner--dependency-auditor",
+          "dirnbauer--enterprise-readiness",
+          "hack23--cis-controls",
+          "oimiragieo--gemini-cli-security",
+          "ruvnet--agent-v3-security-architect",
+          "trivy-offline-filesystem-vulnerability-scan"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

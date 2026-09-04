@@ -1,0 +1,59 @@
+Task: powerlifting-coef-calc
+Source type: baseline
+Task run: 2
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\powerlifting-coef-calc
+
+========== Repeated Run 2/3 ==========
+
+========== Run solve.sh ==========
+error: Project is already initialized in `/root` (`pyproject.toml` file exists)
+
+========== Run test.sh ==========
+error: Project is already initialized in `/root` (`pyproject.toml` file exists)
+Resolved 21 packages in 0.51ms
+Audited 19 packages in 0.12ms
+Resolved 21 packages in 0.43ms
+Audited 19 packages in 0.12ms
+Resolved 21 packages in 0.41ms
+Audited 19 packages in 0.12ms
+Resolved 21 packages in 0.41ms
+Audited 19 packages in 0.11ms
+Resolved 21 packages in 0.48ms
+Audited 19 packages in 0.17ms
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /
+plugins: json-ctrf-0.3.5
+collected 11 items
+
+../tests/test_outputs.py ...........                                     [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_data_sheet_exists
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_dots_sheet_exists
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_dots_sheet_has_correct_columns
+PASSED ../tests/test_outputs.py::TestSheetStructure::test_row_count_matches
+PASSED ../tests/test_outputs.py::TestDotsSheetFormulas::test_dots_sheet_not_empty
+PASSED ../tests/test_outputs.py::TestDotsSheetFormulas::test_total_column_is_formula
+PASSED ../tests/test_outputs.py::TestDotsSheetFormulas::test_dots_column_is_formula
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_dots_values_match_ground_truth
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_all_lifters_have_ground_truth
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_dots_formula_handles_male_lifters
+PASSED ../tests/test_outputs.py::TestDotsAccuracy::test_dots_formula_handles_female_lifters
+============================== 11 passed in 0.20s ==============================
+
+========== Result ==========
+Task: powerlifting-coef-calc
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 0.1s (exit 2)
+Test: 0.5s (exit 0)
+Solve Memory Peak: 84.9 MiB
+Test Memory Peak: 92.0 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s

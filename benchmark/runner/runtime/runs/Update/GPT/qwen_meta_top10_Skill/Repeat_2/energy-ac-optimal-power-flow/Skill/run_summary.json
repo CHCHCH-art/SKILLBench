@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "energy-ac-optimal-power-flow",
+  "condition": "mapping",
+  "batch": "qwen_meta_top10_Skill_Run004",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_meta_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestSchema::test_top_level_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_summary_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_generator_count: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_generator_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_bus_count: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_bus_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_most_loaded_branches: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestSchema::test_feasibility_check_fields: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_solver_status: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_voltage_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_generator_p_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_generator_q_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_reference_angle: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_power_balance_acopf: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_branch_limits_and_angle_bounds: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_branch_current_limits: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_internal_consistency_generation: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_internal_consistency_losses: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_losses_reasonable: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_no_voltage_violations: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestFeasibility::test_no_branch_overloads: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestOptimality::test_cost_is_positive: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestOptimality::test_cost_matches_gencost: AssertionError: Output file /root/report.json does not exist; test_outputs.py::TestOptimality::test_cost_within_10pct_of_solved_acopf: AssertionError: Output file /root/report.json does not exist",
+  "peak_memory": {
+    "peak_memory_mib": 2749.84375,
+    "peak_memory_raw": "2749.844 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 15779,
+    "observed_containers": [
+      "energy-ac-optimal-power-flow__vmupdof__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "energy-ac-optimal-po",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_meta_top10_Skill_Run004\\Repeat_2\\energy-ac-optimal-power-flow\\mapping\\energy-ac-optimal-power-flow\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.448,
+    "agent_setup_sec": 0.373,
+    "agent_execution_sec": 1558.313,
+    "verifier_sec": 109.257,
+    "total_sec": 1676.199
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 3603322,
+  "agent_output_tokens": 16109,
+  "image_cache": {
+    "image": "benchmark-cache/energy-ac-optimal-power-flow-gold:131fccb5858c984c",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "casadi-acopf-pi-network-formulation",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dcopf-reserve-lmp-solve",
+      "dispatch-loading-operating-margin-report",
+      "ipopt-acopf-reference-solve",
+      "quadratic-dispatch-outer-approximation-report",
+      "rectangular-acopf-network-model"
+    ],
+    "available_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "casadi-acopf-pi-network-formulation",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dcopf-reserve-lmp-solve",
+      "dispatch-loading-operating-margin-report",
+      "ipopt-acopf-reference-solve",
+      "quadratic-dispatch-outer-approximation-report",
+      "rectangular-acopf-network-model"
+    ],
+    "loaded_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "casadi-acopf-pi-network-formulation",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dcopf-reserve-lmp-solve",
+      "dispatch-loading-operating-margin-report",
+      "ipopt-acopf-reference-solve",
+      "quadratic-dispatch-outer-approximation-report",
+      "rectangular-acopf-network-model"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "acopf-feasibility-loading-report",
+      "acopf-ipopt-reference-initialization",
+      "acopf-solution-reporting",
+      "casadi-acopf-pi-network-formulation",
+      "cvxpy-dcopf-reserve-cooptimization",
+      "dcopf-reserve-lmp-solve",
+      "dispatch-loading-operating-margin-report",
+      "ipopt-acopf-reference-solve",
+      "quadratic-dispatch-outer-approximation-report",
+      "rectangular-acopf-network-model"
+    ],
+    "trials": [
+      {
+        "trial_id": "energy-ac-optimal-power-flow__VMuPDoF",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "casadi-acopf-pi-network-formulation",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dcopf-reserve-lmp-solve",
+          "dispatch-loading-operating-margin-report",
+          "ipopt-acopf-reference-solve",
+          "quadratic-dispatch-outer-approximation-report",
+          "rectangular-acopf-network-model"
+        ],
+        "available_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "casadi-acopf-pi-network-formulation",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dcopf-reserve-lmp-solve",
+          "dispatch-loading-operating-margin-report",
+          "ipopt-acopf-reference-solve",
+          "quadratic-dispatch-outer-approximation-report",
+          "rectangular-acopf-network-model"
+        ],
+        "loaded_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "casadi-acopf-pi-network-formulation",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dcopf-reserve-lmp-solve",
+          "dispatch-loading-operating-margin-report",
+          "ipopt-acopf-reference-solve",
+          "quadratic-dispatch-outer-approximation-report",
+          "rectangular-acopf-network-model"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "acopf-feasibility-loading-report",
+          "acopf-ipopt-reference-initialization",
+          "acopf-solution-reporting",
+          "casadi-acopf-pi-network-formulation",
+          "cvxpy-dcopf-reserve-cooptimization",
+          "dcopf-reserve-lmp-solve",
+          "dispatch-loading-operating-margin-report",
+          "ipopt-acopf-reference-solve",
+          "quadratic-dispatch-outer-approximation-report",
+          "rectangular-acopf-network-model"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

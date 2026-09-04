@@ -1,0 +1,94 @@
+{
+  "schema_version": 9,
+  "task_id": "software-dependency-audit",
+  "condition": "mapping",
+  "batch": "skillrouter_luna_solver_union_Skill_Run003",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestSecurityAuditTask::test_csv_matches_ground_truth: AssertionError: Generated CSV content does not match expected vulnerabilities",
+  "peak_memory": {
+    "peak_memory_mib": 94.5625,
+    "peak_memory_raw": "94.562 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2522,
+    "observed_containers": [
+      "software-dependency-audit__k7rd3qf__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "software-dependency-",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_luna_solver_union_Skill_Run003\\Repeat_3\\software-dependency-audit\\mapping\\software-dependency-audit\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.85,
+    "agent_setup_sec": 0.387,
+    "agent_execution_sec": 128.655,
+    "verifier_sec": 120.438,
+    "total_sec": 256.084
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 179346,
+  "agent_output_tokens": 3674,
+  "image_cache": {
+    "image": "benchmark-cache/software-dependency-audit-gold:65439dede9bf4280",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "oimiragieo--gemini-cli-security",
+      "trivy-offline-filesystem-vulnerability-scan"
+    ],
+    "available_skills": [
+      "oimiragieo--gemini-cli-security",
+      "trivy-offline-filesystem-vulnerability-scan"
+    ],
+    "loaded_skills": [
+      "oimiragieo--gemini-cli-security",
+      "trivy-offline-filesystem-vulnerability-scan"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "oimiragieo--gemini-cli-security",
+      "trivy-offline-filesystem-vulnerability-scan"
+    ],
+    "trials": [
+      {
+        "trial_id": "software-dependency-audit__K7RD3qf",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "oimiragieo--gemini-cli-security",
+          "trivy-offline-filesystem-vulnerability-scan"
+        ],
+        "available_skills": [
+          "oimiragieo--gemini-cli-security",
+          "trivy-offline-filesystem-vulnerability-scan"
+        ],
+        "loaded_skills": [
+          "oimiragieo--gemini-cli-security",
+          "trivy-offline-filesystem-vulnerability-scan"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "oimiragieo--gemini-cli-security",
+          "trivy-offline-filesystem-vulnerability-scan"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

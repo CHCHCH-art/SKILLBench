@@ -1,0 +1,115 @@
+Task: mario-coin-counting
+Source type: used
+Task run: 5
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\mario-coin-counting
+
+========== Repeated Run 2/3 ==========
+
+========== Run solve.sh ==========
+Using ffmpeg to extract keyframes from video
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+  libavutil      58. 29.100 / 58. 29.100
+  libavcodec     60. 31.102 / 60. 31.102
+  libavformat    60. 16.100 / 60. 16.100
+  libavdevice    60.  3.100 / 60.  3.100
+  libavfilter     9. 12.100 /  9. 12.100
+  libswscale      7.  5.100 /  7.  5.100
+  libswresample   4. 12.100 /  4. 12.100
+  libpostproc    57.  3.100 / 57.  3.100
+-vsync is deprecated. Use -fps_mode
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/root/super-mario.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.1.100
+  Duration: 00:00:27.00, start: 0.000000, bitrate: 4555 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 4548 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> png (native))
+Press [q] to stop, [?] for help
+Output #0, image2, to '/root/keyframes_%03d.png':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf60.16.100
+  Stream #0:0(und): Video: png, rgb24(pc, gbr/bt709/bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 60 fps, 60 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.31.102 png
+frame=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    
+frame=    1 fps=0.0 q=-0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    
+frame=    2 fps=1.8 q=-0.0 size=N/A time=00:00:04.16 bitrate=N/A speed=3.82x    
+frame=    4 fps=2.5 q=-0.0 size=N/A time=00:00:10.91 bitrate=N/A speed=6.85x    
+frame=    5 fps=2.4 q=-0.0 size=N/A time=00:00:13.50 bitrate=N/A speed=6.45x    
+frame=    6 fps=2.3 q=-0.0 size=N/A time=00:00:17.66 bitrate=N/A speed=6.81x    
+frame=    7 fps=2.3 q=-0.0 size=N/A time=00:00:20.25 bitrate=N/A speed=6.54x    
+[out#0/image2 @ 0x5c6e6a676500] video:1813kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+frame=    8 fps=2.6 q=-0.0 Lsize=N/A time=00:00:24.41 bitrate=N/A speed=7.87x    
+Converting keyframes to gray scale images
+/root/keyframes_001.png
+/root/keyframes_002.png
+/root/keyframes_003.png
+/root/keyframes_004.png
+/root/keyframes_005.png
+/root/keyframes_006.png
+/root/keyframes_007.png
+/root/keyframes_008.png
+
+========== Run test.sh ==========
+Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.5.0-2ubuntu10.13).
+0 upgraded, 0 newly installed, 0 to remove and 41 not upgraded.
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+error: No virtual environment found; run `uv venv` to create an environment, or pass `--system` to install into a non-virtual environment
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0 -- /root/.cache/uv/archive-v0/WLolRYI1NpG1O9MDBNwpe/bin/python
+cachedir: .pytest_cache
+rootdir: /
+plugins: json-ctrf-0.3.5
+collecting ... collected 3 items
+
+../tests/test_outputs.py::TestFileExists::test_key_frames_exists PASSED  [ 33%]
+../tests/test_outputs.py::TestFileExists::test_grayscale_applied PASSED  [ 66%]
+../tests/test_outputs.py::TestFileExists::test_counting_results PASSED   [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestFileExists::test_key_frames_exists
+PASSED ../tests/test_outputs.py::TestFileExists::test_grayscale_applied
+PASSED ../tests/test_outputs.py::TestFileExists::test_counting_results
+============================== 3 passed in 0.68s ===============================
+
+========== Result ==========
+Task: mario-coin-counting
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 15.2s (exit 0)
+Test: 180.2s (exit 0)
+Solve Memory Peak: 290.1 MiB
+Test Memory Peak: 233.6 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s

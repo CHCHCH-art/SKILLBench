@@ -1,0 +1,28 @@
+2026-09-04T00:40:41.531371+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=sales-pivot-analysis condition=mapping image=benchmark-cache/sales-pivot-analysis-gold:0de7e366d80d6ca8 provided_skills=["demographic-pdf-excel-normalization-join", "demographic-quartile-derived-enrichment", "benchflow-ai--xlsx-1"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:07:44 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 7m 44s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_1\sales-pivot-analysis\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_1\sales-pivot-analysis\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_1\sales-pivot-analysis\Skill\Job_result`
+
+2026-09-04T00:48:27.456853+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=sales-pivot-analysis condition=mapping

@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "powerlifting-coef-calc",
+  "condition": "mapping",
+  "batch": "skillrouter_top10_Skill_Run005",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 571.265625,
+    "peak_memory_raw": "571.266 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3805,
+    "observed_containers": [
+      "powerlifting-coef-calc__umnadp4__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "powerlifting-coef-ca",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_top10_Skill_Run005\\Repeat_2\\powerlifting-coef-calc\\mapping\\powerlifting-coef-calc\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.929,
+    "agent_setup_sec": 0.437,
+    "agent_execution_sec": 189.978,
+    "verifier_sec": 185.558,
+    "total_sec": 386.173
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 413701,
+  "agent_output_tokens": 5146,
+  "image_cache": {
+    "image": "benchmark-cache/powerlifting-coef-calc-gold:0fef2731a5e5d6d2",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "disco-trooper--cycling-training",
+      "dots-coefficient-excel-formula",
+      "dots-powerlifting-formula-generator",
+      "economic-series-workbook-extraction",
+      "gtmagents--lead-qualification",
+      "hannesill--sapsii-score",
+      "highs-dual-market-pricing-report",
+      "powerlifting-workbook-column-formula-population",
+      "powerlifting-workbook-formula-population",
+      "sbroenne--excel-mcp"
+    ],
+    "available_skills": [
+      "disco-trooper--cycling-training",
+      "dots-coefficient-excel-formula",
+      "dots-powerlifting-formula-generator",
+      "economic-series-workbook-extraction",
+      "gtmagents--lead-qualification",
+      "hannesill--sapsii-score",
+      "highs-dual-market-pricing-report",
+      "powerlifting-workbook-column-formula-population",
+      "powerlifting-workbook-formula-population",
+      "sbroenne--excel-mcp"
+    ],
+    "loaded_skills": [
+      "disco-trooper--cycling-training",
+      "dots-coefficient-excel-formula",
+      "dots-powerlifting-formula-generator",
+      "economic-series-workbook-extraction",
+      "gtmagents--lead-qualification",
+      "hannesill--sapsii-score",
+      "highs-dual-market-pricing-report",
+      "powerlifting-workbook-column-formula-population",
+      "powerlifting-workbook-formula-population",
+      "sbroenne--excel-mcp"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "disco-trooper--cycling-training",
+      "dots-coefficient-excel-formula",
+      "dots-powerlifting-formula-generator",
+      "economic-series-workbook-extraction",
+      "gtmagents--lead-qualification",
+      "hannesill--sapsii-score",
+      "highs-dual-market-pricing-report",
+      "powerlifting-workbook-column-formula-population",
+      "powerlifting-workbook-formula-population",
+      "sbroenne--excel-mcp"
+    ],
+    "trials": [
+      {
+        "trial_id": "powerlifting-coef-calc__umnadp4",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "disco-trooper--cycling-training",
+          "dots-coefficient-excel-formula",
+          "dots-powerlifting-formula-generator",
+          "economic-series-workbook-extraction",
+          "gtmagents--lead-qualification",
+          "hannesill--sapsii-score",
+          "highs-dual-market-pricing-report",
+          "powerlifting-workbook-column-formula-population",
+          "powerlifting-workbook-formula-population",
+          "sbroenne--excel-mcp"
+        ],
+        "available_skills": [
+          "disco-trooper--cycling-training",
+          "dots-coefficient-excel-formula",
+          "dots-powerlifting-formula-generator",
+          "economic-series-workbook-extraction",
+          "gtmagents--lead-qualification",
+          "hannesill--sapsii-score",
+          "highs-dual-market-pricing-report",
+          "powerlifting-workbook-column-formula-population",
+          "powerlifting-workbook-formula-population",
+          "sbroenne--excel-mcp"
+        ],
+        "loaded_skills": [
+          "disco-trooper--cycling-training",
+          "dots-coefficient-excel-formula",
+          "dots-powerlifting-formula-generator",
+          "economic-series-workbook-extraction",
+          "gtmagents--lead-qualification",
+          "hannesill--sapsii-score",
+          "highs-dual-market-pricing-report",
+          "powerlifting-workbook-column-formula-population",
+          "powerlifting-workbook-formula-population",
+          "sbroenne--excel-mcp"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "disco-trooper--cycling-training",
+          "dots-coefficient-excel-formula",
+          "dots-powerlifting-formula-generator",
+          "economic-series-workbook-extraction",
+          "gtmagents--lead-qualification",
+          "hannesill--sapsii-score",
+          "highs-dual-market-pricing-report",
+          "powerlifting-workbook-column-formula-population",
+          "powerlifting-workbook-formula-population",
+          "sbroenne--excel-mcp"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

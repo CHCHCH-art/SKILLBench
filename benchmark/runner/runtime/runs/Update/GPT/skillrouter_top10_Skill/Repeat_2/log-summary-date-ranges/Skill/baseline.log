@@ -1,0 +1,28 @@
+2026-09-02T10:47:31.241469+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=log-summary-date-ranges condition=mapping image=benchmark-cache/log-summary-date-ranges-gold:e28534907986406f provided_skills=["dated-log-severity-summary", "date-range-severity-summary-emission", "streaming-dated-log-sqlite-aggregation", "incidentfox--investigate", "hatayama--uloop-get-logs", "gillkyle--agent-tail", "sherifeldeeb--log-forensics", "htlin222--error-detective", "sickn33--azure-monitor-query-py", "chaterm--file-operations"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:03:41 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 41s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_2\log-summary-date-ranges\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_2\log-summary-date-ranges\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_2\log-summary-date-ranges\Skill\Job_result`
+
+2026-09-02T10:51:13.314344+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=2 task=log-summary-date-ranges condition=mapping

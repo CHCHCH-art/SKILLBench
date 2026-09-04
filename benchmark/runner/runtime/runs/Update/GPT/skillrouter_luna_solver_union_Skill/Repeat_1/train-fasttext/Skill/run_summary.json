@@ -1,0 +1,110 @@
+{
+  "schema_version": 9,
+  "task_id": "train-fasttext",
+  "condition": "mapping",
+  "batch": "skillrouter_luna_solver_union_Skill_Run003",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\skillrouter_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "Verifier reward did not pass: reward=0.0",
+  "peak_memory": {
+    "peak_memory_mib": 3613.82421875,
+    "peak_memory_raw": "3613.824 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 14959,
+    "observed_containers": [
+      "train-fasttext__cqlygni__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "train-fasttext",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\skillrouter_luna_solver_union_Skill_Run003\\Repeat_1\\train-fasttext\\mapping\\train-fasttext\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.46,
+    "agent_setup_sec": 0.37,
+    "agent_execution_sec": 1718.856,
+    "verifier_sec": 111.133,
+    "total_sec": 1837.432
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 3025905,
+  "agent_output_tokens": 13021,
+  "image_cache": {
+    "image": "benchmark-cache/train-fasttext-gold:61266fd7d3d7eaea",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "baseline-fasttext-small-supervised-training",
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection",
+      "parquet-to-fasttext-supervised-text"
+    ],
+    "available_skills": [
+      "baseline-fasttext-small-supervised-training",
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection",
+      "parquet-to-fasttext-supervised-text"
+    ],
+    "loaded_skills": [
+      "baseline-fasttext-small-supervised-training",
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection",
+      "parquet-to-fasttext-supervised-text"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "baseline-fasttext-small-supervised-training",
+      "deterministic-fasttext-search-split",
+      "fasttext-constrained-autotune-selection",
+      "parquet-to-fasttext-supervised-text"
+    ],
+    "trials": [
+      {
+        "trial_id": "train-fasttext__CQLygni",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "baseline-fasttext-small-supervised-training",
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection",
+          "parquet-to-fasttext-supervised-text"
+        ],
+        "available_skills": [
+          "baseline-fasttext-small-supervised-training",
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection",
+          "parquet-to-fasttext-supervised-text"
+        ],
+        "loaded_skills": [
+          "baseline-fasttext-small-supervised-training",
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection",
+          "parquet-to-fasttext-supervised-text"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "baseline-fasttext-small-supervised-training",
+          "deterministic-fasttext-search-split",
+          "fasttext-constrained-autotune-selection",
+          "parquet-to-fasttext-supervised-text"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

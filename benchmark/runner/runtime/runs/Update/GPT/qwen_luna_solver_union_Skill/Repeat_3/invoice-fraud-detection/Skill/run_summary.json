@@ -1,0 +1,110 @@
+{
+  "schema_version": 9,
+  "task_id": "invoice-fraud-detection",
+  "condition": "mapping",
+  "batch": "qwen_luna_solver_union_Skill_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 147.39453125,
+    "peak_memory_raw": "147.395 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2003,
+    "observed_containers": [
+      "invoice-fraud-detection__pgutrjj__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "invoice-fraud-detect",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_luna_solver_union_Skill_Run002\\Repeat_3\\invoice-fraud-detection\\mapping\\invoice-fraud-detection\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.841,
+    "agent_setup_sec": 0.467,
+    "agent_execution_sec": 169.323,
+    "verifier_sec": 27.134,
+    "total_sec": 204.742
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 214787,
+  "agent_output_tokens": 5859,
+  "image_cache": {
+    "image": "benchmark-cache/invoice-fraud-detection-gold:a8a463d9f523584f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "fuzzy-vendor-entity-resolution",
+      "invoice-pdf-reference-field-extraction",
+      "ordered-invoice-masterdata-fraud-rules",
+      "pdf-record-table-extraction"
+    ],
+    "available_skills": [
+      "fuzzy-vendor-entity-resolution",
+      "invoice-pdf-reference-field-extraction",
+      "ordered-invoice-masterdata-fraud-rules",
+      "pdf-record-table-extraction"
+    ],
+    "loaded_skills": [
+      "fuzzy-vendor-entity-resolution",
+      "invoice-pdf-reference-field-extraction",
+      "ordered-invoice-masterdata-fraud-rules",
+      "pdf-record-table-extraction"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "fuzzy-vendor-entity-resolution",
+      "invoice-pdf-reference-field-extraction",
+      "ordered-invoice-masterdata-fraud-rules",
+      "pdf-record-table-extraction"
+    ],
+    "trials": [
+      {
+        "trial_id": "invoice-fraud-detection__PGutRJj",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "fuzzy-vendor-entity-resolution",
+          "invoice-pdf-reference-field-extraction",
+          "ordered-invoice-masterdata-fraud-rules",
+          "pdf-record-table-extraction"
+        ],
+        "available_skills": [
+          "fuzzy-vendor-entity-resolution",
+          "invoice-pdf-reference-field-extraction",
+          "ordered-invoice-masterdata-fraud-rules",
+          "pdf-record-table-extraction"
+        ],
+        "loaded_skills": [
+          "fuzzy-vendor-entity-resolution",
+          "invoice-pdf-reference-field-extraction",
+          "ordered-invoice-masterdata-fraud-rules",
+          "pdf-record-table-extraction"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "fuzzy-vendor-entity-resolution",
+          "invoice-pdf-reference-field-extraction",
+          "ordered-invoice-masterdata-fraud-rules",
+          "pdf-record-table-extraction"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

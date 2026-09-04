@@ -1,0 +1,222 @@
+2026-09-03T15:12:48.960567+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=dapt-intrusion-detection condition=mapping
+2026-09-03T15:12:48.961566+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-03T15:15:58.729867+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-03T15:15:58.736709+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-03T15:17:51.301000+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-03T15:17:51.308222+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=dapt-intrusion-detection condition=mapping
+2026-09-03T15:19:00.197399+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-03T15:19:00.204589+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=crystallographic-wyckoff-position-analysis condition=mapping
+2026-09-03T15:25:44.273848+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=crystallographic-wyckoff-position-analysis condition=mapping status=completed
+2026-09-03T15:25:44.279847+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=dialogue-parser condition=mapping
+2026-09-03T15:26:31.274927+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-03T15:26:31.283147+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=dapt-intrusion-detection condition=mapping
+2026-09-03T15:30:01.963743+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=dialogue-parser condition=mapping status=completed
+2026-09-03T15:30:01.969058+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=dialogue-parser condition=mapping
+2026-09-03T15:33:00.615676+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=dialogue-parser condition=mapping status=completed
+2026-09-03T15:33:00.619820+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=dialogue-parser condition=mapping
+2026-09-03T15:35:56.649844+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=dapt-intrusion-detection condition=mapping status=completed
+2026-09-03T15:35:56.657221+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=distribution-search condition=mapping
+2026-09-03T15:36:13.188686+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=dialogue-parser condition=mapping status=completed
+2026-09-03T15:36:13.193553+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-03T15:41:40.622651+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=distribution-search condition=mapping status=completed
+2026-09-03T15:41:40.626814+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=distribution-search condition=mapping
+2026-09-03T15:48:11.672203+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-03T15:48:11.678261+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-03T15:50:02.780217+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=distribution-search condition=mapping status=completed
+2026-09-03T15:50:02.784305+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=distribution-search condition=mapping
+2026-09-03T15:59:25.453791+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=distribution-search condition=mapping status=completed
+2026-09-03T15:59:25.459176+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=earthquake-plate-calculation condition=mapping
+2026-09-03T16:00:31.280829+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-03T16:00:31.287036+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=dynamic-object-aware-egomotion condition=mapping
+2026-09-03T16:11:29.155395+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=dynamic-object-aware-egomotion condition=mapping status=completed
+2026-09-03T16:11:29.160465+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=econ-detrending-correlation condition=mapping
+2026-09-03T16:14:24.025889+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-03T16:14:24.031101+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=earthquake-plate-calculation condition=mapping
+2026-09-03T16:21:40.685946+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=econ-detrending-correlation condition=mapping status=completed
+2026-09-03T16:21:40.690011+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=econ-detrending-correlation condition=mapping
+2026-09-03T16:24:51.239421+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-03T16:24:51.244636+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=earthquake-plate-calculation condition=mapping
+2026-09-03T16:34:23.521098+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=econ-detrending-correlation condition=mapping status=completed
+2026-09-03T16:34:23.526294+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=econ-detrending-correlation condition=mapping
+2026-09-03T16:34:29.460666+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=earthquake-plate-calculation condition=mapping status=completed
+2026-09-03T16:34:29.465175+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-03T16:52:07.417662+00:00 ERROR operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=econ-detrending-correlation condition=mapping status=trial_error
+2026-09-03T16:52:07.423144+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=energy-market-pricing condition=mapping
+2026-09-03T16:55:33.246209+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-03T16:55:33.250583+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-03T17:11:26.122437+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=energy-market-pricing condition=mapping status=completed
+2026-09-03T17:11:26.127294+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=energy-market-pricing condition=mapping
+2026-09-03T17:24:25.292304+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-03T17:24:25.297276+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=energy-ac-optimal-power-flow condition=mapping
+2026-09-03T17:40:46.242223+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=energy-market-pricing condition=mapping status=completed
+2026-09-03T17:40:46.246856+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=energy-market-pricing condition=mapping
+2026-09-03T18:01:14.696004+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=energy-ac-optimal-power-flow condition=mapping status=completed
+2026-09-03T18:01:14.701521+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=exceltable-in-ppt condition=mapping
+2026-09-03T18:01:35.653810+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=energy-market-pricing condition=mapping status=completed
+2026-09-03T18:01:35.659395+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=exoplanet-detection-period condition=mapping
+2026-09-03T18:09:35.602058+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-03T18:09:35.606843+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=exceltable-in-ppt condition=mapping
+2026-09-03T18:14:05.733847+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=exoplanet-detection-period condition=mapping status=completed
+2026-09-03T18:14:05.739000+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=exoplanet-detection-period condition=mapping
+2026-09-03T18:22:21.339335+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-03T18:22:21.344035+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=exceltable-in-ppt condition=mapping
+2026-09-03T18:23:10.399328+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=exoplanet-detection-period condition=mapping status=completed
+2026-09-03T18:23:10.403869+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=exoplanet-detection-period condition=mapping
+2026-09-03T18:27:36.416839+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=exceltable-in-ppt condition=mapping status=completed
+2026-09-03T18:27:36.421266+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=financial-modeling-qa condition=mapping
+2026-09-03T18:28:53.564886+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=exoplanet-detection-period condition=mapping status=completed
+2026-09-03T18:28:53.570947+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=find-topk-similiar-chemicals condition=mapping
+2026-09-03T18:31:57.001213+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=financial-modeling-qa condition=mapping status=completed
+2026-09-03T18:31:57.006360+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=financial-modeling-qa condition=mapping
+2026-09-03T18:33:25.184972+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-03T18:33:25.190142+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=find-topk-similiar-chemicals condition=mapping
+2026-09-03T18:36:39.421734+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=financial-modeling-qa condition=mapping status=completed
+2026-09-03T18:36:39.426982+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=financial-modeling-qa condition=mapping
+2026-09-03T18:37:58.847813+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-03T18:37:58.853228+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=find-topk-similiar-chemicals condition=mapping
+2026-09-03T18:41:20.902229+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=financial-modeling-qa condition=mapping status=completed
+2026-09-03T18:41:20.911443+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=glm-lake-mendota condition=mapping
+2026-09-03T18:41:29.200448+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=find-topk-similiar-chemicals condition=mapping status=completed
+2026-09-03T18:41:29.205504+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=gravitational-wave-detection condition=mapping
+2026-09-03T18:52:19.650625+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=glm-lake-mendota condition=mapping status=completed
+2026-09-03T18:52:19.659106+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=glm-lake-mendota condition=mapping
+2026-09-03T18:57:50.439417+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=glm-lake-mendota condition=mapping status=completed
+2026-09-03T18:57:50.459108+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=glm-lake-mendota condition=mapping
+2026-09-03T19:01:09.350528+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-03T19:01:09.358318+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=gravitational-wave-detection condition=mapping
+2026-09-03T19:02:32.369616+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=glm-lake-mendota condition=mapping status=completed
+2026-09-03T19:02:32.375910+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=grid-dispatch-operator condition=mapping
+2026-09-03T19:21:07.552674+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-03T19:21:07.558674+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=gravitational-wave-detection condition=mapping
+2026-09-03T19:32:54.726191+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-03T19:32:54.733352+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=grid-dispatch-operator condition=mapping
+2026-09-03T19:40:01.818616+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=gravitational-wave-detection condition=mapping status=completed
+2026-09-03T19:40:01.824326+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=hf-model-inference condition=mapping
+2026-09-03T19:52:24.209016+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-03T19:52:24.214427+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=grid-dispatch-operator condition=mapping
+2026-09-03T19:56:42.264728+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=hf-model-inference condition=mapping status=completed
+2026-09-03T19:56:42.270508+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=hf-model-inference condition=mapping
+2026-09-03T20:07:37.366800+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=grid-dispatch-operator condition=mapping status=completed
+2026-09-03T20:07:37.372498+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=invoice-fraud-detection condition=mapping
+2026-09-03T20:11:46.055578+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-03T20:11:46.061228+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=invoice-fraud-detection condition=mapping
+2026-09-03T20:15:24.396846+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-03T20:15:24.396846+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=invoice-fraud-detection condition=mapping
+2026-09-03T20:17:42.242492+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=invoice-fraud-detection condition=mapping status=completed
+2026-09-03T20:17:42.248346+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=jpg-ocr-stat condition=mapping
+2026-09-03T20:23:14.565182+00:00 ERROR operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=hf-model-inference condition=mapping status=trial_error
+2026-09-03T20:23:14.573200+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=hf-model-inference condition=mapping
+2026-09-03T20:26:47.309413+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-03T20:26:47.319748+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=jpg-ocr-stat condition=mapping
+2026-09-03T20:43:35.397049+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=hf-model-inference condition=mapping status=completed
+2026-09-03T20:43:35.402262+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=llm-inference-batching-scheduler condition=mapping
+2026-09-03T20:45:49.897230+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-03T20:45:49.906294+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=jpg-ocr-stat condition=mapping
+2026-09-03T20:48:54.908285+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-03T20:48:54.914546+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=llm-inference-batching-scheduler condition=mapping
+2026-09-03T20:53:30.710442+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=jpg-ocr-stat condition=mapping status=completed
+2026-09-03T20:53:30.720506+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=log-summary-date-ranges condition=mapping
+2026-09-03T20:54:00.240754+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-03T20:54:00.247946+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=llm-inference-batching-scheduler condition=mapping
+2026-09-03T20:56:06.423253+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-03T20:56:06.428305+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=log-summary-date-ranges condition=mapping
+2026-09-03T20:59:00.722668+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-03T20:59:00.728489+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=log-summary-date-ranges condition=mapping
+2026-09-03T21:01:35.399675+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=log-summary-date-ranges condition=mapping status=completed
+2026-09-03T21:01:35.404325+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=mario-coin-counting condition=mapping
+2026-09-03T21:10:36.330302+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=mario-coin-counting condition=mapping status=completed
+2026-09-03T21:10:36.337047+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=mario-coin-counting condition=mapping
+2026-09-03T21:10:42.526191+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=llm-inference-batching-scheduler condition=mapping status=completed
+2026-09-03T21:10:42.532074+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=mars-clouds-clustering condition=mapping
+2026-09-03T21:18:14.067585+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-03T21:18:14.076844+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=mars-clouds-clustering condition=mapping
+2026-09-03T21:19:25.604670+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=mario-coin-counting condition=mapping status=completed
+2026-09-03T21:19:25.611787+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=mario-coin-counting condition=mapping
+2026-09-03T21:23:58.638552+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-03T21:23:58.647969+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=mars-clouds-clustering condition=mapping
+2026-09-03T21:27:38.748849+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=mars-clouds-clustering condition=mapping status=completed
+2026-09-03T21:27:38.757957+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=mteb-retrieve condition=mapping
+2026-09-03T21:31:51.152748+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=mario-coin-counting condition=mapping status=completed
+2026-09-03T21:31:51.160581+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=pdf-excel-diff condition=mapping
+2026-09-03T21:37:13.894916+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=pdf-excel-diff condition=mapping status=completed
+2026-09-03T21:37:13.899534+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=pdf-excel-diff condition=mapping
+2026-09-03T21:57:48.383136+00:00 ERROR operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=pdf-excel-diff condition=mapping status=trial_error
+2026-09-03T21:57:48.387965+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=pdf-excel-diff condition=mapping
+2026-09-03T22:05:00.981172+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=mteb-retrieve condition=mapping status=completed
+2026-09-03T22:05:00.986529+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=mteb-retrieve condition=mapping
+2026-09-03T22:08:33.085093+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=pdf-excel-diff condition=mapping status=completed
+2026-09-03T22:08:33.090558+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=portfolio-optimization condition=mapping
+2026-09-03T22:14:52.150551+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=portfolio-optimization condition=mapping status=completed
+2026-09-03T22:14:52.157697+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=portfolio-optimization condition=mapping
+2026-09-03T22:21:32.092512+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=portfolio-optimization condition=mapping status=completed
+2026-09-03T22:21:32.098502+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=portfolio-optimization condition=mapping
+2026-09-03T22:26:39.824320+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=portfolio-optimization condition=mapping status=completed
+2026-09-03T22:26:39.831149+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=powerlifting-coef-calc condition=mapping
+2026-09-03T22:48:24.236111+00:00 ERROR operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=powerlifting-coef-calc condition=mapping status=trial_error
+2026-09-03T22:48:24.241320+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=powerlifting-coef-calc condition=mapping
+2026-09-03T23:08:50.709465+00:00 ERROR operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=powerlifting-coef-calc condition=mapping status=trial_error
+2026-09-03T23:08:50.713388+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=powerlifting-coef-calc condition=mapping
+2026-09-03T23:25:25.295657+00:00 ERROR operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=mteb-retrieve condition=mapping status=trial_error
+2026-09-03T23:25:25.300922+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=mteb-retrieve condition=mapping
+2026-09-03T23:33:32.083047+00:00 ERROR operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=powerlifting-coef-calc condition=mapping status=trial_error
+2026-09-03T23:33:32.088701+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=protein-expression-analysis condition=mapping
+2026-09-03T23:37:59.375132+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=protein-expression-analysis condition=mapping status=completed
+2026-09-03T23:37:59.382028+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=protein-expression-analysis condition=mapping
+2026-09-03T23:45:11.801622+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=protein-expression-analysis condition=mapping status=completed
+2026-09-03T23:45:11.806859+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=protein-expression-analysis condition=mapping
+2026-09-04T00:10:58.486213+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=protein-expression-analysis condition=mapping status=completed
+2026-09-04T00:10:58.492970+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=quantum-numerical-simulation condition=mapping
+2026-09-04T00:18:21.379888+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-04T00:18:21.385837+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=quantum-numerical-simulation condition=mapping
+2026-09-04T00:25:50.105485+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-04T00:25:50.111204+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=quantum-numerical-simulation condition=mapping
+2026-09-04T00:40:41.498682+00:00 ERROR operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=mteb-retrieve condition=mapping status=trial_error
+2026-09-04T00:40:41.509019+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=sales-pivot-analysis condition=mapping
+2026-09-04T00:47:23.611827+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=quantum-numerical-simulation condition=mapping status=completed
+2026-09-04T00:47:23.620247+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=software-dependency-audit condition=mapping
+2026-09-04T00:48:27.456853+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=sales-pivot-analysis condition=mapping status=completed
+2026-09-04T00:48:27.464914+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=sales-pivot-analysis condition=mapping
+2026-09-04T00:50:19.336217+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=software-dependency-audit condition=mapping status=completed
+2026-09-04T00:50:19.342952+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=software-dependency-audit condition=mapping
+2026-09-04T00:54:15.292944+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=sales-pivot-analysis condition=mapping status=completed
+2026-09-04T00:54:15.301232+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=sales-pivot-analysis condition=mapping
+2026-09-04T00:55:16.241998+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=software-dependency-audit condition=mapping status=completed
+2026-09-04T00:55:16.248076+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=software-dependency-audit condition=mapping
+2026-09-04T00:57:42.497598+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=software-dependency-audit condition=mapping status=completed
+2026-09-04T00:57:42.505771+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=train-fasttext condition=mapping
+2026-09-04T00:59:01.755315+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=sales-pivot-analysis condition=mapping status=completed
+2026-09-04T00:59:01.762796+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=video-silence-remover condition=mapping
+2026-09-04T01:01:50.648393+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=video-silence-remover condition=mapping status=completed
+2026-09-04T01:01:50.658552+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=video-silence-remover condition=mapping
+2026-09-04T01:04:36.029363+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=video-silence-remover condition=mapping status=completed
+2026-09-04T01:04:36.041343+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=video-silence-remover condition=mapping
+2026-09-04T01:07:11.216160+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=video-silence-remover condition=mapping status=completed
+2026-09-04T01:07:11.223343+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=virtualhome-agent-planning condition=mapping
+2026-09-04T01:11:12.894944+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-04T01:11:12.912203+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=virtualhome-agent-planning condition=mapping
+2026-09-04T01:14:53.866492+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-04T01:14:53.880655+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=virtualhome-agent-planning condition=mapping
+2026-09-04T01:20:01.623120+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=virtualhome-agent-planning condition=mapping status=completed
+2026-09-04T01:20:01.639368+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=weighted-gdp-calc condition=mapping
+2026-09-04T01:27:06.413128+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-04T01:27:06.417906+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=weighted-gdp-calc condition=mapping
+2026-09-04T01:31:35.462636+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-04T01:31:35.468113+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=weighted-gdp-calc condition=mapping
+2026-09-04T01:31:53.203657+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=train-fasttext condition=mapping status=completed
+2026-09-04T01:31:53.209674+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=train-fasttext condition=mapping
+2026-09-04T01:39:33.336927+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=weighted-gdp-calc condition=mapping status=completed
+2026-09-04T02:15:21.404066+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=train-fasttext condition=mapping status=completed
+2026-09-04T02:15:21.410984+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=train-fasttext condition=mapping
+2026-09-04T02:46:28.633494+00:00 FAIL operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=train-fasttext condition=mapping status=completed
+2026-09-04T03:58:23.254134+00:00 START operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=mteb-retrieve condition=mapping
+2026-09-04T03:58:23.254134+00:00 START operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=econ-detrending-correlation condition=mapping
+2026-09-04T04:00:13.703266+00:00 START operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=pdf-excel-diff condition=mapping
+2026-09-04T04:00:13.703266+00:00 START operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=powerlifting-coef-calc condition=mapping
+2026-09-04T04:00:15.322365+00:00 START operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=powerlifting-coef-calc condition=mapping
+2026-09-04T04:04:21.721089+00:00 PASS operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-04T04:05:10.175388+00:00 PASS operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=econ-detrending-correlation condition=mapping status=completed
+2026-09-04T04:07:40.473636+00:00 PASS operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=pdf-excel-diff condition=mapping status=completed
+2026-09-04T04:07:40.483704+00:00 START operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=mteb-retrieve condition=mapping
+2026-09-04T04:10:37.724439+00:00 PASS operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=powerlifting-coef-calc condition=mapping status=completed
+2026-09-04T04:28:30.021389+00:00 PASS operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=3 task=mteb-retrieve condition=mapping status=completed
+2026-09-04T04:36:11.428681+00:00 PASS operation=rerun batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=mteb-retrieve condition=mapping status=completed

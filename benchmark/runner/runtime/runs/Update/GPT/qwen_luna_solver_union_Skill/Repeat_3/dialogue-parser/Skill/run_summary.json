@@ -1,0 +1,118 @@
+{
+  "schema_version": 9,
+  "task_id": "dialogue-parser",
+  "condition": "mapping",
+  "batch": "qwen_luna_solver_union_Skill_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 134.74609375,
+    "peak_memory_raw": "134.746 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3878,
+    "observed_containers": [
+      "dialogue-parser__r3s3up5__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "dialogue-parser",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_luna_solver_union_Skill_Run002\\Repeat_3\\dialogue-parser\\mapping\\dialogue-parser\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.784,
+    "agent_setup_sec": 0.473,
+    "agent_execution_sec": 276.722,
+    "verifier_sec": 107.785,
+    "total_sec": 393.014
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 265590,
+  "agent_output_tokens": 6864,
+  "image_cache": {
+    "image": "benchmark-cache/dialogue-parser-gold:c0353fb4817c6884",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser"
+    ],
+    "available_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser"
+    ],
+    "loaded_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "dialogue-dot-rendering",
+      "dialogue-graph-construction",
+      "dialogue-graph-validation-serialization",
+      "dialogue-reference-parser",
+      "dialogue-section-choice-parser"
+    ],
+    "trials": [
+      {
+        "trial_id": "dialogue-parser__R3s3up5",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser"
+        ],
+        "available_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser"
+        ],
+        "loaded_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "dialogue-dot-rendering",
+          "dialogue-graph-construction",
+          "dialogue-graph-validation-serialization",
+          "dialogue-reference-parser",
+          "dialogue-section-choice-parser"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

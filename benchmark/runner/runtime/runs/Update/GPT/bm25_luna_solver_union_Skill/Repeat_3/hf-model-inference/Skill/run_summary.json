@@ -1,0 +1,86 @@
+{
+  "schema_version": 9,
+  "task_id": "hf-model-inference",
+  "condition": "mapping",
+  "batch": "bm25_luna_solver_union_Skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_model_downloaded: safetensors_rust.SafetensorError: Error while deserializing header: incomplete metadata, file not fully covered; test_outputs.py::test_flask_api_running: ConnectionRefusedError: [Errno 111] Connection refused; test_outputs.py::test_sentiment_endpoint: ConnectionRefusedError: [Errno 111] Connection refused; test_outputs.py::test_api_error_handling: ConnectionRefusedError: [Errno 111] Connection refused",
+  "peak_memory": {
+    "peak_memory_mib": 2048.0625,
+    "peak_memory_raw": "2048.062 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 12046,
+    "observed_containers": [
+      "hf-model-inference__sp8jnxh__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "hf-model-inference",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_luna_solver_union_Skill_Run001\\Repeat_3\\hf-model-inference\\mapping\\hf-model-inference\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.415,
+    "agent_setup_sec": 0.34,
+    "agent_execution_sec": 1195.316,
+    "verifier_sec": 18.228,
+    "total_sec": 1219.512
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 892205,
+  "agent_output_tokens": 9994,
+  "image_cache": {
+    "image": "benchmark-cache/hf-model-inference-gold:5e2a59f453e212fb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "huggingface-local-model-materialization"
+    ],
+    "available_skills": [
+      "huggingface-local-model-materialization"
+    ],
+    "loaded_skills": [
+      "huggingface-local-model-materialization"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "huggingface-local-model-materialization"
+    ],
+    "trials": [
+      {
+        "trial_id": "hf-model-inference__sP8jNxh",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "huggingface-local-model-materialization"
+        ],
+        "available_skills": [
+          "huggingface-local-model-materialization"
+        ],
+        "loaded_skills": [
+          "huggingface-local-model-materialization"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "huggingface-local-model-materialization"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,80 @@
+Task: distribution-search
+Source type: used
+Task run: 6
+Source run: 3
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\used_task\distribution-search
+
+========== Repeated Run 3/3 ==========
+
+========== Run solve.sh ==========
+step=   1 KL_f=7.51513431 KL_b=8.11193148 error=2.48486569
+step=  25 KL_f=10.04590858 KL_b=9.92217278 error=0.07782722
+step=  50 KL_f=10.12529227 KL_b=10.03457006 error=0.12529227
+step=  75 KL_f=9.97762975 KL_b=9.97904897 error=0.02237025
+step= 100 KL_f=9.99197570 KL_b=10.00058068 error=0.00802430
+step= 125 KL_f=10.00208091 KL_b=9.99980521 error=0.00208091
+step= 150 KL_f=10.00062065 KL_b=10.00061582 error=0.00062065
+Converged at step 157
+
+Final result
+------------
+shape: (150000,)
+sum: 1.0
+min: 5.436969650901398e-18
+max: 0.4745413849694478
+KL(P||U): 10.000169622904462
+KL(U||P): 9.99985341745431
+Saved to /app/dist.npy
+
+========== Run test.sh ==========
+Hit:1 http://deb.debian.org/debian bookworm InRelease
+Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
+Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.88.1-10+deb12u15).
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+downloading uv 0.9.5 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+============================= test session starts ==============================
+platform linux -- Python 3.13.14, pytest-8.4.1, pluggy-1.6.0 -- /root/.cache/uv/archive-v0/2xQgf0yF3Spd9Qc1ze4wU/bin/python
+cachedir: .pytest_cache
+rootdir: /
+plugins: json-ctrf-0.3.5
+collecting ... collected 4 items
+
+../tests/test_outputs.py::test_distribution_file_exists PASSED           [ 25%]
+../tests/test_outputs.py::test_distribution_shape PASSED                 [ 50%]
+../tests/test_outputs.py::test_distribution_validity PASSED              [ 75%]
+../tests/test_outputs.py::test_kl_divergences PASSED                     [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::test_distribution_file_exists
+PASSED ../tests/test_outputs.py::test_distribution_shape
+PASSED ../tests/test_outputs.py::test_distribution_validity
+PASSED ../tests/test_outputs.py::test_kl_divergences
+============================== 4 passed in 0.34s ===============================
+
+========== Result ==========
+Task: distribution-search
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 37.5s (exit 0)
+Test: 13.5s (exit 0)
+Solve Memory Peak: 117.7 MiB
+Test Memory Peak: 79.8 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s
+
+========== Cleanup ==========
+Removing container: test-solution-distribution-search-1788097057721648800-0f117ce1

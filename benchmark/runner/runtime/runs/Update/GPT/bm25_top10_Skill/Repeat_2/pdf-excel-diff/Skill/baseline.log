@@ -1,0 +1,28 @@
+2026-09-03T06:31:03.083571+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=pdf-excel-diff condition=mapping image=benchmark-cache/pdf-excel-diff-gold:d574cd2f86bbbcb0 provided_skills=["keyed-record-diff-normalization", "pdf-table-structural-guard-and-extraction", "typed-record-diff-json", "pdf-record-table-extraction", "invoice-pdf-field-normalization", "ooxml-two-key-lookup-formula-population", "pdf-rule-value-extraction", "invoice-pdf-reference-field-extraction", "AltimateAI--creating-dbt-models", "anthropics--initiating-coverage"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:28:01 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 28m 1s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_2\pdf-excel-diff\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_2\pdf-excel-diff\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_2\pdf-excel-diff\Skill\Job_result`
+
+2026-09-03T06:59:05.327496+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=pdf-excel-diff condition=mapping

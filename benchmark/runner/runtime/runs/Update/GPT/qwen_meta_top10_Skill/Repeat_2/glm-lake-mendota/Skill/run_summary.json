@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "glm-lake-mendota",
+  "condition": "mapping",
+  "batch": "qwen_meta_top10_Skill_Run004",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_meta_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 280.01171875,
+    "peak_memory_raw": "280.012 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 10356,
+    "observed_containers": [
+      "glm-lake-mendota__bxwmthc__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "glm-lake-mendota",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_meta_top10_Skill_Run004\\Repeat_2\\glm-lake-mendota\\mapping\\glm-lake-mendota\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.53,
+    "agent_setup_sec": 0.351,
+    "agent_execution_sec": 1012.28,
+    "verifier_sec": 26.878,
+    "total_sec": 1048.247
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 2709269,
+  "agent_output_tokens": 14296,
+  "image_cache": {
+    "image": "benchmark-cache/glm-lake-mendota-gold:cfbcca189cbdcde0",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "HeshamFS--simulation-orchestrator",
+      "HeshamFS--simulation-validator",
+      "OmidZamani--dspy-evaluation-suite",
+      "glm-observation-profile-evaluation",
+      "glm-profile-observation-rmse-alignment",
+      "heshamfs--performance-profiling",
+      "lake-glm-five-parameter-nelder-mead-calibration",
+      "lake-temperature-glm-staged-calibration",
+      "melodic-software--ml-system-design",
+      "rmyndharis--llm-evaluation"
+    ],
+    "available_skills": [
+      "HeshamFS--simulation-orchestrator",
+      "HeshamFS--simulation-validator",
+      "OmidZamani--dspy-evaluation-suite",
+      "glm-observation-profile-evaluation",
+      "glm-profile-observation-rmse-alignment",
+      "heshamfs--performance-profiling",
+      "lake-glm-five-parameter-nelder-mead-calibration",
+      "lake-temperature-glm-staged-calibration",
+      "melodic-software--ml-system-design",
+      "rmyndharis--llm-evaluation"
+    ],
+    "loaded_skills": [
+      "HeshamFS--simulation-orchestrator",
+      "HeshamFS--simulation-validator",
+      "OmidZamani--dspy-evaluation-suite",
+      "glm-observation-profile-evaluation",
+      "glm-profile-observation-rmse-alignment",
+      "heshamfs--performance-profiling",
+      "lake-glm-five-parameter-nelder-mead-calibration",
+      "lake-temperature-glm-staged-calibration",
+      "melodic-software--ml-system-design",
+      "rmyndharis--llm-evaluation"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "HeshamFS--simulation-orchestrator",
+      "HeshamFS--simulation-validator",
+      "OmidZamani--dspy-evaluation-suite",
+      "glm-observation-profile-evaluation",
+      "glm-profile-observation-rmse-alignment",
+      "heshamfs--performance-profiling",
+      "lake-glm-five-parameter-nelder-mead-calibration",
+      "lake-temperature-glm-staged-calibration",
+      "melodic-software--ml-system-design",
+      "rmyndharis--llm-evaluation"
+    ],
+    "trials": [
+      {
+        "trial_id": "glm-lake-mendota__bxWmThc",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "HeshamFS--simulation-orchestrator",
+          "HeshamFS--simulation-validator",
+          "OmidZamani--dspy-evaluation-suite",
+          "glm-observation-profile-evaluation",
+          "glm-profile-observation-rmse-alignment",
+          "heshamfs--performance-profiling",
+          "lake-glm-five-parameter-nelder-mead-calibration",
+          "lake-temperature-glm-staged-calibration",
+          "melodic-software--ml-system-design",
+          "rmyndharis--llm-evaluation"
+        ],
+        "available_skills": [
+          "HeshamFS--simulation-orchestrator",
+          "HeshamFS--simulation-validator",
+          "OmidZamani--dspy-evaluation-suite",
+          "glm-observation-profile-evaluation",
+          "glm-profile-observation-rmse-alignment",
+          "heshamfs--performance-profiling",
+          "lake-glm-five-parameter-nelder-mead-calibration",
+          "lake-temperature-glm-staged-calibration",
+          "melodic-software--ml-system-design",
+          "rmyndharis--llm-evaluation"
+        ],
+        "loaded_skills": [
+          "HeshamFS--simulation-orchestrator",
+          "HeshamFS--simulation-validator",
+          "OmidZamani--dspy-evaluation-suite",
+          "glm-observation-profile-evaluation",
+          "glm-profile-observation-rmse-alignment",
+          "heshamfs--performance-profiling",
+          "lake-glm-five-parameter-nelder-mead-calibration",
+          "lake-temperature-glm-staged-calibration",
+          "melodic-software--ml-system-design",
+          "rmyndharis--llm-evaluation"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "HeshamFS--simulation-orchestrator",
+          "HeshamFS--simulation-validator",
+          "OmidZamani--dspy-evaluation-suite",
+          "glm-observation-profile-evaluation",
+          "glm-profile-observation-rmse-alignment",
+          "heshamfs--performance-profiling",
+          "lake-glm-five-parameter-nelder-mead-calibration",
+          "lake-temperature-glm-staged-calibration",
+          "melodic-software--ml-system-design",
+          "rmyndharis--llm-evaluation"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

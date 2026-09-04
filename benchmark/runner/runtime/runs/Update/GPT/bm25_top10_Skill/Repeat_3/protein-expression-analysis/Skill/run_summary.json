@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "protein-expression-analysis",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 243.80078125,
+    "peak_memory_raw": "243.801 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3704,
+    "observed_containers": [
+      "protein-expression-analysis__wsnw945__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "protein-expression-a",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run001\\Repeat_3\\protein-expression-analysis\\mapping\\protein-expression-analysis\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.365,
+    "agent_setup_sec": 0.332,
+    "agent_execution_sec": 348.66,
+    "verifier_sec": 17.845,
+    "total_sec": 374.961
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 705932,
+  "agent_output_tokens": 9585,
+  "image_cache": {
+    "image": "benchmark-cache/protein-expression-analysis-gold:a52e2bc643b8e023",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "expression-group-statistics-foldchange",
+      "guia-matthieu--challenger-sale",
+      "net-export-statistics-weighted-formulas",
+      "omer-metin--early-stage-hustle",
+      "ooxml-two-key-lookup-formula-population",
+      "protein-group-statistics-foldchange-formulas",
+      "protein-sample-direct-reference-lookup",
+      "sbroenne--excel-mcp",
+      "spreadsheet-two-way-expression-lookup",
+      "uno-two-key-index-match-population"
+    ],
+    "available_skills": [
+      "expression-group-statistics-foldchange",
+      "guia-matthieu--challenger-sale",
+      "net-export-statistics-weighted-formulas",
+      "omer-metin--early-stage-hustle",
+      "ooxml-two-key-lookup-formula-population",
+      "protein-group-statistics-foldchange-formulas",
+      "protein-sample-direct-reference-lookup",
+      "sbroenne--excel-mcp",
+      "spreadsheet-two-way-expression-lookup",
+      "uno-two-key-index-match-population"
+    ],
+    "loaded_skills": [
+      "expression-group-statistics-foldchange",
+      "guia-matthieu--challenger-sale",
+      "net-export-statistics-weighted-formulas",
+      "omer-metin--early-stage-hustle",
+      "ooxml-two-key-lookup-formula-population",
+      "protein-group-statistics-foldchange-formulas",
+      "protein-sample-direct-reference-lookup",
+      "sbroenne--excel-mcp",
+      "spreadsheet-two-way-expression-lookup",
+      "uno-two-key-index-match-population"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "expression-group-statistics-foldchange",
+      "guia-matthieu--challenger-sale",
+      "net-export-statistics-weighted-formulas",
+      "omer-metin--early-stage-hustle",
+      "ooxml-two-key-lookup-formula-population",
+      "protein-group-statistics-foldchange-formulas",
+      "protein-sample-direct-reference-lookup",
+      "sbroenne--excel-mcp",
+      "spreadsheet-two-way-expression-lookup",
+      "uno-two-key-index-match-population"
+    ],
+    "trials": [
+      {
+        "trial_id": "protein-expression-analysis__WsNw945",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "expression-group-statistics-foldchange",
+          "guia-matthieu--challenger-sale",
+          "net-export-statistics-weighted-formulas",
+          "omer-metin--early-stage-hustle",
+          "ooxml-two-key-lookup-formula-population",
+          "protein-group-statistics-foldchange-formulas",
+          "protein-sample-direct-reference-lookup",
+          "sbroenne--excel-mcp",
+          "spreadsheet-two-way-expression-lookup",
+          "uno-two-key-index-match-population"
+        ],
+        "available_skills": [
+          "expression-group-statistics-foldchange",
+          "guia-matthieu--challenger-sale",
+          "net-export-statistics-weighted-formulas",
+          "omer-metin--early-stage-hustle",
+          "ooxml-two-key-lookup-formula-population",
+          "protein-group-statistics-foldchange-formulas",
+          "protein-sample-direct-reference-lookup",
+          "sbroenne--excel-mcp",
+          "spreadsheet-two-way-expression-lookup",
+          "uno-two-key-index-match-population"
+        ],
+        "loaded_skills": [
+          "expression-group-statistics-foldchange",
+          "guia-matthieu--challenger-sale",
+          "net-export-statistics-weighted-formulas",
+          "omer-metin--early-stage-hustle",
+          "ooxml-two-key-lookup-formula-population",
+          "protein-group-statistics-foldchange-formulas",
+          "protein-sample-direct-reference-lookup",
+          "sbroenne--excel-mcp",
+          "spreadsheet-two-way-expression-lookup",
+          "uno-two-key-index-match-population"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "expression-group-statistics-foldchange",
+          "guia-matthieu--challenger-sale",
+          "net-export-statistics-weighted-formulas",
+          "omer-metin--early-stage-hustle",
+          "ooxml-two-key-lookup-formula-population",
+          "protein-group-statistics-foldchange-formulas",
+          "protein-sample-direct-reference-lookup",
+          "sbroenne--excel-mcp",
+          "spreadsheet-two-way-expression-lookup",
+          "uno-two-key-index-match-population"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

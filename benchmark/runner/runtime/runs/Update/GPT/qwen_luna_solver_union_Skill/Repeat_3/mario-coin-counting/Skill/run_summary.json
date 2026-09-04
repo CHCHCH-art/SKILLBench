@@ -1,0 +1,102 @@
+{
+  "schema_version": 9,
+  "task_id": "mario-coin-counting",
+  "condition": "mapping",
+  "batch": "qwen_luna_solver_union_Skill_Run002",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 483.95703125,
+    "peak_memory_raw": "483.957 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2655,
+    "observed_containers": [
+      "mario-coin-counting__3fvvtiq__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "mario-coin-counting",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_luna_solver_union_Skill_Run002\\Repeat_3\\mario-coin-counting\\mapping\\mario-coin-counting\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.87,
+    "agent_setup_sec": 0.415,
+    "agent_execution_sec": 126.757,
+    "verifier_sec": 137.196,
+    "total_sec": 271.652
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 145019,
+  "agent_output_tokens": 3311,
+  "image_cache": {
+    "image": "benchmark-cache/mario-coin-counting-gold:989a4c6bcaeff277",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "iframe-grayscale-keyframe-extraction",
+      "template-match-spatial-counting",
+      "video-iframe-grayscale-keyframes"
+    ],
+    "available_skills": [
+      "iframe-grayscale-keyframe-extraction",
+      "template-match-spatial-counting",
+      "video-iframe-grayscale-keyframes"
+    ],
+    "loaded_skills": [
+      "iframe-grayscale-keyframe-extraction",
+      "template-match-spatial-counting",
+      "video-iframe-grayscale-keyframes"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "iframe-grayscale-keyframe-extraction",
+      "template-match-spatial-counting",
+      "video-iframe-grayscale-keyframes"
+    ],
+    "trials": [
+      {
+        "trial_id": "mario-coin-counting__3fVvTiq",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "iframe-grayscale-keyframe-extraction",
+          "template-match-spatial-counting",
+          "video-iframe-grayscale-keyframes"
+        ],
+        "available_skills": [
+          "iframe-grayscale-keyframe-extraction",
+          "template-match-spatial-counting",
+          "video-iframe-grayscale-keyframes"
+        ],
+        "loaded_skills": [
+          "iframe-grayscale-keyframe-extraction",
+          "template-match-spatial-counting",
+          "video-iframe-grayscale-keyframes"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "iframe-grayscale-keyframe-extraction",
+          "template-match-spatial-counting",
+          "video-iframe-grayscale-keyframes"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

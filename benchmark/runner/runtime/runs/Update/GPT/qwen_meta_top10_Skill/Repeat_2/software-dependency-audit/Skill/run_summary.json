@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "software-dependency-audit",
+  "condition": "mapping",
+  "batch": "qwen_meta_top10_Skill_Run004",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_meta_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestSecurityAuditTask::test_csv_matches_ground_truth: AssertionError: Generated CSV content does not match expected vulnerabilities",
+  "peak_memory": {
+    "peak_memory_mib": 74.0390625,
+    "peak_memory_raw": "74.039 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2278,
+    "observed_containers": [
+      "software-dependency-audit__euxiajn__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "software-dependency-",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_meta_top10_Skill_Run004\\Repeat_2\\software-dependency-audit\\mapping\\software-dependency-audit\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.454,
+    "agent_setup_sec": 0.371,
+    "agent_execution_sec": 127.187,
+    "verifier_sec": 95.09,
+    "total_sec": 231.34
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 297020,
+  "agent_output_tokens": 4309,
+  "image_cache": {
+    "image": "benchmark-cache/software-dependency-audit-gold:65439dede9bf4280",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "TheDecipherist--security-audit",
+      "bagelhole--vulnerability-scanning",
+      "benchflow-ai--cvss-score-extraction",
+      "curiouslearner--dependency-auditor",
+      "npm-lock-dual-sbom-dependency-graph",
+      "oimiragieo--gemini-cli-security",
+      "trivy-dual-scan-csv-reconciliation",
+      "trivy-offline-filesystem-vulnerability-scan",
+      "trivy-severity-cvss-csv-normalization",
+      "yaleh--dependency-health"
+    ],
+    "available_skills": [
+      "TheDecipherist--security-audit",
+      "bagelhole--vulnerability-scanning",
+      "benchflow-ai--cvss-score-extraction",
+      "curiouslearner--dependency-auditor",
+      "npm-lock-dual-sbom-dependency-graph",
+      "oimiragieo--gemini-cli-security",
+      "trivy-dual-scan-csv-reconciliation",
+      "trivy-offline-filesystem-vulnerability-scan",
+      "trivy-severity-cvss-csv-normalization",
+      "yaleh--dependency-health"
+    ],
+    "loaded_skills": [
+      "TheDecipherist--security-audit",
+      "bagelhole--vulnerability-scanning",
+      "benchflow-ai--cvss-score-extraction",
+      "curiouslearner--dependency-auditor",
+      "npm-lock-dual-sbom-dependency-graph",
+      "oimiragieo--gemini-cli-security",
+      "trivy-dual-scan-csv-reconciliation",
+      "trivy-offline-filesystem-vulnerability-scan",
+      "trivy-severity-cvss-csv-normalization",
+      "yaleh--dependency-health"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "TheDecipherist--security-audit",
+      "bagelhole--vulnerability-scanning",
+      "benchflow-ai--cvss-score-extraction",
+      "curiouslearner--dependency-auditor",
+      "npm-lock-dual-sbom-dependency-graph",
+      "oimiragieo--gemini-cli-security",
+      "trivy-dual-scan-csv-reconciliation",
+      "trivy-offline-filesystem-vulnerability-scan",
+      "trivy-severity-cvss-csv-normalization",
+      "yaleh--dependency-health"
+    ],
+    "trials": [
+      {
+        "trial_id": "software-dependency-audit__EuxiAJN",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "TheDecipherist--security-audit",
+          "bagelhole--vulnerability-scanning",
+          "benchflow-ai--cvss-score-extraction",
+          "curiouslearner--dependency-auditor",
+          "npm-lock-dual-sbom-dependency-graph",
+          "oimiragieo--gemini-cli-security",
+          "trivy-dual-scan-csv-reconciliation",
+          "trivy-offline-filesystem-vulnerability-scan",
+          "trivy-severity-cvss-csv-normalization",
+          "yaleh--dependency-health"
+        ],
+        "available_skills": [
+          "TheDecipherist--security-audit",
+          "bagelhole--vulnerability-scanning",
+          "benchflow-ai--cvss-score-extraction",
+          "curiouslearner--dependency-auditor",
+          "npm-lock-dual-sbom-dependency-graph",
+          "oimiragieo--gemini-cli-security",
+          "trivy-dual-scan-csv-reconciliation",
+          "trivy-offline-filesystem-vulnerability-scan",
+          "trivy-severity-cvss-csv-normalization",
+          "yaleh--dependency-health"
+        ],
+        "loaded_skills": [
+          "TheDecipherist--security-audit",
+          "bagelhole--vulnerability-scanning",
+          "benchflow-ai--cvss-score-extraction",
+          "curiouslearner--dependency-auditor",
+          "npm-lock-dual-sbom-dependency-graph",
+          "oimiragieo--gemini-cli-security",
+          "trivy-dual-scan-csv-reconciliation",
+          "trivy-offline-filesystem-vulnerability-scan",
+          "trivy-severity-cvss-csv-normalization",
+          "yaleh--dependency-health"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "TheDecipherist--security-audit",
+          "bagelhole--vulnerability-scanning",
+          "benchflow-ai--cvss-score-extraction",
+          "curiouslearner--dependency-auditor",
+          "npm-lock-dual-sbom-dependency-graph",
+          "oimiragieo--gemini-cli-security",
+          "trivy-dual-scan-csv-reconciliation",
+          "trivy-offline-filesystem-vulnerability-scan",
+          "trivy-severity-cvss-csv-normalization",
+          "yaleh--dependency-health"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

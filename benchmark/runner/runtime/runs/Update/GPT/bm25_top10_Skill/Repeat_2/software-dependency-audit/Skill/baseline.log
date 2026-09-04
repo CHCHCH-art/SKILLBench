@@ -1,0 +1,28 @@
+2026-09-03T07:52:23.336824+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=software-dependency-audit condition=mapping image=benchmark-cache/software-dependency-audit-gold:65439dede9bf4280 provided_skills=["benchflow-ai--cvss-score-extraction", "yaleh--dependency-health", "trivy-severity-cvss-csv-normalization", "bagelhole--vulnerability-scanning", "deterministic-offline-package-tree-reconstruction", "gohypergiant--accelint-security-best-practices", "trivy-dual-scan-csv-reconciliation", "trivy-offline-filesystem-vulnerability-scan", "pjt222--security-audit-codebase", "BrownFineSecurity--nmap"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:03:25 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 25s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_2\software-dependency-audit\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_2\software-dependency-audit\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_2\software-dependency-audit\Skill\Job_result`
+
+2026-09-03T07:55:49.806581+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=software-dependency-audit condition=mapping

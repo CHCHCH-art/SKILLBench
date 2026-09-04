@@ -1,0 +1,28 @@
+2026-09-03T15:35:56.671928+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=distribution-search condition=mapping image=benchmark-cache/distribution-search-gold:430ae95bb5beb0fc provided_skills=["three-level-kl-distribution-solver"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:05:42 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 5m 42s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_1\distribution-search\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_1\distribution-search\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_1\distribution-search\Skill\Job_result`
+
+2026-09-03T15:41:40.622118+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=1 task=distribution-search condition=mapping

@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "invoice-fraud-detection",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 132.03125,
+    "peak_memory_raw": "132.031 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2535,
+    "observed_containers": [
+      "invoice-fraud-detection__fngzght__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "invoice-fraud-detect",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run001\\Repeat_2\\invoice-fraud-detection\\mapping\\invoice-fraud-detection\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.379,
+    "agent_setup_sec": 0.367,
+    "agent_execution_sec": 226.451,
+    "verifier_sec": 22.557,
+    "total_sec": 257.53
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 242684,
+  "agent_output_tokens": 6938,
+  "image_cache": {
+    "image": "benchmark-cache/invoice-fraud-detection-gold:a8a463d9f523584f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "can1357--different-name",
+      "fuzzy-vendor-entity-resolution",
+      "go-sphere--proto-service-generator",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization",
+      "invoice-pdf-reference-field-extraction",
+      "kamalnrf--skills-discovery",
+      "laurigates--ast-grep-search",
+      "ordered-invoice-masterdata-fraud-rules",
+      "template-match-spatial-counting"
+    ],
+    "available_skills": [
+      "can1357--different-name",
+      "fuzzy-vendor-entity-resolution",
+      "go-sphere--proto-service-generator",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization",
+      "invoice-pdf-reference-field-extraction",
+      "kamalnrf--skills-discovery",
+      "laurigates--ast-grep-search",
+      "ordered-invoice-masterdata-fraud-rules",
+      "template-match-spatial-counting"
+    ],
+    "loaded_skills": [
+      "can1357--different-name",
+      "fuzzy-vendor-entity-resolution",
+      "go-sphere--proto-service-generator",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization",
+      "invoice-pdf-reference-field-extraction",
+      "kamalnrf--skills-discovery",
+      "laurigates--ast-grep-search",
+      "ordered-invoice-masterdata-fraud-rules",
+      "template-match-spatial-counting"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "can1357--different-name",
+      "fuzzy-vendor-entity-resolution",
+      "go-sphere--proto-service-generator",
+      "invoice-fraud-reference-rules",
+      "invoice-pdf-field-normalization",
+      "invoice-pdf-reference-field-extraction",
+      "kamalnrf--skills-discovery",
+      "laurigates--ast-grep-search",
+      "ordered-invoice-masterdata-fraud-rules",
+      "template-match-spatial-counting"
+    ],
+    "trials": [
+      {
+        "trial_id": "invoice-fraud-detection__fngZGHt",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "can1357--different-name",
+          "fuzzy-vendor-entity-resolution",
+          "go-sphere--proto-service-generator",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization",
+          "invoice-pdf-reference-field-extraction",
+          "kamalnrf--skills-discovery",
+          "laurigates--ast-grep-search",
+          "ordered-invoice-masterdata-fraud-rules",
+          "template-match-spatial-counting"
+        ],
+        "available_skills": [
+          "can1357--different-name",
+          "fuzzy-vendor-entity-resolution",
+          "go-sphere--proto-service-generator",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization",
+          "invoice-pdf-reference-field-extraction",
+          "kamalnrf--skills-discovery",
+          "laurigates--ast-grep-search",
+          "ordered-invoice-masterdata-fraud-rules",
+          "template-match-spatial-counting"
+        ],
+        "loaded_skills": [
+          "can1357--different-name",
+          "fuzzy-vendor-entity-resolution",
+          "go-sphere--proto-service-generator",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization",
+          "invoice-pdf-reference-field-extraction",
+          "kamalnrf--skills-discovery",
+          "laurigates--ast-grep-search",
+          "ordered-invoice-masterdata-fraud-rules",
+          "template-match-spatial-counting"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "can1357--different-name",
+          "fuzzy-vendor-entity-resolution",
+          "go-sphere--proto-service-generator",
+          "invoice-fraud-reference-rules",
+          "invoice-pdf-field-normalization",
+          "invoice-pdf-reference-field-extraction",
+          "kamalnrf--skills-discovery",
+          "laurigates--ast-grep-search",
+          "ordered-invoice-masterdata-fraud-rules",
+          "template-match-spatial-counting"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

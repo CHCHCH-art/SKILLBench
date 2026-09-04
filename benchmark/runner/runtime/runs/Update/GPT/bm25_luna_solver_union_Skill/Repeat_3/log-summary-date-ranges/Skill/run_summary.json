@@ -1,0 +1,94 @@
+{
+  "schema_version": 9,
+  "task_id": "log-summary-date-ranges",
+  "condition": "mapping",
+  "batch": "bm25_luna_solver_union_Skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::test_summary_structure_and_counts: AssertionError: Expected row ['today', 'ERROR', '370'], got ['today', 'ERROR', '414']",
+  "peak_memory": {
+    "peak_memory_mib": 287.39453125,
+    "peak_memory_raw": "287.395 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 1509,
+    "observed_containers": [
+      "log-summary-date-ranges__f3prydo__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "log-summary-date-ran",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_luna_solver_union_Skill_Run001\\Repeat_3\\log-summary-date-ranges\\mapping\\log-summary-date-ranges\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.407,
+    "agent_setup_sec": 0.309,
+    "agent_execution_sec": 93.627,
+    "verifier_sec": 53.56,
+    "total_sec": 153.386
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 90802,
+  "agent_output_tokens": 2287,
+  "image_cache": {
+    "image": "benchmark-cache/log-summary-date-ranges-gold:e28534907986406f",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "date-range-severity-summary-emission",
+      "dated-log-severity-summary"
+    ],
+    "available_skills": [
+      "date-range-severity-summary-emission",
+      "dated-log-severity-summary"
+    ],
+    "loaded_skills": [
+      "date-range-severity-summary-emission",
+      "dated-log-severity-summary"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "date-range-severity-summary-emission",
+      "dated-log-severity-summary"
+    ],
+    "trials": [
+      {
+        "trial_id": "log-summary-date-ranges__f3pRYDo",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "date-range-severity-summary-emission",
+          "dated-log-severity-summary"
+        ],
+        "available_skills": [
+          "date-range-severity-summary-emission",
+          "dated-log-severity-summary"
+        ],
+        "loaded_skills": [
+          "date-range-severity-summary-emission",
+          "dated-log-severity-summary"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "date-range-severity-summary-emission",
+          "dated-log-severity-summary"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

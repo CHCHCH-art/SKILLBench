@@ -1,0 +1,102 @@
+{
+  "schema_version": 9,
+  "task_id": "crystallographic-wyckoff-position-analysis",
+  "condition": "mapping",
+  "batch": "bm25_luna_solver_union_Skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 333.8359375,
+    "peak_memory_raw": "333.836 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3932,
+    "observed_containers": [
+      "crystallographic-wyckoff-positio__6k2z62u__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "crystallographic-wyc",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_luna_solver_union_Skill_Run001\\Repeat_3\\crystallographic-wyckoff-position-analysis\\mapping\\crystallographic-wyckoff-position-analysis\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.588,
+    "agent_setup_sec": 0.309,
+    "agent_execution_sec": 379.134,
+    "verifier_sec": 17.111,
+    "total_sec": 402.972
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 458199,
+  "agent_output_tokens": 6914,
+  "image_cache": {
+    "image": "benchmark-cache/crystallographic-wyckoff-position-analysis-gold:0f59e77451a3b6af",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "cif-explicit-site-normalization",
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting"
+    ],
+    "available_skills": [
+      "cif-explicit-site-normalization",
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting"
+    ],
+    "loaded_skills": [
+      "cif-explicit-site-normalization",
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "cif-explicit-site-normalization",
+      "cif-wyckoff-letter-reference-summary",
+      "fractional-coordinate-rational-formatting"
+    ],
+    "trials": [
+      {
+        "trial_id": "crystallographic-wyckoff-positio__6K2Z62u",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "cif-explicit-site-normalization",
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting"
+        ],
+        "available_skills": [
+          "cif-explicit-site-normalization",
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting"
+        ],
+        "loaded_skills": [
+          "cif-explicit-site-normalization",
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "cif-explicit-site-normalization",
+          "cif-wyckoff-letter-reference-summary",
+          "fractional-coordinate-rational-formatting"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "portfolio-optimization",
+  "condition": "mapping",
+  "batch": "bm25_top10_Skill_Run001",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": true,
+  "error": null,
+  "failure_reason": null,
+  "peak_memory": {
+    "peak_memory_mib": 2255.8515625,
+    "peak_memory_raw": "2255.852 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 3533,
+    "observed_containers": [
+      "portfolio-optimization__jnysvaa__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "portfolio-optimizati",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_top10_Skill_Run001\\Repeat_3\\portfolio-optimization\\mapping\\portfolio-optimization\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.551,
+    "agent_setup_sec": 0.374,
+    "agent_execution_sec": 249.567,
+    "verifier_sec": 100.932,
+    "total_sec": 359.657
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 453694,
+  "agent_output_tokens": 6166,
+  "image_cache": {
+    "image": "benchmark-cache/portfolio-optimization-gold:8362bcbb069434ab",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "K-Dense-AI--matlab",
+      "adaptyvbio--setup",
+      "c-portfolio-risk-return-kernel",
+      "cpython-symmetric-quadratic-risk-kernel",
+      "cpython-vector-return-build-wrapper",
+      "guia-matthieu--educational-presentation",
+      "letta-ai--pytorch-model-cli",
+      "numpy-contiguous-c-extension-wrapper",
+      "ratacat--kieran-python-reviewer",
+      "tavily-ai--search"
+    ],
+    "available_skills": [
+      "K-Dense-AI--matlab",
+      "adaptyvbio--setup",
+      "c-portfolio-risk-return-kernel",
+      "cpython-symmetric-quadratic-risk-kernel",
+      "cpython-vector-return-build-wrapper",
+      "guia-matthieu--educational-presentation",
+      "letta-ai--pytorch-model-cli",
+      "numpy-contiguous-c-extension-wrapper",
+      "ratacat--kieran-python-reviewer",
+      "tavily-ai--search"
+    ],
+    "loaded_skills": [
+      "K-Dense-AI--matlab",
+      "adaptyvbio--setup",
+      "c-portfolio-risk-return-kernel",
+      "cpython-symmetric-quadratic-risk-kernel",
+      "cpython-vector-return-build-wrapper",
+      "guia-matthieu--educational-presentation",
+      "letta-ai--pytorch-model-cli",
+      "numpy-contiguous-c-extension-wrapper",
+      "ratacat--kieran-python-reviewer",
+      "tavily-ai--search"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "K-Dense-AI--matlab",
+      "adaptyvbio--setup",
+      "c-portfolio-risk-return-kernel",
+      "cpython-symmetric-quadratic-risk-kernel",
+      "cpython-vector-return-build-wrapper",
+      "guia-matthieu--educational-presentation",
+      "letta-ai--pytorch-model-cli",
+      "numpy-contiguous-c-extension-wrapper",
+      "ratacat--kieran-python-reviewer",
+      "tavily-ai--search"
+    ],
+    "trials": [
+      {
+        "trial_id": "portfolio-optimization__JnysVAA",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "K-Dense-AI--matlab",
+          "adaptyvbio--setup",
+          "c-portfolio-risk-return-kernel",
+          "cpython-symmetric-quadratic-risk-kernel",
+          "cpython-vector-return-build-wrapper",
+          "guia-matthieu--educational-presentation",
+          "letta-ai--pytorch-model-cli",
+          "numpy-contiguous-c-extension-wrapper",
+          "ratacat--kieran-python-reviewer",
+          "tavily-ai--search"
+        ],
+        "available_skills": [
+          "K-Dense-AI--matlab",
+          "adaptyvbio--setup",
+          "c-portfolio-risk-return-kernel",
+          "cpython-symmetric-quadratic-risk-kernel",
+          "cpython-vector-return-build-wrapper",
+          "guia-matthieu--educational-presentation",
+          "letta-ai--pytorch-model-cli",
+          "numpy-contiguous-c-extension-wrapper",
+          "ratacat--kieran-python-reviewer",
+          "tavily-ai--search"
+        ],
+        "loaded_skills": [
+          "K-Dense-AI--matlab",
+          "adaptyvbio--setup",
+          "c-portfolio-risk-return-kernel",
+          "cpython-symmetric-quadratic-risk-kernel",
+          "cpython-vector-return-build-wrapper",
+          "guia-matthieu--educational-presentation",
+          "letta-ai--pytorch-model-cli",
+          "numpy-contiguous-c-extension-wrapper",
+          "ratacat--kieran-python-reviewer",
+          "tavily-ai--search"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "K-Dense-AI--matlab",
+          "adaptyvbio--setup",
+          "c-portfolio-risk-return-kernel",
+          "cpython-symmetric-quadratic-risk-kernel",
+          "cpython-vector-return-build-wrapper",
+          "guia-matthieu--educational-presentation",
+          "letta-ai--pytorch-model-cli",
+          "numpy-contiguous-c-extension-wrapper",
+          "ratacat--kieran-python-reviewer",
+          "tavily-ai--search"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

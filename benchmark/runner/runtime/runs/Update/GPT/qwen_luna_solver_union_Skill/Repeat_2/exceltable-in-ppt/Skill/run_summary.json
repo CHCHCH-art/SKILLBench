@@ -1,0 +1,115 @@
+{
+  "schema_version": 9,
+  "task_id": "exceltable-in-ppt",
+  "condition": "mapping",
+  "batch": "qwen_luna_solver_union_Skill_Run002",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "trial_error",
+  "passed": false,
+  "error": [
+    {
+      "exception_type": "AgentTimeoutError",
+      "exception_message": "Agent execution timed out after 900.0 seconds"
+    }
+  ],
+  "failure_reason": "{\"exception_type\":\"AgentTimeoutError\",\"exception_message\":\"Agent execution timed out after 900.0 seconds\"}",
+  "peak_memory": {
+    "peak_memory_mib": 906.84375,
+    "peak_memory_raw": "906.844 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 10751,
+    "observed_containers": [
+      "exceltable-in-ppt__pqmkqap__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "exceltable-in-ppt",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_luna_solver_union_Skill_Run002\\Repeat_2\\exceltable-in-ppt\\mapping\\exceltable-in-ppt\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.705,
+    "agent_setup_sec": 0.405,
+    "agent_execution_sec": 900.68,
+    "verifier_sec": 179.747,
+    "total_sec": 1088.445
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1458681,
+  "agent_output_tokens": 7778,
+  "image_cache": {
+    "image": "benchmark-cache/exceltable-in-ppt-gold:76ac1a2bd4e98536",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement"
+    ],
+    "available_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement"
+    ],
+    "loaded_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "inverse-rate-workbook-cell-update",
+      "pptx-embedded-workbook-orchestration",
+      "pptx-embedded-workbook-rate-update",
+      "pptx-zip-preserving-embedding-replacement"
+    ],
+    "trials": [
+      {
+        "trial_id": "exceltable-in-ppt__pqmkQaP",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement"
+        ],
+        "available_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement"
+        ],
+        "loaded_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "inverse-rate-workbook-cell-update",
+          "pptx-embedded-workbook-orchestration",
+          "pptx-embedded-workbook-rate-update",
+          "pptx-zip-preserving-embedding-replacement"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

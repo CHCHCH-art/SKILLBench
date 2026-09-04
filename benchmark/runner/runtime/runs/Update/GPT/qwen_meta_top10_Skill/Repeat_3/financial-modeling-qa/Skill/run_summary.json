@@ -1,0 +1,158 @@
+{
+  "schema_version": 9,
+  "task_id": "financial-modeling-qa",
+  "condition": "mapping",
+  "batch": "qwen_meta_top10_Skill_Run004",
+  "repeat": 3,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_meta_top10.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOutputs::test_answer_value_correct: AssertionError: Incorrect answer. Expected 23.0, got 25.0",
+  "peak_memory": {
+    "peak_memory_mib": 150.5859375,
+    "peak_memory_raw": "150.586 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 4166,
+    "observed_containers": [
+      "financial-modeling-qa__zn58pir__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "financial-modeling-q",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_meta_top10_Skill_Run004\\Repeat_3\\financial-modeling-qa\\mapping\\financial-modeling-qa\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.486,
+    "agent_setup_sec": 0.366,
+    "agent_execution_sec": 370.664,
+    "verifier_sec": 44.038,
+    "total_sec": 423.58
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 606571,
+  "agent_output_tokens": 6944,
+  "image_cache": {
+    "image": "benchmark-cache/financial-modeling-qa-gold:0fdb74de33d4be91",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "K-Dense-AI--xlsx",
+      "alirezarezvani--financial-analyst",
+      "benchflow-ai--data-reconciliation",
+      "benchflow-ai--xlsx-1",
+      "economic-series-workbook-extraction",
+      "geeksfino--financial-statement-analyzer",
+      "jmsktm--cash-flow-forecaster",
+      "powerlifting-workbook-column-formula-population",
+      "receipt-date-total-excel-serialization",
+      "sickn33--xlsx-official"
+    ],
+    "available_skills": [
+      "K-Dense-AI--xlsx",
+      "alirezarezvani--financial-analyst",
+      "benchflow-ai--data-reconciliation",
+      "benchflow-ai--xlsx-1",
+      "economic-series-workbook-extraction",
+      "geeksfino--financial-statement-analyzer",
+      "jmsktm--cash-flow-forecaster",
+      "powerlifting-workbook-column-formula-population",
+      "receipt-date-total-excel-serialization",
+      "sickn33--xlsx-official"
+    ],
+    "loaded_skills": [
+      "K-Dense-AI--xlsx",
+      "alirezarezvani--financial-analyst",
+      "benchflow-ai--data-reconciliation",
+      "benchflow-ai--xlsx-1",
+      "economic-series-workbook-extraction",
+      "geeksfino--financial-statement-analyzer",
+      "jmsktm--cash-flow-forecaster",
+      "powerlifting-workbook-column-formula-population",
+      "receipt-date-total-excel-serialization",
+      "sickn33--xlsx-official"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "K-Dense-AI--xlsx",
+      "alirezarezvani--financial-analyst",
+      "benchflow-ai--data-reconciliation",
+      "benchflow-ai--xlsx-1",
+      "economic-series-workbook-extraction",
+      "geeksfino--financial-statement-analyzer",
+      "jmsktm--cash-flow-forecaster",
+      "powerlifting-workbook-column-formula-population",
+      "receipt-date-total-excel-serialization",
+      "sickn33--xlsx-official"
+    ],
+    "trials": [
+      {
+        "trial_id": "financial-modeling-qa__Zn58Pir",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "K-Dense-AI--xlsx",
+          "alirezarezvani--financial-analyst",
+          "benchflow-ai--data-reconciliation",
+          "benchflow-ai--xlsx-1",
+          "economic-series-workbook-extraction",
+          "geeksfino--financial-statement-analyzer",
+          "jmsktm--cash-flow-forecaster",
+          "powerlifting-workbook-column-formula-population",
+          "receipt-date-total-excel-serialization",
+          "sickn33--xlsx-official"
+        ],
+        "available_skills": [
+          "K-Dense-AI--xlsx",
+          "alirezarezvani--financial-analyst",
+          "benchflow-ai--data-reconciliation",
+          "benchflow-ai--xlsx-1",
+          "economic-series-workbook-extraction",
+          "geeksfino--financial-statement-analyzer",
+          "jmsktm--cash-flow-forecaster",
+          "powerlifting-workbook-column-formula-population",
+          "receipt-date-total-excel-serialization",
+          "sickn33--xlsx-official"
+        ],
+        "loaded_skills": [
+          "K-Dense-AI--xlsx",
+          "alirezarezvani--financial-analyst",
+          "benchflow-ai--data-reconciliation",
+          "benchflow-ai--xlsx-1",
+          "economic-series-workbook-extraction",
+          "geeksfino--financial-statement-analyzer",
+          "jmsktm--cash-flow-forecaster",
+          "powerlifting-workbook-column-formula-population",
+          "receipt-date-total-excel-serialization",
+          "sickn33--xlsx-official"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "K-Dense-AI--xlsx",
+          "alirezarezvani--financial-analyst",
+          "benchflow-ai--data-reconciliation",
+          "benchflow-ai--xlsx-1",
+          "economic-series-workbook-extraction",
+          "geeksfino--financial-statement-analyzer",
+          "jmsktm--cash-flow-forecaster",
+          "powerlifting-workbook-column-formula-population",
+          "receipt-date-total-excel-serialization",
+          "sickn33--xlsx-official"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

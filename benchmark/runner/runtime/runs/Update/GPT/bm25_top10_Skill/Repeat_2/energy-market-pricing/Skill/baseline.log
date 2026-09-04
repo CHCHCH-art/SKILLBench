@@ -1,0 +1,28 @@
+2026-09-03T00:55:11.666225+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=energy-market-pricing condition=mapping image=benchmark-cache/energy-market-pricing-gold:5e086fb9e6601b54 provided_skills=["dcopf-counterfactual-impact-analysis", "sparse-dcopf-reserve-lp-formulation", "dcopf-reserve-lmp-solve", "transmission-limit-counterfactual-impact", "cvxpy-dcopf-reserve-cooptimization", "highs-dual-market-pricing-report", "ipopt-acopf-reference-solve", "lubu-labs--langgraph-project-setup", "acopf-feasibility-loading-report", "rectangular-acopf-network-model"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:09:54 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 9m 54s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_2\energy-market-pricing\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_2\energy-market-pricing\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_2\energy-market-pricing\Skill\Job_result`
+
+2026-09-03T01:05:07.515357+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=2 task=energy-market-pricing condition=mapping

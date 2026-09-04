@@ -1,0 +1,28 @@
+2026-09-03T05:07:18.159499+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=log-summary-date-ranges condition=mapping image=benchmark-cache/log-summary-date-ranges-gold:e28534907986406f provided_skills=["dated-log-severity-summary", "date-range-severity-summary-emission", "tumf--slack-rs", "9qwnkc6s79-a11y--health-data", "net-export-statistics-weighted-formulas", "sherifeldeeb--log-forensics", "powerlifting-workbook-column-formula-population", "nikhilbhansali--dataforseo", "receipt-date-total-excel-serialization", "streaming-dated-log-sqlite-aggregation"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:03:29 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 3m 29s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_3\log-summary-date-ranges\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_3\log-summary-date-ranges\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_3\log-summary-date-ranges\Skill\Job_result`
+
+2026-09-03T05:10:48.422487+00:00 PASS operation=run batch=bm25_top10_Skill_Run001 repeat=3 task=log-summary-date-ranges condition=mapping

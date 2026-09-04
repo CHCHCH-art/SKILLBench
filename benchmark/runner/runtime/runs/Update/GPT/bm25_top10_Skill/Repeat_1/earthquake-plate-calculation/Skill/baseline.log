@@ -1,0 +1,28 @@
+2026-09-03T00:07:43.546274+00:00 START operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=earthquake-plate-calculation condition=mapping image=benchmark-cache/earthquake-plate-calculation-gold:9daffd7dc0823601 provided_skills=["geospatial-source-crs-normalization", "geospatial-plate-membership-filter", "projected-boundary-distance-selection", "exact-boundary-distance-selection", "benchflow-ai--map-optimization-strategy", "invoice-pdf-field-normalization", "iframe-grayscale-keyframe-extraction", "eyh0602--senior-data-scientist", "invoice-fraud-reference-rules", "ralphcrisostomo--ralph"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:02:03 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 3s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_1\earthquake-plate-calculation\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_1\earthquake-plate-calculation\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_top10_Skill_Run001\Rep
+eat_1\earthquake-plate-calculation\Skill\Job_result`
+
+2026-09-03T00:09:48.232343+00:00 FAIL operation=run batch=bm25_top10_Skill_Run001 repeat=1 task=earthquake-plate-calculation condition=mapping

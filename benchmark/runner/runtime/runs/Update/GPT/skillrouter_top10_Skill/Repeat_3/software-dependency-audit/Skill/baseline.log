@@ -1,0 +1,28 @@
+2026-09-02T13:47:10.711096+00:00 START operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=software-dependency-audit condition=mapping image=benchmark-cache/software-dependency-audit-gold:65439dede9bf4280 provided_skills=["trivy-offline-filesystem-vulnerability-scan", "curiouslearner--dependency-auditor", "TheDecipherist--security-audit", "aj-geddes--vulnerability-scanning", "89jobrien--security-audit", "bagelhole--vulnerability-scanning", "oimiragieo--gemini-cli-security", "hack23--cis-controls", "ruvnet--agent-v3-security-architect", "dirnbauer--enterprise-readiness"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:05:09 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 5m 9s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_3\software-dependency-audit\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_3\software-dependency-audit\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\skillrouter_top10_Skill_Run
+005\Repeat_3\software-dependency-audit\Skill\Job_result`
+
+2026-09-02T13:52:20.995319+00:00 FAIL operation=run batch=skillrouter_top10_Skill_Run005 repeat=3 task=software-dependency-audit condition=mapping

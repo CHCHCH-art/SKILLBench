@@ -1,0 +1,91 @@
+{
+  "schema_version": 9,
+  "task_id": "hf-model-inference",
+  "condition": "mapping",
+  "batch": "bm25_luna_solver_union_Skill_Run001",
+  "repeat": 2,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\bm25_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "trial_error",
+  "passed": false,
+  "error": [
+    {
+      "exception_type": "AgentTimeoutError",
+      "exception_message": "Agent execution timed out after 1500.0 seconds"
+    }
+  ],
+  "failure_reason": "{\"exception_type\":\"AgentTimeoutError\",\"exception_message\":\"Agent execution timed out after 1500.0 seconds\"}",
+  "peak_memory": {
+    "peak_memory_mib": 1891.03515625,
+    "peak_memory_raw": "1891.035 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 15512,
+    "observed_containers": [
+      "hf-model-inference__tcghu6d__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "hf-model-inference",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\bm25_luna_solver_union_Skill_Run001\\Repeat_2\\hf-model-inference\\mapping\\hf-model-inference\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.435,
+    "agent_setup_sec": 0.326,
+    "agent_execution_sec": 1503.178,
+    "verifier_sec": 81.941,
+    "total_sec": 1591.171
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 1331575,
+  "agent_output_tokens": 7480,
+  "image_cache": {
+    "image": "benchmark-cache/hf-model-inference-gold:5e2a59f453e212fb",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "huggingface-local-model-materialization"
+    ],
+    "available_skills": [
+      "huggingface-local-model-materialization"
+    ],
+    "loaded_skills": [
+      "huggingface-local-model-materialization"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "huggingface-local-model-materialization"
+    ],
+    "trials": [
+      {
+        "trial_id": "hf-model-inference__tcGhu6d",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "huggingface-local-model-materialization"
+        ],
+        "available_skills": [
+          "huggingface-local-model-materialization"
+        ],
+        "loaded_skills": [
+          "huggingface-local-model-materialization"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "huggingface-local-model-materialization"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

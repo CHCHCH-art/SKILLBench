@@ -1,0 +1,86 @@
+{
+  "schema_version": 9,
+  "task_id": "financial-modeling-qa",
+  "condition": "mapping",
+  "batch": "qwen_luna_solver_union_Skill_Run002",
+  "repeat": 1,
+  "operation": "run",
+  "tasks_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\tasks",
+  "mapping_file": "E:\\Project\\SKILLBench\\benchmark\\datas\\single_skill_mapping\\qwen_luna_solver_union.jsonl",
+  "skills_root": "E:\\Project\\SKILLBench\\benchmark\\datas\\optional_skills\\skills",
+  "status": "completed",
+  "passed": false,
+  "error": null,
+  "failure_reason": "test_outputs.py::TestOutputs::test_answer_value_correct: AssertionError: Incorrect answer. Expected 23.0, got 25.0",
+  "peak_memory": {
+    "peak_memory_mib": 148.05078125,
+    "peak_memory_raw": "148.051 MiB",
+    "metric": "container_cgroup_memory",
+    "sampler_source": "persistent_docker_exec",
+    "sample_interval_seconds": 0.1,
+    "sample_count": 2813,
+    "observed_containers": [
+      "financial-modeling-qa__fgqppp7__env-main-1"
+    ],
+    "error": null,
+    "container_name_hint": "financial-modeling-q",
+    "project_working_dir": "E:\\Project\\SKILLBench\\benchmark\\runner\\runtime\\work\\qwen_luna_solver_union_Skill_Run002\\Repeat_1\\financial-modeling-qa\\mapping\\financial-modeling-qa\\environment"
+  },
+  "phase_cost": {
+    "environment_setup_sec": 1.807,
+    "agent_setup_sec": 0.441,
+    "agent_execution_sec": 209.427,
+    "verifier_sec": 70.999,
+    "total_sec": 287.292
+  },
+  "llm_cost_usd": 0.0,
+  "agent_input_tokens": 297854,
+  "agent_output_tokens": 6696,
+  "image_cache": {
+    "image": "benchmark-cache/financial-modeling-qa-gold:0fdb74de33d4be91",
+    "reused": true
+  },
+  "skill_audit": {
+    "passed": true,
+    "provided_skills": [
+      "benchflow-ai--xlsx-1"
+    ],
+    "available_skills": [
+      "benchflow-ai--xlsx-1"
+    ],
+    "loaded_skills": [
+      "benchflow-ai--xlsx-1"
+    ],
+    "explicitly_loaded_skills": [],
+    "preloaded_skills": [
+      "benchflow-ai--xlsx-1"
+    ],
+    "trials": [
+      {
+        "trial_id": "financial-modeling-qa__FgqPpp7",
+        "source": "session_jsonl",
+        "passed": true,
+        "provided_skills": [
+          "benchflow-ai--xlsx-1"
+        ],
+        "available_skills": [
+          "benchflow-ai--xlsx-1"
+        ],
+        "loaded_skills": [
+          "benchflow-ai--xlsx-1"
+        ],
+        "explicitly_loaded_skills": [],
+        "preloaded_skills": [
+          "benchflow-ai--xlsx-1"
+        ],
+        "missing_available": [],
+        "unexpected_available": [],
+        "load_evidence": {}
+      }
+    ],
+    "error": null
+  },
+  "skill_preload_enabled": true,
+  "harbor_results_dir": "Job_result",
+  "harbor_exit_code": 0
+}

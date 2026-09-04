@@ -1,0 +1,56 @@
+Task: glm-lake-mendota
+Source type: baseline
+Task run: 2
+Source run: 2
+Task directory: E:\Project\SKILLBench\archive_local\Snaps\Task_snap\baseline_task\glm-lake-mendota
+
+========== Repeated Run 2/3 ==========
+
+========== Run solve.sh ==========
+============================================================
+GLM Calibration
+============================================================
+Loaded 2826 observations
+
+Starting calibration...
+------------------------------------------------------------
+  [  1] Kw=0.300, mix_hyp=0.500, wind=1.000, lw=1.000, ch=0.00130 -> RMSE=2.09
+  [  2] Kw=0.315, mix_hyp=0.500, wind=1.000, lw=1.000, ch=0.00130 -> RMSE=2.05
+  [  3] Kw=0.300, mix_hyp=0.525, wind=1.000, lw=1.000, ch=0.00130 -> RMSE=2.30
+  [  4] Kw=0.300, mix_hyp=0.500, wind=1.050, lw=1.000, ch=0.00130 -> RMSE=2.56
+  [  5] Kw=0.300, mix_hyp=0.500, wind=1.000, lw=1.050, ch=0.00130 -> RMSE=2.65
+  [  6] Kw=0.300, mix_hyp=0.500, wind=1.000, lw=1.000, ch=0.00136 -> RMSE=2.09
+  [  7] Kw=0.306, mix_hyp=0.510, wind=1.020, lw=0.950, ch=0.00133 -> RMSE=2.10
+  [  8] Kw=0.308, mix_hyp=0.514, wind=0.958, lw=0.980, ch=0.00134 -> RMSE=1.71
+  [  9] Kw=0.313, mix_hyp=0.521, wind=0.912, lw=0.970, ch=0.00135 -> RMSE=1.68
+  [ 10] Kw=0.313, mix_hyp=0.487, wind=0.973, lw=0.968, ch=0.00136 -> RMSE=1.92
+  [ 11] Kw=0.310, mix_hyp=0.493, wind=0.934, lw=1.025, ch=0.00135 -> RMSE=1.99
+  [ 12] Kw=0.321, mix_hyp=0.501, wind=0.927, lw=0.985, ch=0.00130 -> RMSE=1.69
+  [ 13] Kw=0.329, mix_hyp=0.501, wind=0.898, lw=0.979, ch=0.00136 -> RMSE=1.56
+  [ 14] Kw=0.343, mix_hyp=0.501, wind=0.848, lw=0.969, ch=0.00139 -> RMSE=1.82
+  [ 15] Kw=0.319, mix_hyp=0.501, wind=0.858, lw=0.971, ch=0.00139 -> RMSE=1.69
+  [ 16] Kw=0.327, mix_hyp=0.511, wind=0.894, lw=0.924, ch=0.00136 -> RMSE=1.42
+
+*** Early stop: RMSE < 1.5 achieved! ***
+
+============================================================
+Calibration Complete!
+============================================================
+
+Final RMSE: 1.42 C
+
+========== Run test.sh ==========
+
+========== Result ==========
+Task: glm-lake-mendota
+Status: passed
+Passed: True
+Reward: 1.0
+Build: n/a
+Solve: 82.1s (exit 0)
+Test: 6.1s (exit 0)
+Solve Memory Peak: 256.5 MiB
+Test Memory Peak: 239.6 MiB
+Memory Metric: docker_stats_memory
+Memory Sampler Source: docker_stats
+Memory Sample Interval: 1.000 s

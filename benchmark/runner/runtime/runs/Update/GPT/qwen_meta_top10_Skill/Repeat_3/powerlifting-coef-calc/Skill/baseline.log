@@ -1,0 +1,28 @@
+2026-09-02T13:17:23.538866+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=powerlifting-coef-calc condition=mapping image=benchmark-cache/powerlifting-coef-calc-gold:0fef2731a5e5d6d2 provided_skills=["powerlifting-workbook-column-formula-population", "powerlifting-workbook-formula-population", "dots-coefficient-excel-formula", "dots-powerlifting-formula-generator", "net-export-statistics-weighted-formulas", "sickn33--xlsx-official", "sbroenne--excel-mcp", "net-export-statistics-sumproduct-formulas", "benchflow-ai--xlsx-1", "K-Dense-AI--xlsx"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:04:32 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 4m 32s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+4\Repeat_3\powerlifting-coef-calc\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+4\Repeat_3\powerlifting-coef-calc\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+4\Repeat_3\powerlifting-coef-calc\Skill\Job_result`
+
+2026-09-02T13:21:57.152427+00:00 PASS operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=powerlifting-coef-calc condition=mapping

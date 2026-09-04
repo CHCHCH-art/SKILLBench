@@ -1,0 +1,28 @@
+2026-09-02T07:06:43.258933+00:00 START operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=exceltable-in-ppt condition=mapping image=benchmark-cache/exceltable-in-ppt-gold:76ac1a2bd4e98536 provided_skills=["pptx-embedded-workbook-rate-update", "pptx-zip-preserving-embedding-replacement", "pptx-embedded-workbook-orchestration", "sbroenne--excel-mcp", "xlsx-formula-cache-preserving-recalc", "uno-formula-recalc-validation", "inverse-rate-workbook-cell-update", "ooxml-two-key-lookup-formula-population", "openpyxl-native-pivot-workbook", "apache-poi-native-pivot-workbook"]
+  1/1 Mean: 0.000 ---------------------------------------- 0:05:20 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 5m 20s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+4\Repeat_3\exceltable-in-ppt\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+4\Repeat_3\exceltable-in-ppt\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\qwen_meta_top10_Skill_Run00
+4\Repeat_3\exceltable-in-ppt\Skill\Job_result`
+
+2026-09-02T07:12:05.143333+00:00 FAIL operation=run batch=qwen_meta_top10_Skill_Run004 repeat=3 task=exceltable-in-ppt condition=mapping

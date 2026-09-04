@@ -1,0 +1,28 @@
+2026-09-04T01:01:50.679707+00:00 START operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=video-silence-remover condition=mapping image=benchmark-cache/video-silence-remover-gold:274332f35d40c56d provided_skills=["probed-duration-removal-report", "audio-energy-removal-window-detection", "single-filtergraph-av-trim-concat"]
+  1/1 Mean: 1.000 ---------------------------------------- 0:02:44 0:00:00
+mapping • dmx-codex • gpt-5.6-luna-cdx
+┌────────┬────────────┬───────┐
+│ Trials │ Exceptions │  Mean │
+├────────┼────────────┼───────┤
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┌────────┬───────┐
+│ Reward │ Count │
+├────────┼───────┤
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 2m 44s
+Results written to 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\video-silence-remover\Skill\Job_result\result.json
+Inspect results by running `harbor view 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\video-silence-remover\Skill`
+Share results by running `harbor upload 
+E:\Project\SKILLBench\benchmark\runner\runtime\runs\bm25_luna_solver_union_Skil
+l_Run001\Repeat_2\video-silence-remover\Skill\Job_result`
+
+2026-09-04T01:04:36.029363+00:00 PASS operation=run batch=bm25_luna_solver_union_Skill_Run001 repeat=2 task=video-silence-remover condition=mapping
